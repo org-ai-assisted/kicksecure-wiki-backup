@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg version="1.2" baseProfile="tiny-ps" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <title>bimi-svg-tiny-12-ps</title>
+  <desc>Kicksecure is a secure by default operating system with the latest security research in place.</desc>
+  <defs/>
+  <g>
+    <rect x="4.4847" y="694.16" width="201.68" height="334.54" fill="#ccc"/>
+  </g>
+  <g transform="scale(1.5505)">
+    <rect transform="scale(-1)" x="-25.797" y="-25.797" width="25.797" height="25.797" fill="#3c6ac4"/>
+    <g transform="translate(2.0983 -1394.9)" fill-rule="evenodd">
+      <path d="m14.312 1409-1.7421 3.6488 1.4442 1.7061c0.30446 0.383 0.93207 0.8246 1.9718 0.8246h2.0085c0.70031 6e-4 0.81136-0.5824 0.44187-0.999z" fill="#a3cfff"/>
+      <path d="m8.2833 1398.9-3.21 2.0865c-0.44916 0.3221-0.65452 0.4584-0.85063 1.2315l-1.1645 9.957 6.2052-12.647c0.31071-0.7229-0.61858-0.9696-0.98008-0.6284z" fill="#a3cfff"/>
+      <path d="m16.844 1399.5-5.2015 6.4178-3.0317-3.5112-5.8121 11.796c-0.21385 0.7667 0.82105 1.0229 1.0978 0.6421l5.113-6.1118 2.9676 3.5979 5.9484-12.158c0.33806-0.6925-0.54918-1.3704-1.0814-0.6733z" fill="#fff215"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#000" stroke-width=".26458px">
+    <path d="m53.82 194.18 24.941 23.572"/>
+    <path d="m57.849 191.59 24.327 23.274"/>
+  </g>
+</svg>
