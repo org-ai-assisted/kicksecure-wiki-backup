@@ -1,0 +1,66 @@
+{{Header}} {{Hide_all_banners}}
+{{Title|title=
+{{project_name_long}} Art Gallery
+}}
+{{#seo:
+|description=Illustrations, Banner, Logo History, Artwork, Logo Contest Submissions. Community contributed {{project_name_short}} artwork.
+|image=Art_Gallery.png
+}}
+[[File:Art_Gallery.png|200px|thumb]]
+{{intro|
+Illustrations, Banner, Logo History, Artwork, Logo Contest Submissions.
+
+Community contributed {{project_name_short}} artwork.
+}}
+= Logos =
+<gallery widths=200px heights=200px>
+Kicksecure-basic-logo.png|Kicksecure Basic Logo
+Kicksecure-icon-logo.png|Kicksecure Icon Logo
+Kicksecure-text-logo.png|Kicksecure Text Logo
+</gallery>
+
+See also [[Dev/Logo|{{project_name_short}} Logo]] for more.
+
+== Box Design ==
+'''Figure:''' ''Kicksecure Box Design''
+
+[[File:Kicksecure-image-hero-image.jpeg|500px]]
+
+== Banner ==
+<gallery widths=1000px heights=100px>
+File:Kicksecure-image-reddit-banner.jpg|Kicksecure reddit banner
+</gallery>
+
+== Badge ==
+<gallery widths=200px heights=100px>
+Kicksecure-badge.png|Kicksecure Badge PNG
+Kicksecure-image-badge.svg|Kicksecure Badge SVG
+</gallery>
+
+== Seal ==
+<gallery widths=100px heights=100px>
+Kicksecure-seal.png|Kicksecure Seal PNG
+Kicksecure-image-seal.svg|Kicksecure Seal SVG
+</gallery>
+
+== Banners ==
+[[File:Kicksecure-promo.jpg]]
+
+[[File:Banner-dev-wanted.jpg]]
+
+= Community Created Alternative Logos =
+<gallery widths=300px heights=300px>
+DALLE_2023-10-24_06.14.03.png|Vector design of a padlock with a stylized kick motion emanating from it. The main color theme is shades of blue, indicating strong security.png|Vector design of a padlock with a stylized kick motion emanating from it by DALL·E
+File:DALLE_2023-10-24.png|circular logo with the word 'Kicksecure' wrapping around a central icon by DALL·E
+</gallery>
+
+= See Also =
+* [[Dev/Logo|{{project_name_short}} Logo]]
+* [[Screenshots]]
+* [[Copyright|{{project_name_short}} Copyright]]
+* [[Trademark Policy|{{project_name_short}} Trademark Policy]]
+
+= Footnotes =
+<references />
+{{Footer}}
+[[Category:Documentation]]
