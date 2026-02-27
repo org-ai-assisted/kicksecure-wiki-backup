@@ -1,0 +1,102 @@
+{{Header}} {{hide_all_banners}} __NOTOC__ __NOEDITSECTION__
+{{title|title=
+Advanced Documentation
+}}
+{{#seo:
+|description={{project_name_long}} Advanced Documentation.
+|image=Advanceddocumentation213123.jpg
+}}
+{{documentation_mininav}}
+{{Intro|
+The documentation on this wiki page is for advanced users only.
+}}
+{{Expand_or_Collapse_All}}
+<div class="toccolours mw-collapsible mw-collapsed" style="max-width:100%;">
+<h3>{{project_name_short}}-specific Activities and Configurations</h3>
+<div class="use-3-columns mw-collapsible-content">
+* [[Other_Operating_Systems|Other Operating Systems]]
+* Backups and Restore
+** [[Backup VMs|Backup {{project_name_short}} VMs]]
+** [[Raw_Disk_Backup|Full Raw Disk Backup]]
+* Builds
+** [[Dev/Build Documentation|Build and Update {{project_name_short}} from Source Code]]
+* Design
+** [[Design|Technical Design]]
+** [[Security Roadmap|{{project_name_short}} Security Roadmap]]
+* Desktop Environments
+** [[Other_Desktop_Environments|Other Desktop Environments]]
+* Firewalls
+** [https://forums.{{project_clearnet}}/c/development/8 Development Forum] [http://forums.{{project_onion}}/c/development/8 (.onion)]
+** [https://gitlab.com/{{project_name_short_lowercase}} GitLab]
+** [https://github.com/{{project_name_short}} GitHub]
+* Packages
+** [[apparmor.d|<code>apparmor.d</code> (Full System AppArmor Profile)]]
+** [[apt-file]] - show which files are being included by a package
+** [[command-not-found|command-not-found - suggest installation of missing software packages in terminal]]
+** [[debug-misc|debug-misc: Enable Easier Debugging]]
+** [[Hardened-kernel|hardened-kernel]]
+** [[Security-misc|security-misc: Enhance Miscellaneous Security Settings]]
+*** [[ptrace_scope|ptrace_scope]]
+** [[swap-file-creator]]
+* Repositories and Packages
+** [[Debian Packages|{{project_name_short}} Debian Packages and Safe Removal]]
+* [[Browser Tests]]
+* [[git|Git]]
+* [[Server_Security_Guide|Server Security Guide]]
+* [[SSL|SSL / TLS]]
+</div>
+</div>
+
+<div class="toccolours mw-collapsible mw-collapsed" style="max-width:100%;">
+<h3>Miscellaneous</h3>
+<div class="use-3-columns mw-collapsible-content">
+* Configuration Activities
+** [[Configuration Files|Configuration Files and Drop-In Folders]]
+** [[Distribution Morphing]]
+** [[grub-live]]
+** [[grub]]
+** [[dracut]]
+** [[Installation_of_Debian_based_Linux_distributions_in_a_folder_chroot|Install Debian (based) Linux Distributions in a Folder]]
+* Research Papers
+** [https://www.cl.cam.ac.uk/~rja14/psysec.html Psychology and Security Resource Page]
+* [[sparse_files|Sparse Files]]
+* VM Operations
+** [[Grow Virtual Harddisk|Increase the Virtual Hard Disk]]
+** [[Shrink Virtual Harddisk|Shrink Virtual Harddisk Size]]
+** [[Nested Virtualization|Nested Virtualization]]
+** [[Tuning|VirtualBox Tuning]]
+** [[VirtualBox/Manual_VM_Import|VirtualBox Manual VM Import using {{cli}}]]
+* [[Threat Modeling]]
+* [[NAT traversal]]
+* [[Non Anonymous Onion Encryption and NAT Traversal]]
+* [[Artificial_intelligence|Real Open Source Artificial Intelligence (AI)]]
+* [[Linux_User_Experience_versus_Commercial_Operating_Systems|Linux User Experience versus Commercial Operating Systems]]
+* [[Dev/Open_Source_Business_Models|Open Source Business Models]]
+* [[Nginx|nginx web server]]
+* [[Air_Gapped_OpenPGP_Key|Air Gapped OpenPGP Key]]
+* [[socks_firewalling|SOCKS firewalling]]
+</div>
+</div>
+
+<div class="toccolours mw-collapsible mw-collapsed" style="max-width:100%;">
+<h3>Security</h3>
+<div class="use-3-columns mw-collapsible-content">
+* [[System_identity_camouflage|System Identity Camouflage]]
+* [[CPUID|CPUID - Security and Privacy Threats]]
+* [[Signify|Signify: Cryptographically Sign and Verify Files]]
+</div>
+</div>
+
+<div class="toccolours mw-collapsible mw-collapsed" style="max-width:100%;">
+<h3>{{project_name_short}} Comparison with Others</h3>
+<div class="use-3-columns mw-collapsible-content">
+* [[MacOS Hosts]]
+* [[Windows Hosts]]
+* [[Mobile Operating System Comparison]]
+* [[Android|Android Insecurity]]
+* [[IOS|Apple iOS - Malicious Backdoor or Debugging Feature? The Debate Over Operation Triangulation]]
+</div>
+</div>
+
+{{Footer}}
+[[Category:Documentation]]
