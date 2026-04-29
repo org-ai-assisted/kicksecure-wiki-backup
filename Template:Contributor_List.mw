@@ -1,0 +1,45 @@
+{| class="wikitable"
+|+ Components looking for dedicated contributor.
+
+
+| [[AppArmor|AppArmor Profiles]]
+|-
+
+| Automated Test Suite <ref>
+Port [https://tails.boum.org/contribute/release_process/test/automated_tests/ Tails Test Suite] to {{project_name_short}} or create a new one from scratch.
+</ref>
+|-
+
+| Live DVD
+|-
+
+| Live USB
+|-
+
+| {{Github_link|
+https://github.com/Kicksecure/msgcollector/blob/master/usr/libexec/msgcollector/msgdispatcher_dispatch_x
+}}
+|-
+
+| [[Dev/TimeSync#Adjusting_time_slowly_using_adjtimex.2Fntp_adjtime|sclockadj2]]
+|-
+
+| [[sdwdate]]
+|-
+
+| [[sdwdate-gui]]
+|-
+
+| {{project_name_short}} Server Version
+|-
+
+| [[Dev/Build_Documentation|Upgrading {{project_name_short}} Packages from Source Code]]
+|-
+
+| [[Verifiable Builds]]
+|-
+
+| [https://github.com/{{project_name_short}}/{{project_name_short_lowercase}}-welcome-page {{project_name_short}} Welcome Page]
+|-
+
+|}
