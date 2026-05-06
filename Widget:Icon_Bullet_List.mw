@@ -7,14 +7,14 @@ of $item to create an $item-array. See /Dev/mediawiki#Widgets
 </noinclude>
 
 <<!--{if $span|default:false }-->span<!--{else}-->ul<!--{/if}-->
- class="icon-bullet-list <!--{$addClass|default:''}-->"
- <!--{if isset($fontSize)}-->style="font-size:<!--{$fontSize}-->;"<!--{/if}-->
+ class="icon-bullet-list <!--{$addClass|escape:'html'|default:''}-->"
+ <!--{if isset($fontSize)}-->style="font-size:<!--{$fontSize|escape:'html'}-->;"<!--{/if}-->
 >
 <!--{if isset( $item )}-->
 <!--{foreach from=$item item=i }-->
  <<!--{if $span|default:false }-->span<!--{else}-->li<!--{/if}-->>
-  <i class="<!--{$i|regex_replace:"/\,.*$/":""}-->"></i>
-  <span><!--{$i|regex_replace:"/^[^\,]*\,/":""}--></span>
+  <i class="<!--{$i|regex_replace:"/\,.*$/":""|escape:'html'}-->"></i>
+  <span><!--{$i|regex_replace:"/^[^\,]*\,/":""|escape:'html'}--></span>
  </<!--{if $span|default:false }-->span<!--{else}-->li<!--{/if}-->>
 <!--{/foreach}-->
 <!--{/if}-->

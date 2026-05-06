@@ -18,8 +18,8 @@
 <!--{if $url@iteration == 1}-->
 <a target="_blank" href="<!--{$url|escape:"html"}-->" class="external template-extlink"
 rel="noreferrer noopener<!--{if $urlIs == "onion"}--> nofollow<!--{/if}-->"
-aria-label="External link<!--{if isset($text) && $text != ""}--> to: <!--{$text}--><!--{/if}-->" >
-<!--{if isset($text) && $text != ""}--><!--{$text}--><!--{else}--><!--{$url}--><!--{/if}-->
+aria-label="External link<!--{if isset($text) && $text != ""}--> to: <!--{$text|escape:"html"}--><!--{/if}-->" >
+<!--{if isset($text) && $text != ""}--><!--{$text|escape:"html"}--><!--{else}--><!--{$url|escape:"html"}--><!--{/if}-->
 </a>
 <!--{/if}-->
 
