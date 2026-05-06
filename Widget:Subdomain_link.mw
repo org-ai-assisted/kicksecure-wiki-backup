@@ -19,6 +19,8 @@
 <!--{assign var="apexDomain" value="`$apexDomainPre|regex_replace:"/(?<=$projectDomainClearnetRegexp|$projectDomainOnionRegexp)\/.*/":""`"}-->
 
 <!--{assign var="requestProtocol" value="`$context|regex_replace:"/:.+/":""`" }-->
+<!--{* Allowlist the protocol to http/https only, to defend against javascript:/data:/etc URIs leaking via $context. *}-->
+<!--{assign var="requestProtocol" value="`$requestProtocol|regex_replace:'/^(?!https?$).+$/':'https'`" }-->
 
 <!--{if ! $result || $result == 'link'}--><a href="<!--{$requestProtocol|escape:"html"}-->://<!--{$sub|escape:"html"}-->.<!--{$apexDomain|escape:"html"}--><!--{$append|escape:"html"}-->"><!--{$text|escape:"html"}--></a><!--{/if}-->
 <!--{if $result == 'url'}--><!--{$requestProtocol|escape:"html"}-->://<!--{$sub|escape:"html"}-->.<!--{$apexDomain|escape:"html"}--><!--{$append|escape:"html"}--><!--{/if}-->

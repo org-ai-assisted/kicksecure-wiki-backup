@@ -8,7 +8,7 @@ of $item to create an $item-array. See /Dev/mediawiki#Widgets
 
 <<!--{if $span|default:false }-->span<!--{else}-->ul<!--{/if}-->
  class="icon-bullet-list <!--{$addClass|escape:'html'|default:''}-->"
- <!--{if isset($fontSize)}-->style="font-size:<!--{$fontSize|escape:'html'}-->;"<!--{/if}-->
+ <!--{if isset($fontSize)}-->style="font-size:<!--{$fontSize|regex_replace:'/[^0-9.a-zA-Z%-]/':''|escape:'html'}-->;"<!--{/if}-->
 >
 <!--{if isset( $item )}-->
 <!--{foreach from=$item item=i }-->
