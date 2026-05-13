@@ -1,0 +1,558 @@
+{{Header}} {{hide_all_banners}}
+{{title|title=
+{{project_name_long}} - A Security Hardened Linux Distribution
+}} {{#css:/src-copy/_Page_About.css}}
+{{#seo:
+|description={{project_name_long}} Overview. Security by Design, Usability by default. A Hardened Fork of Debian.
+|image=Kicksecure-image-twitter-post.jpg
+}}
+{{documentation_mininav}}
+{{intro|
+{{project_name_short}} is a free and open-source Linux distribution that aims to provide a highly secure computing environment. It has been developed from the ground up according to a formidable -- and time proven -- defense in-depth security design. In the default configuration,  {{project_name_short}} provides superior layered defenses of protection from many types of [[Malware_and_Firmware_Trojans#Malware|Malware]].
+
+{{project_name_short}} is a complete computer operating system. Numerous applications come pre-installed with safe defaults which can be used immediately upon installation with minimal user input.
+}}
+
+{{LeftRightImageText
+|image=Kicksecure-promo.jpg
+|addToClass=promo-style
+|imagelink=About#Hardening_by_Default
+|imageAlt=Kicksecure promo image
+|text=
+<h2>Security Hardened</h2>
+<p>
+{{project_name_short}} uses an extensively security reconfigured of the Debian base (Hardened) which can be run either on bare metal or inside multiple <u>v</u>irtual <u>m</u>achines (VMs) on top of the host OS. Its architecture provides a substantial layer of protection from malware. Applications are pre-installed and configured with safe defaults to make them ready for use with minimal user input.
+</p>
+}}
+
+{{Vspacer|15}}
+
+{{LeftRightImageText
+|image=Onion-website-promo.jpg
+|addToClass=promo-style
+|imageright=1
+|imagelink=About#Hardening_by_Default
+|imageAlt=Torified apt promo image
+|text=
+<h2>Secure and Privacy-Protected Software Installation and Upgrades</h2>
+<p>
+The security and privacy of default software management (installing and upgrading software) are much better, making it harder for anyone to send you targeted, malicious software updates. This only applies to system updates over Tor, not all your internet traffic. [[#Hardening_by_Default|Learn more]]
+</p>
+}}
+
+{{Vspacer|15}}
+
+{{LeftRightImageText
+|image=Selected-software-promo.jpg
+|addToClass=promo-style
+|imagelink=About#Hardening_by_Default
+|imageAlt=Selected software promo image
+|text=
+<h2>Curated Software Pre-Selection</h2>
+<p>
+In {{project_name_short}} no unnecessary software is installed by default such as exim, samba, cups etc. At the same time security enhancing software like AppArmor, sdwdate and tirdad are preinstalled. [[#Hardening_by_Default|Learn more]].
+</p>
+}}
+
+{{Vspacer|15}}
+
+{{LeftRightImageText
+|image=Optimized-defaults-promo.jpg
+|addToClass=promo-style
+|imageright=1
+|imagelink=About#Hardening_by_Default
+|imageAlt=Optimized defaults promo image
+|text=
+<h2>Optimized defaults</h2>
+<p>
+{{project_name_short}} enhances all kinds of security settings, including: kernel hardening, Strong Linux User Account Isolation, disabling legacy login methods, higher quality randomness (entropy), network hardening, root access restrictions, application-specific hardening and much more. [[#Hardening_by_Default|Learn more]].
+</p>
+}}
+
+{{Vspacer|10}}
+
+{{ThumbGallery|
+[[File:Kicksecure-basic-logo.png|thumb|100px|[[Dev/Logo|{{project_name_short}} logo]]|alt=Kicksecure Logo]]
+[[File:Debian.png|thumb|100px|alt=Debian logo|Debian logo]]
+[[File:Linuxkerneltux.png|thumb|100px|alt=Linux logo|Linux logo]]
+[[File:Osi_standard_logo_0.png|thumb|100px|alt=OSI logo|OSI logo]]
+[[File:Heckert_gnu.big.png|thumb|100px|alt=GNU logo|GNU logo]]
+[[File:Kicksecure-seal.png|thumb|100px|alt=Kicksecure seal|Kicksecure seal]]
+}}
+
+__TOC__
+
+= Hardening by Default =
+
+{{project_name_short}} is a hardened operating system designed to be resistant to viruses and various attacks. It is based on Debian in accordance with an advanced multi-layer defense model, thereby providing in-depth security. {{project_name_short}} provides protection from many types of malware in its default configuration with no customization required.
+
+{| class="wikitable"
+|+ ''{{project_name_short}} Hardening Features''
+|-
+
+! '''Feature'''
+! '''Description'''
+|-
+
+! <code>user-sysmaint-split</code>: multiple boot modes for better security
+| Kicksecure increases safety by enforcing use of separate accounts for daily use and administrative tasks. This is called [[sysmaint|user-sysmaint-split]]. It prevents daily used, high-risk software with large attack surface that can be hacked such as a web [[browser]] from gaining full administrative ("[[root]]") access. Therefore, otherwise trivial deployment of rootkits and [[Backdoor#Firmware_Trojan|firmware trojan]]s (a type of [[malware]] / [[Backdoor#Hardware_Backdoor|hardware backdoor]]) is prevented.
+|-
+
+! [[SUID Disabler and Permission Hardener]]
+| Improves security by disabling unnecessary SUID binaries and hardening file permissions, thereby reducing attack surface and limiting privilege escalation opportunities.
+|-
+
+! Default Package Selection
+| {{anchor|Default_security_software}} No unnecessary software is installed by default such as exim, samba, cups that otherwise gets installed by some flavors of Debian. <ref>
+Debian bookworm Xfce live ISO installed exim, samba, cups by default.
+</ref>
+|-
+
+! scope="row"|
+{{Anchor|show=true|torified_updates}}
+Secure and privacy-protected operating system (<code>apt</code>) upgrades
+[[File:Tor-logo.png|thumb|100px|alt=Tor logo]]
+| [[File:Malware-updates-promo.jpg|thumb|alt=Malware updates promo]]
+This helps protect against targeted, malicious software upgrades.
+
+By default, when using APT (Advanced Package Tool) to upgrade the system or install new software, {{project_name_short}} uses torified operating system upgrades. This means all default APT package manager source files are set to only update over the Tor anonymity network. This makes sure that update servers cannot know who the user is or their IP address. As a result, this mitigates targeted malicious software attacks. This protection is not only much stronger than what iPhones or Android devices offer, but it's also better than what most Linux distributions provide.
+
+* <u>Worst</u>: Most iPhone / Android devices <ref name=most-mobile /> connect to official app stores, and these app stores know the user's identity and IP address, creating a large risk for targeted attacks. <ref name=targeted-updates />
+* <u>Better</u>: Some Linux distributions like Debian do not link the user's identity to update servers, but they still update over the clearnet (regular internet) using the user's real IP address by default.
+* <u>Best</u>: {{Kicksecure}} ensures all system updates are done over the Tor network by default. This way, update servers cannot know the user's identity or IP address. <ref>
+* {{Github_link|
+https://github.com/Kicksecure/anon-apt-sources-list/blob/master/etc/apt/sources.list.d/debian.sources
+}}</ref>
+
+This only applies to system updates. This does not mean that all of your internet traffic is automatically torified (protected by Tor). See also: [[Privacy|Privacy Goals and Non-Goals of Kicksecure]]
+|-
+
+! Secure Package Sources Configuration
+| {{anchor|Secure_Package_Sources_Configuration}} HTTPS (TLS) is enabled by default in APT. <ref>
+Debian installed using a Debian bookworm Xfce live ISO calamares came with an <code>/etc/apt/sources.list</code> file using <code>http://</code> (unencrypted) instead of the more secure <code>https://</code> (TLS) by default.
+</ref>
+|-
+
+! TCP ISN CPU <br />Information Leak Protection
+| [https://github.com/{{project_name_short}}/tirdad tirdad (TCP Initial Sequence Numbers Randomization)] prevents TCP ISN-based CPU Information Leaks; see footnote. <ref><blockquote>The Linux kernel has a side-channel information leak bug. It is leaked in any outgoing traffic. This can allow side-channel attacks because sensitive information about a system's CPU activity is leaked. It may prove very dangerous for long-running cryptographic operations. Research has demonstrated that it can be used for de-anonymization of location-hidden services.</blockquote></ref>
+|-
+
+! <code>security-misc</code>
+| [https://github.com/{{project_name_short}}/security-misc <code>security-misc</code>] enhances miscellaneous security settings related to:
+* kernel hardening settings as recommended by the Kernel Self Protection Project (KSPP)
+* protecting Linux user accounts against brute force attacks
+* enforcing [[Dev/Strong Linux User Account Isolation|Strong Linux User Account Isolation]]
+* disabling legacy login methods via [[Dev/Strong_Linux_User_Account_Isolation#Console_Lockdown|Console Lockdown]] for improved security hardening
+* higher quality randomness (entropy) generation <ref>
+Better encryption is achieved via preinstalled random number generators, specifically:
+* Loading of the jitterentropy-rng kernel module by default.
+* Installation of the user space entropy gathering daemons haveged and jitterentropy-rng by default.
+* See also: [[Dev/Entropy]].
+</ref>
+* sysctl
+* boot parameters
+* various blacklisted kernel modules
+* network hardening
+* restrictive mount options
+* root access restrictions
+* access rights restrictions
+* application-specific hardening
+* stricter <code>umask</code> for non-root accounts
+|-
+
+! Secure network time synchronization using <code>sdwdate</code>
+| Secure Distributed Web Date ([[sdwdate]]) mitigates threats from [[TimeSync#Attacks|time based attacks]] by not relying upon unauthenticated NTP.
+|-
+
+! USB device authorization hardening
+| [[USBGuard]] is enabled by default to mitigate threats from malicious USB devices by enforcing policy-based USB device authorization.
+|-
+
+! Default security software <br />installations
+| Software like [[AppArmor]]
+
+* [https://github.com/{{project_name_short}}?q=apparmor-profile apparmor profiles by {{project_name_short}}], [https://packages.debian.org/{{stable project version based on Debian codename}}/apparmor-profiles apparmor-profiles by Debian], [https://packages.debian.org/{{stable project version based on Debian codename}}/apparmor-profiles-extra apparmor-profiles-extra] for confinement of potentially compromised, high-risk application.
+|-
+
+! [https://github.com/{{project_name_short}}/open-link-confirmation Open Link Confirmation]
+| This is enabled by default and prevents links from being unintentionally opened in supported browsers.
+|-
+
+! No open ports by default.
+| Kicksecure provides a much lower attack surface since there are no open server ports by default unlike other Linux distributions ([[Debian_Tips#Open_Ports|such as Debian]]). All unsolicited incoming connections are rejected.
+
+{{sdebian
+|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch03s05.en.html
+|text=Run the minimum number of services required
+}}
+|-
+
+! Bluetooth hardening
+| Bluetooth is disabled by default to reduce attack surface. Manual user activation is required when Bluetooth is needed. <ref>
+https://github.com/Kicksecure/security-misc/tree/master?tab=readme-ov-file#bluetooth-hardening
+</ref>
+|-
+
+! Hardened SSH client and server configuration
+| Secure [[SSH]] defaults reduce attack surface and strengthen cryptographic settings for both SSH client and server configurations. <ref>
+https://github.com/Kicksecure/security-misc/tree/master/etc/ssh
+</ref>
+|-
+
+! Protection from supply chain attacks
+| [[Digital_Signature_Policy|Digital Signature Policy]]: {{project_name_short}} enforces digital signature verification at every stage of its development. Source code commits, git tags, build process and final downloads must all adhere to the policy. Unsigned code execution and deployment are strictly prohibited. This policy mitigates supply chain attacks by ensuring authenticity and integrity throughout the software development and distribution process.
+|-
+
+! Protects in-house source code from malicious [[Unicode]]
+| Defenses are implemented to detect and prevent adversarial Unicode encodings in source code which could hide vulnerabilities in reviews. <ref>
+[[Comparison_with_Others#unicode|unicode]]
+</ref>
+|-
+
+! [[Trust#canary|Warrant canary]]
+| Public statement confirming no secret warrants or gag orders have been served on the project, helping maintain user trust.
+|-
+
+! Protection from physical attacks
+|
+* [[Full Disk Encryption|{{fde}}]] is enabled by default in the ISO installer (Calamares).
+* Encouragement to use FDE, since [[systemcheck]] on host {{os}} points out if FDE is absent or enabled.
+* Recovery Options Lockdown
+** [https://forums.kicksecure.com/t/remove-linux-recovery-mode-boot-option-from-default-grub-boot-menu/727 Linux recovery mode boot option (Single User Mode) has been removed from the default GRUB boot menu for security and usability reasons]. (See how to use [[Recovery#Recovery_Mode|Recovery Mode]].)
+** [https://forums.kicksecure.com/t/harden-dracut-initramfs-generator-by-disabling-recovery-console/724/1 Disabled <code>dracut</code> recovery console.]
+* Encouragement of, and usability improvements for, setting a [[Protection_Against_Physical_Attacks#Bootloader_Password|Bootloader Password]].
+* [[Systemcheck#Physical_Security_Check|Physical Security Check]] by systemcheck points out:
+** {{fde}} status: enabled or absent on host {{os}}
+** Password status: enabled or absent for all Linux user accounts
+** Autologin status: enabled or absent
+** Root account status: locked or unlocked ([[Root#Root_Account_Management|Root Account Management]])
+* [https://forums.kicksecure.com/t/iso-cryptsetup-full-disk-encryption-fde-set-more-secure-default-encryption-settings/588 Set more secure Full Disk Encryption (FDE) settings in Calamares installer].
+* Comprehensive documentation on [[Protection_Against_Physical_Attacks|Protection against Physical Attacks]].
+|-
+
+! [[emerg-shutdown|Emergency shutdown]]
+| Forcibly powers off the system in emergency situations (for example, via a panic key sequence), helping protect sensitive data during physical compromise scenarios.
+|-
+
+! [[Ram-wipe|<code>ram-wipe</code>]]
+| Wipes RAM at shutdown and reboot to help prevent information extraction from memory after power-off.
+|-
+
+! [[deep_scan_ready|Deep scan ready]]
+| The system can be inspected from a trusted external environment without booting the suspect {{os}}, enabling offline or detached scanning of storage and boot components. It also supports early boot instrumentation, allowing inspection and measurement of boot and startup components at a very early stage before the full operating system is running.
+|-
+
+! Documentation
+|
+* Extensive [[documentation]]
+* [[Digital_Signature_Policy|Digital Signature Policy]]: Users are consistently encouraged to apply the process of [[Verifying Software Signatures]]. This is critical because verifying digital signatures protects users from compromised, tampered, or malicious software. It ensures authenticity, safeguards integrity, and forms a central part of the project's overall security model.
+* [[Dev/Build Documentation|Build documentation]]: Users are encouraged to build their own images, with documentation and forum support.
+|-
+
+|}
+
+= Development Vision =
+== Introduction ==
+The reason the Free and Open Source {{project_name_short}} project exist is to offer a system that provides a [[Reasonable Security|reasonable security]]-hardened baseline, with the in-built flexibility to apply additional hardening dependent upon the user's threat model, hardware capabilities, motivation and knowledge. <ref>
+It is also accepted that no "perfect configuration" exists that can make a system invulnerable against advanced adversaries. Further, systems that are excessively hardened can become almost unusable except for the most advanced individuals.
+</ref>
+
+== Security Guide Limitations ==
+While many valuable security guides exist, better security and privacy for the masses necessitates software that applies a majority of hardening instructions by default. The table below provides a further rationale for this position.
+
+{| class="wikitable"
+|+ ''Security Guide Limitations''
+|-
+! '''Factor'''
+! '''Description'''
+|-
+! Initial vulnerability
+| When a base system is first installed, various security customizations are not yet applied. All users are vulnerable during this period.
+|-
+! Recipient insecurity
+| Security principles do not exist in a vacuum:
+* Even after applying various security hardening steps, correspondence/network partners might have serious, unaddressed vulnerabilities.
+* Some security problems cannot be solved by individuals and may rely on factors in the broader ecosystem. For example:
+** Advanced adversaries perform continual surveillance of all Internet traffic and attempt to attribute collected meta-data to individuals.
+** Following a guide to enhance entropy is insufficient if Tor relays being used are insecure.
+** Often personal security can only be improved if the security of others is also improved.
+|-
+! Reliance on human memory
+| Adequate hardening often depends on discovering and remembering to apply all necessary steps from favorite security guides.
+|-
+! Error risks
+| Manually applying security guide steps can lead to mistakes that render the whole procedure ineffective.
+|-
+! Time requirements
+| Security guide steps are often lengthy and cover many different facets of computing.
+|-
+! Secure guide discovery
+| There are countless security/hardening guides available on the Internet. It is impossible to follow them all and serious research is required to find valuable new resources.
+|-
+! Incompleteness
+| Logically there is not one definitive, all-encompassing security guide. This means some users harden the kernel and install CPU microcode updates, while others rely on sandboxing and implement better random number generators, and so on. Most users miss critical elements because they are simply not aware they exist.
+|-
+! Currency
+| Even the best security guides often contain outdated material. This is especially true for technically detailed or lengthy guides that canvass many topics.
+|-
+! Publication form
+| The form of security guides can effect their utility. For example, those published in blogs and which do not allow comments have grave disadvantages compared to systems relying on collaborative version control software (like git) or collaborative websites (such as a wiki). The reason is contributors can easily fix issues or update contents.
+|-
+! Popularity
+| Security guides which have low popularity cannot effect change and improve security practices if most people are unaware they exist.
+|}
+
+For these reasons {{project_name_short}} will remain focused on enabling the majority of (reasonable) hardening settings by default, and allowing additional settings to be easily enforced via installable packages. For further information on this topic, see: [https://forums.whonix.org/t/the-problem-with-security-guides-and-how-we-can-fix-it/8563 The Problem with Security Guides and How We Can Fix It].
+
+== Implementation of the Securing Debian Manual ==
+The {{project_name_short}} project has been studying the [https://www.debian.org/doc/manuals/securing-debian-manual/ Securing Debian Manual], which is a security hardening guide for Debian. {{project_name_short}} is applying the operating system hardening, suggested in the manual, by default as much as reasonably possible.
+
+Unfortunately, the Securing Debian Manual has not been updated in a while <ref>
+Securing Debian Manual:
+
+still referring to:
+
+* <code>sysvinit</code> and not mentioning <code>systemd</code>
+* <code>initrd</code> and not mentioning <code>dracut</code>
+</ref> and is therefore already somewhat dated. For this reason {{project_name_short}} also documents the up-to-date security hardening knowledge we gather in our wiki as a public service.
+
+For attribution, the wiki [[Template:Sdebian]] is added to all wiki pages where the Securing Debian Manual has been considered. A list of these pages can be found on [[Special:WhatLinksHere/Template:Sdebian]]. Example for the disclaimer below:
+
+{{sdebian
+|link=https://www.debian.org/doc/manuals/securing-debian-manual/intro.en.html
+|text=Introduction
+}}
+
+{{Anchor|iPhone and Android Level Security for Linux Desktop Distributions}}
+{{Anchor|goals}}
+
+== Planned Features ==
+
+The {{project_name_short}} development roadmap includes various security improvements:
+
+* {{check-todo}} Many features are already available for testing, see [[Test]] wiki page. {{check-todo}}
+* {{check-todo}} Encrypted and/or authenticated system-wide DNS (domain name resolution) <ref>
+[https://forums.whonix.org/t/use-dnscrypt-by-default-in-kicksecure-not-whonix/8117 use DNSCrypt by default]
+</ref> to mitigate against threats from DNS cache poisoning aka [https://en.wikipedia.org/wiki/DNS_spoofing DNS spoofing]. <ref>
+DNS spoofing results in traffic being diverted to the attacker's computer (or any other computer).
+</ref> See also [[DNS Security]]. {{check-todo}}
+* {{check-todo}} Validating DNS. {{check-todo}}
+* {{check-todo}} [[apparmor.d]] {{check-todo}}
+* {{check-todo}} [[Verified_Boot#Protecting_the_Kernel_Command_Line|Protecting the Kernel Command Line]] {{check-todo}}
+* {{check-todo}} [[Sovereign Boot]] {{check-todo}}
+
+== {{project_name_short}} Development Goals ==
+{{project_name_short}} is a security-hardened Linux Distribution. (<u>Mobile version not planned yet.</u>)
+
+This section details potential future security enhancements for {{project_name_short}}.
+
+(The wiki source for the following text can be found [[Template:Kicksecure_Android|in Template:Kicksecure_Android]].)
+{{kicksecure_Android}}
+
+{{project_name_short}} will not implement these kinds of user freedom restrictions since it is not required nor desirable. The capability to replace the operating system or gain administrator access will remain fully supported. Many popular device operating systems utilize security technologies which restrict user freedoms. In contrast, {{project_name_short}} aims to utilize the same security concepts for the goal of empowering the user and increasing protection from malware.
+
+It is theoretically possible to provide some of the same iPhone / Android security concepts on a Linux computer too. Steps have already been made to apply mobile device security concepts to Linux distributions such as [https://github.com/{{project_name_short}}/security-misc security-misc] and [https://github.com/roddhjav/apparmor.d apparmor.d]. Security technologies like hardened kernels or verified boot used by popular mobile operating systems could also be ported to Linux distributions. Community contributions are gladly welcomed! Here is a list of potential security enhancements for {{project_name_short}}:
+
+* {{check-yes}} [[sysmaint|<code>user-sysmaint-split</code>: multiple boot modes for better security]] {{check-yes}}
+* {{check-yes}} [[SUID Disabler and Permission Hardener]] {{check-yes}}
+* {{check-todo}} [[noexec]] {{check-todo}}
+* {{check-todo}} [https://forums.whonix.org/t/allow-loading-signed-kernel-modules-by-default-disallow-kernel-module-loading-by-default/7880 enforce kernel module software signature verification] {{check-todo}}
+* {{check-todo}} [[Dev/VirusForget|deactivate malware after reboot from non-root compromise]] {{check-todo}}
+* {{check-todo}} [https://forums.whonix.org/t/walled-garden-firewall-whitelisting-application-whitelisting-sudo-lockdown-superuser-mode-protected-mode/5725 walled garden, firewall whitelisting, application whitelisting, sudo lockdown, superuser mode, protected mode] {{check-todo}}
+* {{check-todo}} [https://forums.whonix.org/t/kernel-recompilation-for-better-hardening/7598 Hardened Kernel] {{check-todo}}
+* {{check-todo}} [[Verified_Boot#Hash_Check_all_Files_at_Boot|Verified Boot]] {{check-todo}}
+* {{check-todo}} [[Verified_Boot#Protecting_the_Kernel_Command_Line|Protecting the Kernel Command Line]] {{check-todo}}
+* {{check-todo}} [[Sovereign Boot]] {{check-todo}}
+* {{check-yes}} [[signify|<code>signify</code>]] [https://forums.whonix.org/t/signify-openbsd/7842/5 signed releases] {{check-yes}}
+* {{check-todo}} Post-Quantum Cryptography ([[PQCrypto]]) [https://forums.whonix.org/t/use-codecrypt-to-sign-whonix-releases/7844/2 resistant signing of releases] {{check-todo}}
+* {{check-todo}} [https://forums.whonix.org/t/untrusted-root-does-it-make-sense-to-try-to-improve-security-by-restricting-root/7998 Untrusted Root User] {{check-todo}}
+* {{check-yes}} [[ram-wipe]]: Wipe RAM at shutdown to help prevent information extraction from memory. {{check-yes}}
+
+= Design =
+
+== Usability by Default ==
+
+While developed with security-focused design goals, {{project_name_short}} remains highly flexible. The layered approach to security allows applications to retain usability. {{project_name_short}} can be used for everyday "general-purpose computing" or for more risky activities that require a highly advanced security-centric platform. Since {{project_name_short}} is [[Reasons for Freedom Software|Freedom Software]] users may install any application of their choosing -- no restrictions are placed on how {{project_name_short}} can be used, customized or modified.
+
+{{project_name_short}} aims to maximize usability by default so it can be utilized as an everyday, multipurpose operating system by users of all skill levels.
+
+{| class="wikitable"
+|+ ''{{project_name_short}} Usability Features''
+|-
+
+! '''Feature'''
+! '''Description'''
+|-
+
+! Debian Usability Fixes
+|
+* Better download and instalation instructions.
+* Better usability installer. Uses Calamares by default. <ref>
+Debian default download link uses D-I.
+
+Debian Live uses Calamares.
+</ref>
+* Functional default APT sources configuration. <ref>
+Debian comes with a broken <code>/etc/apt/sources.list</code> file by default.
+
+* Debian default <code>/etc/apt/sources.list</code> comes with a broken <code>deb cd-rom:</code> line.
+* Debian default <code>/etc/apt/sources.list</code> comes with <code>http</code> instead of <code>https</code> by default.
+* Debian default <code>/etc/apt/sources.list</code> has only the <code>debian-security</code> repository enabled by default but not the <code>debian</code> repository. As a result, no packages are installable until the user figures out how to add that line to APT sources.
+
+When using Debian Installer (D-I) (not Calamares), installing while not using a network mirror, Debian default <code>/etc/apt/sources.list</code> comes empty except for a broken <code>deb cd-rom:</code> line.
+</ref>
+* <code>sudo</code> pre-configured by default. <ref>
+On Debian, when installing using D-I (Debian Installer), when setting a root password during installation, the user must run after a new installation <code>su</code> followed by <code>/usr/bin/adduser user sudo</code> and reboot (or re-login) to be able to user <code>sudo</code>.
+</ref>
+* <code>bash-completion</code> installed by default so for example by typing <code>sudo apt install libreo</code> followed by the TAB key a word completion to <code>libreoffice</code> will be suggested.
+* <code>zsh</code> installed as default shell that supports TAB word completion, colorful output, etc.
+|-
+
+! Simplicity and flexibility
+|
+* Package [https://github.com/{{project_name_short}}/vm-config-dist vm-config-dist] simplifies shared folder set up for virtual machines. <ref>
+It currently only assists with using shared folders in VirtualBox and KVM when using the official VM images. Virtual machines installed from an ISO file will need to have the [https://github.com/{{project_name_short}}/vm-config-dist vm-config-dist] package installed manually.
+</ref>
+* Package [https://github.com/{{project_name_short}}/usability-misc usabilty-misc] is installed by default, increasing flexibility and providing numerous, miscellaneous usability features. <ref>
+Such as creating default folders, allowing commands to be run without a password, simplifying the running of OpenVPN as an unpriveleged user, and much more.
+</ref>
+|-
+
+! Live Mode
+| [[Live Mode]] can be activated from the boot menu. Live Mode discards all data after shutdown, leaving no trace of the session.
+|-
+
+! System maintenance panel
+| [[System Maintenance Panel]] (<code>sysmaint-panel</code>) provides a graphical interface for common administrative tasks such as software updates, package installation, account management, password changes, keyboard layout configuration, and system checks.
+|-
+
+! Keyboard layout tooling
+| Tools are provided for simplified keyboard layout configuration system-wide (console and GUI), in early boot (GRUB menu and disk encryption passphrase prompt), and in recovery environments. See also: [[Keyboard Layout]].
+|-
+
+! Popular applications
+| Popular applications come [[Software|pre-installed]] and configured with safe defaults to make them ready for use right out of the box.
+|-
+
+! Non-interactive package management helpers
+| Convenience wrappers are provided for scripting and automation, such as <code>apt-get-noninteractive</code> and <code>dpkg-noninteractive</code>, and a reset helper such as [[Configuration_Files#Reset_Configuration_Files_to_Vendor_Default|<code>apt-get-reset</code>]].
+|-
+
+! File and permission inspection helpers
+| Convenience tools such as [[chmod-calc]] are pre-installed to simplify inspecting file and directory permissions.
+|-
+
+! Data protection
+| Sensitive user data is protected by state-of-the-art cryptographic tools:
+* Local user data can be protected by Linux Unified Key Setup ([https://gitlab.com/cryptsetup/cryptsetup/-/wikis/home LUKS]) which uses strong encryption to safeguard personal information. See [[Full Disk Encryption]].
+* Communications (email) can be both [https://en.wikipedia.org/wiki/End-to-end_encryption end-to-end encrypted] and [https://en.wikipedia.org/wiki/Digital_signature signed] with [[OpenPGP]].
+|-
+
+! [[Protection_Against_Physical_Attacks#grub-pwchange|<code>grub-pwchange</code>]]
+| Tool for setting and managing a GRUB bootloader password, strengthening protection against physical attacks by restricting unauthorized boot menu access.
+|-
+
+! [[Login#Configuring_Passwords|<code>pwchange</code>]]
+| Terminal-based tool for changing Linux account passwords using a simple command line interface.
+|-
+
+! <code>crypt-pwchange</code>
+| Utility for changing the passphrase of LUKS encrypted volumes.
+|-
+
+! Unicode search tools
+| Tools such as [[Unicode#grep-find-unicode-wrapper|grep-find-unicode-wrapper]] and [[unicode-show]] are pre-installed to help search files and folders for suspicious or unexpected [[Unicode]].
+|-
+
+|}
+
+== Based on Debian ==
+
+{{Based_on_Debian}}
+
+== Based on Freedom Software ==
+
+Many people wonder why developers would spend countless hours of their own time to build an operating system and then give it away. {{project_name_short}} developers believe it is immoral to benefit from those [https://en.wikipedia.org/wiki/Free_software Free] / [[Reasons for Freedom Software|Freedom Software]] components and give back nothing to the community. We stand on the shoulders of giants. {{project_name_short}} and many other Libre software projects are only made possible because people invested time in writing code and kept it accessible for the public's benefit. Of course, a lot of us just find it great fun.
+
+== User Population / Promotion ==
+
+* Apply as many security settings by default without breaking usability too much: [[Stable Version User Experience]]
+* {{project_name_short}} is already the base for [[Whonix]] - Anonymous Operating System.
+
+https://www.wilderssecurity.com/threads/hardened-debian-in-development-feedback-wanted.408245/
+
+= Releases =
+
+== {{project_name_short}} Version ==
+Each {{project_name_short}} release is based on a particular version of Debian:
+
+{| class="wikitable"
+|+ {{project_name_short}} Version
+|-
+
+! <u>{{project_name_short}} version</u> !! ''Debian Version'' !! ''Debian Codename'' !! Supported
+|-
+
+| {{project_name_short}} <code><u>17</u></code> || ''<code>12</code>'' || [https://www.debian.org/releases/bookworm/ <code>bookworm</code>] || Being deprecated.
+|-
+
+| {{project_name_short}} <code><u>18</u></code> || ''<code>13</code>'' || [https://www.debian.org/releases/trixie/ <code>{{Stable project version based on Debian codename}}</code>] || {{Yes}}
+|-
+
+|}
+
+Users can manually check the {{project_name_short}} version at any time by following [[Systemcheck#Check_Version|Check Version]].
+
+{{Anchor|Release and Support Schedule}}
+
+== Release Schedule ==
+{{project_name_short}} does not have a fixed release schedule. A new stable release only becomes available when it is deemed ready.
+
+== Support Schedule ==
+
+{| class="wikitable"
+|+ ''{{project_name_short}} Support Schedule''
+|-
+
+! '''Notice'''
+! '''Details'''
+|-
+
+! Platform specific
+|
+* [[Non-Qubes-{{project_name_short}}|Non-Qubes-{{project_name_short}}]]:
+** VMs: ''<u>One month</u>'' after a new stable version of <u>Debian</u> is released, {{project_name_short}} VMs may no longer be supported on any older version of Debian. All users must upgrade the Debian platform promptly after the deprecation notice to continue using {{project_name_short}} safely.
+** [[ISO]]: ''<u>One month</u>'' after a new stable version of <u>{{project_name_short}}</u> is released, older versions will no longer be supported. All users must upgrade the {{project_name_short}} platform promptly to remain safe.
+* [[Qubes|{{Q project name short}}]]:
+** Version [https://github.com/QubesOS/qubes-issues/issues/10219 <code>17</code>: The goal is to provide support as long as Qubes <code>R4.<u>2</u></code> receives security support from Qubes] and Debian. <ref>
+Responsible for:
+
+* Debian security issues -> Debian project
+* Qubes security issues -> Qubes project
+* {{project_name_short}} security issues -> {{project_name_short}} project
+</ref>
+** Version <code>18</code>: Will be recommended as soon as it is available, even if Qubes <code>R4.<u>3</u></code> is only available as {{RC}}. <ref>
+Why? Because it includes much newer software packages. That is what developers are using and where the development focus lies. {{project_name_short}} is a small project and does not have a dedicated team for <code>oldstable</code> support. Therefore, <code>oldstable</code> support is maintained as a side project.
+</ref>
+|-
+
+! Deprecation Notices
+| We aim to announce deprecation events one month in advance to remind users to upgrade in the [https://forums.{{project_clearnet}}/c/news <code>{{project_clearnet}}</code> news forum]. [[Stay Tuned]]! All users must upgrade the respective platform promptly to remain safe.
+|-
+
+|}
+
+= Next Steps =
+
+Learning more about {{project_name_short}} is the best way to determine whether it is a suitable solution in your personal circumstances. The following chapters are recommended:
+
+* The [[Warning]] page to understand the security limitations of {{project_name_short}}.
+* Further information about {{project_name_short}} [[Features]].
+* The implied [[Trust]] placed in {{project_name_short}} when it is used.
+* The Security Guide, Advanced Security Guide and [[Design]] chapters detailing the {{project_name_short}} specifications, threat model and implementation.
+* Other relevant [[Documentation|Documentation]] explaining how to use {{project_name_short}} safely.
+
+= Footnotes =
+<references />
+{{Footer}}
+[[Category:Documentation]]
