@@ -1,0 +1,75 @@
+{{Header}}
+{{Title|title=
+Firefox
+}}
+{{#seo:
+|description=Using Firefox in {{project_name_long}}.
+|image=Firefox_logo.png
+}}
+{{browser_mininav}}
+[[File:Firefox_logo.png|thumb|Mozilla Firefox logo]]
+{{intro|
+Using Firefox in {{project_name_short}}.
+}}
+Kicksecure is not officially associated with Mozilla Firefox. See [[#Disclaimer|Disclaimer]]. {{Other_Browsers}}
+= Installation and Usage =
+Select the stable version or rapid release.
+
+{{Tab
+|type=controller
+|linkid=firefox-version-tabs
+|content=
+
+{{Tab
+|title= == Stable Version ==
+|content=
+Firefox Extended Support Release (ESR) can be installed from Debian packages sources. See [[Install_Software#Package_Installation_from_Debian_Package_Sources|Package Installation from Debian Package Sources]].
+
+{{Install Package|package=
+firefox-esr
+}}
+}} <!-- close tab: Stable Version -->
+
+{{Tab
+|title= == Rapid Release ==
+|content=
+One option is to install the rapid release version of Firefox using [[Install_Software#Flatpak|flatpak]] from <code>flathub</code>. Special instructions are also required in this case.
+
+{{Flatpak Install|package=
+org.mozilla.firefox
+}}
+
+=== Usage ===
+
+{{CodeSelect|code=
+flatpak run org.mozilla.firefox
+}}
+
+=== Update ===
+
+* {{non_q_project_name_long}}: {{CodeSelect|code=
+flatpak update
+}}
+* {{q_project_name_long}} Template: {{CodeSelect|code=
+http_proxy=http://127.0.0.1:8082 https_proxy=http://127.0.0.1:8082 flatpak update
+}}
+
+=== Qubes Specific ===
+
+[https://github.com/QubesOS/qubes-issues/issues/6325 flatpak installed applications do not show up in Qubes start menu]
+}} <!-- close tab: Rapid Release -->
+
+}} <!-- close tab controller: firefox-version-tabs -->
+
+= Disclaimer =
+{{firefox_legal_disclaimer}}
+
+= Related =
+* [[Chrome]]
+* [[Chromium]]
+* [[Dev/Default Browser|Kicksecure Default Browser Development Considerations]]
+
+= Footnotes =
+<references />
+{{Footer}}
+[[Category:Documentation]]
