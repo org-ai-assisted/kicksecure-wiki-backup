@@ -1,0 +1,18 @@
+{{Header}}
+{{title|
+title=Based on Kicksecure
+}}
+{{#seo:
+|description=Derivatives of Kicksecure.
+}}
+{{documentation_mininav}}
+[[File:Kicksecure-seal.png|thumb|130px|border|alt=Kicksecure seal|Kicksecure Hardened]]
+{{intro|
+Derivatives of Kicksecure.
+}}
+List of Linux distributions based on Kicksecure:
+
+* [[Whonix]]
+<references />
+{{Footer}}
+[[Category:Documentation]]
