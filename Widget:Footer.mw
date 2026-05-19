@@ -7,6 +7,8 @@
 <!--{assign var="apexDomain" value="`$apexDomainPre1|regex_replace:"/(?<=$projectDomainClearnetRegexp|$projectDomainOnionRegexp)\/.*/":""`"}-->
 
 <!--{assign var="requestProtocol" value="`$context|regex_replace:"/:.+/":""`" }-->
+<!--{* Allowlist the protocol to http/https only — same defence as Widget:Subdomain_link. *}-->
+<!--{assign var="requestProtocol" value="`$requestProtocol|regex_replace:'/^(?!https?$).+$/':'https'`" }-->
 
 <div class="content-wrapper">
 
