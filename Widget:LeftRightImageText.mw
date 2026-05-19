@@ -2,7 +2,7 @@
        so they can sneak past a literal-scheme blacklist), then block dangerous
        schemes, then html-escape for the attribute. *}-->
 <!--{assign var="safeImageLink" value=$imagelink|default : ''|regex_replace:'/[\x00-\x1F\x7F]/' : ''|regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'|escape:'html'}-->
-<!--{assign var="safeImage"     value=$image    |default : ''|regex_replace:'/[\x00-\x1F\x7F]/' : ''|regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'|escape:'html'}-->
+<!--{assign var="safeImage"     value=$image|default : ''|regex_replace:'/[\x00-\x1F\x7F]/' : ''|regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'|escape:'html'}-->
 
 <div class="left-right-image-text <!--{if isset($imageright)}-->image-right<!--{/if}--> <!--{$addToClass|escape:'html'|default : ''}-->">
   <div class="image">
