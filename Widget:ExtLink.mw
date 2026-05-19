@@ -10,7 +10,7 @@
 <!--{foreach $urls as $url}-->
 
 <!--{* Strip ASCII control chars and block dangerous URL schemes. See Widget:LeftRightImageText for rationale. *}-->
-<!--{assign var="safeUrl" value=$url|regex_replace:'/[\x00-\x1F\x7F]/':''|regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'|escape:"html"}-->
+<!--{assign var="safeUrl" value=$url|regex_replace:'/[\x00-\x1F\x7F]/':""|regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'|escape:"html"}-->
 
 <!--{assign var="urlIs" value="general"}-->
 <!--{if $url|regex_replace:"/^https?:\/\/[^\.\/]+\.?[^\.\/]+\.onion(\/|$)/":""|strlen < $url|strlen}--><!--{assign var="urlIs" value="onion"}--><!--{/if}-->
