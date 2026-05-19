@@ -1,0 +1,368 @@
+{{Header}}
+{{title|title=
+Computer Security Introduction
+}}
+{{#seo:
+|description=Computer Security Introduction and General Advice. Steps for Better Security before Installing {{project_name_long}}.
+|image=Abstract-989922-640.jpg
+}}
+[[File:Abstract-989922-640.jpg|thumb]]
+{{intro|
+{{security_intro}}
+
+This page is an introduction to computer security.
+}}
+= Introduction =
+
+{{mbox
+| image   = [[File:Ambox_warning_pn.svg.png|40px|alt={{project_name_short}} first time users warning]]
+| text    =
+Before reviewing chapters in the Computer Security section, be sure to also read the [[Warning]] page.
+}}
+
+{{mbox
+| type      = notice
+| image   = [[File:Ambox_notice.png|40px|alt=Info]]
+| text    = Wiki entries in this section purposefully focus on:
+* General computing security information.
+* Host operating system security advice.
+* Preparatory steps before installing {{project_name_short}} using a Type I hypervisor ({{q_project_name_long}}) or a Type II hypervisor like VirtualBox or KVM.
+}}
+
+== Essentials ==
+
+{{mbox
+| type    = notice
+| image   = [[File:Ambox_notice.png|40px|alt=Info]]
+| text    = ''"Security is a process, not a product."'' -- Bruce Schneier, encryption and security expert. <ref name=schneier_security>
+https://www.schneier.com/essays/archives/2000/04/the_process_of_secur.html
+</ref> <ref>
+In other words, security is a continual process -- not an end destination -- that is informed by new knowledge that is constantly gathered.
+</ref>
+}}
+
+It is important to understand that {{project_name_short}} and all general software cannot guarantee absolute anonymity or security; 'perfect security' is a mirage. The reason is flaws in hardware and software are ever-present, as continual upgrades and patches inevitably introduce further coding <ref>
+Security bugs generally fall into two categories: those which pose a passive threat due to eventual erroneous behavior, and the introduction of accidental vulnerabilities that are exploitable with malicious inputs.
+</ref> or design errors which attackers of varying skill can profit from. As a consequence, the best approach is to try and mitigate risk exposure and provide defense in depth. <ref name=schneier_security /> <ref>
+Schneier also notes several other security principles: limit privilege, secure the weakest link, use choke points, fail securely, leverage unpredictability, enlist the users, embrace simplicity, detect attackers, respond to attackers, be vigilant, and watch the watchers.
+</ref>
+
+With this understanding, a material improvement in security and anonymity requires 'raising the bar' against potential attackers and eavesdroppers: <ref>
+https://github.com/maqp/tfc/wiki/Threat-model
+</ref>
+
+<blockquote>Security is a process, not a product. It is also about economics. Briefly explained, each attacker has a set of capabilities, privileges, and a certain amount of budget, time and motivation. Given enough of these resources, security of any process will fail; the goal when securing a system is to add layers of security that make attacks too expensive. Nation-state actors have massive budgets, and no single system can be made secure enough against targeted attacks. However, if widely deployed, systems that cannot be compromised with automated attacks, increase the attacker's cost linearly and thus force the attacker to pick targets. Such systems are the only way to make mass surveillance infeasibly expensive.</blockquote>
+
+* The Computer Security Education section
+* [[Post Install Advice|Post-installation Security Advice]]
+* [[Warning|Warnings]]
+
+If you have more time available, then it is recommended to read the [[Documentation]] widely.
+
+== Motivation ==
+
+If motivation is needed to secure your computer, refer to these articles:
+
+* [https://krebsonsecurity.com/2012/10/the-scrap-value-of-a-hacked-pc-revisited/ The Scrap Value of a Hacked PC, Revisited (blog post).]
+* [https://krebsonsecurity.com/2013/06/the-value-of-a-hacked-email-account/ The Value of a Hacked Email Account (blog post).]
+
+If the reader is time-poor, then just review the [https://krebsonsecurity.com/wp-content/uploads/2012/10/HackedPC2012.png Hacked PC] or [https://krebsonsecurity.com/wp-content/uploads/2013/06/HE-1-600x333.jpg Hacked Email] figures, or briefly scan the summary tables below.
+
+=== Hacked PC ===
+
+US journalist and investigative reporter Brian Krebs notes there are a large number of malicious uses for hacked PCs, including ransomware, bot activity, stolen account credentials, webmail spam and much more.
+
+{| class="wikitable"
+|+ ''Value of a Hacked PC'' <ref>
+https://krebsonsecurity.com/2012/10/the-scrap-value-of-a-hacked-pc-revisited/ Figure 1.
+</ref>
+|-
+
+! '''Category'''
+! '''Attacker Activity'''
+|-
+
+! Account Credentials
+| eBay/Paypal fake auctions
+Online gaming, website FTP, Skype/VoIP credentials <br />
+Client-side encryption certificates
+|-
+
+! Bot Activity
+| Zombies: spam, DDoS extortion, click fraud and CAPTCHA-solving
+Anonymization proxy
+|-
+
+! Email Attacks
+| Webmail spam
+Stranded abroad advance scams <br />
+Harvesting email contacts and associated accounts <br />
+Access to corporate email
+|-
+
+! Financial Credentials
+| Bank account and credit card data
+Stock trading account <br />
+Mutual fund / 401k account
+|-
+
+! scope="row" | Hostage Attacks
+| Fake anti-virus
+Ransomware and email account ransom<br />
+Webcam image extortion
+|-
+
+! Reputation Hijacking
+| Facebook, Twitter, LinkedIn, Google
+|-
+
+! Virtual Goods
+| Online gaming characters, goods/currency
+OS and PC game license keys
+|-
+
+! Web Server
+| Phishing, malware download site <br />
+Warez/privacy, child pornography server <br />
+Spam site
+|-
+
+|}
+
+=== Hacked Email Account ===
+
+Krebs also notes the significant value of a hacked email account. Just one breach of an online email service permits the theft of valuable personal data, account/contact harvesting, re-sale of retail accounts, spam and much more. An email account is a particularly weak link, since once under the attacker's control they can reset the password, along with the passwords of many linked services and accounts.
+
+{| class="wikitable"
+|+ ''Value of a Hacked Email Account'' <ref>
+https://krebsonsecurity.com/2013/06/the-value-of-a-hacked-email-account/ Figure 1.
+</ref>
+|-
+
+! '''Category'''
+! '''Attacker Activity'''
+|-
+
+! scope="row" | Employment
+| Forwarded work documents and work email
+Fedex, UPS, Pitney Bowes account <br />
+Salesforce, ADP accounts
+|-
+
+! Financial
+| Bank accounts
+Email account ransom <br />
+Change of billing <br />
+Cyberheist lure
+|-
+
+! Harvesting
+| Email, chat contacts
+File hosting accounts <br />
+Google Docs, MS Drive, Dropbox, Box.com <br />
+Software license keys
+|-
+
+! Privacy
+| Your messages, calendar, photos, Google/Skype chats
+Call records (+ mobile account) <br />
+Your location (+ mobile/itunes)
+|-
+
+! Retail Resale
+| Facebook, Twitter, Tumbler, Macys, Amazon, Walmart
+i-Tunes, Skype, Bestbuy, Spotify, Hulu+, Netflix <br />
+Origin, Steam, Crossfire
+|-
+
+! Spam
+| Commercial email
+Phishing, malware <br />
+Stranded abroad, email signature and Facebook/Twitter scams <br />
+|-
+
+|}
+
+= General Advice =
+Achieving greater security depends on how much time the user is willing to invest in {{project_name_short}} configuration. Security also rests upon the daily practices and procedures that have been adopted by the user, see [[Documentation]].
+
+== Backups ==
+
+{{mbox
+| type      = notice
+| image   = [[File:Ambox_notice.png|40px|alt=Info]]
+| text    = It is important to store multiple, <u>encrypted</u> backups of sensitive data.
+}}
+
+If the user does not possess at least two copies of the original data, then it should be considered lost. The reason is data on one medium might become inaccessible and beyond repair at any minute. In this case, the computer would not even detect the risk, so data recovery tools would not be of help either. <ref>In such cases the user might get lucky with professional data recovery companies, but the usual cost is a few thousand dollars.</ref>
+
+Best practice recommendations:
+
+* Store the original, encrypted file on a medium like the internal hard drive.
+* Create a first encrypted backup: for example, on an external hard drive from manufacturer A.
+* Create a second encrypted backup: for example, on an external hard drive from manufacturer B.
+
+For greater security and to protect from incidents like fire or theft, backups in separate physical locations are recommended. Additionally, backups can be stored on remote servers, but the user must be sure it is encrypted properly. <ref>That is, with a recommended encryption method and a [[Passwords#Generating_Unbreakable_Passwords|suitably long passphrase]].</ref>
+
+== Safer Upgrades ==
+
+* [[{{non_q_project_name_short}}|{{non_q_project_name_short}}]]: If running VM instances are not shutdown, there is a cross-contamination risk for new machines being imported into the virtualizer. For example, this is possible if a powerful adversary has taken control over those VMs currently in use. This action is not required if the user intends to create a new virtual network for the machines being imported.
+* [[Qubes|{{q_project_name_short}}]]: Before upgrading {{project_name_short}} Templates, close as many open VMs as possible. Do not run VMs from different domains at the same time as upgrading.
+
+= File Storage Location =
+
+It is unsafe to store files directly in the root section of the home folder (like <code>/home/user</code>). <ref>This is because AppArmor profiles (and possibly other mandatory access control frameworks) are often required to grant read access to the root home folder due to technical limitations.</ref> It is far better to use a sub-folder and store the file there, for example:
+
+* <u>Non-ideal storage location</u>: <code>/home/user/some-document</code>
+* <u>Safer storage location</u>: <code>/home/user/my-documents/some-document</code>
+
+The following sub-folders in the home directory should also be avoided: <ref>/etc/apparmor.d/abstractions/user-download</ref>
+
+* <code>~/tmp</code>
+* <code>~/Download</code>
+* <code>~/Downloads</code>
+* <code>~/download</code>
+* <code>~/downloads</code>
+* <code>~/Desktop</code>
+
+If files are downloaded to the <code>~/Downloads</code> folder -- the only folder available if the Tor Browser [[AppArmor]] profile is enforced -- then move them elsewhere. A folder of your own choosing will keep its contents private from any confined application that is later (hypothetically) compromised.
+
+Other folders that should also be avoided include: <ref>/etc/apparmor.d/abstractions/ubuntu-browsers.d/user-files</ref>
+
+* <code>/media</code>
+* <code>/srv</code>
+* <code>/net</code>
+
+It is easy to choose folder names which are better than the default naming convention. As soon as a user prepends or appends a random number or string to a folder (such as <code>my-</code>), this makes it unlikely that AppArmor profiles or possibly other mandatory access control frameworks will allow access to these folders by default.
+
+Another reason is that some commands such as <code>sudo rm -rf /var/lib/apt/lists/*</code> (sometimes useful in case of APT issues) are unsafe if a typo is made. If a space is added before the asterisk symbol ("<code>*</code>") by mistake then this would by default delete all files (except hidden files) in the user's current folder (often the home folder). (But not folders in that folder). <ref>
+Because deleting folders requires <code>rm -r</code>.
+</ref>
+
+= Untrusted Input and Attack Surface =
+
+* <u>Untrusted input:</u> Untrusted input is any data that an attacker can influence, directly or indirectly. This includes files and device contents from the internet, removable media, and data received over the network.
+* <u>Code meets input:</u> If software processes untrusted input, unexpected behavior can occur. In the worst case, a bug can be exploited for unwanted code execution, leading to system compromise.
+* <u>Not only "running":</u> Risk is not limited to explicitly "running" something. Many routine actions cause software to parse, interpret, or walk through untrusted structures, sometimes automatically.
+* <u>Any relationship adds risk:</u> Wherever code touches untrusted input in any way, there is potential attack surface.
+
+== What counts as untrusted input ==
+
+Untrusted input includes, but is not limited to:
+
+* <u>Internet downloads:</u> Files downloaded from the internet.
+* <u>Attachments:</u> Email attachments and chat attachments.
+* <u>Archives and images:</u> Archives (for example ZIP, 7z, tar) and disk images.
+* <u>Removable media:</u> Removable media (USB drives, SD cards) and external disks.
+* <u>Network files:</u> Network provided files (SMB, NFS, WebDAV) and content from untrusted servers.
+* <u>Device supplied data:</u> Device supplied data (USB descriptors, storage metadata, filesystem metadata).
+
+== Why "just handling a file" matters ==
+
+Many components interact with a file or device before you explicitly "open" it in an application:
+
+* <u>Operating system parsing:</u> The operating system and [[kernel]] may parse device, partition, and filesystem structures.
+* <u>File manager helpers:</u> File managers may generate previews ([[thumbnails]]), and extract {{whonix_wiki
+|wikipage=metadata
+|text=metadata
+}}.
+* <u>Indexing scans:</u> [[File_indexing|File Indexing]] may scan content for search.
+* <u>Security scanners:</u> Antivirus or content scanners may parse file formats. See also [[Malware and Firmware Trojans]] and [[Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools|The Utility of Antivirus Tools]].
+* <u>Display and logging:</u> Terminals and logging tools may display untrusted filenames and metadata, including unusual or confusing characters.
+* <u>Complex parsing logic:</u> Any of these steps can trigger complex parsing logic.
+* <u>Bug density:</u> Complex parsers tend to have more bugs, and some bugs can be exploited.
+* <u>Even "simple" utilities:</u> In theory, even small and ubiquitous command line tools such as <code>grep</code> and <code>find</code> could be vulnerable, because they still process attacker-influenced strings, filenames, directory structures, and file contents. However, their attack surface is often smaller than complex format parsers, so public vulnerability reports may be rarer. For example, at the time of writing CVE Details lists no vulnerabilities created in the last 10 years for [https://www.cvedetails.com/product/23804/GNU-Grep.html?vendor_id=72 GNU Grep] and [https://www.cvedetails.com/product/1521/GNU-Findutils.html?vendor_id=72 GNU Findutils]:
+** <blockquote>We don't have any vulnerabilities for this product, created in the last 10 years</blockquote>
+* <u>No CVEs ≠ no risk:</u> A lack of reported CVEs can also reflect lower scrutiny, different reporting practices, or bugs that have not been found or disclosed yet.
+
+== Common high risk interaction points ==
+
+* <u>Mounting an untrusted filesystem:</u> Mounting a specially crafted filesystem image can exercise kernel filesystem drivers. This is high impact because it runs in kernel space. Crafted structures can target parsing of superblocks, directory entries, extended attributes, compression layers, and journaling metadata.
+* <u>Connecting untrusted devices:</u> Plugging in a crafted device can trigger kernel drivers before any file is accessed. For example, a USB device can present descriptors or behave as multiple device types, which can reach complex driver code paths.
+* <u>Opening crafted files:</u> Opening files such as PDFs, images, documents, and media formats uses user space parsers. These parsers are frequently targeted because file formats can be complicated and widely supported.
+* <u>Automatic parsing by desktop services:</u> Browsing a folder can trigger thumbnail generation, preview extraction, and indexing. This can happen without user intent, simply because a graphical environment is trying to be helpful.
+* <u>Rendering untrusted filenames:</u> Even displaying filenames can be risky in some contexts. Filenames can include unusual characters. Some terminals and tools may interpret control sequences, which can cause misleading output or unsafe copy and paste behavior.
+
+== Risk factors that increase the chance of compromise ==
+
+The likelihood and impact of exploitation depend on several factors:
+
+* <u>Privilege level:</u> Kernel space code and privileged services are higher impact targets than a sandboxed user space application.
+* <u>Parser complexity:</u> The more complicated the format and the more features supported, the larger the attack surface tends to be.
+* <u>Automatic processing:</u> Any feature that processes content without explicit user action increases exposure, because it can run unexpectedly and repeatedly.
+* <u>Exposure history:</u> Code that is widely targeted or historically bug prone may carry higher practical risk.
+
+== Defensive strategies ==
+
+The goal is to reduce how much privileged code touches untrusted input, and to move risky parsing into disposable or isolated environments.
+
+* <u>Prefer isolation for untrusted content:</u> Handle unknown files and devices in an isolated VM (see [[Multiple Kicksecure]]) or other disposable environment. Treat that environment as expendable.
+* <u>Minimize kernel exposure:</u> Avoid mounting unknown filesystem images on your main system. If mounting is required, do it in an isolated environment and prefer read only access.
+* <u>Disable or reduce automatic parsing:</u> Consider disabling (or keep disabled if disabled by default) automount, thumbnail generation, and indexing for untrusted locations. Automatic helpers increase exposure.
+* <u>Use restrictive mount options:</u> When mounting untrusted media, use restrictive options such as <code>ro</code>, <code>nosuid</code>, <code>nodev</code>, and <code>noexec</code> where applicable. These options can reduce the impact of some attacks, but they do not prevent exploitation of filesystem parser bugs. Related: [[Dev/remount-secure]]
+* <u>Treat filenames as untrusted strings:</u> Do not assume filenames are safe to print, log, or pass to commands without proper quoting and escaping. Prefer tools and settings that avoid interpreting control sequences. See also [[Shell|Hidden Text Attacks]]; [[Unicode|Invisible Malicious Unicode Risks]]; [[Shell_scripting|Shell Scripting]].
+* <u>Keep systems updated:</u> Many real world attacks rely on already fixed vulnerabilities. Apply security [[update|updates]] promptly, especially for kernels, browsers, document viewers, archive tools, and media codecs.
+
+== Recommended workflow for unknown files ==
+
+{{IconSet|h1|1}} Move the file into an isolated environment.
+
+Handle unknown files inside a disposable VM or other isolated workspace rather than your primary environment.
+
+{{IconSet|h1|2}} Prevent automatic parsing.
+
+Disable previews, thumbnails, and indexing (or keep disabled if already disabled by default) for the location where the file will be inspected, if possible.
+
+{{IconSet|h1|3}} Inspect before opening.
+
+Prefer simple inspection methods first, such as checking file type and metadata using minimal tools.
+
+{{IconSet|h1|4}} Open with the least privilege possible.
+
+Use sandboxed viewers and avoid running content with elevated privileges.
+
+{{IconSet|h1|5}} If mounting is required, mount read only with restrictive options.
+
+Use <code>ro</code>, <code>nosuid</code>, <code>nodev</code>, and <code>noexec</code> where applicable, and do this inside an isolated environment.
+
+{{IconSet|h1|6}} Done.
+
+Untrusted content has been handled in an isolated environment with reduced automatic parsing and reduced privilege.
+
+== Notes and limitations ==
+
+* <u>Sandboxing is not perfect:</u> Sandboxing reduces the impact of many exploits, but it is not perfect. Defense in depth is still required. See also: [[AppArmor]]. Related: [[sandbox-app-launcher]]; [[vm-app-manager]].
+* <u>"Safe" is relative:</u> "Safe" actions are relative. The aim is to choose lower risk actions and to perform higher risk actions only in isolation.
+* <u>Technical details:</u> See also [[Dev/About_Computer_Insecurity|About Computer (In)Security]].
+
+= Known Bugs =
+
+To learn about known bugs affecting all platforms, see [[Known_Issues|here]]. Refer to the [[Reporting_Bugs#Issue_Tracker|issue tracker]] for a list of all open issues affecting {{project_name_short}}.
+
+= Greater Security and Next Steps =
+
+After reading and applying relevant steps outlined in this section:
+
+* {{non_q_project_name_short}}:
+** [[VirtualBox]]: [[Download|download]] and [[Verify the images|verify]] the {{project_name_short}} images before importing them.
+** [[KVM]]: Follow the [[KVM#KVM_Setup_Instructions|KVM setup instructions]] to download, verify and import the {{project_name_short}} images.
+** [[Qubes|{{q_project_name_short}}]]: Follow the [[Qubes/Install|stable {{q_project_name_short}} instructions]].
+
+In all cases, users should follow the [[Post Install Advice|Post-installation Security Advice]].
+
+For greater security pre- and post-{{project_name_short}} installation, users should read the [[Documentation]] pages widely to learn more about potential threats and mitigations. For instance, users might like to consult the [[Design]] pages, and consider the recommendations outlined in the Basic Security Guide and Advanced Security Guide sections. Users with limited time can refer to the [[System_Hardening_Checklist|System Hardening Checklist]].
+
+== Stay Tuned ==
+
+It is recommended to read the [[Stay Tuned|latest {{project_name_short}} news]] to stay in touch with ongoing developments, such as notifications about important security vulnerabilities, improved {{project_name_short}} releases, other software updates and additional advice.
+
+== Advanced Security Guide ==
+
+After reading this chapter, it is recommended to refer to the [[Advanced_Security_Guide_Introduction|Advanced Security Guide Introduction]] section for even more security advice.
+
+= Footnotes =
+<references />
+
+{{Footer}}
+
+[[Category:Documentation]]
