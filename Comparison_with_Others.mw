@@ -855,7 +855,7 @@ https://forums.whonix.org/t/reproducible-builds-innovation/23057
 </ref>
 
 {{quotation
-|quote=[https://github.com/kpcyrd/repro-threshold repro-threshold], which implements an APT transport that “defines a threshold of at least X of my N trusted rebuilders need to confirm they reproduced the binary” before installing Debian packages.
+|quote=[https://github.com/kpcyrd/repro-threshold repro-threshold], which implements an APT transport that "defines a threshold of at least X of my N trusted rebuilders need to confirm they reproduced the binary" before installing Debian packages.
 |context=[https://reproducible-builds.org/reports/2025-11/ Reproducible Builds News]
 }}
 
