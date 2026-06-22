@@ -165,7 +165,7 @@ The central distinction is not about convenience, but about control. In one mode
 This quote highlights the concern that a system which requires external approval to function places inherent limits on the user's autonomy.
 
 {{quotation
-|quote=“Treacherous computing” is a more appropriate name, because the plan is designed to make sure your computer will systematically disobey you. In fact, it is designed to stop your computer from functioning as a general-purpose computer. Every operation may require explicit permission.
+|quote=&ldquo;Treacherous computing&rdquo; is a more appropriate name, because the plan is designed to make sure your computer will systematically disobey you. In fact, it is designed to stop your computer from functioning as a general-purpose computer. Every operation may require explicit permission.
 |context=The GNU Project: [https://www.gnu.org/philosophy/can-you-trust.en.html Can You Trust Your Computer?]
 }}
 
@@ -316,7 +316,7 @@ In simple terms, the owner cannot step outside the device to check it independen
 [[File:Deep_Scan_Ready_versus_Deep_Scan_Restricted.png|600px]]
 
 = rationale for this page =
-This page documents the concept of deep scan readiness and explains how different platform designs affect an owner’s ability to inspect and investigate their own device. While many traditional Linux distributions already support these capabilities, they are not universal across all platforms. The page exists to clarify the distinction between owner-controlled systems and vendor-restricted systems, and to describe how these design choices influence deep scanning, malware analysis, and forensic investigation.
+This page documents the concept of deep scan readiness and explains how different platform designs affect an owner&rsquo;s ability to inspect and investigate their own device. While many traditional Linux distributions already support these capabilities, they are not universal across all platforms. The page exists to clarify the distinction between owner-controlled systems and vendor-restricted systems, and to describe how these design choices influence deep scanning, malware analysis, and forensic investigation.
 
 = Forum Discussions =
 * [https://forums.kicksecure.com/t/bootloader-lock-locked-bootloader/1190 locked bootloader]

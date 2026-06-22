@@ -25,7 +25,7 @@ Detect and annotate non-ASCII or suspicious Unicode characters in text or files.
 
 '''What is considered suspicious:'''
 
-* Characters outside the printable ASCII range (<code>0x20</code>–<code>0x7E</code>)
+* Characters outside the printable ASCII range (<code>0x20</code>&ndash;<code>0x7E</code>)
 * Control characters (excluding <code>\n</code>, <code>\r</code>, <code>\t</code>)
 * Any character not in the standard set of ASCII letters, digits, punctuation
 * trailing whitespace

@@ -40,7 +40,7 @@ New reason - added November 2025:
 ** https://tech.michaelaltfield.net/2025/08/19/grapheneos-daniel-micay-banned/
 ** https://forums.kicksecure.com/t/grapheneos-attacks-kicksecure-what-should-the-response-be/739/6
 ** [[#Upstream Deleting Posts|Upstream Deleting Posts]]
-*** Upstream’s decision to disengage will be respected.
+*** Upstream&rsquo;s decision to disengage will be respected.
 *** To clarify, no private communication has occurred.
 *** All prior interactions have fortunately taken place in public.
 
@@ -52,7 +52,7 @@ For context, wiki page Hardened Malloc uses wiki keyword <code>NOINDEX</code>. Q
 |context=[https://en.wikipedia.org/wiki/Noindex Wikipedia article <code>noindex</code>]
 }}
 
-This is done deliberately to prevent the page from appearing in Google and other search engine results. The intention is to minimize drama. Discussion about hardened malloc is not a core activity of the project. Those interested in Kicksecure’s development and integration perspective can find the details; otherwise, the topic is considered sufficiently addressed.
+This is done deliberately to prevent the page from appearing in Google and other search engine results. The intention is to minimize drama. Discussion about hardened malloc is not a core activity of the project. Those interested in Kicksecure&rsquo;s development and integration perspective can find the details; otherwise, the topic is considered sufficiently addressed.
 
 == Discussion ==
 * https://forum.qubes-os.org/t/secureblue-for-default-templatevm-and-dom0/32362/34

@@ -46,7 +46,7 @@ Unfortunately using other desktop environments has become much more difficult du
 
 {{quotation
 |quote=
-Switching the Wayland compositor used by Kicksecure isn’t supported currently. Supporting a Wayland compositor is much more involved than supporting a window manager under X11, because the compositor is both the window manager *and* the display server. Of all the desktop environments in Kicksecure, LXQt was the only one light enough to be suitable for Kicksecure and that had mature enough Wayland support, and the best-supported compositor for LXQt is labwc, so that’s what we went with. (For similar reasons, switching the desktop environment entirely is also difficult.)
+Switching the Wayland compositor used by Kicksecure isn&rsquo;t supported currently. Supporting a Wayland compositor is much more involved than supporting a window manager under X11, because the compositor is both the window manager *and* the display server. Of all the desktop environments in Kicksecure, LXQt was the only one light enough to be suitable for Kicksecure and that had mature enough Wayland support, and the best-supported compositor for LXQt is labwc, so that&rsquo;s what we went with. (For similar reasons, switching the desktop environment entirely is also difficult.)
 |context=[https://forums.kicksecure.com/t/3-big-issues-in-kicksecure-18-my-laptop-is-basically-unusable-now/1443/2 Kicksecure developer @arraybolt3]
 }}
 

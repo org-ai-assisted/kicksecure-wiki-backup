@@ -116,7 +116,7 @@ To use the repository, follow the [[Operating_System_Software_and_Updates|usual 
 
 = Disable {{project_name_short}} APT Repository =
 
-For [[Trust]] reasons some users may prefer not to use {{project_name_short}} APT Repository. In that case, it is necessary to  [[Dev/Build Documentation‏‎|update Debian packages in {{project_name_short}} from source code]], which is inconvenient.
+For [[Trust]] reasons some users may prefer not to use {{project_name_short}} APT Repository. In that case, it is necessary to  [[Dev/Build Documentation&rlm;&lrm;|update Debian packages in {{project_name_short}} from source code]], which is inconvenient.
 
 All Default-Download-Version {{project_name_short}} variants have the {{project_name_short}} APT repository enabled. It can be disabled via the GUI or in a terminal with the Derivative Repository Tool.
 
@@ -177,7 +177,7 @@ cat /etc/apt/sources.list.d/*
 = Further Reading =
 * [[Trust]]
 * [[Debian Packages|{{project_name_short}} Debian package - which ones are safe to remove?]]
-* [[Dev/Build Documentation‏‎|Building/upgrading {{project_name_short}} Debian packages from source code]]
+* [[Dev/Build Documentation&rlm;&lrm;|Building/upgrading {{project_name_short}} Debian packages from source code]]
 
 = Footnotes =
 <references />

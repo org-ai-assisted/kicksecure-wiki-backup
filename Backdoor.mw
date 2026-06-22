@@ -142,20 +142,20 @@ Now, let's clarify the technical nuances.
 
 More accurately, Android makes it '''very difficult''', not literally impossible, to detect well-hidden malicious backdoors. Here's why:
 
-* On modern Android devices, the internal storage is a small chip that is permanently attached (soldered) to the device’s main circuit board. You can’t just unplug it or hook it up to another computer like a USB drive.
+* On modern Android devices, the internal storage is a small chip that is permanently attached (soldered) to the device&rsquo;s main circuit board. You can&rsquo;t just unplug it or hook it up to another computer like a USB drive.
 * Android doesn't give you full access to that storage unless the device is "rooted", which means gaining full control over the system, like an administrator. ([[Miscellaneous_Threats_to_User_Freedom#Administrative_Rights|Administrative Rights Refusal (non-root enforcement)]])
 * Most users can't root their devices. In many cases, manufacturers make it permanently impossible to do so.
 * Without root, large parts of the system are completely hidden, even if you use developer tools like <code>adb</code> (Android Debug Bridge).
 * Even if you do manage to root the device, the rooting process itself changes the system. That change might accidentally erase clues. A clever backdoor could notice you've rooted the phone, then delete itself and hide all evidence.
 * Android isn't [[deep_scan_ready|Deep Scan Ready]]. Android is [[Deep_scan_ready#Deep_Scan_Restricted|Deep Scan Restricted]].
 
-As explained in [[Malware_and_Firmware_Trojans#Basics_of_Malware_Analysis_and_Backdoor_Hunting|Basics of Malware Analysis and Backdoor Hunting]], a proper investigation must start from a clean and trusted computer, not the infected device. You should never power on the compromised phone, because that might trigger the backdoor to erase itself or hide its tracks. Instead, experts need direct access to the device’s raw data, ideally by physically removing the storage and using special tools to read it without running anything from it.
+As explained in [[Malware_and_Firmware_Trojans#Basics_of_Malware_Analysis_and_Backdoor_Hunting|Basics of Malware Analysis and Backdoor Hunting]], a proper investigation must start from a clean and trusted computer, not the infected device. You should never power on the compromised phone, because that might trigger the backdoor to erase itself or hide its tracks. Instead, experts need direct access to the device&rsquo;s raw data, ideally by physically removing the storage and using special tools to read it without running anything from it.
 
-Unfortunately, Android’s hardware design often blocks this kind of investigation. When you can’t remove the storage chip or read it safely from the outside, the safest method, looking at the raw data without starting the system becomes impossible. That means any hidden malware, and all the evidence of it, stays completely out of reach.
+Unfortunately, Android&rsquo;s hardware design often blocks this kind of investigation. When you can&rsquo;t remove the storage chip or read it safely from the outside, the safest method, looking at the raw data without starting the system becomes impossible. That means any hidden malware, and all the evidence of it, stays completely out of reach.
 
 In theory, someone might invent a way to read Android's storage fully and safely without turning the device on or running anything from it. That would make proper malware analysis possible. But realistically, this is '''extremely unlikely'''.
 
-And if such a malicious backdoor were ever discovered and recovered, it wouldn’t be truly "perfect" because real perfection means it could never be found under any circumstances. In the real world, nothing is perfect. But Android’s design comes alarmingly close when it comes to enabling undetectable malicious implants on non-rooted, encrypted devices.
+And if such a malicious backdoor were ever discovered and recovered, it wouldn&rsquo;t be truly "perfect" because real perfection means it could never be found under any circumstances. In the real world, nothing is perfect. But Android&rsquo;s design comes alarmingly close when it comes to enabling undetectable malicious implants on non-rooted, encrypted devices.
 
 For a more technical write-up, see: [[Android|Android Insecurity]]
 
@@ -196,7 +196,7 @@ related forum discussion: https://forums.kicksecure.com/t/no-rescue-mode/1171
 |-
 
 ! Usually exploitable by planter?
-| {{GreenBackground}} No, there’s no built-in mechanism for the original author to exploit it. (good)
+| {{GreenBackground}} No, there&rsquo;s no built-in mechanism for the original author to exploit it. (good)
 | {{RedBackground}} Yes, designed with hidden functionality for exploitation by the planter. (bad)
 |-
 
@@ -233,7 +233,7 @@ Having clear evidence and no room for speculation is considered good.
 |-
 
 ! Guaranteed serious security risk?
-| {{GreenBackground}} No, increases attack surface but doesn’t ensure compromise. (good)
+| {{GreenBackground}} No, increases attack surface but doesn&rsquo;t ensure compromise. (good)
 | {{RedBackground}} Yes, provides persistent, secret, unauthorized access by design. (bad)
 |-
 
@@ -672,7 +672,7 @@ It is obvious the cost of a security audit involving reverse engineering will be
 
 <blockquote>''Reverse Engineering''
 
-A fairly substantial amount of non-trivial reverse engineering is generally required in order to decrypt messages and to at least partially decode the binary plaintext. 1) Handset Rooting: The first step is to gain a shell on the handset with elevated privileges, i.e. in the case of Android to root the handset. This allows us then to (i) obtain copies of the system apps and their data, (ii) use a debugger to instrument and modify running apps (e.g. to extract encryption keys from memory and bypass security checks), and (iii) install a trusted SSL root certificate to allow HTTPS decryption, as we explain below. Rooting typically requires unlocking the bootloader to facilitate access to the so-called fastboot mode, disabling boot image verification and patching the system image. Unlocking the bootloader is often the hardest of these steps, since many handset manufacturers discourage bootloader unlocking. Some, such as Oppo, go so far as to entirely remove fastboot mode (the relevant code is not compiled into the bootloader). The importance of this is that it effectively places a constraint on the handset manufacturers/ mobile OSes that we can analyse. Xiaomi and Realme provide special tools to unlock the bootloader, with Xiaomi requiring registering user details and waiting a week before unlocking. Huawei require a handset-specific unlock code, but no longer supply such codes. To unlock the bootloader on the Huawei handset studied here, we needed to open the case and short the test point pads on the circuit board, in order to boot the device into the Huawei equivalent of Qualcomm’s Emergency Download (EDL) mode. In EDL mode, the bootloader itself can be patched to reset the unlock code to a known value (we used a commercial service for this), and thereby enable unlocking of the bootloader.</blockquote>
+A fairly substantial amount of non-trivial reverse engineering is generally required in order to decrypt messages and to at least partially decode the binary plaintext. 1) Handset Rooting: The first step is to gain a shell on the handset with elevated privileges, i.e. in the case of Android to root the handset. This allows us then to (i) obtain copies of the system apps and their data, (ii) use a debugger to instrument and modify running apps (e.g. to extract encryption keys from memory and bypass security checks), and (iii) install a trusted SSL root certificate to allow HTTPS decryption, as we explain below. Rooting typically requires unlocking the bootloader to facilitate access to the so-called fastboot mode, disabling boot image verification and patching the system image. Unlocking the bootloader is often the hardest of these steps, since many handset manufacturers discourage bootloader unlocking. Some, such as Oppo, go so far as to entirely remove fastboot mode (the relevant code is not compiled into the bootloader). The importance of this is that it effectively places a constraint on the handset manufacturers/ mobile OSes that we can analyse. Xiaomi and Realme provide special tools to unlock the bootloader, with Xiaomi requiring registering user details and waiting a week before unlocking. Huawei require a handset-specific unlock code, but no longer supply such codes. To unlock the bootloader on the Huawei handset studied here, we needed to open the case and short the test point pads on the circuit board, in order to boot the device into the Huawei equivalent of Qualcomm&rsquo;s Emergency Download (EDL) mode. In EDL mode, the bootloader itself can be patched to reset the unlock code to a known value (we used a commercial service for this), and thereby enable unlocking of the bootloader.</blockquote>
 
 <blockquote>''Decompiling and Instrumentation''
 
@@ -693,7 +693,7 @@ This is particularly a concern for developers collaborating on privacy or securi
 
 Whilst individual developers are a natural target, it additionally encourages attacks on build infrastructure as an successful attack would provide access to a large number of downstream computer systems. By modifying the generated binaries here instead of modifying the upstream source code, illicit changes are essentially invisible to its original authors and users alike.
 
-The motivation behind the Reproducible Builds project is therefore to allow verification that no vulnerabilities or backdoors have been introduced during this compilation process. By promising identical results are always generated from a given source, this allows multiple third parties to come to a consensus on a “correct” result, highlighting any deviations as suspect and worthy of scrutiny.
+The motivation behind the Reproducible Builds project is therefore to allow verification that no vulnerabilities or backdoors have been introduced during this compilation process. By promising identical results are always generated from a given source, this allows multiple third parties to come to a consensus on a &ldquo;correct&rdquo; result, highlighting any deviations as suspect and worthy of scrutiny.
 
 This ability to notice if a developer has been compromised then deters such threats or attacks occurring in the first place as any compromise would be quickly detected. This offers comfort to front-liners that they not only can be threatened, but they would not be coerced into exploiting or exposing their colleagues or end-users.
 

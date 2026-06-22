@@ -69,7 +69,7 @@ For best performance and stability, it is recommended to fix the green turtle in
 
 To solve the slowdown and CPU lockup issue, it is necessary to disable Windows Hyper-V and related virtualization security features. As this is complex when done manually, a batch script <code>DisableHyperV.bat</code> is provided to automate this process.
 
-disabling Hyper-V may cause Windows automatic BitLocker decryption to break. If that happens, you’d need to provide a recovery key at least once to get the system to boot, so it’s very important that you have access to that key before trying to disable Hyper-V. (The scripts are designed to prevent Windows from misbehaving in this way, but better safe than sorry.)
+disabling Hyper-V may cause Windows automatic BitLocker decryption to break. If that happens, you&rsquo;d need to provide a recovery key at least once to get the system to boot, so it&rsquo;s very important that you have access to that key before trying to disable Hyper-V. (The scripts are designed to prevent Windows from misbehaving in this way, but better safe than sorry.)
 
 '''1.''' Download the script.
 
@@ -211,7 +211,7 @@ Hyper-V Requirements:          A hypervisor has been detected. Features required
 In above case, <code>Secure Launch</code> and <code>SMM Firmware Measurement</code> were still running, causing Hyper-V to automatically start at boot time. After disabling <code>Firmware protection</code>, this issue has been resolved.
 
 = Resources =
-* Check also: <code>Start Menu</code> -> type <code>Windows Security</code> → <code>Device Security</code> → <code>Core Isolation</code> → <code>Turn off</code>
+* Check also: <code>Start Menu</code> -> type <code>Windows Security</code> &rarr; <code>Device Security</code> &rarr; <code>Core Isolation</code> &rarr; <code>Turn off</code>
 ** <code>Memory integrity</code>
 ** <code>Kernel-mode Hardware-enforced Stack Protection</code>
 ** <code>Firmware protection</code>

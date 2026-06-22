@@ -16,7 +16,7 @@ An evil maid attack is: <ref>
 https://en.wikipedia.org/wiki/Evil_Maid_attack
 </ref> <blockquote>...an attack on an unattended device, in which an attacker with physical access alters it in some undetectable way so that they can later access the device, or the data on it.
 
-The name refers to the scenario where a maid could subvert a device left unattended in a hotel room – but the concept itself also applies to situations such as a device being intercepted while in transit, or taken away temporarily by airport or law enforcement personnel.</blockquote>
+The name refers to the scenario where a maid could subvert a device left unattended in a hotel room &ndash; but the concept itself also applies to situations such as a device being intercepted while in transit, or taken away temporarily by airport or law enforcement personnel.</blockquote>
 
 There are two main attack methods. The 'classic' evil maid attack involves a device being left unattended and then being tampered with by the attacker. If the system is not password-protected or does not require authentication, it is simply turned on and information is accessed. If the device is password-protected -- as is the case with [[Full_Disk_Encryption|Full Disk Encryption]] -- the device firmware is compromised so a false password prompt later appears. When the victim inputs the password, it is sent to the attacker and the compromised firmware removes itself. Afterwards, the attacker returns to the unattended device in order to steal data. <ref name=AEM>
 https://en.wikipedia.org/wiki/Evil_Maid_attack#Methods_of_attack

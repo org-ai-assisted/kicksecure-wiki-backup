@@ -44,7 +44,7 @@ sudo dpkg-reconfigure tzdata
 
 '''3.''' Select "None of the above".
 
-'''4.''' Press <code>Enter⏎</code> on "OK".
+'''4.''' Press <code>Enter&#x23CE;</code> on "OK".
 
 '''Figure:''' ''Configuring tzdata - timezone selection''
 
@@ -52,7 +52,7 @@ sudo dpkg-reconfigure tzdata
 
 '''5.''' Select <code>UTC</code>.
 
-'''6.''' Highlight "OK" and press <code>Enter⏎</code>.
+'''6.''' Highlight "OK" and press <code>Enter&#x23CE;</code>.
 
 '''7.''' Done.
 

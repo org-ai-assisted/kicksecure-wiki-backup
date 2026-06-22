@@ -100,7 +100,7 @@ So while "legacy" technically describes the interface type, it shouldn't be take
 '''2. Secure Boot & Measured Boot'''
 
 * '''EFI''': EFI offers features like [[Secure Boot]] and [[measured boot|Measured Boot]], but these features add complexity. Moreover, Secure Boot, although it enhances the security model, can also be misused or introduce backdoors if not properly implemented. Projects like '''Dasharo''' aim to bring transparency and security to UEFI, but it's inherently more complicated than SeaBIOS.
-* '''SeaBIOS''': It lacks the sophisticated boot integrity features found in EFI, such as Secure Boot or Measured Boot. However, this simplicity means it’s easier to verify and audit the boot process.
+* '''SeaBIOS''': It lacks the sophisticated boot integrity features found in EFI, such as Secure Boot or Measured Boot. However, this simplicity means it&rsquo;s easier to verify and audit the boot process.
 
 '''3. Stateless Nature'''
 
@@ -124,13 +124,13 @@ SeaBIOS:
 EFI:
 
 * EFI provides stronger defenses against remote attacks through features like Secure Boot and Measured Boot, but its increased complexity introduces a higher risk of backdoors and makes it more vulnerable to physical attack vectors involving its persistent state.
-* EFI is more vulnerable to persistent compromise compared to SeaBIOS. EFI maintains state using NVRAM to store configuration and boot data, which can be modified by attackers to maintain persistence even across reboots. Additionally, EFI’s larger codebase and complexity make it harder to audit, increasing the chances of undetected vulnerabilities that could facilitate a persistent compromise.
+* EFI is more vulnerable to persistent compromise compared to SeaBIOS. EFI maintains state using NVRAM to store configuration and boot data, which can be modified by attackers to maintain persistence even across reboots. Additionally, EFI&rsquo;s larger codebase and complexity make it harder to audit, increasing the chances of undetected vulnerabilities that could facilitate a persistent compromise.
 
 For typical online end users, remote attacks exploiting firmware vulnerabilities are more realistic against EFI than SeaBIOS due to EFI's complexity and larger attack surface. Attacks like firmware malware (rootkits or bootkits) that exploit bugs in EFI can persist across reboots, especially since EFI features stateful NVRAM.
 
 On the other hand, physical attacks, like modifying firmware settings or implanting malicious bootloaders, are generally less common for most users unless they are high-value targets with attackers capable of gaining physical access.
 
-For SeaBIOS users, attacks that focus on exploiting weaknesses in Secure Boot or similar protections are less relevant because those features aren’t present, but the absence of these protections means physical attacks or tampering with the bootloader is more straightforward if an attacker has physical access.
+For SeaBIOS users, attacks that focus on exploiting weaknesses in Secure Boot or similar protections are less relevant because those features aren&rsquo;t present, but the absence of these protections means physical attacks or tampering with the bootloader is more straightforward if an attacker has physical access.
 
 If the goal is just data stealing, physical attacks like firmware tampering are unlikely, as methods like cameras or microphones are more practical to still any full disk encryption password. However, if persistent control is desired, such as manipulating system behavior or compromising critical infrastructure, tampering with the boot firmware makes more sense, making boot firmware verification crucial in such cases.
 

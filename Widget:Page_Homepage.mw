@@ -382,12 +382,12 @@
             <span class="image-wrapper"><img class="image image-cover" alt="TCP ISN Leak Protection" src="/w/images/thumb/a/a9/Data-leak.jpg/300px-Data-leak.jpg" decoding="async" loading="lazy" /></span>
             <h3>CPU Information Leak Protection (TCP ISN Randomization)</h3>
             <p>
-              Without TCP ISN randomization, sensitive information about a system’s CPU activity can leak through outgoing traffic, exposing the system to side-channel attacks. Tirdad protects against this vulnerability.
+              Without TCP ISN randomization, sensitive information about a system&rsquo;s CPU activity can leak through outgoing traffic, exposing the system to side-channel attacks. Tirdad protects against this vulnerability.
             </p>
           </a>
 
           <p class="section-modal-content-hidden">
-            Without TCP ISN randomization, patterns in outgoing traffic can reveal unique characteristics of a system’s CPU, compromising user security.
+            Without TCP ISN randomization, patterns in outgoing traffic can reveal unique characteristics of a system&rsquo;s CPU, compromising user security.
             <a target="_blank" rel="noopener" class="external text" href="https://github.com/Kicksecure/tirdad">TCP ISN randomization</a>
             helps preserve security by masking these signals.
           </p>
@@ -414,7 +414,7 @@
       </div>
 
       <div class="mw-collapsible mw-collapsed no-item slider-list-if-js" data-expandtext="Learn More" data-collapsetext="Show Less">
-        <h3>15 more amazing features →</h3>
+        <h3>15 more amazing features &rarr;</h3>
         <div class="mw-collapsible-content">
           <div class="col-container cc-3 justify">
             <div class="card-wrapper" draggable="false" id="explain-brute">
@@ -485,7 +485,7 @@
             <p>USBGuard attempts to mitigate a limited subset of USB hardware attacks by rejecting most USB devices that are plugged in after boot.</p>
           </a>
           <p class="section-modal-content-hidden">
-            <a href="/wiki/USBGuard">USBGuard</a> uses the Linux USB device authorization feature and a rule-based policy to allow, block, or reject USB devices based on their attributes. Kicksecure’s policy is designed to refuse suspicious or unexpected devices plugged in after boot, helping reduce exposure to BadUSB-style attacks.
+            <a href="/wiki/USBGuard">USBGuard</a> uses the Linux USB device authorization feature and a rule-based policy to allow, block, or reject USB devices based on their attributes. Kicksecure&rsquo;s policy is designed to refuse suspicious or unexpected devices plugged in after boot, helping reduce exposure to BadUSB-style attacks.
             USBGuard is an additional layer, not a replacement for only using trusted USB devices, and it cannot stop physical damage attacks (for example "USB killer") or filter keystrokes from a device you have already allowed.
           </p>
         </div>
@@ -702,7 +702,7 @@ alternative onion service
                 <span class="image-wrapper"><img class="image image-cover" alt="Umask Hardening for Safer File Defaults" src="/w/images/7/70/Umask-clipart.svg" decoding="async" loading="lazy" /></span>
                 <h3>Umask Hardening for Safer File Permissions</h3>
                 <p>
-                  Kicksecure improves file security by setting a stricter default umask for non-root accounts, so new files aren’t readable by others unless explicitly allowed.
+                  Kicksecure improves file security by setting a stricter default umask for non-root accounts, so new files aren&rsquo;t readable by others unless explicitly allowed.
                 </p>
               </a>
 
@@ -1094,7 +1094,7 @@ alternative onion service
           </a>
 
           <p class="section-modal-content-hidden">
-            Kicksecure is independently verifiable by security experts and software developers around the world; you don’t have to trust developer claims.
+            Kicksecure is independently verifiable by security experts and software developers around the world; you don&rsquo;t have to trust developer claims.
             <a href="/wiki/Reasons_for_Freedom_Software">
               This improves security and privacy for everyone.
             </a>
@@ -1127,12 +1127,12 @@ means you can power the device off and inspect it from outside, for example by b
             </span>
             <h3>Complete respect for privacy and user freedom</h3>
             <p>
-              Kicksecure respects data privacy principles. We don’t make advertising deals or collect sensitive personal data.
+              Kicksecure respects data privacy principles. We don&rsquo;t make advertising deals or collect sensitive personal data.
             </p>
           </a>
 
           <p class="section-modal-content-hidden">
-            Kicksecure respects data privacy principles. We don’t make advertising deals or collect sensitive personal data. There are
+            Kicksecure respects data privacy principles. We don&rsquo;t make advertising deals or collect sensitive personal data. There are
             <a href="/wiki/Reasons_for_Freedom_Software#No_Intentional_User_Freedom_Restrictions">
               no artificial restrictions imposed on possible system configurations
             </a>
@@ -1206,7 +1206,7 @@ means you can power the device off and inspect it from outside, for example by b
       </div>
 
       <div class="mw-collapsible mw-collapsed no-item slider-list-if-js" data-expandtext="Learn More" data-collapsetext="Show Less">
-        <h3>8 more Enhancements →</h3>
+        <h3>8 more Enhancements &rarr;</h3>
         <div class="mw-collapsible-content">
           <div class="col-container cc-3 justify">
             <div class="card-wrapper" draggable="false" id="explain-apparmor-d">

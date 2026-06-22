@@ -218,7 +218,7 @@ Consider the Discourse software, for example:
 More related to Discourse:
 
 * [https://forums.whonix.org/t/discourse-mailing-list-mode-non-javascript-way-to-interact-with-the-discourse-forums/7338 discourse mailing list mode - non-JavaScript way to interact with the discourse forums]
-* [https://forums.whonix.org/t/discourse-forums-isn-t-using-well-known-privacy-disrespecting-technology-javascript-against-the-essential-project-goal/18322 discourse forums: Isn’t using well-known privacy disrespecting technology (JavaScript) against the essential project goal?]
+* [https://forums.whonix.org/t/discourse-forums-isn-t-using-well-known-privacy-disrespecting-technology-javascript-against-the-essential-project-goal/18322 discourse forums: Isn&rsquo;t using well-known privacy disrespecting technology (JavaScript) against the essential project goal?]
 
 {{project_name_short}} is primarily a software project. It uses web applications as a means to an end, not as an end in itself. It is not a web application project.
 
@@ -358,7 +358,7 @@ Quote https://github.com/alecmuffett/real-world-onion-sites#tls-security
 
 <blockquote>'''TLS Security'''
 
-Due to the fundamental protocol differences between <code>HTTP</code> and <code>HTTPS</code>, it is not wise to consider HTTP-over-Onion to be “as secure as HTTPS”;
+Due to the fundamental protocol differences between <code>HTTP</code> and <code>HTTPS</code>, it is not wise to consider HTTP-over-Onion to be &ldquo;as secure as HTTPS&rdquo;;
 
 This is a very browser focused viewpoint. That's legitimate because browsers are probably the most popular internet application people are using.</blockquote>
 
@@ -377,7 +377,7 @@ Valid concern. Mitigated using CSP. Unfortunately CSP is only a server feature. 
 
 Since it is difficult to configure many popular web applications to be available on two domains (clearnet and onion) at the same time, it happened in the past on this website that some contents were unavailable over the onion. For example, the project logo was only visible on the clearnet version but not over the onion. The CSP was functional and avoided any content mixing of the onion with contents pointing to clearnet.
 
-<blockquote>…and the necessity of broad adherence to web standards would make it harmful to attempt to optimise just one browser (e.g. Tor Browser) to elevate HTTP-over-Onion to the same levels of trust as HTTPS-over-TCP, let alone HTTPS-over-Onion. Doubtless some browsers will ''attempt'' to implement “better-than-default trust and security via HTTP over onions”, but this behaviour will not be '''standard''', cannot be '''relied upon''' by clients/users, and will therefore be '''risky'''.</blockquote>
+<blockquote>&hellip;and the necessity of broad adherence to web standards would make it harmful to attempt to optimise just one browser (e.g. Tor Browser) to elevate HTTP-over-Onion to the same levels of trust as HTTPS-over-TCP, let alone HTTPS-over-Onion. Doubtless some browsers will ''attempt'' to implement &ldquo;better-than-default trust and security via HTTP over onions&rdquo;, but this behaviour will not be '''standard''', cannot be '''relied upon''' by clients/users, and will therefore be '''risky'''.</blockquote>
 
 This depends on the complexity of the implementation. Tor Browser can hopefully use the same code paths. <ref>
 Pseudo code, hopefully, needs further research.

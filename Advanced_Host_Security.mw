@@ -26,7 +26,7 @@ That said, it might make sense to use a-t-tor anyhow even if not
 strictly needed as it will deal better with certain tor anomalies given
 that it knows tor is involved reporting better errors (like telling you
 that the .onion address you typo'ed is too long/short; saying
-"unreachable host" if a service is… well, not reachable, instead of
+"unreachable host" if a service is&hellip; well, not reachable, instead of
 saying "TTL expired" which is reported by Tor and technically more
 correct but unhelpful), will use different circuits for different
 sources and stuff.

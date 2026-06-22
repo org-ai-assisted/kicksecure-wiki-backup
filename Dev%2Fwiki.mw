@@ -11,7 +11,7 @@ Syntax Highlighting vs Link Suggestions, Links with Web Archive, Onions, CodeSel
 }}
 = Wiki History =
 
-Check the [[File:Supermenu3.png|30px|<code>Super Menu</code>]] (down) ("<code>↓</code>") symbol in the wiki website header. In the wiki header. Not here in this wiki text content. This is also called [[Dev/wiki#Super_Menu|Super Menu]].
+Check the [[File:Supermenu3.png|30px|<code>Super Menu</code>]] (down) ("<code>&darr;</code>") symbol in the wiki website header. In the wiki header. Not here in this wiki text content. This is also called [[Dev/wiki#Super_Menu|Super Menu]].
 
 Click on <code>History</code>. It leads, for example, here:
 
@@ -29,13 +29,13 @@ An important inherited feature from MediaWiki is the ability to compare any two 
 
 One common source of confusion is [https://www.mediawiki.org/wiki/Extension:FlaggedRevs Extension:FlaggedRevs], a MediaWiki extension that we use to moderate edits. This extension introduces a distinction between submitted edits and publicly visible edits.
 
-Most users — those who visit the wiki to read but do not contribute — are shown the last revision that has been reviewed and approved by an administrator. This is referred to as the "live website version" or the "stable version." Consequently, editors may believe that their edits were lost if they do not immediately appear on the live site. However, this is a misunderstanding: the edits have been saved but have not yet been approved.
+Most users &mdash; those who visit the wiki to read but do not contribute &mdash; are shown the last revision that has been reviewed and approved by an administrator. This is referred to as the "live website version" or the "stable version." Consequently, editors may believe that their edits were lost if they do not immediately appear on the live site. However, this is a misunderstanding: the edits have been saved but have not yet been approved.
 
 If an edit has not yet been reviewed, the wiki will display a label such as <code>Pending</code> or <code>Checked</code> in the top right corner of the page. These indicators signify that one or more edits are awaiting moderation and have not been confirmed yet.
 
-There is no requirement to wait for admin confirmation before making further edits. When you click the edit button while viewing the live version of a page, you will already be editing the latest pending version — meaning your changes will be layered on top of the most recent unapproved content.
+There is no requirement to wait for admin confirmation before making further edits. When you click the edit button while viewing the live version of a page, you will already be editing the latest pending version &mdash; meaning your changes will be layered on top of the most recent unapproved content.
 
-After you save your changes, all pending (unconfirmed) edits — including yours and those from other contributors — will continue to be visible to you and other editors who are logged in.
+After you save your changes, all pending (unconfirmed) edits &mdash; including yours and those from other contributors &mdash; will continue to be visible to you and other editors who are logged in.
 
 To view pending edits more explicitly, hover your mouse over the <code>Pending</code> or <code>Checked</code> label in the upper right. A tooltip (passive popup) will appear with information like:
 
@@ -44,7 +44,7 @@ To view pending edits more explicitly, hover your mouse over the <code>Pending</
 This is the stable version, checked on 27 April 2025. 3 pending changes await review.
 }}
 
-The phrase <code>3 pending changes</code> is a clickable link. Clicking it brings you to a *diff* — a side-by-side display of what was changed — comparing the latest confirmed version against the unconfirmed version. Below this difference view, the full pending (unconfirmed) version of the page is shown.
+The phrase <code>3 pending changes</code> is a clickable link. Clicking it brings you to a *diff* &mdash; a side-by-side display of what was changed &mdash; comparing the latest confirmed version against the unconfirmed version. Below this difference view, the full pending (unconfirmed) version of the page is shown.
 
 If you prefer direct access to the unconfirmed version of a page, you can use a specific URL format:
 
@@ -306,16 +306,16 @@ upstream bug reports:
 ** Result [[Dev/wiki#Internal_direct_links_to_anchors|Same direct link to this very chapter, but how you would use it on another page]]
 
 == Default MediaWiki External Link Creation ==
-# clearnet → automatically adding links to web archives
+# clearnet &rarr; automatically adding links to web archives
 #* Syntax: <pre>[https://www.kicksecure.com Kicksecure Homepage]</pre>
 #* Result: [https://www.kicksecure.com Kicksecure Homepage]
-# onion → no extraneous onion archive link
+# onion &rarr; no extraneous onion archive link
 #* Syntax: <pre>[http://www.w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion Kicksecure Homepage]</pre>
 #* Result: [http://www.w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion Kicksecure Homepage]
-# link to web archive → icon link added, but no other no extraneous archive link
+# link to web archive &rarr; icon link added, but no other no extraneous archive link
 #* Syntax: <pre>[https://web.archive.org/web/https://www.kicksecure.com this link]</pre>
 #* Result: [https://web.archive.org/web/https://www.kicksecure.com this link]
-# link to archive.today → icon link added, but no other no extraneous archive link
+# link to archive.today &rarr; icon link added, but no other no extraneous archive link
 #* Syntax: <pre>[https://archive.today/https://www.kicksecure.com this link]</pre>
 #* Result: [https://web.archive.org/web/https://www.kicksecure.com this link]
 # Technical Background:

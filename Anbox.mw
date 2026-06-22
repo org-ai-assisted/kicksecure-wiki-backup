@@ -208,7 +208,7 @@ sudo systemctl status anbox-container-manager.service
 Should show something similar to the following.
 
 <pre>
-● anbox-container-manager.service - Anbox Container Manager
+&#x25CF; anbox-container-manager.service - Anbox Container Manager
    Loaded: loaded (/lib/systemd/system/anbox-container-manager.service; enabled; vendor preset: enabled)
    Active: active (running) since Mon 2018-12-31 06:23:49 EST; 874ms ago
      Docs: man:anbox(1)
@@ -220,7 +220,7 @@ Should show something similar to the following.
    Memory: 5.1M
       CPU: 51ms
    CGroup: /system.slice/anbox-container-manager.service
-           └─2074 /usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox
+           &#x2514;&#x2500;2074 /usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox
 
 Dec 31 06:23:48 debian systemd[1]: Starting Anbox Container Manager...
 Dec 31 06:23:49 debian systemd[1]: Started Anbox Container Manager.

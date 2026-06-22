@@ -114,7 +114,7 @@ RSA 2048 bits (e 65537) / SHA1withRSA
 Valid until: Thu, 30 Sep 2021 14:01:15 UTC
 EXPIRED
 Weak or insecure signature, but no impact on root certificate</blockquote>
-** No security impact. It’s a non-issue issue besides the annoying warning.
+** No security impact. It&rsquo;s a non-issue issue besides the annoying warning.
 ** Silencing the warning would result in loosing some device support. These devices would TLS errors which would probably cause more alarm than this.
 ** See [https://forums.whonix.org/t/dns-certification-authority-authorization-caa-policy-dnssec-for-whonix-org-ssllabs-com-test-results-ocsp-error-exception-connect-timed-out-http-r3-o-lencr-org-must-staple/5487/18 this].
 
@@ -138,7 +138,7 @@ Weak or insecure signature, but no impact on root certificate</blockquote>
 
 In simple terms, a Content Security Policy (CSP) defines server instructions for what resources can be loaded by client browsers and from where. The [https://owasp.org/www-community/controls/Content_Security_Policy OWASP Foundation] provides more detail:
 
-<blockquote>Is a W3C specification offering the possibility to instruct the client browser from which location and/or which type of resources are allowed to be loaded. To define a loading behavior, the CSP specification use “directive” where a directive defines a loading behavior for a target resource type.
+<blockquote>Is a W3C specification offering the possibility to instruct the client browser from which location and/or which type of resources are allowed to be loaded. To define a loading behavior, the CSP specification use &ldquo;directive&rdquo; where a directive defines a loading behavior for a target resource type.
 
 Directives can be specified using HTTP response header (a server may send more than one CSP HTTP header field with a given resource representation and a server may send different CSP header field values with different representations of the same resource or with different resources) or HTML Meta tag, the HTTP headers below are defined by the specs:</blockquote>
 

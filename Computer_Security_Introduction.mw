@@ -273,7 +273,7 @@ Many components interact with a file or device before you explicitly "open" it i
 * <u>Bug density:</u> Complex parsers tend to have more bugs, and some bugs can be exploited.
 * <u>Even "simple" utilities:</u> In theory, even small and ubiquitous command line tools such as <code>grep</code> and <code>find</code> could be vulnerable, because they still process attacker-influenced strings, filenames, directory structures, and file contents. However, their attack surface is often smaller than complex format parsers, so public vulnerability reports may be rarer. For example, at the time of writing CVE Details lists no vulnerabilities created in the last 10 years for [https://www.cvedetails.com/product/23804/GNU-Grep.html?vendor_id=72 GNU Grep] and [https://www.cvedetails.com/product/1521/GNU-Findutils.html?vendor_id=72 GNU Findutils]:
 ** <blockquote>We don't have any vulnerabilities for this product, created in the last 10 years</blockquote>
-* <u>No CVEs ≠ no risk:</u> A lack of reported CVEs can also reflect lower scrutiny, different reporting practices, or bugs that have not been found or disclosed yet.
+* <u>No CVEs &ne; no risk:</u> A lack of reported CVEs can also reflect lower scrutiny, different reporting practices, or bugs that have not been found or disclosed yet.
 
 == Common high risk interaction points ==
 

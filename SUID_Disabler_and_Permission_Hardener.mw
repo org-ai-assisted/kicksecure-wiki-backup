@@ -20,7 +20,7 @@ https://web.archive.org/web/20211101172007/https://www.linuxnix.com/suid-set-sui
 </ref>
 
 <blockquote>
-... a special type of file permissions given to a file. Normally in Linux/Unix when a program runs, it inherits access permissions from the logged in user. SUID is defined as giving temporary permissions to a user to run a program/file with the permissions of the file owner rather that the user who runs it. In simple words users will get file owner’s permissions as well as owner UID and GID when executing a file/program/command.
+... a special type of file permissions given to a file. Normally in Linux/Unix when a program runs, it inherits access permissions from the logged in user. SUID is defined as giving temporary permissions to a user to run a program/file with the permissions of the file owner rather that the user who runs it. In simple words users will get file owner&rsquo;s permissions as well as owner UID and GID when executing a file/program/command.
 </blockquote>
 
 In simple terms, SUID (or setuid) allows a user to execute a binary with the privileges of the binary's owner. This is often used to allow unprivileged users to utilize certain functionality that is normally only reserved for the root user. As such, many SUID binaries have a history of privilege escalation security vulnerabilities.
@@ -51,9 +51,9 @@ https://web.archive.org/web/20170522054219/https://www.linuxnix.com/sgid-set-sgi
 </ref>
 
 <blockquote>
-... a special type of file permissions given to a file/folder. Normally in Linux/Unix when a program runs, it inherits access permissions from the logged in user. SGID is defined as giving temporary permissions to a user to run a program/file with the permissions of the file group permissions to become member of that group to execute the file. In simple words users will get file Group’s permissions when executing a Folder/file/program/command.
+... a special type of file permissions given to a file/folder. Normally in Linux/Unix when a program runs, it inherits access permissions from the logged in user. SGID is defined as giving temporary permissions to a user to run a program/file with the permissions of the file group permissions to become member of that group to execute the file. In simple words users will get file Group&rsquo;s permissions when executing a Folder/file/program/command.
 
-SGID is similar to SUID. The difference between both is that SUID assumes owner of the file permissions and SGID assumes group’s permissions when executing a file instead of logged in user inherit permissions.
+SGID is similar to SUID. The difference between both is that SUID assumes owner of the file permissions and SGID assumes group&rsquo;s permissions when executing a file instead of logged in user inherit permissions.
 </blockquote>
 
 This page sometimes only refers to SUID while it means both, <u>SUID and SGID</u>. Even the name of the program -- SUID Disabler and Permission Hardener -- leaves out SGID, even though SGID disabling is included.
@@ -629,10 +629,10 @@ sudo find / -perm -4000 -type f -executable -not -group sysmaint
 Ignore the following.
 
 <pre>
-find: ‘/proc/5422/task/5422/fd/6’: No such file or directory
-find: ‘/proc/5422/task/5422/fdinfo/6’: No such file or directory
-find: ‘/proc/5422/fd/5’: No such file or directory
-find: ‘/proc/5422/fdinfo/5’: No such file or directory
+find: &lsquo;/proc/5422/task/5422/fd/6&rsquo;: No such file or directory
+find: &lsquo;/proc/5422/task/5422/fdinfo/6&rsquo;: No such file or directory
+find: &lsquo;/proc/5422/fd/5&rsquo;: No such file or directory
+find: &lsquo;/proc/5422/fdinfo/5&rsquo;: No such file or directory
 </pre>
 
 The following list shows only white listed SUID binaries.

@@ -157,7 +157,7 @@ Implementation probably needs discussion.
 
 5) bug?
 
-This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”.
+This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use &ldquo;<!DOCTYPE html>&rdquo;.
 
 https://developer.mozilla.org/docs/Web/HTML/Quirks_Mode_and_Standards_Mode
 
@@ -553,7 +553,7 @@ Patrick:
 '''DEV'''
 * Done
 * {{IconSet|maybe|Tendentially Approve}} The new solution is very restrictive. However, the 2 cases that this would really prevent might not be relevant for us and are not used currently.
-*# Unicode characters like äöü or other languages than english
+*# Unicode characters like &auml;&ouml;&uuml; or other languages than english
 *# References with query parameters like <code><nowiki>{{#css:/load.php?module=ext.myCss}}</nowiki></code>
 
 Patrick:

@@ -66,7 +66,7 @@ Quote [https://www.phoronix.com Phoronix.com], [https://www.phoronix.com/review/
 {{project_name_long}} developer Patrick Schleizer [https://forums.whonix.org/t/linux-kernel-runtime-guard-lkrg-linux-kernel-runtime-integrity-checking-and-exploit-detection/8477/3 said]:
 
 <blockquote>
-Contacted upstream LKRG developers privately. To paraphrase: "We don’t oppose you packaging it. As long as LKRG exists, there will always be a free and libre version. There is no pro version yet. A hypothetical future pro version would not change that." In my words: "there won’t be a grsecurity alike situation where everything gets closed down".
+Contacted upstream LKRG developers privately. To paraphrase: "We don&rsquo;t oppose you packaging it. As long as LKRG exists, there will always be a free and libre version. There is no pro version yet. A hypothetical future pro version would not change that." In my words: "there won&rsquo;t be a grsecurity alike situation where everything gets closed down".
 </blockquote>
 
 Quote [https://openwall.info/wiki/p_lkrg/Main LKRG wiki]:

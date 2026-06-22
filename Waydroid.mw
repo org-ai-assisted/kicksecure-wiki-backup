@@ -53,7 +53,7 @@ package=waydroid
 The process of installing Waydroid is complete.
 
 = See Also =
-* [https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1001278 Debian RFP: waydroid – Run a full Android system on Wayland using a container]
+* [https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1001278 Debian RFP: waydroid &ndash; Run a full Android system on Wayland using a container]
 * https://forums.kicksecure.com/t/running-android-apps-inside-kicksecure-waydroid/304
 * https://forums.whonix.org/t/running-android-apps-inside-whonix-workstation-waydroid/16911
 

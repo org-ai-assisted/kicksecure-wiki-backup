@@ -35,7 +35,7 @@ Note that this is currently assuming that UEFI and either the amd64 (a.k.a. x86_
 
 {{quotation
 |quote=
-Abstract—Booting is hard. Booting in the ARM world is even
+Abstract&mdash;Booting is hard. Booting in the ARM world is even
 harder. State of the art are a dozen different boot loaders that
 may or may not deserve that name. Each gets configured
 differently and each has its own pros and cons. For a Linux

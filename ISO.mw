@@ -663,7 +663,7 @@ You can experiment with the [[Live_Mode|Live ISO]] without saving data persisten
 
 {{mbox
 |text=
-{{Icon|border=thick|shadow=true|style=rounded|fa-solid cs-green fa-2x|text=WELL DONE! 😃}}
+{{Icon|border=thick|shadow=true|style=rounded|fa-solid cs-green fa-2x|text=WELL DONE! &#x1F603;}}
 
 Up to this point you have '''downloaded''' the {{project_name_short}} ISO, '''flashed the ISO''' to a USB stick and '''booted your computer''' from this USB stick! You can work with the live system or go on and permanently install {{project_name_short}}.
 }}
@@ -799,7 +799,7 @@ This is an [[Grub#initramfs_.28initramfs-tools_or_dracut.29_Based_Encryption_Pas
 
 {{mbox
 |text=
-{{Icon|border=thick|shadow=true|style=rounded|fa-solid cs-green fa-2x|text=CONGRATULATIONS! 😃}}
+{{Icon|border=thick|shadow=true|style=rounded|fa-solid cs-green fa-2x|text=CONGRATULATIONS! &#x1F603;}}
 
 '''You have successfully installed {{project_name_short}} to your hard drive and booted it'''. You can now permanently work with your {{project_name_short}} installation!
 }}

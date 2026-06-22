@@ -288,7 +288,7 @@ Nov 06 16:29:18 localhost mount-shared[1099]: /sbin/mount.vboxsf: mounting faile
 * https://packages.debian.org/trixie/sequoia-chameleon-gnupg
 ** Can we just symlink /usr/bin/gpg to /usr/bin/gpg-sq?
 * Aaron: Unsure if replacing gpg with gpg-sq wholesale is a good idea. Quoting the blog post on gpg-sq:
-** "A consequence of not modifying GnuPG’s state but using an overlay is that changes made using the Chameleon will not be picked up by GnuPG. For example, if you import a certificate using the Chameleon, it will only be inserted into the overlay, and GnuPG will not see it."
+** "A consequence of not modifying GnuPG&rsquo;s state but using an overlay is that changes made using the Chameleon will not be picked up by GnuPG. For example, if you import a certificate using the Chameleon, it will only be inserted into the overlay, and GnuPG will not see it."
 ** Would prefer porting to sq's native API instead, to avoid consistency issues.
 * Aaron: Delay until after the release of Kicksecure 18 perhaps? That way the work done here doesn't end up causing us major problems before the release is complete.
 ** Delaying this may be essential, as Whonix 18 should release before Qubes OS R4.3 does.
@@ -839,7 +839,7 @@ f4cc44bdad86254a9b4aa355320e52e1749c93c0 to f4cc44bdad86254a9b4aa355320e52e1749c
 * use cases: towards kiosk mode (low priority), optional feature: enforce boot into user session if GRUB bootloader password is unknown
 * Aaron: Difficult, because (quoting info page for GRUB):
 
-<blockquote>The ‘grub-mkconfig’ program does not yet have built-in support for generating configuration files with authentication.  You can use ‘/etc/grub.d/40_custom’ to add simple superuser authentication, by adding ‘set superusers=’ and ‘password’ or ‘password_pbkdf2’ commands.</blockquote>
+<blockquote>The &lsquo;grub-mkconfig&rsquo; program does not yet have built-in support for generating configuration files with authentication.  You can use &lsquo;/etc/grub.d/40_custom&rsquo; to add simple superuser authentication, by adding &lsquo;set superusers=&rsquo; and &lsquo;password&rsquo; or &lsquo;password_pbkdf2&rsquo; commands.</blockquote>
 
 * That is, while one can write boot entries that allow only specific users to run them, this requires building the grub.cfg file by hand, <code>grub-mkconfig</code> and <code>/etc/grub.d</code> cannot be used at all if going this route.
 ** Might be possible to contribute upstream support for restricting boot entries?
@@ -2088,8 +2088,8 @@ Because the Terms of Service prohibit use by anyone under the age of 18, you are
 </pre>
 
 * 8) Separate age API from terms of service.
-** age-api: collect age → compute bracket → store bracket → provide query API
-** setup-wizard-dist: read bracket → enforce project policy (18+ only)
+** age-api: collect age &rarr; compute bracket &rarr; store bracket &rarr; provide query API
+** setup-wizard-dist: read bracket &rarr; enforce project policy (18+ only)
 * new ideas:
 ** should have a versioned age bracket file
 ** should have a versioned age bracket query tool
@@ -2426,8 +2426,8 @@ sudo genmkfile install && TB_NO_CLEANUP=true update-torbrowser --reset --noaskst
 
 == compiled flags wiki page improvements ==
 * https://www.kicksecure.com/wiki/Dev/compiler_hardening
-* It warns “Do NOT use -fsanitize=address”, but the Clang x86_64 CodeSelect includes -fsanitize=address,undefined`?
-* Also there’s an empty <code>TODO</code> entry where a flag name seems missing.
+* It warns &ldquo;Do NOT use -fsanitize=address&rdquo;, but the Clang x86_64 CodeSelect includes -fsanitize=address,undefined`?
+* Also there&rsquo;s an empty <code>TODO</code> entry where a flag name seems missing.
 ** Aaron: Both issues fixed.
 * Patrick: OK.
 

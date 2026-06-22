@@ -705,7 +705,7 @@ Would it make sense to load font awesome the way Roboto is load?
 You cannot mark it swap by default - this will cause random characters to appear (or in the best case squares). This is a very bad UX.
 
 See the explanation from Google:
-swap gives the font face a zero second block period and an infinite swap period. This means the browser draws text immediately with a fallback if the font face isn’t loaded, but swaps the font face in as soon as it loads.
+swap gives the font face a zero second block period and an infinite swap period. This means the browser draws text immediately with a fallback if the font face isn&rsquo;t loaded, but swaps the font face in as soon as it loads.
 
 This behavior is desired for small blocks of text (e.g. headings). For big chunks of texts you should use fallback for big blocks (e.g. article contents). The block setting gives the user no icons on load and loads them as soon as possible, which is better than broken icons blinking into proper icons.
 </blockquote>
@@ -1067,7 +1067,7 @@ For demonstrative purposes only: https://web.archive.org/web/20220204103725/http
 ** We have been using $.cookie and mw.cookie for cookie handling. Both of which are Mediawiki handlers, mw.cookie is the wrapper for the jQuery plugin. However both of them in some cases are not reliably loaded in time. This leads to this error message "$.cookie is not a function" in the browser console or another message that mw.cookie.get / set is undefined.
 ** There is a discussion about this issues here https://phabricator.wikimedia.org/T276368 but there seems to be no willingness to further investigate by the mediawiki team.
 ** That's why we settled for using js-cookie which is small, fast, very well tested and stable
-* In short there are (1) The main object Cookies (2) The method Cookies.get (3) The method Cookies.set (4) The method Cookies.remove → further documentation here https://github.com/js-cookie/js-cookie
+* In short there are (1) The main object Cookies (2) The method Cookies.get (3) The method Cookies.set (4) The method Cookies.remove &rarr; further documentation here https://github.com/js-cookie/js-cookie
 
 == Exclusion of text parts from search engine indexing ==
 
@@ -1160,22 +1160,22 @@ Any user-supplied URL that will be output into an HTML attribute (e.g. <code>hre
 
 This pattern is used across multiple widgets (e.g. <code>LeftRightImageText</code>, <code>CodeSelect</code>, and any widget accepting URLs from user input).
 
-'''Stage 1 — Strip ASCII control characters:''' <code>regex_replace:'/[\x00-\x1F\x7F]/':''</code>
+'''Stage 1 &mdash; Strip ASCII control characters:''' <code>regex_replace:'/[\x00-\x1F\x7F]/':''</code>
 * Browsers silently strip control characters from URLs before navigation
 * An attacker can embed e.g. <code>\x00</code> into <code>jav\x00ascript:</code> to evade a literal string blacklist, yet the browser navigates to <code>javascript:</code> after stripping
 * Removing them first ensures the scheme check in stage 2 sees what the browser actually executes
 
-'''Stage 2 — Block dangerous URL schemes:''' <code>regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'</code>
-* Rewrites dangerous schemes into inert relative URLs: <code>javascript:alert(1)</code> → <code>#blocked-javascript:alert(1)</code>
+'''Stage 2 &mdash; Block dangerous URL schemes:''' <code>regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'</code>
+* Rewrites dangerous schemes into inert relative URLs: <code>javascript:alert(1)</code> &rarr; <code>#blocked-javascript:alert(1)</code>
 * The <code>\s*</code> catches whitespace-padded variants that some browsers accept (e.g. <code>javascript\t:</code>)
 * Case-insensitive match via the <code>i</code> flag
 * The blocked schemes are:
-** <code>javascript:</code> — direct script execution
-** <code>data:</code> — inline content that can contain active script
-** <code>vbscript:</code> — legacy IE script execution (still parsed by some engines)
-** <code>file:</code> — local file access
+** <code>javascript:</code> &mdash; direct script execution
+** <code>data:</code> &mdash; inline content that can contain active script
+** <code>vbscript:</code> &mdash; legacy IE script execution (still parsed by some engines)
+** <code>file:</code> &mdash; local file access
 
-'''Stage 3 — HTML-escape for attribute context:''' <code>escape:'html'</code>
+'''Stage 3 &mdash; HTML-escape for attribute context:''' <code>escape:'html'</code>
 * Standard entity encoding to prevent breaking out of the attribute with quotes or angle brackets
 * Must be applied last so the escaping doesn't interfere with the regex patterns above
 
@@ -1861,21 +1861,21 @@ File:Example.jpg|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 * Parameters
 ** '''1 (unnamed parameter) | mandatory, string''' : A valid GitHub URL (only <code>github.com</code> domains are accepted)
 * Use cases
-** '''User profile''' (<code>github.com/username</code>) → One link with <code>@ username</code> as link text
-** '''Repository''' (<code>github.com/owner/repo</code>) → One link with repo name as link text
-** '''File path''' (<code>github.com/owner/repo/blob/branch/path/to/file</code>) → Three links:
+** '''User profile''' (<code>github.com/username</code>) &rarr; One link with <code>@ username</code> as link text
+** '''Repository''' (<code>github.com/owner/repo</code>) &rarr; One link with repo name as link text
+** '''File path''' (<code>github.com/owner/repo/blob/branch/path/to/file</code>) &rarr; Three links:
 *** Link 1: Repo name
 *** Link 2: File path as given
 *** Link 3: "raw" pill linking to the raw version of the file
-** '''Raw file path''' (<code>github.com/owner/repo/raw/branch/path/to/file</code>) → Three links:
+** '''Raw file path''' (<code>github.com/owner/repo/raw/branch/path/to/file</code>) &rarr; Three links:
 *** Link 1: Repo name
 *** Link 2: File path (links to the normal blob view for proper navigation)
 *** Link 3: "raw" pill linking to the raw input url
-** '''Commit hash''' (<code>github.com/owner/repo/commit/abc123</code>) → Link with checkmark and short hash; appends "diff" label when a <code>#diff-...</code> fragment is present
-** '''Pull request''' (<code>github.com/owner/repo/pull/123</code>) → Link with <code>? 123</code>; also detects review comments (<code>#discussion_r...</code>), reviews (<code>#pullrequestreview-...</code>), and issue comments (<code>#issuecomment-...</code>) with appropriate labels
-** '''Issue''' (<code>github.com/owner/repo/issues/123</code>) → Link with <code>! 123</code>; also detects issue comments with "comment" label
-** '''Release tag''' (<code>github.com/owner/repo/releases/tag/v1.0</code>) → Link with <code>^ v1.0</code>
-** '''Repository with fragment''' → Repo link + fragment link (e.g. <code>#readme</code>)
+** '''Commit hash''' (<code>github.com/owner/repo/commit/abc123</code>) &rarr; Link with checkmark and short hash; appends "diff" label when a <code>#diff-...</code> fragment is present
+** '''Pull request''' (<code>github.com/owner/repo/pull/123</code>) &rarr; Link with <code>? 123</code>; also detects review comments (<code>#discussion_r...</code>), reviews (<code>#pullrequestreview-...</code>), and issue comments (<code>#issuecomment-...</code>) with appropriate labels
+** '''Issue''' (<code>github.com/owner/repo/issues/123</code>) &rarr; Link with <code>! 123</code>; also detects issue comments with "comment" label
+** '''Release tag''' (<code>github.com/owner/repo/releases/tag/v1.0</code>) &rarr; Link with <code>^ v1.0</code>
+** '''Repository with fragment''' &rarr; Repo link + fragment link (e.g. <code>#readme</code>)
 ** Everything else gives a warning (<code>github-link-widget-no-valid-url</code>)
 * Example
 ** Syntax <code><nowiki>{{Github_link|https://github.com/Kicksecure/desktop-config-dist/blob/master/usr/share/desktop-config-dist/kanshi-config-template}}</nowiki></code>
@@ -1916,7 +1916,7 @@ File:Example.jpg|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 
 == Headline (Template) ==
 
-* There is no way in MediaWiki to create dynamic headlines via a Template. This however is needed sometimes. Usually headlines are written using wikitext and the "=" notation. But sometimes the content of the headline might be given to a template via a parameter, separate from the level of the headline for programming and usability reasons. This is the case in a special case of Template:Tab, see [[#Tab_Template_.2F_Tab_Content_Controller]] → "Headlines excluded from TOC" for more information
+* There is no way in MediaWiki to create dynamic headlines via a Template. This however is needed sometimes. Usually headlines are written using wikitext and the "=" notation. But sometimes the content of the headline might be given to a template via a parameter, separate from the level of the headline for programming and usability reasons. This is the case in a special case of Template:Tab, see [[#Tab_Template_.2F_Tab_Content_Controller]] &rarr; "Headlines excluded from TOC" for more information
 * Features
 ** Headline will not be listed in TOC
 ** auto-generated or manual id
@@ -2626,7 +2626,7 @@ Deprecated upstream? Problem?
 # '''USAGE''' : Use template <code><nowiki>{{Subdomain_link|...}}</nowiki></code> with the following parameters
 ## <code>text | string, default: ""</code> : the text you want to display in your link. The effect of this parameter is influenced by the parameter result. If not <code>|result=link</code> then this parameter text is obsolete
 ## <code>sub | string, default: ""</code> : the subdomain without any special character. If you want forums.{{project_clearnet}}, use "forums"
-## <code>append | string, default: ""</code> : an addition to the link after the domain. Always start with slash "/". Example: "/thread/12387" → "{{project_clearnet}}/thread/12387"
+## <code>append | string, default: ""</code> : an addition to the link after the domain. Always start with slash "/". Example: "/thread/12387" &rarr; "{{project_clearnet}}/thread/12387"
 ## <code>result | string, standard: "link"</code> : determines what the widget returns. Options (A) link - then an a-hyperlink will be created (B) url - then only the final url will be created (C) parts - then a string will be created. First part protocol "http", then comma, then "domain", example: "https,{{project_clearnet}}"
 
 == SVG template and widget ==
@@ -3210,7 +3210,7 @@ Text
 ## {{CustomRepo|MwCombineJsWrapper.js}}
 ## {{CustomRepo|JsPerformanceTests.js}}
 # '''MwCombineJsWrapper''' there are the functions <code>window.mwDev.test.pageLoading()</code> and <code>mwDev.tools.test.pageLoadingExpectedEvents()</code> which are used to measure different (manually triggered) events. When the last event is triggered then a report is shown in the console
-## <code>mwDev.tools.test.pageLoadingExpectedEvents()</code> is used to register expected events. This is crucial, so the report only waits for the events that have been registered to occur. This is necessary because our Javascript execution is not strictly synchronous but asynchronous to deliver a much better performace to the user, learn more: [[Dev/mediawiki#Wiki_Load_Cascade_:_HTML.2C_CSS.2C_Javascript|Wiki Load Cascade : HTML, CSS, Javascript]]
+## <code>mwDev.tools.test.pageLoadingExpectedEvents()</code> is used to register expected events. This is crucial, so the report only waits for the events that have been registered to occur. This is necessary because our Javascript execution is not strictly synchronous but asynchronous to deliver a much better performace to the user, learn more: [[Dev/mediawiki#Wiki_Load_Cascade_:_HTML.2C_CSS.2C_Javascript|Wiki Load Cascade&nbsp;: HTML, CSS, Javascript]]
 ## The events always occur: <code>page-load-start</code> (before the scripts get initiated) and <code>page-load-all-scripts-initiated</code> (after all scripts have been initiated, but NOT completed)
 ## These additional events are registered
 ### <code>page-load-code-select-enriched</code> gets registered before the page wide init of CodeSelect and occurs when the last CodeSelect is initiated
@@ -3831,7 +3831,7 @@ On 2024-09-06 we have replaced all <code><nowiki>[[Image: [[image: [[file:</nowi
 # Use the old filename for each image as the search and the new file name as the replacement text
 # Click "Check All" to search in all namespaces and Click "Continue"
 # Check Recent Changes and confirm that all changes were as desired
-# Now visit all wiki pages of the old images again but with the query parameter <code>?redirect=no</code>. Now delete this page (More → Delete)
+# Now visit all wiki pages of the old images again but with the query parameter <code>?redirect=no</code>. Now delete this page (More &rarr; Delete)
 
 = Pagespeed and Lighthouse =
 

@@ -17,7 +17,7 @@ How-to: Use Electrum Bitcoin Wallet in {{project_name_short}}
 
 <blockquote><b>How does Electrum work?</b>
 
-Electrum’s focus is speed, with low resource usage and simplifying Bitcoin. Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Bitcoin system.</blockquote>
+Electrum&rsquo;s focus is speed, with low resource usage and simplifying Bitcoin. Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Bitcoin system.</blockquote>
 
 Electrum does not need to download/verify the blockchain and users store their private keys locally.
 
@@ -39,12 +39,12 @@ Electrum is configured by electrum upstream default to use public third party se
 
 <blockquote>[...]
 
-One of the servers, arbitrarily, is selected as the “main” server.
+One of the servers, arbitrarily, is selected as the &ldquo;main&rdquo; server.
 
 * The client subscribes to its own addresses (nit: sha256 hashes of scriptPubKeys) so that it would be notified of new transactions touching them. It also synchronizes the existing history of its addresses. This means the client sacrifices some privacy to the server, as the server can now reasonably guess that all these addresses belong to the same entity.
 * As above, confirmed transactions are verified via SPV.
 * The server is trusted about unconfirmed transactions.
-* The server can lie by omission. That is, it can “forget” to mention (both confirmed and unconfirmed) transactions that are relevant to the client.
+* The server can lie by omission. That is, it can &ldquo;forget&rdquo; to mention (both confirmed and unconfirmed) transactions that are relevant to the client.
 * The main server is also used for fee estimates, and is trusted with those (low-high sanity limits are applied in the client)
 * The main server is also used to broadcast the transactions the client makes.
 

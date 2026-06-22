@@ -68,11 +68,11 @@ The system might hang when holding down the {{IconSet|keyboard|shift}} key. If t
 {{box|text=
 {{IconSet|h2|1}} Scroll to <code>Keyboard layout options</code>.
 
-Scroll all the way down using the {{IconSet|keyboard|↓}} key until you reach <code>Keyboard layout options</code>, then press {{IconSet|keyboard|enter}}.
+Scroll all the way down using the {{IconSet|keyboard|&darr;}} key until you reach <code>Keyboard layout options</code>, then press {{IconSet|keyboard|enter}}.
 
 {{IconSet|h2|2}} Select your keyboard layout.
 
-Navigate using the arrow keys ({{IconSet|keyboard|↑}} or {{IconSet|keyboard|↓}}) until you find your keyboard layout, then press {{IconSet|keyboard|enter}}.
+Navigate using the arrow keys ({{IconSet|keyboard|&uarr;}} or {{IconSet|keyboard|&darr;}}) until you find your keyboard layout, then press {{IconSet|keyboard|enter}}.
 
 {{IconSet|h2|3}} Read the notice.
 
@@ -95,7 +95,7 @@ Keyboard layout change complete.
 
 {{IconSet|h1|3}} Select the relevant entry to edit.
 
-Use the arrow keys ({{IconSet|keyboard|↑}} or {{IconSet|keyboard|↓}}) to highlight the relevant entry and then press the {{IconSet|keyboard|e}} key to enter edit mode.
+Use the arrow keys ({{IconSet|keyboard|&uarr;}} or {{IconSet|keyboard|&darr;}}) to highlight the relevant entry and then press the {{IconSet|keyboard|e}} key to enter edit mode.
 
 {{IconSet|h1|4}} Go to the end of the line.
 
@@ -347,7 +347,7 @@ Initial ramdisk ([[Dracut#initrd|"<code>initrd</code>"]]) based encryption passw
 This is related to [[Full Disk Encryption|{{fde}}]].
 
 {{quotation
-|quote=The installer currently requires that you set a disk encryption passphrase when you’re on the “Partitions” screen. Whatever passphrase you set at that point, type that in and press “Enter”. If you don’t remember entering a passphrase, but do remember entering a password at some point, type in that password.
+|quote=The installer currently requires that you set a disk encryption passphrase when you&rsquo;re on the &ldquo;Partitions&rdquo; screen. Whatever passphrase you set at that point, type that in and press &ldquo;Enter&rdquo;. If you don&rsquo;t remember entering a passphrase, but do remember entering a password at some point, type in that password.
 |context=[https://forums.kicksecure.com/t/please-enter-passphrase-for-disk-rootfs-message/984 "Please enter passphrase for disk rootfs" message]
 }}
 

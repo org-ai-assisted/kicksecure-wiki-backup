@@ -78,8 +78,8 @@ The ideological differences between Open Source and Free Software are very old. 
 It is important to examine the objectives of the entities backing a software project, even if the code is apparently released under an open license. The impact on users' freedom in the future is at stake, as a captive market is a winner-takes-all scenario. Consider the examples below.
 
 == Android ==
-* Ars Technica: [https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/ Google’s iron grip on Android: Controlling open source by any means necessary]
-* The European Commission: [https://ec.europa.eu/commission/presscorner/detail/en/IP_18_4581 Antitrust: Commission fines Google €4.34 billion for illegal practices regarding Android mobile devices to strengthen dominance of Google's search engine]
+* Ars Technica: [https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/ Google&rsquo;s iron grip on Android: Controlling open source by any means necessary]
+* The European Commission: [https://ec.europa.eu/commission/presscorner/detail/en/IP_18_4581 Antitrust: Commission fines Google &euro;4.34 billion for illegal practices regarding Android mobile devices to strengthen dominance of Google's search engine]
 ** <blockquote>Commissioner Margrethe Vestager, in charge of competition policy, said: "Today, mobile internet makes up more than half of global internet traffic. It has changed the lives of millions of Europeans. Our case is about three types of restrictions that Google has imposed on Android device manufacturers and network operators to ensure that traffic on Android devices goes to the Google search engine. In this way, Google has used Android as a vehicle to cement the dominance of its search engine. These practices have denied rivals the chance to innovate and compete on the merits. They have denied European consumers the benefits of effective competition in the important mobile sphere. This is illegal under EU antitrust rules."</blockquote>
 ** <blockquote>In particular, Google: [...] has prevented manufacturers wishing to pre-install Google apps from selling even a single smart mobile device running on alternative versions of Android that were not approved by Google (so-called "Android forks").</blockquote>
 ** <blockquote>In order to be able to pre-install on their devices Google's proprietary apps, including the Play Store and Google Search, manufacturers had to commit not to develop or sell even a single device running on an Android fork.</blockquote>
@@ -136,7 +136,7 @@ Examples of this struggle include:
 
 * TVs:
 ** [https://www.theguardian.com/technology/2015/feb/11/samsung-admits-smart-tvs-forcing-pop-up-ads-into-video-apps The Guardian: Samsung admits its smart TVs are forcing pop-up ads into video apps] (underline added):
-*** <blockquote>The admission comes in a week that Samsung was forced to change its smart TV privacy policy, <u>which indicated the TV could be recording conversations and sending them to third parties</u>, provoking “Orwellian” complaints from critics.</blockquote>
+*** <blockquote>The admission comes in a week that Samsung was forced to change its smart TV privacy policy, <u>which indicated the TV could be recording conversations and sending them to third parties</u>, provoking &ldquo;Orwellian&rdquo; complaints from critics.</blockquote>
 ** Almost 100,000 upvotes on reddit post [https://www.reddit.com/r/assholedesign/comments/co5aw4/unremovable_ads_on_my_2500_samsung_smart_tv/ Unremovable ads on my $2,500 Samsung Smart TV].
 ** Given that TVs are in most people's living rooms and even bedrooms and that the newer generation of Smart TVs come with built-in cameras, microphones and are internet-connected, it is crucial to ensure that the software running on them serves the user and not the producer. See also [https://www.washingtonpost.com/news/the-switch/wp/2017/03/07/why-the-cia-is-using-your-tvs-smartphones-and-cars-for-spying/ The Washington Post: WikiLeaks: The CIA is using popular TVs, smartphones and cars to spy on their owners] / [https://wikileaks.org/ciav7p1/ Vault 7: CIA Hacking Tools Revealed].
 * The PlayStation is a fully functional computer that could run any program in theory, but in practice, which programs or games can be run on it is solely decided by Sony, its producer.
@@ -152,7 +152,7 @@ Examples of this struggle include:
 * https://torrentfreak.com/youtube-vanced-app-forced-to-shut-down-for-legal-reasons-220314/
 * https://www.tomsguide.com/news/rip-vanced-the-best-youtube-app-just-got-shut-down
 </ref>
-*** A YouTube downloader <code>youtube-dl</code>... [https://www.eff.org/deeplinks/2020/11/github-reinstates-youtube-dl-after-riaas-abuse-dmca Quote EFF]: <blockquote>Recording Industry Association of America (RIAA) abused the Digital Millennium Copyright Act’s notice-and-takedown procedure to pressure GitHub to remove it.</blockquote> It was later reinstated thanks to help by EFF. <ref>
+*** A YouTube downloader <code>youtube-dl</code>... [https://www.eff.org/deeplinks/2020/11/github-reinstates-youtube-dl-after-riaas-abuse-dmca Quote EFF]: <blockquote>Recording Industry Association of America (RIAA) abused the Digital Millennium Copyright Act&rsquo;s notice-and-takedown procedure to pressure GitHub to remove it.</blockquote> It was later reinstated thanks to help by EFF. <ref>
 https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/
 </ref>
 *** Installation of apps without using the platform's official app store is sometimes still possible.
@@ -178,7 +178,7 @@ https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/
 ** [https://www.zdnet.com/article/how-google-and-everyone-else-gets-wi-fi-location-data/ How Google--and everyone else--gets Wi-Fi location data]
 *** <blockquote>How it works, according to Google, is that the Android Location Services periodically checks on your location using GPS, Cell-ID, and Wi-Fi to locate your device. When it does this, your Android phone will send back publicly broadcast Wi-Fi access points' Service set identifier (SSID) and Media Access Control (MAC) data. Again, this isn't just how Google does it; it's how everyone does it. It's industry practice for location database vendors.</blockquote>
 ** [https://apnews.com/828aefab64d4411bac257a07c1af0ecb/AP-Exclusive:-Google-tracks-your-movements,-like-it-or-not AP Exclusive: Google tracks your movements, like it or not]
-*** <blockquote>Google wants to know where you go so badly that it records your movements even when you explicitly tell it not to. An Associated Press investigation found that many Google services on Android devices and iPhones store your location data even if you’ve used a privacy setting that says it will prevent Google from doing so. Computer-science researchers at Princeton confirmed these findings at the AP’s request.</blockquote>
+*** <blockquote>Google wants to know where you go so badly that it records your movements even when you explicitly tell it not to. An Associated Press investigation found that many Google services on Android devices and iPhones store your location data even if you&rsquo;ve used a privacy setting that says it will prevent Google from doing so. Computer-science researchers at Princeton confirmed these findings at the AP&rsquo;s request.</blockquote>
 ** There may be rare exceptions to this rule, hence "most" and not "all." These exceptions are not the point which shall be made in this comparison. See also [[Mobile_Operating_System_Comparison#iPhone_and_Android|Android Privacy Issues and User Freedom Restrictions]].
 ** In summary, both restrictions on applications which can/cannot be installed as well as which can/cannot be uninstalled are imposed. People are conditioned into more software freedom restrictions.
 * UEFI SecureBoot is another stumbling stone which makes installation of Freedom Software operating systems as a replacement for Microsoft Windows more difficult on the Intel / AMD64 ("PC") computers.
@@ -304,7 +304,7 @@ The [https://www.gnu.org/licenses/gpl-3.0.en.html GPL] has led significant corpo
 === Microsoft ===
 
 {{Quotation
-|quote=“Free software,” like free societies, has its enemies. Microsoft has waged a war against the GPL, warning whoever will listen that the GPL is a “dangerous” license.
+|quote=&ldquo;Free software,&rdquo; like free societies, has its enemies. Microsoft has waged a war against the GPL, warning whoever will listen that the GPL is a &ldquo;dangerous&rdquo; license.
 |context=[https://www.gnu.org/doc/fsfs3-hardcover.pdf Free Software, Free Society (fsfs3)] page 8
 }}
 

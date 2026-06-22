@@ -100,7 +100,7 @@ License: GPL-3+-with-id-software-addtional-terms
  3. LEGAL NOTICES; NO TRADEMARK LICENSE; ORIGIN. You must reproduce faithfully
  all trademark, copyright and other proprietary and legal notices on any copies
  of the Program or any other required author attributions. This license does
- not grant you rights to use any copyright holder or any other partys name,
+ not grant you rights to use any copyright holder or any other party&rsquo;s name,
  logo, or trademarks. Neither the name of the copyright holder or its
  affiliates, or any other party who modifies and/or conveys the Program may be
  used to endorse or promote products derived from this software without
@@ -222,7 +222,7 @@ GPL-3-with-idsoft-extra-terms
 Summary:
 Id software added several terms to the software license, ammending the GPL-3.
 
-This is NOT in a contradiction to the GPL-3 §10, as GPL-3 §7 explictly allows
+This is NOT in a contradiction to the GPL-3 &sect;10, as GPL-3 &sect;7 explictly allows
 to override the paragraphs idsoft does.
 
 This was also discussed on debian-legal with the same conclusion:
@@ -231,11 +231,11 @@ See https://lists.debian.org/debian-legal/2014/10/msg00003.html
 
 Analysis after initial reject:
 
-GPL V3 in §10:
+GPL V3 in &sect;10:
 You may not impose any further restrictions on the exercise of the> > rights
 granted or affirmed under this License.
 
-However, §7, "Addtional Terms" has an exception to this: (I'll quote
+However, &sect;7, "Addtional Terms" has an exception to this: (I'll quote
 only the important sections here):
 
   7. Additional Terms.
@@ -263,28 +263,28 @@ only the important sections here):
     for any liability that these contractual assumptions directly
     impose on those licensors and authors.
 
-  All other non-permissive additional terms are considered “further
-  restrictions” within the meaning of section 10.
+  All other non-permissive additional terms are considered &ldquo;further
+  restrictions&rdquo; within the meaning of section 10.
 
 The last quoted sentence makes it clear that other changes except the
-ones from the list in §7 are "further restrictions" and implicitly says
+ones from the list in &sect;7 are "further restrictions" and implicitly says
 "those in the list are not". For now a) is the important one.
 
-idsoft utilizes this exceptions and overrides §15 and §16 with their
+idsoft utilizes this exceptions and overrides &sect;15 and &sect;16 with their
 own versions, but IMHO above shows that they are free to do that.
 
 There is also nothing in that point a) that disallow to say "I
-completely manage §15 and §16 myself, thus the original ones are void",
+completely manage &sect;15 and &sect;16 myself, thus the original ones are void",
 so saying "Replacement of Section 15.  Section 15 of the GPL shall be
 deleted in its entirety and replaced with the following:" and
 accordingly "2. Replacement of Section 16.  Section 16 of the GPL shall
 be deleted in its entirety and replaced with the following:"
 is OK too.
 
-Looking at idsofts §15, this is a just a rephrased version of the GPL
+Looking at idsofts &sect;15, this is a just a rephrased version of the GPL
 15, with nothing special in it. [1]
 
-§16 idsoft is also not really fancy rewrite of GPL §16. [2]
+&sect;16 idsoft is also not really fancy rewrite of GPL &sect;16. [2]
 
 There is also a third point in idsofts' additional terms: [3]
 3. LEGAL NOTICES; NO TRADEMARK LICENSE; ORIGIN.
@@ -342,7 +342,7 @@ License: GPL-3+-with-idsoft-extra-terms
  with "multiplayer" and "MP".]
  .
  This file is part of the Return to Castle Wolfenstein single player
- GPL Source Code (‘RTCW SP Source Code’).
+ GPL Source Code (&lsquo;RTCW SP Source Code&rsquo;).
  .
  RTCW SP Source Code is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -376,30 +376,30 @@ License: GPL-3+-with-idsoft-extra-terms
  ADDITIONAL TERMS APPLICABLE TO THE RETURN TO CASTLE WOLFENSTEIN
  SINGLE PLAYER GPL SOURCE CODE.
  .
- The following additional terms (“Additional Terms”) supplement and
- modify the GNU General Public License, Version 3 (“GPL”) applicable
- to the Return to Castle Wolfenstein single player GPL Source Code (“RTCW
- SP Source Code”).  In addition to the terms and conditions of the GPL,
+ The following additional terms (&ldquo;Additional Terms&rdquo;) supplement and
+ modify the GNU General Public License, Version 3 (&ldquo;GPL&rdquo;) applicable
+ to the Return to Castle Wolfenstein single player GPL Source Code (&ldquo;RTCW
+ SP Source Code&rdquo;).  In addition to the terms and conditions of the GPL,
  the RTCW SP Source Code is subject to the further restrictions below.
  .
  1. Replacement of Section 15.  Section 15 of the GPL shall be deleted
  in its entirety and replaced with the following:
  .
- “15. Disclaimer of Warranty.
+ &ldquo;15. Disclaimer of Warranty.
  .
  THE PROGRAM IS PROVIDED WITHOUT ANY WARRANTIES, WHETHER EXPRESSED OR
  IMPLIED, INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF FITNESS
  FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, TITLE AND MERCHANTABILITY.
- THE PROGRAM IS BEING DELIVERED OR MADE AVAILABLE “AS IS”, “WITH
- ALL FAULTS” AND WITHOUT WARRANTY OR REPRESENTATION.  THE ENTIRE RISK
+ THE PROGRAM IS BEING DELIVERED OR MADE AVAILABLE &ldquo;AS IS&rdquo;, &ldquo;WITH
+ ALL FAULTS&rdquo; AND WITHOUT WARRANTY OR REPRESENTATION.  THE ENTIRE RISK
  AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
  PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
- REPAIR OR CORRECTION.”
+ REPAIR OR CORRECTION.&rdquo;
  .
  2. Replacement of Section 16.  Section 16 of the GPL shall be deleted
  in its entirety and replaced with the following:
  .
- “16. LIMITATION OF LIABILITY.
+ &ldquo;16. LIMITATION OF LIABILITY.
  .
  UNDER NO CIRCUMSTANCES SHALL ANY COPYRIGHT HOLDER OR ITS AFFILIATES,
  OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED
@@ -412,13 +412,13 @@ License: GPL-3+-with-idsoft-extra-terms
  SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE
  WITH ANY OTHER PROGRAMS), WHETHER OR NOT ANY COPYRIGHT HOLDER OR SUCH
  OTHER PARTY RECEIVES NOTICE OF ANY SUCH DAMAGES AND WHETHER OR NOT SUCH
- DAMAGES COULD HAVE BEEN FORESEEN.”
+ DAMAGES COULD HAVE BEEN FORESEEN.&rdquo;
  .
  3. LEGAL NOTICES; NO TRADEMARK LICENSE; ORIGIN.  You must reproduce
  faithfully all trademark, copyright and other proprietary and legal
  notices on any copies of the Program or any other required author
  attributions.  This license does not grant you rights to use any
- copyright holder or any other party’s name, logo, or trademarks.
+ copyright holder or any other party&rsquo;s name, logo, or trademarks.
  Neither the name of the copyright holder or its affiliates, or any
  other party who modifies and/or conveys the Program may be used to
  endorse or promote products derived from this software without specific
@@ -593,7 +593,7 @@ What is a "compilation copyright"?
 Quote https://www.softwarefreedom.org/resources/2017/ancillary-rights.html (by Eben Moglen & Mishi Choudhary)
 
 <blockquote>
-“Compilation” as a term of art in US copyright law means “a work formed by the collection and assembling of preexisting materials or of data that are selected, coordinated, or arranged in such a way that the resulting work as a whole constitutes an original work of authorship.”2 Compilations, under US law, includes “collective works,” which are defined as “a work, such as a periodical issue, anthology, or encyclopedia, in which a number of contributions, constituting separate and independent works in themselves, are assembled into a collective whole.”3
+&ldquo;Compilation&rdquo; as a term of art in US copyright law means &ldquo;a work formed by the collection and assembling of preexisting materials or of data that are selected, coordinated, or arranged in such a way that the resulting work as a whole constitutes an original work of authorship.&rdquo;2 Compilations, under US law, includes &ldquo;collective works,&rdquo; which are defined as &ldquo;a work, such as a periodical issue, anthology, or encyclopedia, in which a number of contributions, constituting separate and independent works in themselves, are assembled into a collective whole.&rdquo;3
 </blockquote>
 
 Coincidentally or not, in computer programming <code>compilation</code> also means the "translation of <code>source code</code> into (a) <code>binary</code> (or <code>object code</code>)". It's been argued that <code>compilation</code> of <code>source code</code> into <code>binary</code> <code>software packages</code> creates a <code>compilation copyright</code> [[#Ubuntu|for example by Ubuntu]]. See also [[Dev/Operating_System#Ubuntu_Legal_Issues|Ubuntu Legal Issues]].
@@ -601,7 +601,7 @@ Coincidentally or not, in computer programming <code>compilation</code> also mea
 Quote https://www.softwarefreedom.org/resources/2017/ancillary-rights.html (by Eben Moglen & Mishi Choudhary)
 
 <blockquote>
-The process of making distributions involves no small amount of additional programming. Maintenance to package code, works specific to the distribution, activities and projects specifically produced or sponsored by the distribution-maker—all comprise a significant fraction of the software in major distributions. These activities produce their own independent copyrights in many instances. These work- or package-level copyrights form another part of the web of ancillary rights held by distribution makers.
+The process of making distributions involves no small amount of additional programming. Maintenance to package code, works specific to the distribution, activities and projects specifically produced or sponsored by the distribution-maker&mdash;all comprise a significant fraction of the software in major distributions. These activities produce their own independent copyrights in many instances. These work- or package-level copyrights form another part of the web of ancillary rights held by distribution makers.
 </blockquote>
 
 <blockquote>
@@ -694,7 +694,7 @@ They allegedly <ref>
 As per [https://github.com/Microsoft/vscode/issues/60#issuecomment-161792005 this comment], quote:
 
 <blockquote>
-Here's how it works. When you build from the vscode repository, you can configure the resulting tool by customizing the product.json file. This file controls things like the Gallery endpoints, “Send-a-Smile” endpoints, telemetry endpoints, logos, names, and more.
+Here's how it works. When you build from the vscode repository, you can configure the resulting tool by customizing the product.json file. This file controls things like the Gallery endpoints, &ldquo;Send-a-Smile&rdquo; endpoints, telemetry endpoints, logos, names, and more.
 
 When we build Visual Studio Code, we do exactly this. We clone the vscode repository, we lay down a customized product.json that has Microsoft specific functionality (telemetry, gallery, logo, etc.), and then produce a build that we release under our license.
 </blockquote>
@@ -815,7 +815,7 @@ In the realm of the General Public License (GPL), software that "links" to GPL-l
 The proponents of SSPL argue that the concept of a SaaS service utilizing server management software in conjunction with their software is akin to software locally "linking" to GPL'd code. They maintain that the interaction between applications in a SaaS environment, essentially passing messages from one application to another, merely represents a different technical detail compared to local linking scenarios.
 
 {{quotation
-|quote=In short, we believe that in today’s world, linking has been superseded by the provision of programs as services and the connection of programs over networks as the main form of program combination.
+|quote=In short, we believe that in today&rsquo;s world, linking has been superseded by the provision of programs as services and the connection of programs over networks as the main form of program combination.
 |context=[https://lists.opensource.org/pipermail/license-review_lists.opensource.org/2018-October/003672.html Eliot Horowitz, MongoDB]
 }}
 

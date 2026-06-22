@@ -39,10 +39,10 @@ Example. To update to the latest signed git tag.
 '''Options:'''
 
 * <u>Parses update options:</u> Supports:
-** --tag <tag>       → Move to a specific signed tag
-** --tag latest      → Move to the latest signed tag
-** --ref <ref>       → Move to a specific commit or branch
-** --update-only     → Only update submodules
+** --tag <tag>       &rarr; Move to a specific signed tag
+** --tag latest      &rarr; Move to the latest signed tag
+** --ref <ref>       &rarr; Move to a specific commit or branch
+** --update-only     &rarr; Only update submodules
 
 '''Summary:'''
 
