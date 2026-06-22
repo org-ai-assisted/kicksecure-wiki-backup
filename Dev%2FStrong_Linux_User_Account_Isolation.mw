@@ -425,7 +425,7 @@ Removes read, write, and execute access for others for all users who have home f
 
 Complements Permission Hardening for folders outside of <code>/home</code>.
 
-The <code>umask</code> (user file-creation mode mask) determines the default file permissions for newly created files and directories. By default, many systems set the umask to <code>022</code>, allowing read access to all users. For enhanced security, especially in multi-user environments, it's advisable to set a more restrictive <code>umask</code>, such as <code>027</code>, which restricts new files and directories to be accessible only by their owner.
+The <code>umask</code> (user file-creation mode mask) determines the default file permissions for newly created files and directories. By default, many systems set the umask to <code>022</code>, allowing read access to group and other users, and only write access to the owner. For enhanced security, especially in multi-user environments, it's advisable to set a more restrictive <code>umask</code>, such as <code>027</code>, which restricts new files and directories to be accessible only by their owner.
 
 The default <code>umask</code> for files created by non-root users, such as the <code>user</code> account, is set to <code>027</code>.
 
