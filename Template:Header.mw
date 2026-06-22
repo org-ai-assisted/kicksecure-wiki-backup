@@ -1,5 +1,4 @@
 {{GoogleOff | content=
-{{#ifeq: {{Sitenotice_id}} | end-of-year |  }}
 {{#seo:
 |type=website
 }}{{#widgetheader:part=1
