@@ -22,14 +22,5 @@ Archive: Old banners can be appended below for archival reasons:
 --------------
 End of Archive
 -->
-{{SitenoticeBannerEndOfYear
-|html=<img src="/w/images/thumb/e/e8/Flyin-donate-promo.jpg/300px-Flyin-donate-promo.jpg" decoding="async" loading="lazy" height="215" width="300" alt="Notification image">
-<p>
-Your donation helps keep {{project_name_short}} independent, maintained, and available to everyone. Please consider supporting ongoing development with a <a href="/wiki/Donate" class="cs-blue-font">donation</a>.
-</p>
-}}
-{{SitenoticeBanner
-|id=38
-|href=/wiki/Donate
-|html=<img decoding="async" loading="lazy" class="icon" src="/w/images/0/0b/Grow-symbol.png" width="53" height="40" alt="grow symbol"><span>Help keep {{project_name_short}} strong, independent, and actively maintained.</span>
-}}
+{{SitenoticeBannerEndOfYear}}
+{{#sitenoticebanner:id=38|href=/wiki/Donate}}
