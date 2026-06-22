@@ -19,8 +19,7 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 = Introduction =
 
-{{#widget:Icon_Bullet_List
-|item=fa-solid fa-chart-line cs-green,Kicksecure (and Whonix) are both long standing projects with an established history and both are still continuously further developed.
+{{#iconbulletlist:item=fa-solid fa-chart-line cs-green,Kicksecure (and Whonix) are both long standing projects with an established history and both are still continuously further developed.
 |item=fa-solid fa-list cs-blue,On this page we like to give an overview on the continuous progress for Kicksecure (and Whonix) and on the most active contributors. They write content, they research, they implement and much more.
 |item=fa-regular fa-user cs-blue,Each contributor has a chapter.
 }}

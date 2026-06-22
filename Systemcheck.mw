@@ -480,9 +480,7 @@ At the time of writing, these are packages associated with privacy issues or dep
 {{Anchor|Whonix Build Version}}
 {{Anchor|Kicksecure Build Version}}
 == Build Version ==
-{{#widget:Icon_Bullet_List
-
-|addClass=minimal
+{{#iconbulletlist:addClass=minimal
 
 |fontSize=17px
 
@@ -496,11 +494,11 @@ At the time of writing, these are packages associated with privacy issues or dep
 
 |item=fa-solid fa-user-check cs-blue,<u>Generally not important for users:</u> Unless instructed otherwise by documentation or developers, users typically do not need to worry about the build version.
 
-|item=fa-solid fa-arrow-up-right-dots cs-green,<u>Updates remain possible:</u> <a href="Operating_System_Software_and_Updates#Standard_Update_Steps">Standard ("everyday") updates</a> can still be installed.
+|item=fa-solid fa-arrow-up-right-dots cs-green,<u>Updates remain possible:</u> [[Operating_System_Software_and_Updates#Standard_Update_Steps|Standard ("everyday") updates]] can still be installed.
 
-|item=fa-solid fa-rocket cs-green,<u>Release upgrades remain possible:</u> Even <a href="Release Upgrade">Release Upgrades</a> are typically possible when announced via {{project_name_short}} News. So <a href="Stay Tuned">Follow Announcements</a>.
+|item=fa-solid fa-rocket cs-green,<u>Release upgrades remain possible:</u> Even [[Release Upgrade|Release Upgrades]] are typically possible when announced via {{project_name_short}} News. So [[Stay Tuned|Follow Announcements]].
 
-|item=fa-solid fa-book cs-blue,<u>See also:</u> <a href="Operating_System_Software_and_Updates#Update_vs_Image_Re-Installation">Update vs Image Re-Installation</a>.
+|item=fa-solid fa-book cs-blue,<u>See also:</u> [[Operating_System_Software_and_Updates#Update_vs_Image_Re-Installation|Update vs Image Re-Installation]].
 
 }}
 
