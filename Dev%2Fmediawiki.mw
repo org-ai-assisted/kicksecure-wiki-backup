@@ -2459,103 +2459,40 @@ Result
 
 == SiteNotice Info and Donation Banners ==
 
-# The sitenotice is used to communicated current infos to the user. It is used in a very versatile way
+# The sitenotice communicates current infos to the user, most notably the donation banners.
+# '''The banners and the selection between them now live in version-controlled source''', in the Kicksecure extension's <code>SitenoticeBanner</code> parser function (<code>src/SitenoticeBanner.php</code>), not in the wiki.
+#* [[MediaWiki:Sitenotice]] contains a single <code><nowiki>{{#sitenotice:currentMonth={{CURRENTMONTH}}|page={{PAGENAME}}}}</nowiki></code> invocation and nothing else.
+#* That parser function picks the active banner: the end-of-year donation banner in December (and on [[TestpageForFlyInNotification]]), and the standard donation promo otherwise. Both banners' HTML and text are generated in the PHP.
+# '''To change a banner's content, its text/styling, or the selection rule, edit the <code>SitenoticeBanner</code> parser function''' -- not the wiki.
+#* Per-banner CSS can still be added to {{CustomRepo|Sitenotice.css}} or {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/LocalSkin.css LocalSkin.css}} using <code><nowiki>#siteNotice .sitenotice-banner[data-banner-id="<<<banner-id>>>"]</nowiki></code>; each banner carries a <code>data-banner-id</code> attribute set by the parser function.
+#* A banner can be auto-hidden after a date via an <code>expires</code> UNIX timestamp handled in the parser function.
 # Relevant elements
-## {{CustomRepo|Boilerplate.css}}
+## [[MediaWiki:Sitenotice]] (the single <code><nowiki>{{#sitenotice:}}</nowiki></code> call)
 ## [[Template:Hide_all_banners]]
-## [[Template:SitenoticeBanner]]
-## [[Template:SitenoticeBannerEndOfYear]]
-## [[Widget:SitenoticeBanner]]
-## [[MediaWiki:Sitenotice]]
 ## {{CustomRepo|Sitenotice.css}}
 ## {{CustomRepo|Sitenotice.js}}
-## [[Template:Sitenotice_id]]
-## [[Template:Header]]
+## {{CustomRepo|Boilerplate.css}}
 # Sitenotice is excluded from search engine indexing via [[#Exclusion_of_text_parts_from_search_engine_indexing]]
 # NoJS: For NoJS users there is no option to close the siteNotice
 
-'''History of solution stack / current solution'''
+'''Dismissal (unchanged)'''
 
-# In the past we had other solutions and there were more rules for sitenotice, but this has change due to our new solution.
-#* All new rules are given below. as well as the history
-#* More files were important back then, but not anymore.
-# In the past we used [[MediaWiki:Sitenotice_id]].
-#* However updating this ID came in conflict with the https://www.mediawiki.org/wiki/Extension:FlaggedRevs that we are using.
-#* That's why it has been replaced with [[Template:Sitenotice_id]] which serves the same purpose
-# Previously we used the [https://www.mediawiki.org/wiki/Extension:DismissableSiteNotice Extension:DismissableSiteNotice], but this is no longer the case
-# '''We now have our own solution''' which needed to be dismissable. Therefore Javascript is involved
-#* But we cannot hide banners on document load via Javascript, because if banners are hidden by Javascript this is too late, because the page will "jump" and have a bad lighthouse content shift score.
-#* Therefore the page is hidden by a user cookie which is set to the server on request and rendered '''as a body class''' which then hides the banner, i. e. not even displays it.
-#* This is done by [[Dev/mediawiki#Extension_CookieToBodyClass|Extension:CookieToBodyClass]] which our SiteNotice solution therefore is dependent on
-#* If the user dismisses a banner he gets the mentioned cookie which is active for 1 month and then auto-deletes. Then the banner is shown again
-#* The ID based CSS style - according to the [[Template:Sitenotice_id]] - which enables the pre-javascript hiding is emitted as a hardcoded inline <code><nowiki>&lt;style&gt;</nowiki></code> block in <code>private/mw-headscript-content.php</code> (see <code>wikiconfig/41-sitenotice-id.php</code>). It was previously injected from [[Template:Header]] via [https://www.mediawiki.org/wiki/Extension:CSS Extension:CSS], now retired
-#* And we needed a way to force new banners upon the user - for example if there is an emergency but the user has dismissed the old banner less than a month ago.
-#** Therefore we use [[Template:Sitenotice_id]]. This ID corresponds to the banner that should be displayed
-#** If this id is changed to a new banner id then the user will again see the new banner which he might dismiss again. The "dismissing" of a banner is linked to the banner's ID
-# For the banners we using the Template [[Template:SitenoticeBanner]]. This template in turn uses a widget because widgets can do some things in mediawiki that templates can't
-# Then we also needed a possibility to automatically hide a banner if it's expired. That is also implemented
+# The banners are dismissable without a "page jump" / content-shift penalty: a banner is not hidden by JavaScript on load (too late), but by a body class rendered server-side from a user cookie, so it is never even displayed.
+#* This is done by [[Dev/mediawiki#Extension_CookieToBodyClass|Extension:CookieToBodyClass]], which the SiteNotice solution depends on.
+#* Dismissing a banner sets a cookie tied to that banner's id for one month, after which it is shown again. Giving a banner a new id (in the parser function) makes the user see it again.
+#* The pre-JavaScript hiding CSS is emitted as a hardcoded inline <code><nowiki>&lt;style&gt;</nowiki></code> block in <code>private/mw-headscript-content.php</code> (see <code>wikiconfig/41-sitenotice-id.php</code>).
 
-'''USAGE'''
+'''Deactivate all banners'''
 
-# You usually only touch [[MediaWiki:Sitenotice]], [[Template:Sitenotice_id]] and occasionally {{CustomRepo|Sitenotice.css}}. Everything else is maintained by core developers of this wiki
-# '''CREATE BANNER''' : Open [[MediaWiki:Sitenotice]] and create a new instance of [[Template:SitenoticeBanner]] with these parameters
-## '''id (mandatory)''' : Gives the banner an id-attribute which determines its visibility. Only the banner with the same ID as the one in [[Template:Sitenotice_id]] will be visible. This id can also be used for for styling. It is recommended to add the individual styles of a banner to {{CustomRepo|Sitenotice.css}} or {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/LocalSkin.css LocalSkin.css}} using <code><nowiki>#siteNotice .sitenotice-banner[data-banner-id="<<<banner-id>>>"]</nowiki></code>
-## '''html (mandatory)''' : The content of the banner. You can omit it, but the banner in most cases makes no sense without HTML to fill it
-## '''href (optional)''' : If it's given then the html is rendered inside of an a-element with href-attribute as href
-## '''expires (optional)''' : This is a UNIX timestamp in seconds. If the banner needs to end on a specific date and the creator does not want to check all of the time this happens automatically and the banner will not even be rendered after this date
-# '''Banner visibility'''
-#* Only the banner with the id equal to [[Template:Sitenotice_id]] will be visible
-#* If the user dismisses a banner, then a cookie will be created for the user which prevents him from seeing the banner with this EXACT id for a month
-#* If you want the user to see this banner again or make them see another one within this month, go to [[Template:Sitenotice_id]] and change the ID to a new string. He will also have to set your SitenoticeBanner to this new id
-# Example code {{CodeSelect|code={{SitenoticeBanner
-{{!}}id=my-banner-id
-{{!}}html=<img class="full-size" decoding="async" loading="lazy" src="/w/images/7/7d/Banner-dev-wanted-slim.jpg" width="960" height="140" alt="Developer wanted for Kicksecure ISO development">
-{{!}}href=/wiki/Contribute
-{{!}}expires=16776808891
-}}
-}}
-# '''Additional JS functionality''': If you need special functionality for some banners put them in {{CustomRepo|Sitenotice.js}} under "B : Custom Banners Functionality"
-# '''Deactivate all banners''': If you want to deactivate all banners (including the flyinnotification) just put this template somewhere on the page [[Template:Hide_all_banners]]
+# To deactivate all banners (including the flyinnotification) on a page, transclude [[Template:Hide_all_banners]].
 
 == SiteNotice End Of Year Banner ==
 
-# This banner offers a quick, very-little-maintenance way to show an end of year donation banner every year in December
-#* It auto-activates in December
-#* It has an automatic mobile-ready two part layout. The right hand side (or bottom on mobile) has the donation functionality already set up. Only the left side needs to be designed
-#* It is also dismissable like the normal Sitenotice banners
-#* It has priority over all other banners. So if another banner is also active only the year end banner is shown, so in December no confusing messaging is shown.
-# This banner is a derivate of [[Widget:SitenoticeBanner]]. Please read [[Dev/mediawiki#SiteNotice_Info_and_Donation_Banners|SiteNotice Info and Donation Banners]] to learn more
-# History: This banner used to be very different before its current iteration, but the old more complex solution has not been used for years and abandoned
-# '''Usage'''
-#* Modify the [[Template:SitenoticeBannerEndOfYear]] inside of [[MediaWiki:Sitenotice]]. Only if there is none already, you can create a new one
-#* Only parameter '''html | string, mandatory''' : Your html for the left /top side of the end of year banner. Only html can be set everything else is handled by the template
-# '''NOTES'''
-#* For the CSS to be accurate there can always only be ONE [[Template:SitenoticeBannerEndOfYear]] inside of [[MediaWiki:Sitenotice]] and it has to be the first of all banners
-#* The year end banner will automatically replace all other banners in December of each year. If this is not desired, simply wrap the [[Template:SitenoticeBannerEndOfYear]] inside of [[MediaWiki:Sitenotice]] in HTML comments or delete it altogehter.
-#* The year end banner will also always be shown on [[TestpageForFlyInNotification]]. The dismiss button "X" will dismiss the year end banner only temporarely on this page. After reload it will reappear. You can check the correct functionality in the developer tools. If the cookie <code>ctbc_hide-sitenotice-end-of-year</code> exists then it works fine and would be dismissed fully on any other page until expiration date.
-# '''Relevant files'''
-#* [[Template:SitenoticeBannerEndOfYear]]
-#* [[Widget:SitenoticeBanner]]
-## [[MediaWiki:Sitenotice]]
-## {{CustomRepo|Sitenotice.css}}
-## {{CustomRepo|Sitenotice.js}}
-## [[Template:Sitenotice_id]]
-## [[Template:Header]]
-## [[Template:Html_Donation_Panel_Crypto]]
-# '''Technical information'''
-#* In [[Template:Sitenotice_id]] is it determined if the normal ID is used or if the id "end-of-year" is used by checking for December and for the page TestpageForFlyInNotification
-#* This way the cookie is set correctly and the other banners are hidden
-#* Therefore the end of year banner always has to have the id "end of year" which is already set in [[Template:SitenoticeBannerEndOfYear]], so it doesn't need to be touched.
-#* The usage of [[Template:Html_Donation_Panel_Crypto]] and generally of raw HTML in these templates is explained here [[Dev/mediawiki#Modular_HTML_Templates_via_Widgets|Modular HTML Templates via Widgets]]
-# Example
-<pre>
-{{SitenoticeBannerEndOfYear
-|html=<img src="/w/images/thumb/e/e8/Flyin-donate-promo.jpg/300px-Flyin-donate-promo.jpg" decoding="async" loading="lazy" height="215" width="300" alt="Notification image">
-<p>
-Above would be a great banner and here would be a text to inspire support for the next year and maybe another <a href="/wiki/Donate" class="cs-blue-font">DONATION LINK</a>.
-</p>
-}}
-</pre>
+# The end-of-year donation banner is now generated by the <code>SitenoticeBanner</code> parser function (<code>src/SitenoticeBanner.php</code>) and selected automatically; it is no longer a separate wiki template or widget.
+#* It auto-activates in December (and on [[TestpageForFlyInNotification]]) and takes priority over the standard banner, so only one banner shows.
+#* It has a mobile-ready two-part layout; the right/bottom side is the shared crypto donation panel and PayPal donate button, also generated in source.
+#* It is dismissable like the other banners (cookie <code>ctbc_hide-sitenotice-end-of-year</code>).
+# '''To change it -- its text, layout, the December/test-page selection rule, or the next-year headline -- edit the <code>SitenoticeBanner</code> parser function.''' There is nothing to edit in the wiki.
 
 == feature slider - Splide homepage sliders ==
 
