@@ -17,24 +17,22 @@ Layout, Skin, CSS, JavaScript, Links, Header, Footer, CodeSelect, Mobile Fronten
 * Icons: We use Font-Awesome, locally hosted https://www.{{project_clearnet}}/libs/Font-Awesome/
 * Font: We use Roboto, locally hosted https://www.{{project_clearnet}}/libs/Roboto/
 
-== Extension CSS Fork ==
+== Extension CSS Fork (RETIRED) ==
 
-* We use the MediaWiki [https://www.mediawiki.org/wiki/Extension:CSS Extension:CSS], but a [https://github.com/adrelanos/mediawiki-extensions-CSS fork] which we wrote ourselves.
-* The extension and the fork in general have 3 options: One to write page specific inline CSS in the MediaWiki page itself. The second option allows to link locally hosted CSS files. The third option allows to link internal CSS pages raw as files
-** '''Caution''': The first option of this ORIGINAL extension (not our fork) for a page specific CSS seems experimental to us, because the CSS text is encoded as a base64 string and imported link so <code><nowiki><link rel="stylesheet" href="data:text/css;charset=UTF-8;base64,I3Np...Q7Cn0="></nowiki></code>. This is not widely supported in all browsers so this options does not seem reliable and therefore is not recommended for production use!
-* Our fork
-** '''Usage option 1 - locally hosted''': You can reference locally hosted files, e. g. <code><nowiki>{{#css:/src-copy/Page_Homepage.min.css}}</nowiki></code> . '''NOTE''': For this the file has to be hosted in the locally allowed folder. In our case this is set to <code>/mw-autogen</code> in localSettings.php via the variable $wgCSSPath which belongs to the Extension:CSS . This means our example <code><nowiki>{{#css:/src-copy/Page_Homepage.min.css}}</nowiki></code> actually (relatively) references the local file <code>/mw-autogen/src-copy/Page_Homepage.min.css</code>
-*** '''NOTE''': Please ALWAYS use the postfix <code><nowiki></nowiki></code>. This ensures that files are always loaded in their currect up-to-date version
-** '''Usage option 2 - from the DB''': You can reference files hosted in the DB, e.g. <code><nowiki>{{#css:Mediawiki:Your-local-styles.css}}</nowiki></code> . This calls the file from the wiki. In our fork we allow the admin to set allowed namespaces, so CSS files in these namespaces are not "sanitized" by Mediawiki which sometimes leads to unexpected problems. In our case we set the namespace "MediaWiki:" to be not sanitized
-** '''[Generally deprecated] Usage option 3 - inline''': ''[This option should only be used for testing or specific use cases where an interaction with wiki content like templates is strictly necessary]'' You can write inline code, e.g. <code><nowiki>{{#css: body { background-color: green; } }}</nowiki></code> . Our fork implements this as a style-tag (instead of a link tag with base64 like the original extension, see above)
-** Deep testing has been implemented here: [[Dev/wikitest#CSS_Extension_Fork|CSS Extension Fork]]
-** Relevant testing files
-*** {{CustomRepo|_Page_Dev_Wikitest_CssExtensionFork.js}}
-*** {{CustomRepo|_Page_Dev_Wikitest_CssExtensionFork.css}}
-*** [[User:Patrick/myskin.css]]
-* MediaWiki upstream: [https://phabricator.wikimedia.org/tag/mediawiki-extensions-css/ mediawiki-extension-css] feature requests and patches:
-** feature request: [https://phabricator.wikimedia.org/T300704 Enable unsanitized CSS namespaces]
-** patch / pull request: [https://phabricator.wikimedia.org/T37820 Some CSS stripped by MediaWiki parser CSS sanitizer]
+'''Extension:CSS and our fork are retired and no longer loaded.''' In <code>wikiconfig/40-extensions.php</code> the <code>wfLoadExtension( 'CSS' )</code> call is commented out along with <code>$wgCSSPath</code> and the unsanitised-namespace whitelist, and the vendored copy under <code>public/wiki/w/extensions/CSS/</code> has been deleted. The <code><nowiki>{{#css:}}</nowiki></code> parser function is therefore no longer available, and its calls have been removed from all wiki pages.
+
+'''What the fork used to do (historical):''' it provided a <code><nowiki>{{#css:}}</nowiki></code> parser function with three forms -- (1) link a locally hosted file such as a <code>/src-copy/...</code> bundle, resolved under <code>$wgCSSPath</code> = <code>/mw-autogen</code>; (2) link a raw CSS page from an unsanitised namespace such as <code>MediaWiki:</code>; and (3) inline sanitised CSS emitted as a <code><nowiki>&lt;style&gt;</nowiki></code> tag. The original upstream extension instead inlined the file form as a base64 <code>data:</code> link, which we considered unreliable; our fork emitted a plain <code><nowiki>&lt;link&gt;</nowiki></code> / <code><nowiki>&lt;style&gt;</nowiki></code> tag.
+
+'''What replaces it now:'''
+* The combined bundles -- <code>mw-combined-wikicss.min.css</code> (whole wiki) and <code>mw-combined-skincss.min.css</code> (custom-header skin) -- are emitted directly as <code><nowiki>&lt;link&gt;</nowiki></code> tags from <code>private/mw-headscript-content.php</code>, loaded unconditionally on every page via Extension:HeadScript, instead of through a per-page <code><nowiki>{{#css:}}</nowiki></code> call in [[Template:Header]].
+* The opt-in files (<code>Hide_firstHeading.css</code>, <code>Hide_all_banners.css</code>) were rewritten to use CSS <code><nowiki>:has()</nowiki></code> selectors so they self-gate on marker elements emitted by [[Template:Title]] / [[Template:Hide_all_banners]], riding the unconditional <code>mw-combined-skincss.min.css</code> bundle instead of being injected per page.
+* The SiteNotice pre-JavaScript hiding CSS is emitted as a hardcoded inline <code><nowiki>&lt;style&gt;</nowiki></code> block in <code>private/mw-headscript-content.php</code> (see <code>wikiconfig/41-sitenotice-id.php</code>), no longer via the extension.
+
+The build categories <code>wikicss</code> (whole wiki) and <code>skincss</code> (custom-header skin) are unchanged -- only the loading mechanism moved off the extension. See the build documentation below for how the <code>mw-combined-*</code> files are produced.
+
+MediaWiki upstream (historical references for the original extension):
+* feature request: [https://phabricator.wikimedia.org/T300704 Enable unsanitized CSS namespaces]
+* patch / pull request: [https://phabricator.wikimedia.org/T37820 Some CSS stripped by MediaWiki parser CSS sanitizer]
 ** feature request: [https://phabricator.wikimedia.org/T329615 MediaWiki-extensions-CSS: minify CSS]
 
 == Extension HeadScript ==
@@ -158,7 +156,7 @@ Layout, Skin, CSS, JavaScript, Links, Header, Footer, CodeSelect, Mobile Fronten
 #* Whonix combine script : {{CodeSelect|inline=true|code=https://admin.whonix.org/mw-combine.php}} (Admin access needed)
 # By these measures we drastically improved the load time of the wiki, made it really stable and functional again and circumvented the use of Common.js as also suggested by Wikipedia
 # '''NOTE:''' By using this solution the source files (css js etc) are not directly called when the page is loaded. They are merely the source which the combined, minified files are rendered from. So every time there is a change in the source files it first has to be rendered to the output files.
-#* One exception is the use of Extension:CSS where we want to use scripts only on specific pages like so <code><nowiki>{{#css:/src-copy/Page_Homepage.min.css}}</nowiki></code>. In this case the source copy folder is very useful
+#* Historically the source-copy folder was also referenced per page via Extension:CSS, e.g. <code><nowiki>{{#css:/src-copy/Page_Homepage.min.css}}</nowiki></code> (now retired -- see [[#Extension CSS Fork (RETIRED)]]). The source-copy folder is still produced for optional use by other software on the same web domain
 
 === build.sh, build-mw-combine.php, deploy-to-servers-or-locally.sh ===
 
@@ -480,9 +478,8 @@ https://github.com/jthingelstad/foreground/issues/392
 * We create [[Template:Footer]] and a [[Template:Header]] which is manually included at the top (header) or bottom (footer) in all relevant content pages such as [[Documentation]], [[Download]], [[FAQ]] and so forth.
 ** The header template completely replaces the navigation of the Vector skin and has its own style and JavaScript functionality.
 ** The footer template also has its own style and JavaScript functionality.
-* The Header template injects CSS styles from internal MediaWiki:CSS files via our Extension:CSS fork.
-** Example: <code><nowiki>{{#css:/mw-combined-skincss.min.css }}</nowiki></code>
-** So only on pages where the header is present these CSS files will apply.
+* The custom-header skin CSS (<code>mw-combined-skincss.min.css</code>) is emitted as a <code><nowiki>&lt;link&gt;</nowiki></code> tag from <code>private/mw-headscript-content.php</code>, loaded unconditionally on every page (Extension:CSS retired; it was previously injected from the Header template via <code><nowiki>{{#css:/mw-combined-skincss.min.css}}</nowiki></code>).
+** Those styles still only take visual effect where the custom header is present: the skin rules self-gate on the <code>#custom-header</code> element via CSS <code><nowiki>:has()</nowiki></code> selectors, so loading the bundle everywhere is harmless.
 ** This means that for example on [[Special:SpecialPages]] the unchanged Vector style will be shown.
 ** This solution gives us the opportunity to have an appearance like a new skin while also having the fallback to a clean Vector skin.
 
@@ -1807,7 +1804,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 ** [[TestpageForFlyInNotification]]
 * The widget is at the moment wiki wide enabled using [[Template:Footer]].
 ** If this changes in the future and the devs want to implement it on a page by page basis, it can be implemented by simply adding the template <code><nowiki>{{FlyInNotification|...}}</nowiki></code>
-** In the current implementation the fly-in-notification can be disabled using <code><nowiki>{{#css:/src-copy/Hide_all_banners.min.css}}</nowiki></code> or generally (and usually) by using [[Template:Hide_all_banners]], i.e. by using the usual wiki syntax to include a wiki template: <code><nowiki>{{hide_all_banners}}</nowiki></code>
+** In the current implementation the fly-in-notification is disabled by using [[Template:Hide_all_banners]], i.e. the usual wiki template syntax <code><nowiki>{{hide_all_banners}}</nowiki></code>. The template emits a marker element that the <code>Hide_all_banners.css</code> rules (in the unconditional skin bundle) self-gate on via CSS <code><nowiki>:has()</nowiki></code>. The former <code><nowiki>{{#css:/src-copy/Hide_all_banners.min.css}}</nowiki></code> form is retired together with Extension:CSS
 ** It is already disabled on some pages such as Donation related pages and legal related pages.
 ** Dev note: If you want to change this behaviour in the future read {{CustomRepo|Hide_all_banners.css}} to learn how CSS works in tandem with JavaScript to hide the notification
 * '''NOTE''': There is a dedicated Testpage for FlyInNotification, see [[TestpageForFlyInNotification]], there you can also play with some settings which will only affect the page itself
@@ -2492,7 +2489,7 @@ Result
 #* Therefore the page is hidden by a user cookie which is set to the server on request and rendered '''as a body class''' which then hides the banner, i. e. not even displays it.
 #* This is done by [[Dev/mediawiki#Extension_CookieToBodyClass|Extension:CookieToBodyClass]] which our SiteNotice solution therefore is dependent on
 #* If the user dismisses a banner he gets the mentioned cookie which is active for 1 month and then auto-deletes. Then the banner is shown again
-#* The ID based CSS style - according to the [[Template:Sitenotice_id]] - which enables the pre-javascript hiding is done in [[Template:Header]] via the [https://www.mediawiki.org/wiki/Extension:CSS Extension:CSS] which our SiteNotice solution therefore is dependent on
+#* The ID based CSS style - according to the [[Template:Sitenotice_id]] - which enables the pre-javascript hiding is emitted as a hardcoded inline <code><nowiki>&lt;style&gt;</nowiki></code> block in <code>private/mw-headscript-content.php</code> (see <code>wikiconfig/41-sitenotice-id.php</code>). It was previously injected from [[Template:Header]] via [https://www.mediawiki.org/wiki/Extension:CSS Extension:CSS], now retired
 #* And we needed a way to force new banners upon the user - for example if there is an emergency but the user has dismissed the old banner less than a month ago.
 #** Therefore we use [[Template:Sitenotice_id]]. This ID corresponds to the banner that should be displayed
 #** If this id is changed to a new banner id then the user will again see the new banner which he might dismiss again. The "dismissing" of a banner is linked to the banner's ID
