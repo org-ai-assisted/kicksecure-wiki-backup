@@ -1617,7 +1617,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 ** '''alt | string, optional''' : An alt description for the image
 * '''Example'''
 ** Syntax: <code><nowiki>{{#widget:EagerImage|src=/w/images/a/af/Github-mark.svg|addToClass=cs-white|alt=GitHub logo example}}</nowiki></code>
-** Result {{#widget:EagerImage|src=/w/images/a/af/Github-mark.svg|addToClass=cs-white|alt=GitHub logo example}}
+** Result {{#eagerimage:src=/w/images/a/af/Github-mark.svg|addToClass=cs-white|alt=GitHub logo example}}
 * Relevant files
 ** [[Widget:EagerImage]]
 
@@ -1986,8 +1986,7 @@ File:Example.jpg|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 </pre>
 
 * Resulting in
-{{#widget:Icon_Bullet_List
-|item=fa-solid fa-check,Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points
+{{#iconbulletlist:item=fa-solid fa-check,Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points Plus Points
 |item=fa-solid fa-minus,Negative Points
 }}
 
@@ -2007,7 +2006,7 @@ File:Example.jpg|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 
 * Resulting in
 <div style="background: white; padding: 10px 20px;">
-{{#widget:Icon_Bullet_List|addClass=inverse minimal|fontSize=20px
+{{#iconbulletlist:addClass=inverse minimal|fontSize=20px
 |item=fa-solid fa-star,Standard
 |item=fa-solid fa-check cs-green,Plus Points
 |item=fa-solid fa-times cs-red,Negative Points

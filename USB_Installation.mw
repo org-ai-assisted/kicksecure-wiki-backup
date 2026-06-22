@@ -16,8 +16,7 @@ Installation of {{project_name_long}} on a USB
 
 '''{{project_name_short}} can be easily and comfortably booted and used from a USB data stick'''. No need to install it on your hard drive. Once {{project_name_short}} has been flashed to a USB data stick, simply plug in the stick, boot {{project_name_short}}, and you are ready to work with {{project_name_short}} for tasks that require robust security. '''There are two options available.'''
 
-{{#widget:Icon_Bullet_List
-|addClass=margin-v-25
+{{#iconbulletlist:addClass=margin-v-25
 |fontSize=16px
 |item=fa-solid fa-a cs-blue,<b>A <u>non-persistent (live)</u> USB operating system</b> that forgets all user-created data after shutdown.
 |item=fa-solid fa-b cs-green,<b>A <u>persistent</u> USB operating system</b> which saves your data on the USB drive itself.
@@ -33,12 +32,11 @@ The following options are available for {{project_name_short}} on USB.
 |text=
 '''Note:'''
 
-{{#widget:Icon_Bullet_List
-|addClass=margin-v-25
+{{#iconbulletlist:addClass=margin-v-25
 |fontSize=16px
 |item=fa-solid fa-compact-disc cs-blue,<b>ISO LIVE mode:</b> A <u>non-persistent</u> mode where changes are never saved. Every time you boot, the system starts fresh, and any data or changes made during the session are lost when you shut down.
-|item=fa-solid fa-database cs-green,<b>PERSISTENT mode:</b> Saves and retains user data created during a session of {{project_name_short}}, ensuring that all changes, files, updates, and software installations remain available in future sessions. <a href="/wiki/Persistent_Mode">Persistent Mode</a> functions like a standard operating system installation, where any modifications made will persist across reboots.
-|item=fa-solid fa-retweet cs-orange,<b>OPT-IN LIVE mode:</b> Even though the system is installed in <b>persistent mode</b> (meaning changes would normally be saved), this option allows you to <b>temporarily boot into a non-persistent mode</b> (<a href="/wiki/Live_Mode">Live Mode</a>) where changes are not saved for that session. After restarting, you can choose to boot back into the normal persistent mode, where changes are saved again.
+|item=fa-solid fa-database cs-green,<b>PERSISTENT mode:</b> Saves and retains user data created during a session of {{project_name_short}}, ensuring that all changes, files, updates, and software installations remain available in future sessions. [[Persistent_Mode|Persistent Mode]] functions like a standard operating system installation, where any modifications made will persist across reboots.
+|item=fa-solid fa-retweet cs-orange,<b>OPT-IN LIVE mode:</b> Even though the system is installed in <b>persistent mode</b> (meaning changes would normally be saved), this option allows you to <b>temporarily boot into a non-persistent mode</b> ([[Live_Mode|Live Mode]]) where changes are not saved for that session. After restarting, you can choose to boot back into the normal persistent mode, where changes are saved again.
 }}
 }}
 

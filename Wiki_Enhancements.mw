@@ -18,7 +18,7 @@ Our wikis have undergone multiple enhancements that are neither part of the vani
 __TOC__
 = Our own original upgrades =
 
-{{#widget:Icon_Bullet_List|fontSize=17px
+{{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-1 cs-green,Individual Header and Footer with modern menu functionality
 |item=fa-solid fa-2 cs-green,CodeSelect Boxes with Syntax Highlighting
 |item=fa-solid fa-3 cs-green,Our compact TOC variant with expandable levels and saved user preferences
@@ -30,7 +30,7 @@ File:Wiki-enhanced-demo-codeSelect.jpg|CodeSelect
 File:Wiki-enhanced-demo-toc.jpg|Table of Contents
 </gallery>
 
-{{#widget:Icon_Bullet_List|fontSize=17px
+{{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-4 cs-green,We don't use tracking scripts
 |item=fa-solid fa-5 cs-green,We don't use tracking cookies
 |item=fa-solid fa-6 cs-green,We offer an Onion version of every wiki website
@@ -42,7 +42,7 @@ File:Wiki-enhanced-demo-notrackcookie.jpg|No tracking [[Cookie_Policy#What_types
 File:Onion-website-promo.jpg|Onion Website
 </gallery>
 
-{{#widget:Icon_Bullet_List|fontSize=17px
+{{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-7 cs-green,Modals which are practical and wiki compatible
 |item=fa-solid fa-8 cs-green,Our modern Search Modal
 |item=fa-solid fa-9 cs-green,Our Table Expand Modal and Button for enhanced table viewing
@@ -54,7 +54,7 @@ File:Wiki-enhanced-demo-search-modal.jpg|Search Modal
 File:Wiki-enhanced-demo-table-expand-modal.jpg|Table Expand Modal
 </gallery>
 
-{{#widget:Icon_Bullet_List|fontSize=17px
+{{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-check cs-green,A Share Tooltip for all headlines where the direct link can be shared easily on many platforms or for private or wiki use
 |item=fa-solid fa-check cs-green,Sliders (carousels)
 |item=fa-solid fa-check cs-green,Beautiful graphical Icon Bullet Lists
@@ -68,7 +68,7 @@ File:Wiki-enhanced-demo-iconlist.jpg|Icon Bullet Lists
 File:Wiki-enhanced-tabcontroller.jpg|Tab Content Controller
 </gallery>
 
-{{#widget:Icon_Bullet_List|fontSize=17px
+{{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-check cs-green,A practical thumbnail gallery
 |item=fa-solid fa-check cs-green,Beautiful quotations
 |item=fa-solid fa-check cs-green,A template specifically for Videos
@@ -80,7 +80,7 @@ File:Wiki-enhanced-demo-quotation.jpg|Quotation
 File:Wiki-enhanced-demo-videolink.jpg|Video Link
 </gallery>
 
-{{#widget:Icon_Bullet_List|fontSize=17px
+{{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-check cs-blue,Greatly improving the standard Wikitext Editor
 |item=fa-solid fa-check cs-blue,High level autosave feature for Wikitext Editor
 |item=fa-solid fa-check cs-blue,A sophisticated Debugging Modal accessible for all users
@@ -94,7 +94,7 @@ File:Wiki-enhanced-demo-debugmodal.jpg|Debugging Modal
 File:Wiki-enhanced-demo-responsive.jpg|Responsive Demo
 </gallery>
 
-{{#widget:Icon_Bullet_List|fontSize=17px
+{{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-check cs-blue,A beautiful navigation template
 |item=fa-solid fa-check cs-blue,Custom Scrollbars with horizontal scroll elements for optimal visibility and accessibility
 |item=fa-solid fa-check cs-blue,A Scroll-to-top button
@@ -106,7 +106,7 @@ File:Wiki-enhanced-demo-scrollbars.jpg|Custom scrollbars
 File:Wiki-enhanced-demo-top-button.jpg|Scroll Top Button
 </gallery>
 
-{{#widget:Icon_Bullet_List|fontSize=17px
+{{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-check cs-blue,Stylized info boxes
 |item=fa-solid fa-check cs-blue,Greatly enhanced Archive links
 |item=fa-solid fa-check cs-blue,Quality of life improvements like our ScrollAutoWrapper which protects tables and images from overwidth

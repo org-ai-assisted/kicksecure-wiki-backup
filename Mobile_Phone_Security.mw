@@ -8,21 +8,19 @@ Mobile Devices Privacy and Security
 }}
 {{mobile_mininav}}
 [[File:Phone-danger.jpg|thumb]]
-{{#widget:Icon_Bullet_List
-
-|addClass=minimal margin-bottom-20
+{{#iconbulletlist:addClass=minimal margin-bottom-20
 
 |fontSize=17px
 
-|item=fa-solid fa-times cs-red,<a href="#Data_Harvesting_by_Most_Phones">Massive Data Harvesting by Most Phones.</a>
+|item=fa-solid fa-times cs-red,[[#Data_Harvesting_by_Most_Phones|Massive Data Harvesting by Most Phones.]]
 
-|item=fa-solid fa-times cs-red,<a href="#Mobile_Devices_Backdoors_in_Most_Phones_Tablets_Etc">There are backdoors in most mobile devices.</a>
+|item=fa-solid fa-times cs-red,[[#Mobile_Devices_Backdoors_in_Most_Phones_Tablets_Etc|There are backdoors in most mobile devices.]]
 
-|item=fa-solid fa-times cs-red,<a href="#Bluetooth_and_Wi-Fi_Threats">Bluetooth and Wi-Fi can also pose significant risks</a>
+|item=fa-solid fa-times cs-red,[[#Bluetooth_and_Wi-Fi_Threats|Bluetooth and Wi-Fi can also pose significant risks]]
 
-|item=fa-solid fa-times cs-red,<a href="#Hacks_of_Telecommunication_Providers">Providers can be user data mines, exploited by hackers</a>
+|item=fa-solid fa-times cs-red,[[#Hacks_of_Telecommunication_Providers|Providers can be user data mines, exploited by hackers]]
 
-|item=fa-solid fa-check cs-green,<a href="#Preventative_Measures">There are steps to make your phone significantly safer</a>
+|item=fa-solid fa-check cs-green,[[#Preventative_Measures|There are steps to make your phone significantly safer]]
 
 }}
 

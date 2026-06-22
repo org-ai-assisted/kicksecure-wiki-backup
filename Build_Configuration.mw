@@ -13,7 +13,7 @@ Build Configuration
 }}
 <u>Note:</u> All of the following build configuration steps are optional.
 
-{{#widget:Expand or Collapse All}}
+{{#expandcollapseall:}}
 
 =Introduction=
 <div class="toccolours mw-collapsible mw-collapsed">
