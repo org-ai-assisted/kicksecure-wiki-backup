@@ -1,26 +1,12 @@
 <!--
-Instructions for editors
-1. Create a banner following the steps in https://www.kicksecure.com/wiki/Dev/mediawiki#SiteNotice_Info_and_Donation_Banners
-2. Remember to use a unique ID! (string allowed, best: [a-zA-Z0-9_-.]
-3. Change The /wiki/Template:Sitenotice_id to the ID of the banner which should be displayed.
-3.1. If no banner should be displayed, use a non-existent ID.
-4. Sitenotice end of year banner rules
-4.1. This banner always needs to be the TOP banner on this page.
-4.2. If it's December, this banner will appear. Otherwise, it won't be rendered.
-4.3. If this banner appears, then all other banners will be automatically hidden (display: none).
-4.4. The Sitenotice_id in December and for the Testpage is always end-of-year, which is also the banner-id of this banner.
+The site notice banners are generated in SOURCE, not here: the Kicksecure
+extension's SitenoticeBanner parser function ({{#sitenotice:}}) chooses the
+end-of-year donation banner in December and on TestpageForFlyInNotification, and
+the standard donation promo otherwise. Both banners' HTML/text live in that PHP.
+To change a banner's content, its styling, or the selection rule, edit the
+SitenoticeBanner parser function -- not this page.
 
--------------------------------------------------------
-Archive: Old banners can be appended below for archival reasons:
-
-{{SitenoticeBanner
-|id=37
-|href=/wiki/Contribute
-|html=<img class="full-size" src="/w/images/7/7d/Banner-dev-wanted-slim.jpg" width="960" height="140" alt="Developer wanted for Kicksecure ISO development">
-|expires=16776808891
-}}
---------------
-End of Archive
+Archive (old banner, kept for reference only):
+{{SitenoticeBanner|id=37|href=/wiki/Contribute|html=<img class="full-size" src="/w/images/7/7d/Banner-dev-wanted-slim.jpg" width="960" height="140" alt="Developer wanted for Kicksecure ISO development">|expires=16776808891}}
 -->
-{{SitenoticeBannerEndOfYear}}
-{{#sitenoticebanner:id=38|href=/wiki/Donate}}
+{{#sitenotice:currentMonth={{CURRENTMONTH}}|page={{PAGENAME}}}}
