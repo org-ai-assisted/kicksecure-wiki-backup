@@ -53,19 +53,19 @@ We self-host a copy of balenaEtcher because:
 {{quotation
 |quote=Etcher is an Electron app, i.e. essentially a glorified webapp wrapped
 in a window; this is a rather common way to build a cross-platform app
-these days. It’s GUI is made of HTML + JS. Some of it is shipped in the
+these days. It&rsquo;s GUI is made of HTML + JS. Some of it is shipped in the
 app itself, some of it is dynamically fetched from balena.io at run
-time. So we clearly can’t even try to protect against “Balena knows that
-someone is using Etcher from $IP”. I did not check whether the web
+time. So we clearly can&rsquo;t even try to protect against &ldquo;Balena knows that
+someone is using Etcher from $IP&rdquo;. I did not check whether the web
 content retrieved at run time can inject arbitrary JS which could itself
 include tracking code.
 
 The <code>analytics</code> modules fetches its config over plaintext HTTP (and is
-then redirected to HTTPS but that’s too late). It uses mixpanel.com. I’m
+then redirected to HTTPS but that&rsquo;s too late). It uses mixpanel.com. I&rsquo;m
 not sure I understood the code correctly but at first glance it seems
 that at least errors (and possibly more) will be reported there. So
 basically, an active MitM could have users report to an URL chosen by
-the attacker. “Interesting”.
+the attacker. &ldquo;Interesting&rdquo;.
 
 Some of the outgoing HTTP requests include the Etcher version as a
 parameter. External modules, which I did not inspect, are used to
@@ -74,11 +74,11 @@ The ads seem to be fetched from
 https://assets.balena.io/etcher-featured/index.html. I did not try to
 decipher the obfuscated/minified JS found there but at the very least,
 it seems to report to Google Analytics.
-I’m stopping here. tl;dr is: Etcher is definitely not behaving as one
-would expect a privacy-friendly local app would. It’s behaving more like
+I&rsquo;m stopping here. tl;dr is: Etcher is definitely not behaving as one
+would expect a privacy-friendly local app would. It&rsquo;s behaving more like
 any random modern website, including all kinds of tracking technologies.
-Fixing this would require major changes so that’s unlikely to happen.
-It’s non-trivial to check whether the code reports to Balena or random
+Fixing this would require major changes so that&rsquo;s unlikely to happen.
+It&rsquo;s non-trivial to check whether the code reports to Balena or random
 third parties (such as Google, Mixpanel) what image is being installed;
 and even if we did this audit work now, our results would be invalidated
 by every new Etcher release. So it seems we have two options:
@@ -235,7 +235,7 @@ Therefore, it is not the responsibility of software project websites like {{proj
 == Digital Software Signature Utility versus Usability and Impact ==
 A problem is that manual digital signature verification by the user using GnuPG is so complicated that it requires a complete course on theory and practice.
 
-For instance, if a Windows user has installed a lot of software from internet sites—as is commonly done on the Windows operating system—but never performed digital software verification, it makes little sense to go above and beyond before downloading something like an ISO image writer.
+For instance, if a Windows user has installed a lot of software from internet sites&mdash;as is commonly done on the Windows operating system&mdash;but never performed digital software verification, it makes little sense to go above and beyond before downloading something like an ISO image writer.
 
 By making installation instructions for any software, such as a Linux distribution, overly complicated with a too strong emphasis on digital software verification, it can give users who have never heard about it the impression that such a procedure is specific to the software they are intending to install. This can lead to perceptions of increased security risk if skipped, creating a usability issue that may lead users to abandon the installation altogether. Such complexity can elicit feedback like "I have never seen such complicated installation instructions in my life." or "I've never had to verify anything before in my life," which is counterproductive.
 
@@ -277,7 +277,7 @@ Providing basic (and never exhaustive) instructions has proven to be very time-c
 
 {{quotation
 |quote=[...] the huge majority of our users should not even be suggested to do an OpenPGP-based verification.
-We’ve spent so much time in the past trying to make it doable for them,
+We&rsquo;ve spent so much time in the past trying to make it doable for them,
 and now I can see why we gave up.
 |context=[https://gitlab.tails.boum.org/tails/tails/-/issues/11785 intrigeri, Tails developer]
 }}

@@ -40,7 +40,7 @@ An example of entering this environment would be: <code>sudo chroot ~/kicksecure
 
 You could also use other shells such as <code>bash</code> or applications as needed.
 
-It’s worth noting that more advanced setups might involve emulators like QEMU for a fully emulated operating system, but this would require additional steps like installing a kernel in the chroot.
+It&rsquo;s worth noting that more advanced setups might involve emulators like QEMU for a fully emulated operating system, but this would require additional steps like installing a kernel in the chroot.
 
 = chroot Creation =
 == Qubes Notes ==

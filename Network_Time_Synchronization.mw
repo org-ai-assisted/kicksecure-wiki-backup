@@ -13,7 +13,7 @@ A reasonably accurate host clock is required for many general security propertie
 }}
 = Introduction =
 
-It is recommended to have a host clock with an accuracy of up to ± 30 minutes. Clocks that are hours, days, weeks, months or even years slow or fast can lead to many issues such as:
+It is recommended to have a host clock with an accuracy of up to &plusmn; 30 minutes. Clocks that are hours, days, weeks, months or even years slow or fast can lead to many issues such as:
 
 * '''A)''' <u>Connectivity problems with Tor:</u> If the host clock is more than 1 hour in the past or more than 3 hours in the future, Tor cannot connect.
 * '''B)''' <u>Inability to download operating system upgrades:</u> APT (<code>apt-get</code>) and other tools can break and show errors until the clock is set correctly. <ref>

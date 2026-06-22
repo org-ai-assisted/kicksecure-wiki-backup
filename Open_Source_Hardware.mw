@@ -27,9 +27,9 @@ https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf
 
 <blockquote>... for years we have been, similarly, assuming the underlying hardware, together with all the firmware that runs on it, such as the BIOS/UEFI and the SMM, GPU/NIC/SATA/HDD/EC firmware, etc., is all... trusted.
 <br />
-But isn’t that a rational assumption, after all?<br />
+But isn&rsquo;t that a rational assumption, after all?<br />
 <br />
-Well, not quite: today we know it is rather unwise to assume all hardware and firmware is trusted. Various research from the last ten years, as discussed below, has provided enough evidence for that, in the author’s opinion. We should thus revisit this assumption. And given what’s at stake, the sooner we do this, the better.
+Well, not quite: today we know it is rather unwise to assume all hardware and firmware is trusted. Various research from the last ten years, as discussed below, has provided enough evidence for that, in the author&rsquo;s opinion. We should thus revisit this assumption. And given what&rsquo;s at stake, the sooner we do this, the better.
 </blockquote>
 
 <blockquote>
@@ -69,7 +69,7 @@ Link: <nowiki>https://forum.qubes-os.org/t/intel-vs-arm-vs-power-vs-risc-v-archi
 {{quotation
 |quote=Attempts on reverse-engineering, re-implementing BIOS as Open Source, Intel ME, AMD PSP are awesome, an important step but all just scratching the surface. The following video elaborates on that.
 
-Disclaimer: I didn’t look much into RISC-V. This isn’t an endorsement / non-endorsement of RISC-V. That video isn’t much of a RISC-V promotion. The video is chosen as an example because it nicely elaborates on the extremely difficulty of having hardware that is secure, reasonable certain free of backdoors, Open Hardware, and whatnot.
+Disclaimer: I didn&rsquo;t look much into RISC-V. This isn&rsquo;t an endorsement / non-endorsement of RISC-V. That video isn&rsquo;t much of a RISC-V promotion. The video is chosen as an example because it nicely elaborates on the extremely difficulty of having hardware that is secure, reasonable certain free of backdoors, Open Hardware, and whatnot.
 
 {{VideoLink
 |videoid=zXwy65d_tu8
@@ -78,7 +78,7 @@ Disclaimer: I didn’t look much into RISC-V. This isn’t an endorsement / non-
 }}
 
 {{quotation
-|quote=Freedom? Security? The hardware is proprietary. In simplified terms, there is no meaningful distinction between hardware and security from a freedom and security perspective. Maybe the term “hardware acceleration” easily illustrates that. Hardware in a sense is solidified software. Hardware is for a large part just a different representation of software. What’s software? One level to look at it, it’s just zero’s and one’s on some storage medium. What hardware does is has concepts how to process incoming data / electricity burnt, solidified into silicon.
+|quote=Freedom? Security? The hardware is proprietary. In simplified terms, there is no meaningful distinction between hardware and security from a freedom and security perspective. Maybe the term &ldquo;hardware acceleration&rdquo; easily illustrates that. Hardware in a sense is solidified software. Hardware is for a large part just a different representation of software. What&rsquo;s software? One level to look at it, it&rsquo;s just zero&rsquo;s and one&rsquo;s on some storage medium. What hardware does is has concepts how to process incoming data / electricity burnt, solidified into silicon.
 
 You need a complex program to write a complex blueprint which then creates other complex files which then are used by complex machines which then create the actual hardware. At each step, a backdoor could be introduced.
 }}
@@ -88,7 +88,7 @@ See also this presentation {{VideoLink
 |text=36C3 - Open Source is Insufficient to Solve Trust Problems in Hardware
 }} by Andrew "bunnie" Huang or {{VideoLink
 |videoid=RqQhWitJ1As
-|text=BlueHat IL 2019 - Andrew "bunnie" Huang - Supply Chain Security: "If I were a Nation State...”
+|text=BlueHat IL 2019 - Andrew "bunnie" Huang - Supply Chain Security: "If I were a Nation State...&rdquo;
 }}.
 
 A CPU is not just a dumb piece of hardware that can do basic calculations at high speed. Modern CPU from Intel / AMD have many "software alike" features built-in. To name a few of a plethora of examples:
@@ -112,7 +112,7 @@ As well as these:
 |videoid=KrksBdWcZgQ&t=40s
 |text=Breaking the x86 Instruction Set
 }}
-* [https://www.tomshardware.com/pc-components/cpus/30-year-old-pentium-fdiv-bug-tracked-down-in-the-silicon-ken-shirriff-takes-the-microscope-to-intels-first-ever-recall Tom's Hardware: 30-year-old Pentium FDIV bug tracked down in the silicon — Ken Shirriff takes the microscope to Intel's first-ever recall]
+* [https://www.tomshardware.com/pc-components/cpus/30-year-old-pentium-fdiv-bug-tracked-down-in-the-silicon-ken-shirriff-takes-the-microscope-to-intels-first-ever-recall Tom's Hardware: 30-year-old Pentium FDIV bug tracked down in the silicon &mdash; Ken Shirriff takes the microscope to Intel's first-ever recall]
 ** The blog post by the author [https://www.righto.com/2024/11/antenna-diodes-in-pentium-processor.html Antenna diodes in the Pentium processor] manages to pinpoint a software bug from the physical world.
 
 For a video showing that hardware based encryption (in a different context) can be vulnerable, see this computer chaos club (CCC) talk {{VideoLink
@@ -190,7 +190,7 @@ For a deeper understanding of how modern processors are produced and function, i
 }}
 * {{VideoLink
 |videoid=GU87SH5e0eI
-|text=Secretive Giant TSMC’s $100 Billion Plan To Fix The Chip Shortage
+|text=Secretive Giant TSMC&rsquo;s $100 Billion Plan To Fix The Chip Shortage
 }}
 * {{VideoLink
 |videoid=cNN_tTXABUA
@@ -345,7 +345,7 @@ https://www.theregister.com/2015/12/31/rutkowska_talks_on_intel_x86_security_iss
 ** Available user guides <ref>
 For example, see the [https://wiki.raptorcs.com/w/images/e/e3/T2P9D01_users_guide_version_1_0.pdf T2P9D01 Mainboard document].
 </ref> appear to at least partially meet [https://en.wikipedia.org/wiki/Open-source_hardware opensource hardware principles]. <ref>
-This requires: <blockquote>... that information about the hardware is easily discerned so that others can make it – coupling it closely to the maker movement. Hardware design (i.e. mechanical drawings, schematics, bills of material, PCB layout data, HDL source code and integrated circuit layout data), in addition to the software that drives the hardware, are all released under free/libre terms.</blockquote>
+This requires: <blockquote>... that information about the hardware is easily discerned so that others can make it &ndash; coupling it closely to the maker movement. Hardware design (i.e. mechanical drawings, schematics, bills of material, PCB layout data, HDL source code and integrated circuit layout data), in addition to the software that drives the hardware, are all released under free/libre terms.</blockquote>
 </ref>
 ** Unfortunately it is not compatible with Qubes OS, but it will run Linux. It is possible to run the [https://wiki.raptorcs.com/wiki/Whonix {{project_name_short}} KVM version as it is documented in the Raptor Computing Systems Wiki], but this is [[unsupported]] by {{project_name_short}} developers. For further information, see footnotes. <ref>
 https://www.fsf.org/blogs/licensing/support-the-talos-ii-a-candidate-for-respects-your-freedom-certification-by-pre-ordering-by-september-15

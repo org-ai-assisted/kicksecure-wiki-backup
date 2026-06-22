@@ -39,7 +39,7 @@ Advanced users are encouraged to [[Dev/Build_Documentation|build]] {{project_nam
 |type=controller
 |content=
 
-<!-- ────────────────  SECTION 1  ──────────────── -->
+<!-- &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  SECTION&nbsp;1  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500; -->
 {{Tab
 |active=true
 |title= == GUI ==
@@ -85,9 +85,9 @@ Advanced users are encouraged to [[Dev/Build_Documentation|build]] {{project_nam
     }} <!-- close tab -->
   }} <!-- close nested controller -->
 
-}} <!-- close tab: Section 1 -->
+}} <!-- close tab: Section&nbsp;1 -->
 
-<!-- ────────────────  SECTION 2  ──────────────── -->
+<!-- &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  SECTION&nbsp;2  &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500; -->
 {{Tab
 |title= == CLI ==
 |image=[[File:Utilities-terminal.png|alt=Symbol representing CLI|50px]]
@@ -132,9 +132,9 @@ Advanced users are encouraged to [[Dev/Build_Documentation|build]] {{project_nam
     }} <!-- close tab -->
   }} <!-- close nested controller -->
 
-}} <!-- close tab: Section 2 -->
+}} <!-- close tab: Section&nbsp;2 -->
 
-}} <!-- close top‑level controller -->
+}} <!-- close top&#x2011;level controller -->
 
 {{mbox
 |icon=fa-solid fa-exclamation cs-red

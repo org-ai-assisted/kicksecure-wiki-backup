@@ -172,7 +172,7 @@ The implementation of certain features faces technical challenges, particularly 
 * Many others.
 
 = Discussion =
-* [https://forum.qubes-os.org/t/how-to-hide-the-fact-that-im-qubes-os-from-telegram/22934 How to hide the fact that I’m Qubes OS from Telegram]
+* [https://forum.qubes-os.org/t/how-to-hide-the-fact-that-im-qubes-os-from-telegram/22934 How to hide the fact that I&rsquo;m Qubes OS from Telegram]
 * [https://forums.whonix.org/t/qubes-identifiers/17994 Qubes identifiers]
 * Qubes feature requests:
 ** [https://github.com/QubesOS/qubes-issues/issues/1142 Stop telling VMs the exact physical CPU model in the computer] closed as won't fix.

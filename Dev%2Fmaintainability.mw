@@ -60,7 +60,7 @@ The test might get skipped but then more unexpected breakage might happen, requi
 = The High Cost of Custom Solutions =
 Venturing into projects like maintaining a custom (hardened) kernel, for instance, is beyond what is considered manageable given the current resource constraints. The history of security, privacy, and anonymity-focused operating systems is littered with projects that are no longer updated and can be considered abandoned:
 
-* Liberté Linux
+* Libert&eacute; Linux
 * [https://en.wikipedia.org/wiki/Anonym.OS Anonym.OS]
 * [https://en.wikipedia.org/wiki/Subgraph_(operating_system) Subgraph OS]
 * [https://tails.boum.org/doc/about/acknowledgments_and_similar_projects/index.en.html There is a huge list of abandoned projects but only a very small list of active projects.]
@@ -71,12 +71,12 @@ This pattern is not exclusive to security-focused distributions; a [https://en.w
 The Tails project shares similar views on the maintainability of Linux distributions. Their insights are well regarded and align with Kicksecure's experiences:
 
 {{quotation
-|quote=Many, many Live system projects — including a few ones that aimed at enhancing their users' privacy — have lived fast and died young. We explain this by their being one wo/man efforts, as well as design decisions that made their maintenance much too costly timewise and energywise.
+|quote=Many, many Live system projects &mdash; including a few ones that aimed at enhancing their users' privacy &mdash; have lived fast and died young. We explain this by their being one wo/man efforts, as well as design decisions that made their maintenance much too costly timewise and energywise.
 |context=[https://tails.net/contribute/how/code/#index1h2 Tails: Focus on low-effort maintainability]
 }}
 
 {{quotation
-|quote=Do you remember Haven, Anonym.OS, ParanoidLinux, onionOS, Phantomix, Liberté Linux, Mempo, ..., ?
+|quote=Do you remember Haven, Anonym.OS, ParanoidLinux, onionOS, Phantomix, Libert&eacute; Linux, Mempo, ..., ?
 |context=[https://web.archive.org/web/20240627000529/https://tails.net/contribute/how/promote/material/slides/NDH2k16-20160702/slides_NDH2k16.pdf/ Tails: Security, Maintainability and Usability]
 }}
 
@@ -107,7 +107,7 @@ The discontinuation of Linux distributions is often attributed to various factor
 * https://github.com/benbjohnson/litestream/commit/a8d63b54aa5bd2d9639af01e1e0c2098a65b323a#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5R121
 * {{VideoLink
 |videoid=uC4Xay0q9_Q
-|text=Global Maintainer Summit 2021: Bartłomiej Płotka-Should I merge this feature?
+|text=Global Maintainer Summit 2021: Bart&#x142;omiej P&#x142;otka-Should I merge this feature?
 }}
 * (Note: There are many more references that could be listed here.)
 

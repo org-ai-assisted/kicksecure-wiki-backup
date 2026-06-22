@@ -38,7 +38,7 @@ Closed on 2026-05-13
 == Suggestion: Editor indent buttons ==
 
 '''DEV'''
-* Dev suggests augmentiing our editors with "indent" buttons - e. g. one button für 2 spaces left, one for 2 spaces right - placed in the advanced tab
+* Dev suggests augmentiing our editors with "indent" buttons - e. g. one button f&uuml;r 2 spaces left, one for 2 spaces right - placed in the advanced tab
 * Reason: Dev regularely copys the whole HTML page from wiki editor to offline editor to indent quickly.
 * If other editors have this problem too, maybe the indent buttons are a good idea
 
@@ -102,7 +102,7 @@ Patrick:
 #* remove all style attributes from wikitable <code><nowiki>\{\|[ \t]*class="wikitable"[^\r\n]*[\r\n]+([^|+][^\r\n]*)</nowiki></code> with <code><nowiki>{| class="wikitable"</nowiki></code>
 #* replace informal with formal caption <code><nowiki>('''Table:[^\r\n]*)[[:space:]]+([ \t]*\{\|[ \t]*class="wikitable"[ \t]*)</nowiki></code> with <code><nowiki>$2\n|+ $1\n</nowiki></code>
 #* remove <code><nowiki>'''Table:'''</nowiki></code> prefix on Kicksecure and Whonix <code><nowiki>\|\+[[:space:]]*'''[[:space:]]*Table[[:space:]]*:[[:space:]]*'''</nowiki></code> with <code><nowiki>|+</nowiki></code>
-#* Manual fixing of <code><nowiki>'''Table</nowiki></code> for not caught tables ¨10 Kicksecure, ~20 (Whonix)
+#* Manual fixing of <code><nowiki>'''Table</nowiki></code> for not caught tables &uml;10 Kicksecure, ~20 (Whonix)
 #* All changes were manually reaffirmed via recent changes (to prevent page breaking syntax mistakes)
 # Now admin can search no-caption tables (irregular or not named at all) with regexp: <code><nowiki>\{\|[ \t]*class="wikitable"[^\r\n]*[\r\n]+([^|+][^\r\n]*)</nowiki></code>
 # New examples created in wikitext for table expand
@@ -167,7 +167,7 @@ Patrick:
 ** Semi-blocking means that even in those 1000ms the user can interact with the page nicely because the browser "breathes" between the different scripts loads (work of yesterday) which was not the case before
 ** There are not many drawbacks. The page gradually enriches, but as we focussed on preventing content shift before the content does not shift but only changes slightly in appearance
 ** The only drawback is that currently the timing check is not very meaningful anymore, because it cannot account for the scripts anymore that are individually async
-* Documentation here: [[Dev/mediawiki#Wiki_Load_Cascade_:_HTML.2C_CSS.2C_Javascript|Wiki Load Cascade : HTML, CSS, Javascript]]
+* Documentation here: [[Dev/mediawiki#Wiki_Load_Cascade_:_HTML.2C_CSS.2C_Javascript|Wiki Load Cascade&nbsp;: HTML, CSS, Javascript]]
 * '''Todo Admin'''
 ** Check if everything is satisfactory
 ** Should something be done about the now inaccurate timing checks? - Dev could come up with something prob. in about 1-2 hours
@@ -438,7 +438,7 @@ Total Blocking Time went up on google pagespeed for mobile. Ideas why? Anything 
 *** It seems the only metric truly affected IS total blocking time, the rest is pretty much the same
 *** It seems also obvious that the new scripts - prism and instant page - have a significant impact on TBT, but are NOT the only reason because without scripts (meaning also without combined.min.js) it's still not as fast as before
 *** Dev did a diff of OLD and NEW and saw some differences and found that in flyinnotification the image should be decoding="async" loading="lazy" which was already fixed too but didn't change much for pagespeed
-*** Dev also thinks it's possible that deferring Javascript leads to a worse TBT, because [Total blocking time] = [Time to interactive] minus [First contentful paint] → so the longer JS is deferred the longer it might take to reach time to interact. That is however just a speculation. This page here is a great overview over the topic https://www.fasterize.com/en/blog/understand-and-improve-the-time-to-interactive/ - not that this page states '''"It is important to specify that Time To Interactive is not a standardized indicator. It may therefore evolve. Note also that, although Google has included this metric in the calculation of the Lighthouse and PageSpeed Insights score, its weight has decreased during recent changes in the calculation of the score, to the point that it seems to be bound to disappear eventually."'''
+*** Dev also thinks it's possible that deferring Javascript leads to a worse TBT, because [Total blocking time] = [Time to interactive] minus [First contentful paint] &rarr; so the longer JS is deferred the longer it might take to reach time to interact. That is however just a speculation. This page here is a great overview over the topic https://www.fasterize.com/en/blog/understand-and-improve-the-time-to-interactive/ - not that this page states '''"It is important to specify that Time To Interactive is not a standardized indicator. It may therefore evolve. Note also that, although Google has included this metric in the calculation of the Lighthouse and PageSpeed Insights score, its weight has decreased during recent changes in the calculation of the score, to the point that it seems to be bound to disappear eventually."'''
 *** Here is some more explanation for total blocking time and suggestions to improve and possible reasons why it might have increased in our development https://calibreapp.com/blog/total-blocking-time
 ** How to proceed
 *** Dev suggests admin to define a course: Invest more time into improving this metric or waiting for this metric to phase out?
@@ -618,7 +618,7 @@ we have
 
 These are actually done but written as if they are not done:
 
-* On for example [[FAQ]] the long title <code>Frequently Asked Questions - Whonix ™ FAQ</code> breaks the layout on mobile. Because the title is too long, one has to scroll to the right side on mobile to read the title in full. Does the title miss some attribute such as "autowrap", "break line if too long"?
+* On for example [[FAQ]] the long title <code>Frequently Asked Questions - Whonix &trade; FAQ</code> breaks the layout on mobile. Because the title is too long, one has to scroll to the right side on mobile to read the title in full. Does the title miss some attribute such as "autowrap", "break line if too long"?
 * Images for example on [[Main_Page]] and [[About]] are not response rendered smaller on mobile.
 * blockquotes don't really look like a quote. example:
 
@@ -633,14 +633,14 @@ Test
 ** https://www.{{project_clearnet}}/wiki/Host_Firewall_Basics
 * [[Template:Box]] generates boxes which are longer than the text which they contain, example:
 ** https://www.{{project_clearnet}}/wiki/Host_Firewall_Basics
-* On [[USB Installation]] there is much space between title <code>Installation of Whonix ™ on a USB</code> and the box <code>VM Live Mode	Host Live Mode	Whonix ™ on USB</code>?
+* On [[USB Installation]] there is much space between title <code>Installation of Whonix &trade; on a USB</code> and the box <code>VM Live Mode	Host Live Mode	Whonix &trade; on USB</code>?
 * tables prettification
-** For example on [[Windows Hosts]] the tables look a bit weird. One has to scroll down a lot (specifically on mobile) before having a chance to see what category it is about. Also the colors aren’t great.
+** For example on [[Windows Hosts]] the tables look a bit weird. One has to scroll down a lot (specifically on mobile) before having a chance to see what category it is about. Also the colors aren&rsquo;t great.
 * missing table scroll buttons
 ** When viewing {{whonix_wiki
 |wikipage=Comparison_with_Others
 |text=Comparison with Others
-}} on mobile it is not obvious that one can scroll the the right. Maybe a scroll button would help? Doesn’t need to be necessarily a scroll button. Also a different table style might be a better solution.
+}} on mobile it is not obvious that one can scroll the the right. Maybe a scroll button would help? Doesn&rsquo;t need to be necessarily a scroll button. Also a different table style might be a better solution.
 
 * beautify breadcrumbs (zB < dev on top of this page)
 
@@ -1221,7 +1221,7 @@ Something doable, useful here?
 Instead of using this code;
 
 <pre>
-<div id = ”navigation-main”>
+<div id = &rdquo;navigation-main&rdquo;>
 
     <ul>
 
@@ -1235,7 +1235,7 @@ Instead of using this code;
 It would be better to use this other one;
 
 <pre>
-<ul id = ”navigation-main”>
+<ul id = &rdquo;navigation-main&rdquo;>
 
     etc ..
 
@@ -1319,9 +1319,9 @@ todo:
 * New hero image for Whonix and for Kicksecure were created and both are used to replace the old image
 * Note, the preview image in Mediawiki (it's a rendered PNG, e. g. https://www.whonix.org/wiki/File:HP-Hero-image-svg-preview.svg) does look less good than the real image https://www.whonix.org/w/images/a/a5/HP-Hero-image-svg-preview.svg which will be used. So always check real image when dealing with SVG in Mediawiki
 * Dev wanted to save at least 90% against the real hero image, so mode "rect" was chosen to save filesize
-* The hero image for Whonix was rendered with 60 cycles: real 54kb → prim 5.3kb
-* The hero image for Kicksecure was rendered with 75 cycles: real 65kb → prim 6.6kb
-* The preview image quality is so good now that dev could change the blur factor from 2.5 to → 1.2. So way less blur and the preview looks better and already recognizable
+* The hero image for Whonix was rendered with 60 cycles: real 54kb &rarr; prim 5.3kb
+* The hero image for Kicksecure was rendered with 75 cycles: real 65kb &rarr; prim 6.6kb
+* The preview image quality is so good now that dev could change the blur factor from 2.5 to &rarr; 1.2. So way less blur and the preview looks better and already recognizable
 
 = TASK ARCHIVE : Backlog (Maybe Future) =
 == Wiki_Enhancements twitter image broken ==

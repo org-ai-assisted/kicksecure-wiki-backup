@@ -54,12 +54,12 @@ See also [[#Potential Future Solutions]] for options that might be explored late
 ** <u>Security:</u> because it reduces the browser's '''attack surface''' (the parts of the software that an attacker could potentially exploit).
 ** <u>Privacy:</u> because it stops unsolicited data leaks.
 * <u>Radio Silence:</u> The browser should not silently connect to the internet by itself (such as checking for updates or showing sponsored content). This is important for users to remain in control and prevent unwanted background communication. See [https://codeberg.org/librewolf/issues/issues/1779 LibreWolf's Radio Silence request].
-* <u>Clean source code:</u> If using a fork of an existing browser, any '''anti-features''' (like adware, trackers, or DRM modules) must be removed from the source code entirely - not just disabled in settings. Otherwise, there’s a risk they could be re-enabled by accident or after an update.
+* <u>Clean source code:</u> If using a fork of an existing browser, any '''anti-features''' (like adware, trackers, or DRM modules) must be removed from the source code entirely - not just disabled in settings. Otherwise, there&rsquo;s a risk they could be re-enabled by accident or after an update.
 ** <u>DRM:</u> If DRM is needed at all, it should be a browser plugin and packaged separately.
-* <u>No hardcoded connections:</u> The browser’s source code should not include specific IP addresses or domain names. These can force the browser to "phone home" (connect to developer servers) in ways the user may not expect or control.
-* <u>Long-term maintainability:</u> The browser project should be active and well-funded (or backed by a strong community), with regular security updates. If it’s abandoned or poorly maintained, users could be left vulnerable to known exploits. Also, switching browsers is hard for some users. Therefore, the default browser must be a stable choice for years.
+* <u>No hardcoded connections:</u> The browser&rsquo;s source code should not include specific IP addresses or domain names. These can force the browser to "phone home" (connect to developer servers) in ways the user may not expect or control.
+* <u>Long-term maintainability:</u> The browser project should be active and well-funded (or backed by a strong community), with regular security updates. If it&rsquo;s abandoned or poorly maintained, users could be left vulnerable to known exploits. Also, switching browsers is hard for some users. Therefore, the default browser must be a stable choice for years.
 * <u>Vendor neutrality:</u>
-** <u>Definition:</u> The principle of avoiding favoritism or affiliation with any specific commercial provider within a software project, platform, or service. A vendor-neutral approach ensures that no particular company’s branding, products, or services are endorsed, promoted, or required by default.
+** <u>Definition:</u> The principle of avoiding favoritism or affiliation with any specific commercial provider within a software project, platform, or service. A vendor-neutral approach ensures that no particular company&rsquo;s branding, products, or services are endorsed, promoted, or required by default.
 ** <u>Advantages:</u> This enhances user freedom and avoids perceived or actual conflicts of interest. Maintaining vendor neutrality is important for preserving trust, promoting long-term sustainability, and ensuring that technology choices remain open, interchangeable, and not dependent on specific proprietary ecosystems.
 ** <u>Generic description:</u> A vendor-neutral project does not include pre-configured integrations with a specific company's infrastructure, use company-branded names or logos in its user interface, or redirect users to company-hosted web services. Instead, it is developed and maintained independently or by a community, with the goal of serving users without implicit or explicit commercial bias.
 ** <u>Example of a vendor-neutral project:</u> GIMP (GNU Image Manipulation Program) is a vendor-neutral software project. It is developed by a community of contributors and does not promote or depend on any specific commercial provider. The application does not include proprietary branding, cloud integrations, or advertisements for paid services. Users can download, use, and modify GIMP without being directed toward a company or locked into a commercial ecosystem. This neutrality supports user freedom, trust, and long-term sustainability.
@@ -143,7 +143,7 @@ https://github.com/Kicksecure/security-misc/issues/192#issuecomment-1910675642
 '''Issues:'''
 
 * '''Trademark issues:'''
-** '''With Debian:''' Past trademark disputes with Mozilla, see [https://en.wikipedia.org/wiki/Debian%E2%80%93Mozilla_trademark_dispute Debian–Mozilla trademark dispute]. This was resolved and hopefully will not happen again.
+** '''With Debian:''' Past trademark disputes with Mozilla, see [https://en.wikipedia.org/wiki/Debian%E2%80%93Mozilla_trademark_dispute Debian&ndash;Mozilla trademark dispute]. This was resolved and hopefully will not happen again.
 ** '''With LibreFox:''' What happened? See [[#LibreFox|LibreFox]].
 ** '''Future:''' [[Dev/Default_Browser#Firefox_Potential_Legal_Risk|Firefox Potential Legal Risk]]
 
@@ -177,7 +177,7 @@ Mozilla Firefox website used to have a promise.
 |quote=
 Does Firefox sell your personal data?
 
-Nope. Never have, never will. And we protect you from many of the advertisers who do. Firefox products are designed to protect your privacy. That’s a promise.
+Nope. Never have, never will. And we protect you from many of the advertisers who do. Firefox products are designed to protect your privacy. That&rsquo;s a promise.
 }}
 
 This promise has been deleted. ([https://github.com/mozilla/bedrock/commit/d459addab846d8144b61939b7f4310eb80c5470e#diff-a24e74e4595fa85440a2f4e7e5dcfe68aba6e1e593aef05a2d35581a91423847L65 recorded in this git commit])
@@ -271,7 +271,7 @@ Also when using Debian's Firefox package, enabling non-freedom software DRM is j
 {{firefox_legal_disclaimer}}
 
 === Firefox Potential Legal Risk ===
-Background story: [https://en.wikipedia.org/wiki/Debian%E2%80%93Mozilla_trademark_dispute Debian–Mozilla trademark dispute] (resolved in 2017)
+Background story: [https://en.wikipedia.org/wiki/Debian%E2%80%93Mozilla_trademark_dispute Debian&ndash;Mozilla trademark dispute] (resolved in 2017)
 
 Quote:
 
@@ -316,7 +316,7 @@ Does this apply to Linux distributions that is not really primarily about distri
 
 {{quotation
 |quote=
-Changes requiring Mozilla’s prior written permission include (but are not limited to):
+Changes requiring Mozilla&rsquo;s prior written permission include (but are not limited to):
 
 * Changing the default home page or adding bookmarks,
 |context=[https://www.mozilla.org/en-US/foundation/trademarks/distribution-policy/ Mozilla Trademark Distribution Policy]
@@ -370,8 +370,8 @@ Here is a trademark-respecting list of things we are aware of and want to avoid 
 * Not using Mozilla trademarks in a way that incorrectly implies affiliation with, or sponsorship, endorsement, or approval by Mozilla of our products or services.
 * Not displaying Mozilla trademarks more prominently than our product, service, or company name.
 * Not using Mozilla trademarks on merchandise for sale (e.g., selling t-shirts, mugs, etc.)
-* Not using Mozilla trademarks for any other form of commercial use (e.g., offering technical support services), unless such use is limited to a truthful and descriptive reference (e.g., “Independent technical support for Mozilla’s Firefox browser”).
-* Not modifying Mozilla’s trademarks, abbreviating them, or combining them with any other symbols, words, or images, or incorporating them into a tagline or slogan.
+* Not using Mozilla trademarks for any other form of commercial use (e.g., offering technical support services), unless such use is limited to a truthful and descriptive reference (e.g., &ldquo;Independent technical support for Mozilla&rsquo;s Firefox browser&rdquo;).
+* Not modifying Mozilla&rsquo;s trademarks, abbreviating them, or combining them with any other symbols, words, or images, or incorporating them into a tagline or slogan.
 
 And here is a list of things that we would like to do. Our primary intention is to have a default policy (or employ other means if more appropriate) to do the following:
 
@@ -430,7 +430,7 @@ extensions to Firefox, change default settings, or alter search codes.
 
 If you would like to distribute Firefox unmodified, you can use our .deb.
 
-You can, of course, make any modifications you wish to Firefox’s open
+You can, of course, make any modifications you wish to Firefox&rsquo;s open
 source software if you distribute a browser without Mozilla and Firefox
 trademarks. Based on your requirements, the Tor Browser might also be an
 option you could consider.
@@ -900,7 +900,7 @@ In this way to huge change which would be very time-intensive to audit:
 LibreWolf lags behind Firefox a few days up to 1 week.
 
 {{quotation
-|quote=Regarding Librewolf’s slow updates, I think this issue has been very greatly exaggerated, having used it as one of my browsers for almost over 30 months, I personally do not recall it ever really being more than one week behind Firefox, usually it is only a couple working days at worst.
+|quote=Regarding Librewolf&rsquo;s slow updates, I think this issue has been very greatly exaggerated, having used it as one of my browsers for almost over 30 months, I personally do not recall it ever really being more than one week behind Firefox, usually it is only a couple working days at worst.
 |context={{Github_link|
 https://github.com/Kicksecure/security-misc/issues/192#issuecomment-1910407278
 }}
@@ -940,7 +940,7 @@ LibreFox had a potential legal issue with Mozilla:
 
 '''Advantages:'''
 
-* <u>Anti-browser fingerprinting:</u> Helps protect user privacy by making it harder for websites to create a unique identifier (called a “fingerprint”) based on a browser’s settings and behavior. This reduces tracking even without cookies.
+* <u>Anti-browser fingerprinting:</u> Helps protect user privacy by making it harder for websites to create a unique identifier (called a &ldquo;fingerprint&rdquo;) based on a browser&rsquo;s settings and behavior. This reduces tracking even without cookies.
 * <u>Company stability:</u> Mullvad is a long-standing and well-known VPN provider. Because the organization is established and reputable, its browser software is less likely to be discontinued unexpectedly.
 * <u>VPN support:</u> Mullvad Browser is compatible with virtual private networks (VPNs), including Mullvad VPN. However, the browser does not rely on a VPN to function and does not activate one automatically.
 * <u>Security features:</u> Includes a "security level slider", that allows users to choose between different levels of protection. Higher levels can disable certain browser features (like JavaScript) to reduce attack surface, at the cost of website compatibility.
@@ -950,12 +950,12 @@ LibreFox had a potential legal issue with Mozilla:
 '''Disadvantages:'''
 
 * <u>Vendor branding:</u> Mullvad Browser includes visual elements and default configurations that are closely tied to the Mullvad company and its VPN service. This makes it not "vendor-neutral". It is clearly associated with and promoting a specific commercial provider.
-** <u>Vendor neutral example:</u> To explain what is meant by vendor-neutrality, consider an example like GIMP (GNU Image Manipulation Program). GIMP is developed and maintained by a dedicated team, but it does not promote a particular company, paid service, or infrastructure. When users install GIMP, they are not presented with branding for a cloud provider, upsell to a premium version, or integration with a specific company’s services.
-** <u>Why Mullvad Browser is not vendor neutral?</u> Mullvad Browser, by contrast, includes the Mullvad name in its title, uses Mullvad’s DNS servers by default, and sets its homepage and extensions to promote the Mullvad VPN.
+** <u>Vendor neutral example:</u> To explain what is meant by vendor-neutrality, consider an example like GIMP (GNU Image Manipulation Program). GIMP is developed and maintained by a dedicated team, but it does not promote a particular company, paid service, or infrastructure. When users install GIMP, they are not presented with branding for a cloud provider, upsell to a premium version, or integration with a specific company&rsquo;s services.
+** <u>Why Mullvad Browser is not vendor neutral?</u> Mullvad Browser, by contrast, includes the Mullvad name in its title, uses Mullvad&rsquo;s DNS servers by default, and sets its homepage and extensions to promote the Mullvad VPN.
 ** <u>Home page and extensions:</u> The browser comes with a default home page and browser extension designed by Mullvad.
 *** <blockquote>MULLVAD BROWSER</blockquote>
 *** <blockquote>Developed in collaboration between the Tor Project and Mullvad VPN</blockquote>
-*** <code>Disable Mullvad DoH (encrypted DNS)</code>: a setting to disable Mullvad’s default DNS-over-HTTPS service.
+*** <code>Disable Mullvad DoH (encrypted DNS)</code>: a setting to disable Mullvad&rsquo;s default DNS-over-HTTPS service.
 
 * <u>Purpose of browser:</u>
 ** <u>Opinion:</u> These points are interpretive and based on perspective.
@@ -968,12 +968,12 @@ LibreFox had a potential legal issue with Mozilla:
 * <u>Browser basis:</u> Mullvad Browser is built on Firefox ESR (Extended Support Release), which prioritizes stability over having the newest features. It does not include the latest Firefox updates immediately. Firefox ESR might be less secure than Firefox Rapid Release, see [[Dev/Default_Browser#Firefox_Security_-_ESR_.28Extended_Support_Release.29_versus_Rapid_Release|Firefox Security - ESR (Extended Support Release) versus Rapid Release]].
 
 * <u>DNS configuration:</u>
-** <u>Default behavior:</u> By default, Mullvad Browser uses DNS over HTTPS (DoH) and sends all DNS queries through Mullvad’s own DNS servers. This means DNS traffic is encrypted, but also centralized.
-** <u>Privacy implications:</u> DNS queries (which convert website names like example.com into IP addresses) do not use the DNS server set by the user or their network (like a home router). Instead, they go to Mullvad’s server, giving Mullvad insight into the websites being accessed.
+** <u>Default behavior:</u> By default, Mullvad Browser uses DNS over HTTPS (DoH) and sends all DNS queries through Mullvad&rsquo;s own DNS servers. This means DNS traffic is encrypted, but also centralized.
+** <u>Privacy implications:</u> DNS queries (which convert website names like example.com into IP addresses) do not use the DNS server set by the user or their network (like a home router). Instead, they go to Mullvad&rsquo;s server, giving Mullvad insight into the websites being accessed.
 ** <u>Violation of separation of power:</u> Some might consider this design problematic because it combines software creation and infrastructure control. For example, the Tor Project develops the Tor software, but independent volunteers run the relays. By comparison, it could be argued that browser developers should not also run core infrastructure like DNS servers.
 ** <u>Inconsistency with system settings:</u> The browser uses its own DNS settings, which may differ from the rest of the system. This could confuse users or system administrators.
-** <u>Usability issue:</u> Breaks the "Principle of Least Astonishment" (POLA). Users typically expect the browser to follow the system’s DNS settings, not override them.
-** <u>Increased complexity:</u> If someone changes the system DNS settings (for more privacy or security), it won’t affect Mullvad Browser unless the change is made there separately. This makes DNS management harder.
+** <u>Usability issue:</u> Breaks the "Principle of Least Astonishment" (POLA). Users typically expect the browser to follow the system&rsquo;s DNS settings, not override them.
+** <u>Increased complexity:</u> If someone changes the system DNS settings (for more privacy or security), it won&rsquo;t affect Mullvad Browser unless the change is made there separately. This makes DNS management harder.
 ** <u>See also:</u> [[DNS Security]] and this forum thread: [https://forums.whonix.org/t/use-dnscrypt-by-default-in-kicksecure-not-whonix/8117 Use DNSCrypt by default in Kicksecure? (not Whonix)]
 
 * <u>Usability:</u>
@@ -1059,7 +1059,7 @@ PureOS previously maintained PureBrowser, but it got deprecated due to the too h
 
 {{quotation
 |quote=
-There seem to be lots projects out there to “unMozilla” Firefox (removing things like DRM, telemetry, Pocket integration, etc) but it’s getting harder to do that with every Firefox release. That’s what we were up against with PureBrowser and it unfortunately became too daunting of a task (even with tracking ESR like we were). We also wanted to release close to upstream so we had the latest security patches ASAP but again, became unfeasible for our small team.
+There seem to be lots projects out there to &ldquo;unMozilla&rdquo; Firefox (removing things like DRM, telemetry, Pocket integration, etc) but it&rsquo;s getting harder to do that with every Firefox release. That&rsquo;s what we were up against with PureBrowser and it unfortunately became too daunting of a task (even with tracking ESR like we were). We also wanted to release close to upstream so we had the latest security patches ASAP but again, became unfeasible for our small team.
 |context=https://forums.puri.sm/t/purebrowser-removed-after-update/8635/11
 }}
 
@@ -1070,7 +1070,7 @@ A Librewolf developer also confirmed that hard forking Firefox is infeasible.
 
 No, we are absolutely not prepared to do that. We are a (very) small team with a rather limited amount of time (and energy) to work on LibreWolf even with it just the way it currently is. We would not even remotely be able to fork and maintain a browser fully, let alone to continually develop and improve it. Nor would we have the expertise to do so. Which would mean that if we tried to do that, we would most certainly release an insecure product, getting worse over time, which I would not ever want to be responsible for.
 
-Sorry to disappoint on that front – but: it is what it is.
+Sorry to disappoint on that front &ndash; but: it is what it is.
 |context=Librewolf feature request: [https://codeberg.org/librewolf/issues/issues/2252 Prepared to fork Firefox?], reply by [https://codeberg.org/ohfp ohfp], Librewolf developer
 }}
 

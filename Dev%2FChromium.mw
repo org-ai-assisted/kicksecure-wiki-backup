@@ -83,7 +83,7 @@ The Chromium package on Debian has massively crippled security and disables nume
 
 * The Debian Chromium package is not a production build, so basic security features like sandboxing, ASLR and CFI are crippled or nonexistent. <ref><code>is_official_build=true</code> is not set and its default value is false; it must be explicitly enabled, which the Debian package does not do:
 
-* https://salsa.debian.org/search?utf8=✓&search=is_official_build&group_id=3323&project_id=20972
+* https://salsa.debian.org/search?utf8=&#x2713;&search=is_official_build&group_id=3323&project_id=20972
 * https://github.com/chromium/chromium/blob/d7da0240cae77824d1eda25745c4022757499131/base/BUILD.gn#L55-L58
 * https://groups.google.com/a/chromium.org/g/chromium-dev/c/4F5hM8XMOhQ</ref>
 * Clang's type-based, forward-edge Control-Flow Integrity is not enabled. <ref><code>is_cfi=true</code> is also not set: https://salsa.debian.org/search?utf8=%E2%9C%93&search=is_cfi&group_id=3323&project_id=20972 Compare this to another distribution which does, such as Arch Linux: https://github.com/archlinux/svntogit-packages/blob/2cbe439471932d30ff2c8ded6b3dfd51b312bbc9/trunk/PKGBUILD#L145</ref>
@@ -161,13 +161,13 @@ https://forums.whonix.org/t/chromium-browser-for-kicksecure-discussions-not-whon
 </ref>
 
 <blockquote>
-The goal of manifest v3 is not to neuter ad blockers. It allows content filtering in a more secure way while also not allowing extensions to spy on users extensively. It doesn’t kill ad blocking - it only provides a safer way of doing it. Manifest v3 removes the legacy webRequest and replaces it with declarativeNetRequest.
+The goal of manifest v3 is not to neuter ad blockers. It allows content filtering in a more secure way while also not allowing extensions to spy on users extensively. It doesn&rsquo;t kill ad blocking - it only provides a safer way of doing it. Manifest v3 removes the legacy webRequest and replaces it with declarativeNetRequest.
 
 https://developer.chrome.com/extensions/declarativeNetRequest
 
 https://blog.chromium.org/2018/10/trustworthy-chrome-extensions-by-default.html
 
-Besides, this hasn’t even been implemented yet and likely won’t be for a long time. Other browsers will probably follow suit too. For example, this is how it already works in Safari.
+Besides, this hasn&rsquo;t even been implemented yet and likely won&rsquo;t be for a long time. Other browsers will probably follow suit too. For example, this is how it already works in Safari.
 </blockquote>
 
 Reply by Patrick:
@@ -250,7 +250,7 @@ When Chrome is started it will lookup domain names for previously opened web pag
 madaidan reply:
 
 <blockquote>
-This isn’t weird. It improves page load time and is a standard thing that’s done in other browsers like Firefox. It can also be disabled.
+This isn&rsquo;t weird. It improves page load time and is a standard thing that&rsquo;s done in other browsers like Firefox. It can also be disabled.
 
 https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
 </blockquote>
@@ -378,7 +378,7 @@ Hardened Malloc (HM)
 <s>https://forums.whonix.org/t/hardened-malloc-hardened-memory-allocator/7474/147</s>
 
 * <s>Can Chromium from Flatpak be used with [[Hardened Malloc]]?</s>
-* <s>Which memory allocator is more secure, Chromium’s built-in or Hardened Malloc?</s>
+* <s>Which memory allocator is more secure, Chromium&rsquo;s built-in or Hardened Malloc?</s>
 
 Meanwhile, HM was deprecated in Kicksecure.
 

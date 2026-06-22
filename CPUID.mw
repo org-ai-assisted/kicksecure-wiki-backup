@@ -1,7 +1,7 @@
 {{Header}}
 {{Title|title=
 CPUID - Security and Privacy Risks
-‎}}
+&lrm;}}
 {{#seo:
 |description=CPUID is a processor function that allowing software to discover the model and capabilities of the processor. This can be a security or privacy risk.
 |image=Cpuid1.png

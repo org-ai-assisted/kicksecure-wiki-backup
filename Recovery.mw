@@ -91,7 +91,7 @@ See also [[root]] wiki page, specifically chapters:
 | <code>rd.emergency=halt</code>
 | Yes
 | Remove
-| Prevents system from halting on an emergency and instead drops to dracut’s default emergency shell.
+| Prevents system from halting on an emergency and instead drops to dracut&rsquo;s default emergency shell.
 |-
 
 | <code>SYSTEMD_SULOGIN_FORCE=1</code>
@@ -306,7 +306,7 @@ Which ISO to use? The [[ISO|{{project_name_short}} ISO]] should be suitable for 
 
 {{IconSet|h1|5}} Set the Flash or DVD drive as the first boot device. This tells your computer to try booting from the Flash or DVD drive before any other devices.
 
-{{IconSet|h1|6}} After setting the boot order, find the option to Save Changes and Exit. The exact wording might vary, but it’s typically something like "Save & Exit" or "Exit Saving Changes." Confirm your changes, and your PC will restart.
+{{IconSet|h1|6}} After setting the boot order, find the option to Save Changes and Exit. The exact wording might vary, but it&rsquo;s typically something like "Save & Exit" or "Exit Saving Changes." Confirm your changes, and your PC will restart.
 
 {{IconSet|h1|7}} If everything is set correctly, your PC should now boot from the Flash or DVD. You might see a message like "Press any key to boot from CD/DVD..." 
 If you see this message, press any key on your keyboard to start booting from the DVD.

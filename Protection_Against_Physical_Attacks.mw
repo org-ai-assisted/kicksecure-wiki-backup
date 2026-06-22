@@ -452,7 +452,7 @@ Linux allows you to access a text-only user interface to the system by pressing 
 <blockquote>
 Backdoor #2: Ctrl-Alt-F1, Ctrl-Alt-F2, etc.
 
-These keystrokes will switch to a different virtual console, while leaving the console that X11 is running on locked. If you left a shell logged in on another virtual console, it is unprotected. So don’t leave yourself logged in on other consoles. You can disable VT switching globally and permanently by setting DontVTSwitch in your xorg.conf, but that might make your system harder to use.
+These keystrokes will switch to a different virtual console, while leaving the console that X11 is running on locked. If you left a shell logged in on another virtual console, it is unprotected. So don&rsquo;t leave yourself logged in on other consoles. You can disable VT switching globally and permanently by setting DontVTSwitch in your xorg.conf, but that might make your system harder to use.
 </blockquote>
 </ref>
 

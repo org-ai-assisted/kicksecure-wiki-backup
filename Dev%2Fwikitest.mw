@@ -179,7 +179,7 @@ Test 4.4 : Simple Quotation with 3 Lines, Context and Image Test
 
 789}}
 
-Test 4.5: Bullet Point Quotation with 2 Lines, Context and Image Test → Expected: {{IconSet|false|FAILURE}}
+Test 4.5: Bullet Point Quotation with 2 Lines, Context and Image Test &rarr; Expected: {{IconSet|false|FAILURE}}
 
 Same as above but below a bullet point. '''NOTE''': This does not work as expected but it acceptable right now because this is caused by a bug in MediaWiki that has been reported.
 
@@ -229,7 +229,7 @@ CodeSelect in Lists
 * {{CodeSelect|code=
 def
 ghi123
-asölfkasjdölfkajdöslkjasdfölkfjaölksdjaslökdjfaöslkjfaöslkjfdsalökdjfalöksjfaklösjfaslökjfasölkjfasölkjfadsölkjafdsklöfjlköasdjflkösajdfsölkjadsölkjfdaslksafjfkl
+as&ouml;lfkasjd&ouml;lfkajd&ouml;slkjasdf&ouml;lkfja&ouml;lksdjasl&ouml;kdjfa&ouml;slkjfa&ouml;slkjfdsal&ouml;kdjfal&ouml;ksjfakl&ouml;sjfasl&ouml;kjfas&ouml;lkjfas&ouml;lkjfads&ouml;lkjafdskl&ouml;fjlk&ouml;asdjflk&ouml;sajdfs&ouml;lkjads&ouml;lkjfdaslksafjfkl
 }}
 * Including pipe symbol ("<code>|</code>") (encoded as <code><nowiki>{{!}}</nowiki></code>): {{CodeSelect|code=
 echo test {{!}} xargs echo
@@ -328,8 +328,8 @@ Below are 3 tests. The first without the paramter scope, it should show the page
 <div id="css-fork-tests-c">
 # {{IconSet|maybe|Wait...}} | C1 | Article in whitelisted namespace | <code><nowiki>{{#css:MediaWiki:Common.css}}</nowiki></code> | <code>&lt;link rel="stylesheet" href=".../MediaWiki:Common.css?action=raw&amp;ctype=text/css&amp;css-extension=1" /&gt;</code>
 # {{IconSet|maybe|Wait...}} | C2 | Article in non-whitelisted namespace | <code><nowiki>{{#css:User:Patrick/myskin.css}}</nowiki></code> | HTML comment error: "Only namespaces [...] allowed. You use: 2 (namespace id)"
-# {{IconSet|maybe|Wait...}} | C3 | Non-existing article | <code><nowiki>{{#css:MediaWiki:NonExistent.css}}</nowiki></code> | Article does not exist → treated as inline CSS → sanitizer fails with <code>/* css-sanitizer failed to parse CSS */</code>
-# {{IconSet|maybe|Wait...}} | C4 | Article without namespace prefix | <code><nowiki>{{#css:ExactlyThirtyOneCharactersLong.css}}</nowiki></code> | No namespace prefix → not recognized as article → treated as inline CSS → sanitizer fails with <code>/* css-sanitizer failed to parse CSS */</code>
+# {{IconSet|maybe|Wait...}} | C3 | Non-existing article | <code><nowiki>{{#css:MediaWiki:NonExistent.css}}</nowiki></code> | Article does not exist &rarr; treated as inline CSS &rarr; sanitizer fails with <code>/* css-sanitizer failed to parse CSS */</code>
+# {{IconSet|maybe|Wait...}} | C4 | Article without namespace prefix | <code><nowiki>{{#css:ExactlyThirtyOneCharactersLong.css}}</nowiki></code> | No namespace prefix &rarr; not recognized as article &rarr; treated as inline CSS &rarr; sanitizer fails with <code>/* css-sanitizer failed to parse CSS */</code>
 </div>
 
 '''D. CSS Sanitizer'''
@@ -345,7 +345,7 @@ Below are 3 tests. The first without the paramter scope, it should show the page
 '''E. Edge Cases'''
 <div id="css-fork-tests-e">
 # {{IconSet|maybe|Wait...}} | E1 | CSS with comments | <code><nowiki>{{#css:/* comment */ body { color: red; }}</nowiki></code> | Comment stripped, valid CSS remains
-# {{IconSet|maybe|Wait...}} | E2 | CSS custom properties | <code><nowiki>{{#css::root { --main-color: #ff0000; } }}</nowiki></code> | Custom properties not supported by older sanitizer → <code>/* css-sanitizer failed to sanitize CSS */</code>
+# {{IconSet|maybe|Wait...}} | E2 | CSS custom properties | <code><nowiki>{{#css::root { --main-color: #ff0000; } }}</nowiki></code> | Custom properties not supported by older sanitizer &rarr; <code>/* css-sanitizer failed to sanitize CSS */</code>
 # {{IconSet|maybe|Wait...}} | E3 | Multiple CSS calls on one page | Two separate <code><nowiki>{{#css:...}}</nowiki></code> calls (this is already given by the other tests) | Both processed independently, multiple <code>&lt;style&gt;</code> or <code>&lt;link&gt;</code> tags
 </div>
 
@@ -1104,7 +1104,7 @@ Open hidden table
 Test 3: Below is a pre element which has overwidth
 
 <pre>
-asdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkasdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkjj
+asd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkasd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkjj
 </pre>
 
 Test 4 : Below is a pre element which has overwidth and is hidden
@@ -1113,7 +1113,7 @@ Test 4 : Below is a pre element which has overwidth and is hidden
 Open hidden overwide pre lement
 <div class="mw-collapsible-content">
 <pre>
-asdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkasdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkjj
+asd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkasd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkjj
 </pre>
 </div>
 </div>
@@ -1124,27 +1124,27 @@ Below are height tests, for the top scrollbar height breakpoint to be reached (i
 
 Height 150px
 <pre style="height: 200px">
-asdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkasdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkjj
+asd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkasd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkjj
 </pre>
 
 Height 300px
 <pre style="height: 300px">
-asdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkasdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkjj
+asd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkasd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkjj
 </pre>
 
 Height 450px
 <pre style="height: 400px">
-asdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkasdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkjj
+asd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkasd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkjj
 </pre>
 
 Height 600px
 <pre style="height: 500px">
-asdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkasdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkjj
+asd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkasd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkjj
 </pre>
 
 Height 750px
 <pre style="height: 500px">
-asdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkasdölfjasölkafölkasjfölkasjfölkasjfölajöaiojujflaksjflöaksjlköajsvlköjvölkajföljwaeiojföjaflökjlasjdfölasjdflkjj
+asd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkasd&ouml;lfjas&ouml;lkaf&ouml;lkasjf&ouml;lkasjf&ouml;lkasjf&ouml;laj&ouml;aiojujflaksjfl&ouml;aksjlk&ouml;ajsvlk&ouml;jv&ouml;lkajf&ouml;ljwaeiojf&ouml;jafl&ouml;kjlasjdf&ouml;lasjdflkjj
 </pre>
 
 == Share Tooltip ==

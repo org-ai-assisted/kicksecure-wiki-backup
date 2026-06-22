@@ -89,7 +89,7 @@ With Secure Boot enabled, the kernel enforces strict module signing policies. Th
 
 '''Relation to Secure Boot:'''
 
-This message only occurs when Secure Boot is enabled. Secure Boot ensures that only signed and trusted kernel modules are allowed to run. If a module’s key is not enrolled, the kernel will reject it.
+This message only occurs when Secure Boot is enabled. Secure Boot ensures that only signed and trusted kernel modules are allowed to run. If a module&rsquo;s key is not enrolled, the kernel will reject it.
 
 = Secure Boot DKMS Signing Key Enrollment =
 

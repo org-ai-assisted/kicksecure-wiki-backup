@@ -60,7 +60,7 @@
       <!--{/if}-->
 
     <!--{* Commit hash. No leading symbol (the hex is self-evident). When a
-            #diff-… fragment is present, append a "diff" hint. *}-->
+            #diff-&hellip; fragment is present, append a "diff" hint. *}-->
     <!--{elseif $sha != $path}-->
       <!--{$repo_pill}-->
       |

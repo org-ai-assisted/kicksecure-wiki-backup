@@ -137,7 +137,7 @@ stardict (3.0.6-0.1) unstable; urgency=medium
 
   * Non-maintainer upload.
 
-  [ Ondřej Nový ]
+  [ Ond&#x159;ej Nov&yacute; ]
   * d/control: Set Vcs-* to salsa.debian.org
 
   [ Jeremy Bicha ]

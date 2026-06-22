@@ -1625,7 +1625,7 @@ Daniel reviewed my patch submitted to GRUB, pointing out several coding style an
 === Sovereign Boot discussion on bootloader enumeration ===
 Date: 2025-05-28
 
-Talked with Michał from 3mdeb about whether we want to enumerate all bootloaders available to the system, what heuristics we should use for prioritizing them, and what the behavior should be when dealing with large numbers of bootloaders.
+Talked with Micha&#x142; from 3mdeb about whether we want to enumerate all bootloaders available to the system, what heuristics we should use for prioritizing them, and what the behavior should be when dealing with large numbers of bootloaders.
 
 == 2025-05-27 ==
 === Review, approve maybebyte's permission-hardener bugfix ===
@@ -5367,7 +5367,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 *** Fix: Index page previous loop bug (Advanced documentation links with itself as previous) and index page format bug (using underscores "_").
 *** Documentation for WikiBookIndex Template and Widget
 *** Documentation for WikiBookGeneration
-*** Move widget parameter {{{for}}}→{{{1}}} + documentation
+*** Move widget parameter {{{for}}}&rarr;{{{1}}} + documentation
 *** Re-checked old tasks. Already solved by admin (1) copyright move and mass replace links (2) Template:q_project_name_short replaced
 ** Dev/mediawiki split up into (1) keep main (2) Archive
 ** Bugfix: Dev/mediawiki research on wrong Category multiwiki classification
@@ -5518,7 +5518,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Discussion ToDo
 ** Kicksecure new boot loader text suggestions
 ** Kicksecure HP manual tab controller for download options + scrolling bug fix
-** About page remove download options + use introLike für text above TOC
+** About page remove download options + use introLike f&uuml;r text above TOC
 ** ISO page info-box about download options
 ** Download pages re-ordering
 ** riscv64 make logo and preview image + on both wikis
@@ -5814,7 +5814,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 *** exiftest and upload
 *** video embed extension research for MediaWiki
 ** debug helper old file url bug analysis + fix
-** new script CollapsibleGlobalMods.js to globally apply “learn more” label + also “Show Less” label
+** new script CollapsibleGlobalMods.js to globally apply &ldquo;learn more&rdquo; label + also &ldquo;Show Less&rdquo; label
 *** removed all data-expandtext and data-collapsetext
 
 * 2024-09-27
@@ -5823,7 +5823,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Icon Template two new parameters border text
 *** style param 1 new option
 *** tests + documentation
-** ISO page “Boot the ISO” chapter revision rewrites
+** ISO page &ldquo;Boot the ISO&rdquo; chapter revision rewrites
 *** reorder + illustration
 ** ISO page boot menu explainer video created
 
@@ -6065,7 +6065,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** bugfix hidden table zero width table wrapper bug
 ** codeSelect
 *** hidden reveal bugfix
-*** feature cs-no-custom-scrollbars – natürliches scrollen für debugviaurlmodal
+*** feature cs-no-custom-scrollbars &ndash; nat&uuml;rliches scrollen f&uuml;r debugviaurlmodal
 *** improved structure and comments
 *** Added test to [[Dev/wikitest]]
 *** documentation
@@ -6152,7 +6152,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 * 2024-08-15
 ** Pagespeed
 *** Kicksecure TM symbol issue resolution
-** issue “Failed to load resource” research
+** issue &ldquo;Failed to load resource&rdquo; research
 ** Fontawesome
 *** subset research + documentation
 *** unify to new icon syntax (files + both wikis) and remove spaces
@@ -6255,8 +6255,8 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** hsversion cache control inserted in CSS extension use cases in Kicksecure and Whonix
 *** new files for pages and templates
 *** documentation
-** new AddMessageToCopiedText.js – add copyright text to all copied text on the wikis
-*** excluding “protected objects”
+** new AddMessageToCopiedText.js &ndash; add copyright text to all copied text on the wikis
+*** excluding &ldquo;protected objects&rdquo;
 *** Prevent Protection due to the selection starting and ending in different protected elements
 
 * 2024-01-30
@@ -6292,7 +6292,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Mediawiki self-link new draft for feature request
 ** GoogleOff
 *** Applied to CodeSelect
-*** Review of “see share button” SEO bug
+*** Review of &ldquo;see share button&rdquo; SEO bug
 ** Slider for wiki Homepages
 *** splidejs docu research
 *** setup and import in file system and in headscript
@@ -6416,7 +6416,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 * 2023-09-01
 ** add querystring to Headscript discussion + version + hsversion
 ** CSS extension cache busting discussion
-** footer - TM vs R – Kicksecure and Whonix Headline + Symbol solution
+** footer - TM vs R &ndash; Kicksecure and Whonix Headline + Symbol solution
 ** homepage - sequential heading levels
 ** Whonix HP new player hero image + play / pause player upgrade + SVG play symbol
 
@@ -6672,7 +6672,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 * 2023-05-30
 ** Blockquote overlap bugfix
 ** TOC weird look Firefox bugfix
-** Quotation in table bugfix → in reality: table auto wrapper padding bugfix
+** Quotation in table bugfix &rarr; in reality: table auto wrapper padding bugfix
 ** Phabricator research and answer
 ** Sitenotice active parameter upgrade + documentation
 ** Banner styling in general and banner001
@@ -6773,7 +6773,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Bug analysis $.cookie
 ** bug fixing page Linux
 ** Tab controller replace old syntax with new template
-** “Show only once” template research
+** &ldquo;Show only once&rdquo; template research
 ** thumbnail content shift research
 ** blockquote css
 ** Google Off template and documentation [[Dev/mediawiki#GoogleOff_Template]]
@@ -6875,7 +6875,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Whonix wiki/Linux content fix
 ** Pagespeed improvements
 *** Headline research
-*** Research “Links are not crawlable”
+*** Research &ldquo;Links are not crawlable&rdquo;
 *** Total blocking time research and testing
 
 * 2023-03-25
@@ -7142,7 +7142,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Outreach thank you mail template
 
 * 2022-12-07
-** Whonix Exposé 100%
+** Whonix Expos&eacute; 100%
 ** Outreach communication
 ** ShareTooltip Markdown bugfix
 ** Thank you message research
@@ -7152,7 +7152,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** research combine CSS/JS or not
 ** CSS column bugfix
 ** Real World attacks page
-** Whonix Exposé 60%
+** Whonix Expos&eacute; 60%
 
 * 2022-12-05
 ** Prevent Enhance Headlines feature + Template + documentation
@@ -7402,7 +7402,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 * 2022-10-13
 ** Kicksecure homepage updated like Whonix HP (structure, css, fns, content)
 ** added Kicksecure HP Features
-** changed Kicksecure HP cumulative changed metric from 0.24 → 0.02 by predictable image sizes
+** changed Kicksecure HP cumulative changed metric from 0.24 &rarr; 0.02 by predictable image sizes
 ** seo images research
 
 * 2022-10-12
@@ -7428,7 +7428,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 
 * 2022-10-08
 ** Headline Bug (hidden behind padding)
-** gtmetrix / pagespeed analysis – performance test strategy
+** gtmetrix / pagespeed analysis &ndash; performance test strategy
 ** new image for everything Tor
 
 * 2022-10-07
@@ -7723,7 +7723,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 
 * 2022-03-15
 ** FlyInNotification finalization
-** predictable column break classes für 3-column areas
+** predictable column break classes f&uuml;r 3-column areas
 
 * 2022-03-10
 ** creation of module FlyInNotification
@@ -7913,7 +7913,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Improved Mediawiki Extension "Link to archive"
 *** differentiate automatically between normal link, onion-link and link to web.archive.org
 *** Show logos instead of long "[archive]" text
-*** logo / title attribute / logo link href according to linked url: normal → archive symbol + archive link / onion → onion logo and onion link / archive link → archive logo and same link
+*** logo / title attribute / logo link href according to linked url: normal &rarr; archive symbol + archive link / onion &rarr; onion logo and onion link / archive link &rarr; archive logo and same link
 **  Template <code><nowiki>[[Template:Archive_link]] and [[Widget:Archive_link]]</nowiki></code> and {{CustomRepo|Archive_link.css}} created: Similar to "Link to archive", but you can choose if you want an archive link, onion link or both
 
 * 2021-12-21: Whonix Logo Format: discussed: jpeg and png specific use cases. And logo-text and logo delivered without padding

@@ -237,7 +237,7 @@ This might be the case because if no conversion to VDI is required then less dis
 
 = Non-functional Shared Clipboard and Drag and Drop =
 
-If the shared clipboard and drag’n’drop to/from host is non-functional, this can relate to the version of guest additions installed in {{project_name_short}} and/or the version of VirtualBox running on the host. <ref>
+If the shared clipboard and drag&rsquo;n&rsquo;drop to/from host is non-functional, this can relate to the version of guest additions installed in {{project_name_short}} and/or the version of VirtualBox running on the host. <ref>
 * https://forums.whonix.org/t/whonix-15-shared-clipboard-and-dragndrop-not-working/7723
 * Upstream bug report: [https://www.virtualbox.org/ticket/19336 Linux guest: shared clipboard doesn't work (on fresh VirtualBox-6.1.4-136177) => fixed in 6.1.6]
 </ref>
@@ -597,8 +597,8 @@ Remove operating system user name or any problematic file paths.
 {{Anchor|No Sound in {{project_name_workstation_long}}}}
 {{Anchor|No Sound in Whonix-Workstation}}
 {{Anchor|No Sound in Whonix-Workstation}}
-{{Anchor|No Sound in Whonix-Workstation ™}}
-{{Anchor|No Sound in Whonix-Workstation ®}}
+{{Anchor|No Sound in Whonix-Workstation &trade;}}
+{{Anchor|No Sound in Whonix-Workstation &reg;}}
 
 In case of sound issues, the user can try various VirtualBox host software audio settings. Go to:
 
@@ -706,7 +706,7 @@ This happened when trying to upgrade VirtualBox to version 7.1.10 on Windows 11.
 * To solve it, try the following:
 ** Go to the location where VirtualBox is installed. The default location is:
 *** <code>C:\Program Files\Oracle\VirtualBox\drivers\vboxsup</code>
-*** Or, visually:<pre>C:\ → Program Files → Oracle → VirtualBox → drivers → vboxsup</pre>
+*** Or, visually:<pre>C:\ &rarr; Program Files &rarr; Oracle &rarr; VirtualBox &rarr; drivers &rarr; vboxsup</pre>
 ** Then right-click the file named <code>VBoxSup.inf</code> and select <code>Install</code>.
 ** It should show: <code>The operation completed successfully</code>.
 ** Restart your system and it should work.

@@ -588,8 +588,8 @@ Re-enable Hyper-V and related Windows security features. Increases system securi
 * We allow the user to change the keyboard layout. <code>set-system-keymap</code> is even able to change the keyboard layout in the initramfs, where the disk decryption prompt appears.
 * We also allow the user to change the disk encryption passphrase.
 * If a passphrase contains characters that cannot be typed with a particular keyboard layout, and the layout is set to the problematic layout, the user will be locked out of their system and will need to boot from an external drive to recover.
-* Example: user installs with language set to German, includes <code>ß</code> character in the passphrase, then changes keyboard layout to US English
-* Example 2: user usually has their keyboard set to US English, but temporarily changes keyboard layout to Spanish, then changes their encryption passphrase to include a <code>ñ</code> character
+* Example: user installs with language set to German, includes <code>&szlig;</code> character in the passphrase, then changes keyboard layout to US English
+* Example 2: user usually has their keyboard set to US English, but temporarily changes keyboard layout to Spanish, then changes their encryption passphrase to include a <code>&ntilde;</code> character
 * Try to add safeguards to set-(console|system)-keymap and crypt-pwchange to avoid this scenario
 ** Aaron: Done, commits pushed to helper-scripts and live-config-dist. Also created documentation at https://www.kicksecure.com/wiki/Keyboard_Layout#Changing_the_system_or_console_keymap_when_using_Full_Disk_Encryption.
 *** Did not make changes to crypt-pwchange, as I'm not sure what safeguards could be put in place there. There isn't a reliable way to read the current keymap from labwc that I can tell, heuristic methods based on config file parsing may be unreliable and give false alarms or fail to give alarms when needed. Warning the user if they are about to set a passphrase that can't be typed using the current console keymap might be useful, but would also require knowing the physical keyboard the user has (which may be difficult) and would likely require parsing XKB keymap files, which is non-trivial.
@@ -1256,12 +1256,12 @@ Dec 04 08:59:57 sys-net systemd[1]: Failed to start sdwdate-gui-qubes@0-1443-100
 
 ########################################
   UNIT                                  LOAD   ACTIVE     SUB   JOB   DESCRIPTION
-● sdwdate-gui-qubes@1-1483-1000.service loaded activating start start sdwdate graphical user interface - Qubes socket proxy (PID 1483/UID 1000)
+&#x25CF; sdwdate-gui-qubes@1-1483-1000.service loaded activating start start sdwdate graphical user interface - Qubes socket proxy (PID 1483/UID 1000)
 
-Legend: LOAD   → Reflects whether the unit definition was properly loaded.
-        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
-        SUB    → The low-level unit activation state, values depend on unit type.
-        JOB    → Pending job for the unit.
+Legend: LOAD   &rarr; Reflects whether the unit definition was properly loaded.
+        ACTIVE &rarr; The high-level unit activation state, i.e. generalization of SUB.
+        SUB    &rarr; The low-level unit activation state, values depend on unit type.
+        JOB    &rarr; Pending job for the unit.
 
 1 loaded units listed.
 ########################################
@@ -1269,7 +1269,7 @@ Legend: LOAD   → Reflects whether the unit definition was properly loaded.
 
 <pre>
 [root ~]# systemctl status sdwdate-gui-qubes@1-1483-1000.service
-○ sdwdate-gui-qubes@1-1483-1000.service - sdwdate graphical user interface - Qubes socket proxy
+&#x25CB; sdwdate-gui-qubes@1-1483-1000.service - sdwdate graphical user interface - Qubes socket proxy
      Loaded: loaded (/usr/lib/systemd/system/sdwdate-gui-qubes@.service; static)
      Active: inactive (dead)
 
@@ -1290,7 +1290,7 @@ Dec 04 09:24:32 sys-net systemd[1]: sdwdate-gui-qubes@1-1483-1000.service: Deact
 * systemd probably does not like that a Type=notify unit can exit
 
 <pre>
-systemctl --no-legend --no-pager --no-block --state=failed,activating,deactivating list-units ● sdwdate-gui-qubes@49-1483-1000.service loaded 
+systemctl --no-legend --no-pager --no-block --state=failed,activating,deactivating list-units &#x25CF; sdwdate-gui-qubes@49-1483-1000.service loaded 
 </pre>
 <pre>
 activating start start sdwdate graphical user interface - Qubes socket proxy (PID 1483/UID 1000) can we avoid getting stuck in that state?
@@ -1320,7 +1320,7 @@ Additional security concerns in strip-markup
 
     Terminal/console escape injection remains possible. The sanitizer removes only markup tags and replaces <, >, and & with underscores when it detects suspicious transformations, but it leaves all other control characters untouched. Because StripMarkupEngine runs with convert_charrefs = True, an attacker can supply inputs containing HTML entities for escape characters (e.g., &#27; for ESC), which will be decoded and written back out unchanged via sys.stdout.write. This can produce ANSI escape sequences in logs or terminals, enabling log forgery or malicious terminal control even though HTML tags were stripped.
 
-Not safe for contextual HTML output. The “sanitization” only removes tags and (in the fallback path) converts <, >, and & to underscores; it does not escape quotes, backticks, or other characters that are dangerous in attribute, JavaScript, or CSS contexts. If the supposedly “clean” output is later interpolated into HTML attributes or script blocks, an attacker can inject payloads such as javascript:... URLs or string-breaking quotes that lead to XSS despite markup stripping.
+Not safe for contextual HTML output. The &ldquo;sanitization&rdquo; only removes tags and (in the fallback path) converts <, >, and & to underscores; it does not escape quotes, backticks, or other characters that are dangerous in attribute, JavaScript, or CSS contexts. If the supposedly &ldquo;clean&rdquo; output is later interpolated into HTML attributes or script blocks, an attacker can inject payloads such as javascript:... URLs or string-breaking quotes that lead to XSS despite markup stripping.
 </pre>
 
 * Aaron:
@@ -1338,7 +1338,7 @@ Not safe for contextual HTML output. The “sanitization” only removes tags an
 
 <pre>
 [WARN] Proxy Client: unable to connect OR connection (handshaking (proxy)) with 192.95.37.142:443 ID=
-│ RSA_ID=CDF2E852BF539B..................("general SOCKS server failure") [1 duplicate hidden]
+&#x2502; RSA_ID=CDF2E852BF539B..................("general SOCKS server failure") [1 duplicate hidden]
 </pre>
 
 * Aaron: Can reproduce. However, using bridges obtained from The Tor Project instead of hardcoded bridges works and does not display the warning. Bridges may be outdated?
@@ -1848,7 +1848,7 @@ Nov 21 15:34:16 host pipewire[1803]: mod.rt: RTKit error: org.freedesktop.DBus.E
 <pre>
 systemctl list-units --failed                         
   UNIT                                  LOAD   ACTIVE SUB    DESCRIPTION                                                     >
-● sdwdate-gui-qubes@0-1531-1000.service loaded failed failed sdwdate graphical user interface - Qubes socket proxy (PID 1531/>
+&#x25CF; sdwdate-gui-qubes@0-1531-1000.service loaded failed failed sdwdate graphical user interface - Qubes socket proxy (PID 1531/>
 </pre>
 * this is probably because sys-net starts before sys-whonix
 * Aaron: Fixed (and fixed a bug I noticed while working on this), commits pushed to sdwdate-gui.
@@ -4153,7 +4153,7 @@ tion check using: privleapd --check-config
 * <code>systemctl status repository-dist-initializer.service</code>:
 
 <pre>
-× repository-dist-initializer.service - /etc/apt/sources.list.d/derivative.list initializer
+&times; repository-dist-initializer.service - /etc/apt/sources.list.d/derivative.list initializer
      Loaded: loaded (/lib/systemd/system/repository-dist-initializer.service; enabled; preset: enabled)
      Active: failed (Result: exit-code) since Fri 2025-03-07 17:31:20 CST; 35s ago
     Process: 968 ExecStart=/usr/libexec/repository-dist/repository-dist-initializer (code=exited, status=1/FAILURE)
@@ -5764,7 +5764,7 @@ Session=sysmaint-session" \
 
 * needs to be run under user sysmaint to avoid permission issues
 * needs Depends: safe-rm maybe?
-* sysmaint-panel folder /usr/lib/systemd/system doesn’t seem right for a gui package. Maybe...
+* sysmaint-panel folder /usr/lib/systemd/system doesn&rsquo;t seem right for a gui package. Maybe...
 ** user-sysmaint-split-cli
 ** user-sysmaint-split-gui
 ** sysmaint-panel

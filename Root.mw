@@ -1070,7 +1070,7 @@ Why not considered "rooted" in this case:
 <u>Difference in Terminology</u>:
 
 * '''Desktop Linux''': The concept of "<code>rooting</code>" is not usually applied to traditional Linux desktops. Instead, users elevate privileges with <code>sudo</code>, which is considered a normal administrative function. The term "<code>rooted</code>" implies a fundamental change in the system's security model that is not present when using standard privilege escalation like <code>sudo</code>.
-* '''Mobile OS (Android/iOS)''': "<code>Rooting</code>" or "jailbreaking" signifies that the device’s default restrictions are bypassed, giving the user continuous and unrestricted access to system files and functions.
+* '''Mobile OS (Android/iOS)''': "<code>Rooting</code>" or "jailbreaking" signifies that the device&rsquo;s default restrictions are bypassed, giving the user continuous and unrestricted access to system files and functions.
 
 {{Anchor|show=true|Malicious Root Management Tools}}
 <u>Malicious <code>Root</code> Management Tools</u>: Are an Android / iOS specific issue. Some websites say, for example, that KingRoot for Android is malware. <ref>

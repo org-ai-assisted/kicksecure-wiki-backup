@@ -10,11 +10,11 @@ Trezor Hardware Wallet
 [https://trezor.io/ Trezor] is a hardware cryptocurrency wallet created by SatoshiLabs.
 Its [https://github.com/trezor/trezor-firmware firmware] and [https://github.com/trezor/trezor-hardware PCB design] are open source. Its [https://github.com/trezor/trezor-suite client software] source code is source-available, but under a restrictive license. 
 
-Trezor Safe 3 and Safe 5 incorporate a secure element known as OPTIGA Trust M (V3) <ref>
+Trezor Safe&#x202F;3 and Safe&#x202F;5 incorporate a secure element known as OPTIGA&#x202F;Trust&#x202F;M (V3) <ref>
 [https://trezor.io/learn/security-privacy/how-trezor-keeps-you-safe/secure-elements-in-trezor-safe-devices Secure Elements in Trezor Safe devices]
 </ref>; although its [https://github.com/Infineon/linux-optiga-trust-m documentation] is source-available, its internal state remains proprietary.
 
-Trezor 7 employs a dual‑secure‑element architecture: one element is the Optiga Trust M, while the other is the  [https://github.com/tropicsquare/TROPIC01 TROPIC01], an auditable secure element with open source [https://github.com/tropicsquare/tropic01-rtl circuit design] and [https://github.com/tropicsquare/ts-tr01-app firmware]. According to Trezor, each secure element contributes a portion of the secret, and together they form the final key used for seed decryption <ref>
+Trezor&#x202F;7 employs a dual&#x2011;secure&#x2011;element architecture: one element is the Optiga&#x202F;Trust&#x202F;M, while the other is the  [https://github.com/tropicsquare/TROPIC01 TROPIC01], an auditable secure element with open source [https://github.com/tropicsquare/tropic01-rtl circuit design] and [https://github.com/tropicsquare/ts-tr01-app firmware]. According to Trezor, each secure element contributes a portion of the secret, and together they form the final key used for seed decryption <ref>
 https://trezor.io/guides/trezor-devices/trezor-safe-7/dual-secure-elements-in-trezor-safe-7
 </ref>.
 
@@ -129,7 +129,7 @@ Ideas:
 * '''B)''' Switch off <code>sys-usb</code> altogether, for example if the system has only one USB controller, and switch between using USBVM and not using USBVM. -> security issue https://github.com/QubesOS/qubes-issues/issues/6368
 
 = Use trezor in qubes VM without usb access =
-Neither the Trezor Suite nor Trezor Web Connect connect directly to the Trezor device. Instead, a helper called Trezor Bridge handles the usb connection, then opens an access service at <code>127.0.0.1:21325</code>. Both Suite and Web Connect will access that service for USB communication. Using <code>qvm‑connect‑tcp</code> we can forward that port, letting the Trezor software—or any in‑browser wallet such as MetaMask—run inside a Qubes VM without needing direct USB access.
+Neither the Trezor Suite nor Trezor Web Connect connect directly to the Trezor device. Instead, a helper called Trezor Bridge handles the usb connection, then opens an access service at&#x202F;<code>127.0.0.1:21325</code>. Both Suite and Web Connect will access that service for USB communication. Using&#x202F;<code>qvm&#x2011;connect&#x2011;tcp</code> we can forward that port, letting the Trezor software&mdash;or any in&#x2011;browser wallet such as MetaMask&mdash;run inside a Qubes&#x202F;VM without needing direct USB access.
 
 Since the Trezor Bridge service is just a webpage, we can run any number of wallets at the same time on one or multiple VMs.
 
@@ -142,7 +142,7 @@ At present, the Trezor Suite bundles the Trezor Bridge, allowing us to launch th
 qvm-copy Trezor*
 }}
 
-{{IconSet|h1|2}} Move Trezor Suite Appimage from QubesIncoming directory to home directory. In this scenario, it’s being sent from a VM named <code>browser</code>
+{{IconSet|h1|2}} Move Trezor Suite Appimage from QubesIncoming directory to home directory. In this scenario, it&rsquo;s being sent from a VM named <code>browser</code>
 
 {{CodeSelect|code=
 mv /home/user/QubesIncoming/Trezor* ~
@@ -190,7 +190,7 @@ systemctl --user enable --now trezor-bridge.service
 ss -tuple
 }}
 
-If you see a program listening on port <code>21325</code>, the Trezor Bridge service is running.
+If you see a program listening on port&#x202F;<code>21325</code>, the Trezor Bridge service is running.
 
 = Footnotes =
 <references />

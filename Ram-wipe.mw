@@ -19,18 +19,18 @@ ram-wipe is especially useful for organizations that work with confidential info
 RAM extraction attacks have been a known method to steal information from computers since at least 2008. <ref>
 https://en.wikipedia.org/w/index.php?title=Cold_boot_attack&oldid=249088610
 </ref>
-Many people assume that all data in RAM disappears as soon as a computer is turned off, but this isn’t always true. In some cases, the contents of RAM can remain for several seconds or even minutes after power loss.
+Many people assume that all data in RAM disappears as soon as a computer is turned off, but this isn&rsquo;t always true. In some cases, the contents of RAM can remain for several seconds or even minutes after power loss.
 
 Research by 3MDEB <ref name=3mdeb>
 * [https://blog.3mdeb.com/2024/2024-12-13-ram-data-decay-research/ Research of RAM data remanence times]
 * [https://blog.3mdeb.com/2025/2025-01-24-ram-data-decay-research-part2/ Research of RAM data remanence times, part 2]
 * [https://blog.3mdeb.com/2025/2025-02-20-conclusions-from-ram-data-remanence-tests/ Conclusions from RAM data remanence tests]
-</ref> confirms that this type of attack still works with modern RAM like DDR4 and DDR5, which are common in today’s computers. Sometimes RAM is wiped instantly after shutdown or power loss, but in many cases the contents can stay for a few seconds, or even minutes.
+</ref> confirms that this type of attack still works with modern RAM like DDR4 and DDR5, which are common in today&rsquo;s computers. Sometimes RAM is wiped instantly after shutdown or power loss, but in many cases the contents can stay for a few seconds, or even minutes.
 
 Since at least 2011, the Linux [[Live_Mode|live]] operating system [https://tails.boum.org/ Tails] has included a RAM wiping feature during shutdown. <ref>
 https://web.archive.org/web/20110423165633/https://tails.boum.org/contribute/design/memory_erasure/
 </ref>
-(Live systems are run from USB sticks or DVDs.) However, Tails’ [https://tails.boum.org/contribute/design/memory_erasure/ documentation] explains that this feature has limitations.
+(Live systems are run from USB sticks or DVDs.) However, Tails&rsquo; [https://tails.boum.org/contribute/design/memory_erasure/ documentation] explains that this feature has limitations.
 
 Until recently, no other Linux distributions like Debian or Fedora included RAM wiping by default.
 
@@ -50,7 +50,7 @@ For technical details on <code>ram-wipe</code> using <code>initramfs-tools</code
 
 See also:
 
-* [[Dev/RAM_Wipe#Differences_of_ram-wipe_versus_Tails_Memory_Erasure|Differences between <code>ram-wipe</code> and Tails’ memory erasure]]
+* [[Dev/RAM_Wipe#Differences_of_ram-wipe_versus_Tails_Memory_Erasure|Differences between <code>ram-wipe</code> and Tails&rsquo; memory erasure]]
 * [[Dev/RAM_Wipe|<code>ram-wipe</code> (developer documentation)]]
 
 = History Summary =

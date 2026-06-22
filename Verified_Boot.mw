@@ -148,11 +148,11 @@ Lower stage (such as firmware) loads and hands over control to the next element 
 
 The stages look approximately as follows (simplified):
 
-<code>hardware root of trust</code> → <code>firmware</code> → <code>bootloader</code> → <code>kernel</code> → <code>kernel modules</code> → <code>initrd</code> → <code>init</code>
+<code>hardware root of trust</code> &rarr; <code>firmware</code> &rarr; <code>bootloader</code> &rarr; <code>kernel</code> &rarr; <code>kernel modules</code> &rarr; <code>initrd</code> &rarr; <code>init</code>
 
 Or specifically on some Linux desktop distributions:
 
-<code>hardware root of trust</code> → <code>firmware</code> → <code>shim</code> -> <code>grub</code> <code>bootloader</code> → <code>Linux kernel</code> → <code>kernel modules</code> → <code>initrd</code> → <code>systemd</code> <code>init</code> and <code>userland</code>
+<code>hardware root of trust</code> &rarr; <code>firmware</code> &rarr; <code>shim</code> -> <code>grub</code> <code>bootloader</code> &rarr; <code>Linux kernel</code> &rarr; <code>kernel modules</code> &rarr; <code>initrd</code> &rarr; <code>systemd</code> <code>init</code> and <code>userland</code>
 
 Should the verification fail at any stage, the boot process is aborted.
 
@@ -409,7 +409,7 @@ With a read-write (rw) image and verified boot, at best maybe what one could get
 One cannot do <code>dm-verity</code> on a "normal" filesystem. Only on images, block devices. Any changes and it breaks. Quote <code>dm-verity</code> man page:
 
 <blockquote>
-Device-Mapper’s “verity” target provides transparent integrity checking of block devices using a cryptographic digest provided by the kernel crypto API. This target is read-only.
+Device-Mapper&rsquo;s &ldquo;verity&rdquo; target provides transparent integrity checking of block devices using a cryptographic digest provided by the kernel crypto API. This target is read-only.
 </blockquote>
 
 One ends up with a read-only filesystem.
@@ -461,7 +461,7 @@ However, while en EFI executable such as shim could in theory have two signature
 * https://bugzilla.redhat.com/show_bug.cgi?id=963361
 
 {{quotation
-|quote=Booting linux with secure-boot depends on shim (the file “shim.efi”). The openSUSE “shim” has two signatures. It is signed by Microsoft and it is signed by openSUSE. Unfortunately, there are a few computers with firmware that does not properly handle a shim with two signatures, and some ASUS computers have this problem.
+|quote=Booting linux with secure-boot depends on shim (the file &ldquo;shim.efi&rdquo;). The openSUSE &ldquo;shim&rdquo; has two signatures. It is signed by Microsoft and it is signed by openSUSE. Unfortunately, there are a few computers with firmware that does not properly handle a shim with two signatures, and some ASUS computers have this problem.
 |context=https://forums.opensuse.org/t/secure-boot-asking-for-certificate-permission/132905/7
 }}
 
@@ -504,7 +504,7 @@ A potential compromise could be a fallback mechanism with two shims: one based o
 When machines certified for other distributions (e.g., Ubuntu) are preinstalled, they include an Ubuntu-specific key from Canonical alongside the Microsoft key. However, relying on Secure Boot for verified boot while keeping compatibility with the Microsoft key poses challenges.
 
 === Measured Boot vs Secure Boot ===
-It’s possible to design a process where the Microsoft shim loads the kernel, the kernel then determines compatibility with the project-specific key, and the system reboots into a secondary bootloader signed by the project. But this approach requires additional firmware capabilities. Effectively can be compromised with Microsoft leaked key?
+It&rsquo;s possible to design a process where the Microsoft shim loads the kernel, the kernel then determines compatibility with the project-specific key, and the system reboots into a secondary bootloader signed by the project. But this approach requires additional firmware capabilities. Effectively can be compromised with Microsoft leaked key?
 
 Yes. That's where measured boot comes in.
 
@@ -527,7 +527,7 @@ Attacks:
 * Evil Maid Attack (variant): A physical attacker modifies the device while the user is unaware. This is a pre-user evil maid, where the user never owned a clean device to begin with.
 * Rollback Attack (if older signed images used): Uses older, vulnerable but validly signed firmware/OS images to exploit known vulnerabilities.
 * Old stock sale "attack": This can happen when selling older stock with old pre-installed versions that turned out to include vulnerabilities.
-* Forged Verified Boot Attack: Re-locks bootloader using attacker’s key to fake a secure boot state. Device appears secure but isn’t. A variant of phishing where the OS mimics a trusted UI (e.g., "Google Pixel" lookalike with backdoors).
+* Forged Verified Boot Attack: Re-locks bootloader using attacker&rsquo;s key to fake a secure boot state. Device appears secure but isn&rsquo;t. A variant of phishing where the OS mimics a trusted UI (e.g., "Google Pixel" lookalike with backdoors).
 * Relocking Attack: synonym, same as above
 * Malicious Bootloader Re-lock Attack: synonym, same as above
 * Impersonation via ROM-level Spoofing: synonym, same as above
@@ -565,7 +565,7 @@ Questions:
 
 * Device bootloader is unlocked.
 * A custom ROM with ultra-low-power malware is flashed.
-* Bootloader is re-locked with attacker’s key or no verification at all.
+* Bootloader is re-locked with attacker&rsquo;s key or no verification at all.
 * Attacker re-packs and ships the phone.
 
 '''Stealth Power-On:'''
@@ -575,11 +575,11 @@ Questions:
 
 '''Fake First Boot UI:'''
 
-<u>On user’s first power-on:</u>
+<u>On user&rsquo;s first power-on:</u>
 
 * The malware shows fake "booting" screens (OEM logos, OS animation, language selector).
 * Possibly displays fake verified boot state or warnings.
-* Device never truly boots clean; it’s already running a compromised environment.
+* Device never truly boots clean; it&rsquo;s already running a compromised environment.
 
 '''Backdoor Installation / Exfiltration:'''
 
@@ -811,9 +811,9 @@ With this in mind, a device and firmware with Verified Boot support should meet 
 |quote=
 '''Relay attack'''
 
-While the TOTP solution cleverly solves the replay attack, it’s still vulnerable to a relay attack.
+While the TOTP solution cleverly solves the replay attack, it&rsquo;s still vulnerable to a relay attack.
 
-An attacker could steal your laptop and leave behind an identical-looking malicious laptop. When you (unknowingly) boot the malicious relay laptop, it communicates out to your real laptop — which relays the 6-digit OTP code down to the malicious laptop. You verify that the 6-digit OTP is correct and type your FDE decryption password — which is relayed out to the attacker with your real laptop.
+An attacker could steal your laptop and leave behind an identical-looking malicious laptop. When you (unknowingly) boot the malicious relay laptop, it communicates out to your real laptop &mdash; which relays the 6-digit OTP code down to the malicious laptop. You verify that the 6-digit OTP is correct and type your FDE decryption password &mdash; which is relayed out to the attacker with your real laptop.
 |context=[https://tech.michaelaltfield.net/2023/02/16/evil-maid-heads-pureboot/ Trusted Boot (Anti-Evil-Maid, Heads, and PureBoot)]
 }}
 

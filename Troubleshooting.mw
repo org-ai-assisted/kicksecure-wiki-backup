@@ -553,20 +553,20 @@ lsblk
 [sysmaint ~]% lsblk 
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sda           8:0    0 476.9G  0 disk 
-├─sda1        8:1    0   4G  0 part /boot
-├─sda2        8:2    0 472.9G  0 part /
+&#x251C;&#x2500;sda1        8:1    0   4G  0 part /boot
+&#x251C;&#x2500;sda2        8:2    0 472.9G  0 part /
 </pre>
 
 If your hard drive is NVMe you will see <code>nvme0</code>:
 
 <pre>
 nvme0n1     259:0    0 953.9G  0 disk 
-└─nvme0n1p1 259:1    0 953.9G  0 part 
+&#x2514;&#x2500;nvme0n1p1 259:1    0 953.9G  0 part 
 nvme1n1     259:2    0 953.9G  0 disk 
-├─nvme1n1p1 259:3    0   200M  0 part 
-├─nvme1n1p2 259:4    0    16M  0 part 
-├─nvme1n1p3 259:5    0 952.9G  0 part 
-└─nvme1n1p4 259:6    0   735M  0 part
+&#x251C;&#x2500;nvme1n1p1 259:3    0   200M  0 part 
+&#x251C;&#x2500;nvme1n1p2 259:4    0    16M  0 part 
+&#x251C;&#x2500;nvme1n1p3 259:5    0 952.9G  0 part 
+&#x2514;&#x2500;nvme1n1p4 259:6    0   735M  0 part
 </pre>
 
 So, depending on your hard drive type, you will use the appropriate argument with the tool:
@@ -806,7 +806,7 @@ sudo nvme smart-log /dev/nvme0
 user@host:~$ sudo nvme smart-log /dev/nvme0
 Smart Log for NVME device:nvme0 namespace-id:ffffffff
 critical_warning                        : 0
-temperature                             : 34 °C (307 K, 93 °F)
+temperature                             : 34 &deg;C (307 K, 93 &deg;F)
 available_spare                         : 100%
 available_spare_threshold               : 5%
 percentage_used                         : 0%
@@ -823,8 +823,8 @@ media_errors                            : 0
 num_err_log_entries                     : 0
 Warning Temperature Time                : 0
 Critical Composite Temperature Time     : 0
-Temperature Sensor 1                    : 34 °C (307 K, 93 °F)
-Temperature Sensor 2                    : 34 °C (307 K, 93 °F)
+Temperature Sensor 1                    : 34 &deg;C (307 K, 93 &deg;F)
+Temperature Sensor 2                    : 34 &deg;C (307 K, 93 &deg;F)
 Thermal Management T1 Trans Count       : 0
 Thermal Management T2 Trans Count       : 0
 Thermal Management T1 Total Time        : 0
@@ -1101,10 +1101,10 @@ thinkpad-isa-0000
 Adapter: ISA adapter
 fan1:        3405 RPM
 fan2:        3405 RPM
-CPU:          +43.0°C  
-GPU:          +42.0°C  
+CPU:          +43.0&deg;C  
+GPU:          +42.0&deg;C  
 temp3:            N/A  
-temp4:        +46.0°C  
+temp4:        +46.0&deg;C  
 temp5:            N/A  
 temp6:            N/A  
 temp7:            N/A  
@@ -1113,12 +1113,12 @@ pwm1:            128%
 
 acpitz-acpi-0
 Adapter: ACPI interface
-temp1:        +43.0°C  
-temp2:        +44.0°C  
+temp1:        +43.0&deg;C  
+temp2:        +44.0&deg;C  
 
 coretemp-isa-0000
 Adapter: ISA adapter
-Core 0:       +44.0°C  (crit = +105.0°C)
+Core 0:       +44.0&deg;C  (crit = +105.0&deg;C)
 </pre>
 
 ==== Psensor ====

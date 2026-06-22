@@ -364,7 +364,7 @@ WantedBy=sysmaint-boot.target
 {{IconSet|h2|10}} Ensure the <code>systemctl enable</code> command outputs the following notice. If you see this, it indicates that the service has been successfully enabled.
 
 <pre>
-Created symlink /etc/systemd/system/sysmaint-boot.target.wants/service-name.service → /lib/systemd/system/service-name.service.
+Created symlink /etc/systemd/system/sysmaint-boot.target.wants/service-name.service &rarr; /lib/systemd/system/service-name.service.
 </pre>
 
 {{IconSet|h2|11}} Start the service in the current sysmaint session by running <code>sudo systemctl start service-name.service</code>.

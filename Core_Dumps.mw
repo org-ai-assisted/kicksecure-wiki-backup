@@ -22,7 +22,7 @@ The primary function of core dumps is to provide the user or programmer with spe
 
 {{mbox
 | image   = [[File:Ambox_warning_pn.svg.png|40px]]
-| text    = Most of today’s operating systems, libraries, languages, and so on leave sensitive data they handle -- passwords, financial and other information -- scattered throughout memory, and it often leaks to disk. Information may be left there for an indeterminate period and this increases the risk of a system compromise. <ref name=Core_dump2>https://cs.stanford.edu/people/jchow/papers/lifetime-sigops04.pdf</ref>
+| text    = Most of today&rsquo;s operating systems, libraries, languages, and so on leave sensitive data they handle -- passwords, financial and other information -- scattered throughout memory, and it often leaks to disk. Information may be left there for an indeterminate period and this increases the risk of a system compromise. <ref name=Core_dump2>https://cs.stanford.edu/people/jchow/papers/lifetime-sigops04.pdf</ref>
 }}
 
 Core dumps can potentially contain sensitive information like: <ref>https://wiki.archlinux.org/title/Core_dump</ref> <ref name=Core_dump2 /> <ref>https://security.stackexchange.com/questions/131552/risks-of-encryption-keys-contained-in-a-memory-dump-after-a-crash</ref>

@@ -31,7 +31,7 @@ An overview of the threat model for cryptocurrency hardware wallets, including h
 
 {{Quotation
 |quote=
-... a physical device on which a user stores their private keys to access their blockchain wallets. These devices don’t have to be electronic. Any physical item that can store a private key is considered a hardware wallet.
+... a physical device on which a user stores their private keys to access their blockchain wallets. These devices don&rsquo;t have to be electronic. Any physical item that can store a private key is considered a hardware wallet.
 
 From a general perspective, hardware wallets are convenient, secure, and immune to many of the hazards other wallet types can fall victim too.
 }}
@@ -160,12 +160,12 @@ In order to perform cryptocurrency transactions securely, a number of threats mu
 ** There are two different types of wallets: blockchain full validating and SPV wallets. Full validating wallets have higher system requirements but are more secure.
 ** For example, [[electrum]] is a popular SPV wallet (which can be combined with hardware wallets) that clearly documents its disadvantages. Quote [https://electrum.readthedocs.io/en/latest/faq.html#does-electrum-trust-servers Does Electrum trust servers?]:
 <blockquote>[...]
-One of the servers, arbitrarily, is selected as the “main” server.
+One of the servers, arbitrarily, is selected as the &ldquo;main&rdquo; server.
 
 * The client subscribes to its own addresses (nit: sha256 hashes of scriptPubKeys) so that it would be notified of new transactions touching them. It also synchronizes the existing history of its addresses. This means the client sacrifices some privacy to the server, as the server can now reasonably guess that all these addresses belong to the same entity.
 * As above, confirmed transactions are verified via SPV.
 * The server is trusted about unconfirmed transactions.
-* The server can lie by omission. That is, it can “forget” to mention (both confirmed and unconfirmed) transactions that are relevant to the client.
+* The server can lie by omission. That is, it can &ldquo;forget&rdquo; to mention (both confirmed and unconfirmed) transactions that are relevant to the client.
 * The main server is also used for fee estimates, and is trusted with those (low-high sanity limits are applied in the client)
 * The main server is also used to broadcast the transactions the client makes.
 
@@ -174,7 +174,7 @@ One of the servers, arbitrarily, is selected as the “main” server.
 * <u>Workarounds</u>:
 ** Some full validating cryptocurrency wallets might allow pairing with hardware wallets. Unfortunately, for [[Bitcoin]] the official [[Bitcoin#Bitcoin_Core|Bitcoin Core]] has no hardware wallet support yet.
 ** Therefore, alternatively, a full validating node can be run in concert with an SPV wallet. The full validating wallet would run in watch-only mode, either permanently or occasionally whenever the user wants to double-check incoming transactions and account balances.
-** Running a blockchain full validating node such as [[Bitcoin#Bitcoin_Core|Bitcoin Core]] for [[Bitcoin]] is a very good idea since it is much more secure than merely relying on an SPV wallet to verify incoming transactions and account balances. At the expense of setting up a full validating node (setup time, download quota, CPU utilization), a much higher certainty of receiving real coins can be accomplished. Quote [https://btcguide.github.io/setup-computer/bitcoin-node 10x Security Bitcoin Guide]: <blockquote>Think of your bitcoin node as a fake bitcoin detector, it will confirm that bitcoin’s consensus rules are being followed so that when you receive a payment you can validate that you are getting real bitcoins.</blockquote>
+** Running a blockchain full validating node such as [[Bitcoin#Bitcoin_Core|Bitcoin Core]] for [[Bitcoin]] is a very good idea since it is much more secure than merely relying on an SPV wallet to verify incoming transactions and account balances. At the expense of setting up a full validating node (setup time, download quota, CPU utilization), a much higher certainty of receiving real coins can be accomplished. Quote [https://btcguide.github.io/setup-computer/bitcoin-node 10x Security Bitcoin Guide]: <blockquote>Think of your bitcoin node as a fake bitcoin detector, it will confirm that bitcoin&rsquo;s consensus rules are being followed so that when you receive a payment you can validate that you are getting real bitcoins.</blockquote>
 |-
 
 ! Privacy Disaster
@@ -186,7 +186,7 @@ One of the servers, arbitrarily, is selected as the “main” server.
 ! Purchase Data Leaks
 |
 * <u>Threat</u>: Real names, shipping addresses, e-mail addresses, and phone numbers of buyers have been leaked in the past. See:
-** [https://cointelegraph.com/news/ledger-data-leak-a-simple-mistake-exposed-270k-crypto-wallet-buyers Ledger data leak: A ‘simple mistake’ exposed 270K crypto wallet buyers].
+** [https://cointelegraph.com/news/ledger-data-leak-a-simple-mistake-exposed-270k-crypto-wallet-buyers Ledger data leak: A &lsquo;simple mistake&rsquo; exposed 270K crypto wallet buyers].
 ** [https://www.coindesk.com/markets/2020/07/29/crypto-wallet-maker-ledger-loses-1m-email-addresses-in-data-theft/ Crypto Wallet Maker Ledger Loses 1M Email Addresses in Data Theft]
 ** [https://www.coindesk.com/business/2020/12/23/from-sim-swaps-to-home-invasion-threats-ledger-leak-has-cascading-consequences/ From SIM-Swaps to Home-Invasion Threats, Ledger Leak Has Cascading Consequences] ([[Mobile_Phone_Security#SIM_Swapping_Attack|Account and Mobile Devices Security chapter SIM Swapping Attack]])
 * <u>Workarounds:</u> Buy a hardware wallet offline with cash.
@@ -327,7 +327,7 @@ The translation and summary of "within the possible limits" in plain English is:
 
 {{Quotation
 |quote=
-Using a wallet requires a minimal amount of trust. If your hypothesis is that your wallet provider is the attacker, you’re doomed.
+Using a wallet requires a minimal amount of trust. If your hypothesis is that your wallet provider is the attacker, you&rsquo;re doomed.
 |context=
 [https://twitter.com/P3b7_/status/1659187088477114372 Ledger CTO]
 }}
@@ -378,14 +378,14 @@ The author is unaware of any methods for verification of the firmware on a speci
 |
 {{Quotation
 |quote=
-And open source doesn’t really solve this. It’s impossible to have guarantees that the electronic itself is not backdoored, nor that the firmware that runs inside the wallet is the one you audited.
+And open source doesn&rsquo;t really solve this. It&rsquo;s impossible to have guarantees that the electronic itself is not backdoored, nor that the firmware that runs inside the wallet is the one you audited.
 |context=
 [https://twitter.com/P3b7_/status/1659187094764285952 Ledger CTO]
 }}
 
 {{Quotation
 |quote=
-If the wallet wants to implement a backdoor, there are many ways to do it, in the random number generation, in the cryptographic library, in the hardware itself. It’s even possible to create signatures so that the private key can be retrieved only by monitoring the blockchain
+If the wallet wants to implement a backdoor, there are many ways to do it, in the random number generation, in the cryptographic library, in the hardware itself. It&rsquo;s even possible to create signatures so that the private key can be retrieved only by monitoring the blockchain
 |context=
 [https://twitter.com/P3b7_/status/1659187092184879104 Ledger CTO]
 }}
@@ -434,7 +434,7 @@ There might be other hardware wallets with functional JTAG interfaces or other m
 
 {{Quotation
 |quote=
-When BOLOS needs to be upgraded, a secure channel is established between the Secure Element of the device and Ledger’s HSM. This channel allows to send our firmware in an encrypted way.
+When BOLOS needs to be upgraded, a secure channel is established between the Secure Element of the device and Ledger&rsquo;s HSM. This channel allows to send our firmware in an encrypted way.
 |context=
 [https://www.ledger.com/firmware-1-4-deep-dive-security-fixes Ledger Blog Post]
 }}
@@ -540,7 +540,7 @@ Ledger in the past claimed:
 {{Quotation
 |context=[https://web.archive.org/web/20220628095937/https://www.ledger.com/academy/security/not-all-chips-are-born-equal Ledger blog post, web archived version from 13 February 2020]
 |quote=
-While Ledger is using a dual chip system with an MCU as well, the important part is that your private keys remain inside the Secure Element – they are not sent out for processing transactions. Equally the device’s firmware and all cryptographic operations are held within the Secure Element chip.
+While Ledger is using a dual chip system with an MCU as well, the important part is that your private keys remain inside the Secure Element &ndash; they are not sent out for processing transactions. Equally the device&rsquo;s firmware and all cryptographic operations are held within the Secure Element chip.
 }}
 
 {{Quotation
@@ -588,7 +588,7 @@ People are worried about the increased attack surface.
 
 {{Quotation
 |quote=
-One of my concerns with the new @Ledger Recover service is that they appears to be sharding via Shamir’s Secret Sharing, but doing so in a proprietary way and possibly in a naive fashion. We don’t know, as it is not open source. [1/11]
+One of my concerns with the new @Ledger Recover service is that they appears to be sharding via Shamir&rsquo;s Secret Sharing, but doing so in a proprietary way and possibly in a naive fashion. We don&rsquo;t know, as it is not open source. [1/11]
 |context=
 {{twitter_link|ChristopherA/status/1659061319004454913|Christopher Allen}}
 }}
@@ -623,11 +623,11 @@ If this wiki page has contributed to the safekeeping of cryptocurrency, please c
 * [https://www.ledger.com/anatomy-of-a-phishing-attack Anatomy of a Phishing Attack]
 * [https://support.ledger.com/hc/en-us/articles/360035343054-Beware-of-phishing-attempts Beware of phishing attempts]
 * [https://www.ledger.com/phishing-campaigns-status Ongoing phishing campaigns]
-* [https://www.ledger.com/academy/security/hack-malware-to-take-control-of-your-pc-or-mobile-phone Hack #1 – Check out this link!]
-* [https://web.archive.org/web/20210924154512/https://www.ledger.com/academy/security/hack-anonymous-call-from-messaging-platform Hack #2 – A stranger is calling you]
-* [https://www.ledger.com/academy/security/hack-wifi Hack #3 – Do you have WiFi password?]
-* [https://www.ledger.com/academy/hack-keylogging Hack #4 – The hacker sees all]
-* [https://www.ledger.com/academy/hack-5-malicious-wallet Hack #5 – Malicious Wallet App]
+* [https://www.ledger.com/academy/security/hack-malware-to-take-control-of-your-pc-or-mobile-phone Hack #1 &ndash; Check out this link!]
+* [https://web.archive.org/web/20210924154512/https://www.ledger.com/academy/security/hack-anonymous-call-from-messaging-platform Hack #2 &ndash; A stranger is calling you]
+* [https://www.ledger.com/academy/security/hack-wifi Hack #3 &ndash; Do you have WiFi password?]
+* [https://www.ledger.com/academy/hack-keylogging Hack #4 &ndash; The hacker sees all]
+* [https://www.ledger.com/academy/hack-5-malicious-wallet Hack #5 &ndash; Malicious Wallet App]
 * [[Cryptocurrency Security Threats]]
 * [[Social_Engineering|Social Engineering and (Spear) Phishing]]
 * [[Bitcoin]]

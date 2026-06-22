@@ -64,7 +64,7 @@
         <label for="more-expand">More Payment Options Expand</label>
         <input id="more-expand" class="expand-checkbox" autocomplete="off" type="checkbox" />
 
-        <div class="more-button">show more ▼</div>
+        <div class="more-button">show more &#x25BC;</div>
 
         <div class="more-content">
           <a href="/wiki/Donate/Credit_Card" title="Donation via American Express">

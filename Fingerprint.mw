@@ -132,7 +132,7 @@ The following do <u>not</u> exist, based on currently available public informati
 
 * '''A)''' <u>No phone home research:</u> There is no ongoing research project that regularly checks whether software that comes pre-installed with Kicksecure (or is commonly installed by users) secretly connects to the internet (called "phoning home") using regular, non-anonymous internet connections (clearnet), without user action or consent. This kind of research would be important to ensure that the system is not leaking information in the background.
 * '''B)''' <u>No fingerprint research:</u> There is no active project that regularly studies and compares how different operating systems (like Microsoft Windows, Debian, Tor Browser Bundle (TBB), Tails, Whonix, Kicksecure, etc.) appear on the internet, known as their "network fingerprint." A network fingerprint is a set of technical clues that the {{ISP}} or servers can use to recognize what kind of system you're using, even without cookies or login information. These fingerprints can vary depending on the software and hardware combination, and without this kind of research, users may be more identifiable online than they realize.
-* '''C)''' <u>No fingerprint emulation development team:</u> Based on the lack of the above research, there is also no development team working on making Kicksecure (or similar systems) mimic the network fingerprint of more commonly used systems. The goal of such emulation would be to make users harder to identify or track by blending in with the crowd — for example, by making their internet traffic look like that of a typical Windows or Debian user.
+* '''C)''' <u>No fingerprint emulation development team:</u> Based on the lack of the above research, there is also no development team working on making Kicksecure (or similar systems) mimic the network fingerprint of more commonly used systems. The goal of such emulation would be to make users harder to identify or track by blending in with the crowd &mdash; for example, by making their internet traffic look like that of a typical Windows or Debian user.
 
 = Project Goal and Non-Goal Comparison =
 Users can check what goals a software project explicitly states.
@@ -141,9 +141,9 @@ Many software projects do not list "radio silence" as a main objective. In this 
 
 * '''Qubes OS:''' Avoiding clearnet traffic is not a goal of Qubes OS. It is also unlikely to become a major goal in the future.
 ** Qubes FAQ entry [https://www.qubes-os.org/faq/#what-about-privacy-in-non-whonix-qubes What about privacy in non-Whonix qubes?] - This FAQ shows that privacy protection in non-Whonix parts of Qubes is not a focus.
-** Qubes FAQ entry [https://www.qubes-os.org/faq/#what-is-qubes-attitude-toward-changing-guest-distros What is Qubes’ attitude toward changing guest distros?] - Suggests limited willingness to adopt major changes aimed at improving privacy.
+** Qubes FAQ entry [https://www.qubes-os.org/faq/#what-is-qubes-attitude-toward-changing-guest-distros What is Qubes&rsquo; attitude toward changing guest distros?] - Suggests limited willingness to adopt major changes aimed at improving privacy.
 ** Qubes issue ticket [https://github.com/QubesOS/qubes-issues/issues/9332 create or fork a Linux distribution for default use by App Qubes for better security] Discusses whether to create a more secure Linux distribution for Qubes, but not focused on traffic anonymity.
-** See the issue: [https://github.com/QubesOS/qubes-issues/issues/1814 <code>sys-net</code> phones home to fedoraproject.org for captive portal detection]. This means that the network component of Qubes OS was connecting to Fedora’s servers automatically to check for internet restrictions. The issue was reported in 2016, and no action was taken until 2022, when the issue resolved itself without deliberate changes. This indicates that preventing such traffic was not treated as a high priority.
+** See the issue: [https://github.com/QubesOS/qubes-issues/issues/1814 <code>sys-net</code> phones home to fedoraproject.org for captive portal detection]. This means that the network component of Qubes OS was connecting to Fedora&rsquo;s servers automatically to check for internet restrictions. The issue was reported in 2016, and no action was taken until 2022, when the issue resolved itself without deliberate changes. This indicates that preventing such traffic was not treated as a high priority.
 ** See list of issues {{whonix_wiki
 |wikipage=Dev/Qubes#Important_Issues
 |text=Qubes Important Anonymity related Network Issues
@@ -162,7 +162,7 @@ Solution:
 C) security hardened networking + emulating "popular" network fingerprints: does <u>not</u> exist anywhere.
 
 = Future =
-Kicksecure: Might get a feature to restrict outgoing traffic to specific Linux user accounts and/or IP addresses. But it’s not yet implemented. For latest status, see ticket: [https://forums.kicksecure.com/t/kicksecure-firewall/378 Kicksecure Firewall]
+Kicksecure: Might get a feature to restrict outgoing traffic to specific Linux user accounts and/or IP addresses. But it&rsquo;s not yet implemented. For latest status, see ticket: [https://forums.kicksecure.com/t/kicksecure-firewall/378 Kicksecure Firewall]
 
 This however does not magically fix all advanced fingerprinting techniques.
 
