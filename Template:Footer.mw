@@ -1,7 +1,7 @@
 {{#ifeq: {{WikiBookIndex}} | page-not-indexed || {{WikiBookIndex|footer}} }}
 {{GoogleOff | content=
 <div id="custom-footer">
-{{#widgetfooter:context={{SERVER}}}}
+{{#widgetfooter:}}
 </div>
 {{#flyinnotification:}}
 }}
