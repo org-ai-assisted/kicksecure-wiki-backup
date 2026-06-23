@@ -1,16 +1,7 @@
 {{#ifeq: {{WikiBookIndex}} | page-not-indexed || {{WikiBookIndex|footer}} }}
 {{GoogleOff | content=
 <div id="custom-footer">
-{{#widgetfooter:context={{SERVER}}
- |projectName={{project_name_short}}
- |projectNameLong={{project_name_long}}
- |projectNameShort={{project_name_short}}
- |projectDomainClearnet={{project_clearnet}}
- |projectDomainOnion={{project_onion}}
- |projectTelegramAllNewsChannelName={{project_telegram_all_news_channel_name}}
- |projectSloganShort={{project_slogan_short}}
- |tm=tm
-}}
+{{#widgetfooter:context={{SERVER}}|tm=tm}}
 </div>
 {{#flyinnotification:}}
 }}
