@@ -14,19 +14,19 @@ While the idea of achieving perfect security is appealing, it is fundamentally i
 }}
 
 {{quotation
-|quote=For a variety of technical reasons, computer security is extraordinarily weak. If a sufficiently skilled, funded, and motivated attacker wants in to your computer, they&rsquo;re in. If they&rsquo;re not, it&rsquo;s because you&rsquo;re not high enough on their priority list to bother with.
+|quote=For a variety of technical reasons, computer security is extraordinarily weak. If a sufficiently skilled, funded, and motivated attacker wants in to your computer, they're in. If they're not, it's because you're not high enough on their priority list to bother with.
 |context=[https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier]: [https://www.schneier.com/blog/archives/2016/02/security_vs_sur.html Security vs. Surveillance]
 }}
 
 {{quotation
 |quote=You can't secure what you don't understand.
 
-The worst enemy of security is complexity. This has been true since the beginning of computers, and it&rsquo;s likely to be true for the foreseeable future.
+The worst enemy of security is complexity. This has been true since the beginning of computers, and it's likely to be true for the foreseeable future.
 |context=[https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier]: [https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html A Plea for Simplicity]
 }}
 
 {{quotation
-|quote=A secure system must defend against all possible attacks&mdash;including those unknown to the defender. But defenders, having limited resources, typically develop defenses only for attacks they know about. New kinds of attacks are then likely to succeed. So our growing dependence on networked computing systems puts at risk individuals, commercial enterprises, the public sector, and our military.
+|quote=A secure system must defend against all possible attacks--including those unknown to the defender. But defenders, having limited resources, typically develop defenses only for attacks they know about. New kinds of attacks are then likely to succeed. So our growing dependence on networked computing systems puts at risk individuals, commercial enterprises, the public sector, and our military.
 |context=[https://en.wikipedia.org/wiki/Fred_B._Schneider Fred B. Schneider], Professor of Computer Science: [https://www.cs.cornell.edu/fbs/publications/SoS.blueprint.pdf Blueprint for a science of cybersecurity]
 }}
 
@@ -43,7 +43,7 @@ See also [[Open_Source_Hardware#Hardware_Trust_in_Modern_Computing|Hardware Trus
 }}
 
 {{quotation
-|quote=Well, what&rsquo;s wrong with perfect defenses? The answer is simple: They cost too much.
+|quote=Well, what's wrong with perfect defenses? The answer is simple: They cost too much.
 |context=2000: [https://en.wikipedia.org/wiki/Butler_Lampson Butler W. Lampson], Microsoft, [https://www.cs.cornell.edu/courses/cs5430/2023fa/NL02.Lampson.pdf Computer Security in the Real World] <ref>
 https://www.acsac.org/2000/papers/lampson.pdf
 </ref>
@@ -64,7 +64,7 @@ https://www.acsac.org/2000/papers/lampson.pdf
 }}
 
 {{quotation
-|quote=The term &ldquo;secure operating system&rdquo; is both considered an ideal and an oxymoron. Systems that provide a high degree of assurance in enforcement have been called secure systems, or even more frequently &ldquo;trusted&rdquo; systems 1. However, it is also true that no system of modern complexity is completely secure. The difficulty of preventing errors in programming and the challenges of trying to remove such errors means that no system as complex as an operating system can be completely secure.
+|quote=The term "secure operating system" is both considered an ideal and an oxymoron. Systems that provide a high degree of assurance in enforcement have been called secure systems, or even more frequently "trusted" systems 1. However, it is also true that no system of modern complexity is completely secure. The difficulty of preventing errors in programming and the challenges of trying to remove such errors means that no system as complex as an operating system can be completely secure.
 |context=Ravi Sandhu, University of Texas, San Antonio: [https://www.cs.columbia.edu/~suman/security_arch/s00126ed1v01y200808spt001.pdf Operating System Security, Synthesis Lectures on Information Security, Privacy and Trust]
 }}
 
@@ -83,7 +83,7 @@ https://www.acsac.org/2000/papers/lampson.pdf
 
 [...]
 
-There is no perfect security in any real system&mdash;hardware fails, people make mistakes, and attacks outside our expectations may defeat our protection mechanisms.
+There is no perfect security in any real system--hardware fails, people make mistakes, and attacks outside our expectations may defeat our protection mechanisms.
 |context=[https://en.wikipedia.org/wiki/Gene_Spafford Gene Spafford], Professor of Computer Science: [https://cacm.acm.org/opinion/answering-the-wrong-questions-is-no-answer/ Answering the Wrong Questions Is No Answer]
 }}
 
@@ -106,7 +106,7 @@ There is no perfect security in any real system&mdash;hardware fails, people mak
 
 {{quotation
 |quote=Perfect security is unachievable in any useful system. We trade-off security with other important goals: functionality, usability, efficiency, time-to-market, and simplicity.<br/><br/>
-&ldquo;The three golden rules to ensure computer security are: do not own a computer; do not power it on; and do not use it.&rdquo; &ndash;Robert H. Morris (mid 1980&rsquo;s), former chief scientist of the National Computer Security Center<br/><br/>
+"The three golden rules to ensure computer security are: do not own a computer; do not power it on; and do not use it." -Robert H. Morris (mid 1980's), former chief scientist of the National Computer Security Center<br/><br/>
 It is '''undecidable''' whether a given piece of software contains malicious functionality.
 |context=Dr. Bill Young, Department of Computer Science, University of Texas at Austin: [https://www.cs.utexas.edu/~byoung/cyberwarfare-slides.pdf US Army War College Fellowship, Cyber Defense/Offense]
 }}
