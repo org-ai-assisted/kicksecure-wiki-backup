@@ -375,7 +375,7 @@ Notes:
 * This list, created in December 2025, might have minor inaccuracies but generally represents the correct security hierarchy.
 * Read-only filesystem on HDD: For example, booting a read-only image stored on HDD (e.g., via a bootloader loopback) is possible, but out of scope here.
 
-''Note:'' &ldquo;Booted from Read-Only Filesystem&rdquo; refers to the ''base'' OS image. Live mode typically still provides a writable RAM overlay so the running system can create/modify files without persisting them to disk.
+''Note:'' "Booted from Read-Only Filesystem" refers to the ''base'' OS image. Live mode typically still provides a writable RAM overlay so the running system can create/modify files without persisting them to disk.
 
 {| class="wikitable"
 |+ ''Live Mode Security Comparison (Least &rarr; Most Secure)''
