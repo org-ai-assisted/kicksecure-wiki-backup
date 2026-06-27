@@ -156,7 +156,7 @@ Upstream, the original developers of GnuPG state:
 
 {{quotation
 |quote=For scripted or other unattended use of gpg make sure to use the machine-parseable interface and not the default interface which is intended for direct use by humans. The
-machine-parseable interface provides a stable and well documented API independent of the locale or future changes of gpg. To enable this interface use the options &lsquo;--with-colons&rsquo; and &lsquo;--status-fd&rsquo;. For certain operations the option &lsquo;--command-fd&rsquo; may come handy too. See this man page and the file &lsquo;DETAILS&rsquo; for the specification of the interface. Note that the GnuPG &ldquo;info&rdquo; pages as well as the PDF version of the GnuPG manual features a chapter on unattended use of GnuPG. As an alternative the library GPGME can be used as a high-level abstraction on top of that interface.
+machine-parseable interface provides a stable and well documented API independent of the locale or future changes of gpg. To enable this interface use the options '--with-colons' and '--status-fd'. For certain operations the option '--command-fd' may come handy too. See this man page and the file 'DETAILS' for the specification of the interface. Note that the GnuPG "info" pages as well as the PDF version of the GnuPG manual features a chapter on unattended use of GnuPG. As an alternative the library GPGME can be used as a high-level abstraction on top of that interface.
 |context=https://www.gnupg.org/documentation/manuals/gnupg/GPG-Input-and-Output.html
 }}
 
@@ -178,18 +178,18 @@ forum discussions:
 
 == Sequoia-PGP automation ==
 === sqop parsing ===
-<code>sqop</code> is Sequoia-PGP&rsquo;s implementation of the Stateless OpenPGP (SOP) interface.
+<code>sqop</code> is Sequoia-PGP's implementation of the Stateless OpenPGP (SOP) interface.
 
 The SOP specification says:
 
 {{quotation
 |quote=When sop succeeds, it will return 0 (OK) and emit nothing to Standard Error.
-|context=[https://datatracker.ietf.org/doc/draft-dkg-openpgp-stateless-cli/ Stateless OpenPGP Command Line Interface], &ldquo;Failure Modes&rdquo;
+|context=[https://datatracker.ietf.org/doc/draft-dkg-openpgp-stateless-cli/ Stateless OpenPGP Command Line Interface], "Failure Modes"
 }}
 
 {{quotation
 |quote=When sop fails, it fails with a non-zero return code, and emits one or more warning messages on Standard Error.
-|context=[https://datatracker.ietf.org/doc/draft-dkg-openpgp-stateless-cli/ Stateless OpenPGP Command Line Interface], &ldquo;Failure Modes&rdquo;
+|context=[https://datatracker.ietf.org/doc/draft-dkg-openpgp-stateless-cli/ Stateless OpenPGP Command Line Interface], "Failure Modes"
 }}
 
 The same specification also says that, when <code>--debug</code> is present, <code>sop</code> may emit implementation-specific debugging information to standard error.
