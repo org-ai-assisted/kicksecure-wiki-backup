@@ -13,7 +13,7 @@
 * <u>Which platforms are supported:</u> See [[Download]].
 * <u>What is {{project_name_short}}:</u> See [[About]].
 * <u>Alternative name:</u> Sometimes also referred to as <code>Non-Qubes-Kicksecure</code>.
-* <u>What &ldquo;platform&rdquo; means here:</u> &ldquo;Platform&rdquo; refers to where {{project_name_short}} is used, for example directly on a computer, or inside a {{VM}}.
+* <u>What "platform" means here:</u> "Platform" refers to where {{project_name_short}} is used, for example directly on a computer, or inside a {{VM}}.
 * <u>About Qubes OS:</u> [[Qubes|{{qubes_project_name}}]] applies only to users of [https://www.qubes-os.org/ Qubes OS].
 * <u>Easy way to tell:</u> If you are using Qubes OS, you will know it. If you have not heard of Qubes OS before, you are almost certainly not a Qubes OS user.
 
