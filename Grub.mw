@@ -347,7 +347,7 @@ Initial ramdisk ([[Dracut#initrd|"<code>initrd</code>"]]) based encryption passw
 This is related to [[Full Disk Encryption|{{fde}}]].
 
 {{quotation
-|quote=The installer currently requires that you set a disk encryption passphrase when you&rsquo;re on the &ldquo;Partitions&rdquo; screen. Whatever passphrase you set at that point, type that in and press &ldquo;Enter&rdquo;. If you don&rsquo;t remember entering a passphrase, but do remember entering a password at some point, type in that password.
+|quote=The installer currently requires that you set a disk encryption passphrase when you're on the "Partitions" screen. Whatever passphrase you set at that point, type that in and press "Enter". If you don't remember entering a passphrase, but do remember entering a password at some point, type in that password.
 |context=[https://forums.kicksecure.com/t/please-enter-passphrase-for-disk-rootfs-message/984 "Please enter passphrase for disk rootfs" message]
 }}
 
