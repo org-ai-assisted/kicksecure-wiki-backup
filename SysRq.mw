@@ -144,7 +144,7 @@ Several security concerns and unanswered questions about SysRq require further i
 
 [https://forums.whonix.org/t/sysrq-magic-sysrq-key/8079/20 SysRq security concern raised by madaidan]:
 
-<blockquote>Being able to run a bunch of commands that would normally require root (such as killing every process, remounting all filesystems read-only, etc.) as an unprivileged user doesn&rsquo;t look very good. Sounds like a possible privilege escalation hole and/or a feature that can easily be abused.</blockquote>
+<blockquote>Being able to run a bunch of commands that would normally require root (such as killing every process, remounting all filesystems read-only, etc.) as an unprivileged user doesn't look very good. Sounds like a possible privilege escalation hole and/or a feature that can easily be abused.</blockquote>
 
 On the other hand, {{Keypress|SysRq|K}} is also dubbed the Secure Access Key. Therefore, SysRq is not completely disabled without further consideration. This raises the following questions:
 
@@ -179,7 +179,7 @@ This raises the question:
 
 * Could a compromised non-root user generate the keyboard event and thereby use SysRq? [https://forums.whonix.org/t/sysrq-magic-sysrq-key/8079/22 Quote]:
 
-<blockquote>Things such as xdotool won&rsquo;t work as the SysRq key isn&rsquo;t handled by Xorg, and things like /dev/uinput or /proc/sysrq-trigger require root access already.</blockquote>
+<blockquote>Things such as xdotool won't work as the SysRq key isn't handled by Xorg, and things like /dev/uinput or /proc/sysrq-trigger require root access already.</blockquote>
 
 -----
 
