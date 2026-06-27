@@ -248,9 +248,9 @@ This is a much quicker alternative to zeroing data on a HDD with [https://dban.o
 https://en.wikipedia.org/wiki/Darik's_Boot_and_Nuke
 </ref> <ref
 >DBAN also warns: <blockquote>
-While DBAN is free to use, there&rsquo;s no guarantee your data is completely sanitized across the entire drive. It cannot detect or erase SSDs and does not provide a certificate of data removal for auditing purposes or regulatory compliance. Hardware support (e.g. no RAID dismantling), customer support and software updates are not available using DBAN.
+While DBAN is free to use, there's no guarantee your data is completely sanitized across the entire drive. It cannot detect or erase SSDs and does not provide a certificate of data removal for auditing purposes or regulatory compliance. Hardware support (e.g. no RAID dismantling), customer support and software updates are not available using DBAN.
 </blockquote>
-</ref> This is an effective measure on spinning HDDs where wiped data is confirmed to be destroyed. The OS only needs to read the LUKS header off disk once &ndash; not every single second. Wiping the header makes the disk impossible to unlock in the future. <ref>
+</ref> This is an effective measure on spinning HDDs where wiped data is confirmed to be destroyed. The OS only needs to read the LUKS header off disk once - not every single second. Wiping the header makes the disk impossible to unlock in the future. <ref>
 https://superuser.com/questions/1168928/wipe-luks-partition-in-pre-boot/1177362
 </ref>
 
@@ -427,7 +427,7 @@ Either
 In case of a TPM stored inside the system (soldered or CPU):
 
 {{quotation
-|quote=Even though this sounds a lot weaker than the FIDO2/PKCS#11 model TPM2 still bring benefits for securing your systems: because the cryptographic key material stored in TPM2 devices cannot be extracted (at least that's the theory), if you bind your hard disk encryption to it, it means attackers cannot just copy your disk and analyze it offline &mdash; they always need access to the TPM2 chip too to have a chance to acquire the necessary cryptographic keys. Thus, they can still steal your whole PC and analyze it, but they cannot just copy the disk without you noticing and analyze the copy.
+|quote=Even though this sounds a lot weaker than the FIDO2/PKCS#11 model TPM2 still bring benefits for securing your systems: because the cryptographic key material stored in TPM2 devices cannot be extracted (at least that's the theory), if you bind your hard disk encryption to it, it means attackers cannot just copy your disk and analyze it offline -- they always need access to the TPM2 chip too to have a chance to acquire the necessary cryptographic keys. Thus, they can still steal your whole PC and analyze it, but they cannot just copy the disk without you noticing and analyze the copy.
 |context=https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
 }}
 
@@ -461,11 +461,11 @@ The system's complexity should remain within the user's technical capabilities. 
 
 == Implementation Issues ==
 {{quotation
-|quote=There's still plenty room for further improvement in all of this. In particular for the TPM2 case: what the text above doesn't really mention is that binding your encrypted volume unlocking to specific software versions (i.e. kernel + initrd + OS versions) actually sucks hard: if you naively update your system to newer versions you might lose access to your TPM2 enrolled keys (which isn't terrible, after all you did enroll a recovery key &mdash; right? &mdash; which you then can use to regain access.
+|quote=There's still plenty room for further improvement in all of this. In particular for the TPM2 case: what the text above doesn't really mention is that binding your encrypted volume unlocking to specific software versions (i.e. kernel + initrd + OS versions) actually sucks hard: if you naively update your system to newer versions you might lose access to your TPM2 enrolled keys (which isn't terrible, after all you did enroll a recovery key -- right? -- which you then can use to regain access.
 
 [...]
 
-Nothing updates the enrollment automatically after you initially enrolled it, hence after the first kernel/initrd update you have to manually re-enroll things again, and again, and again &hellip; after every update.
+Nothing updates the enrollment automatically after you initially enrolled it, hence after the first kernel/initrd update you have to manually re-enroll things again, and again, and again ... after every update.
 |context=https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
 }}
 
@@ -492,7 +492,7 @@ As you establish an alternative unlock method using only the on-board hardware o
 
 That being said you have to trust (or better, verify) that the manufacturer did not mess anything up in the overall platform design for this to be considered a fairly safe decryption alternative. There are a range of cases where things did not work out as planned. For example, when [https://dolosgroup.io/blog/2021/7/9/from-stolen-laptop-to-inside-the-company-network security researches showed that BitLocker on a Lenovo notebook would use unencrypted SPI communication] with the TPM2 leaking the LUKS passphrase in plain text without even altering the system, or that BitLocker used the native encryption features of SSD drives that you can [https://blog.elcomsoft.com/2019/01/life-after-trim-using-factory-access-mode-for-imaging-ssd-drives/ by-pass through factory reset].
 
-These examples are all about BitLocker but it should make it clear that if the overall design is broken, then the secret is accessible and this alternative method less secure than a passphrase only present in your head (and somewhere safe like a password manager). On the other hand, keep in mind that in most cases elaborate research and attacks to access a drive&rsquo;s data are not worth the effort for an opportunistic bad actor. Additionally, not having to enter a passphrase on every boot should help adoption of this technology as it is transparent but adds additional hurdles to unwanted access.
+These examples are all about BitLocker but it should make it clear that if the overall design is broken, then the secret is accessible and this alternative method less secure than a passphrase only present in your head (and somewhere safe like a password manager). On the other hand, keep in mind that in most cases elaborate research and attacks to access a drive's data are not worth the effort for an opportunistic bad actor. Additionally, not having to enter a passphrase on every boot should help adoption of this technology as it is transparent but adds additional hurdles to unwanted access.
 |context=[https://fedoramagazine.org/automatically-decrypt-your-disk-using-tpm2/ Fedora Magazine: Automatically decrypt your disk using TPM2]
 }}
 
