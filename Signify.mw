@@ -14,7 +14,7 @@ HowTo: Use Signify on Debian (based) Distributions
 = Introduction =
 
 Written in 2014 for OpenBSD, signify is a tool to cryptographically sign and verify files: <ref name=signify>https://isopenbsdsecu.re/mitigations/signify/</ref>
-<blockquote>It only supports a single algorithm, Ed25519, created by djb and his gang. It&rsquo;s fast, immune to timing attacks by design, produce deterministic signatures, uses small keys and produce small signatures, &hellip; it does look like a sound choice.</blockquote>
+<blockquote>It only supports a single algorithm, Ed25519, created by djb and his gang. It's fast, immune to timing attacks by design, produce deterministic signatures, uses small keys and produce small signatures, ... it does look like a sound choice.</blockquote>
 
 Signify's main benefits is that it has a small codebase and is not based on GnuPG. On the downside, there is no revocation mechanism <ref>Meaning if the key is stolen, people can only be informed the key should not be trusted anymore.</ref> and the trust path relies on getting the key directly from a trusted developer. <ref name=signify />
 
