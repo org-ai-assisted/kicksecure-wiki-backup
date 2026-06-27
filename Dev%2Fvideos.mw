@@ -100,7 +100,7 @@ In recent years, phishing with hidden text and zero font attacks have become inc
 
 [bumper]
 
-Scammers also use a similar technique called clipboard hidden text attacks, often utilizing code boxes. They may have corrupted a website or created a mockup site to lure in unsuspecting victims who are eager to copy code from code boxes. The user sees the code they need in the code box, but once they click the copy button, a little bit more than just the code is copied to their clipboard &ndash; usually something malicious.
+Scammers also use a similar technique called clipboard hidden text attacks, often utilizing code boxes. They may have corrupted a website or created a mockup site to lure in unsuspecting victims who are eager to copy code from code boxes. The user sees the code they need in the code box, but once they click the copy button, a little bit more than just the code is copied to their clipboard - usually something malicious.
 
 Here's how it works: the code box is filled with a cover text that the user can see. However, the area surrounding the cover text is also filled with malicious code that's hidden by CSS instructions on the webpage. When the JavaScript copy command is executed, the entire clipboard is copied as plain text, including the cover text and the malware.
 
@@ -131,7 +131,7 @@ To learn more read the resources provided in the video description. Like and sub
 </div>
 </div>
 
-== Don&rsquo;t ever blindly trust screenshots #shorts ==
+== Don't ever blindly trust screenshots #shorts ==
 
 In the age of AI, you may have encountered amusing deepfaked videos and sound bites, such as Joe Rogan discussing his love for Bionicle. AI can also be a threat as deepfaked disinformation.
 
