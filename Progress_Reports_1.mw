@@ -5813,7 +5813,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 *** exiftest and upload
 *** video embed extension research for MediaWiki
 ** debug helper old file url bug analysis + fix
-** new script CollapsibleGlobalMods.js to globally apply &ldquo;learn more&rdquo; label + also &ldquo;Show Less&rdquo; label
+** new script CollapsibleGlobalMods.js to globally apply "learn more" label + also "Show Less" label
 *** removed all data-expandtext and data-collapsetext
 
 * 2024-09-27
@@ -5822,7 +5822,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Icon Template two new parameters border text
 *** style param 1 new option
 *** tests + documentation
-** ISO page &ldquo;Boot the ISO&rdquo; chapter revision rewrites
+** ISO page "Boot the ISO" chapter revision rewrites
 *** reorder + illustration
 ** ISO page boot menu explainer video created
 
@@ -6064,7 +6064,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** bugfix hidden table zero width table wrapper bug
 ** codeSelect
 *** hidden reveal bugfix
-*** feature cs-no-custom-scrollbars &ndash; nat&uuml;rliches scrollen f&uuml;r debugviaurlmodal
+*** feature cs-no-custom-scrollbars - nat&uuml;rliches scrollen f&uuml;r debugviaurlmodal
 *** improved structure and comments
 *** Added test to [[Dev/wikitest]]
 *** documentation
@@ -6151,7 +6151,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 * 2024-08-15
 ** Pagespeed
 *** Kicksecure TM symbol issue resolution
-** issue &ldquo;Failed to load resource&rdquo; research
+** issue "Failed to load resource" research
 ** Fontawesome
 *** subset research + documentation
 *** unify to new icon syntax (files + both wikis) and remove spaces
@@ -6254,8 +6254,8 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** hsversion cache control inserted in CSS extension use cases in Kicksecure and Whonix
 *** new files for pages and templates
 *** documentation
-** new AddMessageToCopiedText.js &ndash; add copyright text to all copied text on the wikis
-*** excluding &ldquo;protected objects&rdquo;
+** new AddMessageToCopiedText.js - add copyright text to all copied text on the wikis
+*** excluding "protected objects"
 *** Prevent Protection due to the selection starting and ending in different protected elements
 
 * 2024-01-30
@@ -6291,7 +6291,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Mediawiki self-link new draft for feature request
 ** GoogleOff
 *** Applied to CodeSelect
-*** Review of &ldquo;see share button&rdquo; SEO bug
+*** Review of "see share button" SEO bug
 ** Slider for wiki Homepages
 *** splidejs docu research
 *** setup and import in file system and in headscript
@@ -6415,7 +6415,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 * 2023-09-01
 ** add querystring to Headscript discussion + version + hsversion
 ** CSS extension cache busting discussion
-** footer - TM vs R &ndash; Kicksecure and Whonix Headline + Symbol solution
+** footer - TM vs R - Kicksecure and Whonix Headline + Symbol solution
 ** homepage - sequential heading levels
 ** Whonix HP new player hero image + play / pause player upgrade + SVG play symbol
 
@@ -6772,7 +6772,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Bug analysis $.cookie
 ** bug fixing page Linux
 ** Tab controller replace old syntax with new template
-** &ldquo;Show only once&rdquo; template research
+** "Show only once" template research
 ** thumbnail content shift research
 ** blockquote css
 ** Google Off template and documentation [[Dev/mediawiki#GoogleOff_Template]]
@@ -6874,7 +6874,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Whonix wiki/Linux content fix
 ** Pagespeed improvements
 *** Headline research
-*** Research &ldquo;Links are not crawlable&rdquo;
+*** Research "Links are not crawlable"
 *** Total blocking time research and testing
 
 * 2023-03-25
@@ -7427,7 +7427,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 
 * 2022-10-08
 ** Headline Bug (hidden behind padding)
-** gtmetrix / pagespeed analysis &ndash; performance test strategy
+** gtmetrix / pagespeed analysis - performance test strategy
 ** new image for everything Tor
 
 * 2022-10-07
