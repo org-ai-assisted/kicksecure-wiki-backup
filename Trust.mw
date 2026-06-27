@@ -303,11 +303,11 @@ Third parties who operate infrastructure are "known unknowns" and potentially ho
 
 [https://www.qubes-os.org/faq/#what-does-it-mean-to-distrust-the-infrastructure Quote] [https://www.qubes-os.org/ Qubes OS] (security-focused operating system):
 
-<blockquote>What does it mean to &ldquo;distrust the infrastructure&rdquo;?
+<blockquote>What does it mean to "distrust the infrastructure"?
 
-A core tenet of the Qubes philosophy is &ldquo;distrust the infrastructure,&rdquo; where &ldquo;the infrastructure&rdquo; refers to things like hosting providers, CDNs, DNS services, package repositories, email servers, PGP keyservers, etc. As a project, we focus on securing endpoints instead of attempting to secure &ldquo;the middle&rdquo; (i.e., the infrastructure), since one of our primary goals is to free users from being forced to entrust their security to unknown third parties. Instead, our aim is for users to be required to trust as few entities as possible (ideally, only themselves and any known persons whom they voluntarily decide to trust).
+A core tenet of the Qubes philosophy is "distrust the infrastructure," where "the infrastructure" refers to things like hosting providers, CDNs, DNS services, package repositories, email servers, PGP keyservers, etc. As a project, we focus on securing endpoints instead of attempting to secure "the middle" (i.e., the infrastructure), since one of our primary goals is to free users from being forced to entrust their security to unknown third parties. Instead, our aim is for users to be required to trust as few entities as possible (ideally, only themselves and any known persons whom they voluntarily decide to trust).
 
-Users can never fully control all the infrastructure they rely upon, and they can never fully trust all the entities who do control it. Therefore, we believe the best solution is not to attempt to make the infrastructure trustworthy, but instead to concentrate on solutions that obviate the need to do so. We believe that many attempts to make the infrastructure appear trustworthy actually provide only the illusion of security and are ultimately a disservice to real users. Since we don&rsquo;t want to encourage or endorse this, we make our distrust of the infrastructure explicit.
+Users can never fully control all the infrastructure they rely upon, and they can never fully trust all the entities who do control it. Therefore, we believe the best solution is not to attempt to make the infrastructure trustworthy, but instead to concentrate on solutions that obviate the need to do so. We believe that many attempts to make the infrastructure appear trustworthy actually provide only the illusion of security and are ultimately a disservice to real users. Since we don't want to encourage or endorse this, we make our distrust of the infrastructure explicit.
 
 [https://www.qubes-os.org/faq/#should-i-trust-this-website Also see: Should I trust this website?]</blockquote>
 
@@ -537,7 +537,7 @@ An "evil developer attack" is a narrow example of an ''insider threat'': <ref>ht
 
 [...]
 
-An insider threat is a current or former employee, business partner, or contractor who has access to an organization&rsquo;s data, network, source code, or other sensitive information who may intentionally misuse this information and negatively affect the availability, integrity, or confidentiality of the organization&rsquo;s information system.</blockquote>
+An insider threat is a current or former employee, business partner, or contractor who has access to an organization's data, network, source code, or other sensitive information who may intentionally misuse this information and negatively affect the availability, integrity, or confidentiality of the organization's information system.</blockquote>
 
 In the case of software, a disguised attack is conducted on the integrity of the software platform. While this threat is only theoretical, it would be naive to assume that no major software project has ever had a malicious insider. {{project_name_short}} and all other open source software projects face this problem, particularly those that are focused on anonymity such as VeraCrypt, <ref>TrueCrypt has been discontinued.</ref> Tails, I2P, The Tor Project and so on.
 
@@ -634,12 +634,12 @@ The domain name got seized (and apparently returned after the legal case). [http
 }}
 
 {{quotation
-|quote=9. Defendant Brunner, age 26, resides principally in Austria. He is 1Broker&rsquo;s CEO, sole shareholder, and the only person authorized to represent the company. He also developed 1Broker&rsquo;s software platform.
+|quote=9. Defendant Brunner, age 26, resides principally in Austria. He is 1Broker's CEO, sole shareholder, and the only person authorized to represent the company. He also developed 1Broker's software platform.
 |context=[https://www.sec.gov/files/litigation/complaints/2018/comp24330.pdf court document]
 }}
 
 {{quotation
-|quote=Following a recent U.S. district court&rsquo;s ruling, foreign companies operating cloud-based services may find themselves subject to federal long-arm jurisdiction under the Federal Rules of Civil Procedure 4(k)(2), even if they have no physical presence in the United States.
+|quote=Following a recent U.S. district court's ruling, foreign companies operating cloud-based services may find themselves subject to federal long-arm jurisdiction under the Federal Rules of Civil Procedure 4(k)(2), even if they have no physical presence in the United States.
 |context=https://www.jdsupra.com/legalnews/foreign-cloud-based-service-providers-49211/
 }}
 
@@ -655,7 +655,7 @@ For more, see footnote. <ref>
 * https://www.finnegan.com/en/insights/blogs/federal-circuit-ip/the-hague-service-convention-does-not-prohibit-service-of-process-by-mail.html
 * https://www.reuters.com/world/china/huawei-cfos-alleged-actions-had-no-genuine-connection-us-her-lawyers-say-2020-12-18/
 * coppa:
-** [https://www.coppa.org coppa.org]: [https://www.coppa.org/coppa/ COPPA&rsquo;s Reach: Does it Apply Beyond US Borders]
+** [https://www.coppa.org coppa.org]: [https://www.coppa.org/coppa/ COPPA's Reach: Does it Apply Beyond US Borders]
 </ref>
 
 See also:
@@ -670,12 +670,12 @@ See also:
 }}
 
 {{quotation
-|quote=The terms &lsquo;extraterritoriality&rsquo; and &lsquo;extraterritorial jurisdiction&rsquo; refer to the competence of a State to make, apply and enforce rules of conduct beyond its territory.
+|quote=The terms 'extraterritoriality' and 'extraterritorial jurisdiction' refer to the competence of a State to make, apply and enforce rules of conduct beyond its territory.
 |context=[https://opil.ouplaw.com/display/10.1093/law:epil/9780199231690/law-9780199231690-e1040 Oxford Public International Law (September 15, 2020)]
 }}
 
 {{quotation
-|quote=Extraterritoriality refers to the application of a state&rsquo;s law beyond the state&rsquo;s borders.
+|quote=Extraterritoriality refers to the application of a state's law beyond the state's borders.
 |context=[https://tlblog.org/extraterritoriality/ Transnational Litigation Blog (updated September 1, 2025)]
 }}
 
@@ -961,7 +961,7 @@ For case specific questions, contact a licensed attorney because [[Terms_of_Serv
 | <!-- Tornado Cash --> unknown
 | <!-- Miniclip --> {{yes}}, Switzerland <ref>
 {{quotation
-|quote=Swiss corporation with its principal office or place of business at 18 Faubourg de l&rsquo;H&ocirc;pital, 2000 Neuch&acirc;tel, Switzerland
+|quote=Swiss corporation with its principal office or place of business at 18 Faubourg de l'H&ocirc;pital, 2000 Neuch&acirc;tel, Switzerland
 |context=[https://www.ftc.gov/system/files/documents/cases/192_3129_miniclip_complaint.pdf FTC complaint]
 }}
 </ref>
@@ -1085,12 +1085,12 @@ For case specific questions, contact a licensed attorney because [[Terms_of_Serv
 </ref>
 | <!-- Miniclip --> alleged false claims of current participation in an FTC-approved COPPA safe harbor program; statements also available through apps <ref>
 {{quotation
-|quote=falsely claimed it was a current member of the Children&rsquo;s Advertising Review Unit&rsquo;s (CARU) COPPA safe harbor program
+|quote=falsely claimed it was a current member of the Children's Advertising Review Unit's (CARU) COPPA safe harbor program
 |context=[https://www.ftc.gov/news-events/news/press-releases/2020/05/swiss-digital-game-developer-settles-ftc-allegations-it-falsely-claimed-it-was-member-coppa-safe FTC]
 }}
 </ref> <ref>
 {{quotation
-|quote=the Terms and Conditions also were available to users through the settings menu in Respondent&rsquo;s apps
+|quote=the Terms and Conditions also were available to users through the settings menu in Respondent's apps
 |context=[https://www.ftc.gov/system/files/documents/cases/192_3129_miniclip_complaint.pdf FTC complaint]
 }}
 </ref>
@@ -1368,7 +1368,7 @@ Forum discussion:<br />
 * Tails is a live CD or USB that aims to preserve privacy and anonymity - [https://tails.boum.org/doc/about/trust/index.en.html Tails about trust.]
 * I2P (anonymizing network) has also discussed [https://geti2p.net/en/docs/how/threat-model#dev development attacks].
 * [https://www.qubes-os.org/security/verifying-signatures/ Qubes OS: What digital signatures can and cannot prove]
-* [https://hyper.to/blog/link/attack-scenarios-software-distribution/ Miron&rsquo;s Weblog: Attack Scenarios on Software Distributions]
+* [https://hyper.to/blog/link/attack-scenarios-software-distribution/ Miron's Weblog: Attack Scenarios on Software Distributions]
 * A list of incidents concerning compromised servers: [https://web.archive.org/web/20160313141340/http://www.koch.ro/blog/index.php?/archives/153-On-distributing-binaries.html On distributing binaries]
 * https://forum.qubes-os.org/t/qubes-os-could-be-honeypot/16180
 
