@@ -48,9 +48,6 @@ https://www.whonix.org/wiki/Special:WantedPages
 * use kicksecure_wiki Template for all links except the last one on that wiki page
 
 = Assigned to Nurmagoz =
-== Qubes CVE-2018-3639 ==
-* please check if really solved: https://github.com/QubesOS/qubes-issues/issues/9432
-
 == Investigate KVM 3D acceleration ==
 
 https://www.kicksecure.com/wiki/Dev/todo#KVM_related

@@ -19,6 +19,78 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 
 = arraybolt3 =
+== 2026-06-25 ==
+=== Review sdwdate-gui hardening and bugfixes from Claude ===
+Date: 2026-06-25
+
+Made significant changes to Claude's patches and merged them.
+
+=== Reply to troubadour's query about tor-control-panel review ===
+Date: 2026-06-25
+
+Clarified what I meant about reading entire files being problematic (reading them isn't the problem, it's reading them multiple times when they could be read once that's the problem).
+
+=== Finish researching Arti's state of development and suitability for Whonix ===
+Date: 2026-06-25
+
+Finished compiling a rough list of what features we need and whether Arti supports them. Integrated feedback from Patrick.
+
+== 2026-06-24 ==
+=== Research Arti's state of development and suitability for Whonix ===
+Date: 2026-06-24
+
+Compiled a bunch of information about what features we need Arti to support vs. what features it actually does support.
+
+=== Fix onion-grater Bisq profile security issue ===
+Date: 2026-06-24
+
+Fixed a bad regex reported to us by 0x6d as part of a Whonix security audit.
+
+== 2026-06-23 ==
+=== Review, merge sysmaint-panel autostart adjustments from eterniTTY ===
+Date: 2026-06-23
+
+A contributor was able to remove the <code>light_sleep</code> mechanism we were using in sysmaint-session-wayland. Reviewed, accepted, and lightly revised their patch.
+
+=== Research VirtualBox clipboard sharing with VBox 7.2.10 ===
+Date: 2026-06-23
+
+Shared research results with Patrick and shared a brief version of them on the forums. There are multiple remaining bugs and problematic behaviors that keep it from working reliably. Patrick and I discussed how to get newer Guest Additions into Kicksecure, and how to circumvent the known issues.
+
+=== More debugging of Whonix-KVM bugs with HulaHoop, revise StandaloneVM boot mode fix for Qubes ===
+Date: 2026-06-23
+
+Replied to forum posts, including HulaHoop's. Still unsure what the root cause of the issues they're encountering is. Also fixed a bug in the tests for the StandaloneVM boot mode PR (needed to get StandaloneVMs to use a boot mode other than sysmaint by default).
+
+== 2026-06-22 ==
+Took three weeks off to work on other tasks, came back today.
+
+=== Test VirtualBox clipboard sharing workaround from bonip21 ===
+Date: 2026-06-22
+
+Confirmed that their workaround works when using a sufficiently new version of VirtualBox. Also found the root cause in Debian that kept newer VirtualBox versions from working correctly out of the box, will need to get a fix submitted upstream.
+
+=== Debug, fix tirdad failing to load on most recent Debian Trixie 6.12 kernel ===
+Date: 2026-06-22
+
+The API related to ISN generation changed due to a backported commit. Tirdad had the code to handle this but the macros for kernel version detection needed adjustment. Submitted the fix upstream and for inclusion in Kicksecure.
+
+=== Test VirtualBox 7.2.10 to ensure kernel oops issues on vboxdrv module load were resolved ===
+Date: 2026-06-22
+
+The original issue was fixed, but a new issue has surfaced that causes kernel panics when launching VMs if KVM's enable_virt_at_load feature is enabled. We enable this by default to enhance compatibility with VirtualBox, apparently it is no longer necessary with newer versions of VirtualBox. Need to discuss with Patrick what to do here.
+
+=== Try to help HulaHoop debug Whonix-KVM bugs related to sysmaint mode ===
+Date: 2026-06-22
+
+Replied to numerous forum posts and other regular tasks. Attempted (and failed) to reproduce issues that HulaHoop reported, gave a report of what I tried and how it went.
+
+== 2026-05-31 ==
+=== Write sandbox-manager-dist #9 ===
+Date: 2026-05-31
+
+Continuing to work on the backend.
+
 == 2026-05-30 ==
 === Write sandbox-manager-dist #8 ===
 Date: 2026-05-30

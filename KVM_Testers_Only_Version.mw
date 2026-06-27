@@ -189,14 +189,17 @@ Be aware that the extraction process may take an exceptionally long time to comp
 = Importing {{project_name_short}} VM Template =
 
 The supplied XML files serve as a description for libvirt and define the properties of a {{project_name_short}} VM and the networking it should have.
-{{Box|text=
-'''1.''' {{project_name_short}} works with the network named ''default'' out of the box.
 
-'''2.''' Import the {{project_name_short}} image.
+By default, the username used is <code>user</code>. This can vary from user to user, so if you have a different username and want to change it to the one you are using, run this command where <code>{{project_name_short}}.xml</code> is going to exist:
 
 {{CodeSelect|code=
-virsh -c qemu:///session define Kicksecure*.xml
+sed -i "s{{!}}/home/user/{{!}}$HOME/{{!}}g" {{project_name_short}}.xml
 }}
+
+* Then define the properties of {{project_name_short}} VM
+
+{{CodeSelect|code=
+virsh -c qemu:///session define {{project_name_short}}*.xml
 }}
 
 = Tell libvirt to stop trying to adjust resources limits and force libvirt to skip it =
@@ -282,7 +285,7 @@ Copy the image files. {{Anchor|sparse files}}
 {{project_name_short}} disk images are [[Sparse_files|sparse files]], meaning they expand as data is written rather than allocating their entire size (100GB) outright. Sparse files require special commands when they are copied to ensure they retain this property; otherwise, they will occupy the full disk space.
 
 {{CodeSelect|code=
-cp --sparse=always {{project_name_short}}*.qcow2 /var/lib/libvirt/images/{{project_name_short}}.qcow2
+cp --sparse=always {{project_name_short}}*.qcow2 ~/.local/share/libvirt/images/{{project_name_short}}.qcow2
 }}<!-- close CodeSelect -->
 }}<!-- close tab -->
 }}<!-- close controller -->
@@ -317,6 +320,37 @@ Start Virtual Machine Manager:
 Start {{project_name_short}}:
 
 <code>click on {{project_name_short}}</code> &rarr; <code>click Open</code> &rarr; <code>click the play symbol</code>
+
+= Uninstall =
+
+<div class="toccolours mw-collapsible mw-collapsed">
+If you want to remove {{project_name_short}} KVM VMs, the {{project_name_short}} network, and {{project_name_short}} images, click Expand on the right.
+
+<div class="mw-collapsible-content">
+
+{{Box|text=
+'''1.''' Power off the VM you want to Remove (If not already).
+
+{{CodeSelect|code=
+sudo virsh -c qemu:///session destroy {{project_name_short}}
+}}
+
+'''2.''' Remove the KVM VM settings.
+
+{{CodeSelect|code=
+sudo virsh -c qemu:///session undefine {{project_name_short}}
+}}
+
+'''3.''' Delete the images.
+
+<u>Note:</u> All data will be lost unless it is backed up first. Adjust the paths to the images as appropriate.
+
+{{CodeSelect|code=
+safe-rm ~/.local/share/libvirt/images/{{project_name_short}}.qcow2
+}}
+}}
+</div>
+</div>
 
 = Shared Folders =
 
