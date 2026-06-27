@@ -79,7 +79,7 @@ Is SPF + DMARC sufficient or would this lead to ending up in the spam folder?
 
 * DMARC will <code>pass</code> (success, not a failure) when either SPF or DMARC has <code>pass</code>.
 ** Such as <code>pass</code> (as in DMARC reports) however does only indicate that DMARC was <code>pass</code>. The e-mail could still end up being rejected for being spam or end up in the spam folder.
-* Quote https://emfluence.com/blog/how-dkim-affects-email-deliverability: <blockquote>Yahoo! requires DKIM to sign up for their Feedback Loop (where they keep track of spam complaints). That means anyone who doesn&rsquo;t have DKIM set up isn&rsquo;t capturing spam complaints at Yahoo!, and because of that, those email addresses aren&rsquo;t being suppressed automatically. That could put you on the road to being blocked or blacklisted by Yahoo!</blockquote>
+* Quote https://emfluence.com/blog/how-dkim-affects-email-deliverability: <blockquote>Yahoo! requires DKIM to sign up for their Feedback Loop (where they keep track of spam complaints). That means anyone who doesn't have DKIM set up isn't capturing spam complaints at Yahoo!, and because of that, those email addresses aren't being suppressed automatically. That could put you on the road to being blocked or blacklisted by Yahoo!</blockquote>
 * https://dmarcly.com/blog/can-i-set-up-dmarc-without-dkim doesn't mention spam.
 * Quote https://support.google.com/a/answer/174124?hl=en: <blockquote>Without DKIM, messages sent from your organization or domain are more likely to be marked as spam by receiving mail servers.</blockquote>
 
