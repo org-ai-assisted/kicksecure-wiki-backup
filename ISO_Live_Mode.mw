@@ -11,9 +11,9 @@ title=ISO Live Mode for {{project_name_long}}
 {{intro|
 '''{{project_name_short}} can be booted in ISO Live Mode.'''
 
-ISO Live Mode is like using a temporary computer session. Nothing you do is saved after you shut it down. It&rsquo;s similar to using private or incognito mode in a browser, but for the entire operating system.
+ISO Live Mode is like using a temporary computer session. Nothing you do is saved after you shut it down. It's similar to using private or incognito mode in a browser, but for the entire operating system.
 
-This mode is useful for trying out {{project_name_short}} without making permanent changes. It helps preserve privacy and security, as all data, files, and settings are discarded on shutdown. It&rsquo;s also helpful for testing the system before installation.
+This mode is useful for trying out {{project_name_short}} without making permanent changes. It helps preserve privacy and security, as all data, files, and settings are discarded on shutdown. It's also helpful for testing the system before installation.
 }}
 
 When booting from the [[ISO]], the system will always default to ISO live mode, meaning changes will not be saved.
