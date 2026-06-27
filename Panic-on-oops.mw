@@ -12,7 +12,7 @@ panic-on-oops
 
 = Introduction =
 
-* <u>What it does:</u> <code>panic-on-oops</code> is a security feature that forces a reboot when the system&rsquo;s kernel reports a serious problem, instead of letting it keep running in an unknown state.
+* <u>What it does:</u> <code>panic-on-oops</code> is a security feature that forces a reboot when the system's kernel reports a serious problem, instead of letting it keep running in an unknown state.
 * <u>What triggers it:</u> When enabled, the kernel is configured to immediately trigger a kernel panic when a kernel "oops" or certain kernel warnings occur.
 * <u>What you will see:</u> A kernel panic in this configuration results in a sudden, forced, unexpected reboot.
 * <u>Why it is useful:</u> This is usually helpful because it avoids running in a potentially unsafe or unreliable state.

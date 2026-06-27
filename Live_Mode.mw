@@ -77,7 +77,7 @@ The boot menu will show something like:
 
 '''What does the asterisk mean?''' It marks the option that is currently selected.
 
-'''Can I select more than one?''' No &mdash; you can only choose one option at a time.
+'''Can I select more than one?''' No -- you can only choose one option at a time.
 
 <div class="fontsize19">4. Choose Live Mode</div>
 
@@ -93,7 +93,7 @@ Once live mode is selected, press the Enter key.
 
 <div class="fontsize19">6. Done</div>
 
-{{project_name_short}} will now start in live mode &mdash; where no data is saved after shutdown.
+{{project_name_short}} will now start in live mode -- where no data is saved after shutdown.
 
 = Functionality Test of Live mode =
 

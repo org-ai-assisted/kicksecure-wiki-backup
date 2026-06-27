@@ -34,7 +34,7 @@ Kernel entropy failures:
 
 * Quote https://factorable.net/weakkeys12.extended.pdf
 
-<blockquote>Every software package we examined relies on /dev/urandom to generate cryptographic keys; however, we find that Linux&rsquo;s random number generator (RNG) can exhibit a boot-time entropy hole that causes urandom to produce deterministic output under conditions likely to occur in headless and embedded devices</blockquote>
+<blockquote>Every software package we examined relies on /dev/urandom to generate cryptographic keys; however, we find that Linux's random number generator (RNG) can exhibit a boot-time entropy hole that causes urandom to produce deterministic output under conditions likely to occur in headless and embedded devices</blockquote>
 
 * [https://forums.raspberrypi.com/viewtopic.php?f=66&t=126892 Predictable SSH host keys]
 
@@ -303,7 +303,7 @@ Quote [https://systemd.io/RANDOM_SEEDS/ systemd Random Seeds]:
 
 {{quotation
 |quote=
-(Strictly speaking there are more APIs, for example <code>/dev/random</code>, but these should not be used by almost any application and hence aren&rsquo;t mentioned here.)
+(Strictly speaking there are more APIs, for example <code>/dev/random</code>, but these should not be used by almost any application and hence aren't mentioned here.)
 }}
 
 This could use some elaboration. Hence, asked, see systemd feature request: [https://github.com/systemd/systemd/issues/14199 systemd.io/RANDOM_SEEDS - elaborate on /dev/random]
@@ -487,7 +487,7 @@ Advantages:
 * https://github.com/adrelanos/timer-entropyd
 * https://www.whonix.org/pipermail/whonix-devel/2020-January/001500.html
 * Quote https://www.kernel.org/doc/ols/2014/ols2014-harris.pdf
-** <blockquote>I have written a daemon program which I believe solves this problem. I wanted a name distinct from the existing&ldquo;Timer entropy daemon&rdquo; [2], developed by Folkert vanHeusden, so I named minemaxwell(8), after Maxwell&rsquo;s demon, an imaginary creature discussed by the great physicist James Clerk Maxwell. Unlike its namesake, however, my program does not create exceptions to the laws of thermodynamics.</blockquote>
+** <blockquote>I have written a daemon program which I believe solves this problem. I wanted a name distinct from the existing"Timer entropy daemon" [2], developed by Folkert vanHeusden, so I named minemaxwell(8), after Maxwell's demon, an imaginary creature discussed by the great physicist James Clerk Maxwell. Unlike its namesake, however, my program does not create exceptions to the laws of thermodynamics.</blockquote>
 ** <blockquote>The timer entropy daemon uses floating point math in some of its calculations. It collects data in a substantial buffer, 2500 bytes, goes through a calculation to estimate the entropy, then pushes the whole load of buffered data into random(4). My program does none of those things.</blockquote>
 * Quote https://metacpan.org/release/DANAJ/Crypt-Random-TESHA2-0.01/view/lib/Crypt/Random/TESHA2.pm
 ** <blockquote>Uses a related method (jitter in timing data between usleeps) as this module, but inefficient and only suitable for bulk feeding of an entropy pool. Even after von Neumann debiasing, the output has distinct patterns and at most 0.5 bits of entropy per output bit. HAVEGE is a superior overall solution. However, note a number of other links at the site for other sources as well as links to hardware RNGs.</blockquote>

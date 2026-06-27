@@ -239,7 +239,7 @@ Whether to allow the application to participate in the backup and restore infras
 
 ! No culture of applications refusing to run if using a custom operating system (custom ROM).
 | {{No}} <ref>
-[https://www.howtogeek.com/241012/safetynet-explained-why-android-pay-and-other-apps-dont-work-on-rooted-devices/ How-To Geek: SafetyNet Explained: Why Android Pay and Other Apps Don&rsquo;t Work on Rooted Devices]
+[https://www.howtogeek.com/241012/safetynet-explained-why-android-pay-and-other-apps-dont-work-on-rooted-devices/ How-To Geek: SafetyNet Explained: Why Android Pay and Other Apps Don't Work on Rooted Devices]
 </ref>
 | {{Yes}}
 | {{Yes}}
@@ -252,9 +252,9 @@ Whether to allow the application to participate in the backup and restore infras
 
 <blockquote>Google wants to know where you go so badly that it records your movements even when you explicitly tell it not to.
 
-An Associated Press investigation found that many Google services on Android devices and iPhones store your location data even if you&rsquo;ve used a privacy setting that says it will prevent Google from doing so.
+An Associated Press investigation found that many Google services on Android devices and iPhones store your location data even if you've used a privacy setting that says it will prevent Google from doing so.
 
-Computer-science researchers at Princeton confirmed these findings at the AP&rsquo;s request.</blockquote></ref>
+Computer-science researchers at Princeton confirmed these findings at the AP's request.</blockquote></ref>
 | {{Yes}}
 | {{Yes}}
 | {{Yes}} <ref name="same-as-linux-desktop"/>
@@ -314,7 +314,7 @@ Some Android vendors [https://googleprojectzero.blogspot.com/2020/02/mitigations
 
 |}
 
-Quote [https://www.theregister.com/2020/03/06/1_billion_vulnerable_android_devices_which/ More than a billion hopelessly vulnerable Android gizmos in the wild that no longer receive security updates &ndash; research]. The operating system of these devices:
+Quote [https://www.theregister.com/2020/03/06/1_billion_vulnerable_android_devices_which/ More than a billion hopelessly vulnerable Android gizmos in the wild that no longer receive security updates - research]. The operating system of these devices:
 
 * Do not receive security upgrades from the vendor.
 * Third parties (such as users or the modding community) cannot provide (security) upgrades either due to locked bootloaders, which cannot be unlocked due to vendor decision and due to unavailability of a security bug which could unlock the bootloader.

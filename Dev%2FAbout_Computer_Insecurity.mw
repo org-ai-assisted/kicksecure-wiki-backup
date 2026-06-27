@@ -113,13 +113,13 @@ The underlying principles:
 * Trustability
 * Securability
 
-These require known quantities. A constantly changing piece of code can never be trusted because, as mentioned earlier, it&rsquo;s never actually defined. Before you can decide if it's trustworthy, you have to know what it is and what it does.
+These require known quantities. A constantly changing piece of code can never be trusted because, as mentioned earlier, it's never actually defined. Before you can decide if it's trustworthy, you have to know what it is and what it does.
 
 Securability is also affected by the lines of code. The more code real estate, the more elements there are to secure. It quickly becomes impractical for small teams.
 
 If the code constantly changes, this becomes simply impossible. You will be behind every single release on security as new code and new bugs are introduced faster than anyone can analyze.
 
-Proposed concept: For any given number of Open  Source developers and any required level of security and trustability, there exists a certain maximum number of lines of code. The Freedom Software security community does not have the manpower to ensure trustworthy, maintainable code if there&rsquo;s too much of it.
+Proposed concept: For any given number of Open  Source developers and any required level of security and trustability, there exists a certain maximum number of lines of code. The Freedom Software security community does not have the manpower to ensure trustworthy, maintainable code if there's too much of it.
 
 Manpower is not just developers multiplied by time but rather developers multiplied by developer quality multiplied by time. This leads to the conclusion that if we want trustworthy code, we need to vastly simplify it.
 
@@ -140,7 +140,7 @@ Librewolf (a fork of Firefox, with an emphasis on privacy and security) develope
 
 No, we are absolutely not prepared to do that. We are a (very) small team with a rather limited amount of time (and energy) to work on LibreWolf even with it just the way it currently is. We would not even remotely be able to fork and maintain a browser fully, let alone to continually develop and improve it. Nor would we have the expertise to do so. Which would mean that if we tried to do that, we would most certainly release an insecure product, getting worse over time, which I would not ever want to be responsible for.
 
-Sorry to disappoint on that front &ndash; but: it is what it is.
+Sorry to disappoint on that front - but: it is what it is.
 |context=Librewolf feature request: [https://codeberg.org/librewolf/issues/issues/2252 Prepared to fork Firefox?], reply by [https://codeberg.org/ohfp ohfp], Librewolf developer
 }}
 
@@ -151,7 +151,7 @@ For example, feature request [https://codeberg.org/librewolf/issues/issues/1779 
 Firefox is not fork-friendly, see [[Dev/Default_Browser#Firefox_Potential_Legal_Risk|Firefox Potential Legal Risk]]. At time of writing, feature request [https://bugzilla.mozilla.org/show_bug.cgi?id=1897432 Add an Unbranding Option in Firefox Settings] has seen no interest and there is little likelihood of getting implemented.
 
 {{quotation
-|quote=I don&rsquo;t understand most of the diff between one kernel version and the next, and I don&rsquo;t have time to read all of it either.
+|quote=I don't understand most of the diff between one kernel version and the next, and I don't have time to read all of it either.
 |context=[https://en.wikipedia.org/wiki/Matthew_Garrett Matthew_Garrett]: [https://codon.org.uk/~mjg59/blog/p/to-update-blobs-or-not-to-update-blobs/ To update blobs or not to update blobs]
 }}
 
@@ -176,7 +176,7 @@ Trusted Computing Base (TCB) should be kept minimal.
 {{quotation
 |quote=Security-critical code
 
-[...] A successful attack against any of these components could compromise the system&rsquo;s security. This code can be thought of as the Trusted Computing Base (TCB) of Qubes OS. One of the main goals of the project is to keep the TCB to an absolute minimum.
+[...] A successful attack against any of these components could compromise the system's security. This code can be thought of as the Trusted Computing Base (TCB) of Qubes OS. One of the main goals of the project is to keep the TCB to an absolute minimum.
 |context=https://www.qubes-os.org/doc/security-critical-code/
 }}
 
@@ -214,7 +214,7 @@ Although Open Source remains beneficial and critical, the complexity of modern p
 {{quotation
 |quote=You can't secure what you don't understand.
 
-The worst enemy of security is complexity. This has been true since the beginning of computers, and it&rsquo;s likely to be true for the foreseeable future.
+The worst enemy of security is complexity. This has been true since the beginning of computers, and it's likely to be true for the foreseeable future.
 |context=[https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier]: [https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html A Plea for Simplicity]
 }}
 
@@ -249,7 +249,7 @@ One of the key challenges facing Open Source software is the lack of sustainable
 
 * '''Limited Revenue Streams:''' Many Open Source projects rely on donations, sponsorships, or community support. However, these revenue streams are often insufficient to cover the ongoing costs of development, security patches, and long-term support.
 * '''Corporate Dominance:''' In the absence of robust business models, large corporations have stepped in, leveraging Open Source technologies while contributing minimally back to the ecosystem. Companies can afford to hire dedicated developers to work on Open Source projects, giving them a significant advantage in shaping the direction of these technologies. This dominance risks undermining the decentralized, community-driven nature of Open Source.
-* '''Ecosystem-Wide Challenges:''' Beyond software, there is even less clarity on business models for [[Open Source Hardware]]. Developing and maintaining hardware - whether it&rsquo;s microcontrollers, boards, or entire devices - requires significant upfront investment, supply chains, and manufacturing infrastructure. Open Source hardware projects often struggle to gain traction due to the high costs and lack of financial backing.
+* '''Ecosystem-Wide Challenges:''' Beyond software, there is even less clarity on business models for [[Open Source Hardware]]. Developing and maintaining hardware - whether it's microcontrollers, boards, or entire devices - requires significant upfront investment, supply chains, and manufacturing infrastructure. Open Source hardware projects often struggle to gain traction due to the high costs and lack of financial backing.
 
 Without robust business models, Open Source projects are increasingly dependent on voluntary contributions or the goodwill of large companies. This creates an economic imbalance where only projects backed by large corporations or strong communities can survive, leaving others to wither or become abandoned.
 
@@ -260,7 +260,7 @@ The long-term health of the Open Source ecosystem will require innovative busine
 In 2021, researchers at the University of Minnesota released a paper that revealed they had purposefully tested the feasibility of introducing vulnerabilities (use-after-free bugs) in open source software (OSS) -- in this case the Linux kernel -- via "hypocrite commits." They defined these commits as "...seemingly beneficial commits that in fact introduce other critical issues." <ref name=hypocrite_commits>https://raw.githubusercontent.com/QiushiWu/qiushiwu.github.io/main/papers/OpenSourceInsecurity.pdf</ref> While this research is ethically questionable, it prompts doubt about the OSS claim that this development approach produces more reliable, secure and higher-quality software, particularly since the "many eyeballs" approach is suggested to increase the rate at which bugs are identified and fixed. The paper is significant because the Linux kernel powers billions of devices world-wide and the hypocrite commits were not identified until the researcher's paper was published.
 
 The researchers identified three primary reasons for why hypocrite commits to the kernel were possible: <ref name=hypocrite_commits />
-<blockquote>(1) OSS is open by nature, so anyone from anywhere, including malicious ones, can submit patches. (2) Due to the overwhelming patches and performance issues, it is impractical for maintainers to accept preventive patches for &ldquo;immature vulnerabilities&rdquo;. (3) OSS like the Linux kernel is extremely complex, so the patch-review process often misses introduced vulnerabilities that involve complicated semantics and contexts.</blockquote> Suggested mitigations included: <ref name=hypocrite_commits />
+<blockquote>(1) OSS is open by nature, so anyone from anywhere, including malicious ones, can submit patches. (2) Due to the overwhelming patches and performance issues, it is impractical for maintainers to accept preventive patches for "immature vulnerabilities". (3) OSS like the Linux kernel is extremely complex, so the patch-review process often misses introduced vulnerabilities that involve complicated semantics and contexts.</blockquote> Suggested mitigations included: <ref name=hypocrite_commits />
 
 * increasing committer liability and accountability
 * employment of advanced static-analysis tools

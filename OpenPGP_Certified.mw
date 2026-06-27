@@ -180,7 +180,7 @@ sig-notation issuer-fpr@notations.openpgp.fifthhorseman.net=%g
 Creating your Initial Keypair
 
 Use the gpg --gen-key command to create a new GPG keypair.
-When you create your new keypair, use the highest possible values for key length. As computers get more powerful and storage gets cheaper, it&rsquo;s conceivable that a nasty person could archive a message that&rsquo;s unbreakable today, then in the future break it using a more powerful computer. Using the highest possible value for key length helps protect you from that scenario. Don&rsquo;t use GPG&rsquo;s default of 2048!
+When you create your new keypair, use the highest possible values for key length. As computers get more powerful and storage gets cheaper, it's conceivable that a nasty person could archive a message that's unbreakable today, then in the future break it using a more powerful computer. Using the highest possible value for key length helps protect you from that scenario. Don't use GPG's default of 2048!
 To prevent filling up the keyserver with garbage and outdated keys or if something goes wrong, it's recommended to set an expire data on your key.
 When prompted for a passphrase, make sure to pick a long and unique one. It will be your passphrase for your master key. (We'll later set a different passphrase for your slave key.) If your key gets stolen, this passphrase is the only thing protecting it! Don't use a passphrase you've ever used on your every day operating system, because that will help you to store a backup of your private master key on your every day operating system and thanks to the passphrase protection, you can even back it up in places without strong guarantees of privacy such as free cloud hosting or you public homepage. Just remember, to never enter the passphrase on your every day operating system.
 
@@ -237,8 +237,8 @@ Have a look at the "pub 4096R/488BA441 2013-03-13" line. In this example 0x2516E
 
 Creating your Signing Sub Key
 
-Now for the special sauce: let&rsquo;s add our new signing subkey.
-Use the gpg --edit-key command. At the gpg> prompt, enter the command addkey. Select RSA (sign only) and 4096 for the keysize. Don&rsquo;t forget to save at the last gpg> prompt:
+Now for the special sauce: let's add our new signing subkey.
+Use the gpg --edit-key command. At the gpg> prompt, enter the command addkey. Select RSA (sign only) and 4096 for the keysize. Don't forget to save at the last gpg> prompt:
 
 gpg --homedir ~/gpg-master --edit-key 0x2516E552C8D4D937
 gpg (GnuPG) 1.4.15; Copyright (C) 2013 Free Software Foundation, Inc.
@@ -289,7 +289,7 @@ gpg> save
 
 Exporting your Master Key
 
-Now that your keypair has been created, let&rsquo;s export it so that we can back it up:
+Now that your keypair has been created, let's export it so that we can back it up:
 gpg --homedir ~/gpg-master --armor --export-secret-keys 0x2516E552C8D4D937 > 0x2516E552C8D4D937.private.gpg-key
 gpg --homedir ~/gpg-master --armor --export 0x2516E552C8D4D937 > 0x2516E552C8D4D937.public.gpg-key
 This will create two files: your public key and your private key. Backup these two files, as best as you can.
@@ -298,7 +298,7 @@ Creating your Slave Key
 
 Export Secret Subkeys
 
-Now we have our master keypair in our keyring, along with two files representing the master keypair plus the keypair&rsquo;s revocation certificate. To derive our slave keypair from our master keypair, we have to create a copy of our master keypair and remove the master secret key.
+Now we have our master keypair in our keyring, along with two files representing the master keypair plus the keypair's revocation certificate. To derive our slave keypair from our master keypair, we have to create a copy of our master keypair and remove the master secret key.
 Export all of the subkeys from our new keypair to a file:
 gpg --homedir ~/gpg-master --armor --export-secret-subkeys 0x2516E552C8D4D937 > subkeys
 
@@ -316,7 +316,7 @@ gpg --edit-key 0x2516E552C8D4D937
 passwd
 ...
 save
-That&rsquo;s all! You can verify it worked by running:
+That's all! You can verify it worked by running:
 
 gpg --list-secret-keys
 /home/user/gpg-slave/secring.gpg
@@ -325,7 +325,7 @@ sec#  4096R/488BA441 2013-03-13
 uid                  Bilbo Baggins <bilbo@shire.org>
 ssb   4096R/69B0EA85 2013-03-13
 ssb   4096R/C24C2CDA 2013-03-13
-See how the third line begins with &ldquo;sec#&rdquo;, not &ldquo;sec&rdquo;? The pound sign means the signing subkey is not in the keypair located in the keyring. Or more correctly said, see footnote. [1]
+See how the third line begins with "sec#", not "sec"? The pound sign means the signing subkey is not in the keypair located in the keyring. Or more correctly said, see footnote. [1]
 To make sure everything is alright, use switch gpg's homedir to ~/gpg-master and see if the secret master key is available.
 Store your slave key in a file.
 gpg --armor --export-secret-subkeys 0x2516E552C8D4D937 > 0x2516E552C8D4D937.secret-subkeys.gpg-key
@@ -335,7 +335,7 @@ In Case of Emergency
 
 Should the worst happen and your slave keypair gets lost, compromised or stolen, we need to revoke the subkeys on that keypair.
 Unlock your safe-deposit box and get your master keypair out.
-Boot a live USB of Debian or your distro of choice. Then, import your master keypair into the live USB&rsquo;s keyring:
+Boot a live USB of Debian or your distro of choice. Then, import your master keypair into the live USB's keyring:
 
 gpg --import /path/to/0x2516E552C8D4D937.public.gpg-key /path/to/0x2516E552C8D4D937.private.gpg-key
 

@@ -62,7 +62,7 @@ DNS encryption does not imply DNS authentication.
 == DoT vs DoH ==
 <u>Quote:</u> [https://blog.apnic.net/2020/12/14/dns-over-https-in-unbound/ DNS over HTTPS in Unbound]
 
-<blockquote>There are, however, DNS clients that do not support DoT but are able to use DNS-over-HTTPS (DoH) instead. Where DoT sends a DNS message directly over TLS, DoH has an HTTP layer in between. Where DoT uses its own TCP port (853), DoH uses the standard HTTPS port (443). Using the standard HTTPS port makes it harder to block DoH queries, as blocking TCP traffic on port 443 will also block a lot of web traffic. Some people think this is great as this ensures that the user&rsquo;s DNS queries will always be encrypted; others have concerns about DoH as they might lose control over clients in their network.
+<blockquote>There are, however, DNS clients that do not support DoT but are able to use DNS-over-HTTPS (DoH) instead. Where DoT sends a DNS message directly over TLS, DoH has an HTTP layer in between. Where DoT uses its own TCP port (853), DoH uses the standard HTTPS port (443). Using the standard HTTPS port makes it harder to block DoH queries, as blocking TCP traffic on port 443 will also block a lot of web traffic. Some people think this is great as this ensures that the user's DNS queries will always be encrypted; others have concerns about DoH as they might lose control over clients in their network.
 
 At NLnet Labs we are in favour of encrypting DNS traffic to limit the exposure of privacy-sensitive data. By adding downstream DoH support to Unbound we hope to increase the ratio of encrypted DNS traffic and increase the number of resolvers that offer encrypted services in home networks, enterprise networks, ISPs, and public resolvers.</blockquote>
 

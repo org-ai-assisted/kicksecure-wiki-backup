@@ -3228,7 +3228,7 @@ https://github.com/derivative-maker/derivative-maker/commit/766957415d1add40f1c1
 * Blacklist automatic loading of CD-ROM modules <ref>
 {{Github_link|repo=security-misc|path=/commit/ef1ef9917d896f1cd837f399def6a75704e9bfd2}}
 </ref> (Thanks to Raja Grewal!)
-* Incorporated Ubuntu&rsquo;s kernel module blacklists <ref>
+* Incorporated Ubuntu's kernel module blacklists <ref>
 {{Github_link|repo=security-misc|path=/commit/61ef9bd59f9ff39c140f782ff5b41d0a3c6d97bc}}
 </ref> (Thanks to Raja Grewal!)
 * renamed:    usr/bin/disabled-by-security-misc -> bin/disabled-by-security-misc <ref>

@@ -16,7 +16,7 @@ Packaging serves several crucial purposes in software distribution, ensuring not
 * '''License compliance:''' Distribution maintainers (DMs) verify that the software adheres to freedom-respecting licenses, ensuring legal compliance and ethical use. See [[Avoid nonfreedom software]] for more details.
 * '''Enforcement of freedom from proprietary, non-freedom source code and binaries:''' Same as above.
 * '''Trademark compliance:'''
-** Workaround issues such as [https://en.wikipedia.org/wiki/Debian%E2%80%93Mozilla_trademark_dispute Debian&ndash;Mozilla trademark dispute].
+** Workaround issues such as [https://en.wikipedia.org/wiki/Debian%E2%80%93Mozilla_trademark_dispute Debian-Mozilla trademark dispute].
 ** Delete copyrighted logos. ([https://salsa.debian.org/debian/stardict/-/blob/master/debian/patches/del-logo-stardict-dict.patch?ref_type=heads example])
 * '''No binary blobs:''' DMs ensure that the source package doesn't include pre-compiled binary files, promoting transparency and security.
 * '''Source code completeness:''' This involves verifying whether the source code is complete and buildable, ensuring that end users receive a functional product.

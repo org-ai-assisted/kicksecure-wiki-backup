@@ -23,7 +23,7 @@ In simple terms, this vulnerability can allow code that is already running as a 
 * <u>Affected Linux distributions:</u> Most mainstream Linux distributions.
 
 {{quotation
-|quote=If your kernel was built between 2017 and the patch &mdash; which covers essentially every mainstream Linux distribution &mdash; you're in scope.
+|quote=If your kernel was built between 2017 and the patch -- which covers essentially every mainstream Linux distribution -- you're in scope.
 |context=[https://copy.fail/ Copy Fail: official disclosure and mitigation]
 }}
 

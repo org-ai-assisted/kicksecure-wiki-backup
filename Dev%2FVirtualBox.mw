@@ -54,9 +54,9 @@ Quote https://people.debian.org/~lucas/virtualbox-buster/
 <blockquote>
 Virtualbox is not available in Debian 10 (nor in backports). The reasons are discussed at length in https://bugs.debian.org/794466 and various other mailing list threads, but can be summarized as:
 
-* Virtualbox is not suitable for Debian stable releases because of the lack of cooperation of Oracle on security support (that&rsquo;s the Debian security team decision).
-* Since it is not suitable for stable releases, it cannot be included in the testing suite (that&rsquo;s the Debian release team decision).
-* It also cannot be included in official backports, as packages must be in testing before they get backported (that&rsquo;s the Debian backports team&rsquo;s decision).
+* Virtualbox is not suitable for Debian stable releases because of the lack of cooperation of Oracle on security support (that's the Debian security team decision).
+* Since it is not suitable for stable releases, it cannot be included in the testing suite (that's the Debian release team decision).
+* It also cannot be included in official backports, as packages must be in testing before they get backported (that's the Debian backports team's decision).
 </blockquote>
 
 There is hope this will improve in future: [https://salsa.debian.org/fasttrack-team/support/issues/10 please add VirtualBox to fasttrack]
@@ -260,7 +260,7 @@ are different things.
 Quote https://www.virtualbox.org/wiki/Downloads
 
 <blockquote>
-This VirtualBox Extension Pack Personal Use and Educational License governs your access to and use of the VirtualBox Extension Pack. It does not apply to the VirtualBox base package and/or its source code, which are licensed under version 3 of the GNU General Public License &ldquo;GPL&rdquo;).
+This VirtualBox Extension Pack Personal Use and Educational License governs your access to and use of the VirtualBox Extension Pack. It does not apply to the VirtualBox base package and/or its source code, which are licensed under version 3 of the GNU General Public License "GPL").
 </blockquote>
 
 [https://www.virtualbox.org/wiki/Licensing_FAQ VirtualBox PUEL License FAQ]
@@ -271,11 +271,11 @@ Quote https://www.virtualbox.org/manual/ch01.html#intro-installing
 
 <blockquote>
 The extension pack provides the following added functionality:
-* VirtualBox Remote Desktop Protocol (VRDP) support. See Section 7.1, &ldquo;Remote Display (VRDP Support)&rdquo;.
-* Host webcam passthrough. See Section 9.5, &ldquo;Webcam Passthrough&rdquo;.
+* VirtualBox Remote Desktop Protocol (VRDP) support. See Section 7.1, "Remote Display (VRDP Support)".
+* Host webcam passthrough. See Section 9.5, "Webcam Passthrough".
 * Intel PXE boot ROM.
-* Disk image encryption with AES algorithm. See Section 9.29, &ldquo;Encryption of Disk Images&rdquo;.
-* Cloud integration features. See Section 1.16, &ldquo;Integrating with Oracle Cloud Infrastructure&rdquo;.
+* Disk image encryption with AES algorithm. See Section 9.29, "Encryption of Disk Images".
+* Cloud integration features. See Section 1.16, "Integrating with Oracle Cloud Infrastructure".
 </blockquote>
 
 Quote https://www.virtualbox.org/wiki/Changelog-7.0

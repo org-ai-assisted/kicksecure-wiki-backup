@@ -161,13 +161,13 @@ https://forums.whonix.org/t/chromium-browser-for-kicksecure-discussions-not-whon
 </ref>
 
 <blockquote>
-The goal of manifest v3 is not to neuter ad blockers. It allows content filtering in a more secure way while also not allowing extensions to spy on users extensively. It doesn&rsquo;t kill ad blocking - it only provides a safer way of doing it. Manifest v3 removes the legacy webRequest and replaces it with declarativeNetRequest.
+The goal of manifest v3 is not to neuter ad blockers. It allows content filtering in a more secure way while also not allowing extensions to spy on users extensively. It doesn't kill ad blocking - it only provides a safer way of doing it. Manifest v3 removes the legacy webRequest and replaces it with declarativeNetRequest.
 
 https://developer.chrome.com/extensions/declarativeNetRequest
 
 https://blog.chromium.org/2018/10/trustworthy-chrome-extensions-by-default.html
 
-Besides, this hasn&rsquo;t even been implemented yet and likely won&rsquo;t be for a long time. Other browsers will probably follow suit too. For example, this is how it already works in Safari.
+Besides, this hasn't even been implemented yet and likely won't be for a long time. Other browsers will probably follow suit too. For example, this is how it already works in Safari.
 </blockquote>
 
 Reply by Patrick:
@@ -250,7 +250,7 @@ When Chrome is started it will lookup domain names for previously opened web pag
 madaidan reply:
 
 <blockquote>
-This isn&rsquo;t weird. It improves page load time and is a standard thing that&rsquo;s done in other browsers like Firefox. It can also be disabled.
+This isn't weird. It improves page load time and is a standard thing that's done in other browsers like Firefox. It can also be disabled.
 
 https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
 </blockquote>
@@ -378,7 +378,7 @@ Hardened Malloc (HM)
 <s>https://forums.whonix.org/t/hardened-malloc-hardened-memory-allocator/7474/147</s>
 
 * <s>Can Chromium from Flatpak be used with [[Hardened Malloc]]?</s>
-* <s>Which memory allocator is more secure, Chromium&rsquo;s built-in or Hardened Malloc?</s>
+* <s>Which memory allocator is more secure, Chromium's built-in or Hardened Malloc?</s>
 
 Meanwhile, HM was deprecated in Kicksecure.
 

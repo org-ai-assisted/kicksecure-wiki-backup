@@ -247,7 +247,7 @@ Written by {{project_name_short}} developer Patrick.
 
 '''firejail security'''
 
-Can&rsquo;t rely too much on Daniel Micay as security expert because he&rsquo;s (often justified&hellip;) critical on &ldquo;everything&rdquo;&hellip; Could as well as give up and go home following that sentiment. Reference: https://forums.whonix.org/t/daniel-micay-quotes/8509
+Can't rely too much on Daniel Micay as security expert because he's (often justified...) critical on "everything"... Could as well as give up and go home following that sentiment. Reference: https://forums.whonix.org/t/daniel-micay-quotes/8509
 
 <blockquote>Obviously asking on the firejail github repo will get biased responses.</blockquote>
 
@@ -259,7 +259,7 @@ https://github.com/containers/bubblewrap/issues/266#issuecomment-386867656</bloc
 
 Bubblewrap developers '''might''' be bias towards bubblewrap.
 
-Under the bias thesis, both candidates aren&rsquo;t ideal expert opinions here on judging the security of each tool vs each other. Their input is valued nonetheless.
+Under the bias thesis, both candidates aren't ideal expert opinions here on judging the security of each tool vs each other. Their input is valued nonetheless.
 
 Tried to wrap my head around this issue. Made some notes here: https://www.whonix.org/wiki/Dev/Firejail#Security
 
@@ -276,7 +276,7 @@ Please keep expert opinions pro/contra firejail / bubblewrap / apparmor / etc. c
 -----
 
 '''installation by default'''
- {{project_name_short}} doesn&rsquo;t enable any firejail / bubblewrap profiles for anything by default yet. All such profiles are opt-in.
+ {{project_name_short}} doesn't enable any firejail / bubblewrap profiles for anything by default yet. All such profiles are opt-in.
  {{project_name_short}} comes with some apparmor profiles by default. Those for its own software and those profiles maintained by Debian. Other profiles are opt-in.
 
 Decided to no longer install firejail by default due to
@@ -294,7 +294,7 @@ At the moment, major attack surface realistically is the browser, Tor Browser. I
 
 '''future reconsideration for re-installation of firejail'''
 
-* Anyone maintaining firejail profiles in {{project_name_short}} for software not developed by {{project_name_short}} wouldn&rsquo;t be installed by default - same as for apparmor profiles.
+* Anyone maintaining firejail profiles in {{project_name_short}} for software not developed by {{project_name_short}} wouldn't be installed by default - same as for apparmor profiles.
 * Anyone maintaining firejail profiles in {{project_name_short}} for software developed by Whonix, and re-installation for firejail by default would be reconsidered.
 * Anyone maintaining firejail profiles in Debian, and re-installation for firejail by default would be reconsidered.
 

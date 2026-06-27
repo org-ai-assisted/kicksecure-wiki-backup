@@ -237,7 +237,7 @@ This might be the case because if no conversion to VDI is required then less dis
 
 = Non-functional Shared Clipboard and Drag and Drop =
 
-If the shared clipboard and drag&rsquo;n&rsquo;drop to/from host is non-functional, this can relate to the version of guest additions installed in {{project_name_short}} and/or the version of VirtualBox running on the host. <ref>
+If the shared clipboard and drag'n'drop to/from host is non-functional, this can relate to the version of guest additions installed in {{project_name_short}} and/or the version of VirtualBox running on the host. <ref>
 * https://forums.whonix.org/t/whonix-15-shared-clipboard-and-dragndrop-not-working/7723
 * Upstream bug report: [https://www.virtualbox.org/ticket/19336 Linux guest: shared clipboard doesn't work (on fresh VirtualBox-6.1.4-136177) => fixed in 6.1.6]
 </ref>

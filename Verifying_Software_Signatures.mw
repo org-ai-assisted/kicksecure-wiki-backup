@@ -39,7 +39,7 @@ In summary, verifying digital signatures is a crucial step in maintaining the se
 |context=Common user support request. (Paraphrased.)
 }}
 
-* <u>Inherently difficult topic:</u> Non-technical users often struggle with these concepts. This is complicated stuff, and as early as 1999 the [https://people.eecs.berkeley.edu/~tygar/papers/Why_Johnny_Cant_Encrypt/USENIX.pdf Why Johnny Can&rsquo;t Encrypt: A Usability Evaluation of PGP 5.0] paper was published.
+* <u>Inherently difficult topic:</u> Non-technical users often struggle with these concepts. This is complicated stuff, and as early as 1999 the [https://people.eecs.berkeley.edu/~tygar/papers/Why_Johnny_Cant_Encrypt/USENIX.pdf Why Johnny Can't Encrypt: A Usability Evaluation of PGP 5.0] paper was published.
 * <u>Simple documentation impossible:</u> There seems to be literally no way to make the documentation on that topic uncomplicated.
 * <u>Documentation has limits:</u> There are some things which are so complicated they cannot be learned through documentation alone. Read a book and become a heart surgeon? No way. Become "at least" a general practitioner? Also no way. Learning by doing, sitting together in the office of a general practitioner for years: can doctor skills be learned through on-the-job training, listening, observing, and imitating? Also no way. In many countries it requires about 12 years of study. Now, maybe that could be compressed, or some bright minds could learn it faster, but it still cannot be compressed to 1 year. In any case, there is no way to "write simple documentation".
 * <u>More realistic comparison:</u> Now that's a bit far-fetched. Learning the digital software verification of OpenPGP signatures probably won't take years of study. A guesstimate would be that it takes several hours or days and may require a teacher. ([[Teacher|Find a Teacher]]) There may be OpenPGP courses and [https://en.wikipedia.org/wiki/CryptoParty cryptoparties] (at least these used to exist). This illustrates that there is no way to have simple documentation for this complex topic.
@@ -161,7 +161,7 @@ It's important to understand that using digital signatures to verify the trustwo
 |
 * Any other property, for example, that the file isn't malicious. Nothing prevents a person from signing a malicious program. Digital signature or not, for example in the case of
 ** intentional breakage, supply chain attacks: [https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/ Dev corrupts NPM libs 'colors' and 'faker' breaking thousands of apps]
-** [[Malware_and_Firmware_Trojans#Backdoors|backdoors]]: [https://www.synopsys.com/blogs/software-security/malicious-dependency-supply-chain/ bitcoin copay wallet &ldquo;direct&rdquo; backdoor]  "{{Code2|If more than 100 BTC, steal it. Otherwise, don&rsquo;t bother.}}" <ref>
+** [[Malware_and_Firmware_Trojans#Backdoors|backdoors]]: [https://www.synopsys.com/blogs/software-security/malicious-dependency-supply-chain/ bitcoin copay wallet "direct" backdoor]  "{{Code2|If more than 100 BTC, steal it. Otherwise, don't bother.}}" <ref>
 * https://github.com/dominictarr/event-stream/issues/116
 * https://github.com/dominictarr/event-stream/issues/116#issuecomment-441759047
 </ref>
@@ -342,7 +342,7 @@ https://www.developer-tech.com/news/2022/apr/19/github-notifies-victims-of-oauth
 * [[Download Security]]
 * [[Signing Key|{{project_name_short}} Signing Key]]
 * [[Software Signature Verification Usability Issues and Proposed Solutions]]
-* discussion: [https://github.com/flatpak/flatpak/issues/5657 <code>flatpak remote-add --from=https://&hellip;.flatpakrepo</code> relies on TLS CAs to bootstrap trust path]
+* discussion: [https://github.com/flatpak/flatpak/issues/5657 <code>flatpak remote-add --from=https://....flatpakrepo</code> relies on TLS CAs to bootstrap trust path]
 
 = Attribution =
 Gratitude is expressed to [https://www.qubes-os.org Qubes OS] ([https://groups.google.com/g/qubes-devel/c/zALZnu9pTuU Permission]). The [[#What Digital Signatures Prove|What Digital Signatures Prove]] chapter contains content from the [https://www.qubes-os.org/security/verifying-signatures/#what-digital-signatures-can-and-cannot-prove Qubes OS: What do the Digital Signatures Prove and What They DO NOT Prove] page.

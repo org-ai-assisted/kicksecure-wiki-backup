@@ -22,7 +22,7 @@ Resulting issues:
 * [https://forums.whonix.org/t/downgrade-all-packages-to-specific-date/8910 It is difficult (impossible?) to safely / fully downgrade / rollback upgrades.]
 * It is more dangerous to perform standard everyday upgrades.
 * Even more dangerous to perform release upgrades.
-* [https://blog.verbum.org/2020/08/22/immutable-%E2%86%92-reprovisionable-anti-hysteresis/ &ldquo;Immutable&rdquo; &rarr; reprovisionable, anti-hysteresis]
+* [https://blog.verbum.org/2020/08/22/immutable-%E2%86%92-reprovisionable-anti-hysteresis/ "Immutable" &rarr; reprovisionable, anti-hysteresis]
 * immutable root file system doesn't fully fix it due to files like .bashrc
 * unclear if ever image based. Advantages and disadvantages.
 ** Disadvantages:

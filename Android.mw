@@ -18,7 +18,7 @@ On stock Android, the owner is often forced to trust Google and the device vendo
 This also matters for ordinary malware investigations. If a phone is infected, you often cannot do a thorough "deep scan" from a clean, separate computer without first unlocking or modifying the device. That step can change the evidence, and a well-designed backdoor could notice the investigation and erase itself or hide all traces.
 
 = Perspective =
-This page uses &lsquo;security&rsquo; from the perspective of end-users, device owner's, security and privacy enthusiasts: the ability to control, inspect, and independently verify the device. It does not focus on DRM or platform control goals.
+This page uses 'security' from the perspective of end-users, device owner's, security and privacy enthusiasts: the ability to control, inspect, and independently verify the device. It does not focus on DRM or platform control goals.
 
 = Independent Verification Limits on Stock Android =
 
@@ -157,7 +157,7 @@ Low-level rootkits can hide by manipulating the OS itself, which means security 
 Note: <u>Underline</u> added.
 
 {{quotation
-|quote=Abstract &mdash; Smartphones and tablets have become prime targets for malware, due to the valuable private and corporate information they hold. While <u>Anti-Virus (AV) program</u> may successfully detect malicious applications (apps), <u>they remain ineffective against low-level rootkits</u> that evade detection mechanisms by masking their own presence.
+|quote=Abstract -- Smartphones and tablets have become prime targets for malware, due to the valuable private and corporate information they hold. While <u>Anti-Virus (AV) program</u> may successfully detect malicious applications (apps), <u>they remain ineffective against low-level rootkits</u> that evade detection mechanisms by masking their own presence.
 |context=[https://arxiv.org/pdf/1512.04116 JoKER: Trusted Detection of Kernel Rootkits in Android Devices via JTAG Interface]
 }}
 
@@ -208,7 +208,7 @@ The paper continues to describe features useful for rootkit analysis:
 
 {{quotation
 |quote=
-2. The ability to access the content of the device&rsquo;s volatile memory (RAM) while it is being halted. The overall system does not run on the mobile device and therefore can securely read the kernel&rsquo;s memory areas in a trusted manner.
+2. The ability to access the content of the device's volatile memory (RAM) while it is being halted. The overall system does not run on the mobile device and therefore can securely read the kernel's memory areas in a trusted manner.
 }}
 
 {{quotation
@@ -278,7 +278,7 @@ On many Android devices, deep investigation (including searching for sophisticat
 |quote=Android [...]<br/>
 
 security mechanisms such as application sandboxing, encryption, and file-based access controls pose challenges to forensic data acquisition
-|context=International Journal of Forensic Science: [https://rfppl.co.in/subscription/upload_pdf/vinay-chauhan-sir-1745219615.pdf Forensic Techniques for Android Devices Using Logical Extraction and Temporary Root Methods], Vinay Chauhan, Neeraj Kumar, et al. Forensic Techniques for Android Devices Using Logical Extraction and Temporary Root Methods. Int Jr of Forensic Sci. 2025; 8(1): 51&ndash;55.
+|context=International Journal of Forensic Science: [https://rfppl.co.in/subscription/upload_pdf/vinay-chauhan-sir-1745219615.pdf Forensic Techniques for Android Devices Using Logical Extraction and Temporary Root Methods], Vinay Chauhan, Neeraj Kumar, et al. Forensic Techniques for Android Devices Using Logical Extraction and Temporary Root Methods. Int Jr of Forensic Sci. 2025; 8(1): 51-55.
 }}
 
 <div class="toccolours mw-collapsible mw-collapsed">
@@ -462,7 +462,7 @@ On stock Android, many techniques needed to independently check the whole device
 | &#x2705; Yes.
 | &#x26A0;&#xFE0F; Limited. <ref>
 {{quotation
-|quote=Managing expectations: When reviewing a device, you may find no traces of known threats. While this is a positive signal, it doesn&rsquo;t definitively mean the device hasn&rsquo;t been compromised. Even after thorough manual analysis, various factors may limit the effectiveness of log-based forensics. If there are strong suspicions of compromise (for example, a threat notification from a platform), it is advisable to consider combining log-based methods with other forensic techniques mentioned earlier.
+|quote=Managing expectations: When reviewing a device, you may find no traces of known threats. While this is a positive signal, it doesn't definitively mean the device hasn't been compromised. Even after thorough manual analysis, various factors may limit the effectiveness of log-based forensics. If there are strong suspicions of compromise (for example, a threat notification from a platform), it is advisable to consider combining log-based methods with other forensic techniques mentioned earlier.
 |context=[https://forensics.socialtic.org/en/index.html Documentation repository on consensual digital forensics for the defense of Human Rights]: [https://forensics.socialtic.org/en/explainers/03-explainer-log-forensics-android/index.html Explainer: Introduction to log-based forensics on Android devices]
 }}
 </ref>
@@ -504,14 +504,14 @@ However, not all is lost.
 
 Much of the targeting outlined in this report involves Pegasus attacks targeting iOS devices. It is important to note that this does not necessarily reflect the relative security of iOS devices compared to Android devices, or other operating systems and phone manufacturers.
 
-<u>In Amnesty International&rsquo;s experience there are significantly more forensic traces accessible to investigators on Apple iOS devices than on stock Android devices</u>, therefore our methodology is focused on the former. As a result, most recent cases of confirmed Pegasus infections have involved iPhones.
+<u>In Amnesty International's experience there are significantly more forensic traces accessible to investigators on Apple iOS devices than on stock Android devices</u>, therefore our methodology is focused on the former. As a result, most recent cases of confirmed Pegasus infections have involved iPhones.
 
 This and all previous investigations demonstrate how attacks against mobile devices are a significant threat to civil society globally. The difficulty to not only prevent, but posthumously detect attacks is the result of an unsustainable asymmetry between the capabilities readily available to attackers and the inadequate protections that individuals at risk enjoy.
 
-<u>While iOS devices provide at least some useful diagnostics, historical records are scarce and easily tampered with. Other devices provide little to <b>no help conducting consensual forensics analysis.</b></u> Although much can be done to improve the security posture of mobile devices and mitigate the risks of attacks such as those documented in this report, even more could be achieved by improving the ability for device owners and technical experts to perform regular checks of the system&rsquo;s integrity.
+<u>While iOS devices provide at least some useful diagnostics, historical records are scarce and easily tampered with. Other devices provide little to <b>no help conducting consensual forensics analysis.</b></u> Although much can be done to improve the security posture of mobile devices and mitigate the risks of attacks such as those documented in this report, even more could be achieved by improving the ability for device owners and technical experts to perform regular checks of the system's integrity.
 
 Therefore, <u>Amnesty International strongly encourages  device vendors to explore options to make their devices more auditable, without of course sacrificing any security and privacy protections already in place.</u> Platform developers and phone manufacturers should regularly engage in conversations with civil society to better understand the challenges faced by HRDs, who are often under-represented in cybersecurity debates.
-|context=[https://www.amnesty.org/ Amnesty International]'s [https://securitylab.amnesty.org/tools-and-guides/ security labs]: [https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/ Forensic Methodology Report: How to catch NSO Group&rsquo;s Pegasus]
+|context=[https://www.amnesty.org/ Amnesty International]'s [https://securitylab.amnesty.org/tools-and-guides/ security labs]: [https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/ Forensic Methodology Report: How to catch NSO Group's Pegasus]
 }}
 
 = Resources =

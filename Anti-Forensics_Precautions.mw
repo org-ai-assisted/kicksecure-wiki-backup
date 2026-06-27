@@ -130,7 +130,7 @@ This setting is enforced for systemd-coredump too and can be verified by inspect
 
 <u>Disable setuid processes dumping their memory</u>
 
-Processes with elevated permissions (or the setuid bit) might still be able to perform a core dump, depending on your other settings. These processes usually have more access and might contain more sensitive data segments in memory, so they should be changed as well. The behavior can be altered with a sysctl key, or directly via the <code>/proc</code> file system. For permanent settings, the sysctl command and configuration is typically used. A setting is called a &lsquo;key&rsquo;, which has a related value attached to it (also known as a key-value pair).
+Processes with elevated permissions (or the setuid bit) might still be able to perform a core dump, depending on your other settings. These processes usually have more access and might contain more sensitive data segments in memory, so they should be changed as well. The behavior can be altered with a sysctl key, or directly via the <code>/proc</code> file system. For permanent settings, the sysctl command and configuration is typically used. A setting is called a 'key', which has a related value attached to it (also known as a key-value pair).
 
 To disable programs with the setuid bit from dumping, set the fs.suid_dumpable to zero:
 

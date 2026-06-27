@@ -319,7 +319,7 @@ However, even using SysRq to switch from account <code>user</code> to <code>sysm
 
 == Server Support ==
 
-GRUB boot menus aren&rsquo;t easily accessible on many servers. A solution for making these boot modes available on servers is yet to be determined. Booting a server into sysmaint session with minimal services (such as SSH, but not web servers, etc.) might not be practical due to downtimes.
+GRUB boot menus aren't easily accessible on many servers. A solution for making these boot modes available on servers is yet to be determined. Booting a server into sysmaint session with minimal services (such as SSH, but not web servers, etc.) might not be practical due to downtimes.
 
 <code>user-sysmaint-split</code> will not be installed by default on servers. No meta package will depend on it, and derivative-maker will not install it on server builds.
 

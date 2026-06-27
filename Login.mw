@@ -143,7 +143,7 @@ root
 sudo passwd user
 }}
 
-While using <code>passwd</code> and typing the password, it will <u>not</u> appear on the screen, nor will the asterisk sign (<code>*</code>) be visible. This is normal behavior and does not mean your keyboard isn&rsquo;t working. It is necessary to type blindly and trust the procedure.
+While using <code>passwd</code> and typing the password, it will <u>not</u> appear on the screen, nor will the asterisk sign (<code>*</code>) be visible. This is normal behavior and does not mean your keyboard isn't working. It is necessary to type blindly and trust the procedure.
 </ref>
 
 {{CodeSelect|code=

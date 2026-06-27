@@ -146,7 +146,7 @@ https://github.com/Kicksecure/kicksecure-meta-packages/blob/master/debian/contro
 {{IconSet|h1|1}} '''Maintenance Work''' (<u>illustrative</u>, '''not exhaustive'''):
 
 {{IconSet|h1|2}} '''Architecture and long-term design decisions'''
-* Choosing what belongs in &ldquo;core hardening&rdquo; versus what becomes optional (maintainability constraints are explicitly a design focus).
+* Choosing what belongs in "core hardening" versus what becomes optional (maintainability constraints are explicitly a design focus).
 * Deciding when to avoid custom solutions (for example, custom hardened kernel scope risk and long-term maintenance tradeoffs).
 
 {{IconSet|h1|3}} '''Backlog triage and support load management'''

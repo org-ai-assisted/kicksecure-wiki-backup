@@ -45,7 +45,7 @@ Bubblewrap allows developers to make use of [https://en.wikipedia.org/wiki/Linux
 All applications by default use a seccomp whitelist to block dangerous and unused [https://man7.org/linux/man-pages/man2/syscalls.2.html syscalls]. In addition, the arguments of some syscalls are filtered to:
 
 * Block unused [https://man7.org/linux/man-pages/man7/address_families.7.html socket address families].
-* Block any dangerous or unused [https://man7.org/linux/man-pages/man2/ioctl.2.html ioctls] such as TIOCSTI (can be used in sandbox escapes), TIOCSETD (can increase kernel attack surface by loading vulnerable line disciplines), SIOCGIFHWADDR (can retrieve the user&rsquo;s MAC address), etc.
+* Block any dangerous or unused [https://man7.org/linux/man-pages/man2/ioctl.2.html ioctls] such as TIOCSTI (can be used in sandbox escapes), TIOCSETD (can increase kernel attack surface by loading vulnerable line disciplines), SIOCGIFHWADDR (can retrieve the user's MAC address), etc.
 * Implement [https://en.wikipedia.org/wiki/W%5EX W^X] (explained in detail further below).
 
 Apparmor also gives fine-grained controls over IPC signals, D-Bus, UNIX sockets, ptrace and more.
@@ -77,7 +77,7 @@ These mechanisms force attackers to utilize the already existing code (e.g. [htt
 |-
 ! Separate User per Sandboxed Application
 | This approach provides a higher security threshold: <ref>https://forums.whonix.org/t/system-wide-sandboxing-framework-sandbox-app-launcher/9008/265</ref>
-<blockquote>Sandboxing programs running as the same user has historically, never seriously worked well. It&rsquo;s been the cause of many issues with e.g. Flatpak. It&rsquo;s why Android/iOS have always used separate users.</blockquote>
+<blockquote>Sandboxing programs running as the same user has historically, never seriously worked well. It's been the cause of many issues with e.g. Flatpak. It's why Android/iOS have always used separate users.</blockquote>
 |-
 ! X11
 | [https://en.wikipedia.org/wiki/X_Window_System X11] does not have GUI isolation <ref>

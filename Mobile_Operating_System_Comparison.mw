@@ -74,7 +74,7 @@ Android based operating systems based on Android AOSP that do not have Google Pl
 
 === Android AOSP ===
 * https://web.archive.org/web/20131021011232/http://arstechnica.com/gadgets/2013/10/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/
-* [https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/ Google&rsquo;s iron grip on Android: Controlling open source by any means necessary]
+* [https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/ Google's iron grip on Android: Controlling open source by any means necessary]
 * [https://arstechnica.com/gadgets/2025/03/google-makes-android-development-private-will-continue-open-source-releases/ Google makes Android development private, will continue open source releases]
 * Not software fork-friendly: [[Dev/About_Computer_Insecurity#Too_Much_Source_Code|Too Much Source Code]]
 
@@ -113,7 +113,7 @@ Or leave an "API" or similar mechanism which third-party developers could develo
 
 {{quotation
 |quote=
-A free-as-in-freedom re-implementation of Google&rsquo;s proprietary Android user space apps and libraries.
+A free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries.
 |context=https://microg.org/
 }}
 
@@ -132,7 +132,7 @@ On OpenGApps.org you can find more information about the project effort and also
 
 {{quotation
 |quote=
-Take note that Open GApps does not provide you with any license for Google&rsquo;s APKs included in the package. The Open GApps packages merely provide a convenient way to sideload APKs to your device. It is your own responsibility to obtain the proper permissions by e.g. buying an OHA-licensed device with pre-installed Google Apps and/or acquiring the applications from Google&rsquo;s Play Store.
+Take note that Open GApps does not provide you with any license for Google's APKs included in the package. The Open GApps packages merely provide a convenient way to sideload APKs to your device. It is your own responsibility to obtain the proper permissions by e.g. buying an OHA-licensed device with pre-installed Google Apps and/or acquiring the applications from Google's Play Store.
 |context=https://opengapps.org/#aboutsection
 }}
 
@@ -252,7 +252,7 @@ https://archive.md/zarQH
 
 Ironically, in order to to purchase a device compatible with GrapheneOS, one has to buy a supported Google Pixel device and therefore support with the purchase one of the biggest anti privacy, most data harvesting and user freedom prohibiting companies in the world, Google.
 
-Why is the GrapheneOS chapter one of the largest chapters on this wiki page? The author of this wiki page points out: <blockquote>Since GrapheneOS has the top or very high search results for search engine search terms such as &ldquo;mobile phone security operating system&rdquo; as well as in my experience seems to be most frequently brought up in online discussions around topics of Android and security you could argue that it&rsquo;s the most popular in that niche. GrapheneOS is also what caught most of my interest in this area.</blockquote> See the [https://forums.whonix.org/t/overview-of-mobile-projects-that-focus-on-either-and-or-security-privacy-anonymity-source-available-freedom-software/4557/51 source] for further elaboration.
+Why is the GrapheneOS chapter one of the largest chapters on this wiki page? The author of this wiki page points out: <blockquote>Since GrapheneOS has the top or very high search results for search engine search terms such as "mobile phone security operating system" as well as in my experience seems to be most frequently brought up in online discussions around topics of Android and security you could argue that it's the most popular in that niche. GrapheneOS is also what caught most of my interest in this area.</blockquote> See the [https://forums.whonix.org/t/overview-of-mobile-projects-that-focus-on-either-and-or-security-privacy-anonymity-source-available-freedom-software/4557/51 source] for further elaboration.
 
 As a Hacker news user is opinionating:
 
@@ -630,7 +630,7 @@ These builds are for testing purposes and not for production use (battery usage,
 ** https://forum.qubes-os.org/t/discussion-on-purism/2627/175
 ** https://forums.puri.sm/t/librem-5-privacy-security-imxs-arm-trustzone-code-specs/1513
 * Baseband Freedom Software firmware: no - https://forums.puri.sm/t/level-of-freedom-of-librem-phone-especially-gsm-mdule/1316
-* [https://ryf.fsf.org/ FSF RYF Free Software Foundation&rsquo;s "Respects Your Freedom"] hardware endorsement: no - https://puri.sm/posts/librem5-solving-the-first-fsf-ryf-hurdle/
+* [https://ryf.fsf.org/ FSF RYF Free Software Foundation's "Respects Your Freedom"] hardware endorsement: no - https://puri.sm/posts/librem5-solving-the-first-fsf-ryf-hurdle/
 * GNU FSDG Free System Distribution Guidelines - https://www.gnu.org/distros/free-distros.html - lists PureOS, yes
 
 == PinePhone ==

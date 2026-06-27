@@ -113,14 +113,14 @@ Needs Research:
 ** debconf questions - easily handled using the KDE debconf frontnd, the Lubuntu tool does this
 ** dpkg interactive conflict resolution dialog - built into Lubuntu's tool, it can show diffs for the files that are a problem, and allow the user to keep or reject each conffile
 ** DNS failures - better error reporting can help deal with that
-** connection failures (ISP&rsquo;s preventing connections to apt repositories for whatever reason; targeted attacks) - better error reporting can help deal with that
+** connection failures (ISP's preventing connections to apt repositories for whatever reason; targeted attacks) - better error reporting can help deal with that
 ** installation issues due to broken dependencies - the apt log output is shown in the app so the user can see if this kind of thing goes wrong, and if so, why
 ** hold back packages - would have to double-check but the tool may handle this already
 ** notifications about packages available for autoremoval - wouldn't be difficult to implement
 ** packages in Debian stable, that that have no security support (T135) - this one could be tricky
 ** slow retrival attacks (Defined by TUF: Attacks and Weaknesses (w).) - apt itself can't prevent against this, there's a progress bar so the user can tell if things are being severely slowed down, adding a cancel button would help here
 ** endless data attacks (Defined as per TUF.) - also something that apt would have to solve, not sure if this is possible with apt?
-** retrieved package release who&rsquo;s valid-until field [when forgotten to refresh the repository, eventual roll back (TUF) or indefinite freeze (TUF) attack] - packages have a valid-until field? This also sounds like something apt would take care of
+** retrieved package release who's valid-until field [when forgotten to refresh the repository, eventual roll back (TUF) or indefinite freeze (TUF) attack] - packages have a valid-until field? This also sounds like something apt would take care of
 ** invalid signatures - could be handled with better error reporting
 ** expired signing keys - needs better error reporting
 ** interrupted upgrades - needs better error reporting, might be handled already

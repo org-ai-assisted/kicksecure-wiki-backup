@@ -635,12 +635,12 @@ Test
 ** https://www.{{project_clearnet}}/wiki/Host_Firewall_Basics
 * On [[USB Installation]] there is much space between title <code>Installation of Whonix &trade; on a USB</code> and the box <code>VM Live Mode	Host Live Mode	Whonix &trade; on USB</code>?
 * tables prettification
-** For example on [[Windows Hosts]] the tables look a bit weird. One has to scroll down a lot (specifically on mobile) before having a chance to see what category it is about. Also the colors aren&rsquo;t great.
+** For example on [[Windows Hosts]] the tables look a bit weird. One has to scroll down a lot (specifically on mobile) before having a chance to see what category it is about. Also the colors aren't great.
 * missing table scroll buttons
 ** When viewing {{whonix_wiki
 |wikipage=Comparison_with_Others
 |text=Comparison with Others
-}} on mobile it is not obvious that one can scroll the the right. Maybe a scroll button would help? Doesn&rsquo;t need to be necessarily a scroll button. Also a different table style might be a better solution.
+}} on mobile it is not obvious that one can scroll the the right. Maybe a scroll button would help? Doesn't need to be necessarily a scroll button. Also a different table style might be a better solution.
 
 * beautify breadcrumbs (zB < dev on top of this page)
 
@@ -1221,7 +1221,7 @@ Something doable, useful here?
 Instead of using this code;
 
 <pre>
-<div id = &rdquo;navigation-main&rdquo;>
+<div id = "navigation-main">
 
     <ul>
 
@@ -1235,7 +1235,7 @@ Instead of using this code;
 It would be better to use this other one;
 
 <pre>
-<ul id = &rdquo;navigation-main&rdquo;>
+<ul id = "navigation-main">
 
     etc ..
 

@@ -186,7 +186,7 @@ Most Linux distributions and most general purpose operating systems may be affec
 As [[Age-api#system76|system76]] pointed out.
 
 {{quotation
-|quote=Most System76 employees installed operating systems and created accounts on their computer when they were under 18. They did this out of curiosity. Many started writing software. Some were already writing operating systems. I&rsquo;m sure the story is similar at most tech companies. Limiting a child&rsquo;s ability to explore what they can do with a computer limits their future. Removing user limitations to the computer (proprietary software, locked-down platforms like Android and iOS) is why System76 exists.
+|quote=Most System76 employees installed operating systems and created accounts on their computer when they were under 18. They did this out of curiosity. Many started writing software. Some were already writing operating systems. I'm sure the story is similar at most tech companies. Limiting a child's ability to explore what they can do with a computer limits their future. Removing user limitations to the computer (proprietary software, locked-down platforms like Android and iOS) is why System76 exists.
 |context=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
 }}
 
@@ -202,7 +202,7 @@ Theoretically, it might be the case that end-users may be considered device manu
 As [[Age-api#system76|system76]] pointed out.
 
 {{quotation
-|quote=In a bizarre twist, under its current wording, a Linux distribution downloaded from the internet could technically make the downloader the &ldquo;device manufacturer&rdquo;. They are the entity responsible for providing a freely distributed operating system to the device. In practice, this type of language is rarely enforced.
+|quote=In a bizarre twist, under its current wording, a Linux distribution downloaded from the internet could technically make the downloader the "device manufacturer". They are the entity responsible for providing a freely distributed operating system to the device. In practice, this type of language is rarely enforced.
 |context=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
 }}
 
@@ -242,7 +242,7 @@ As [[Age-api#system76|system76]] pointed out.
 }}
 
 === mcneeslaw ===
-[https://www.linkedin.com/company/mcneeswallacenurick/ law firm] blog post: [https://www.mcneeslaw.com/age-verification-laws-app-developers-compliance/ New laws in some states require app developers to verify users&rsquo; ages]
+[https://www.linkedin.com/company/mcneeswallacenurick/ law firm] blog post: [https://www.mcneeslaw.com/age-verification-laws-app-developers-compliance/ New laws in some states require app developers to verify users' ages]
 
 == Other Projects ==
 Compilation of some major statements and/or (proposed) source code changes by some other operating systems / Linux / BSD distributions.
@@ -292,7 +292,7 @@ Update:
 === system76 ===
 
 {{quotation
-|quote=In a bizarre twist, under its current wording, a Linux distribution downloaded from the internet could technically make the downloader the &ldquo;device manufacturer&rdquo;. They are the entity responsible for providing a freely distributed operating system to the device. In practice, this type of language is rarely enforced. Nonetheless, it highlights how laws written for centralized platforms like iOS and Android struggle to define who is responsible in open computing ecosystems where anyone can install or distribute the operating system.
+|quote=In a bizarre twist, under its current wording, a Linux distribution downloaded from the internet could technically make the downloader the "device manufacturer". They are the entity responsible for providing a freely distributed operating system to the device. In practice, this type of language is rarely enforced. Nonetheless, it highlights how laws written for centralized platforms like iOS and Android struggle to define who is responsible in open computing ecosystems where anyone can install or distribute the operating system.
 |context=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
 }}
 
@@ -376,7 +376,7 @@ At this point, it has not yet been discussed with the maintainers of [https://ww
 Since Qubes OS may be the entity distributing Templates, the decision of what Templates can and should do will ultimately rest with the Qubes maintainers.
 
 * Qubes upstream ticket: [https://github.com/QubesOS/qubes-issues/issues/10744 legally mandatory age verification API compliance may be required #10744]
-* Qubes forum discussion: [https://forum.qubes-os.org/t/how-much-do-we-gotta-worry-about-this-linux-age-verification-bs/39788 How much do we gotta worry about this Linux &ldquo;age verification&rdquo; BS?]
+* Qubes forum discussion: [https://forum.qubes-os.org/t/how-much-do-we-gotta-worry-about-this-linux-age-verification-bs/39788 How much do we gotta worry about this Linux "age verification" BS?]
 * Older statement by Marek on a <u>different topic</u>: [https://forum.qubes-os.org/t/european-union-and-os-level-backdoors/1025/21 European Union And OS level Backdoors (2020)]
 
 == Contingency Plan ==
@@ -541,7 +541,7 @@ Device/account setup must be '''required'''. Bold emphasis added.
 
 {{quotation
 |quote=1798.501. (a) An operating system provider shall do all of the following:
-(1) Provide an accessible interface at account setup that '''requires''' an account holder to indicate the birth date, age, or both, of the user of that device for the purpose of providing a signal regarding the user&rsquo;s age bracket to applications available in a covered application store.
+(1) Provide an accessible interface at account setup that '''requires''' an account holder to indicate the birth date, age, or both, of the user of that device for the purpose of providing a signal regarding the user's age bracket to applications available in a covered application store.
 }}
 
 The statute uses the word "requires", so implementations might need to be designed so the account holder cannot complete account setup without providing age or DoB. Until it is done, the account holder might be unable to access the relevant signal functionality.
@@ -563,7 +563,7 @@ What might be required:
 Why ask the awkward question <code>What is the age (in years) of the primary user of this device?</code> instead of <code>How old are you?</code> Because the law requires asking for the age of the user, not necessarily you.
 
 {{quotation
-|quote=(i) &ldquo;User&rdquo; means a child that is the primary user of the device.
+|quote=(i) "User" means a child that is the primary user of the device.
 }}
 
 === Age versus Date of Birth ===
@@ -571,7 +571,7 @@ Bold added. Underline added.
 
 {{quotation
 |quote=
-1798.502. (a) With respect to a device for which account setup was completed before January 1, 2027, an operating system provider shall, before July 1, 2027, provide an accessible interface that allows an account holder to indicate the birth date''',''' <u>age</u>, '''or''' both, of the user of that device for the purpose of providing a signal regarding the user&rsquo;s age bracket to applications available in a covered application store.
+1798.502. (a) With respect to a device for which account setup was completed before January 1, 2027, an operating system provider shall, before July 1, 2027, provide an accessible interface that allows an account holder to indicate the birth date''',''' <u>age</u>, '''or''' both, of the user of that device for the purpose of providing a signal regarding the user's age bracket to applications available in a covered application store.
 }}
 
 === Prompt for Age instead of Age Bracket ===
@@ -605,7 +605,7 @@ No other known alternatives at the time of writing.
 
 == Applicability / scope ==
 * <u>Not applicable:</u> Unfortunately it is applicable. {{quotation
-|quote=(g) &ldquo;Operating system provider&rdquo; means a person or entity that develops, licenses, or controls the operating system software on a computer, mobile device, or any other general purpose computing device.
+|quote=(g) "Operating system provider" means a person or entity that develops, licenses, or controls the operating system software on a computer, mobile device, or any other general purpose computing device.
 }}
 * <u>Applies to commercial vendors only:</u> There is no passage in the law that limits this to commercial vendors.
 * <u>A VM is not an {{os}}:</u> Possibly. Risky. This is an unresolved legal question.
@@ -779,7 +779,7 @@ https://discussion.fedoraproject.org/t/california-age-verification/181968/92
 ** <u>Other similar mechanisms:</u> Additional technical controls with similar effects, etc.
 ** <u>Broader concern:</u> This trend might be part of the [[Miscellaneous_Threats_to_User_Freedom#War_on_General_Purpose_Computing|War on General Purpose Computing]], where general purpose devices are increasingly restricted through technical controls, policy requirements and user freedom being lost.
 * <u>Implementation is not good enough:</u> Opinionated. A reasonable effort has been made. Four related mailing lists have been contacted, see [[Age-api#On_the_unfortunate_need_for_an_"age_verification"_API_for_legal_compliance_reasons_in_some_U.S._states|On the unfortunate need for an "age verification" API for legal compliance reasons in some U.S. states]]. [[Age-api#Development|Development]] has been done. {{quotation
-|quote=(b) An operating system provider or a covered application store that makes a good faith effort to comply with this title, taking into consideration available technology and any reasonable technical limitations or outages, shall not be liable for an erroneous signal indicating a user&rsquo;s age range or any conduct by a developer that receives a signal indicating a user&rsquo;s age range.
+|quote=(b) An operating system provider or a covered application store that makes a good faith effort to comply with this title, taking into consideration available technology and any reasonable technical limitations or outages, shall not be liable for an erroneous signal indicating a user's age range or any conduct by a developer that receives a signal indicating a user's age range.
 }}
 * <u>You should use the standard API:</u> An age API convention/standard does not exist yet. If one were to exist, it would be considered.
 
@@ -803,7 +803,7 @@ What would be the legal impact if [[malware]] if downgrading or upgrading the ag
 While malware is always a security issue for the user, it may not be a legal issue for the operating system provider as far as [https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043 California AB 1043] is concerned.
 
 {{quotation
-|quote=(b) An operating system provider or a covered application store that makes a good faith effort to comply with this title, taking into consideration available technology and any reasonable technical limitations or outages, shall not be liable for an erroneous signal indicating a user&rsquo;s age range or any conduct by a developer that receives a signal indicating a user&rsquo;s age range.
+|quote=(b) An operating system provider or a covered application store that makes a good faith effort to comply with this title, taking into consideration available technology and any reasonable technical limitations or outages, shall not be liable for an erroneous signal indicating a user's age range or any conduct by a developer that receives a signal indicating a user's age range.
 }}
 
 Related: [[Age-api#Security_Impact|Security Impact]]
@@ -923,7 +923,7 @@ ag.ny.gov: [https://ag.ny.gov/resources/individuals/consumer-issues/technology/p
 {{quotation
 |quote=8. Age Assurance Method
 
-The proposed rule defines &ldquo;age assurance method&rdquo; as any type of age estimation, age inference, or age verification. &ldquo;Age assurance&rdquo; is typically used as an umbrella term for various types of methods that can support a conclusion regarding an individual&rsquo;s age or age status, often for the purpose of making an age-related eligibility decision. For purposes of compliance with the proposed rule, OAG has identified three categories of age assurance that are considered age assurance methods, each of which contains one or more methods that can meet the accuracy minimum if effectively implemented and executed. The OAG seeks comments on the proposed definition of age assurance method
+The proposed rule defines "age assurance method" as any type of age estimation, age inference, or age verification. "Age assurance" is typically used as an umbrella term for various types of methods that can support a conclusion regarding an individual's age or age status, often for the purpose of making an age-related eligibility decision. For purposes of compliance with the proposed rule, OAG has identified three categories of age assurance that are considered age assurance methods, each of which contains one or more methods that can meet the accuracy minimum if effectively implemented and executed. The OAG seeks comments on the proposed definition of age assurance method
 }}
 
 {{quotation

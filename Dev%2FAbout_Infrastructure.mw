@@ -178,9 +178,9 @@ the following actions have been taken:
 quote https://mytechiethoughts.com/linux/implementing-dane-with-certbot-using-lets-encrypt/
 
 <blockquote>
-The problem with regular Let&rsquo;s Encrypt certificates
+The problem with regular Let's Encrypt certificates
 
-As you know, Let&rsquo;s Encrypt certificates renew every 90 days. This is not a problem in itself, however, the standard procedure is to generate a new private key with each renewal and, thus, an entirely new public key also. This will necessarily change the hashed key value that would appear in our TLSA record meaning that we would have to remember to update our DNS records on each renewal otherwise the wrong key will be specified and no one will trust our site/server/application! We need to tell Let&rsquo;s Encrypt to re-use our private key so that the public key hash value does NOT change &ndash; that way our DNS record remains valid across certificate renewals.
+As you know, Let's Encrypt certificates renew every 90 days. This is not a problem in itself, however, the standard procedure is to generate a new private key with each renewal and, thus, an entirely new public key also. This will necessarily change the hashed key value that would appear in our TLSA record meaning that we would have to remember to update our DNS records on each renewal otherwise the wrong key will be specified and no one will trust our site/server/application! We need to tell Let's Encrypt to re-use our private key so that the public key hash value does NOT change - that way our DNS record remains valid across certificate renewals.
 </blockquote>
 
 -> https://github.com/letsencrypt/boulder/issues/1882
@@ -285,19 +285,19 @@ Separate server/IP for e-mail required since it cannot be hidden by CDN.
 Quote https://support.cloudflare.com/hc/en-us/articles/115003687931-Warning-about-exposing-your-origin-IP-address-via-DNS-records
 
 <pre>
-To take advantage of Cloudflare&rsquo;s performance and security benefits, we recommend you orange-cloud DNS records that handle HTTP traffic, including A, AAAA, and CNAME. However, do not orange-cloud A, AAAA, or CNAME records used to resolve MX records.  For instance, if you have an MX record that points to mail.example.com as your mail server, orange-clouding the A record for mail.example.com will break your mail traffic.
+To take advantage of Cloudflare's performance and security benefits, we recommend you orange-cloud DNS records that handle HTTP traffic, including A, AAAA, and CNAME. However, do not orange-cloud A, AAAA, or CNAME records used to resolve MX records.  For instance, if you have an MX record that points to mail.example.com as your mail server, orange-clouding the A record for mail.example.com will break your mail traffic.
 </pre>
 
 <pre>
 However, there are times when some of your DNS records need to remain grey-clouded. For example:
 
-    A, AAAA, or CNAME records used for mail traffic must not be orange-clouded because email routing won&rsquo;t pass through Cloudflare's proxy.
+    A, AAAA, or CNAME records used for mail traffic must not be orange-clouded because email routing won't pass through Cloudflare's proxy.
     When you have to host multiple services (for example, a website and email) on the same physical server
 
 To mitigate this risk, we recommend that you:
 
-    Host your email service in a server (in-house or external) that is different from your site&rsquo;s origin server
-    Analyze the impact of hosting multiple services on the same origin server in cases when having grey-clouded DNS records can&rsquo;t be avoided
+    Host your email service in a server (in-house or external) that is different from your site's origin server
+    Analyze the impact of hosting multiple services on the same origin server in cases when having grey-clouded DNS records can't be avoided
     Orange-cloud all records that share the same origin IP address as your root domain and can be safely proxied through Cloudflare
 </pre>
 
