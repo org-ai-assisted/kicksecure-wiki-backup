@@ -17,7 +17,7 @@ todo
 * https://samy.pl/pwnat
 * https://github.com/samyk/pwnat
 
-To make the client&rsquo;s browser access <code><nowiki>http://127.0.0.1</nowiki></code> (port <code>80</code>) and get your HTTP server behind NAT, here&rsquo;s the correct setup:
+To make the client's browser access <code><nowiki>http://127.0.0.1</nowiki></code> (port <code>80</code>) and get your HTTP server behind NAT, here's the correct setup:
 
 On Your Server (behind NAT, running the HTTP service on port <code>8080</code>):
 
@@ -47,7 +47,7 @@ sudo ./pwnat -c 0.0.0.0 80 your.server.public.ip 2222 127.0.0.1 8080
 This:
 
 * Binds to port <code>80</code> on the client (accessible via <code><nowiki>http://127.0.0.1</nowiki></code>)
-* Proxies requests through your server&rsquo;s <code>pwnat</code> to its local <code>8080</code>
+* Proxies requests through your server's <code>pwnat</code> to its local <code>8080</code>
 * Now, on the client machine, just open:
 
 {{CodeSelect|code=
@@ -56,7 +56,7 @@ http://127.0.0.1
 
 Expected result:
 
-Client should see the server&rsquo;s content.
+Client should see the server's content.
 
 == Actual Result ==
 
