@@ -18,7 +18,7 @@ The issues discussed on this page are the same for any operating system and are 
 = The Challenge of System Audits =
 Performing system audits is beyond the reach of non-technical users. It requires a deep understanding of source code, the ability to utilize specialized analysis tools, and the expertise to interpret complex outputs. This level of proficiency is typically found in sysadmins or individuals with similar technical backgrounds.
 
-Much like how a non-specialist cannot perform heart surgery, even a doctor outside of that field lacks the skills to do so. There&rsquo;s no shame in this limitation. It simply reflects the specialized knowledge required for such a task. Similarly, expecting a non-technical user to conduct a system audit is unrealistic.
+Much like how a non-specialist cannot perform heart surgery, even a doctor outside of that field lacks the skills to do so. There's no shame in this limitation. It simply reflects the specialized knowledge required for such a task. Similarly, expecting a non-technical user to conduct a system audit is unrealistic.
 
 = Limitations of Automated Tools =
 There are no automated tools for end users with sufficient usability to be truly informative. Rather than providing insights, existing tools often lead to more questions and cause confusion. In general, this is related to the current state of development for security-focused operating systems. See:
@@ -63,7 +63,7 @@ The problem is, if you are a non-technical person, all of us can tell you our so
 }}
 
 {{quotation
-|quote=Fulton&rsquo;s study confirms that non-technical end users often turn to fictional media and its tropes to fill gaps in their technical knowledge. Participants often did not have enough technical knowledge to accurately evaluate a scene and would turn to existing tropes to justify realism;
+|quote=Fulton's study confirms that non-technical end users often turn to fictional media and its tropes to fill gaps in their technical knowledge. Participants often did not have enough technical knowledge to accurately evaluate a scene and would turn to existing tropes to justify realism;
 }}
 
 {{quotation
