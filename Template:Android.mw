@@ -462,7 +462,7 @@ All upgrades are downloaded over Tor. There is no way for the server to ship leg
 
 |}
 
-Quote [https://www.theregister.co.uk/2020/03/06/1_billion_vulnerable_android_devices_which/ More than a billion hopelessly vulnerable Android gizmos in the wild that no longer receive security updates &ndash; research]. The operating system of these devices:
+Quote [https://www.theregister.co.uk/2020/03/06/1_billion_vulnerable_android_devices_which/ More than a billion hopelessly vulnerable Android gizmos in the wild that no longer receive security updates - research]. The operating system of these devices:
 
 * Do not receive security upgrades from the vendor.
 * Third parties (such as users or the modding community) cannot provide (security) upgrades either due to locked bootloaders, which cannot be unlocked due to vendor decision and due to unavailability of a security bug which could unlock the bootloader.
