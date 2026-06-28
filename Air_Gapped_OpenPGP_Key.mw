@@ -140,7 +140,7 @@ sig-notation issuer-fpr@notations.openpgp.fifthhorseman.net=%g
 </pre>
 
 == Creating your Initial Keypair ==
-Use the {{Code2|gpg &#x2010;&#x2010;gen-key}} command to create a new GPG keypair.
+Use the {{Code2|gpg --gen-key}} command to create a new GPG keypair.
 
 When you create your new keypair, use the highest possible values for key length. As computers get more powerful and storage gets cheaper, it's conceivable that a nasty person could archive a message that's unbreakable today, then in the future break it using a more powerful computer. Using the highest possible value for key length helps protect you from that scenario. Don't use GPG's default of 2048!
 
@@ -210,7 +210,7 @@ Have a look at the "pub  4096R/488BA441 2013-03-13" line. In this example 0x2516
 == Creating your Signing Sub Key ==
 Now for the special sauce: let's add our new signing subkey.
 
-Use the {{Code2|gpg &#x2010;&#x2010;edit-key}} command. At the gpg> prompt, enter the command addkey. Select RSA (sign only) and 4096 for the keysize. Don't forget to save at the last gpg> prompt:
+Use the {{Code2|gpg --edit-key}} command. At the gpg> prompt, enter the command addkey. Select RSA (sign only) and 4096 for the keysize. Don't forget to save at the last gpg> prompt:
 
 <pre>
 gpg --homedir ~/gpg-master --edit-key 0x2516E552C8D4D937
@@ -345,7 +345,7 @@ Boot a live USB of Debian or your distro of choice. Then, import your master key
 gpg --import /path/to/0x2516E552C8D4D937.public.gpg-key /path/to/0x2516E552C8D4D937.private.gpg-key
 </pre>
 
-Now use {{Code2|gpg &#x2010;&#x2010;edit-key}} to interactively revoke your subkeys:
+Now use {{Code2|gpg --edit-key}} to interactively revoke your subkeys:
 
 <pre>
 gpg --edit-key 0x2516E552C8D4D937
