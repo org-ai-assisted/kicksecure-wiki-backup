@@ -425,10 +425,10 @@ upstream bug reports:
 == Kicksecure website link ==
 * To specifically link to the kicksecure wiki use this shortcut
 * Similar to [[#Kicksecure_wiki_link]], but (1) the parameters are not named, one is page and two is text and (2) the page always has to have <code>wiki/</code> explicitely as a prefix
-* Syntax: <pre>{{Kicksecure_link|wiki/Test|{{Kicksecure}}}}</pre>
+* Syntax: <pre>{{Kicksecure_link|wiki/Test|Kicksecure}}</pre>
 * Result: {{Kicksecure_link
 |wiki/Test
-|{{Kicksecure}}
+|Kicksecure
 }}
 
 == Twitter link ==
