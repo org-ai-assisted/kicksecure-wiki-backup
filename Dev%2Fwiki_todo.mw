@@ -23,6 +23,12 @@ Things which need to be done.
 ** Could be DNF issues. Waiting for port to trixie.
 * https://www.whonix.org/wiki/Special:WantedPages
 * Add an ability to get the latest version number updated for virtualbox from oracle or at least a notification of new release.
+* Tickets related salt for indicator phasing out manual use of qubes-dom0-update by user have been closed, and it looks like salt going to be replaced with Ansible. See what how you want to fix this part (delete completely or change words..).
+** https://www.whonix.org/wiki/Template:Qubes_Download_Install#cite_note-1
+* Onionizing dom0 in 4.3 need an upgrade as the directories mentioned not used anymore.
+** https://www.whonix.org/wiki/Onionizing_Repositories#Qubes-Whonix_Hosts
+* Path /etc/qubes-rpc/policy/qubes.UpdatesProxy doesnt exist:
+** https://www.whonix.org/wiki/Qubes/Uninstall#Stop_using_Whonix-Gateway_for_Torified_Template_Updates
 
 == broken links ==
 * In https://www.whonix.org/wiki/Template:Dev/Project_Networking
