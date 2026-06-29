@@ -5735,7 +5735,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 *** load css file via ajax
 *** new crypto icons and more tag
 *** fine tuning + update download button documentation
-** documentation for new ajax method [[Dev/mediawiki#Javascript:_Ajax_Loading_for_special_cases|Javascript: Ajax Loading for special cases]]
+** documentation for new ajax method [[Dev/mediawiki#JavaScript_Ajax_Loading_for_special_cases|JavaScript Ajax Loading for special cases]]
 ** new coming soon icon
 ** Tronix payment added to payments page
 

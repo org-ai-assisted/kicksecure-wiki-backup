@@ -58,74 +58,9 @@ MediaWiki upstream (historical references for the original extension):
 |title=Current snapshot of the content that we include via Headscript
 |smallTitle=true
 |content=
-<pre>
-<!-- Begin Extension:HeadScript
--------------------------------
-* server-type  :  production
-* Path to scripts : /mw-autogen
-* Wiki page: Dev/mediawiki
-* Url query parameter "debug" : undefined
-* Url query parameter "dontload" : undefined
-* $wgResourceLoaderDebug : "" (empty string)
--->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg?hsversion=2" sizes="any">
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?hsversion=2">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?hsversion=2">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?hsversion=2">
-<link rel="manifest" href="/site.webmanifest?hsversion=2">
-<link rel="mask-icon" href="/safari-pinned-tab.svg?hsversion=2" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
-
-<meta name="msapplication-TileColor" content="#da532c">
-
-<link rel="preload" href="/libs/Roboto_2023-08-03/Roboto-Regular-webfont.woff" as="font" crossorigin fetchpriority="low">
-<link rel="preload" href="/libs/Roboto_2023-08-03/Roboto-Light-webfont.woff" as="font" crossorigin fetchpriority="low">
-<link rel="preload" href="/libs/Cousine_2023-08-03/Cousine-Regular.woff" as="font" crossorigin fetchpriority="low">
-<link rel="preload" href="/libs/Font-Awesome_2023-08-03/webfonts/fa-solid-900.woff2" as="font" crossorigin fetchpriority="low">
-<link rel="preload" href="/libs/Font-Awesome_2023-08-03/webfonts/fa-regular-400.woff2" as="font" crossorigin fetchpriority="low">
-<link rel="preload" href="/libs/Font-Awesome_2023-08-03/webfonts/fa-brands-400.woff2" as="font" crossorigin fetchpriority="low">
-
-<style>
-@font-face { font-family: Roboto; src: url(/libs/Roboto_2023-08-03/Roboto-Regular-webfont.woff); font-display: swap; }
-@font-face { font-family: Roboto; font-weight: 300; src: url(/libs/Roboto_2023-08-03/Roboto-Light-webfont.woff); font-display: swap; }
-@font-face { font-family: Cousine; src: url(/libs/Cousine_2023-08-03/Cousine-Regular.woff); font-display: swap; }
-</style>
-
-<link rel="stylesheet" media="print" onload="this.media='all'" href="/libs/Font-Awesome_2023-08-03/css/fontawesome.min.css" fetchpriority="low">
-<link rel="stylesheet" media="print" onload="this.media='all'" href="/libs/Font-Awesome_2023-08-03/css/solid.min.css" fetchpriority="low">
-<link rel="stylesheet" media="print" onload="this.media='all'" href="/libs/Font-Awesome_2023-08-03/css/regular.min.css" fetchpriority="low">
-<link rel="stylesheet" media="print" onload="this.media='all'" href="/libs/Font-Awesome_2023-08-03/css/brands.min.css" fetchpriority="low">
-
-<script id="js-cookie-script" defer fetchpriority="low" src="/libs/jscookie/js.cookie.min.js?hsversion=2"></script>
-
-<link rel="stylesheet" fetchpriority="low" media="print" onload="this.media='all'" href="/libs/Prism/prism.css?hsversion=2" >
-<script id="highlight-code-script" defer fetchpriority="low" src="/libs/Prism/prism.js?hsversion=2" data-manual></script>
-
-<script type="module" defer src="/libs/instant.page/instantpage.min.js?hsversion=2"></script>
-
-  <script type="text/javascript" defer id="core-dependent-libs">
-    (function() {
-      const coreDependentLibs = ["\/libs\/jquery-tinyscrollbar_2024-08-21\/jquery.tinyscrollbar.min.js"];
-      function triggerWhenReady() {
-        let deferred = [];
-        for( const i in coreDependentLibs ) deferred.push( $.getScript( coreDependentLibs[i] ) );
-        $.when.apply($, deferred).done(function() {
-          window.mediaWikiCommonJsAndHeadscriptcoreDependentLibsAreLoaded = true;
-          window.dispatchEvent( new Event("mediaWikiCommonJsAndHeadscriptcoreDependentLibsAreLoaded") );
-        });
-      }
-      if( window.mediaWikiCommonJsIsLoaded ) triggerWhenReady();
-      else window.addEventListener( "mediaWikiCommonJsIsLoaded", triggerWhenReady );
-    })();
-  </script>
-
-
-<link rel="stylesheet" href="/mw-autogen/mw-combined-wikicss.min.css?hsversion=2&version=1726479024">
-<script defer src="/mw-autogen/mw-combined-wikijs.min.js?hsversion=2&version=1726479024"></script>
-<!-- ------------------------
-/End Extension:HeadScript -->
-</pre>
+The current <head> snapshot was relocated to source control because it contains
+literal script and link tags the wiki WAF (ModSecurity CRS) rejects on save.
+See docs/wiki-development.mediawiki in the mediawiki-customized-dist repository.
 }}
 
 === Fonts ===
@@ -497,9 +432,8 @@ https://github.com/jthingelstad/foreground/issues/392
 == jscookie ==
 Within headscript we use:
 
-<pre>
-<script id="js-cookie-script" defer fetchpriority="low" src="/libs/jscookie/js.cookie.min.js"></script>
-</pre>
+Within headscript we include it via a deferred script tag (exact markup in the
+relocated source doc, docs/wiki-development.mediawiki in mediawiki-customized-dist).
 
 * <code>jscookie</code> is a simple small cookie library for all our cookie control needs and is only 2kb in size. So it's very practical and we couldn't program it ourselves any smaller.
 * We use it for <code>DebugViaUrlModal</code>, <code>FlyinNotification</code>, <code>SiteNotice</code> and <code>TocLevelSwitcher</code>.
@@ -1086,7 +1020,7 @@ For demonstrative purposes only: https://web.archive.org/web/20220204103725/http
 #* For this reason we execute our scripts wrapped within setTimout callbacks to make them asynchronous. This gives the browser "room to breathe" and to render changes to the Dom in between executing scripts
 #* On a micro-level we use this setTimeout async method for some "load expensive" scripts between the calls of each individual element in a set that is being enriched with functionality: {{CustomRepo|CodeSelect.js}}, {{CustomRepo|ShareToolitp.js}} and {{CustomRepo|ScrollAutoWrapper.js}}
 
-== Javascript: Ajax Loading for special cases ==
+== JavaScript Ajax Loading for special cases ==
 
 * '''Explanation / motivation'''
 ** Sometimes it is necessary (or highly preferred) to load pages via AJAX. This is the case when a functional module
@@ -1151,32 +1085,11 @@ For demonstrative purposes only: https://web.archive.org/web/20220204103725/http
 
 Any user-supplied URL that will be output into an HTML attribute (e.g. <code>href</code>, <code>src</code>, <code>data-*</code>) must be passed through a three-stage filter chain to prevent XSS via dangerous URL schemes.
 
-<pre>
-<!--{assign var="safeUrl" value=$url|default:''|regex_replace:'/[\x00-\x1F\x7F]/':''|regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'|escape:'html'}-->
-</pre>
-
-This pattern is used across multiple widgets (e.g. <code>LeftRightImageText</code>, <code>CodeSelect</code>, and any widget accepting URLs from user input).
-
-'''Stage 1 -- Strip ASCII control characters:''' <code>regex_replace:'/[\x00-\x1F\x7F]/':''</code>
-* Browsers silently strip control characters from URLs before navigation
-* An attacker can embed e.g. <code>\x00</code> into <code>jav\x00ascript:</code> to evade a literal string blacklist, yet the browser navigates to <code>javascript:</code> after stripping
-* Removing them first ensures the scheme check in stage 2 sees what the browser actually executes
-
-'''Stage 2 -- Block dangerous URL schemes:''' <code>regex_replace:'/^(javascript|data|vbscript|file)\s*:/i':'#blocked-$1:'</code>
-* Rewrites dangerous schemes into inert relative URLs: <code>javascript:alert(1)</code> &rarr; <code>#blocked-javascript:alert(1)</code>
-* The <code>\s*</code> catches whitespace-padded variants that some browsers accept (e.g. <code>javascript\t:</code>)
-* Case-insensitive match via the <code>i</code> flag
-* The blocked schemes are:
-** <code>javascript:</code> -- direct script execution
-** <code>data:</code> -- inline content that can contain active script
-** <code>vbscript:</code> -- legacy IE script execution (still parsed by some engines)
-** <code>file:</code> -- local file access
-
-'''Stage 3 -- HTML-escape for attribute context:''' <code>escape:'html'</code>
-* Standard entity encoding to prevent breaking out of the attribute with quotes or angle brackets
-* Must be applied last so the escaping doesn't interfere with the regex patterns above
-
-'''Order matters:''' Control chars must be stripped before scheme checking (otherwise browser and filter see different strings), and HTML-escaping must happen after the other filters to avoid false negatives.
+The worked examples (the safeUrl regex chain and the blocked URL schemes) were
+relocated to source control: they contain literal dangerous-scheme strings the wiki
+WAF rejects on save. The filter is implemented in
+extensions/Kicksecure/src/WidgetUtil.php (the safeUrl method); the worked examples
+are in docs/wiki-development.mediawiki in the mediawiki-customized-dist repository.
 
 = Module Documentation (Alphabetical order) =
 
@@ -1591,7 +1504,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 ## '''targetBlank | boolean, optional, default: false''' - If true will be filling the target attribute with "_blank"
 ## '''redirectUrl | string, optional''' - If set then after clicking Download and after 1 second the page will be redirected to the given URL
 ##* '''NOTE''': The redirectURL is secured against external links. This is done to safeguard against malicious editor attacks. If an external url is given then in the browser dev tools console there will be an error displayed and no redirect will be executed.
-## '''modal | boolean, optional''' - If set to true, then the "pay-as-you-go-modal" will be opened. This modal has a donation appeal, a paypal, crypto and other payments module and the download is delayed for a couple of settings (can be set in {{CustomRepo|Download_Button.js}}). This modal uses this special loading technique for parts of its HTML and data: [[Dev/mediawiki#Javascript:_Ajax_Loading_for_special_cases|Javascript: Ajax Loading for special cases]]
+## '''modal | boolean, optional''' - If set to true, then the "pay-as-you-go-modal" will be opened. This modal has a donation appeal, a paypal, crypto and other payments module and the download is delayed for a couple of settings (can be set in {{CustomRepo|Download_Button.js}}). This modal uses this special loading technique for parts of its HTML and data: [[Dev/mediawiki#JavaScript_Ajax_Loading_for_special_cases|JavaScript Ajax Loading for special cases]]
 # '''NOTE''': We tried using a template to track all usage of the Download_Button. Unfortunately this is technically very unfavorable for this use case. Read [[Widget:Download_Button]] for further information. To find the uses of Download_Button, type into search <code><nowiki>#widget:Download_Button</nowiki></code>
 
 == DownloadTableUnified Template ==
