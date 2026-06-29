@@ -434,25 +434,10 @@ Malicious Editor attack / editor mistake test: redirect URL is external - Click 
 
 == EagerImage (widget) ==
 
-Test 1 : Normal image URL renders correctly
-* {{#eagerimage:src=/w/images/thumb/a/a3/Heckert_gnu.big.png/100px-Heckert_gnu.big.png|alt=GNU logo}}
-* see code of image above, expectation: <pre><img loading="eager" src="/w/images/thumb/a/a3/Heckert_gnu.big.png/100px-Heckert_gnu.big.png" class="" alt="GNU logo" /></pre>
-
-Test 2 : JavaScript protocol attack is attempted and blocked
-* {{#eagerimage:src=javascript:alert('xss')|alt=test}}
-* see code of image above (edit as HTML), expectation: <pre><img loading="eager" src="#blocked-javascript:alert(&amp;#039;xss&amp;#039;)" class="" alt="test" /></pre>
-
-Test 3 : Data URI protocol attack is attempted blocked
-* {{#eagerimage:src=data:text/html,<script>alert(1)</script>|alt=test}}
-* see code of image above (edit as HTML), expectation: <pre><img loading="eager" src="#blocked-data:text/html,&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt;" class="" alt="test" /></pre>
-
-Test 4 : XSS in alt attribute attack is attempted and escaped
-* {{#eagerimage:src=/images/photo.jpg|alt=" onerror="alert('xss')}}
-* see code of image above (edit as HTML), expectation: <pre><img loading="eager" src="/images/photo.jpg" class="" alt="&amp;quot; onerror=&amp;quot;alert(&amp;#039;xss&amp;#039;)" /></pre>
-
-Test 5 : XSS in addToClass attack is attempted and escaped and control chars stripped
-* {{#eagerimage:src=/images/photo.jpg|alt=test|addToClass="><script>alert(1)</script>}}
-* see code of image above (edit as HTML), expectation: <pre><img loading="eager" src="/images/photo.jpg" class="&amp;quot;&amp;gt;&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt;" alt="test" /></pre>
+The EagerImage (#eagerimage) sanitisation tests use literal XSS payloads
+(javascript-scheme URLs, script tags, event-handler attributes) that the wiki
+WAF rejects on save. They were relocated to source control: see
+docs/wiki-development.mediawiki in the mediawiki-customized-dist repository.
 
 == Expand Button ==
 

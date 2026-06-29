@@ -1320,7 +1320,7 @@ Additional security concerns in strip-markup
 
     Terminal/console escape injection remains possible. The sanitizer removes only markup tags and replaces <, >, and & with underscores when it detects suspicious transformations, but it leaves all other control characters untouched. Because StripMarkupEngine runs with convert_charrefs = True, an attacker can supply inputs containing HTML entities for escape characters (e.g., &#27; for ESC), which will be decoded and written back out unchanged via sys.stdout.write. This can produce ANSI escape sequences in logs or terminals, enabling log forgery or malicious terminal control even though HTML tags were stripped.
 
-Not safe for contextual HTML output. The "sanitization" only removes tags and (in the fallback path) converts <, >, and & to underscores; it does not escape quotes, backticks, or other characters that are dangerous in attribute, JavaScript, or CSS contexts. If the supposedly "clean" output is later interpolated into HTML attributes or script blocks, an attacker can inject payloads such as javascript:... URLs or string-breaking quotes that lead to XSS despite markup stripping.
+Not safe for contextual HTML output. The &ldquo;sanitization&rdquo; only removes tags and (in the fallback path) converts <, >, and & to underscores; it does not escape quotes, backticks, or other characters that are dangerous in attribute, JavaScript, or CSS contexts. If the supposedly &ldquo;clean&rdquo; output is later interpolated into HTML attributes or script blocks, an attacker can inject payloads such as javascript:... URLs or string-breaking quotes that lead to XSS despite markup stripping.
 </pre>
 
 * Aaron:
@@ -5764,7 +5764,7 @@ Session=sysmaint-session" \
 
 * needs to be run under user sysmaint to avoid permission issues
 * needs Depends: safe-rm maybe?
-* sysmaint-panel folder /usr/lib/systemd/system doesn't seem right for a gui package. Maybe...
+* sysmaint-panel folder /usr/lib/systemd/system doesn&rsquo;t seem right for a gui package. Maybe...
 ** user-sysmaint-split-cli
 ** user-sysmaint-split-gui
 ** sysmaint-panel
