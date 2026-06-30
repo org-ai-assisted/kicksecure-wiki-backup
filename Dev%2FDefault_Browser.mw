@@ -758,7 +758,7 @@ appropriate) to do the following:<br>
 * Use unaltered binaries.<br>
 * Disable all Telemetry, Studies, Reports, and non-essential implicit <br>
 outgoing connections.<br>
-* Force install the addon &quot;uBlock Origin&quot; by Raymond Hill.<br>
+* Force install the addon "uBlock Origin" by Raymond Hill.<br>
 * Set and lock hardened SSL/TLS-related settings, including, but not <br>
 limited to, setting HTTPS-only mode as the default, blocking mixed <br>
 content, not trusting unsafe negotiations, disabling unencrypted <br>
@@ -773,7 +773,7 @@ As an illustrative point of how specifically we plan to apply these changes=
 :<br>
 <br>
 - Our intended changes would be made by providing a separate package <br>
-(for example, named &quot;hardened-browser-config&quot;).<br>
+(for example, named "hardened-browser-config").<br>
 - This package would install config file(s) in folder(s) such as <br>
 /etc/firefox or /etc/firefox-esr.<br>
 - The package would be installed by default.<br>
