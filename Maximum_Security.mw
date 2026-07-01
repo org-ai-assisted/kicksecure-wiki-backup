@@ -31,7 +31,13 @@ LFS allows to tailor the operating system for a specific use-case only. The atta
 |context=Common idiom.
 }}
 
-Linux isn't maximally secure either. Look for alternatives or build your own kernel. Consider using specialized hardware and operating systems.
+A Linux distinction necessarily needs to make decisions on behalf of its users.
+
+Cannot "have it all".
+
+The Linux isn't maximally secure either. Neither has it maximum security as a development goal. Actually https://www.washingtonpost.com/sf/business/2015/11/05/net-of-insecurity-the-kernel-of-the-argument/
+
+Look for alternatives or build your own kernel. Consider using specialized hardware and operating systems.
 
 See also:
 
