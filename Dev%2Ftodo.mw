@@ -37,6 +37,8 @@ Developer task list and work queue. This page summarizes short-term development 
 
 == tor-control-panel re-review ==
 * todo
+** Aaron: Most of the TODOs haven't been handled. A meld between troubadour's most recent code and my merged-tcp-review repo shows the remaining issues that need fixed or at least considered.
+*** Discussed with Patrick, will review for non-maliciousness, check functionality, try to fix the most glaring bugs, then merge despite low code quality. It's likely better than what we have currently, and we can fix it up more later.
 
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
@@ -677,9 +679,6 @@ Nov 24 10:13:35 localhost agetty[1346]: -: failed to get terminal attributes: In
 * test if DRM (direct rendering manager) is enabled as per https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration_-_Testing_-_drm
 * test performance as per https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration_-_Testing_-_Performance
 
-=== KVM - verify AppArmor sVirt confinement operation ===
-* https://forums.whonix.org/t/help-welcome-kvm-development-staying-the-course/166/593
-
 === KVM - use rootless ===
 * https://forums.whonix.org/t/rootless-virtual-machines-with-kvm-and-qemu/20952
 ** https://forums.whonix.org/t/no-internet-connection-inside-whonix-workstation-kvm-with-nordvpn-with-kill-switch-on-host/13763
@@ -1077,6 +1076,8 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 ** please commit on top in case any changes needed
 *** Aaron: Reviewed, made some minor tweaks but otherwise kept the fix. Commit pushed to sdwdate-gui.
 
+= ARCHIVED =
+
 == arti preliminary research ==
 * https://forums.whonix.org/t/keep-an-eye-on-arti-tor/15815
 * When to start the port?
@@ -1369,7 +1370,6 @@ zsh: exit 1     dpkg -S /etc/grub.d/*
 * lock-screen reports it cannot lock the screen and system then frozen. Might not be related to lock-screen.
 * Aaron: Cannot reproduce on my main development machine. On a testing machine, an instant reboot was observed after waking from sleep, but installing <code>debug-misc</code> made the reboots stop. Checking <code>dmesg</code> after wake revealed a kernel warning occurring while waking a device from suspend during a filesystem write. Issue is therefore likely hardware-specific, and may be resolved by disabling panic-on-warn.
 
-= ARCHIVED =
 == clipboard - upstream shared folder based clipboard sharing script ==
 * Aaron:
 ** https://forums.whonix.org/t/i-made-a-fix-for-the-shared-clipboard-issue/22705
