@@ -22,6 +22,9 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
+== virtualbox - black screen ==
+* https://forums.whonix.org/t/whonix-18-2-1-0-black-screen-after-upgrading-vbox-guest-additions/23380
+
 == virtualbox - fork vbox-guest-additions-iso, replace existing guest additions with it and fix clipboard ==
 * Aaron:
 ** Add Breaks/Replaces against virtualbox-guest-x11 and virtualbox-guest-utils to dist-vm-gui-all, dist-baremetal-gui-all
