@@ -35,6 +35,10 @@ Developer task list and work queue. This page summarizes short-term development 
 ** Write a packaging helper script that will download the latest VirtualBox package from Oracle upstream, extract the VBoxGuestAdditions ISO from it, and add it to our fork of virtualbox-guest-additions-iso
 *** Mostly done, commits pushed to vm-config-dist, developer-meta-files, user-sysmaint-split, kicksecure-meta-packages, and anon-meta-packages. New repo created: https://github.com/ArrayBolt3/virtualbox-guest-additions-iso. Still need to write the script for fetching new ISOs, the ISO currently present in virtualbox-guest-additions-iso was taken from my ks-dev qube where virtualbox-7.2 (specifically version 7.2.10) is installed.
 
+== append-shared - fix newline handling ==
+* Aaron:
+** POSIX considers a 0-byte file a valid text file despite lacking a terminating newline. append-shared currently (wrongly) operates such that 0-byte files are considered "not true text files" and insists on adding a terminating newline to them. Fix this.
+
 == tor-control-panel re-review ==
 * todo
 ** Aaron: Most of the TODOs haven't been handled. A meld between troubadour's most recent code and my merged-tcp-review repo shows the remaining issues that need fixed or at least considered.
