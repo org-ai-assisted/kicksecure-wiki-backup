@@ -23,6 +23,7 @@ Developer task list and work queue. This page summarizes short-term development 
 
 = TODO DEV =
 == virtualbox - black screen ==
+* https://download.whonix.org/ova/18.2.1.0/
 * https://forums.whonix.org/t/whonix-18-2-1-0-black-screen-after-upgrading-vbox-guest-additions/23380
 
 == virtualbox - fork vbox-guest-additions-iso, replace existing guest additions with it and fix clipboard ==
