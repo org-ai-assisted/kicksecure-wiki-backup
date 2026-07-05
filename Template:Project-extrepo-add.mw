@@ -86,10 +86,10 @@ Please press expand on the right side.
 <div class="mw-collapsible-content">
 Optional.
 
-Install <code>apt-transport-tor</code>.
+Install <code>apt-transport-tor</code> and <code>tor</code>.
 
 {{Install_Package|package=
-apt-transport-tor
+apt-transport-tor tor
 }}
 
 Find out the filename.
