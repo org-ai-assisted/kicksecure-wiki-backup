@@ -22,9 +22,6 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
-== strip-markup fixes ==
-* https://github.com/org-ai-assisted/helper-scripts/pull/57
-
 == virtualbox - black screen ==
 * https://download.whonix.org/ova/18.2.1.0/
 * https://forums.whonix.org/t/whonix-18-2-1-0-black-screen-after-upgrading-vbox-guest-additions/23380
@@ -1061,6 +1058,10 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== strip-markup fixes ==
+* https://github.com/org-ai-assisted/helper-scripts/pull/57
+** Aaron: Merged, then added a commit on top to make it more strict. See https://github.com/org-ai-assisted/helper-scripts/pull/57#issuecomment-4884929130 for rationale and a possible concern.
+
 == append-shared - fix newline handling ==
 * Aaron:
 ** POSIX considers a 0-byte file a valid text file despite lacking a terminating newline. append-shared currently (wrongly) operates such that 0-byte files are considered "not true text files" and insists on adding a terminating newline to them. Fix this.
