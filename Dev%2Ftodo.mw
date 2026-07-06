@@ -43,11 +43,9 @@ Developer task list and work queue. This page summarizes short-term development 
 *** Draft spec MR: https://gitlab.freedesktop.org/xdg/xdg-specs/-/merge_requests/116
 *** This was essentially rejected (not formally yet but the Flatpak and xdg-desktop-portal maintainer is not happy with it). Trying to convince Wine to use binfmt-misc at least on Linux even if not on other platforms.
 
-== labwc versus WAYLAND_DISPLAY environment variable ==
-* https://forums.kicksecure.com/t/system-maintenance-panel-not-showing-up/1603
-
 == sysmaint-panel versus scaling ==
 * https://forums.kicksecure.com/t/system-maintenance-panel-crash-with-display-scaling/1679
+** Current most likely solution: port to PyQt6 and see what happens.
 
 == Whonix-Installer - update for new Whonix-Starter code, bugfix ==
 * Needs to use the EXE installer compiled by NSIS now
@@ -1039,6 +1037,10 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== labwc versus WAYLAND_DISPLAY environment variable ==
+* https://forums.kicksecure.com/t/system-maintenance-panel-not-showing-up/1603
+** Aaron: THe code to fix this was merged and migrated to the testers repository, is this done?
+
 == tor-control-panel re-review ==
 * todo
 ** Aaron: Most of the TODOs haven't been handled. A meld between troubadour's most recent code and my merged-tcp-review repo shows the remaining issues that need fixed or at least considered.
