@@ -22,11 +22,6 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
-== tor-control-panel re-review ==
-* todo
-** Aaron: Most of the TODOs haven't been handled. A meld between troubadour's most recent code and my merged-tcp-review repo shows the remaining issues that need fixed or at least considered.
-*** Discussed with Patrick, will review for non-maliciousness, check functionality, try to fix the most glaring bugs, then merge despite low code quality. It's likely better than what we have currently, and we can fix it up more later.
-
 == sdwdate-gui not showing up in sysmaint session race condition fix ==
 * https://forums.whonix.org/t/sdwdate-gui-systray-is-not-appearing-in-whonix-gateway-sysmaint-session/23342
 * https://github.com/org-ai-assisted/sdwdate-gui/pull/1
@@ -1043,6 +1038,12 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== tor-control-panel re-review ==
+* todo
+** Aaron: Most of the TODOs haven't been handled. A meld between troubadour's most recent code and my merged-tcp-review repo shows the remaining issues that need fixed or at least considered.
+*** Discussed with Patrick, will review for non-maliciousness, check functionality, try to fix the most glaring bugs, then merge despite low code quality. It's likely better than what we have currently, and we can fix it up more later.
+*** Review and merge done. Commits pushed to anon-connection-wizard and tor-control-panel.
+
 == virtualbox - fork vbox-guest-additions-iso, replace existing guest additions with it and fix clipboard ==
 * Aaron:
 ** Add Breaks/Replaces against virtualbox-guest-x11 and virtualbox-guest-utils to dist-vm-gui-all, dist-baremetal-gui-all
