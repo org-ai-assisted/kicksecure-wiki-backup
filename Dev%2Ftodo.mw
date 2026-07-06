@@ -27,6 +27,11 @@ Developer task list and work queue. This page summarizes short-term development 
 ** Aaron: Most of the TODOs haven't been handled. A meld between troubadour's most recent code and my merged-tcp-review repo shows the remaining issues that need fixed or at least considered.
 *** Discussed with Patrick, will review for non-maliciousness, check functionality, try to fix the most glaring bugs, then merge despite low code quality. It's likely better than what we have currently, and we can fix it up more later.
 
+== sdwdate-gui not showing up in sysmaint session race condition fix ==
+* https://forums.whonix.org/t/sdwdate-gui-systray-is-not-appearing-in-whonix-gateway-sysmaint-session/23342
+* https://github.com/org-ai-assisted/sdwdate-gui/pull/1
+** Aaron: AI mis-identified the issue. Found the real problem and resolved it, commits pushed to user-sysmaint-split and sdwdate-gui.
+
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
 * Keep in mind that room should be left for vm-app-manager features to be integrated into this
@@ -1060,11 +1065,6 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Aaron:
 ** POSIX considers a 0-byte file a valid text file despite lacking a terminating newline. append-shared currently (wrongly) operates such that 0-byte files are considered "not true text files" and insists on adding a terminating newline to them. Fix this.
 *** Fixed, commit pushed to helper-scripts.
-
-== sdwdate-gui not showing up in sysmaint session race condition fix ==
-* https://forums.whonix.org/t/sdwdate-gui-systray-is-not-appearing-in-whonix-gateway-sysmaint-session/23342
-* https://github.com/org-ai-assisted/sdwdate-gui/pull/1
-** Aaron: AI mis-identified the issue. Found the real problem and resolved it, commits pushed to user-sysmaint-split and sdwdate-gui.
 
 == strip-markup fixes ==
 * https://github.com/org-ai-assisted/helper-scripts/pull/52
