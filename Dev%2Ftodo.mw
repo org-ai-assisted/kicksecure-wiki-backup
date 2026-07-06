@@ -41,6 +41,7 @@ Developer task list and work queue. This page summarizes short-term development 
 ** The current MIME handler situation on Linux means that there is no way to distinguish between MIME handlers that open files and MIME handlers that execute files. There is a real need for the latter, despite the fact that the xdg-mime manpage currently documents that MIME handlers should never blindly execute code.
 ** Try to work with FreeDesktop and other projects to introduce a way for MIME handlers that execute code to be registered and handled safely.
 *** Draft spec MR: https://gitlab.freedesktop.org/xdg/xdg-specs/-/merge_requests/116
+*** This was essentially rejected (not formally yet but the Flatpak and xdg-desktop-portal maintainer is not happy with it). Trying to convince Wine to use binfmt-misc at least on Linux even if not on other platforms.
 
 == labwc versus WAYLAND_DISPLAY environment variable ==
 * https://forums.kicksecure.com/t/system-maintenance-panel-not-showing-up/1603
