@@ -22,6 +22,12 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
+== virtualbox-guest-additions refactoring fix ==
+* bring back?
+<pre>
+#Wants=virtualbox-guest-utils.service
+</pre>
+
 == review git-review-difftool and git-review-mergetool ==
 * https://github.com/org-ai-assisted/developer-meta-files/pull/136
 
