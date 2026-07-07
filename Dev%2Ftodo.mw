@@ -22,6 +22,9 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
+== virtualbox-guest-additions secure download review and merge ==
+* https://github.com/org-ai-assisted/developer-meta-files/pull/137
+
 == virtualbox-guest-additions refactoring fix ==
 * bring back for users who need debian version?
 <pre>
