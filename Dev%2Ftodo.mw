@@ -23,7 +23,7 @@ Developer task list and work queue. This page summarizes short-term development 
 
 = TODO DEV =
 == virtualbox-guest-additions refactoring fix ==
-* bring back?
+* bring back for users who need debian version?
 <pre>
 #Wants=virtualbox-guest-utils.service
 </pre>
