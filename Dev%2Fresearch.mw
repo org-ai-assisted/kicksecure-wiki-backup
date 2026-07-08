@@ -79,10 +79,6 @@ mitigation: [https://github.com/Kicksecure/security-misc#file-manager-d-bus-shim
 Security bug reports pending publication due to responsible disclosure.
 }}
 
-* bug A 
-** initial report date: 2026-05-18
-** intended publication date: 2026-08-17
-** no patch yet
 * bug B
 ** initial report date: 2026-06-29
 ** intended publication date: 2026-09-28
