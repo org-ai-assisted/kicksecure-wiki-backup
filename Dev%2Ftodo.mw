@@ -39,6 +39,9 @@ Developer task list and work queue. This page summarizes short-term development 
 * https://github.com/org-ai-assisted/sdwdate-gui/pull/1
 ** Aaron: AI mis-identified the issue. Found the real problem and resolved it, commits pushed to user-sysmaint-split and sdwdate-gui.
 
+== qemu aes bug ==
+* https://github.com/org-ai-assisted/qemu-x86_64-aes-gcm-miscompile-ppc64el
+
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
 * Keep in mind that room should be left for vm-app-manager features to be integrated into this
