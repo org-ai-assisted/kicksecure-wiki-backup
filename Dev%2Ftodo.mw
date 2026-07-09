@@ -28,7 +28,7 @@ Developer task list and work queue. This page summarizes short-term development 
 == sdwdate-gui crashes, glitches, failed reconnections ==
 * Aaron: Three issues:
 ** Menu misbehaving when refreshed while open.
-*** Solution, force close menu before refresh.
+*** This was actually an old issue that's been solved for a while now, we don't regen the menu when it's open.
 ** Dependency on anon_connection_wizard causing client-side crashes.
 *** Solution, grep through entire codebase and fix all dependencies on anon_connection_wizard.
 ** Failure to reconnect after a server restart.
