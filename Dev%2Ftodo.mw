@@ -22,9 +22,6 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
-== review git-review-difftool and git-review-mergetool ==
-* https://github.com/org-ai-assisted/developer-meta-files/pull/136
-
 == virtualbox-guest-additions secure download review and merge ==
 * https://github.com/org-ai-assisted/developer-meta-files/pull/137
 
@@ -1052,6 +1049,10 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== review git-review-difftool and git-review-mergetool ==
+* https://github.com/org-ai-assisted/developer-meta-files/pull/136
+** Aaron: Merged the first half of this and made a fixup commit on top. Due to a Unicode character inserted into one commit message by Claude, I'm unable to merge in further changes without losing Git history, and have been unable to figure out a way to rewrite history without running into merge conflicts. Handing off for conflict resolution, please move this back to TODO once sorted.
+
 == virtualbox-guest-additions refactoring fix ==
 * bring back for users who need debian version?
 <pre>
