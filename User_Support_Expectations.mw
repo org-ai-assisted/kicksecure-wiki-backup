@@ -9,6 +9,11 @@ Computer hardware and software quality are getting worse, not better. | {{VideoL
 
 complexity is too high and increasing | [[Dev/About_Computer_Insecurity|About Computer Insecurity]]
 
+increasing hardware complexity | {{VideoLink
+|videoid=36myc8wQhLo
+|text=USENIX ATC '21/OSDI '21 Joint Keynote Address-It's Time for Operating Systems to Rediscover Hardware
+}}
+
 We - as Open Source software developers - do not control the hardware. | [[Open_Source_Hardware|Open Source Hardware]]
 
 User (and developer) freedom hardware and software is decreasing | [[Miscellaneous_Threats_to_User_Freedom|General Threats to User Freedom]]
