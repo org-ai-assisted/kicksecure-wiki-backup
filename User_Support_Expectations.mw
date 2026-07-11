@@ -66,6 +66,13 @@ The developers and [[contributors]] should not be expected to perform deep inves
 * [[Deep_scan_ready|Deep Scan Ready]]
 |-
 
+| [https://en.wikipedia.org/wiki/Heisenbug Heisenbugs]
+| For example due to {{whonix_wiki
+|wikipage=geo-blocking
+|text=geo-blocking
+}}
+|-
+
 |}
 
 = Unspecific =
