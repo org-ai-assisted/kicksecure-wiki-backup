@@ -1053,12 +1053,6 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 ** Failure to reconnect after a server restart.
 *** Fixed, along with a bunch of other misc bugs and issues.
 
-== review git-review-difftool and git-review-mergetool ==
-* https://github.com/org-ai-assisted/developer-meta-files/pull/136
-** Aaron: Merged, applied fixes as a separate commit.
-* https://github.com/org-ai-assisted/helper-scripts/pull/60
-* https://github.com/org-ai-assisted/developer-meta-files/pull/141
-
 == virtualbox-guest-additions refactoring fix ==
 * bring back for users who need debian version?
 <pre>
