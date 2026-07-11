@@ -62,7 +62,7 @@ The developers and [[contributors]] should not be expected to perform deep inves
 |}
 
 = Unspecific =
-This issue is [[Unspecific|unspecific to {{project_name_short]].
+This issue is [[Unspecific|unspecific to {{project_name_short}}]].
 
 For instance, compare with Qubes OS bug reports related to [https://github.com/QubesOS/qubes-issues/issues?q=kernel%20panic%20in%3Atitle kernel panics inside Qubes]. For example, see [https://github.com/QubesOS/qubes-issues/issues/1644 #1644]. An issue was reported, nobody has been able to diagnose it, and it fixed itself through an update of upstream software.
 
