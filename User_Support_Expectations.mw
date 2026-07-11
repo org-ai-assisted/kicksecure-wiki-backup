@@ -58,12 +58,14 @@ Ecosystem wide issues.
 Related wiki pages and wiki chapters.
 }}
 
+<div class="use-2-columns strict-list-columns">
 * [[Self Support First Policy]]
 * [[Unspecific]]
 * [[Reporting_Bugs#Generic_Bug_Reproduction|Generic Bug Reproduction]]
 * [[Please_Use_Search_Engines_And_See_Documentation_First|Utilize Search Engines, Documentation and AI]]
 * [[Too Difficult]]
 * [[Introduction|Documentation Introduction]]
+</div>
 
 <references />
 {{Footer}}
