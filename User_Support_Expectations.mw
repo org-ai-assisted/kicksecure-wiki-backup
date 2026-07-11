@@ -68,6 +68,8 @@ For instance, compare with Qubes OS bug reports related to [https://github.com/Q
 
 And this is not Qubes's fault either. There are too many bugs for it to be humanly possible to track them all down.
 
+It would require ecosystem wide changes of programming philosophy and behavior. Elaborated in wiki chapter [[Dev/About_Computer_Insecurity#Too_Much_Source_Code|Too Much Source Code]].
+
 = Related =
 {{IntroLike|
 Related wiki pages and wiki chapters.
