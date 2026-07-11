@@ -1,8 +1,18 @@
+{{Header}}
+{{title|title=
+User Support Expectations
+}}
+{{#seo:
+|description=todo
+|image=dependency.png
+}}
 [[File:dependency.png|400px|thumb|https://xkcd.com/2347/]]
+[[File:The_Internet_is_a_Precarious_Tower_of_Dependencies.png|400px|thumb|https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd]]
+{{intro|
+Ecosystem wide issues.
+}}
 
 Issue Elaboration - need mediawiki table
-
-Ecosystem wide issues.
 
 Computer hardware and software quality are getting worse, not better. | {{VideoLink
 |videoid=ZSRHeXYDLko
@@ -30,9 +40,3 @@ Related wiki pages and wiki chapters:
 * [[Please_Use_Search_Engines_And_See_Documentation_First|Utilize Search Engines, Documentation and AI]]
 * [[Too Difficult]]
 * [[Introduction|Documentation Introduction]]
-
-'''Image:''' [https://xkcd.com/2347/ ''xkcd dependency'']
-
-
-[[File:The_Internet_is_a_Precarious_Tower_of_Dependencies.png|400px|thumb|https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd
-]]
