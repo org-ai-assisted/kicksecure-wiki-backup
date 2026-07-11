@@ -27,6 +27,12 @@ Developer task list and work queue. This page summarizes short-term development 
 * https://github.com/org-ai-assisted/sdwdate-gui/pull/1
 ** Aaron: AI mis-identified the issue. Found the real problem and resolved it, commits pushed to user-sysmaint-split and sdwdate-gui.
 
+== review git-review-difftool and git-review-mergetool ==
+* https://github.com/org-ai-assisted/developer-meta-files/pull/136
+** Aaron: Merged, applied fixes as a separate commit.
+* https://github.com/org-ai-assisted/helper-scripts/pull/60
+* https://github.com/org-ai-assisted/developer-meta-files/pull/141
+
 == qemu aes bug ==
 * https://github.com/org-ai-assisted/qemu-x86_64-aes-gcm-miscompile-ppc64el
 
