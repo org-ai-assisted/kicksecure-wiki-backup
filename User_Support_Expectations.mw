@@ -48,8 +48,8 @@ Developers and [[contributors]] cannot be expected to perform deep investigation
 |-
 
 | Limited time.
-
-{{Speaker Analogy}}
+| {{Speaker Analogy}}
+|-
 
 | Money, funding, and business model issues.
 | [[Dev/Open_Source_Business_Models|Open Source Business Models]]
@@ -64,7 +64,7 @@ Developers and [[contributors]] cannot be expected to perform deep investigation
 
 * [[Binary_Build_Locations|Who Controls the Download Factory?]]
 * [[Deep_scan_ready|Deep Scan Ready]]
-  |-
+|-
 
 | [https://en.wikipedia.org/wiki/Heisenbug Heisenbugs]
 | For example, due to {{whonix_wiki
