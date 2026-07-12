@@ -225,6 +225,11 @@ Massive complexity introduced by more and more complex hardware.
 |text=USENIX ATC '21/OSDI '21 Joint Keynote Address-It's Time for Operating Systems to Rediscover Hardware
 }}
 
+{{VideoLink
+|videoid=kZRE7HIO3vk
+|text=The Thirty Million Line Problem
+}}
+
 = No Final Specification =
 
 The fundamental issue with modern software - whether in browsers, operating systems, or web standards - is that there is no final specification. The nature of these technologies ensures they will keep evolving for the next 100 years, and likely beyond, with no end in sight. As a result, we are trapped in a perpetual cycle of updates, patches, and rewrites, chasing the latest standards and features.
