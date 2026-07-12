@@ -32,6 +32,13 @@ Developer task list and work queue. This page summarizes short-term development 
 == vm-app-manager ==
 * [[vm-app-manager]]
 
+== secure terminal research ==
+* Aaron:
+** What minimum feature set do we need?
+** What needs blocked to prevent security issues?
+** What can we allow so that the terminal can be used for as many purposes as possible?
+** What should the UX be? We'll likely need separate view and input areas since we will likely be disabling the control codes that allow for in-place line editing.
+
 == fix ecosystem-wide issues with executable MIME handlers ==
 * Aaron:
 ** https://bugs.winehq.org/show_bug.cgi?id=59767
