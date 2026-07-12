@@ -220,12 +220,11 @@ The worst enemy of security is complexity. This has been true since the beginnin
 
 Massive complexity introduced by more and more complex hardware.
 
-{{VideoLink
+* {{VideoLink
 |videoid=36myc8wQhLo
 |text=USENIX ATC '21/OSDI '21 Joint Keynote Address-It's Time for Operating Systems to Rediscover Hardware
 }}
-
-{{VideoLink
+* {{VideoLink
 |videoid=kZRE7HIO3vk
 |text=The Thirty Million Line Problem
 }}
