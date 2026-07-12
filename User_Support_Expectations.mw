@@ -1,7 +1,7 @@
-{{Header}}
+{{Header}} {{hide_all_banners}}
 {{title|title=
 User Support Expectations
-}}
+}} {{Selfsupport_mininav}}
 {{#seo:
 |description=Developers and contributors cannot be expected to deeply investigate every difficult or unexplained issue because of ecosystem-wide limitations.
 |image=dependency.png
