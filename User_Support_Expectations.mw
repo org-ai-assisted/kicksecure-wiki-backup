@@ -6,8 +6,8 @@ User Support Expectations
 |description=The developers and contributors should not be expected to perform deep investigations into mysteries. This is due to ecosystem wide issues. Elaborated here.
 |image=dependency.png
 }}
-[[File:dependency.png|340px|thumb|https://xkcd.com/2347/]]
-[[File:The_Internet_is_a_Precarious_Tower_of_Dependencies.png|340px|thumb|https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd]]
+[[File:dependency.png|340px|thumb|[https://xkcd.com/2347/ xkcd dependency]]]
+[[File:The_Internet_is_a_Precarious_Tower_of_Dependencies.png|340px|thumb|[https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd x]]
 {{intro|
 The developers and [[contributors]] should not be expected to perform deep investigations into mysteries. This is due to ecosystem wide issues. Elaborated here.
 }}
