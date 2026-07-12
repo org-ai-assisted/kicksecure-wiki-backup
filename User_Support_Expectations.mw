@@ -7,10 +7,13 @@ User Support Expectations
 |image=dependency.png
 }}
 [[File:dependency.png|340px|thumb|[https://xkcd.com/2347/ xkcd dependency]]]
-[[File:The_Internet_is_a_Precarious_Tower_of_Dependencies.png|340px|thumb|[https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd The Internet: A Tower Of Questionable Decisions]]]
 {{intro|
 Developers and [[contributors]] cannot be expected to perform deep investigations into every difficult or unexplained issue. This is due to ecosystem-wide limitations, which are explained on this page.
 }}
+= Introduction =
+[[File:The_Internet_is_a_Precarious_Tower_of_Dependencies.png|340px|thumb|[https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd The Internet: A Tower Of Questionable Decisions]]]
+
+= Reasons =
 
 {| class="wikitable"
 
