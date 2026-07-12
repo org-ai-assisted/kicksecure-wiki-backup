@@ -27,12 +27,6 @@ Developer task list and work queue. This page summarizes short-term development 
 * https://github.com/org-ai-assisted/sdwdate-gui/pull/1
 ** Aaron: AI mis-identified the issue. Found the real problem and resolved it, commits pushed to user-sysmaint-split and sdwdate-gui.
 
-== review git-review-difftool and git-review-mergetool ==
-* https://github.com/org-ai-assisted/developer-meta-files/pull/136
-** Aaron: Merged, applied fixes as a separate commit.
-* https://github.com/org-ai-assisted/helper-scripts/pull/60
-* https://github.com/org-ai-assisted/developer-meta-files/pull/141
-
 == qemu aes bug ==
 * https://github.com/org-ai-assisted/qemu-x86_64-aes-gcm-miscompile-ppc64el
 
@@ -1046,6 +1040,14 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== review git-review-difftool and git-review-mergetool ==
+* https://github.com/org-ai-assisted/developer-meta-files/pull/136
+** Aaron: Merged, applied fixes as a separate commit.
+* https://github.com/org-ai-assisted/helper-scripts/pull/60
+** Aaron: Merged and fixed up.
+* https://github.com/org-ai-assisted/developer-meta-files/pull/141
+** Aaron: Merged and fixed up, moved scripts to helper-scripts.
+
 == virtualbox-guest-additions secure download review and merge ==
 * https://github.com/org-ai-assisted/developer-meta-files/pull/137
 ** Aaron: Rewrote, commits pushed to developer-meta-files and derivative-maker.
