@@ -100,7 +100,10 @@ Empathy is needed to understand their viewpoint, which may be different from the
 
 This does not mean that Linux distribution developers should control upstream projects. It also does not mean that distribution developers would do a perfect job if they had that authority.
 
-No Linux distribution developer fully understands the entire system. The system is too large and complex for one person to understand every component and every interaction.
+No Linux distribution developer fully understands the entire system. The system is too large and complex for one person to understand every component and every interaction. This is elaborated in the {{VideoLink
+|videoid=kZRE7HIO3vk
+|text=The Thirty Million Line Problem
+}} video.
 
 = What This Means for Users =
 
