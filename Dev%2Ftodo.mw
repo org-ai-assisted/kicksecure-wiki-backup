@@ -22,6 +22,10 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
+== qubes-issues #10969 ==
+* please comment:
+** https://github.com/QubesOS/qubes-issues/issues/10969
+
 == qemu aes bug ==
 * https://github.com/org-ai-assisted/qemu-x86_64-aes-gcm-miscompile-ppc64el
 
