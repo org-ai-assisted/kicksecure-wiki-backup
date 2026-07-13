@@ -28,10 +28,6 @@ Developer task list and work queue. This page summarizes short-term development 
 
 == onion-client-refetch-stall-tor ==
 * https://github.com/org-ai-assisted/onion-client-refetch-stall-tor
-** Do any of the patches make sense?
-*** https://github.com/org-ai-assisted/onion-client-refetch-stall-tor/tree/master/patch
-** If the patches seem useful, please report a bug upstream.
-** Patch uplifting: Please use discretion to consider when it is useful to mention any patch. (Tor upstream confirming the bug, interested in a patch or won't fix pending arti.) 
 * https://github.com/org-ai-assisted/onion-client-refetch-stall-arti
 
 == qemu aes bug ==
