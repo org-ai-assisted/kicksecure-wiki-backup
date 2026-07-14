@@ -202,6 +202,7 @@ Commits:
 
 * Qubes onion, Debian onion issues user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
 * Other projects unresolved onion issues:
+* [https://github.com/bitcoin-core/bitcoincore.org/issues/985 bitcoin.org onion domain connectivity issues]
 * https://lightningnetwork.plus/questions/2637
 ** https://github.com/getumbrel/umbrel/issues/2151
 * https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
