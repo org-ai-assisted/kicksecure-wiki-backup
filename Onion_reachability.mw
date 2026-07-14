@@ -1,0 +1,176 @@
+[[Operating_System_Software_and_Updates#Non-functional_Onion_Services|Non-functional Onion Services]]
+
+
+Investigation has been completed.
+
+It's not DOS related. I can rule that out, because I have other other onions with non-pubic onion domain names. (Such as for fetching e-mail over onion.)
+
+The only way to fix a broken onion is the following cumbersome procedure.
+
+Tor / Tor network issues / bugs.
+
+1. stop tor@name.service on the server
+
+2. manually delete Tor consensus and state files on the server
+
+```
+/var/lib/tor-instances/name/cached-certs
+/var/lib/tor-instances/name/cached-microdesc-consensus
+/var/lib/tor-instances/name/cached-microdescs.new
+/var/lib/tor-instances/name/state
+```
+
+(Not all files may need deletion. Perhaps "only" deleting the `state` file would be sufficient.)
+
+3. restart tor@name.service on the server
+
+4. restart tor@default on local system
+
+These were the only steps requires to temporarily "fix" this. (I wouldn't call this a "fix", not even a workaround.)
+
+This is not a safe procedure and should not be required. Not something a "real" onion host requiring location privacy can afford. (Not a safe procedure because it replaces [Tor entry guards](https://www.whonix.org/wiki/Tor_Entry_Guards).)
+
+It's also not a server configuration issue, because I have multiple servers with identical configuration except for the onion service domain names and private keys. So no other action was required to fix this other than the cumber some procedure.
+
+
+= General Bad State of Tor Onions =
+Tor onions are generally in a bad state. (This is [unspecific](https://www.whonix.org/wiki/Unspecific) to Whonix.)
+
+vanguards is a software project by The Tor Project (TPO) / Tor developer Mike Perry. Quote [The Vanguards Onion Service Addon](https://github.com/mikeperry-tor/vanguards):
+
+[quote=https://github.com/mikeperry-tor/vanguards]
+Even after deployment of the [new v3 onion service protocol](https://gitweb.torproject.org/torspec.git/tree/proposals/224-rend-spec-ng.txt), the attacks facing onion services are wide-ranging, and still require more extensive modifications to fix in Tor-core itself.
+
+Because of this, we have decided to rapid-prototype these defenses in a controller addon in order to make them available ahead of their official Tor-core release, for onion services that require high security as soon as possible.
+
+For details about the defenses themselves, please see [README_TECHNICAL.md](https://github.com/mikeperry-tor/vanguards/blob/master/README_TECHNICAL.md).
+
+For additional security information, please see [README_SECURITY.md](https://github.com/mikeperry-tor/vanguards/blob/master/README_SECURITY.md).
+[/quote]
+
+A very comprehensive bug report by advanced user in 2022:
+
+https://github.com/mikeperry-tor/vanguards/issues/91
+
+In the same year, 2022, Tor Developer Mike Perry provided rare and detailed insights into the funding and development issues of Tor onions.
+
+[quote=https://github.com/mikeperry-tor/vanguards/issues/91#issuecomment-1228698338]
+We have been seeing sustained attacks from multiple adversaries against onion services, and against the Tor network itself, for the past 3 months. These adversaries are continually adapting to our defenses.
+
+For the past 3 years, we have attempted to get funding for DoS defenses for onion services from various funding sources. Every single one of these funding sources declined to fund onion service development or defenses. Because of the way our funding model works, this proposal-reject churn also delayed development on other tasks. Effectively a DoS attack in and of itself.
+
+During this process, one of the two primary developers on onion services resigned. The other primary onion service developer is currently on leave. In fact, we will only have 2 developers directly devoted to all of C-Tor for the next 6-8 weeks or so, and about half of that developer time will be spent writing and revising other funding proposals during this period. The remainder will be spent performing other already funded work, and related administration tasks.
+
+We do have pending funding for general DoS defenses that should be finalized soon, but that also does not cover onion service development. We will need to show other progress for that funder; any DoS defenses specifically for onion services will still have to be done "on the side".
+
+Normally, I would not air our dirty laundry like this, but since it will have a direct impact on people like you, it seemed important to explain why we're going to be especially unresponsive to issues with onion services for the next while.
+[/quote]
+
+----
+
+As per https://github.com/mikeperry-tor/vanguards/commits/master/ the last substantial code change in vanguards happened in 2021. There were some minor commits in 2023 but these were only related to https://github.com/dependabot.
+
+A vanguards issue was reported in to TPO in November 2023, got assigned, but stalled.
+
+https://gitlab.torproject.org/tpo/core/tor/-/work_items/40892
+
+More tickets with zero replies:
+
+https://github.com/mikeperry-tor/vanguards/issues/100
+
+https://github.com/mikeperry-tor/vanguards/issues/99
+
+There was a Tor Project fundraiser in 2023.
+
+https://blog.torproject.org/tor-network-ddos-attack/
+
+Tor Project published a roadmap for improving onion support.
+
+
+https://onionservices.torproject.org/research/scenarios/network/
+
+A number of open tickets related to onion services stability.
+
+* [Understand code performance of onion services under DoS (#33704) _ Tor](https://gitlab.torproject.org/tpo/core/tor/-/issues/33704)
+* [Research approaches for improving the availability of services under DoS (#31223) _ Tor](https://gitlab.torproject.org/tpo/core/tor/-/issues/31223)
+* [attacker can force intro point rotation by ddos (#26294) _ Tor](https://gitlab.torproject.org/tpo/core/tor/-/issues/26294)
+* [DoS resistence measures from C tor (#351) _ Arti](https://gitlab.torproject.org/tpo/core/arti/-/issues/351)
+* (No attempt was made to write an exhaustive list.)
+
+----
+
+The Tor Project's focus seems to have since shifted to onions in Arti. [1]
+
+https://blog.torproject.org/announcing-vanguards-for-arti/
+
+[quote=https://blog.torproject.org/announcing-vanguards-for-arti/]
+Arti's Vanguards implementation is based on the research behind Tor's [Vanguards add-on](https://blog.torproject.org/announcing-vanguards-add-onion-services/), and offers similar protections to its [Vanguards component](https://github.com/mikeperry-tor/vanguards/blob/master/README_TECHNICAL.md#the-vanguards-subsystem).
+[/quote]
+
+[quote=https://blog.torproject.org/announcing-vanguards-for-arti/]
+The other experimental defenses from the add-on are not yet implemented in Arti (but they are on our roadmap!)
+[/quote]
+
+----
+
+[1] https://forums.whonix.org/t/keep-an-eye-on-arti-tor/15815
+
+= Lack of Onion Reachability Debugging Tools =
+[quote="mrxmr, post:52, topic:22768"]
+How come kicksecure_s onion repos _never_ seems to go down/become unreachable?
+[/quote]
+
+Tools to diagnose this issue do are non-existing. -> https://forums.whonix.org/t/forum-onion-unable-to-connect/23107/25
+
+Server configuration and output of `onionprobe` is almost identical, except for the places where it necessarily needs to be different. (descriptor, domain name)
+
+----
+
+Kicksecure:
+
+    onionprobe -e w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion
+
+----
+
+Whonix:
+
+    onionprobe -e dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion
+
+----
+
+[quote="Patrick, post:20, topic:22768"]
+Works for me at this time.
+[/quote]
+
+What makes a relevant difference is the state of the Tor user's local Tor daemon.
+
+I have reproduced multiple times that an unreachable onion becomes reachable after restarting Tor. Similar reports can be found online:
+
+* https://forums.whonix.org/t/tor-connection-dies-randomly-and-needs-manual-restart/12688
+
+When a Tor restart is required and fixes anything, that can (almost) always be considered a bug in Tor as Tor should be able to recover from this without restart.
+
+----
+
+I would say "try `onionprobe`".
+
+    sudo apt update
+    sudo apt install onionprobe
+
+But the problem is, it's not compatible with Whonix because onionprobe - I assume by design to avoid above issue - starts a temporary (throwaway) Tor daemon -  before probing an onion.
+
+Hence, `onionprobe` isn't suitable to be run from within Whonix and only from Debian, Kicksecure or similar. [1]
+
+If running `onionprobe` from Debian, Kicksecure or similar is fine for anyone, try it.
+
+----
+
+[1] `onionprobe` supports `--no-launch_tor` but requires Tor control protocol access, writing an [onion-grater](https://www.whonix.org/wiki/Onion-grater) profile might be possible, but it would be a lot work for a non-ideal result using `onionprobe` different than it's designed to run by default.
+
+
+= Other Onions =
+* Qubes onion, Debian onion issues user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
+* Other projects unresolved onion issues:
+* https://lightningnetwork.plus/questions/2637
+** https://github.com/getumbrel/umbrel/issues/2151
+* https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
