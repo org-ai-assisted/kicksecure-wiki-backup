@@ -1,3 +1,14 @@
+{{Header}}
+{{title|title=
+Onion Reachability
+}}
+{{#seo:
+|description=todo
+}}
+{{intro|
+todo
+}}
+
 [[Operating_System_Software_and_Updates#Non-functional_Onion_Services|Non-functional Onion Services]]
 
 
@@ -182,3 +193,8 @@ If running `onionprobe` from Debian, Kicksecure or similar is fine for anyone, t
 * https://lightningnetwork.plus/questions/2637
 ** https://github.com/getumbrel/umbrel/issues/2151
 * https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
+
+= Footnotes =
+<references />
+{{Footer}}
+[[Category:Documentation]]
