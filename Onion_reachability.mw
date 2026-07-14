@@ -193,9 +193,9 @@ Commits:
 |context=https://onionservices.torproject.org/apps/web/checklist/#using-onionbalance
 }}
 
-* Bug: https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/9
-** https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/38
-** Pull request: https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/merge_requests/52 remains unanswered after 5 months.
+* Bug: [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/9 #9]
+** [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/38 #38]
+** Pull request: [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/merge_requests/52 #52] remains unanswered after 5 months.
 
 = Non-Issues =
 
