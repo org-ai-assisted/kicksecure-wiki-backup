@@ -185,7 +185,7 @@ Commits:
 
 == OnionBalance ==
 
-* [https://forum.torproject.org/t/onionbalance-master-domain-periodically-offline-error-descriptor-upload-failed/21087 OnionBalance descriptors rejected, service periodically offline (January 2026)]
+* [https://forum.torproject.org/t/onionbalance-master-domain-periodically-offline-error-descriptor-upload-failed/21087 OnionBalance master domain periodically offline - error "Descriptor upload failed" (January 2026)]
 * Lacking Proof Of Work anti-DoS defense.
 
 {{quotation
@@ -193,9 +193,9 @@ Commits:
 |context=https://onionservices.torproject.org/apps/web/checklist/#using-onionbalance
 }}
 
-* Bug: [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/9 #9]
-** [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/38 #38]
-** Pull request: [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/merge_requests/52 #52] remains unanswered after 5 months.
+* Bug: [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/9 OnionBalance issue #9]
+** [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/38 OnionBalance issue #38]
+** Pull request: [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/merge_requests/52 OnionBalance merge request #52] remains unanswered after 5 months.
 
 = Non-Issues =
 
