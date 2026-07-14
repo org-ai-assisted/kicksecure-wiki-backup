@@ -20,7 +20,7 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 
 = arraybolt3 =
 == 2026-07-13 ==
-=== Strip WATCHDOG_PID environment in privleap's shim ===
+=== Strip WATCHDOG_PID environment variable in privleap's shim ===
 Date: 2026-07-13
 
 This will assist hidepid in working right in the future. Also did normal merge and review tasks.
