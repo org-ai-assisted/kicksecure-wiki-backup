@@ -1,32 +1,3 @@
-Jul 14 18:12:19 host VBoxClient[2716]: 18:12:19.843975 main VBoxClient Wayland: Error: cannot get Wayland device manager interface
-Jul 14 18:12:19 host VBoxClient[2716]: 18:12:19.932229 main VBoxClient Wayland: Error: Wayland Drag-and-Drop helper not found, drag-and-drop not possible
-
-systemctl --user status vboxclient-wayland.service
-
-  vboxclient-wayland.service - VirtualBox clipboard sharing for Wayland
-     Loaded: loaded (/usr/lib/systemd/user/vboxclient-wayland.service; static)
-     Active: active (running) since Tue 2026-07-14 18:12:19 UTC; 5min ago
- Invocation: 5c351a95a53047ecbf9f3c9c3ee27a73
-   Main PID: 2716 (VBoxClient)
-      Tasks: 6 (limit: 1405)
-     Memory: 6.5M (peak: 8.3M)
-        CPU: 314ms
-     CGroup: /user.slice/user-1001.slice/user@1001.service/app.slice/vboxclient-wayland.service
-             `-2716 /usr/bin/VBoxClient --foreground --wayland
-
-Jul 14 18:12:19 host VBoxClient[2716]: 18:12:19.932183 main     VBoxClient Wayland: found Wayland Shared Clipboard helper 'wayland-dcp-legacy'
-Jul 14 18:12:19 host VBoxClient[2716]: 18:12:19.932229 main     VBoxClient Wayland: Error: Wayland Drag-and-Drop helper not found, drag-and-drop not possible
-Jul 14 18:12:19 host VBoxClient[2716]: 18:12:19.932240 main     VBoxClient Wayland: Creating worker thread ...
-Jul 14 18:12:19 host VBoxClient[2716]: 18:12:19.968279 main     VBoxClient Wayland: Service started
-Jul 14 18:14:16 host VBoxClient[2716]: 18:14:16.316563 wl-dcp   VBoxClient Wayland: Error: cannot report formats to host, rc=VERR_ACCESS_DENIED
-Jul 14 18:14:34 host VBoxClient[2716]: 18:14:34.296372 wl-dcp   VBoxClient Wayland: Error: cannot save formats announced by the guest, rc=VERR_NO_DATA
-Jul 14 18:14:34 host VBoxClient[2716]: 18:14:34.302692 wl-dcp   VBoxClient Wayland: Data Converter: converting UTF-8 encoded HTML data into VBox format
-Jul 14 18:14:34 host VBoxClient[2716]: 18:14:34.303826 wl-dcp   VBoxClient Wayland: Error: cannot report formats to host, rc=VERR_ACCESS_DENIED
-Jul 14 18:14:51 host VBoxClient[2716]: 18:14:51.071802 wl-dcp   VBoxClient Wayland: Error: cannot save formats announced by the guest, rc=VERR_NO_DATA
-Jul 14 18:14:51 host VBoxClient[2716]: 18:14:51.075292 wl-dcp   VBoxClient Wayland: Data Converter: converting UTF-8 encoded HTML data into VBox format
-
-
-
 
 add sysmaint to systemd-journal group
 
