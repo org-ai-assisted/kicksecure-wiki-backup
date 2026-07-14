@@ -203,6 +203,17 @@ If running `onionprobe` from Debian, Kicksecure or similar is fine for anyone, t
 |context=https://blog.torproject.org/tor-network-ddos-attack/
 }}
 
+= Non-Solutions =
+== OnionBalance ==
+* [https://forum.torproject.org/t/onionbalance-master-domain-periodically-offline-error-descriptor-upload-failed/21087 OnionBalance descriptors rejected, service periodically offline (January 2026)]
+
+= Tor Onions Outdated Cryptography =
+Does not support offline keys yet:
+
+* https://onionservices.torproject.org/apps/web/checklist/#towards-offline-main-keys
+* https://spec.torproject.org/rend-spec/protocol-overview.html#imd-offline-keys
+* https://gitlab.torproject.org/tpo/core/arti/-/work_items/1194
+
 = Footnotes =
 <references />
 {{Footer}}
