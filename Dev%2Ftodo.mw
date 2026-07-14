@@ -1126,6 +1126,7 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 == privleap env hardening ==
 * https://github.com/org-ai-assisted/privleap/pull/1
 ** Aaron: Researched, rejected, added a comment to the shim instead documenting a situation in the future where we might want to strip environment variables and do other cleanup. Also committed some minor improvements I had made earlier but never committed.
+*** Received feedback from Patrick, now scrubbing <code>WATCHDOG_PID</code> from the environment.
 
 == sdwdate-gui review ==
 * todo as discussed
