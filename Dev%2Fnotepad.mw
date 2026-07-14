@@ -1,13 +1,11 @@
-WARNING: systemd journal check result (current boot):
-########################################
 Jul 14 18:11:16 localhost kernel: WARNING: CPU: 1 PID: 378 at kernel/rcu/tree_plugin.h:826 rcu_sched_clock_irq+0x7cb/0xb60
+
 Jul 14 18:12:19 host VBoxClient[2716]: 18:12:19.843975 main VBoxClient Wayland: Error: cannot get Wayland device manager interface
 Jul 14 18:12:19 host VBoxClient[2716]: 18:12:19.932229 main VBoxClient Wayland: Error: Wayland Drag-and-Drop helper not found, drag-and-drop not possible
 
+systemctl --user status vboxclient-wayland.service
 
-[gateway sysmaint ~]$ systemctl --user status vboxclient-wayland.service > a
-[gateway sysmaint ~]$ cat a
-? vboxclient-wayland.service - VirtualBox clipboard sharing for Wayland
+  vboxclient-wayland.service - VirtualBox clipboard sharing for Wayland
      Loaded: loaded (/usr/lib/systemd/user/vboxclient-wayland.service; static)
      Active: active (running) since Tue 2026-07-14 18:12:19 UTC; 5min ago
  Invocation: 5c351a95a53047ecbf9f3c9c3ee27a73
@@ -29,53 +27,6 @@ Jul 14 18:14:34 host VBoxClient[2716]: 18:14:34.303826 wl-dcp   VBoxClient Wayla
 Jul 14 18:14:51 host VBoxClient[2716]: 18:14:51.071802 wl-dcp   VBoxClient Wayland: Error: cannot save formats announced by the guest, rc=VERR_NO_DATA
 Jul 14 18:14:51 host VBoxClient[2716]: 18:14:51.075292 wl-dcp   VBoxClient Wayland: Data Converter: converting UTF-8 encoded HTML data into VBox format
 
-
-
-
-? spice-vdagentd.service - Agent daemon for Spice guests
-     Loaded: loaded (/usr/lib/systemd/system/spice-vdagentd.service; indirect; preset: enabled)
-     Active: active (running) since Tue 2026-07-14 18:21:16 UTC; 53s left
- Invocation: 0fc6a03010c24b669a0d9ed66c5b3030
-TriggeredBy: ? spice-vdagentd.socket
-    Process: 1569 ExecStart=/usr/sbin/spice-vdagentd $SPICE_VDAGENTD_EXTRA_ARGS (code=exited, status=0/SUCCESS)
-   Main PID: 1578 (spice-vdagentd)
-      Tasks: 3 (limit: 2339)
-     Memory: 864K (peak: 1.9M)
-     CPU: 22ms
-     CGroup: /system.slice/spice-vdagentd.service
-             `-1578 /usr/sbin/spice-vdagentd
-
-Jul 14 18:21:15 host systemd[1]: Starting spice-vdagentd.service - Agent daemon for Spice guests...
-Jul 14 18:21:15 host (vdagentd)[1569]: spice-vdagentd.service: Referenced but unset environment variable evaluates to an empty string: SPICE_VDAGENTD_EXTRA_ARGS
-Jul 14 18:21:16 host systemd[1]: Started spice-vdagentd.service - Agent daemon for Spice guests.
-? spice-vdagentd.service - Agent daemon for Spice guests
-     Loaded: loaded (/usr/lib/systemd/system/spice-vdagentd.service; indirect; preset: enabled)
-     Active: active (running) since Tue 2026-07-14 18:21:16 UTC; 41s left
- Invocation: 0fc6a03010c24b669a0d9ed66c5b3030
-TriggeredBy: ? spice-vdagentd.socket
-    Process: 1569 ExecStart=/usr/sbin/spice-vdagentd $SPICE_VDAGENTD_EXTRA_ARGS (code=exited, status=0/SUCCESS)
-   Main PID: 1578 (spice-vdagentd)
-      Tasks: 3 (limit: 2339)
-     Memory: 864K (peak: 1.9M)
-     CPU: 22ms
-     CGroup: /system.slice/spice-vdagentd.service
-             `-1578 /usr/sbin/spice-vdagentd
-
-Jul 14 18:21:15 host systemd[1]: Starting spice-vdagentd.service - Agent daemon for Spice guests...
-Jul 14 18:21:15 host (vdagentd)[1569]: spice-vdagentd.service: Referenced but unset environment variable evaluates to an empty string: SPICE_VDAGENTD_EXTRA_ARGS
-Jul 14 18:21:16 host systemd[1]: Started spice-vdagentd.service - Agent daemon for Spice guests.
-? spice-vdagentd.socket - Activation socket for spice guest agent daemon
-     Loaded: loaded (/usr/lib/systemd/system/spice-vdagentd.socket; static)
-     Active: active (running) since Tue 2026-07-14 18:21:15 UTC; 1min 44s ago
- Invocation: 63265f1fd9514699972f834cdc7176c4
-   Triggers: ? spice-vdagentd.service
-     Listen: /run/spice-vdagentd/spice-vdagent-sock (Stream)
-     CGroup: /system.slice/spice-vdagentd.socket
-
-Jul 14 18:21:15 host systemd[1]: Listening on spice-vdagentd.socket - Activation socket for spice guest agent daemon.
-o spice-vdagent.service - Spice guest session agent
-     Loaded: loaded (/usr/lib/systemd/user/spice-vdagent.service; static)
-     Active: inactive (dead)
 
 
 
