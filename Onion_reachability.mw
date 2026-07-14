@@ -206,6 +206,18 @@ If running <code>onionprobe</code> from Debian, Kicksecure or similar is fine fo
 ---
 
 = Other Onions =
+* Tails
+
+{{quotation
+|quote=  * APT: use non-onion HTTPS sources for Debian repositories (tails/tails!383)
+
+    Closes issues:
+      - Fix failures with Debian's APT repository onion service (tails/tails#17993)
+
+    Commits:
+      - APT: use non-onion HTTPS sources for Debian repositories
+|context=https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog
+}}
 
 * Qubes onion, Debian onion issues user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
 * Other projects unresolved onion issues:
