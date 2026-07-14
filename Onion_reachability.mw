@@ -32,6 +32,14 @@ This is not a safe procedure and should not be required. Not something a "real" 
 
 It's also not a server configuration issue, because I have multiple servers with identical configuration except for the onion service domain names and private keys. So no other action was required to fix this other than the cumber some procedure.
 
+= Tor Upstream Unfixed Denial of Service Issue =
+
+Tor upstream DoS issue [attacker can force intro point rotation by ddos](https://gitlab.torproject.org/tpo/core/tor/-/work_items/26294) reported by Tor developer [Roger Dingledine](https://gitlab.torproject.org/arma). At the time of writing:
+
+* issue opened in year `2018`,
+* `Status` `Open`, `Not Scheduled`,
+* [last comment by Roger Dingledine in year `2023`](https://gitlab.torproject.org/tpo/core/tor/-/work_items/26294#note_2907391),
+* last ticket status change to `Not Scheduled` in December `2025`.
 
 = General Bad State of Tor Onions =
 Tor onions are generally in a bad state. (This is [unspecific](https://www.whonix.org/wiki/Unspecific) to Whonix.)
