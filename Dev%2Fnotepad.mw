@@ -1,3 +1,17 @@
+[user ~]% pgrep -af VBoxClient
+2213 /usr/bin/VBoxClient --foreground --wayland
+2338 /usr/bin/VBoxClient --vmsvga-session
+2339 /usr/bin/VBoxClient --vmsvga-session
+[user ~]% ls -la ~/.vboxclient-*
+-rw-r----- 1 user user 5 Jul 14 19:48 /home/user/.vboxclient-clipboard-tty7-control.pid
+-rw-r----- 1 user user 5 Jul 14 19:48 /home/user/.vboxclient-draganddrop-tty7-control.pid
+-rw-r----- 1 user user 5 Jul 14 19:48 /home/user/.vboxclient-hostversion-tty7-control.pid
+-rw-r----- 1 user user 5 Jul 14 19:48 /home/user/.vboxclient-seamless-tty7-control.pid
+-rw-r----- 1 user user 5 Jul 14 19:48 /home/user/.vboxclient-vmsvga-session-tty7-control.pid
+-rw-r----- 1 user user 5 Jul 14 19:48 /home/user/.vboxclient-vmsvga-session-tty7-service.pid
+-rw-r----- 1 user user 5 Jul 14 19:48 /home/user/.vboxclient-wayland-tty7-service.pid
+
+
 [user ~]% systemctl --user status vboxclient-wayland.service > a
 [user ~]% cat a                                                 
 
