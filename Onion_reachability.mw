@@ -212,7 +212,7 @@ If running <code>onionprobe</code> from Debian, Kicksecure or similar is fine fo
 |quote=* APT: use non-onion HTTPS sources for Debian repositories (tails/tails!383)
 
 Closes issues:
-- Fix failures with Debian's APT repository onion service (tails/tails#17993)
+- Fix failures with Debian's APT repository onion service ([https://gitlab.tails.boum.org/tails/tails/-/issues/17993 tails/tails#17993])
 
 Commits:
 - APT: use non-onion HTTPS sources for Debian repositories
