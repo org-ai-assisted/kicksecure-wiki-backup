@@ -52,6 +52,13 @@ Tor upstream DoS issue [attacker can force intro point rotation by ddos](https:/
 * [last comment by Roger Dingledine in year `2023`](https://gitlab.torproject.org/tpo/core/tor/-/work_items/26294#note_2907391),
 * last ticket status change to `Not Scheduled` in December `2025`.
 
+= Malformed hidden service descriptor issues =
+All unresolved at time of writing in July 2026.
+
+* https://gitlab.torproject.org/tpo/core/tor/-/issues/41094
+* https://gitlab.torproject.org/tpo/core/tor/-/issues/41016
+* https://gitlab.torproject.org/tpo/core/tor/-/issues/41101
+
 = General Bad State of Tor Onions =
 Tor onions are generally in a bad state. (This is [unspecific](https://www.whonix.org/wiki/Unspecific) to Whonix.)
 
