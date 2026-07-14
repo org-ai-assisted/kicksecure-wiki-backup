@@ -138,11 +138,11 @@ onionprobe -e dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion
 
 == Local Client Stall Bug ==
 
-What makes a relevant difference is the state of the Tor user's local Tor daemon.
+A relevant factor is the state of the Tor user's local Tor daemon.
 
-I have reproduced multiple times that an unreachable onion becomes reachable after restarting Tor. [https://forums.whonix.org/t/tor-connection-dies-randomly-and-needs-manual-restart/12688 Similar reports can be found online.]
+It has been reproduced multiple times that an unreachable onion becomes reachable after restarting Tor. [https://forums.whonix.org/t/tor-connection-dies-randomly-and-needs-manual-restart/12688 Similar reports can be found online.]
 
-When a Tor restart is required and fixes anything, that can almost always be considered a bug in Tor, as Tor should be able to recover from this without a restart.
+When restarting Tor resolves the issue, this can almost always be considered a bug in Tor, as Tor should be able to recover without requiring a restart.
 
 = Onion Domains by Other Projects =
 
