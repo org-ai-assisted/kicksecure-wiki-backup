@@ -32,7 +32,7 @@ All were unresolved at the time of writing in July 2026.
 
 = General Bad State of Tor Onions =
 
-Tor onions are generally in a bad state. This is [https://www.whonix.org/wiki/Unspecific unspecific] to Whonix.
+Tor onions are generally in a bad state. This is [[Unspecific|unspecific]] to Whonix.
 
 Vanguards is a software project by The Tor Project (TPO) / Tor developer Mike Perry. Quote from [https://github.com/mikeperry-tor/vanguards The Vanguards Onion Service Addon]:
 
@@ -48,9 +48,7 @@ For additional security information, please see [https://github.com/mikeperry-to
 |context=https://github.com/mikeperry-tor/vanguards
 }}
 
-A very comprehensive bug report by an advanced user in 2022:
-
-https://github.com/mikeperry-tor/vanguards/issues/91
+A [https://github.com/mikeperry-tor/vanguards/issues/91 very comprehensive bug report] was submitted by an advanced user in 2022.
 
 In the same year, 2022, Tor developer Mike Perry provided rare and detailed insights into the funding and development issues of Tor onions.
 
@@ -68,24 +66,18 @@ Normally, I would not air our dirty laundry like this, but since it will have a 
 |context=https://github.com/mikeperry-tor/vanguards/issues/91#issuecomment-1228698338
 }}
 
-As per https://github.com/mikeperry-tor/vanguards/commits/master/, the last substantial code change in Vanguards happened in 2021. There were some minor commits in 2023, but these were only related to https://github.com/dependabot.
+As per the [https://github.com/mikeperry-tor/vanguards/commits/master/ Vanguards commit history], the last substantial code change in Vanguards happened in 2021. There were some minor commits in 2023, but these were only related to [https://github.com/dependabot Dependabot].
 
-A Vanguards issue was reported to TPO in November 2023, was assigned, but stalled.
-
-https://gitlab.torproject.org/tpo/core/tor/-/work_items/40892
+A [https://gitlab.torproject.org/tpo/core/tor/-/work_items/40892 Vanguards issue] was reported to TPO in November 2023, was assigned, but stalled.
 
 More tickets with zero replies:
 
-* https://github.com/mikeperry-tor/vanguards/issues/100
-* https://github.com/mikeperry-tor/vanguards/issues/99
+* [https://github.com/mikeperry-tor/vanguards/issues/100 Vanguards issue #100]
+* [https://github.com/mikeperry-tor/vanguards/issues/99 Vanguards issue #99]
 
-There was a Tor Project fundraiser in 2023.
+There was a [https://blog.torproject.org/tor-network-ddos-attack/ Tor Project fundraiser in 2023].
 
-https://blog.torproject.org/tor-network-ddos-attack/
-
-The Tor Project published a roadmap for improving onion support.
-
-https://onionservices.torproject.org/research/scenarios/network/
+The Tor Project published a [https://onionservices.torproject.org/research/scenarios/network/ roadmap for improving onion support].
 
 A number of open tickets are related to onion service stability:
 
@@ -95,11 +87,9 @@ A number of open tickets are related to onion service stability:
 * [https://gitlab.torproject.org/tpo/core/arti/-/issues/351 DoS resistance measures from C Tor (#351) - Arti]
 * No attempt was made to write an exhaustive list.
 
-The Tor Project's focus seems to have since shifted to onions in Arti. <ref>
-https://forums.whonix.org/t/keep-an-eye-on-arti-tor/15815
-</ref>
+The Tor Project's focus seems to have since shifted to onions in Arti.<ref>[https://forums.whonix.org/t/keep-an-eye-on-arti-tor/15815 Keep an Eye on Arti Tor]</ref>
 
-https://blog.torproject.org/announcing-vanguards-for-arti/
+See [https://blog.torproject.org/announcing-vanguards-for-arti/ Announcing Vanguards for Arti].
 
 {{quotation
 |quote=
