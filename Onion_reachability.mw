@@ -206,6 +206,12 @@ If running `onionprobe` from Debian, Kicksecure or similar is fine for anyone, t
 = Non-Solutions =
 == OnionBalance ==
 * [https://forum.torproject.org/t/onionbalance-master-domain-periodically-offline-error-descriptor-upload-failed/21087 OnionBalance descriptors rejected, service periodically offline (January 2026)]
+* Lacking Proof Of Work anti-DoS defense.
+
+{{quotation
+|quote=As of December 2023, it does not support the Proof Of Work anti-DoS defense ([https://onionservices.torproject.org/technology/security/pow/ PoW]), but this is [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/issues/13 being planned].
+|context=https://onionservices.torproject.org/apps/web/checklist/#using-onionbalance
+}}
 
 = Tor Onions Outdated Cryptography =
 Does not support offline keys yet:
