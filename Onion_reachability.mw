@@ -194,6 +194,15 @@ If running `onionprobe` from Debian, Kicksecure or similar is fine for anyone, t
 ** https://github.com/getumbrel/umbrel/issues/2151
 * https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
 
+= Denial of Service Attacks against Tor and Onions are Common =
+* 2021: https://forums.whonix.org/t/most-onions-down-due-to-a-denial-of-service-attack-on-the-tor-network/10979
+* 2023: https://blog.torproject.org/tor-network-ddos-attack/
+
+{{quotation
+|quote=At some points, the attacks impacted the network severely enough that users could not load pages or access onion services.
+|context=https://blog.torproject.org/tor-network-ddos-attack/
+}}
+
 = Footnotes =
 <references />
 {{Footer}}
