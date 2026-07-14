@@ -156,23 +156,17 @@ Tools to diagnose this issue do are non-existing. -> https://forums.whonix.org/t
 
 Server configuration and output of <code>onionprobe</code> is almost identical, except for the places where it necessarily needs to be different. (descriptor, domain name)
 
----
-
 Kicksecure:
 
-```
+{{CodeSelect|code=
 onionprobe -e w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion
-```
-
----
+}}
 
 Whonix:
 
-```
+{{CodeSelect|code=
 onionprobe -e dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion
-```
-
----
+}}
 
 {{quotation
 |quote=
@@ -192,18 +186,22 @@ When a Tor restart is required and fixes anything, that can (almost) always be c
 
 I would say "try <code>onionprobe</code>".
 
-```
+
+{{CodeSelect|code=
 sudo apt update
+}}
+
+{{CodeSelect|code=
 sudo apt install onionprobe
-```
+}}
 
-But the problem is, it's not compatible with Whonix because onionprobe - I assume by design to avoid above issue - starts a temporary (throwaway) Tor daemon -  before probing an onion.
+But the problem is, it's not compatible with Whonix because onionprobe - I assume by design to avoid above issue - starts a temporary (throwaway) Tor daemon - before probing an onion.
 
-Hence, <code>onionprobe</code> isn't suitable to be run from within Whonix and only from Debian, Kicksecure or similar.<ref><code>onionprobe</code> supports <code>--no-launch_tor</code> but requires Tor control protocol access, writing an [https://www.whonix.org/wiki/Onion-grater onion-grater] profile might be possible, but it would be a lot work for a non-ideal result using <code>onionprobe</code> different than it's designed to run by default.</ref>
+Hence, <code>onionprobe</code> isn't suitable to be run from within Whonix and only from Debian, Kicksecure or similar. <ref>
+<code>onionprobe</code> supports <code>--no-launch_tor</code> but requires Tor control protocol access, writing an [https://www.whonix.org/wiki/Onion-grater onion-grater] profile might be possible, but it would be a lot work for a non-ideal result using <code>onionprobe</code> different than it's designed to run by default.
+</ref>
 
 If running <code>onionprobe</code> from Debian, Kicksecure or similar is fine for anyone, try it.
-
----
 
 = Onions Domains by Other Projects =
 * Tails
