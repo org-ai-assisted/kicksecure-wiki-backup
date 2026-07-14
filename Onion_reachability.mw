@@ -68,8 +68,6 @@ Normally, I would not air our dirty laundry like this, but since it will have a 
 |context=https://github.com/mikeperry-tor/vanguards/issues/91#issuecomment-1228698338
 }}
 
----
-
 As per https://github.com/mikeperry-tor/vanguards/commits/master/, the last substantial code change in Vanguards happened in 2021. There were some minor commits in 2023, but these were only related to https://github.com/dependabot.
 
 A Vanguards issue was reported to TPO in November 2023, was assigned, but stalled.
@@ -97,9 +95,9 @@ A number of open tickets are related to onion service stability:
 * [https://gitlab.torproject.org/tpo/core/arti/-/issues/351 DoS resistance measures from C Tor (#351) - Arti]
 * No attempt was made to write an exhaustive list.
 
----
-
-The Tor Project's focus seems to have since shifted to onions in Arti.<ref>https://forums.whonix.org/t/keep-an-eye-on-arti-tor/15815</ref>
+The Tor Project's focus seems to have since shifted to onions in Arti. <ref>
+https://forums.whonix.org/t/keep-an-eye-on-arti-tor/15815
+</ref>
 
 https://blog.torproject.org/announcing-vanguards-for-arti/
 
@@ -114,8 +112,6 @@ Arti's Vanguards implementation is based on the research behind Tor's [https://b
 The other experimental defenses from the add-on are not yet implemented in Arti (but they are on our roadmap!)
 |context=https://blog.torproject.org/announcing-vanguards-for-arti/
 }}
-
----
 
 = Lack of Onion Reachability Debugging Tools =
 
