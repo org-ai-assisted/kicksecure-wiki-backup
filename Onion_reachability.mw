@@ -3,42 +3,15 @@
 Onion Reachability
 }}
 {{#seo:
-|description=todo
+|description=Onion services can become unreachable because of Tor bugs, denial of service attacks, malformed descriptors, client-side Tor state, and limited debugging tools.
 }}
 {{intro|
-todo
+Onion services can sometimes become unreachable even when the server configuration has not changed. Possible causes include Tor bugs, denial of service attacks, malformed service descriptors, problems with the local Tor daemon, and limitations in available debugging tools. This page documents known issues, investigation results, temporary recovery procedures, and related upstream bug reports.
 }}
 
+= User Documentation =
+
 [[Operating_System_Software_and_Updates#Non-functional_Onion_Services|Non-functional Onion Services]]
-
-Investigation has been completed.
-
-It is not DoS-related. I can rule that out because I have other onions with non-public onion domain names, such as for fetching e-mail over an onion.
-
-The only way to fix a broken onion is the following cumbersome procedure.
-
-Tor / Tor network issues / bugs.
-
-# stop tor@name.service on the server
-
-# Manually delete Tor consensus and state files on the server.
-
-#:<pre>
-/var/lib/tor-instances/name/cached-certs
-/var/lib/tor-instances/name/cached-microdesc-consensus
-/var/lib/tor-instances/name/cached-microdescs.new
-/var/lib/tor-instances/name/state </pre>
-#: Not all files may need deletion. Perhaps "only" deleting the <code>state</code> file would be sufficient.
-
-# Restart tor@name.service on the server.
-
-# Restart <code>tor@default</code> on the local system.
-
-These were the only steps required to temporarily "fix" this. I would not call this a "fix", or even a workaround.
-
-This is not a safe procedure and should not be required. This is not something a "real" onion host requiring location privacy can afford. It is not a safe procedure because it replaces [https://www.whonix.org/wiki/Tor_Entry_Guards Tor entry guards].
-
-It is also not a server configuration issue because I have multiple servers with identical configurations, except for the onion service domain names and private keys. No other action was required to fix this other than the cumbersome procedure.
 
 = Tor Upstream Unfixed Denial of Service Issue =
 
