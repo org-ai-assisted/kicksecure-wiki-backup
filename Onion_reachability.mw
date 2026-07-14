@@ -160,7 +160,7 @@ Closes issues:
 Commits:
 
 * [https://gitlab.tails.boum.org/tails/tails/-/commit/ec83674736c5cf91292d56d0a5a1ae69341c60a5 APT: use non-onion HTTPS sources for Debian repositories]
-|context=https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog
+|context=[https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog Tails changelog]
 }}
 
 * [https://forum.qubes-os.org/t/whonix-update-issue/40671/3 Qubes onion and Debian onion issue user bug report]
