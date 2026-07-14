@@ -146,15 +146,25 @@ The other experimental defenses from the add-on are not yet implemented in Arti 
 ---
 
 = Lack of Onion Reachability Debugging Tools =
-{{quotation
-|quote=
-How come kicksecure_s onion repos ''never'' seems to go down/become unreachable?
-|context=mrxmr, post:52, topic:22768
+
+= onionprobe =
+
+Whonix: onionprobe is incompatible with Whonix. <ref>
+Because onionprobe starts a temporary (throwaway) Tor daemon before probing an onion.
+
+Hence, <code>onionprobe</code> isn't suitable to be run from within Whonix and only from Debian, Kicksecure or similar.
+
+<code>onionprobe</code> supports <code>--no-launch_tor</code> but requires Tor control protocol access, writing an [https://www.whonix.org/wiki/Onion-grater onion-grater] profile might be possible, but it would be a lot work for a non-ideal result using <code>onionprobe</code> different than it's designed to run by default.
+</ref>
+* Debian, Kicksecure, etc.:
+
+{{CodeSelect|code=
+sudo apt update
 }}
 
-Tools to diagnose this issue do are non-existing. -> https://forums.whonix.org/t/forum-onion-unable-to-connect/23107/25
-
-Server configuration and output of <code>onionprobe</code> is almost identical, except for the places where it necessarily needs to be different. (descriptor, domain name)
+{{CodeSelect|code=
+sudo apt install onionprobe
+}}
 
 Kicksecure:
 
@@ -168,40 +178,13 @@ Whonix:
 onionprobe -e dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion
 }}
 
-{{quotation
-|quote=
-Works for me at this time.
-|context=Patrick, post:20, topic:22768
-}}
+= Local Client Stall Bug =
 
 What makes a relevant difference is the state of the Tor user's local Tor daemon.
 
-I have reproduced multiple times that an unreachable onion becomes reachable after restarting Tor. Similar reports can be found online:
-
-* https://forums.whonix.org/t/tor-connection-dies-randomly-and-needs-manual-restart/12688
+I have reproduced multiple times that an unreachable onion becomes reachable after restarting Tor. [https://forums.whonix.org/t/tor-connection-dies-randomly-and-needs-manual-restart/12688 Similar reports can be found online.]
 
 When a Tor restart is required and fixes anything, that can (almost) always be considered a bug in Tor as Tor should be able to recover from this without restart.
-
----
-
-I would say "try <code>onionprobe</code>".
-
-
-{{CodeSelect|code=
-sudo apt update
-}}
-
-{{CodeSelect|code=
-sudo apt install onionprobe
-}}
-
-But the problem is, it's not compatible with Whonix because onionprobe - I assume by design to avoid above issue - starts a temporary (throwaway) Tor daemon - before probing an onion.
-
-Hence, <code>onionprobe</code> isn't suitable to be run from within Whonix and only from Debian, Kicksecure or similar. <ref>
-<code>onionprobe</code> supports <code>--no-launch_tor</code> but requires Tor control protocol access, writing an [https://www.whonix.org/wiki/Onion-grater onion-grater] profile might be possible, but it would be a lot work for a non-ideal result using <code>onionprobe</code> different than it's designed to run by default.
-</ref>
-
-If running <code>onionprobe</code> from Debian, Kicksecure or similar is fine for anyone, try it.
 
 = Onions Domains by Other Projects =
 * Tails
