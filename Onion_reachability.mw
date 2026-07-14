@@ -146,10 +146,12 @@ When a Tor restart is required and fixes anything, that can almost always be con
 
 = Onion Domains by Other Projects =
 
-* Tails
+* [https://tails.net/ Tails]
 
 {{quotation
-|quote=* APT: use non-onion HTTPS sources for Debian repositories ([https://gitlab.tails.boum.org/tails/tails/-/merge_requests/383 tails/tails!383])
+|quote=
+
+* APT: use non-onion HTTPS sources for Debian repositories ([https://gitlab.tails.boum.org/tails/tails/-/merge_requests/383 tails/tails!383])
 
 Closes issues:
 
@@ -158,15 +160,16 @@ Closes issues:
 Commits:
 
 * [https://gitlab.tails.boum.org/tails/tails/-/commit/ec83674736c5cf91292d56d0a5a1ae69341c60a5 APT: use non-onion HTTPS sources for Debian repositories]
-  |context=https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog
-  }}
+|context=https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog
+}}
 
-* Qubes onion and Debian onion issue user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
+* [https://forum.qubes-os.org/t/whonix-update-issue/40671/3 Qubes onion and Debian onion issue user bug report]
+
 * Other projects with unresolved onion issues:
 ** [https://github.com/bitcoin-core/bitcoincore.org/issues/985 bitcoin.org onion domain connectivity issues]
-** https://lightningnetwork.plus/questions/2637
-*** https://github.com/getumbrel/umbrel/issues/2151
-** https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
+** [https://lightningnetwork.plus/questions/2637 Lightning Network Plus onion service issue]
+*** [https://github.com/getumbrel/umbrel/issues/2151 Umbrel onion service issue]
+** [https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004 Start9 LND hidden service descriptor issue]
 
 = Denial of Service Attacks against Tor and Onions Are Common =
 
