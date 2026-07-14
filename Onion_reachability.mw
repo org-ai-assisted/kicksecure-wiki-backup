@@ -245,6 +245,7 @@ Does not support offline keys yet:
 * https://spec.torproject.org/rend-spec/protocol-overview.html#imd-offline-keys
 * https://gitlab.torproject.org/tpo/core/arti/-/work_items/1194
 
-= Footnotes = <references />
+= Footnotes =
+<references />
 {{Footer}}
 [[Category:Documentation]]
