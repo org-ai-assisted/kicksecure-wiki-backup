@@ -13,7 +13,7 @@ todo
 
 Investigation has been completed.
 
-It's not DOS related. I can rule that out, because I have other other onions with non-pubic onion domain names. (Such as for fetching e-mail over onion.)
+It is not DoS-related. I can rule that out because I have other onions with non-public onion domain names, such as for fetching e-mail over an onion.
 
 The only way to fix a broken onion is the following cumbersome procedure.
 
@@ -21,47 +21,47 @@ Tor / Tor network issues / bugs.
 
 # stop tor@name.service on the server
 
-# manually delete Tor consensus and state files on the server
+# Manually delete Tor consensus and state files on the server.
 
-<pre>
+#:<pre>
 /var/lib/tor-instances/name/cached-certs
 /var/lib/tor-instances/name/cached-microdesc-consensus
 /var/lib/tor-instances/name/cached-microdescs.new
-/var/lib/tor-instances/name/state
-</pre>
+/var/lib/tor-instances/name/state </pre>
+#: Not all files may need deletion. Perhaps "only" deleting the <code>state</code> file would be sufficient.
 
-(Not all files may need deletion. Perhaps "only" deleting the <code>state</code> file would be sufficient.)
+# Restart tor@name.service on the server.
 
-# restart [tor@name.service](mailto:tor@name.service) on the server
+# Restart <code>tor@default</code> on the local system.
 
-# restart tor@default on local system
+These were the only steps required to temporarily "fix" this. I would not call this a "fix", or even a workaround.
 
-These were the only steps requires to temporarily "fix" this. (I wouldn't call this a "fix", not even a workaround.)
+This is not a safe procedure and should not be required. This is not something a "real" onion host requiring location privacy can afford. It is not a safe procedure because it replaces [https://www.whonix.org/wiki/Tor_Entry_Guards Tor entry guards].
 
-This is not a safe procedure and should not be required. Not something a "real" onion host requiring location privacy can afford. (Not a safe procedure because it replaces [https://www.whonix.org/wiki/Tor_Entry_Guards Tor entry guards].)
-
-It's also not a server configuration issue, because I have multiple servers with identical configuration except for the onion service domain names and private keys. So no other action was required to fix this other than the cumber some procedure.
+It is also not a server configuration issue because I have multiple servers with identical configurations, except for the onion service domain names and private keys. No other action was required to fix this other than the cumbersome procedure.
 
 = Tor Upstream Unfixed Denial of Service Issue =
 
-Tor upstream DoS issue [https://gitlab.torproject.org/tpo/core/tor/-/work_items/26294 attacker can force intro point rotation by ddos] reported by Tor developer [https://gitlab.torproject.org/arma Roger Dingledine]. At the time of writing:
+Tor upstream DoS issue [https://gitlab.torproject.org/tpo/core/tor/-/work_items/26294 attacker can force intro point rotation by ddos] was reported by Tor developer [https://gitlab.torproject.org/arma Roger Dingledine]. At the time of writing:
 
-* issue opened in year <code>2018</code>,
-* <code>Status</code> <code>Open</code>, <code>Not Scheduled</code>,
-* [https://gitlab.torproject.org/tpo/core/tor/-/work_items/26294#note_2907391 last comment by Roger Dingledine in year <code>2023</code>],
-* last ticket status change to <code>Not Scheduled</code> in December <code>2025</code>.
+* Issue opened in <code>2018</code>.
+* <code>Status</code>: <code>Open</code>, <code>Not Scheduled</code>.
+* [https://gitlab.torproject.org/tpo/core/tor/-/work_items/26294#note_2907391 Last comment by Roger Dingledine in <code>2023</code>].
+* Last ticket status change to <code>Not Scheduled</code> in December <code>2025</code>.
 
-= Malformed hidden service descriptor issues =
-All unresolved at time of writing in July 2026.
+= Malformed Hidden Service Descriptor Issues =
+
+All were unresolved at the time of writing in July 2026.
 
 * https://gitlab.torproject.org/tpo/core/tor/-/issues/41094
 * https://gitlab.torproject.org/tpo/core/tor/-/issues/41016
 * https://gitlab.torproject.org/tpo/core/tor/-/issues/41101
 
 = General Bad State of Tor Onions =
-Tor onions are generally in a bad state. (This is [https://www.whonix.org/wiki/Unspecific unspecific] to Whonix.)
 
-vanguards is a software project by The Tor Project (TPO) / Tor developer Mike Perry. Quote [https://github.com/mikeperry-tor/vanguards The Vanguards Onion Service Addon]:
+Tor onions are generally in a bad state. This is [https://www.whonix.org/wiki/Unspecific unspecific] to Whonix.
+
+Vanguards is a software project by The Tor Project (TPO) / Tor developer Mike Perry. Quote from [https://github.com/mikeperry-tor/vanguards The Vanguards Onion Service Addon]:
 
 {{quotation
 |quote=
@@ -75,11 +75,11 @@ For additional security information, please see [https://github.com/mikeperry-to
 |context=https://github.com/mikeperry-tor/vanguards
 }}
 
-A very comprehensive bug report by advanced user in 2022:
+A very comprehensive bug report by an advanced user in 2022:
 
 https://github.com/mikeperry-tor/vanguards/issues/91
 
-In the same year, 2022, Tor Developer Mike Perry provided rare and detailed insights into the funding and development issues of Tor onions.
+In the same year, 2022, Tor developer Mike Perry provided rare and detailed insights into the funding and development issues of Tor onions.
 
 {{quotation
 |quote=
@@ -97,33 +97,32 @@ Normally, I would not air our dirty laundry like this, but since it will have a 
 
 ---
 
-As per https://github.com/mikeperry-tor/vanguards/commits/master/ the last substantial code change in vanguards happened in 2021. There were some minor commits in 2023 but these were only related to https://github.com/dependabot.
+As per https://github.com/mikeperry-tor/vanguards/commits/master/, the last substantial code change in Vanguards happened in 2021. There were some minor commits in 2023, but these were only related to https://github.com/dependabot.
 
-A vanguards issue was reported in to TPO in November 2023, got assigned, but stalled.
+A Vanguards issue was reported to TPO in November 2023, was assigned, but stalled.
 
 https://gitlab.torproject.org/tpo/core/tor/-/work_items/40892
 
 More tickets with zero replies:
 
-https://github.com/mikeperry-tor/vanguards/issues/100
-
-https://github.com/mikeperry-tor/vanguards/issues/99
+* https://github.com/mikeperry-tor/vanguards/issues/100
+* https://github.com/mikeperry-tor/vanguards/issues/99
 
 There was a Tor Project fundraiser in 2023.
 
 https://blog.torproject.org/tor-network-ddos-attack/
 
-Tor Project published a roadmap for improving onion support.
+The Tor Project published a roadmap for improving onion support.
 
 https://onionservices.torproject.org/research/scenarios/network/
 
-A number of open tickets related to onion services stability.
+A number of open tickets are related to onion service stability:
 
-* [https://gitlab.torproject.org/tpo/core/tor/-/issues/33704 Understand code performance of onion services under DoS (#33704) _ Tor]
-* [https://gitlab.torproject.org/tpo/core/tor/-/issues/31223 Research approaches for improving the availability of services under DoS (#31223) _ Tor]
-* [https://gitlab.torproject.org/tpo/core/tor/-/issues/26294 attacker can force intro point rotation by ddos (#26294) _ Tor]
-* [https://gitlab.torproject.org/tpo/core/arti/-/issues/351 DoS resistence measures from C tor (#351) _ Arti]
-* (No attempt was made to write an exhaustive list.)
+* [https://gitlab.torproject.org/tpo/core/tor/-/issues/33704 Understand code performance of onion services under DoS (#33704) - Tor]
+* [https://gitlab.torproject.org/tpo/core/tor/-/issues/31223 Research approaches for improving the availability of services under DoS (#31223) - Tor]
+* [https://gitlab.torproject.org/tpo/core/tor/-/issues/26294 Attacker can force intro point rotation by DDoS (#26294) - Tor]
+* [https://gitlab.torproject.org/tpo/core/arti/-/issues/351 DoS resistance measures from C Tor (#351) - Arti]
+* No attempt was made to write an exhaustive list.
 
 ---
 
@@ -147,16 +146,16 @@ The other experimental defenses from the add-on are not yet implemented in Arti 
 
 = Lack of Onion Reachability Debugging Tools =
 
-= onionprobe =
+== onionprobe ==
 
-Whonix: onionprobe is incompatible with Whonix. <ref>
-Because onionprobe starts a temporary (throwaway) Tor daemon before probing an onion.
+Whonix: <code>onionprobe</code> is incompatible with Whonix.<ref>
+Because <code>onionprobe</code> starts a temporary (throwaway) Tor daemon before probing an onion.
 
-Hence, <code>onionprobe</code> isn't suitable to be run from within Whonix and only from Debian, Kicksecure or similar.
+Hence, <code>onionprobe</code> is not suitable to be run from within Whonix, and only from Debian, Kicksecure, or similar.
 
-<code>onionprobe</code> supports <code>--no-launch_tor</code> but requires Tor control protocol access, writing an [https://www.whonix.org/wiki/Onion-grater onion-grater] profile might be possible, but it would be a lot work for a non-ideal result using <code>onionprobe</code> different than it's designed to run by default.
-</ref>
-* Debian, Kicksecure, etc.:
+<code>onionprobe</code> supports <code>--no-launch_tor</code> but requires Tor control protocol access. Writing an [https://www.whonix.org/wiki/Onion-grater onion-grater] profile might be possible, but it would be a lot of work for a non-ideal result using <code>onionprobe</code> differently from how it is designed to run by default. </ref>
+
+Debian, Kicksecure, etc.:
 
 {{CodeSelect|code=
 sudo apt update
@@ -178,36 +177,39 @@ Whonix:
 onionprobe -e dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion
 }}
 
-= Local Client Stall Bug =
+== Local Client Stall Bug ==
 
 What makes a relevant difference is the state of the Tor user's local Tor daemon.
 
 I have reproduced multiple times that an unreachable onion becomes reachable after restarting Tor. [https://forums.whonix.org/t/tor-connection-dies-randomly-and-needs-manual-restart/12688 Similar reports can be found online.]
 
-When a Tor restart is required and fixes anything, that can (almost) always be considered a bug in Tor as Tor should be able to recover from this without restart.
+When a Tor restart is required and fixes anything, that can almost always be considered a bug in Tor, as Tor should be able to recover from this without a restart.
 
-= Onions Domains by Other Projects =
+= Onion Domains by Other Projects =
+
 * Tails
 
 {{quotation
 |quote=* APT: use non-onion HTTPS sources for Debian repositories ([https://gitlab.tails.boum.org/tails/tails/-/merge_requests/383 tails/tails!383])
 
 Closes issues:
-- Fix failures with Debian's APT repository onion service ([https://gitlab.tails.boum.org/tails/tails/-/issues/17993 tails/tails#17993])
+
+* Fix failures with Debian's APT repository onion service ([https://gitlab.tails.boum.org/tails/tails/-/issues/17993 tails/tails#17993])
 
 Commits:
-- [https://gitlab.tails.boum.org/tails/tails/-/commit/ec83674736c5cf91292d56d0a5a1ae69341c60a5 APT: use non-onion HTTPS sources for Debian repositories]
-|context=https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog
-}}
 
-* Qubes onion, Debian onion issues user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
-* Other projects unresolved onion issues:
-* [https://github.com/bitcoin-core/bitcoincore.org/issues/985 bitcoin.org onion domain connectivity issues]
-* https://lightningnetwork.plus/questions/2637
-** https://github.com/getumbrel/umbrel/issues/2151
-* https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
+* [https://gitlab.tails.boum.org/tails/tails/-/commit/ec83674736c5cf91292d56d0a5a1ae69341c60a5 APT: use non-onion HTTPS sources for Debian repositories]
+  |context=https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog
+  }}
 
-= Denial of Service Attacks against Tor and Onions are Common =
+- Qubes onion and Debian onion issue user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
+- Other projects with unresolved onion issues:
+  ** [https://github.com/bitcoin-core/bitcoincore.org/issues/985 bitcoin.org onion domain connectivity issues]
+  ** https://lightningnetwork.plus/questions/2637
+  *** https://github.com/getumbrel/umbrel/issues/2151
+  ** https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
+
+= Denial of Service Attacks against Tor and Onions Are Common =
 
 * 2021: https://forums.whonix.org/t/most-onions-down-due-to-a-denial-of-service-attack-on-the-tor-network/10979
 * 2023: https://blog.torproject.org/tor-network-ddos-attack/
@@ -218,6 +220,7 @@ Commits:
 }}
 
 = Non-Solutions =
+
 == OnionBalance ==
 
 * [https://forum.torproject.org/t/onionbalance-master-domain-periodically-offline-error-descriptor-upload-failed/21087 OnionBalance descriptors rejected, service periodically offline (January 2026)]
@@ -228,15 +231,18 @@ Commits:
 |context=https://onionservices.torproject.org/apps/web/checklist/#using-onionbalance
 }}
 
-* bug https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/9
-** https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/38
-** pull request https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/merge_requests/52 remains unanswered after 5 months
+* Bug: https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/9
+  ** https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/38
+  ** Pull request: https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/merge_requests/52 remains unanswered after 5 months.
 
 = Non-Issues =
-== docker ==
-download.kicksecure.com / download.whonix.org are simple, no docker at all.
+
+== Docker ==
+
+<code>download.kicksecure.com</code> / <code>download.whonix.org</code> are simple, with no Docker at all.
 
 = Tor Onions Outdated Cryptography =
+
 Does not support offline keys yet:
 
 * https://onionservices.torproject.org/apps/web/checklist/#towards-offline-main-keys
@@ -244,6 +250,7 @@ Does not support offline keys yet:
 * https://gitlab.torproject.org/tpo/core/arti/-/work_items/1194
 
 = Footnotes =
+
 <references />
 {{Footer}}
 [[Category:Documentation]]
