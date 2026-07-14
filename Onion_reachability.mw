@@ -196,7 +196,7 @@ Closes issues:
 - Fix failures with Debian's APT repository onion service ([https://gitlab.tails.boum.org/tails/tails/-/issues/17993 tails/tails#17993])
 
 Commits:
-- APT: use non-onion HTTPS sources for Debian repositories
+- [https://gitlab.tails.boum.org/tails/tails/-/commit/ec83674736c5cf91292d56d0a5a1ae69341c60a5 APT: use non-onion HTTPS sources for Debian repositories]
 |context=https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog
 }}
 
