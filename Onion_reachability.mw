@@ -161,12 +161,12 @@ Commits:
   |context=https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog
   }}
 
-- Qubes onion and Debian onion issue user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
-- Other projects with unresolved onion issues:
-  ** [https://github.com/bitcoin-core/bitcoincore.org/issues/985 bitcoin.org onion domain connectivity issues]
-  ** https://lightningnetwork.plus/questions/2637
-  *** https://github.com/getumbrel/umbrel/issues/2151
-  ** https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
+* Qubes onion and Debian onion issue user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
+* Other projects with unresolved onion issues:
+** [https://github.com/bitcoin-core/bitcoincore.org/issues/985 bitcoin.org onion domain connectivity issues]
+** https://lightningnetwork.plus/questions/2637
+*** https://github.com/getumbrel/umbrel/issues/2151
+** https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
 
 = Denial of Service Attacks against Tor and Onions Are Common =
 
