@@ -235,8 +235,8 @@ If running <code>onionprobe</code> from Debian, Kicksecure or similar is fine fo
 }}
 
 * bug https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/9
-  ** https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/38
-  ** pull request https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/merge_requests/52 remains unanswered after 5 months
+** https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/38
+** pull request https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/merge_requests/52 remains unanswered after 5 months
 
 = Tor Onions Outdated Cryptography =
 Does not support offline keys yet:
