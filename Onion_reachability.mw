@@ -210,7 +210,7 @@ If running <code>onionprobe</code> from Debian, Kicksecure or similar is fine fo
 * Qubes onion, Debian onion issues user bug report: https://forum.qubes-os.org/t/whonix-update-issue/40671/3
 * Other projects unresolved onion issues:
 * https://lightningnetwork.plus/questions/2637
-  ** https://github.com/getumbrel/umbrel/issues/2151
+** https://github.com/getumbrel/umbrel/issues/2151
 * https://community.start9.com/t/lnd-hidden-service-descriptor-not-publishing-no-more-hsdir-available-to-query/5004
 
 = Denial of Service Attacks against Tor and Onions are Common =
