@@ -105,6 +105,8 @@ The other experimental defenses from the add-on are not yet implemented in Arti 
 
 = Lack of Onion Reachability Debugging Tools =
 
+General tools:
+
 * `onion-socks-probe` -- raw SOCKS5 CONNECT reachability probe (real onion REP byte).
 * `onion-desc-fetch` -- is the descriptor PUBLISHED on the hashring right now (HSFETCH)?
 * `onion-desc-inspect` -- decrypt/print the client's CACHED descriptor (intro points, revision, PoW).
@@ -119,7 +121,7 @@ The other experimental defenses from the add-on are not yet implemented in Arti 
 * `onion-hs-stats` -- onion health / anti-DoS stats (intro rate, PoW, upload freshness).
 * `onion-hostname` -- print an instance's `.onion` hostname.
 
-server specific tools:
+Server specific tools:
 
 * `onion-preflight` -- staged reachability diagnosis for ONE onion (+ refetch heal test).
 * `onion-e2e-path` -- end-to-end hop-by-hop stitcher, both control ports (repro/same-host).
