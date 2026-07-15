@@ -141,7 +141,7 @@ A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezv
 {| class="wikitable"
 ! Question !! Why it is hard !! Planned Tool(s)
 |-
-| Are two daemons publishing the same identity key and competing on the hashring? || Intermittent by nature: a client hits a "wrong" HSDir only sometimes. || <code>onion-splitbrain-check</code> (fans HSFETCH to every responsible dir)
+| Are two Tor daemons publishing the same identity key and competing on the hashring? || Intermittent by nature: a client hits a "wrong" HSDir only sometimes. || <code>onion-splitbrain-check</code> (fans HSFETCH to every responsible dir)
 |-
 | Is it a REAL persistent split, or benign republish lag caught mid-flight? || A normal republish makes old+new descriptors coexist transiently, so one sweep is never proof, and C-tor rate-limits per-HSDir requeries ~15 min. || <code>onion-splitbrain-corroborate</code> (spaced sweeps: PERSISTENT vs FLAPPING vs UNDER-SAMPLED)
 |}
