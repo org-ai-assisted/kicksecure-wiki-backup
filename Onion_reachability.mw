@@ -104,6 +104,77 @@ The other experimental defenses from the add-on are not yet implemented in Arti 
 }}
 
 = Lack of Onion Reachability Debugging Tools =
+{{IntroLike|
+A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezvous point (RP), split across two daemons on two hosts, with cached state and rate-limited observation. From the outside almost every failure looks identical: a connect just "hangs" or "fails". Each question below isolates a different failure stage, and the difficulty is nearly always the same shape: ''how do I see one stage without the other stages lying to me?''
+}}
+
+== Fault attribution: is it me or the service? ==
+
+{| class="wikitable"
+! Question !! Why it is hard !! Planned Tool(s)
+|-
+| Whose fault is a failed connect -- my client tor, the network, or the service? || The single hardest question: all three produce the same "it does not load". || <code>onion-preflight</code> (isolates client-vs-onion via external control onions), <code>tor-client-health</code>
+|-
+| Can my local tor reach relays at all, or is my guard set dead? || A degraded or 0-up guard set is a client fault masquerading as an onion outage. || <code>tor-client-health</code> (DEGRADED on 0 guards)
+|-
+| Is the break in the client's own 3 hops, or beyond the RP where I can never see? || On the real internet each side sees only its own three hops. || <code>onion-connect-trace</code> (client leg), <code>onion-control-snapshot --paths</code> (service leg), <code>onion-e2e-path</code> (stitches both on a same-host repro)
+|-
+| Which exact stage did the connect die at -- descriptor / intro / rend / service? || "Failed" is not a stage. SERVICE = rendezvous done, far side refused at app/port level, a wholly different bug from "intro did not answer". || <code>onion-connect-trace</code> (stage classifier), extended SOCKS <code>0xF0-0xF6</code>
+|}
+
+== Descriptor problems (the stale-cache trap) ==
+
+{| class="wikitable"
+! Question !! Why it is hard !! Planned Tool(s)
+|-
+| Is the descriptor published on the hashring now, or am I clinging to a cached one? || Two different truths, and the warm-client cache hides the difference. || <code>onion-desc-fetch</code> (live HSFETCH), <code>onion-desc-inspect</code> (cached copy)
+|-
+| Am I hitting the tor#25882 refetch-stall (warm client, stale descriptor, dead intro points)? || A fresh client works while the warm one fails, so it will not reproduce after a restart. || <code>onion-preflight</code> REFETCH HEAL TEST (heals => stale-descriptor class; still fails => intro points genuinely dead)
+|-
+| How do I view the descriptor, its revision counter, and which dead intro relays the client held? || The forensic state lives encrypted in the client's cache. || <code>onion-desc-inspect</code> (revision counter, lifetime, single-onion, PoW, intro set; <code>--ns</code> marks NOT IN CONSENSUS)
+|-
+| Is my clock skewed outside the descriptor validity window? || A silent skew makes a perfectly-published descriptor look absent. || <code>clock-drift-check</code> (independent online clock vs local)
+|}
+
+== Split-brain (two tors, one identity) ==
+
+{| class="wikitable"
+! Question !! Why it is hard !! Planned Tool(s)
+|-
+| Are two daemons publishing the same identity key and competing on the hashring? || Intermittent by nature: a client hits a "wrong" HSDir only sometimes. || <code>onion-splitbrain-check</code> (fans HSFETCH to every responsible dir)
+|-
+| Is it a REAL persistent split, or benign republish lag caught mid-flight? || A normal republish makes old+new descriptors coexist transiently, so one sweep is never proof, and C-tor rate-limits per-HSDir requeries ~15 min. || <code>onion-splitbrain-corroborate</code> (spaced sweeps: PERSISTENT vs FLAPPING vs UNDER-SAMPLED)
+|}
+
+== DoS / introduction flood ==
+
+{| class="wikitable"
+! Question !! Why it is hard !! Planned Tool(s)
+|-
+| Would we detect an introduction flood (tor#26294) before reachability degrades? || The preflight path only points at the stats tool; it does not itself alarm, so a flood erodes reachability invisibly. || <code>onion-hs-stats</code> (INTRODUCE2 rate, PoW verify-fails/replays, PoW-queue trim, <code>est_hours_to_force_intro_rotation</code> dropping below intro lifetime)
+|-
+| Is the service silently running on a degraded intro-point set? || Fewer live intro points than configured shrinks reachability before it fully breaks. || <code>onion-intro-watchdog</code>
+|}
+
+== Server-side intermittent disruption ==
+
+{| class="wikitable"
+! Question !! Why it is hard !! Planned Tool(s)
+|-
+| Is our own server's uplink intermittently killing OR-connections? || Intermittent, gone by the time you look, and indistinguishable from a healthy circuit in any point-in-time snapshot. || <code>tor-orconn-watch --follow</code> (live flap/reset/extend-fail timeline), <code>tor-orconn-watch</code> cron <code>*/5</code> (joined with host NIC/TCP counter deltas)
+|}
+
+== Reachable-but-wrong (the false green) ==
+
+{| class="wikitable"
+! Question !! Why it is hard !! Planned Tool(s)
+|-
+| Is the service reachable but not actually replying correctly? || Reachability is not the same as working: a port can accept TCP yet give no valid greeting, or refuse at the app level after a good rendezvous. || <code>onion-mail-probe</code> (POP3 <code>+OK</code> / IMAP <code>* OK</code> / SMTP <code>220</code>; <code>--direct</code> separates "backend down" from "onion path broken")
+|-
+| Does any <code>.onion</code> request get redirected to the clearnet host? || A correctness and deanonymization bug that a plain reachability check passes clean. || <code>onion-redirect-test</code>
+|}
+
+== Planned Tools ==
 
 General tools:
 
