@@ -136,7 +136,7 @@ Whonix:
 onionprobe -e dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion
 }}
 
-== Local Client Stall Bug ==
+= Local Tor Client Stall Bug =
 
 A relevant factor is the state of the Tor user's local Tor daemon.
 
