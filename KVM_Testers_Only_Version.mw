@@ -339,7 +339,7 @@ sudo virsh -c qemu:///session undefine {{project_name_short}}
 <u>Note:</u> All data will be lost unless it is backed up first. Adjust the paths to the images as appropriate.
 
 {{CodeSelect|code=
-safe-rm ~/.local/share/libvirt/images/{{project_name_short}}.qcow2
+safe-rm ~/.local/share/images/{{project_name_short}}.qcow2
 }}
 }}
 </div>
