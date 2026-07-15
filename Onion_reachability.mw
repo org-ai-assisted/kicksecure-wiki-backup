@@ -136,7 +136,7 @@ A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezv
 | Is my clock skewed outside the descriptor validity window? || A silent skew makes a perfectly-published descriptor look absent. || <code>clock-drift-check</code> (independent online clock vs local)
 |}
 
-== Split-brain (two tors, one identity) ==
+== Split-brain (two Tor daemons, same identity) ==
 
 {| class="wikitable"
 ! Question !! Why it is hard !! Planned Tool(s)
