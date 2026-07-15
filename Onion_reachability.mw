@@ -117,7 +117,7 @@ A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezv
 |-
 | Can my local Tor reach relays at all, or is my guard set dead? || A degraded or 0-up guard set is a client fault masquerading as an onion outage. || <code>tor-client-health</code> (DEGRADED on 0 guards)
 |-
-| Is the break in the client's own 3 hops, or beyond the RP where I can never see? || On the real internet each side sees only its own three hops. || <code>onion-connect-trace</code> (client leg), <code>onion-control-snapshot --paths</code> (service leg), <code>onion-e2e-path</code> (stitches both on a same-host repro)
+| Is the break in the client's own 3 hops, or beyond the rendezvous point where I can never see? || On the real internet each side sees only its own three hops. || <code>onion-connect-trace</code> (client leg), <code>onion-control-snapshot --paths</code> (service leg), <code>onion-e2e-path</code> (stitches both on a same-host repro)
 |-
 | Which exact stage did the connect die at -- descriptor / intro / rend / service? || "Failed" is not a stage. SERVICE = rendezvous done, far side refused at app/port level, a wholly different bug from "intro did not answer". || <code>onion-connect-trace</code> (stage classifier), extended SOCKS <code>0xF0-0xF6</code>
 |}
