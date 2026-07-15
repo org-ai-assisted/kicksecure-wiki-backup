@@ -107,31 +107,31 @@ The other experimental defenses from the add-on are not yet implemented in Arti 
 
 General tools:
 
-* `onion-socks-probe` -- raw SOCKS5 CONNECT reachability probe (real onion REP byte).
-* `onion-desc-fetch` -- is the descriptor PUBLISHED on the hashring right now (HSFETCH)?
-* `onion-desc-inspect` -- decrypt/print the client's CACHED descriptor (intro points, revision, PoW).
-* `onion-connect-trace` -- client-side sidecar timeline: stage reached + the client's own 3 hops.
-* `tor-client-health` -- client tor health (bootstrap, guards, consensus validity window).
-* `onion-splitbrain-check` -- two daemons publishing the SAME identity key on the hashring?
-* `onion-splitbrain-selftest` -- mock-control-port selftest for the split-brain detector.
-* `tor-orconn-watch` -- server-side OR-connection disruption (live `--follow` or cron sample).
-* `clock-drift-check` -- online-vs-local clock delta (a skew breaks descriptor windows).
-* `onion-control-snapshot` -- service-side intro/guard/liveness snapshot (`--paths`: service's 3 hops).
-* `onion-intro-watchdog` -- detect a DEGRADED intro-point set (+ optional remediation).
-* `onion-hs-stats` -- onion health / anti-DoS stats (intro rate, PoW, upload freshness).
-* `onion-hostname` -- print an instance's `.onion` hostname.
+* <code>onion-socks-probe</code> -- raw SOCKS5 CONNECT reachability probe (real onion REP byte).
+* <code>onion-desc-fetch</code> -- is the descriptor PUBLISHED on the hashring right now (HSFETCH)?
+* <code>onion-desc-inspect</code> -- decrypt/print the client's CACHED descriptor (intro points, revision, PoW).
+* <code>onion-connect-trace</code> -- client-side sidecar timeline: stage reached + the client's own 3 hops.
+* <code>tor-client-health</code> -- client tor health (bootstrap, guards, consensus validity window).
+* <code>onion-splitbrain-check</code> -- two daemons publishing the SAME identity key on the hashring?
+* <code>onion-splitbrain-selftest</code> -- mock-control-port selftest for the split-brain detector.
+* <code>tor-orconn-watch</code> -- server-side OR-connection disruption (live <code>--follow</code> or cron sample).
+* <code>clock-drift-check</code> -- online-vs-local clock delta (a skew breaks descriptor windows).
+* <code>onion-control-snapshot</code> -- service-side intro/guard/liveness snapshot (<code>--paths</code>: service's 3 hops).
+* <code>onion-intro-watchdog</code> -- detect a DEGRADED intro-point set (+ optional remediation).
+* <code>onion-hs-stats</code> -- onion health / anti-DoS stats (intro rate, PoW, upload freshness).
+* <code>onion-hostname</code> -- print an instance's <code>.onion</code> hostname.
 
 Server specific tools:
 
-* `onion-preflight` -- staged reachability diagnosis for ONE onion (+ refetch heal test).
-* `onion-e2e-path` -- end-to-end hop-by-hop stitcher, both control ports (repro/same-host).
-* `check-onions` -- sweep EVERY instance, run the matching preflight; non-zero if any fail.
-* `onion-probe-fresh` -- probe via a FRESH, isolated tor (`onionprobe`, ephemeral ports).
-* `onion-fail-capture` / `-all` -- on-failure forensic capture into the onion-diag log.
-* `onion-rend-collect` -- collect REND (degraded-descriptor) causes into the diag log.
-* `onion-circuit-rate` -- rendezvous-circuit request rate per onion (from nginx logs).
-* `onion-redirect-test` -- guard: a `.onion` request must never redirect to the clearnet host.
-* `onion-ipv6-ab` -- TEMPORARY: surface the IPv6 A/B circuit-test result.
+* <code>onion-preflight</code> -- staged reachability diagnosis for ONE onion (+ refetch heal test).
+* <code>onion-e2e-path</code> -- end-to-end hop-by-hop stitcher, both control ports (repro/same-host).
+* <code>check-onions</code> -- sweep EVERY instance, run the matching preflight; non-zero if any fail.
+* <code>onion-probe-fresh</code> -- probe via a FRESH, isolated tor (<code>onionprobe</code>, ephemeral ports).
+* <code>onion-fail-capture</code> / <code>-all</code> -- on-failure forensic capture into the onion-diag log.
+* <code>onion-rend-collect</code> -- collect REND (degraded-descriptor) causes into the diag log.
+* <code>onion-circuit-rate</code> -- rendezvous-circuit request rate per onion (from nginx logs).
+* <code>onion-redirect-test</code> -- guard: a <code>.onion</code> request must never redirect to the clearnet host.
+* <code>onion-ipv6-ab</code> -- TEMPORARY: surface the IPv6 A/B circuit-test result.
 
 = Local Tor Client Stall Bug =
 
