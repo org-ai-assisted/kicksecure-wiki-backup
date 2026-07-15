@@ -113,6 +113,39 @@ It has been reproduced multiple times that an unreachable onion becomes reachabl
 
 When restarting Tor resolves the issue, this can almost always be considered a bug in Tor, as Tor should be able to recover without requiring a restart.
 
+onionprobe can be useful for this purpose.
+
+= onionprobe =
+
+Whonix: <code>onionprobe</code> is incompatible with Whonix.<ref>
+Because <code>onionprobe</code> starts a temporary (throwaway) Tor daemon before probing an onion.
+
+Hence, <code>onionprobe</code> is not suitable to be run from within Whonix, and only from Debian, Kicksecure, or similar.
+
+<code>onionprobe</code> supports <code>--no-launch_tor</code> but requires Tor control protocol access. Writing an [https://www.whonix.org/wiki/Onion-grater onion-grater] profile might be possible, but it would be a lot of work for a non-ideal result using <code>onionprobe</code> differently from how it is designed to run by default. </ref>
+
+Debian, Kicksecure, etc.:
+
+{{CodeSelect|code=
+sudo apt update
+}}
+
+{{CodeSelect|code=
+sudo apt install onionprobe
+}}
+
+Kicksecure:
+
+{{CodeSelect|code=
+onionprobe -e w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion
+}}
+
+Whonix:
+
+{{CodeSelect|code=
+onionprobe -e dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion
+}}
+
 = Onion Domains by Other Projects =
 
 * [https://tails.net/ Tails]
