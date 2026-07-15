@@ -105,7 +105,7 @@ The other experimental defenses from the add-on are not yet implemented in Arti 
 
 = Lack of Onion Reachability Debugging Tools =
 {{IntroLike|
-A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezvous point (RP), split across two daemons on two hosts, with cached state and rate-limited observation. From the outside almost every failure looks identical: a connect just "hangs" or "fails". Each question below isolates a different failure stage, and the difficulty is nearly always the same shape: ''how do I see one stage without the other stages lying to me?''
+A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezvous point (RP), split across two daemons on two hosts, with cached state and rate-limited observation. From the outside almost every failure looks identical: a connect just "hangs" or "fails". Each question below isolates a different failure stage, and the difficulty is nearly always the same shape: ''how do I observe one stage without the other stages masking what it is really doing?''
 }}
 
 == Fault attribution: is it me or the service? ==
@@ -113,9 +113,9 @@ A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezv
 {| class="wikitable"
 ! Question !! Why it is hard !! Planned Tool(s)
 |-
-| Whose fault is a failed connect -- my client tor, the network, or the service? || The single hardest question: all three produce the same "it does not load". || <code>onion-preflight</code> (isolates client-vs-onion via external control onions), <code>tor-client-health</code>
+| Whose fault is a failed connect -- my client Tor, the network, or the service? || The single hardest question: all three produce the same "it does not load". || <code>onion-preflight</code> (isolates client-vs-onion via external control onions), <code>tor-client-health</code>
 |-
-| Can my local tor reach relays at all, or is my guard set dead? || A degraded or 0-up guard set is a client fault masquerading as an onion outage. || <code>tor-client-health</code> (DEGRADED on 0 guards)
+| Can my local Tor reach relays at all, or is my guard set dead? || A degraded or 0-up guard set is a client fault masquerading as an onion outage. || <code>tor-client-health</code> (DEGRADED on 0 guards)
 |-
 | Is the break in the client's own 3 hops, or beyond the RP where I can never see? || On the real internet each side sees only its own three hops. || <code>onion-connect-trace</code> (client leg), <code>onion-control-snapshot --paths</code> (service leg), <code>onion-e2e-path</code> (stitches both on a same-host repro)
 |-
@@ -182,7 +182,7 @@ General tools:
 * <code>onion-desc-fetch</code> -- is the descriptor PUBLISHED on the hashring right now (HSFETCH)?
 * <code>onion-desc-inspect</code> -- decrypt/print the client's CACHED descriptor (intro points, revision, PoW).
 * <code>onion-connect-trace</code> -- client-side sidecar timeline: stage reached + the client's own 3 hops.
-* <code>tor-client-health</code> -- client tor health (bootstrap, guards, consensus validity window).
+* <code>tor-client-health</code> -- client Tor health (bootstrap, guards, consensus validity window).
 * <code>onion-splitbrain-check</code> -- two daemons publishing the SAME identity key on the hashring?
 * <code>onion-splitbrain-selftest</code> -- mock-control-port selftest for the split-brain detector.
 * <code>tor-orconn-watch</code> -- server-side OR-connection disruption (live <code>--follow</code> or cron sample).
@@ -197,7 +197,7 @@ Server specific tools:
 * <code>onion-preflight</code> -- staged reachability diagnosis for ONE onion (+ refetch heal test).
 * <code>onion-e2e-path</code> -- end-to-end hop-by-hop stitcher, both control ports (repro/same-host).
 * <code>check-onions</code> -- sweep EVERY instance, run the matching preflight; non-zero if any fail.
-* <code>onion-probe-fresh</code> -- probe via a FRESH, isolated tor (<code>onionprobe</code>, ephemeral ports).
+* <code>onion-probe-fresh</code> -- probe via a FRESH, isolated Tor (<code>onionprobe</code>, ephemeral ports).
 * <code>onion-fail-capture</code> / <code>-all</code> -- on-failure forensic capture into the onion-diag log.
 * <code>onion-rend-collect</code> -- collect REND (degraded-descriptor) causes into the diag log.
 * <code>onion-circuit-rate</code> -- rendezvous-circuit request rate per onion (from nginx logs).
