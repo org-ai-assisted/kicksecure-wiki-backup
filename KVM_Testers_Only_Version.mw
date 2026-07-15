@@ -231,14 +231,14 @@ max_files = 0
 * Done
 
 = Image File Installation =
-The XML files are configured to use newly created user level path <code>~/.local/share/libvirt/images</code> instead of the default storage location of <code>/var/lib/libvirt/images</code>. The image files can be moved or copied, depending on storage constraints.
+The XML files are configured to use newly created user level path <code>~/.local/share/images</code> instead of the default storage location of <code>/var/lib/libvirt/images</code>. The image files can be moved or copied, depending on storage constraints.
 
 <u>Notes:</u>
 
 * The directory must be created before copying or moving the images. To create the path:
 
 {{CodeSelect|code=
-mkdir -p ~/.local/share/libvirt/images
+mkdir -p ~/.local/share/images
 }}
 
 * The following steps move or copy the images so the virtual machines can boot.
@@ -255,7 +255,7 @@ Either move <u>or</u> copy.
 Move the image files.
 
 {{CodeSelect|code=
-mv {{project_name_short}}*.qcow2 ~/.local/share/libvirt/images/{{project_name_short}}.qcow2
+mv {{project_name_short}}*.qcow2 ~/.local/share/images/{{project_name_short}}.qcow2
 }}
 }}
 {{Tab
@@ -266,18 +266,32 @@ Copy the image files. {{Anchor|sparse files}}
 {{project_name_short}} disk images are [[Sparse_files|sparse files]], meaning they expand as data is written rather than allocating their entire size (100GB) outright. Sparse files require special commands when they are copied to ensure they retain this property; otherwise, they will occupy the full disk space.
 
 {{CodeSelect|code=
-cp --sparse=always {{project_name_short}}*.qcow2 ~/.local/share/libvirt/images/{{project_name_short}}.qcow2
+cp --sparse=always {{project_name_short}}*.qcow2 ~/.local/share/images/{{project_name_short}}.qcow2
 }}<!-- close CodeSelect -->
 }}<!-- close tab -->
 }}<!-- close controller -->
 
 == Start ==
 
-=== Virt-Manager GUI default is <code>qemu:///system</code> not <code>qemu:///session</code> ===
+=== Virtual Machine Manager (Virt-Manager) GUI default is <code>qemu:///system</code> not <code>qemu:///session</code> ===
 
-If Kicksecure not shown in the default opening of Virt-Manager, Then this is because it assumes your VMs on normal QEMU/KVM or qemu:///system, so you need to change that to QEMU/KVM user session:
+If {{project_name_short}} VM not shown in the default opening of Virt-Manager, Then this is because it assumes your VMs on default <code>qemu:///system</code>, so you need to change that to <code>qemu:///session</code>:
 
-Go to <code>virt-manager</code> &rarr; <code>File</code> &rarr; <code>Add Connection</code> &rarr; Switch Hypervisor from <code>QEMU/KVM</code> to <code>QEMU/KVM user session</code> &rarr; Connect
+Go to <code>Virtual Machine Manager</code> &rarr; <code>File</code> &rarr; <code>Add Connection...</code> &rarr; Switch Hypervisor from <code>QEMU/KVM</code> to <code>QEMU/KVM user session</code> &rarr; Tick <code>Autoconnect</code> &rarr; <code>Connect</code>.
+
+Images:
+
+[[File:enable-qemu-session-1.png|500px]]
+
+[[File:enable-qemu-session-2.png|500px]]
+
+[[File:enable-qemu-session-3.png|500px]]
+
+[[File:enable-qemu-session-4.png|500px]]
+
+After that start {{project_name_long}} VM.
+
+----
 
 If the virt-manager always going to show <code>qemu:///system</code> whenever you start the virt-manager, then to solve this run:
 
@@ -289,8 +303,6 @@ source ~/.zshrc
 }}
 
 (If someone is using Bash instead of Zsh, change <code>.zshrc</code> to <code>.bashrc</code>, This tells your entire user profile including the GUI to always target your local user session by default).
-
-After that first start {{project_name_long}}.
 
 === Using Kicksecure with LXQt as Graphical User Interface (GUI) Desktop ===
 
