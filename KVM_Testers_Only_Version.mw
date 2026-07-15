@@ -190,13 +190,7 @@ Be aware that the extraction process may take an exceptionally long time to comp
 
 The supplied XML files serve as a description for libvirt and define the properties of a {{project_name_short}} VM and the networking it should have.
 
-By default, the username used is <code>user</code>. This can vary from user to user, so if you have a different username and want to change it to the one you are using, run this command where <code>{{project_name_short}}.xml</code> is going to exist:
-
-{{CodeSelect|code=
-sed -i "s{{!}}/home/user/{{!}}$HOME/{{!}}g" {{project_name_short}}.xml
-}}
-
-* Then define the properties of {{project_name_short}} VM
+* Define the properties of {{project_name_short}} VM
 
 {{CodeSelect|code=
 virsh -c qemu:///session define {{project_name_short}}*.xml
