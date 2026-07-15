@@ -169,7 +169,9 @@ A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezv
 {| class="wikitable"
 ! Question !! Why it is hard !! Planned Tool(s)
 |-
-| Is the service reachable but not actually replying correctly? || Reachability is not the same as working: a port can accept TCP yet give no valid greeting, or refuse at the app level after a good rendezvous. || <code>onion-mail-probe</code> (POP3 <code>+OK</code> / IMAP <code>* OK</code> / SMTP <code>220</code>; <code>--direct</code> separates "backend down" from "onion path broken")
+| Is a web onion reachable but serving the wrong thing -- a 502/503, the default vhost, or an empty reply after a good rendezvous? || A completed rendezvous only proves the tunnel is up; nginx can still answer with an error page, the wrong server block, or nothing at all, and a plain reachability probe passes it clean. || <code>onion-preflight</code> (HTTP end-to-end gate), <code>check-sites-online</code> (configured clearnet + onion sites return OK), <code>onion-mail-probe --direct</code> (local <code>:74</code> HTTP stub vs the onion's <code>:80</code>)
+|-
+| Is a mail onion reachable but not actually replying correctly? || Same trap for mail: a port can accept TCP yet give no valid greeting, or refuse at the app level after a good rendezvous. || <code>onion-mail-probe</code> (POP3 <code>+OK</code> / IMAP <code>* OK</code> / SMTP <code>220</code>; <code>--direct</code> separates "backend down" from "onion path broken")
 |-
 | Does any <code>.onion</code> request get redirected to the clearnet host? || A correctness and deanonymization bug that a plain reachability check passes clean. || <code>onion-redirect-test</code>
 |}
