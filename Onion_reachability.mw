@@ -105,6 +105,32 @@ The other experimental defenses from the add-on are not yet implemented in Arti 
 
 = Lack of Onion Reachability Debugging Tools =
 
+* `onion-socks-probe` -- raw SOCKS5 CONNECT reachability probe (real onion REP byte).
+* `onion-desc-fetch` -- is the descriptor PUBLISHED on the hashring right now (HSFETCH)?
+* `onion-desc-inspect` -- decrypt/print the client's CACHED descriptor (intro points, revision, PoW).
+* `onion-connect-trace` -- client-side sidecar timeline: stage reached + the client's own 3 hops.
+* `tor-client-health` -- client tor health (bootstrap, guards, consensus validity window).
+* `onion-splitbrain-check` -- two daemons publishing the SAME identity key on the hashring?
+* `onion-splitbrain-selftest` -- mock-control-port selftest for the split-brain detector.
+* `tor-orconn-watch` -- server-side OR-connection disruption (live `--follow` or cron sample).
+* `clock-drift-check` -- online-vs-local clock delta (a skew breaks descriptor windows).
+* `onion-control-snapshot` -- service-side intro/guard/liveness snapshot (`--paths`: service's 3 hops).
+* `onion-intro-watchdog` -- detect a DEGRADED intro-point set (+ optional remediation).
+* `onion-hs-stats` -- onion health / anti-DoS stats (intro rate, PoW, upload freshness).
+* `onion-hostname` -- print an instance's `.onion` hostname.
+
+server specific tools:
+
+* `onion-preflight` -- staged reachability diagnosis for ONE onion (+ refetch heal test).
+* `onion-e2e-path` -- end-to-end hop-by-hop stitcher, both control ports (repro/same-host).
+* `check-onions` -- sweep EVERY instance, run the matching preflight; non-zero if any fail.
+* `onion-probe-fresh` -- probe via a FRESH, isolated tor (`onionprobe`, ephemeral ports).
+* `onion-fail-capture` / `-all` -- on-failure forensic capture into the onion-diag log.
+* `onion-rend-collect` -- collect REND (degraded-descriptor) causes into the diag log.
+* `onion-circuit-rate` -- rendezvous-circuit request rate per onion (from nginx logs).
+* `onion-redirect-test` -- guard: a `.onion` request must never redirect to the clearnet host.
+* `onion-ipv6-ab` -- TEMPORARY: surface the IPv6 A/B circuit-test result.
+
 = Local Tor Client Stall Bug =
 
 A relevant factor is the state of the Tor user's local Tor daemon.
