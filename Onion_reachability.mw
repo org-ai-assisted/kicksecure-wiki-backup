@@ -129,7 +129,7 @@ A Tor v3 onion connection is two independent 3-hop circuits meeting at a rendezv
 |-
 | Is the descriptor published on the hashring now, or am I clinging to a cached one? || Two different truths, and the warm-client cache hides the difference. || <code>onion-desc-fetch</code> (live HSFETCH), <code>onion-desc-inspect</code> (cached copy)
 |-
-| Am I hitting the tor#25882 refetch-stall (warm client, stale descriptor, dead intro points)? || A fresh client works while the warm one fails, so it will not reproduce after a restart. || <code>onion-preflight</code> REFETCH HEAL TEST (heals => stale-descriptor class; still fails => intro points genuinely dead)
+| Am I hitting the [https://gitlab.torproject.org/tpo/core/tor/-/work_items/26294 tor#25882 refetch-stall] (warm client, stale descriptor, dead intro points)? || A fresh client works while the warm one fails, so it will not reproduce after a restart. || <code>onion-preflight</code> REFETCH HEAL TEST (heals => stale-descriptor class; still fails => intro points genuinely dead)
 |-
 | How do I view the descriptor, its revision counter, and which dead intro relays the client held? || The forensic state lives encrypted in the client's cache. || <code>onion-desc-inspect</code> (revision counter, lifetime, single-onion, PoW, intro set; <code>--ns</code> marks NOT IN CONSENSUS)
 |-
