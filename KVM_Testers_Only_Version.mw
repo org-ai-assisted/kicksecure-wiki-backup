@@ -24,6 +24,20 @@ For more details about {{project_name_short}}, check [[About|{{project_name_shor
 
 Support tickets should be forwarded to the [https://forums.{{project_clearnet}}/c/kvm KVM subforum].
 
+= Install KVM =
+
+For '''{{project_name_short}}''' on Intel / AMD, install:
+
+{{CodeSelect|code=
+sudo apt install --no-install-recommends qemu-system-x86 qemu-system-gui qemu-system-modules-spice qemu-utils libvirt-daemon libvirt-daemon-driver-qemu libvirt-daemon-driver-storage libvirt-clients virt-manager gir1.2-spiceclientgtk-3.0 passt ovmf swtpm swtpm-tools safe-rm xz-utils
+}}
+
+For '''{{project_name_short}}''' on PowerPC, install:
+
+{{CodeSelect|code=
+sudo apt install --no-install-recommends qemu-system-ppc qemu-system-gui qemu-system-modules-spice qemu-utils libvirt-daemon-system libvirt-daemon-driver-qemu libvirt-daemon-driver-storage libvirt-clients virt-manager gir1.2-spiceclientgtk-3.0 passt swtpm swtpm-tools safe-rm xz-utils
+}}
+
 = Build from Scratch =
 
 Advanced users are encouraged to [[Dev/Build_Documentation|build]] {{project_name_short}} images for high security assurance.
