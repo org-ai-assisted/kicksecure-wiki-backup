@@ -19,6 +19,18 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 
 = arraybolt3 =
+== 2026-07-16 ==
+=== Write sandbox-manager-dist #13 ===
+Date: 2026-07-16
+
+Mostly thought through how sandbox reconfiguration needed to work, also fixed a sandbox creation bug.
+
+== 2026-07-15 ==
+=== More research on Tor implementation findings from AI ===
+Date: 2026-07-15
+
+Ran some of the test code, attempting to verify the claims and see if a bug report needs to be created or not.
+
 == 2026-07-14 ==
 === Start reading through Tor implementation findings from AI ===
 Date: 2026-07-14
