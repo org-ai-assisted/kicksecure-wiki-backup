@@ -22,9 +22,6 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
-== qemu aes bug ==
-* https://github.com/org-ai-assisted/qemu-x86_64-aes-gcm-miscompile-ppc64el
-
 == security-misc - misc review and merge ==
 * https://github.com/Kicksecure/security-misc/pulls
 
