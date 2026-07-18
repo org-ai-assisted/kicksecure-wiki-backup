@@ -22,6 +22,14 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
+== onion-client-refetch-stall-tor ==
+* Anything useful here?
+* https://github.com/org-ai-assisted/onion-client-refetch-stall-tor
+** Aaron: Mostly confirmed that there is indeed not any bug (at least not one worth worrying about) here.
+* https://github.com/org-ai-assisted/onion-client-refetch-stall-arti
+** Aaron: Confirmed the bug, reproduced, filed a report: https://gitlab.torproject.org/tpo/core/arti/-/work_items/2629 Move to WAITING ON if this is good enough, since I will want to follow up with upstream and potentially prepare the reproduction script for publication.
+* Patrick: Please provide reproduction scripts (even if rough) so I can do more AI testing.
+
 == security-misc - misc review and merge ==
 * https://github.com/Kicksecure/security-misc/pulls
 
