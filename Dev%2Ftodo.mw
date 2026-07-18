@@ -1051,13 +1051,6 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * https://github.com/org-ai-assisted/qemu-x86_64-aes-gcm-miscompile-ppc64el
 * Patrick: Need to provide PPC server.
 
-== onion-client-refetch-stall-tor ==
-* Anything useful here?
-* https://github.com/org-ai-assisted/onion-client-refetch-stall-tor
-** Aaron: Mostly confirmed that there is indeed not any bug (at least not one worth worrying about) here.
-* https://github.com/org-ai-assisted/onion-client-refetch-stall-arti
-** Aaron: Confirmed the bug, reproduced, filed a report: https://gitlab.torproject.org/tpo/core/arti/-/work_items/2629 Move to WAITING ON if this is good enough, since I will want to follow up with upstream and potentially prepare the reproduction script for publication.
-
 == qubes-issues #1951 - comment - Improve support for high-resolution displays ==
 * please comment:
 ** https://github.com/QubesOS/qubes-issues/issues/1951#issuecomment-4747021172
