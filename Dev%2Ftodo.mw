@@ -30,6 +30,15 @@ Developer task list and work queue. This page summarizes short-term development 
 ** Aaron: Confirmed the bug, reproduced, filed a report: https://gitlab.torproject.org/tpo/core/arti/-/work_items/2629 Move to WAITING ON if this is good enough, since I will want to follow up with upstream and potentially prepare the reproduction script for publication.
 * Patrick: Please provide reproduction scripts (even if rough) so I can do more AI testing.
 
+== apps in start menu not launching ==
+* see chat
+** Aaron:
+*** Livecheck does not appear broken. By design, it does not pop up a window when launched, it only places itself in the start menu. Maybe we should add features that will make it pop up a window when launched from the start menu?
+*** tb-updater is broken due to a bug in tb-updater itself. Environment variables are most likely not a factor.
+*** gparted is broken because it attempts to launch itself using pkexec, which we intentionally break via permissions in user sessions. However, it is broken in unrestricted admin mode as well, because Xwayland is not configured to allow root to connect by default. Running <code>xhost +si:localuser:root</code> is not enough, as Xwayland automatically terminates if it hasn't been used for some amount of time, and when it starts next, it no longer allows root to connect. Needs further investigation. An acceptable solution will fix this by changing OS-level code or configuration, not by adding code to any applications.
+*** Global Firewall Settings and User Firewall Settings both work in unrestricted admin mode. They do not work in normal user mode due to restricted permissions. Environment variables are not the problem. We might want to add code specifically to these launchers to display a GUI message if superuser permissions aren't available.
+*** askpass is broken, not because of any graphical environment issues, but because yad is being launched wrong. It pops up a window, but the window lacks anything to type into.
+
 == security-misc - misc review and merge ==
 * https://github.com/Kicksecure/security-misc/pulls
 
