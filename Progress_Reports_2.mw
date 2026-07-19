@@ -19,6 +19,17 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 
 = arraybolt3 =
+== 2026-07-17 ==
+=== security-misc PR review and merge #1 ===
+Date: 2026-07-17
+
+Looked at several of the filed PRs, merged some of them, commented on others. Also did routine merge and review work.
+
+=== Further research into C-Tor behavior ===
+Date: 2026-07-17
+
+Discussed AI findings with Patrick, ran more detailed test and shared results.
+
 == 2026-07-16 ==
 === Verify Arti stall when introduction points die, file bug report ===
 Date: 2026-07-16
