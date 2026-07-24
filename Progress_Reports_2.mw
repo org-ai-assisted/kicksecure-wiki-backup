@@ -20,6 +20,16 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 
 = arraybolt3 =
 == 2026-07-22 ==
+=== Attempt porting livecheck to Qt6 ===
+Date: 2026-07-22
+
+Port was mostly successful, but the tray icon sometimes did not appear. Found a potential solution but did not implement it yet.
+
+=== Review grml-debootstrap reproducible image PRs, rewrite one of them and submit upstream ===
+Date: 2026-07-22
+
+Found that the disk identifier PR made sense, reworked it, and submitted it upstream. The filesystem ID PR did not appear functional and I could not find a way to make it functional.
+
 === Investigate VirtualBox Guest Additions installation failure ===
 Date: 2026-07-22
 
