@@ -64,7 +64,7 @@ https://github.com/Kicksecure/grub-live/pull/4
 Non-exhaustive list:
 
 * Prominent examples only.
-** Linux
+** Linux kernel: [https://docs.kernel.org/process/generated-content.html Kernel Guidelines for Tool-Generated Content]
 ** systemd <ref>
 * [https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code]
 * https://github.com/systemd/systemd/commit/744d589632c545e90ae76853abbfbc90cb530e24
