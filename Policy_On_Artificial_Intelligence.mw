@@ -62,8 +62,10 @@ https://github.com/Kicksecure/grub-live/pull/4
 = Other Projects Using Artificial Intelligence =
 * Linux
 * systemd
-* https://forums.whonix.org/t/is-whonix-vibecoded-now/23405
 * https://gitlab.torproject.org/tpo/core/tor/-/commit/32be50cdf44e6df5fab57bcb4d931087bb0c8e09
+
+= Forum Discussion =
+* https://forums.whonix.org/t/is-whonix-vibecoded-now/23405
 
 = Credits =
 * <u>Based in part on:</u> [https://doc.qubes-os.org/en/latest/introduction/contributing.html#using-ai-in-contributions Qubes OS: Using AI in contributions] (related: [https://forum.qubes-os.org/t/guidance-on-using-ai-in-contributions/39626 Qubes forum discussion: Guidance on using AI in contributions]).
