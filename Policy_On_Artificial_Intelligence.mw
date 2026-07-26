@@ -72,6 +72,7 @@ Non-exhaustive list:
 * https://github.com/systemd/systemd/commit/744d589632c545e90ae76853abbfbc90cb530e24
 * https://github.com/systemd/systemd/blob/main/.github/workflows/claude-review.yml
 * https://github.com/systemd/systemd/blob/main/AGENTS.md
+* https://codeberg.org/ai-alternatives/llm-afflicted-software/src/branch/main/system-components.yaml
 </ref>
 ** Tor Project: https://gitlab.torproject.org/tpo/core/tor/-/commit/32be50cdf44e6df5fab57bcb4d931087bb0c8e09
 
