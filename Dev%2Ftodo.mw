@@ -35,6 +35,8 @@ Developer task list and work queue. This page summarizes short-term development 
 ** https://github.com/org-ai-assisted/grml-debootstrap/pull/4
 *** Aaron: Will not work as written. FAT supports other kinds of timestamps that mtools is not capable of modifying. There does not appear to be a good library or utility for modifying this metadata on Linux yet. See chat for detailed notes.
 * https://github.com/grml/grml-debootstrap/issues/383
+* Patrick:
+** https://github.com/org-ai-assisted/grml-debootstrap/pull/6
 
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
