@@ -66,11 +66,19 @@ Non-exhaustive list:
 * Prominent examples only.
 ** Linux
 ** systemd <ref>
+* [https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code]
 * https://github.com/systemd/systemd/commit/744d589632c545e90ae76853abbfbc90cb530e24
 * https://github.com/systemd/systemd/blob/main/.github/workflows/claude-review.yml
 * https://github.com/systemd/systemd/blob/main/AGENTS.md
 </ref>
 ** Tor Project: https://gitlab.torproject.org/tpo/core/tor/-/commit/32be50cdf44e6df5fab57bcb4d931087bb0c8e09
+
+{{quotation
+|quote=To specifically address the worries about the effectiveness of llms, I recommend everyone read the AI review comments on e.g. #39010. AI is at the point where it is catching issues that human reviewers would likely miss and allows us to start making progress on reviewing prs that we otherwise would not find time to review (of course a full human review is still required).
+
+For all the other concerns, this is not a battle to fight on the systemd issue tracker. Those considering a new init system because of this will also need to look for a new kernel as Linux itself is accepting AI contributions as well these days (https://docs.kernel.org/process/generated-content.html).
+|context=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/daandemeyer Daan De Meyer (@daandemeyer), systemd/mkosi maintainer]
+}}
 
 There are projects that track types of use of AI by Open Source projects:
 
