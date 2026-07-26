@@ -84,7 +84,7 @@ For all the other concerns, this is not a battle to fight on the systemd issue t
 |quote=Just to briefly say one thing: it would be dishonest to not accept the fact that Claude code reviews actually got really really good recently. AI code reviews went from 95% slop and 5% ok, to 80% really good, and 20% garbage. It has been finding real CVEs in the past weeks, and it's just too good to ignore now. Whatever you think of AI, if one is honest, then one has to respect those Claude reviews. Without them systemd code quality would be worse, vulnerabilities that exist would not be found, and that's not a good thing for the world. Just denying all this completely would leave people more vulnerable, code quality much worse and I cannot see how anyone would benefit from that. Yes, AI is problematic in many ways, but it's not a binary thing, and I'd rather be in front of the CVE wave crashing in on us, then leaving it all to blackhat hackers to take benefit of.
 
 The world is a complex place. Things are ambivalent.
-|context=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/poettering Lennart Poettering (@poettering), systemd developer)
+|context=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/poettering Lennart Poettering (@poettering), systemd developer)]
 }}
 
 There are projects that track types of use of AI by Open Source projects:
