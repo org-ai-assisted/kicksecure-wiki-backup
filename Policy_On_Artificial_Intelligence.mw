@@ -61,13 +61,19 @@ https://github.com/Kicksecure/grub-live/pull/4
 * [https://github.com/systemd/systemd/blob/main/docs/CONTRIBUTING.md#policy-on-the-use-of-large-language-models-llms-and-ai-tooling Policy on the use of Large Language Models (LLMs) and AI tooling]
 
 = Other Projects Using Artificial Intelligence =
-* Linux
-* systemd <ref>
+Non-exhaustive list:
+
+* Prominent examples only.
+** Linux
+** systemd <ref>
 * https://github.com/systemd/systemd/commit/744d589632c545e90ae76853abbfbc90cb530e24
 * https://github.com/systemd/systemd/blob/main/.github/workflows/claude-review.yml
 * https://github.com/systemd/systemd/blob/main/AGENTS.md
 </ref>
-* Tor Project: https://gitlab.torproject.org/tpo/core/tor/-/commit/32be50cdf44e6df5fab57bcb4d931087bb0c8e09
+** Tor Project: https://gitlab.torproject.org/tpo/core/tor/-/commit/32be50cdf44e6df5fab57bcb4d931087bb0c8e09
+
+There are projects that track types of use of AI by Open Source projects:
+
 * https://codeberg.org/ethical-foss/open-slopware
 
 = Forum Discussion =
