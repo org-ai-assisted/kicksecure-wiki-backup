@@ -39,9 +39,13 @@ Developer task list and work queue. This page summarizes short-term development 
 * pls update arraybolt trixie branch with above two WIP branches
 
 == derivative-maker - reproducible - initial review ==
-* full non-malicious review
-* limited CI functionality review (non-malicious review only) (limited to derivative-maker repository only)
-* dist-ai may be interesting, but no review needed in the security model
+* included tasks:
+** full non-malicious review
+** limited CI functionality review (non-malicious review only) (limited to derivative-maker repository only)
+* excluded tasks:
+** dist-ai may be interesting, but no review needed in the security model
+** bit-for-bit actually reproducible testing on the same computer
+** bit-for-bit actually reproducible testing on different computers (Patrick will do more reproducible testing once this review is done)
 
 follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial review:
 
