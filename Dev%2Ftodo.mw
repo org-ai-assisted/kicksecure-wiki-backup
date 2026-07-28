@@ -61,6 +61,7 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 - reproducible build twice use case versus build ci nowadays using dm-build-official?
 - umount_kill.sh should only kill processes, not use umount itself
 - help-steps/umount*: too many scripts. discuss how to refactor/simplify/unify
+- compare local build hash with CI build hash
 </pre>
 
 (Meaning, these parts may need non-malicious review only. Functionality review may not be worthwhile due to large refactoring planned.)
