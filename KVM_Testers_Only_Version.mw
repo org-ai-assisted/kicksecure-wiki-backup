@@ -339,13 +339,13 @@ If you want to remove {{project_name_short}} KVM VMs, the {{project_name_short}}
 '''1.''' Power off the VM you want to Remove (If not already).
 
 {{CodeSelect|code=
-sudo virsh -c qemu:///session destroy {{project_name_short}}
+virsh -c qemu:///session destroy {{project_name_short}}
 }}
 
 '''2.''' Remove the KVM VM settings.
 
 {{CodeSelect|code=
-sudo virsh -c qemu:///session undefine {{project_name_short}}
+virsh -c qemu:///session undefine {{project_name_short}}
 }}
 
 '''3.''' Delete the images.
