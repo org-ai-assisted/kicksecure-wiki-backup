@@ -38,6 +38,9 @@ Developer task list and work queue. This page summarizes short-term development 
 == grml-debootstrap - update Kicksecure ==
 * pls update arraybolt trixie branch with above two WIP branches
 
+== sanitize-string strami fix review and merge ==
+* https://github.com/org-ai-assisted/helper-scripts/pull/74
+
 == derivative-maker - reproducible - initial review ==
 * included tasks:
 ** full non-malicious review
