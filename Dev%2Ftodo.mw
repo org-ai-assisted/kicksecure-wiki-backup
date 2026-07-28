@@ -38,6 +38,29 @@ Developer task list and work queue. This page summarizes short-term development 
 == grml-debootstrap - update Kicksecure ==
 * pls update arraybolt trixie branch with above two WIP branches
 
+== derivative-maker - reproducible - initial review ==
+* full non-malicious review
+* limited CI functionality review (non-malicious review only) (limited to derivative-maker repository only)
+* dist-ai may be interesting, but no review needed in the security model
+
+follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial review:
+
+<pre>
+- derivative-maker AGENTS.md make it minimal regarding its Test chapter similar to others. see also CI skill.
+- github-actions-security.md move to dist-ai
+- reimage-raw-reproducible use dirname with end of options
+- use mktemp with end of options but test if possible
+- same for mount, umount, cp, sort, debugfs, etc
+- ci free scratch dir can be deprecated by moving into the dedicated build step
+- function iso_workdir_cleanup why needed why not part of usual umount? cleanup should be part of usual build-steps
+- when dm-build-official is used in CI mode, delete already compared reproducible images to save disk space?
+- reproducible build twice use case versus build ci nowadays using dm-build-official?
+- umount_kill.sh should only kill processes, not use umount itself
+- help-steps/umount*: too many scripts. discuss how to refactor/simplify/unify
+</pre>
+
+(Meaning, these parts may need non-malicious review only. Functionality review may not be worthwhile due to large refactoring planned.)
+
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
 * Keep in mind that room should be left for vm-app-manager features to be integrated into this
