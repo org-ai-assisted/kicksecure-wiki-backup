@@ -65,7 +65,7 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
 * Keep in mind that room should be left for vm-app-manager features to be integrated into this
 
-== vbox-guest-installer issues =
+== vbox-guest-installer issues ==
 * https://forums.whonix.org/t/shared-folders-vanished-from-the-workstation/23415
 
 == vm-app-manager ==
