@@ -37,6 +37,8 @@ Developer task list and work queue. This page summarizes short-term development 
 
 == sanitize-string stream fix review and merge ==
 * https://github.com/org-ai-assisted/helper-scripts/pull/74
+* replaced by
+https://github.com/org-ai-assisted/initializer-dist/pull/3
 
 == derivative-maker - reproducible - initial review ==
 * included tasks:
