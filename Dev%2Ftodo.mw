@@ -22,9 +22,6 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
-== grml-debootstrap - DPKG_OPTIONS pass-through ==
-* https://github.com/org-ai-assisted/grml-debootstrap/pull/6/commits/4f1538a3a8adcee60a2828822ae74e2f7a4ba5a1
-
 == grml-debootstrap - reproducible GPT disk GUID ==
 * please review and upstream:
 ** https://github.com/org-ai-assisted/grml-debootstrap/pull/2
@@ -38,7 +35,7 @@ Developer task list and work queue. This page summarizes short-term development 
 == grml-debootstrap - update Kicksecure ==
 * pls update arraybolt trixie branch with above two WIP branches
 
-== sanitize-string strami fix review and merge ==
+== sanitize-string stream fix review and merge ==
 * https://github.com/org-ai-assisted/helper-scripts/pull/74
 
 == derivative-maker - reproducible - initial review ==
@@ -1094,6 +1091,10 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== grml-debootstrap - DPKG_OPTIONS pass-through ==
+* https://github.com/org-ai-assisted/grml-debootstrap/pull/6/commits/4f1538a3a8adcee60a2828822ae74e2f7a4ba5a1
+** Aaron: Found the right part of the change and integrated it into my fork.
+
 == privleap - nonexistent action - review and merge ==
 * https://github.com/org-ai-assisted/privleap/pull/4
 ** Aaron: Reviewed, rewrote and pushed.
