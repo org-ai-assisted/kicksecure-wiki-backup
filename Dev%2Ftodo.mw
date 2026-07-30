@@ -32,9 +32,6 @@ Developer task list and work queue. This page summarizes short-term development 
 * Patrick:
 ** https://github.com/org-ai-assisted/grml-debootstrap/pull/6
 
-== grml-debootstrap - update Kicksecure ==
-* pls update arraybolt trixie branch with above two WIP branches
-
 == sanitize-string stream fix review and merge ==
 * https://github.com/org-ai-assisted/helper-scripts/pull/74
 * replaced by https://github.com/org-ai-assisted/helper-scripts/pull/78
@@ -1092,6 +1089,10 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== grml-debootstrap - update Kicksecure ==
+* pls update arraybolt trixie branch with above two WIP branches
+** Aaron: Done, commit pushed to grml-debootstrap branch arraybolt3/ks.
+
 == grml-debootstrap - DPKG_OPTIONS pass-through ==
 * https://github.com/org-ai-assisted/grml-debootstrap/pull/6/commits/4f1538a3a8adcee60a2828822ae74e2f7a4ba5a1
 ** Aaron: Found the right part of the change and integrated it into my fork.
