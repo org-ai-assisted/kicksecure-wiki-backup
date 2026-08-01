@@ -60,6 +60,22 @@ https://github.com/bitcoin/bitcoin/issues/16393
 
 https://github.com/bitcoin/bitcoin/issues/19151
 
+https://github.com/bitcoin/bitcoin/issues/1666
+
+https://github.com/bitcoin/bitcoin/issues/3212
+
+https://github.com/bitcoin/bitcoin/issues/2692
+
+https://github.com/bitcoin/bips/blob/master/bip-0093.mediawiki
+
+https://github.com/bitcoin/bitcoin/pull/27351
+
+https://github.com/bitcoin/bitcoin/pull/33043
+
+https://github.com/bitcoin/bitcoin/pull/32652
+
+https://github.com/bitcoin/bitcoin/pull/33043
+
 * Wallet configuration - it is not easy to set up a split offline wallet (cold storage) and online watch only wallet.
 
 These activities are likely possible, but are [[undocumented]] here; refer to the footnotes for possible information sources. <ref>
@@ -68,6 +84,9 @@ These activities are likely possible, but are [[undocumented]] here; refer to th
 * https://github.com/JWWeatherman/yeticold
 * https://github.com/BenWestgate/yeti.Bash
 * https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/39
+
+https://github.com/JWWeatherman/yeticold/blob/master/utils/formating.py
+
 </ref>
 
 = Bitcoin Core Setup =
