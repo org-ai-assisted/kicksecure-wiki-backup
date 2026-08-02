@@ -1101,7 +1101,7 @@ The term "sudoless" can therefore be confusing, should either be avoided or clar
 * [[Dev/Strong_Linux_User_Account_Isolation|Strong Linux User Account Isolation]]
 
 = Development =
-* {{project_name_short}} code: {{Github_link|repo=security-misc|path=/pull/22|text=Restrict access to the <code>root</code> account}}.
+* {{project_name_short}} code: {{Github_link|repo=security-misc|path=/pull/22|text=Restrict access to the <code>root</code> account}}. The github link is missing!
 * https://forums.whonix.org/t/sysrq-magic-sysrq-key/8079/68
 * https://forums.whonix.org/t/should-lesser-adversaries-with-physical-access-be-part-of-the-threat-model-of-whonix-whonix-host-kicksecure/7997
 
