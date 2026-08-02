@@ -331,7 +331,7 @@ Start {{project_name_short}}:
 = Uninstall =
 
 <div class="toccolours mw-collapsible mw-collapsed">
-If you want to remove {{project_name_short}} KVM VMs, the {{project_name_short}} network, and {{project_name_short}} images, click Expand on the right.
+If you want to remove {{project_name_short}} KVM VM, the {{project_name_short}} network, and {{project_name_short}} image, click Expand on the right.
 
 <div class="mw-collapsible-content">
 
