@@ -45,6 +45,7 @@ Consider using DMARC strict alignment:
 * https://tools.socketlabs.com/
 * [https://www.appmaildev.com/en/dkimfile SPF/DKIM/DMARC/DomainKey/RBL Online Test]
 * https://github.com/6point6/dmarc_checker
+* https://www.suped.com/tools/email-tester
 
 == DKIM Header Injection Attack ==
 Introduction:
