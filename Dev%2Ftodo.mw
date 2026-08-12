@@ -22,15 +22,9 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
-== grml-debootstrap - reproducible GPT disk GUID ==
-* please review and upstream:
-** https://github.com/org-ai-assisted/grml-debootstrap/pull/2
-*** Aaron: Reviewed, was slightly confusing, not as flexible as could be hoped, seemed a bit brittle. Rewrote: https://github.com/grml/grml-debootstrap/pull/380
-** https://github.com/org-ai-assisted/grml-debootstrap/pull/4
-*** Aaron: Will not work as written. FAT supports other kinds of timestamps that mtools is not capable of modifying. There does not appear to be a good library or utility for modifying this metadata on Linux yet. See chat for detailed notes.
-* https://github.com/grml/grml-debootstrap/issues/383
-* Patrick:
-** https://github.com/org-ai-assisted/grml-debootstrap/pull/6
+== genmkfile cross-builds ==
+* Aaron:
+** Necessary to unbreak https://forums.kicksecure.com/t/dist-vm-gui-all-dependency-on-virtualbox-breaks-installation-on-ppc64/1815/6
 
 == derivative-maker - reproducible - initial review ==
 * included tasks:
@@ -68,6 +62,16 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 * https://github.com/org-ai-assisted/kicksecure-base-files/pull/1
 * https://github.com/org-ai-assisted/anon-gw-base-files/pull/1
 * https://github.com/org-ai-assisted/anon-ws-base-files/pull/1
+
+== grml-debootstrap - reproducible GPT disk GUID ==
+* please review and upstream:
+** https://github.com/org-ai-assisted/grml-debootstrap/pull/2
+*** Aaron: Reviewed, was slightly confusing, not as flexible as could be hoped, seemed a bit brittle. Rewrote: https://github.com/grml/grml-debootstrap/pull/380
+** https://github.com/org-ai-assisted/grml-debootstrap/pull/4
+*** Aaron: Will not work as written. FAT supports other kinds of timestamps that mtools is not capable of modifying. There does not appear to be a good library or utility for modifying this metadata on Linux yet. See chat for detailed notes.
+* https://github.com/grml/grml-debootstrap/issues/383
+* Patrick:
+** https://github.com/org-ai-assisted/grml-debootstrap/pull/6
 
 == vbox-guest-installer issues ==
 * https://forums.whonix.org/t/shared-folders-vanished-from-the-workstation/23415
