@@ -81,6 +81,10 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 == privleapd - switch to numeric ids internally ==
 * as discussed, to avoid user confusion issues if usernames are changed on-the-fly
 
+== security-misc misc improvements ==
+* https://github.com/Kicksecure/security-misc/pull/378
+* https://github.com/org-ai-assisted/security-misc/pull/27
+
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
 * Keep in mind that room should be left for vm-app-manager features to be integrated into this
