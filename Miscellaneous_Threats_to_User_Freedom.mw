@@ -170,6 +170,8 @@ https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/
 *** [https://www.theregister.com/2010/02/16/apple_bans_iphone_hackers/ Apple banned developers who created software that allowed disabling artificial user freedom restrictions on iPhone devices.]
 *** [https://consumerrights.wiki/Apple Consumer Rights Wiki: Apple]
 *** [[Mobile_Phone_Security#Data_Harvesting_by_Most_Phones|These phones are often packaged with spyware installed by default, which cannot be removed.]]
+*** [https://consumerrights.wiki/w/User:Louis/Volkswagen_app_GrapheneOS_lockout Volkswagen app refuses to run on GrapheneOS]
+*** Quote [https://grapheneos.org/articles/attestation-compatibility-guide GrapheneOS: Attestation compatibility guide]: <blockquote>The only reason they aren't permitting it is because we do not license Google Mobile Services (GMS) and these apps are enforcing Google's business interests rather than security.</blockquote>
 * Most phones that are sold by mobile carriers or manufacturers have locked bootloaders, which prohibit the user from installing alternative operating systems that are not certified by the hardware vendor. For example:
 ** The Microsoft Surface RT/2 tablet comes with Windows 8.1, which is nowadays outdated, and a locked bootloader. It cannot be updated to Windows 10 or to alternative operating systems such as Linux. <ref>
 * https://www.lovemysurface.net/windows-10-for-surface-rt2/
