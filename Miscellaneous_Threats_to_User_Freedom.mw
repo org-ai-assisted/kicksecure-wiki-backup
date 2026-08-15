@@ -15,7 +15,9 @@ Tivoization, malicious features, antifeature, tyrant software, treacherous compu
 {{non-freedom-software}}
 
 = User Freedom Threats =
+{{IntroLike|
 Since the inception of the four original essential software freedoms provided by [https://forums.whonix.org/t/lets-call-it-freedom-software-rather-than-free-software-or-open-source/6961 Freedom Software], other issues have emerged such as:
+}}
 
 <div class="use-2-columns strict-list-columns">
 * <u>Locked bootloaders</u>: Devices prohibiting the user from installing alternative operating systems that are not certified by the hardware vendor. ([https://en.wikipedia.org/wiki/Vendor_lock-in Vendor lock-in] / [https://en.wikipedia.org/wiki/Tivoization <u>Tivoization</u>] <ref>
@@ -125,6 +127,8 @@ See also:
 * DRM, Widevine: [https://blog.samuelmaddock.com/posts/google-widevine-blocked-my-browser/ I tried creating a web browser, and Google blocked me]
 
 = War on General Purpose Computing =
+https://consumerrights.wiki/w/User:Louis/Volkswagen_app_GrapheneOS_lockout
+
 There is an ongoing struggle against the unrestricted use of general-purpose computing devices. Increasingly, electronic devices sold today are, in fact, general-purpose computers that come with built-in restrictions that limit user control. Vendors purposely withhold administrative capabilities, also known as "root rights," from users, which can cause problems:
 
 * It prevents users from fixing problems or adding new features. For example, if a stock Android device fails to start, it is impossible to analyze what is going on without administrative rights, let alone fix it.
@@ -156,7 +160,8 @@ Examples of this struggle include:
 https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/
 </ref>
 *** Installation of apps without using the platform's official app store is sometimes still possible.
-**** Google Android: The process of installing an app from sources other than Google Play is still possible for technically advanced users clicking through scary warnings.
+**** Google Android: The process of installing an app from sources other than Google Play (sideloading) is still possible for technically advanced users clicking through scary warnings.
+***** Update: Google has plans to make sideloading even more cumbersome. See: [https://keepandroidopen.org/ Keep Android Open]
 **** Apple's iOS: Is even more restricted and does not permit installation of apps without the official iOS App Store.
 **** Alternative app stores such as F-Droid are forbidden in Google Play Store as well as in Apple's iOS App Store. At least F-Droid can be installed by technically advanced users on Android but not on iPhone where the user is even more locked out.
 *** For example, Apple [https://web.archive.org/web/20220830203150/https://archive.ph/0hnS3 rejected an endmyopia app] citing "medical diagnostic" from its App Store. Without App Store access on iOS devices, no applications can be installed. On iOS there is purposely not even a sideloading feature which is at least available on Google Android stock devices. In theory, devices could be jailbroken but that harms security and then many other apps would refuse to run due to [[#attestation|attestation]].
@@ -166,6 +171,8 @@ https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/
 *** [https://www.theregister.com/2010/02/16/apple_bans_iphone_hackers/ Apple banned developers who created software that allowed disabling artificial user freedom restrictions on iPhone devices.]
 *** [https://consumerrights.wiki/Apple Consumer Rights Wiki: Apple]
 *** [[Mobile_Phone_Security#Data_Harvesting_by_Most_Phones|These phones are often packaged with spyware installed by default, which cannot be removed.]]
+*** [https://consumerrights.wiki/w/User:Louis/Volkswagen_app_GrapheneOS_lockout Volkswagen app refuses to run on GrapheneOS]
+*** Quote [https://grapheneos.org/articles/attestation-compatibility-guide GrapheneOS: Attestation compatibility guide]: <blockquote>The only reason they aren't permitting it is because we do not license Google Mobile Services (GMS) and these apps are enforcing Google's business interests rather than security.</blockquote>
 * Most phones that are sold by mobile carriers or manufacturers have locked bootloaders, which prohibit the user from installing alternative operating systems that are not certified by the hardware vendor. For example:
 ** The Microsoft Surface RT/2 tablet comes with Windows 8.1, which is nowadays outdated, and a locked bootloader. It cannot be updated to Windows 10 or to alternative operating systems such as Linux. <ref>
 * https://www.lovemysurface.net/windows-10-for-surface-rt2/
@@ -186,7 +193,7 @@ https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/
 * Sophisticated civilian-accessible drones run software which restricts where they can fly.
 * Cellphone baseband firmware is not modifiable by the user, which prevents updating for security patches once the manufacturer abandons the device.
 * [https://www.theregister.com/2011/03/31/google_on_open_source_licenses/ Google banned AGPL licensed software from its code hosting platform.] [https://opensource.google/documentation/reference/using/agpl-policy/ Google has an anti-AGPL policy.]
-* The [https://consumerrights.wiki/ Consumer Rights Wiki] (https://consumerrights.wiki/Mission_statement mission statement]) includes a [https://consumerrights.wiki/Special:AllPages list] of user right to own violations and other user freedom restrictions.
+* The [https://consumerrights.wiki/ Consumer Rights Wiki] [https://consumerrights.wiki/Mission_statement mission statement]) includes a [https://consumerrights.wiki/Special:AllPages list] of user right to own violations and other user freedom restrictions.
 
 People are reduced to vassals in this relationship involving them and the hardware vendor. For more examples consult Chapter [[#User Freedom Threats|User Freedom Threats]] to see how some technologies are abused to restrict user freedom.
 
