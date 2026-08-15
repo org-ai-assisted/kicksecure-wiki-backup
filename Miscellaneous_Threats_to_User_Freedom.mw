@@ -160,7 +160,8 @@ Examples of this struggle include:
 https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/
 </ref>
 *** Installation of apps without using the platform's official app store is sometimes still possible.
-**** Google Android: The process of installing an app from sources other than Google Play is still possible for technically advanced users clicking through scary warnings.
+**** Google Android: The process of installing an app from sources other than Google Play (sideloading) is still possible for technically advanced users clicking through scary warnings.
+***** Update: Google has plans to make sideloading even more cumbersome. See: [https://keepandroidopen.org/ Keep Android Open]
 **** Apple's iOS: Is even more restricted and does not permit installation of apps without the official iOS App Store.
 **** Alternative app stores such as F-Droid are forbidden in Google Play Store as well as in Apple's iOS App Store. At least F-Droid can be installed by technically advanced users on Android but not on iPhone where the user is even more locked out.
 *** For example, Apple [https://web.archive.org/web/20220830203150/https://archive.ph/0hnS3 rejected an endmyopia app] citing "medical diagnostic" from its App Store. Without App Store access on iOS devices, no applications can be installed. On iOS there is purposely not even a sideloading feature which is at least available on Google Android stock devices. In theory, devices could be jailbroken but that harms security and then many other apps would refuse to run due to [[#attestation|attestation]].
