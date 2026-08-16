@@ -75,6 +75,9 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 == sys-whonix extreme cpu issue ==
 * https://forums.whonix.org/t/sys-whonix-has-extreme-cpu-usage-before-an-internet-connection/23450
 
+== nvidia-smi non functional in user session ==
+* https://forums.kicksecure.com/t/nvidia-is-recognized-by-sysmaint-but-not-by-user/1829
+
 == privleap misc rereview ==
 * https://github.com/org-ai-assisted/privleap/pull/8
 
