@@ -79,6 +79,8 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 * https://forums.kicksecure.com/t/nvidia-is-recognized-by-sysmaint-but-not-by-user/1829
 * https://gitlab.com/nonguix/nonguix/-/work_items/278
 
+mknod -m 666 /dev/nvidiactl c 195 255
+
 == privleap misc rereview ==
 * https://github.com/org-ai-assisted/privleap/pull/8
 
