@@ -81,6 +81,8 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 
 mknod -m 666 /dev/nvidiactl c 195 255
 
+* https://docs.nvidia.com/datacenter/tesla/mig-user-guide/device-nodes-and-capabilities.html
+
 == privleap misc rereview ==
 * https://github.com/org-ai-assisted/privleap/pull/8
 
