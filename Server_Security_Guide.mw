@@ -45,6 +45,7 @@ Consider using DMARC strict alignment:
 * https://tools.socketlabs.com/
 * [https://www.appmaildev.com/en/dkimfile SPF/DKIM/DMARC/DomainKey/RBL Online Test]
 * https://github.com/6point6/dmarc_checker
+* https://www.suped.com/tools/email-tester
 
 == DKIM Header Injection Attack ==
 Introduction:
@@ -98,6 +99,10 @@ Is SPF + DMARC sufficient or would this lead to ending up in the spam folder?
 rain dance required:
 
 * https://www.mailmonitor.com/repair-a-bad-domain-reputation-with-gmail/
+
+Opinions:
+
+* https://news.ycombinator.com/item?id=31072652
 
 == SPF ==
 SPF mostly ignored:
