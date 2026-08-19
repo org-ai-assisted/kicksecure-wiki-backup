@@ -743,7 +743,6 @@ Nov 24 10:13:35 localhost agetty[1346]: -: failed to get terminal attributes: In
 == KVM related ==
 === KVM - 3D Graphics Acceleration - SPICE - Testing - drm ===
 
-* please test: https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration_-_Testing_-_drm
 * please mention your configuration (still using SPICE), quote Patrick and report here: https://forums.whonix.org/t/how-to-enable-3d-acceleration-in-kvm/16501/22
 * test if DRM (direct rendering manager) is enabled as per https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration_-_Testing_-_Direct_Rendering_Manager
 * test performance as per https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration_-_Testing_-_Performance
