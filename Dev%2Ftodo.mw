@@ -93,6 +93,7 @@ mknod -m 666 /dev/nvidiactl c 195 255
 * https://github.com/Kicksecure/security-misc/pull/378
 ** https://github.com/org-ai-assisted/security-misc/pull/27
 * https://github.com/org-ai-assisted/developer-meta-files/pull/176
+* https://github.com/org-ai-assisted/helper-scripts/pull/78
 
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
