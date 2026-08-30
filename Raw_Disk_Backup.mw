@@ -304,6 +304,9 @@ For example, <code>sd'''a'''</code> is a device name and <code>/dev/sd'''a'''</c
 The actual <code>pv</code> command is not very difficult but the device paths need to be carefully determined before starting the backup, otherwise data loss is at risk.
 
 == Backup target disk size requirement ==
+
+pv /dev/nvme0n1 --output /dev/sdb
+
 The target device (backup disk) must be the same size or larger than the source device (the disk being backed up). If the target device is smaller, the backup will fail part-way through and the target disk will already be overwritten and unusable.
 
 {{IconSet|h1|1}} Boot from external USB disk.
