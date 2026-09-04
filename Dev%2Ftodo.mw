@@ -69,6 +69,11 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 * Patrick:
 ** https://github.com/org-ai-assisted/grml-debootstrap/pull/6
 
+== remove f12 keybind from labwc config ==
+* Aaron:
+** https://forums.whonix.org/t/how-to-disable-drop-down-qterminal-when-pressing-f12-in-workstation-lxqt/23528/2
+** Must wait until immediately after any AI-generated changes to desktop-config-dist have been reviewed and merged
+
 == vbox-guest-installer issues ==
 * https://forums.whonix.org/t/shared-folders-vanished-from-the-workstation/23415
 
