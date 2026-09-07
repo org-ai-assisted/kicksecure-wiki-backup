@@ -67,10 +67,7 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 *** Aaron: Will not work as written. FAT supports other kinds of timestamps that mtools is not capable of modifying. There does not appear to be a good library or utility for modifying this metadata on Linux yet. See chat for detailed notes.
 * https://github.com/grml/grml-debootstrap/issues/383
 * Patrick:
-** https://github.com/org-ai-assisted/grml-debootstrap/pull/6
-
-== vbox-guest-installer issues ==
-* https://forums.whonix.org/t/shared-folders-vanished-from-the-workstation/23415
+** https://github.com/org-ai-assisted/grml-debootstrap/pull/6R
 
 == sys-whonix extreme cpu issue ==
 * https://forums.whonix.org/t/sys-whonix-has-extreme-cpu-usage-before-an-internet-connection/23450
@@ -1144,6 +1141,10 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== vbox-guest-installer issues ==
+* https://forums.whonix.org/t/shared-folders-vanished-from-the-workstation/23415
+** Aaron: Attempted fixes listed at https://forums.whonix.org/t/virtualbox-guest-additions-broken-after-installing-apt-upgrades/23415/26.
+
 == privleap misc rereview ==
 * https://github.com/org-ai-assisted/privleap/pull/8
 ** Aaron: Done as part of the reproducible builds reviews.
