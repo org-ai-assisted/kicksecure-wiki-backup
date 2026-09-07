@@ -83,9 +83,6 @@ mknod -m 666 /dev/nvidiactl c 195 255
 
 * https://docs.nvidia.com/datacenter/tesla/mig-user-guide/device-nodes-and-capabilities.html
 
-== privleap misc rereview ==
-* https://github.com/org-ai-assisted/privleap/pull/8
-
 == privleapd - switch to numeric ids internally ==
 * as discussed, to avoid user confusion issues if usernames are changed on-the-fly
 
@@ -1147,6 +1144,10 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== privleap misc rereview ==
+* https://github.com/org-ai-assisted/privleap/pull/8
+** Aaron: Done as part of the reproducible builds reviews.
+
 == remove f12 keybind from labwc config ==
 * Aaron:
 ** https://forums.whonix.org/t/how-to-disable-drop-down-qterminal-when-pressing-f12-in-workstation-lxqt/23528/2
