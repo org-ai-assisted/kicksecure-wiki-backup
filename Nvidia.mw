@@ -363,9 +363,9 @@ While applications should be able to use the NVIDIA GPU right away once the driv
 NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
 </pre>
 
-The reason for this is that NVIDIA's drivers do not create important device nodes such as <code>/dev/nvidiactl</code> by default. They rely on a SUID-root helper, <code>/usr/bin/nvidia-modprobe</code>, to do this for them.<ref>https://docs.nvidia.com/datacenter/tesla/mig-user-guide/device-nodes-and-capabilities.html#dev-based-nvidia-capabilities</ref> {{project_name_short}}'s [[SUID Disabler and Permission Hardener]] strips the SUID bit from this file for security reasons, rendering it unusable. As <code>nvidia-modprobe</code> is a closed-source and difficult-to-audit binary, there are no plans to whitelist it in permission-hardener's configuration.
+The reason for this is that NVIDIA's drivers do not create important device nodes such as <code>/dev/nvidiactl</code> by default. They rely on a SUID-root helper, <code>/usr/bin/nvidia-modprobe</code>, to do this for them.<ref>https://docs.nvidia.com/datacenter/tesla/mig-user-guide/device-nodes-and-capabilities.html#dev-based-nvidia-capabilities</ref> {{project_name_short}}'s [[SUID Disabler and Permission Hardener]] strips the SUID bit from this file for security reasons, rendering it unusable. As <code>nvidia-modprobe</code> is a closed-source, difficult-to-audit binary, and the NVIDIA driver version in Debian Stable is generally outdated and therefore potentially vulnerable, there are no plans to whitelist it in permission-hardener's configuration.
 
-If you understand the risks of SUID-root binaries and trust NVIDIA's software to be secure enough for your threat model, you can manually whitelist the binary. Follow the instructions to [[SUID_Disabler_and_Permission_Hardener#Whitelist_Specific_SUID_Binaries|Whitelist Specific SUID Binaries]] to do this.
+If you understand the risks and wish to restore the SUID bit anyway, you can manually whitelist the binary. Follow the instructions to [[SUID_Disabler_and_Permission_Hardener#Whitelist_Specific_SUID_Binaries|Whitelist Specific SUID Binaries]] to do this.
 
 = NVIDIA and Freedom Software =
 {{IntroLike|
