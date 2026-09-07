@@ -356,6 +356,17 @@ Nouveau has been blacklisted and will no longer load.
 }}
 }}
 
+=== nvidia-smi and other NVIDIA management tools don't work ===
+While applications should be able to use the NVIDIA GPU right away once the drivers are installed, some applications that manage or monitor the GPU may be broken by default. <code>nvidia-smi</code> for instance will display the following message when run:
+
+<pre>
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+</pre>
+
+The reason for this is that NVIDIA's drivers do not create important device nodes such as <code>/dev/nvidiactl</code> by default. They rely on a SUID-root helper, <code>/usr/bin/nvidia-modprobe</code>, to do this for them.<ref>https://docs.nvidia.com/datacenter/tesla/mig-user-guide/device-nodes-and-capabilities.html#dev-based-nvidia-capabilities</ref> {{project_name_short}}'s [[SUID Disabler and Permission Hardener]] strips the SUID bit from this file for security reasons, rendering it unusable. As <code>nvidia-modprobe</code> is a closed-source and difficult-to-audit binary, there are no plans to whitelist it in permission-hardener's configuration.
+
+If you understand the risks of SUID-root binaries and trust NVIDIA's software to be secure enough for your threat model, you can manually whitelist the binary. Follow the instructions to [[SUID_Disabler_and_Permission_Hardener#Whitelist_Specific_SUID_Binaries|Whitelist Specific SUID Binaries]] to do this.
+
 = NVIDIA and Freedom Software =
 {{IntroLike|
 NVIDIA support involves a tradeoff between software freedom, hardware support, performance, and stability. Users who prioritize software freedom should prefer Nouveau when it works well enough for their hardware and workload. Users who require better performance or hardware features may need the proprietary driver.
