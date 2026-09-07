@@ -182,6 +182,12 @@ Select Debian Repository or NVIDIA's Repository.
 This option installs the NVIDIA proprietary driver packages from the Debian repositories. It is generally the simplest proprietary driver installation method because it uses Debian packaged software and integrates with the normal APT package management workflow.
 }}
 
+{{mbox
+| image   = [[File:Ambox_warning_pn.svg.png|40px]]
+| text    =
+'''Security Warning:''' {{project_name_short}} 18 is based on Debian Trixie. The version of NVIDIA's drivers present in Debian Trixie by default is 550. The NVIDIA 550 drivers are end-of-life, unmaintained, and are very likely to contain security vulnerabilities. Do not proceed with this process unless you fully understand the risks.
+}}
+
 {{Install_Package|package=
 linux-headers-$(uname -r) firmware-nvidia-gsp firmware-nvidia-graphics nvidia-smi nvidia-driver nvidia-kernel-dkms
 }}
