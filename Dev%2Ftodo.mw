@@ -84,6 +84,9 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 ** sanitize-string
 ** vbox-ova-reproduce-normalize
 
+== privleap - review coverage.py test enhancements ==
+* https://github.com/org-ai-assisted/privleap/pull/9
+
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
 * Keep in mind that room should be left for vm-app-manager features to be integrated into this
