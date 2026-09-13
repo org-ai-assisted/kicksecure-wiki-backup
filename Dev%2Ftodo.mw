@@ -28,7 +28,7 @@ Developer task list and work queue. This page summarizes short-term development 
 ** limited CI functionality review (non-malicious review only) (limited to derivative-maker repository only)
 * excluded tasks:
 ** dist-ai may be interesting, but no review needed in the security model
-** bit-for-bit actually reproducible testing on the same computer
+** bit-for-bit actually reproducible testing on the same computerar
 ** bit-for-bit actually reproducible testing on different computers (Patrick will do more reproducible testing once this review is done)
 
 follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial review:
@@ -900,6 +900,7 @@ f4cc44bdad86254a9b4aa355320e52e1749c93c0 to f4cc44bdad86254a9b4aa355320e52e1749c
 ** https://gitlab.freedesktop.org/gnu-grub/grub/-/merge_requests/89
 * Merge request to fix a bug with backing out of submenus:
 ** https://gitlab.freedesktop.org/gnu-grub/grub/-/merge_requests/91
+* Both merge requests accepted. This should be left in WAITING ON until at least Forky, which is the earliest release that might have these features in it.
 
 == ISO - GRUB - silence cosmetic errors in live ISO GRUB ==
 * Earlier attempts to fix cosmetic errors in GRUB failed, since they introduced bugs into the live-build-provided boot screen.
