@@ -87,6 +87,11 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 == privleap - review coverage.py test enhancements ==
 * https://github.com/org-ai-assisted/privleap/pull/9
 
+== tor-control-panel fixup ==
+* Aaron:
+** Improve reliability, code quality
+** Merge in most recent updates from troubador in the process
+
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
 * Keep in mind that room should be left for vm-app-manager features to be integrated into this
