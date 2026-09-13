@@ -109,6 +109,12 @@ source_guard() {
 }
 </pre>
 
+=== security-misc - hardware specific hardening ===
+* Aaron:
+** Design still in discussion; will probably involve legacy-dist, security-misc-shared postinst, may involve passive notifications
+** Goal: For hardening measures that are known to be problematic on some hardware, detect when the hardware is compatible with them on boot and enable them for the next reboot. Automatically disable hardening measures when they are enabled and the booted hardware is not compatible with them.
+** Context: https://github.com/Kicksecure/security-misc/pull/352
+
 == fix ecosystem-wide issues with executable MIME handlers ==
 * Aaron:
 ** https://bugs.winehq.org/show_bug.cgi?id=59767
