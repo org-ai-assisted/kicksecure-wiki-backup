@@ -1120,7 +1120,7 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * https://github.com/Kicksecure/security-misc/pulls
 ** Aaron: Previously pending PRs that are now resolved or are being ignored:
 *** https://github.com/Kicksecure/security-misc/pull/352 Needs input from Patrick or raja-grewal or both.
-**** No input given, ignoring for now.
+**** Will require a more complex implementation. Discussing details in chat, will create a new ticket for this when it's time.
 *** https://github.com/Kicksecure/security-misc/pull/358 The useful parts of this were merged manually, should be closed.
 **** This was closed.
 *** https://github.com/Kicksecure/security-misc/pull/365 Probably should be merged directly, rather than going through my branch?
