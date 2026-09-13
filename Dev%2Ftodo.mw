@@ -1131,7 +1131,7 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 **** Merged.
 *** https://github.com/Kicksecure/security-misc/pull/376 Asked a question, would like a response or change before merging, but if this gets stuck we can merge it and fix it afterwards.
 **** Merged.
-* Aaron: This is effectively done, see chat for a note on the currently-ignored PR.
+* Aaron: Everything that could be merged has been merged. Will file follow-up tasks as needed.
 
 == security-misc misc improvements ==
 * https://github.com/Kicksecure/security-misc/pull/378
