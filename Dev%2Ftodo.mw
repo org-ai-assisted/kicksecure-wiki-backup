@@ -857,10 +857,6 @@ Nov 24 10:13:35 localhost agetty[1346]: -: failed to get terminal attributes: In
 ** only worth fixing if applicable to Whonix
 ** Aaron: Submitted reports for three of the four bugs I thought were worth reporting, the last one has not been reported yet to avoid flooding upstream with reports
 
-== user-sysmaint-split forum thread ==
-* https://forums.whonix.org/t/sysadmint-and-its-removal-broken/23255
-** Aaron: Could not reproduce, left a comment with testing results and awaiting a reply.
-
 == sq-git feature request or bug report ==
 <pre>
 sq-git log --trust-root HEAD del
@@ -1346,6 +1342,11 @@ mknod -m 666 /dev/nvidiactl c 195 255
 *** Aaron: Reviewed, made some minor tweaks but otherwise kept the fix. Commit pushed to sdwdate-gui.
 
 = ARCHIVED =
+== user-sysmaint-split forum thread ==
+* https://forums.whonix.org/t/sysadmint-and-its-removal-broken/23255
+** Aaron: Could not reproduce, left a comment with testing results and awaiting a reply.
+*** Discussed back and forth for a while. Last reply was about two and a half months ago, assuming abandoned for now.
+
 == Tor Browser not launching in Qubes-Whonix-Workstation 18 StandaloneVM ==
 * https://github.com/QubesOS/qubes-issues/issues/10514#issuecomment-3700693542
 ** Aaron: Diagnosed issue, waiting for feedback on suggested solution from Marek.
