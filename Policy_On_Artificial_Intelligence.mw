@@ -48,6 +48,7 @@ https://github.com/Kicksecure/grub-live/pull/4
 }}
 * <u>Pull request example:</u> https://github.com/Kicksecure/tor-control-panel/pull/1
 * https://forums.whonix.org/t/fix-anon-connection-wizard-validation-logic-for-webtunnel-bridges-regex-parsing-error/23233
+* list of links here: https://github.com/ossf/wg-vulnerability-disclosures/issues/178
 
 = Other Projects Policies =
 * <u>Debian:</u> Relevant discussions and reporting on AI contribution policy.
@@ -58,6 +59,45 @@ https://github.com/Kicksecure/grub-live/pull/4
 * <u>Gentoo:</u> https://wiki.gentoo.org/wiki/Project:Council/AI_policy
 * <u>QEMU:</u> https://www.qemu.org/docs/master/devel/code-provenance.html#use-of-ai-generated-content
 * <u>Linux Foundation:</u> https://www.linuxfoundation.org/legal/generative-ai
+* [https://github.com/systemd/systemd/blob/main/docs/CONTRIBUTING.md#policy-on-the-use-of-large-language-models-llms-and-ai-tooling Policy on the use of Large Language Models (LLMs) and AI tooling]
+* https://codeberg.org/brib/slopfree-software-index
+
+= Other Projects Using Artificial Intelligence =
+Non-exhaustive list:
+
+* Prominent examples only.
+** Linux kernel: [https://docs.kernel.org/process/generated-content.html Kernel Guidelines for Tool-Generated Content]
+** systemd <ref>
+* [https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code] (rejected policy suggestion)
+* https://github.com/systemd/systemd/commit/744d589632c545e90ae76853abbfbc90cb530e24
+* https://github.com/systemd/systemd/blob/main/.github/workflows/claude-review.yml
+* https://github.com/systemd/systemd/blob/main/AGENTS.md
+* https://codeberg.org/ai-alternatives/llm-afflicted-software/src/branch/main/system-components.yaml
+</ref>
+** Tor Project: https://gitlab.torproject.org/tpo/core/tor/-/commit/32be50cdf44e6df5fab57bcb4d931087bb0c8e09
+
+{{quotation
+|quote=To specifically address the worries about the effectiveness of llms, I recommend everyone read the AI review comments on e.g. #39010. AI is at the point where it is catching issues that human reviewers would likely miss and allows us to start making progress on reviewing prs that we otherwise would not find time to review (of course a full human review is still required).
+
+For all the other concerns, this is not a battle to fight on the systemd issue tracker. Those considering a new init system because of this will also need to look for a new kernel as Linux itself is accepting AI contributions as well these days (https://docs.kernel.org/process/generated-content.html).
+|context=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/daandemeyer Daan De Meyer (@daandemeyer), systemd/mkosi maintainer]
+}}
+
+{{quotation
+|quote=Just to briefly say one thing: it would be dishonest to not accept the fact that Claude code reviews actually got really really good recently. AI code reviews went from 95% slop and 5% ok, to 80% really good, and 20% garbage. It has been finding real CVEs in the past weeks, and it's just too good to ignore now. Whatever you think of AI, if one is honest, then one has to respect those Claude reviews. Without them systemd code quality would be worse, vulnerabilities that exist would not be found, and that's not a good thing for the world. Just denying all this completely would leave people more vulnerable, code quality much worse and I cannot see how anyone would benefit from that. Yes, AI is problematic in many ways, but it's not a binary thing, and I'd rather be in front of the CVE wave crashing in on us, then leaving it all to blackhat hackers to take benefit of.
+
+The world is a complex place. Things are ambivalent.
+|context=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/poettering Lennart Poettering (@poettering), systemd developer)]
+}}
+
+There are projects that track types of use of AI by Open Source projects:
+
+* https://codeberg.org/ethical-foss/open-slopware
+* https://codeberg.org/ai-alternatives/llm-afflicted-software
+
+= Forum Discussion =
+* https://forums.whonix.org/t/is-whonix-vibecoded-now/23405
+* https://forums.whonix.org/t/whonix-ai-security-usage/23555
 
 = Credits =
 * <u>Based in part on:</u> [https://doc.qubes-os.org/en/latest/introduction/contributing.html#using-ai-in-contributions Qubes OS: Using AI in contributions] (related: [https://forum.qubes-os.org/t/guidance-on-using-ai-in-contributions/39626 Qubes forum discussion: Guidance on using AI in contributions]).
