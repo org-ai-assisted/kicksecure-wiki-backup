@@ -75,15 +75,6 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 ** Users can modify these files currently and have those modifications preserved, because the actions are stored under <code>/etc</code>.
 ** In privleapd, read config from <code>/usr/lib/privleap/conf.d</code> too, then migrate all package privleap configuration there.
 
-== security-misc misc improvements ==
-* https://github.com/Kicksecure/security-misc/pull/378
-** https://github.com/org-ai-assisted/security-misc/pull/27
-* https://github.com/org-ai-assisted/developer-meta-files/pull/176
-* https://github.com/org-ai-assisted/helper-scripts/pull/78 focus:
-** usr/bin/check-ref-commits-for-unicode
-** sanitize-string
-** vbox-ova-reproduce-normalize
-
 == privleap - review coverage.py test enhancements ==
 * https://github.com/org-ai-assisted/privleap/pull/9
 
@@ -1135,6 +1126,16 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== security-misc misc improvements ==
+* https://github.com/Kicksecure/security-misc/pull/378
+** https://github.com/org-ai-assisted/security-misc/pull/27
+* https://github.com/org-ai-assisted/developer-meta-files/pull/176
+* https://github.com/org-ai-assisted/helper-scripts/pull/78 focus:
+** usr/bin/check-ref-commits-for-unicode
+** sanitize-string
+** vbox-ova-reproduce-normalize
+* Aaron: All ai branches have been merged and cleaned up, so this should be done. Many of the changes in the PRs linked above look familiar after having done these merges.
+
 == privleapd - switch to numeric ids internally ==
 * as discussed, to avoid user confusion issues if usernames are changed on-the-fly
 ** Aaron: Done, commits pushed to privleap. Some AI review has already been done, but an extra round of review after test refactoring would be useful.
