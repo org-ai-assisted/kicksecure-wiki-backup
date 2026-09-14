@@ -300,14 +300,7 @@ find . | grep --fixed-strings motd.d
 * https://forums.kicksecure.com/t/help-with-booting-kicksecure-on-heads-coreboot-bios/1339
 * https://github.com/linuxboot/heads/issues/2008
 * Patrick: On HOLD. Discussion to consider this a heads issue and leave fixing it to heads since heads has many boot comparability issues.
-** https://forums.kicksecure.com/t/help-with-booting-kicksecure-on-heads-coreboot-bios/1339/7
-
-== VirtualBox - shared folder - error handling ==
-* user story: I think that I added a shared folder alraedy. But I am mistaken without knowing. The following error message by mnt-shared-vbox.service leads to hunting non-existing issues. The only issue is the omitted host configuration.
-
-<pre>
-Nov 06 16:29:18 localhost mount-shared[1099]: /sbin/mount.vboxsf: mounting failed with the error: No such file or directory
-</pre>
+** https://forums.kicksecure.com/t/help-with-booting-kicksecure-on-heads-coreboot-bios/1339/7RE
 
 == VirtualBox - shared folder - confusing readme ==
 * The readme shows up even after shared folder is perfectly functional.
@@ -1118,6 +1111,15 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== VirtualBox - shared folder - error handling ==
+* user story: I think that I added a shared folder alraedy. But I am mistaken without knowing. The following error message by mnt-shared-vbox.service leads to hunting non-existing issues. The only issue is the omitted host configuration.
+
+<pre>
+Nov 06 16:29:18 localhost mount-shared[1099]: /sbin/mount.vboxsf: mounting failed with the error: No such file or directory
+</pre>
+
+* Aaron: Likely taken care of as part of the mass AI refactor. We now print a much more informative error message, <code>INFO: could not mount /mnt/shared; leaving it unmounted. Probably no share named 'shared' is configured on the host.</code>
+
 == privleap - migrate package-provided actions to /usr/lib/privleap/conf.d ==
 * Aaron:
 ** Actions provided by packages are essentially API definitions. Users should not be modifying them or the files containing them.
