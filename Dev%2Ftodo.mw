@@ -103,9 +103,11 @@ source_guard() {
 }
 </pre>
 
-=== security-misc - hardware specific hardening ===
+== security-misc - hardware specific hardening ==
 * Aaron:
-** Design still in discussion; will probably involve legacy-dist, security-misc-shared postinst, may involve passive notifications
+** Design still in discussion; will probably involve legacy-dist and security-misc-shared postinst.
+** systemcheck should be used to show any reboot prompt. It has an autostart mode where critical notifications result in a popup.
+** systemcheck autostart mode can wait for legacy-dist to complete (we could potentially use systemd units for this, or we could use a done file, or similar)
 ** Goal: For hardening measures that are known to be problematic on some hardware, detect when the hardware is compatible with them on boot and enable them for the next reboot. Automatically disable hardening measures when they are enabled and the booted hardware is not compatible with them.
 ** Context: https://github.com/Kicksecure/security-misc/pull/352
 
