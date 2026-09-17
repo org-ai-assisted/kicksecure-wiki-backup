@@ -217,7 +217,7 @@ zsh: exit 1     reboot
 * Short-term use for research: Eventually create a page on the Kicksecure wiki for how to set up local AI safely, create or update a page on the Whonix wiki for anti-stylometry using the local AI setup documentation
 * Long-term goal: Create a framework for an optional "sys-ai" VM and anti-stylometry GUI
 ** API concerns: Any AI-based features should use a backend/frontend architecture if possible, such that multiple ways of accessing the feature (native UI in Gateway, Tor Browser extension, etc.) can be developed
-** IPC concerns: We probably would benefit from some general solution for passing data between VMs without IP-based networking. Qubes has Xen vchans/qrexec, KVM has vsock, VirtualBox has whatever it does for Guest Additions (is that accessible to software other than Guest Additions itself?), QEMU on Windows has... ???
+** IPC concerns: We probably would benefit from some general solution for passing data between VMs without IP-based networking. Qubes has Xen vchans/qrexec, KVM has vsock, VirtualBox has whatever it does for Guest Additions (is that accessible to software other than Guest Additions itself? It seems so, see https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxmanage-guestcontrol.html), QEMU on Windows has... ???
 
 == keyboard LED brightness controls ==
 * https://forums.kicksecure.com/t/macbook-pro-keyboard-backlight-issue/1462
