@@ -59,6 +59,12 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 * https://github.com/org-ai-assisted/anon-gw-base-files/pull/1
 * https://github.com/org-ai-assisted/anon-ws-base-files/pull/1
 
+== fix Wayland clipboard sharing for latest VirtualBox update ==
+* Aaron:
+** https://forums.whonix.org/t/shared-clipboard-fixed/23258/5
+** https://forums.whonix.org/t/how-to-enable-shared-clipboard-drag-and-drop-features-inside-virtualbox-with-whonix-lxqt-18-0-8-7/22588/104
+** VBoxClient syntax seems to have changed, investigate
+
 == tor-control-panel fixup ==
 * Aaron:
 ** Improve reliability, code quality
