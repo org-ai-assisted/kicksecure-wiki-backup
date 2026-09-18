@@ -22,23 +22,47 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
-== virtualbox - fork vbox-guest-additions-iso, replace existing guest additions with it and fix clipboard ==
-* Aaron:
-** Add Breaks/Replaces against virtualbox-guest-x11 and virtualbox-guest-utils to dist-vm-gui-all, dist-baremetal-gui-all
-** Add Depends on virtualbox-guest-additions-iso to dist-vm-gui-all, dist-baremetal-gui-all
-** Add code to vm-config-dist postinst that installs Guest Additions from the ISO as part of the installation process
-** Add a user service to vm-config-dist that will start <code>VBoxClient --wayland</code> on bootup
-** Consider adjusting vbox-guest-installer to have both fail-open and fail-closed modes, we should use fail-closed in derivative-maker (this needs more discussion before doing it)
-** Consider installing Guest Additions even on non-VBox systems so that it transparently works everywhere, right now vbox-guest-installer refuses to install Guest Additions on non-Oracle machines unless building a VirtualBox image (This needs more discussion before doing it)
-** Test upgrading an existing VirtualBox VM with this, ensure clipboard sharing mostly works after upgrading
-** If this works for upgrades, try to build a VirtualBox image with newer Guest Additions pre-installed, ensure clipboard sharing mostly works after installation
-** Write a packaging helper script that will download the latest VirtualBox package from Oracle upstream, extract the VBoxGuestAdditions ISO from it, and add it to our fork of virtualbox-guest-additions-iso
-*** Mostly done, commits pushed to vm-config-dist, developer-meta-files, user-sysmaint-split, kicksecure-meta-packages, and anon-meta-packages. New repo created: https://github.com/ArrayBolt3/virtualbox-guest-additions-iso. Still need to write the script for fetching new ISOs, the ISO currently present in virtualbox-guest-additions-iso was taken from my ks-dev qube where virtualbox-7.2 (specifically version 7.2.10) is installed.
+== derivative-maker - reproducible - initial review ==
+* included tasks:
+** full non-malicious review
+** limited CI functionality review (non-malicious review only) (limited to derivative-maker repository only)
+* excluded tasks:
+** dist-ai may be interesting, but no review needed in the security model
+** bit-for-bit actually reproducible testing on the same computerar
+** bit-for-bit actually reproducible testing on different computers (Patrick will do more reproducible testing once this review is done)
 
-== tor-control-panel re-review ==
-* todo
-** Aaron: Most of the TODOs haven't been handled. A meld between troubadour's most recent code and my merged-tcp-review repo shows the remaining issues that need fixed or at least considered.
-*** Discussed with Patrick, will review for non-maliciousness, check functionality, try to fix the most glaring bugs, then merge despite low code quality. It's likely better than what we have currently, and we can fix it up more later.
+follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial review:
+
+<pre>
+- derivative-maker AGENTS.md make it minimal regarding its Test chapter similar to others. see also CI skill.
+- github-actions-security.md move to dist-ai
+- reimage-raw-reproducible use dirname with end of options
+- use mktemp with end of options but test if possible
+- same for mount, umount, cp, sort, debugfs, etc
+- ci free scratch dir can be deprecated by moving into the dedicated build step
+- function iso_workdir_cleanup why needed why not part of usual umount? cleanup should be part of usual build-steps
+- when dm-build-official is used in CI mode, delete already compared reproducible images to save disk space?
+- reproducible build twice use case versus build ci nowadays using dm-build-official?
+- umount_kill.sh should only kill processes, not use umount itself
+- help-steps/umount*: too many scripts. discuss how to refactor/simplify/unify
+- compare local build hash with CI build hash
+</pre>
+
+(Meaning, these parts may need non-malicious review only. Functionality review may not be worthwhile due to large refactoring planned.)
+
+* Patrick: above pre-box follow-up tasks done more or less
+* https://github.com/org-ai-assisted/derivative-maker/pull/87
+* https://github.com/org-ai-assisted/developer-meta-files/pull/176
+* https://github.com/org-ai-assisted/helper-scripts/pull/78
+* https://github.com/org-ai-assisted/vm-config-dist/pull/8
+* https://github.com/org-ai-assisted/kicksecure-base-files/pull/1
+* https://github.com/org-ai-assisted/anon-gw-base-files/pull/1
+* https://github.com/org-ai-assisted/anon-ws-base-files/pull/1
+
+== tor-control-panel fixup ==
+* Aaron:
+** Improve reliability, code quality
+** Merge in most recent updates from troubador in the process
 
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
@@ -47,6 +71,43 @@ Developer task list and work queue. This page summarizes short-term development 
 == vm-app-manager ==
 * [[vm-app-manager]]
 
+== secure terminal research ==
+* Aaron:
+** What minimum feature set do we need?
+** What needs blocked to prevent security issues?
+** What can we allow so that the terminal can be used for as many purposes as possible?
+** What should the UX be? We'll likely need separate view and input areas since we will likely be disabling the control codes that allow for in-place line editing.
+
+== source_once ==
+* Aaron:
+** Create a library that provides a function that could be used in place of <code>source</code>, that will source a library and set a flag so that the library isn't sourced again in the same application after that
+** Ensure that this doesn't break our code, top-level <code>declare</code> statements in libraries may break
+** Example made by Patrick with ChatGPT:
+
+<pre>
+# source_guard.sh
+
+source_guard() {
+    local file=$1
+    local name=${file##*/}      # foo.sh
+    name=${name%.*}             # foo
+    local var="${name^^}_SOURCED"
+
+    [[ -v $var ]] && return 1
+
+    printf -v "$var" yes
+    source "$file"
+}
+</pre>
+
+== security-misc - hardware specific hardening ==
+* Aaron:
+** Design still in discussion; will probably involve legacy-dist and security-misc-shared postinst.
+** systemcheck should be used to show any reboot prompt. It has an autostart mode where critical notifications result in a popup.
+** systemcheck autostart mode can wait for legacy-dist to complete (we could potentially use systemd units for this, or we could use a done file, or similar)
+** Goal: For hardening measures that are known to be problematic on some hardware, detect when the hardware is compatible with them on boot and enable them for the next reboot. Automatically disable hardening measures when they are enabled and the booted hardware is not compatible with them.
+** Context: https://github.com/Kicksecure/security-misc/pull/352
+
 == fix ecosystem-wide issues with executable MIME handlers ==
 * Aaron:
 ** https://bugs.winehq.org/show_bug.cgi?id=59767
@@ -54,12 +115,11 @@ Developer task list and work queue. This page summarizes short-term development 
 ** The current MIME handler situation on Linux means that there is no way to distinguish between MIME handlers that open files and MIME handlers that execute files. There is a real need for the latter, despite the fact that the xdg-mime manpage currently documents that MIME handlers should never blindly execute code.
 ** Try to work with FreeDesktop and other projects to introduce a way for MIME handlers that execute code to be registered and handled safely.
 *** Draft spec MR: https://gitlab.freedesktop.org/xdg/xdg-specs/-/merge_requests/116
-
-== labwc versus WAYLAND_DISPLAY environment variable ==
-* https://forums.kicksecure.com/t/system-maintenance-panel-not-showing-up/1603
+*** This was essentially rejected (not formally yet but the Flatpak and xdg-desktop-portal maintainer is not happy with it). Trying to convince Wine to use binfmt-misc at least on Linux even if not on other platforms.
 
 == sysmaint-panel versus scaling ==
 * https://forums.kicksecure.com/t/system-maintenance-panel-crash-with-display-scaling/1679
+** Current most likely solution: port to PyQt6 and see what happens.
 
 == Whonix-Installer - update for new Whonix-Starter code, bugfix ==
 * Needs to use the EXE installer compiled by NSIS now
@@ -154,7 +214,7 @@ zsh: exit 1     reboot
 * Short-term use for research: Eventually create a page on the Kicksecure wiki for how to set up local AI safely, create or update a page on the Whonix wiki for anti-stylometry using the local AI setup documentation
 * Long-term goal: Create a framework for an optional "sys-ai" VM and anti-stylometry GUI
 ** API concerns: Any AI-based features should use a backend/frontend architecture if possible, such that multiple ways of accessing the feature (native UI in Gateway, Tor Browser extension, etc.) can be developed
-** IPC concerns: We probably would benefit from some general solution for passing data between VMs without IP-based networking. Qubes has Xen vchans/qrexec, KVM has vsock, VirtualBox has whatever it does for Guest Additions (is that accessible to software other than Guest Additions itself?), QEMU on Windows has... ???
+** IPC concerns: We probably would benefit from some general solution for passing data between VMs without IP-based networking. Qubes has Xen vchans/qrexec, KVM has vsock, VirtualBox has whatever it does for Guest Additions (is that accessible to software other than Guest Additions itself? It seems so, see https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxmanage-guestcontrol.html), QEMU on Windows has... ???
 
 == keyboard LED brightness controls ==
 * https://forums.kicksecure.com/t/macbook-pro-keyboard-backlight-issue/1462
@@ -237,14 +297,7 @@ find . | grep --fixed-strings motd.d
 * https://forums.kicksecure.com/t/help-with-booting-kicksecure-on-heads-coreboot-bios/1339
 * https://github.com/linuxboot/heads/issues/2008
 * Patrick: On HOLD. Discussion to consider this a heads issue and leave fixing it to heads since heads has many boot comparability issues.
-** https://forums.kicksecure.com/t/help-with-booting-kicksecure-on-heads-coreboot-bios/1339/7
-
-== VirtualBox - shared folder - error handling ==
-* user story: I think that I added a shared folder alraedy. But I am mistaken without knowing. The following error message by mnt-shared-vbox.service leads to hunting non-existing issues. The only issue is the omitted host configuration.
-
-<pre>
-Nov 06 16:29:18 localhost mount-shared[1099]: /sbin/mount.vboxsf: mounting failed with the error: No such file or directory
-</pre>
+** https://forums.kicksecure.com/t/help-with-booting-kicksecure-on-heads-coreboot-bios/1339/7RE
 
 == VirtualBox - shared folder - confusing readme ==
 * The readme shows up even after shared folder is perfectly functional.
@@ -660,7 +713,6 @@ Nov 24 10:13:35 localhost agetty[1346]: -: failed to get terminal attributes: In
 == KVM related ==
 === KVM - 3D Graphics Acceleration - SPICE - Testing - drm ===
 
-* please test: https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration_-_Testing_-_drm
 * please mention your configuration (still using SPICE), quote Patrick and report here: https://forums.whonix.org/t/how-to-enable-3d-acceleration-in-kvm/16501/22
 * test if DRM (direct rendering manager) is enabled as per https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration_-_Testing_-_Direct_Rendering_Manager
 * test performance as per https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration_-_Testing_-_Performance
@@ -770,6 +822,25 @@ Nov 24 10:13:35 localhost agetty[1346]: -: failed to get terminal attributes: In
 ** https://github.com/Whonix/anon-apps-config/blob/master/etc/skel/.config/vlc/vlcrc
 
 = WAITING ON =
+== grml-debootstrap - reproducible GPT disk GUID ==
+* please review and upstream:
+** https://github.com/org-ai-assisted/grml-debootstrap/pull/2
+*** Aaron: Reviewed, was slightly confusing, not as flexible as could be hoped, seemed a bit brittle. Rewrote: https://github.com/grml/grml-debootstrap/pull/380
+** https://github.com/org-ai-assisted/grml-debootstrap/pull/4
+*** Aaron: Will not work as written. FAT supports other kinds of timestamps that mtools is not capable of modifying. There does not appear to be a good library or utility for modifying this metadata on Linux yet. See chat for detailed notes.
+**** We have since learned mtools is capable of this after all.
+* https://github.com/grml/grml-debootstrap/issues/383
+* Patrick:
+** https://github.com/org-ai-assisted/grml-debootstrap/pull/6R
+* Aaron:
+** Currently awaiting further response from upstream. This may not happen though, in which case we may need to finish developing this to an upstream-acceptable point ourselves.
+
+== qubes-issues #10969 ==
+* please comment:
+** https://github.com/QubesOS/qubes-issues/issues/10969
+*** Aaron: Debugged, discussed with Marek, ended up sending an email to the xen-devel and linux-kernel mailing lists detailing the issue at Marek's suggestion.
+*** Response received, waiting on a patch to test or similar.
+
 == onion-grater hardening ==
 * as discussed
 * https://gitlab.tails.boum.org/tails/tails/-/blob/master/config/chroot_local-includes/usr/local/lib/onion-grater
@@ -777,16 +848,6 @@ Nov 24 10:13:35 localhost agetty[1346]: -: failed to get terminal attributes: In
 * https://github.com/org-ai-assisted/onion-grater-bugs
 ** only worth fixing if applicable to Whonix
 ** Aaron: Submitted reports for three of the four bugs I thought were worth reporting, the last one has not been reported yet to avoid flooding upstream with reports
-
-== user-sysmaint-split forum thread ==
-* https://forums.whonix.org/t/sysadmint-and-its-removal-broken/23255
-** Aaron: Could not reproduce, left a comment with testing results and awaiting a reply.
-
-== Tor Browser not launching in Qubes-Whonix-Workstation 18 StandaloneVM ==
-* https://github.com/QubesOS/qubes-issues/issues/10514#issuecomment-3700693542
-** Aaron: Diagnosed issue, waiting for feedback on suggested solution from Marek.
-*** Feedback received, implement the fix described in https://github.com/QubesOS/qubes-issues/issues/10514#issuecomment-4538798101
-*** PR filed: https://github.com/QubesOS/qubes-core-admin/pull/813
 
 == sq-git feature request or bug report ==
 <pre>
@@ -800,14 +861,6 @@ f4cc44bdad86254a9b4aa355320e52e1749c93c0 to f4cc44bdad86254a9b4aa355320e52e1749c
 * Aaron: Existing bug report found at https://gitlab.com/sequoia-pgp/sequoia-git/-/work_items/15, commented.
 * Patrick: Please review upstream's PR.
 ** Aaron: I don't know Rust, so it's hard for me to review the bulk of the code. However, I did review the behavior as shown by the test suite, was able to run the tests, and did add a couple new (passing) tests for the remaining concerns: https://gitlab.com/sequoia-pgp/sequoia-git/-/merge_requests/119
-
-== AppArmor - assist with maintenance upstream ==
-* as discussed, see emails with intrigeri
-* Mostly figured out, awaiting review from roddhjav (apparmor.d maintainer)
-** Review received, time to submit to AppArmor upstream.
-*** Upstream MR created: https://gitlab.com/apparmor/apparmor/-/merge_requests/2084
-**** Approved and merged.
-*** Debian-side MR created: https://salsa.debian.org/apparmor-team/apparmor/-/merge_requests/35
 
 == live-build - deb822 support PR ==
 * Aaron:
@@ -839,6 +892,7 @@ f4cc44bdad86254a9b4aa355320e52e1749c93c0 to f4cc44bdad86254a9b4aa355320e52e1749c
 ** https://gitlab.freedesktop.org/gnu-grub/grub/-/merge_requests/89
 * Merge request to fix a bug with backing out of submenus:
 ** https://gitlab.freedesktop.org/gnu-grub/grub/-/merge_requests/91
+* Both merge requests accepted. This should be left in WAITING ON until at least Forky, which is the earliest release that might have these features in it.
 
 == ISO - GRUB - silence cosmetic errors in live ISO GRUB ==
 * Earlier attempts to fix cosmetic errors in GRUB failed, since they introduced bugs into the live-build-provided boot screen.
@@ -1054,10 +1108,241 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
-== sdwdate-gui not showing up in sysmaint session race condition fix ==
-* https://forums.whonix.org/t/sdwdate-gui-systray-is-not-appearing-in-whonix-gateway-sysmaint-session/23342
-* https://github.com/org-ai-assisted/sdwdate-gui/pull/1
-** Aaron: AI mis-identified the issue. Found the real problem and resolved it, commits pushed to user-sysmaint-split and sdwdate-gui.
+== fix Wayland clipboard sharing for latest VirtualBox update ==
+* Aaron:
+** https://forums.whonix.org/t/shared-clipboard-fixed/23258/5
+** https://forums.whonix.org/t/how-to-enable-shared-clipboard-drag-and-drop-features-inside-virtualbox-with-whonix-lxqt-18-0-8-7/22588/104
+** VBoxClient syntax seems to have changed, investigate
+** Confirmed, fix pushed to vm-config-dist. As a bonus, clipboard sharing seems to work very smoothly now!
+
+== privleap - review coverage.py test enhancements ==
+* https://github.com/org-ai-assisted/privleap/pull/9
+* https://github.com/org-ai-assisted/privleap/pull/10
+* Aaron: Reviewed, merged, and tweaked as needed. This is now working.
+
+== VirtualBox - shared folder - error handling ==
+* user story: I think that I added a shared folder alraedy. But I am mistaken without knowing. The following error message by mnt-shared-vbox.service leads to hunting non-existing issues. The only issue is the omitted host configuration.
+
+<pre>
+Nov 06 16:29:18 localhost mount-shared[1099]: /sbin/mount.vboxsf: mounting failed with the error: No such file or directory
+</pre>
+
+* Aaron: Likely taken care of as part of the mass AI refactor. We now print a much more informative error message, <code>INFO: could not mount /mnt/shared; leaving it unmounted. Probably no share named 'shared' is configured on the host.</code>
+
+== privleap - migrate package-provided actions to /usr/lib/privleap/conf.d ==
+* Aaron:
+** Actions provided by packages are essentially API definitions. Users should not be modifying them or the files containing them.
+** Users can modify these files currently and have those modifications preserved, because the actions are stored under <code>/etc</code>.
+** In privleapd, read config from <code>/usr/lib/privleap/conf.d</code> too, then migrate all package privleap configuration there.
+** Done, many repos affected.
+
+== security-misc - misc review and merge ==
+* https://github.com/Kicksecure/security-misc/pulls
+** Aaron: Previously pending PRs that are now resolved or are being ignored:
+*** https://github.com/Kicksecure/security-misc/pull/352 Needs input from Patrick or raja-grewal or both.
+**** Will require a more complex implementation. Discussing details in chat, will create a new ticket for this when it's time.
+*** https://github.com/Kicksecure/security-misc/pull/358 The useful parts of this were merged manually, should be closed.
+**** This was closed.
+*** https://github.com/Kicksecure/security-misc/pull/365 Probably should be merged directly, rather than going through my branch?
+**** Discussed with Patrick some time back, can be merged directly at some point.
+*** https://github.com/Kicksecure/security-misc/pull/373 maybebyte wants to make more changes, but is delayed.
+**** Merged.
+*** https://github.com/Kicksecure/security-misc/pull/374 Requested changes, offered to make them myself.
+**** Merged.
+*** https://github.com/Kicksecure/security-misc/pull/376 Asked a question, would like a response or change before merging, but if this gets stuck we can merge it and fix it afterwards.
+**** Merged.
+* Aaron: Everything that could be merged has been merged. Will file follow-up tasks as needed.
+
+== security-misc misc improvements ==
+* https://github.com/Kicksecure/security-misc/pull/378
+** https://github.com/org-ai-assisted/security-misc/pull/27
+* https://github.com/org-ai-assisted/developer-meta-files/pull/176
+* https://github.com/org-ai-assisted/helper-scripts/pull/78 focus:
+** usr/bin/check-ref-commits-for-unicode
+** sanitize-string
+** vbox-ova-reproduce-normalize
+* Aaron: All ai branches have been merged and cleaned up, so this should be done. Many of the changes in the PRs linked above look familiar after having done these merges.
+
+== privleapd - switch to numeric ids internally ==
+* as discussed, to avoid user confusion issues if usernames are changed on-the-fly
+** Aaron: Done, commits pushed to privleap. Some AI review has already been done, but an extra round of review after test refactoring would be useful.
+
+== nvidia-smi non functional in user session ==
+* https://forums.kicksecure.com/t/nvidia-is-recognized-by-sysmaint-but-not-by-user/1829
+* https://gitlab.com/nonguix/nonguix/-/work_items/278
+
+mknod -m 666 /dev/nvidiactl c 195 255
+
+* https://docs.nvidia.com/datacenter/tesla/mig-user-guide/device-nodes-and-capabilities.html
+** Aaron: Researched, determined that the fix was a potential security hazard, documented the fix for those who want to apply it manually. See https://forums.kicksecure.com/t/nvidia-is-recognized-by-sysmaint-but-not-by-user/1829/4 and the post below it.
+
+== sys-whonix extreme cpu issue ==
+* https://forums.whonix.org/t/sys-whonix-has-extreme-cpu-usage-before-an-internet-connection/23450
+** Aaron: Tested with latest packages, cannot reproduce anymore, so hopefully fixed.
+
+== vbox-guest-installer issues ==
+* https://forums.whonix.org/t/shared-folders-vanished-from-the-workstation/23415
+** Aaron: Attempted fixes listed at https://forums.whonix.org/t/virtualbox-guest-additions-broken-after-installing-apt-upgrades/23415/26.
+
+== privleap misc rereview ==
+* https://github.com/org-ai-assisted/privleap/pull/8
+** Aaron: Done as part of the reproducible builds reviews.
+
+== remove f12 keybind from labwc config ==
+* Aaron:
+** https://forums.whonix.org/t/how-to-disable-drop-down-qterminal-when-pressing-f12-in-workstation-lxqt/23528/2
+** Must wait until immediately after any AI-generated changes to desktop-config-dist have been reviewed and merged
+** Untested commit pushed to desktop-config-dist.
+
+== genmkfile cross-builds ==
+* Aaron:
+** Necessary to unbreak https://forums.kicksecure.com/t/dist-vm-gui-all-dependency-on-virtualbox-breaks-installation-on-ppc64/1815/6
+** genmkfile supports pseudo-cross-builds using architecture emulation and pbuilder chroots, but this is unnecessarily slow for trivial arch-specific packages and probably doesn't work all that well for source packages that contain both <code>arch: all</code> and <code>arch: any</code> binary packages
+** cross-builds for everything shouldn't be done when not using pbuilder, because of the junk that gets left behind in a debian package's directory when doing an in-situ build
+** The following changes need made for this to work well:
+*** Make pbuilder place the result of a build somewhere other than <code>DISTDIR</code> by default. We should move all build results to <code>DISTDIR</code> when the <code>target_architecture</code> is equal to <code>first_arch</code>, otherwise we should move only those files that are arch-specific into <code>DISTDIR</code>. This should prevent any possible issues that could come from giving people <code>arch: any</code> packages that were built on a non-standard arch where a qemu bug could have caused an issue with the build.
+*** Add a user-defined field to our source package control files, such as <code>X-Private-Trivial-Cross-Build</code>. If set to <code>yes</code>, genmkfile will use the <code>--host-arch=</code> option to pbuilder to attempt a true cross-build. If set to <code>no</code>, genmkfile will set up a native chroot and build there.
+** Untested changes pushed to genmkfile, developer-meta-files, and kicksecure-meta-packages.
+
+== privleap watchdog timeout in Qubes CI ==
+* https://github.com/org-ai-assisted/privleap/pull/7
+** Aaron: Integrated the changes that made sense, added some of my own. Commit pushed to privleap.
+
+== make VirtualBox Guest Additions dependencies arch-specific ==
+* Aaron:
+** https://forums.kicksecure.com/t/dist-vm-gui-all-dependency-on-virtualbox-breaks-installation-on-ppc64/1815
+** Done, commits pushed to virtualbox-guest-additions-iso, kicksecure-meta-packages, and developer-meta-files.
+
+== sanitize-string stream fix review and merge ==
+* https://github.com/org-ai-assisted/helper-scripts/pull/74
+* replaced by https://github.com/org-ai-assisted/helper-scripts/pull/78
+** Aaron: Reviewed, fixed up, and merged.
+
+== grml-debootstrap - update Kicksecure ==
+* pls update arraybolt trixie branch with above two WIP branches
+** Aaron: Done, commit pushed to grml-debootstrap branch arraybolt3/ks.
+
+== grml-debootstrap - DPKG_OPTIONS pass-through ==
+* https://github.com/org-ai-assisted/grml-debootstrap/pull/6/commits/4f1538a3a8adcee60a2828822ae74e2f7a4ba5a1
+** Aaron: Found the right part of the change and integrated it into my fork.
+
+== privleap - nonexistent action - review and merge ==
+* https://github.com/org-ai-assisted/privleap/pull/4
+** Aaron: Reviewed, rewrote and pushed.
+* Patrick: another:
+** https://github.com/org-ai-assisted/privleap/pull/5
+*** Aaron: Commented, discussed in chat, leaving unmerged for now.
+
+== apps in start menu not launching ==
+* see chat
+** Aaron:
+*** Livecheck does not appear broken. By design, it does not pop up a window when launched, it only places itself in the start menu. Maybe we should add features that will make it pop up a window when launched from the start menu?
+**** Implemented this using D-Bus, mostly works well, but see chat for notes on shortcomings.
+**** Try porting to Qt6 to see if this overcomes the shortcomings.
+***** Qt6 seemed to help some issues, but caused the tray icon to sometimes not appear at startup. https://github.com/org-ai-assisted/sdwdate-gui/pull/1/changes may have code that can be used to work around this.
+***** The missing icon turns out to be (arguably) a bug in lxqt-qtplugin: https://github.com/lxqt/lxqt-qtplugin/issues/107
+***** Workaround found, Livecheck now works quite well. Commit pushed to desktop-config-dist.
+*** tb-updater is broken due to a bug in tb-updater itself. Environment variables are most likely not a factor.
+**** Found the issue and fixed it, commit pushed to helper-scripts to fix a library that was breaking under update-torbrowser nounset.
+*** gparted is broken because it attempts to launch itself using pkexec, which we intentionally break via permissions in user sessions. However, it is broken in unrestricted admin mode as well, because Xwayland is not configured to allow root to connect by default. Running <code>xhost +si:localuser:root</code> is not enough, as Xwayland automatically terminates if it hasn't been used for some amount of time, and when it starts next, it no longer allows root to connect. Needs further investigation. An acceptable solution will fix this by changing OS-level code or configuration, not by adding code to any applications.
+**** Xwayland automatically terminating is configurable in labwc. If we enable Xwayland persistence, and run <code>xhost +si:localuser:root</code> at graphical session startup, it will likely fix gparted launch. This will also consume more RAM though. It's unclear if other solutions exist; Xauthority in particular no longer seems to exist by default with Xwayland.
+**** For now, hiding the start menu entry.
+*** Global Firewall Settings and User Firewall Settings both work in unrestricted admin mode. They do not work in normal user mode due to restricted permissions. Environment variables are not the problem. We might want to add code specifically to these launchers to display a GUI message if superuser permissions aren't available.
+**** Added prompts for when sudo isn't available.
+*** askpass is broken, not because of any graphical environment issues, but because yad is being launched wrong. It pops up a window, but the window lacks anything to type into.
+**** Fix created, commit pushed to usability-misc.
+
+== console-setup PR review ==
+* https://github.com/Kicksecure/usability-misc/pull/25
+** Aaron: Cannot reproduce the issue this is intended to solve. I can create a vanilla Debian 13 VM with no <code>/dev/fb0</code> device, by booting a properly configured VM image with <code>qemu-system-x86_64 -drive file=./vm.img,format=raw,if=virtio -enable-kvm -m 2G -machine q35 -nographic -vga none -nic user</code>, but console-setup does not show any errors when such a system is booted. Trying to set other fonts using setfont manually also does not cause any errors.
+
+== fix StandaloneVMs defaulting to sysmaint mode ==
+* Aaron:
+** https://github.com/QubesOS/qubes-core-admin/pull/813
+** https://github.com/QubesOS/qubes-issues/issues/10514
+** Set <code>boot-mode.standalone-default</code> somewhere
+*** Done, commits pushed to user-sysmaint-split and dist-base-files.
+
+== onion-client-refetch-stall-tor ==
+* Anything useful here?
+* https://github.com/org-ai-assisted/onion-client-refetch-stall-tor
+** Aaron: Mostly confirmed that there is indeed not any bug (at least not one worth worrying about) here.
+* https://github.com/org-ai-assisted/onion-client-refetch-stall-arti
+** Aaron: Confirmed the bug, reproduced, filed a report: https://gitlab.torproject.org/tpo/core/arti/-/work_items/2629 Move to WAITING ON if this is good enough, since I will want to follow up with upstream and potentially prepare the reproduction script for publication.
+* Patrick: Please provide reproduction scripts (even if rough) so I can do more AI testing.
+** Aaron: Pushed:
+*** https://github.com/ArrayBolt3/onion-client-refetch-stall-tor
+*** https://github.com/ArrayBolt3/onion-client-refetch-stall-arti
+
+== qemu aes bug ==
+* https://github.com/org-ai-assisted/qemu-x86_64-aes-gcm-miscompile-ppc64el
+* Patrick: Need to provide PPC server.
+
+== qubes-issues #1951 - comment - Improve support for high-resolution displays ==
+* please comment:
+** https://github.com/QubesOS/qubes-issues/issues/1951#issuecomment-4747021172
+*** Aaron: Answered.
+
+== review git-review-difftool and git-review-mergetool ==
+* https://github.com/org-ai-assisted/developer-meta-files/pull/136
+** Aaron: Merged, applied fixes as a separate commit.
+* https://github.com/org-ai-assisted/helper-scripts/pull/60
+** Aaron: Merged and fixed up.
+* https://github.com/org-ai-assisted/developer-meta-files/pull/141
+** Aaron: Merged and fixed up, moved scripts to helper-scripts.
+
+== virtualbox-guest-additions secure download review and merge ==
+* https://github.com/org-ai-assisted/developer-meta-files/pull/137
+** Aaron: Rewrote, commits pushed to developer-meta-files and derivative-maker.
+
+== sdwdate-gui crashes, glitches, failed reconnections ==
+* Aaron: Three issues:
+** Menu misbehaving when refreshed while open.
+*** This was actually an old issue that's been solved for a while now, we don't regen the menu when it's open.
+** Dependency on anon_connection_wizard causing client-side crashes.
+*** Patrick handled this for sdwdate-gui, will use the tor-control-panel review task to track grepping through the codebase for similar issues.
+** Failure to reconnect after a server restart.
+*** Fixed, along with a bunch of other misc bugs and issues.
+
+== virtualbox-guest-additions refactoring fix ==
+* bring back for users who need debian version?
+<pre>
+#Wants=virtualbox-guest-utils.service
+</pre>
+* Aaron: Done, commit pushed to user-sysmaint-split.
+
+== labwc versus WAYLAND_DISPLAY environment variable ==
+* https://forums.kicksecure.com/t/system-maintenance-panel-not-showing-up/1603
+** Aaron: THe code to fix this was merged and migrated to the testers repository, is this done?
+
+== tor-control-panel re-review ==
+* todo
+** Aaron: Most of the TODOs haven't been handled. A meld between troubadour's most recent code and my merged-tcp-review repo shows the remaining issues that need fixed or at least considered.
+*** Discussed with Patrick, will review for non-maliciousness, check functionality, try to fix the most glaring bugs, then merge despite low code quality. It's likely better than what we have currently, and we can fix it up more later.
+*** Review and merge done. Commits pushed to anon-connection-wizard and tor-control-panel.
+
+== virtualbox - fork vbox-guest-additions-iso, replace existing guest additions with it and fix clipboard ==
+* Aaron:
+** Add Breaks/Replaces against virtualbox-guest-x11 and virtualbox-guest-utils to dist-vm-gui-all, dist-baremetal-gui-all
+** Add Depends on virtualbox-guest-additions-iso to dist-vm-gui-all, dist-baremetal-gui-all
+** Add code to vm-config-dist postinst that installs Guest Additions from the ISO as part of the installation process
+** Add a user service to vm-config-dist that will start <code>VBoxClient --wayland</code> on bootup
+** Consider adjusting vbox-guest-installer to have both fail-open and fail-closed modes, we should use fail-closed in derivative-maker (this needs more discussion before doing it)
+** Consider installing Guest Additions even on non-VBox systems so that it transparently works everywhere, right now vbox-guest-installer refuses to install Guest Additions on non-Oracle machines unless building a VirtualBox image (This needs more discussion before doing it)
+** Test upgrading an existing VirtualBox VM with this, ensure clipboard sharing mostly works after upgrading
+** If this works for upgrades, try to build a VirtualBox image with newer Guest Additions pre-installed, ensure clipboard sharing mostly works after installation
+** Write a packaging helper script that will download the latest VirtualBox package from Oracle upstream, extract the VBoxGuestAdditions ISO from it, and add it to our fork of virtualbox-guest-additions-iso
+*** Mostly done, commits pushed to vm-config-dist, developer-meta-files, user-sysmaint-split, kicksecure-meta-packages, and anon-meta-packages. New repo created: https://github.com/ArrayBolt3/virtualbox-guest-additions-iso. Still need to write the script for fetching new ISOs, the ISO currently present in virtualbox-guest-additions-iso was taken from my ks-dev qube where virtualbox-7.2 (specifically version 7.2.10) is installed.
+* Seems to be working for new builds, ready for merge and developers packages to be published. (This will allow easier, more accurate testing of upgrades.)
+
+== strip-markup fixes ==
+* https://github.com/org-ai-assisted/helper-scripts/pull/57
+** Aaron: Merged, then added a commit on top to make it more strict. See https://github.com/org-ai-assisted/helper-scripts/pull/57#issuecomment-4884929130 for rationale and a possible concern.
+
+== append-shared - fix newline handling ==
+* Aaron:
+** POSIX considers a 0-byte file a valid text file despite lacking a terminating newline. append-shared currently (wrongly) operates such that 0-byte files are considered "not true text files" and insists on adding a terminating newline to them. Fix this.
+*** Fixed, commit pushed to helper-scripts.
 
 == strip-markup fixes ==
 * https://github.com/org-ai-assisted/helper-scripts/pull/52
@@ -1068,6 +1353,7 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 == privleap env hardening ==
 * https://github.com/org-ai-assisted/privleap/pull/1
 ** Aaron: Researched, rejected, added a comment to the shim instead documenting a situation in the future where we might want to strip environment variables and do other cleanup. Also committed some minor improvements I had made earlier but never committed.
+*** Received feedback from Patrick, now scrubbing <code>WATCHDOG_PID</code> from the environment.
 
 == sdwdate-gui review ==
 * todo as discussed
@@ -1077,6 +1363,39 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 *** Aaron: Reviewed, made some minor tweaks but otherwise kept the fix. Commit pushed to sdwdate-gui.
 
 = ARCHIVED =
+== user-sysmaint-split forum thread ==
+* https://forums.whonix.org/t/sysadmint-and-its-removal-broken/23255
+** Aaron: Could not reproduce, left a comment with testing results and awaiting a reply.
+*** Discussed back and forth for a while. Last reply was about two and a half months ago, assuming abandoned for now.
+
+== Tor Browser not launching in Qubes-Whonix-Workstation 18 StandaloneVM ==
+* https://github.com/QubesOS/qubes-issues/issues/10514#issuecomment-3700693542
+** Aaron: Diagnosed issue, waiting for feedback on suggested solution from Marek.
+*** Feedback received, implement the fix described in https://github.com/QubesOS/qubes-issues/issues/10514#issuecomment-4538798101
+*** PR filed: https://github.com/QubesOS/qubes-core-admin/pull/813
+*** Merged, but we need to make further changes for this to do anything. New task created.
+
+== virtualbox - black screen ==
+* https://download.whonix.org/ova/18.2.1.0/
+* https://forums.whonix.org/t/whonix-18-2-1-0-black-screen-after-upgrading-vbox-guest-additions/23380
+** Aaron: Could not reproduce. Asked for more info.
+** Turns out this is most likely a variant of the green turtle issue. No known solution other than disabling VBS and Hyper-V. Archiving.
+
+== sdwdate-gui not showing up in sysmaint session race condition fix ==
+* https://forums.whonix.org/t/sdwdate-gui-systray-is-not-appearing-in-whonix-gateway-sysmaint-session/23342
+* https://github.com/org-ai-assisted/sdwdate-gui/pull/1
+** Aaron: AI mis-identified the issue. Found the real problem and resolved it, commits pushed to user-sysmaint-split and sdwdate-gui.
+* Fix published, waiting on feedback from Nurmagoz.
+** Nurmagoz reported that this now works.
+
+== AppArmor - assist with maintenance upstream ==
+* as discussed, see emails with intrigeri
+* Mostly figured out, awaiting review from roddhjav (apparmor.d maintainer)
+** Review received, time to submit to AppArmor upstream.
+*** Upstream MR created: https://gitlab.com/apparmor/apparmor/-/merge_requests/2084
+**** Approved and merged.
+*** Debian-side MR created: https://salsa.debian.org/apparmor-team/apparmor/-/merge_requests/35
+**** Also approved and merged. This may be the extent of AppArmor support we can reasonably provide for now, but we should keep any eye on this and help out more in the future if and when possible.
 
 == arti preliminary research ==
 * https://forums.whonix.org/t/keep-an-eye-on-arti-tor/15815
