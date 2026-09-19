@@ -362,8 +362,8 @@ Nouveau has been blacklisted and will no longer load.
 }}
 }}
 
-=== nvidia-smi and other NVIDIA management tools don't work (by default at the user level) ===
-While applications at the user level should be able to use the NVIDIA GPU right away once the drivers are installed, some applications that manage or monitor the GPU may be broken by default. <code>nvidia-smi</code> for instance will display the following message when run:
+=== nvidia-smi and other NVIDIA management tools don't work (by default in user session) ===
+While applications in user session should be able to use the NVIDIA GPU right away once the drivers are installed, some applications that manage or monitor the GPU may be broken by default. <code>nvidia-smi</code> for instance will display the following message when run:
 
 <pre>
 NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
