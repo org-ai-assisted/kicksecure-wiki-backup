@@ -19,6 +19,689 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 
 = arraybolt3 =
+== 2026-09-19 ==
+=== tor-control-panel refactor #5 ===
+Date: 2026-09-19
+
+More work on the writing process, mainly related to input and config file validation.
+
+== 2026-09-18 ==
+=== tor-control-panel refactor #4 ===
+Date: 2026-09-18
+
+Mostly focused on writing the Tor config file.
+
+== 2026-09-17 ==
+=== tor-control-panel refactor #3 ===
+Date: 2026-09-17
+
+Config parsing seems to be working now.
+
+=== Fix vboxclient-wayland.service, desktop-config-dist deps ===
+Date: 2026-09-17
+
+Adjusted arguments to VBoxClient as they changed in VirtualBox 7.2.18. Added python3-pyqt6 to the dependencies of desktop-config-dist to fix livecheck.
+
+=== Merge and polish fixes for privleap coverage.py usage ===
+Date: 2026-09-17
+
+Coverage reports now appear to be generated properly.
+
+== 2026-09-16 ==
+=== tor-control-panel refactor #2 ===
+Date: 2026-09-16
+
+State monitoring and Tor stop/restart is now working.
+
+=== Bring over grml-debootstrap AI fixes ===
+Date: 2026-09-16
+
+Reviewed and integrated a getopt fix and a documentation fix. Did not integrate other changes as they were not suitable at this time.
+
+== 2026-09-15 ==
+=== Review and merge more AI fixes for security-misc and helper-scripts, brief architectural review of derivative-maker changes ===
+Date: 2026-09-15
+
+Synced all changes from master branches and from AI branches, reviewed and pushed. Pulled but did not merge derivative-maker changes, looked over the changes made in general and gave Patrick feedback on what needed adjusted.
+
+== 2026-09-14 ==
+=== tor-control-panel refactor #1 ===
+Date: 2026-09-14
+
+Wrote some of the UI code and a mechanism for running privileged commands. Still a lot more to go before functionality appears.
+
+=== Review and merge more AI fixes for genmkfile ===
+Date: 2026-09-14
+
+Fixed some problematic symlink handling code, shortened some comments, and got rid of an unneeded function definition.
+
+== 2026-09-13 ==
+=== Merge and begin fixing privleap coverage.py test support ===
+Date: 2026-09-13
+
+Mostly got coverage.py to work, however unprivileged script runs are not having their coverage results logged, which is causing the reporting to be inaccurate. Tried and failed to fix this myself, logged what debugging I did so Claude could try to fix it.
+
+=== Move privleap configuration to a non-conffile location ===
+Date: 2026-09-13
+
+Moved the privleap/conf.d directory in all packages to /usr/lib to lessen the risk of users modifying privleap configuration files. Added tests to ensure that both new and old configuration locations work.
+
+=== Merge and polish remaining security-misc PR from maybebyte, discuss hardware-specific hardening ===
+Date: 2026-09-13
+
+Merged a fix for how we handle pam-auth-update. Discussed with Patrick how to enable AMD SME on systems where it is safe to do so.
+
+=== Third wave of AI refactor code review #4 ===
+Date: 2026-09-13
+
+Finished working through all repos except for derivative-maker (which is still pending).
+
+== 2026-09-12 ==
+=== Third wave of AI refactor code review #3 ===
+Date: 2026-09-12
+
+Continuing to work through repos. Finished up msgcollector and mediawiki-shell, made some enhancements to systemcheck. Left off before lxqt-wayland-session.
+
+== 2026-09-11 ==
+=== Third wave of AI refactor code review #2 ===
+Date: 2026-09-11
+
+Continuing to work through repos, left off in the middle of mediawiki-shell and temporarily skipped over msgcollector.
+
+== 2026-09-10 ==
+=== Third wave of AI refactor code review #1 ===
+Date: 2026-09-10
+
+Reviewed most of helper-scripts.
+
+=== Refactor privleap to use UIDs internally #4 ===
+Date: 2026-09-10
+
+Finished test refactoring and expansion. Also fixed comment format while I was there. All changes are pushed.
+
+== 2026-09-09 ==
+=== Refactor privleap to use UIDs internally #3 ===
+Date: 2026-09-09
+
+Continuing to audit and enhance test suite. Discussed secure-terminal, unicode scanner UX, and vulnerability scanning with Patrick.
+
+== 2026-09-08 ==
+=== Refactor privleap to use UIDs internally #2 ===
+Date: 2026-09-08
+
+Tests, mypy, pylint, and black are passing, however tests need some more auditing to make sure they aren't broken and passing by coincidence.
+
+== 2026-09-07 ==
+=== Refactor privleap to use UIDs internally #1 ===
+Date: 2026-09-07
+
+Still have some left to do on privleapd, then will need to audit the code and fix issues as they arise.
+
+== 2026-09-06 ==
+=== Debug, document workaround for nvidia-smi being non-functional ===
+Date: 2026-09-06
+
+Determined why the tool did not work (a critical binary was being stripped of its SUID bit). Discussed with Patrick, elected to document a workaround rather than give a proprietary and potentially out-of-date/vulnerable binary SUID access.
+
+=== Attempt to reproduce sys-whonix extreme cpu issue ===
+Date: 2026-09-06
+
+Could not reproduce with the latest packages in our developers repositories.
+
+=== Reproducible builds AI overhaul review #34 ===
+Date: 2026-09-06
+
+Finished second pass on derivative-maker. Fixed some misc issues across the codebase. Awaiting refactor to switch away from live-build.
+
+== 2026-09-05 ==
+=== Reproducible builds AI overhaul review #33 ===
+Date: 2026-09-05
+
+Finished second pass of all child repos. Preparing to give derivative-maker itself a second pass.
+
+== 2026-09-04 ==
+=== Reproducible builds AI overhaul review #32 ===
+Date: 2026-09-04
+
+Finished review of developer-meta-files, continued to work through repos. Left off near the end of uwt.
+
+== 2026-09-03 ==
+=== Reproducible builds AI overhaul review #31 ===
+Date: 2026-09-03
+
+Finished review of genmkfile, continued to work through repos. Left off in the middle of developer-meta-files.
+
+== 2026-09-02 ==
+=== Reproducible builds AI overhaul review #30 ===
+Date: 2026-09-02
+
+Continuing review of genmkfile.
+
+== 2026-09-01 ==
+=== Reproducible builds AI overhaul review #29 ===
+Date: 2026-09-01
+
+Finished review of helper-scripts, worked through more repos and stopped midway through genmkfile.
+
+== 2026-08-31 ==
+=== Reproducible builds AI overhaul review #28 ===
+Date: 2026-08-31
+
+Mostly finished review of helper-scripts. Still need to fix stcat end-of-options, anondate issue with errexit, then run the test suite before pushing.
+
+== 2026-08-30 ==
+=== Reproducible builds AI overhaul review #27 ===
+Date: 2026-08-30
+
+Continuing to work through more repos, left off in the middle of helper-scripts.
+
+== 2026-08-29 ==
+=== Reproducible builds AI overhaul review #26 ===
+Date: 2026-08-29
+
+Continuing to work through more repos, left off in the middle of mediawiki-shell.
+
+== 2026-08-28 ==
+=== Reproducible builds AI overhaul review #25 ===
+Date: 2026-08-28
+
+Continuing to work through more repos, left off in the middle of msgcollector.
+
+== 2026-08-27 ==
+=== Reproducible builds AI overhaul review #24 ===
+Date: 2026-08-27
+
+Continuing to work through more repos, left off before repository-dist.
+
+== 2026-08-26 ==
+=== Reproducible builds AI overhaul review #23 ===
+Date: 2026-08-26
+
+Continuing to work through more repos, left off at systemcheck.
+
+== 2026-08-25 ==
+=== Reproducible builds AI overhaul review #22 ===
+Date: 2026-08-25
+
+Finished with developer-meta-files second pass, working through other repos one at a time now.
+
+== 2026-08-24 ==
+=== Reproducible builds AI overhaul review #21 ===
+Date: 2026-08-24
+
+Continuing work on developer-meta-files.
+
+== 2026-08-23 ==
+=== Reproducible builds AI overhaul review #20 ===
+Date: 2026-08-23
+
+Finished the initial pass on derivative-maker, now reviewing new changes to developer-meta-files.
+
+== 2026-08-22 ==
+=== Reproducible builds AI overhaul review #19 ===
+Date: 2026-08-22
+
+Finished refactoring remount handling code, continuing to review help-steps. Started refactoring some code related to upload locations.
+
+== 2026-08-21 ==
+=== Reproducible builds AI overhaul review #18 ===
+Date: 2026-08-21
+
+Still working through help-steps, refactoring remount handling code.
+
+== 2026-08-20 ==
+=== Reproducible builds AI overhaul review #17 ===
+Date: 2026-08-20
+
+Continuing to work through and fix up help-steps.
+
+== 2026-08-19 ==
+=== Reproducible build AI overhaul review #16 ===
+Date: 2026-08-19
+
+Refactored snapshot timestamping code, got through CI script review and am working through help-steps now.
+
+== 2026-08-18 ==
+=== Reproducible builds AI overhaul review #15 ===
+Date: 2026-08-18
+
+Continuing to work through derivative-maker, primarily CI scripts this time.
+
+== 2026-08-17 ==
+=== Reproducible builds AI overhaul review #14 ===
+Date: 2026-08-17
+
+Continuing to work through derivative-maker. Finished reviewing the primary build scripts, except for the ISO repack step which needs rewritten.
+
+== 2026-08-16 ==
+=== Reproducible image builds AI overhaul review #13 ===
+Date: 2026-08-16
+
+Finished checking file permissions and kdiff3 line truncation issues. Now reviewing and polishing derivative-maker. Discussed several design decisions with Patrick.
+
+== 2026-08-15 ==
+=== Reproducible image builds AI overhaul review #12 ===
+Date: 2026-08-15
+
+Continuing with file permission and kdiff3 line truncation double-checking.
+
+== 2026-08-14 ==
+=== Reproducible image builds AI overhaul review #11 ===
+Date: 2026-08-14
+
+Finished the first pass of review, double-checking file permissions and a potential issue with kdiff3 truncating lines now.
+
+== 2026-08-12 ==
+=== Reproducible image builds AI overhaul review #10 ===
+Date: 2026-08-12
+
+Continuing to work through all the repos, the first pass of review is almost complete.
+
+=== Improve cross-build support in genmkfile ===
+Date: 2026-08-12
+
+This will hopefully fix issues we're encountering with arch-specific dependencies for VirtualBox Guest Additions.
+
+== 2026-08-11 ==
+=== Reproducible image builds AI overhaul review #9 ===
+Date: 2026-08-11
+
+Finished tb-updater and tb-starter.
+
+== 2026-08-10 ==
+=== Reproducible image builds AI overhaul review #8 ===
+Date: 2026-08-10
+
+Finished systemcheck, started review on tb-updater.
+
+== 2026-08-09 ==
+=== Reproducible image builds AI overhaul review #7 ===
+Date: 2026-08-09
+
+Mostly worked on systemcheck, which had substantially refactored.
+
+== 2026-08-08 ==
+=== Reproducible image builds AI overhaul review #6 ===
+Date: 2026-08-08
+
+Continuing to walk through one repo at a time, making fixes as I go.
+
+== 2026-08-07 ==
+=== Reproducible image builds AI overhaul review #5 ===
+Date: 2026-08-07
+
+Reviewed several more repositories, got most of the way through msgcollector.
+
+== 2026-08-06 ==
+=== Reproducible image builds AI overhaul review #4 ===
+Date: 2026-08-06
+
+Reviewed several repositories, noted a possible security issue in vm-config-dist and some other places where improvements could be made.
+
+== 2026-08-05 ==
+=== Reproducible image builds AI overhaul review #3 ===
+Date: 2026-08-05
+
+Finished initial review of developer-meta-files.
+
+== 2026-08-04 ==
+=== Integrate several privleap bugfixes from Claude ===
+Date: 2026-08-04
+
+Patrick used Claude to hunt down the deadlock found by Marek previously. A couple of deadlocks were found, along with an assortment of other bugs. Integrated all of the fixes that made sense.
+
+== 2026-08-03 ==
+=== Reproducible image builds AI overhaul review #2 ===
+Date: 2026-08-03
+
+Continuing to review developer-meta-files.
+
+=== Initial privleap watchdog timeout investigation ===
+Date: 2026-08-03
+
+Discussed a CI failure with Marek. Looked at the underlying code, couldn't see any issue immediately. Tried using ChatGPT to find the issue without success. Asked Patrick to see if Claude could spot a problem. (I currently suspect this is the result of CPU or I/O resource exhaustion causing temporary hangs.)
+
+== 2026-08-02 ==
+=== Reproducible image builds AI overhaul review #1 ===
+Date: 2026-08-02
+
+Reviewed a lot of changes made to developer-meta-files, still have a lot more to work through.
+
+=== Adjust Guest Additions dependencies to avoid issues on ppc64el ===
+Date: 2026-08-02
+
+Jeremy reported some issues with the new VirtualBox dependencies; they're useless on ppc64el systems and were in the non-free repo when they didn't need to me. They have now been moved to a different repo and the dependencies have been made architecture-specific.
+
+=== helper-scripts AI overhaul review #4 ===
+Date: 2026-08-02
+
+Proofread all changes, found and fixed issues in the process. Pushed the changes and marked the PR ad merged.
+
+== 2026-08-01 ==
+=== helper-scripts AI overhaul review #3 ===
+Date: 2026-08-01
+
+Reviewed newly introduced changes, fixed some more issues. Need to fully proofread all changes before accepting the changes.
+
+== 2026-07-31 ==
+=== helper-scripts AI overhaul review #2 ===
+Date: 2026-07-30
+
+Finished initial review of the changes, but more commits were introduced. Merged and started reviewing those.
+
+== 2026-07-30 ==
+=== helper-scripts AI overhaul review #1 ===
+Date: 2026-07-30
+
+Reviewed lots of new tests, tool enhancements, and bugfixes. Made substantial changes, have a lot left to do.
+
+== 2026-07-29 ==
+=== Review derivative-maker reproducible builds and other changes #1 ===
+Date: 2026-07-29
+
+Reviewed a lot of AI-generated code, still have a lot more to do.
+
+=== Sync grml-debootstrap reproducible build changes into arraybolt3/ks branch ===
+Date: 2026-07-29
+
+This should unblock some of our other reproducible builds work.
+
+== 2026-07-28 ==
+=== Further fixes and testing of grml-debootstrap reproducible images support ===
+Date: 2026-07-28
+
+Both VM and Raspberry Pi images are building reproducibly with no problems under Qubes OS. Found some reproducibility issues trying on a non-Qubes system, some of which were the result of user error and some of which are the result of bugs in the new code.
+
+== 2026-07-27 ==
+=== Write sandbox-manager-dist #17 ===
+Date: 2026-07-27
+
+Implemented the CLONE command, fixed some more protocol issues.
+
+=== Polish grml-debootstrap reproducible images code until an initial prototype worked ===
+Date: 2026-07-27
+
+Was able to reproducibly build an image in a Qubes VM. Needs a lot more testing, UX work, etc.
+
+== 2026-07-26 ==
+=== Write sandbox-manager-dist #16 ===
+Date: 2026-07-26
+
+Implemented the DELETE command and pushed those changes, started implementing the CLONE command but did not push those changes yet.
+
+=== In-depth review and integration of grml-debootstrap reproducible build code ===
+Date: 2026-07-26
+
+Had to overhaul the code Claude generated, but the concepts seem sound and it looks like it will be possible to get reproducible builds working. Pushed the current state of my work, still need to test code and integrate the CI tests.
+
+=== Reject AI suggestion to suppress warnings during privleap config check ===
+Date: 2026-07-26
+
+Left rationale on the PR, discussed with Patrick, agreed to not merge it.
+
+== 2026-07-25 ==
+=== Write sandbox-manager-dist #15 ===
+Date: 2026-07-25
+
+Finished implementation of the GET_STATE command, added a couple of server message handlers, fixed some concurrency issues and refactored things a bit.
+
+=== Allow privleap to handle actions with invalid TargetUser/TargetGroup keys ===
+Date: 2026-07-25
+
+Patrick asked me to review an AI PR that added this functionality. Reviewed, agreed that this looked useful, rewrote the implementation to be more efficient, concise, and fit with our existing test suite.
+
+== 2026-07-24 ==
+=== Review deeper reproducibility improvements for grml-debootstrap ===
+Date: 2026-07-24
+
+Created a list of changes I wanted Claude to make and gave them to Patrick.
+
+== 2026-07-23 ==
+=== Finish fixing Livecheck start menu entry ===
+Date: 2026-07-23
+
+The port to Qt6 is complete, filed a bug report for the issue where the tray icon would sometimes not appear, and found a workaround for the issue. Also fixed an issue where the window would pop up very slowly when launched via D-Bus service activation.
+
+=== Derive disk IDs from SOURCE_DATE_EPOCH in grml-debootstrap ===
+Date: 2026-07-23
+
+Upstream did not like that some of the disk IDs looked random but were static across all grml-debootstrap runs when FIXED_DISK_IDENTIFIERS is set to "yes". Added new code to generate disk IDs from seeds, which can then be calculated from SOURCE_DATE_EPOCH.
+
+== 2026-07-22 ==
+=== Attempt porting livecheck to Qt6 ===
+Date: 2026-07-22
+
+Port was mostly successful, but the tray icon sometimes did not appear. Found a potential solution but did not implement it yet.
+
+=== Review grml-debootstrap reproducible image PRs, rewrite one of them and submit upstream ===
+Date: 2026-07-22
+
+Found that the disk identifier PR made sense, reworked it, and submitted it upstream. The filesystem ID PR did not appear functional and I could not find a way to make it functional.
+
+=== Investigate VirtualBox Guest Additions installation failure ===
+Date: 2026-07-22
+
+Multiple forum users have reported Guest Additions breaking after an upgrade. It appears as if vbox-guest-installer is not being run properly on these users' systems. Could not reproduce locally. Asked for debugging info to figure out what is going wrong.
+
+== 2026-07-21 ==
+=== Fix remaining issues with apps not launching from the start menu ===
+Date: 2026-07-21
+
+Added prompts about missing sudo access to the firewall editor scripts, hid the gparted start menu entry, added D-Bus integration to Livecheck to allow it to function as expected.
+
+=== Fix system issues, routine tasks ===
+Date: 2026-07-21
+
+Had serious problems with torified updates, caused most likely by trying to use a disposable sys-whonix VM and thus breaking Tor's state updates. Reverted back to a normal sys-whonix, reset Tor state, things are working again now. Also replied to forum posts.
+
+== 2026-07-20 ==
+=== Write sandbox-manager-dist #14 ===
+Date: 2026-07-20
+
+Fixed some multithreading bugs, finished the initial attempt at a handler for CONFIG_END messages.
+
+=== Briefly look at grml-debootstrap reproducibility fixes from AI ===
+Date: 2026-07-20
+
+Was not initially sure if this was useful, discussed with Patrick.
+
+== 2026-07-19 ==
+=== Set a StandaloneVM default boot mode ===
+Date: 2026-07-19
+
+This should be the last thing needed to fix Tor Browser not working out of the box on freshly created Whonix-Workstation StandaloneVMs.
+
+=== security-misc PR review and merge #3 ===
+Date: 2026-07-19
+
+Merged more PRs. Discovered that emerg-shutdown was broken (failed to shutdown system when boot drive was removed), debugged it, found the root cause and fixed it.
+
+=== Push changes to Tor and Arti testing scripts ===
+Date: 2026-07-19
+
+During the Tor behavior research, I made substantial customizations to some of the AI-generated scripts that were given to me for debugging. Pushed these so that Patrick can pick up where I left off.
+
+== 2026-07-18 ==
+=== security-misc PR review and merge #2 ===
+Date: 2026-07-18
+
+Prepared to test the emerg-shutdown PR, merged PRs for permission-hardener and documentation.
+
+=== Debug apps failing to launch from the start menu ===
+Date: 2026-07-18
+
+AI thought the issue was mostly related to environment variables. I could not find any issues that were environment-variable driven, all apps with launch issues had various specific problems (missing features or broken code). The only kind-of-environment-related issue was with gparted, which can't connect to Xwayland by default. I found a potential fix for that and noted it on dev/todo.
+
+=== Regular tasks, prepare to push onion client research scripts ===
+Date: 2026-07-18
+
+Couldn't fork or push to the original repos, asked Patrick what I should do. Also did forum responses and other routine tasks.
+
+== 2026-07-17 ==
+=== security-misc PR review and merge #1 ===
+Date: 2026-07-17
+
+Looked at several of the filed PRs, merged some of them, commented on others. Also did routine merge and review work.
+
+=== Further research into C-Tor behavior ===
+Date: 2026-07-17
+
+Discussed AI findings with Patrick, ran more detailed test and shared results.
+
+== 2026-07-16 ==
+=== Verify Arti stall when introduction points die, file bug report ===
+Date: 2026-07-16
+
+Verified that the bug Claude thought it found was there, filed a bug report for it. Discussed with Patrick, there are potential concerns with C-Tor that still need studied.
+
+=== Write sandbox-manager-dist #13 ===
+Date: 2026-07-16
+
+Mostly thought through how sandbox reconfiguration needed to work, also fixed a sandbox creation bug.
+
+== 2026-07-15 ==
+=== More research on Tor implementation findings from AI ===
+Date: 2026-07-15
+
+Ran some of the test code, attempting to verify the claims and see if a bug report needs to be created or not.
+
+== 2026-07-14 ==
+=== Start reading through Tor implementation findings from AI ===
+Date: 2026-07-14
+
+Figuring out what the tests are doing, what issue they're showing up. Will likely be running the tests in a dedicated VM soon.
+
+=== Send bug report for Qubes-Whonix kernel warn ===
+Date: 2026-07-14
+
+Worked with Marek to figure out reproduction steps and what kernel to test. Got a detailed writeup sent to the xen-devel and linux-kernel mailing lists; devs have responded and believe they know where the problem is.
+
+== 2026-07-13 ==
+=== Strip WATCHDOG_PID environment variable in privleap's shim ===
+Date: 2026-07-13
+
+This will assist hidepid in working right in the future. Also did normal merge and review tasks.
+
+=== Briefly look at Tor implementation findings from AI ===
+Date: 2026-07-13
+
+Need to read the provided code and run through the reproduction steps to see where bugs may need to be filed.
+
+=== Investigate Qubes-Whonix kernel warn ===
+Date: 2026-07-13
+
+Shared findings with Marek. Also filed a bug because I couldn't make a debuginfo build of the Qubes OS kernel.
+
+== 2026-07-12 ==
+=== Write sandbox-manager-dist #12 ===
+Date: 2026-07-12
+
+Wrote the image builder script used for the creation of sandboxes, worked more on the commands for creating sandboxes.
+
+=== More git review tool review and polish ===
+Date: 2026-07-12
+
+Fixed some issues with the scripts, added features, moved them to helper-scripts.
+
+== 2026-07-10 ==
+=== Write sandbox-manager-dist #11 ===
+Date: 2026-07-10
+
+Mostly focused on sandbox creation.
+
+== 2026-07-09 ==
+=== Write sandbox-manager-dist #10 ===
+Date: 2026-07-09
+
+Resumed development on this, fixed some bugs and implemented server-side handlers for a couple more messages.
+
+=== Review QEMU AES instruction emulation bug ===
+Date: 2026-07-09
+
+Turned out this bug is happening on POWER8 hardware, which I don't have access to. Discussed this and some other topics with Patrick.
+
+=== Create VirtualBox Guest Additions ISO download script ===
+Date: 2026-07-09
+
+Claude made a draft script, but it used an implementation that we didn't want to use, so I rewrote the script using the same update mechanism as our Tor updater script. Tested, works on my end.
+
+=== Fix sdwdate-gui-client reconnect after server restart ===
+Date: 2026-07-09
+
+Several bugs were preventing reconnection from working, and there was some cruft I discovered while fixing them. All cleaned up now, reconnection is functional.
+
+== 2026-07-08 ==
+=== Merge in and mostly review new derivative-maker changes ===
+Date: 2026-07-08
+
+Regular maintenance and review work.
+
+=== Finish Git review and diff script review and refactoring ===
+Date: 2026-07-08
+
+Created TODOs and FIXMEs, fixed some issues myself, reduced code duplication, fixed bugs.
+
+=== Bring back start of Debian-style Guest Additions in user-sysmaint-split ===
+Date: 2026-07-08
+
+We've switched to Oracle's Guest Additions packages, but continue to try running Debian's in case the user is using Debian's instead of Oracle's for some reason.
+
+== 2026-07-06 ==
+=== Begin review of Git review and diff scripts from Claude ===
+Date: 2026-07-06
+
+Making somewhat slow progress since I'm studying the code carefully to catch bugs and missing edge cases.
+
+== 2026-07-05 ==
+=== Merge updated tor-control-panel code, create list of TODOs for Claude ===
+Date: 2026-07-05
+
+All code has been checked for non-maliciousness, general functionality has been confirmed, and auditing was done to find potential memory safety issues. Further TODOs before publication are written down on the forums, Patrick plans to use Claude to create fixes, which I will review once they arrive.
+
+=== Prepare VirtualBox Guest Additions migration and shared clipboard fix work for merge ===
+Date: 2026-07-05
+
+Was able to get both ISO and VBox image builds to work, and both images had updated Guest Additions and working clipboard sharing. Upgrades need further testing, but that can be done once the packages are in trixie-developers.
+
+=== Investigate VirtualBox black screen issue reported by nurmagoz ===
+Date: 2026-07-05
+
+Could not reproduce on Linux. The original problem happened on Windows and the green turtle issue was occurring, so I suspect that was likely the root cause. Nurmagoz could not reproduce on Linux either.
+
+== 2026-07-04 ==
+=== Fix strip-markup handling of pseudo-HTML ===
+Date: 2026-07-04
+
+The last fix to strip-markup accidentally introduced a subtle bug that was caught by fuzzing. ChatGPT suggested a fix that still tried to preserve metacharacters, but I decided this was too risky and chose to always sanitize metacharacters even in "safe" contexts to prevent any further bugs from surfacing here.
+
+=== Fix newline handling in append_shared and improve rtests ===
+Date: 2026-07-04
+
+append_shared now treats an empty text file as a valid text file, rather than "repairing" it by adding a redundant blank line.
+
+== 2026-07-03 ==
+=== Review AI PRs to fix image build system #4 ===
+Date: 2026-07-03
+
+Merged more fixes and created some fixes locally. ISO came very close to building but did not succeed. Also did more tor-control-panel review and work on append-shared issues during the image builds.
+
+== 2026-07-02 ==
+=== Review for non-maliciousness on merged tor-control-panel and anon-connection-wizard #1 ===
+Date: 2026-07-02
+
+Created a test plan for behavior testing based on the behavior of the older split implementation. Reviewed a large portion of the code.
+
+=== Review AI PRs to fix image build system #3 ===
+Date: 2026-07-02
+
+More build fixes, ISO build still broken though.
+
+== 2026-07-01 ==
+=== Review AI PRs to fix image build system #2 ===
+Date: 2026-07-01
+
+Finished PR review, reviewed a decent amount of previously merged code, attempted a new ISO build. The build failed again.
+
 == 2026-06-30 ==
 === Review AI PRs to fix image build system #1 ===
 Date: 2026-06-30
@@ -1499,7 +2182,7 @@ Looked at some of the Sequoia-PGP code Patrick added, made minor changes (mostly
 === systemcheck and metapackage updates to simplify code, detect issues with leaprun actions and unexpected persistent dirs on Qubes ===
 Date: 2026-02-22
 
-Added extra dummy packages to kicksecure-meta-packages to allow simplifying code that would conditionally install packages in other situations. Added functionality to systemcheck to detect if /etc, /usr, or /var are persistent in Qubes AppVMs (they should not be), also wrote code that checks if leaprun actions are able to be run before running them (this is too slow to be practical and isn't working quite as intended yet). 
+Added extra dummy packages to kicksecure-meta-packages to allow simplifying code that would conditionally install packages in other situations. Added functionality to systemcheck to detect if /etc, /usr, or /var are persistent in Qubes AppVMs (they should not be), also wrote code that checks if leaprun actions are able to be run before running them (this is too slow to be practical and isn't working quite as intended yet).
 
 === Finish testing and polish of Whonix-Starter ===
 Date: 2026-02-22

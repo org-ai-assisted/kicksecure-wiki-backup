@@ -1,3 +1,11 @@
+https://www.qodo.ai/solutions/open-source/
+100 stars
+code rabbit ai
+stars
+greptile
+50 stars
+
+
 add sysmaint to systemd-journal group
 
 email address
@@ -101,7 +109,7 @@ sudo qubes-dist-upgrade --releasever=4.3 --template-standalone-upgrade
 ----> Upgrading kicksecure-17...
 bash: /home/user/QubesIncoming/dom0/qubes-dist-upgrade-r4.3-vm.sh: No such file or directory
 ERROR: A general error occurred while upgrading kicksecure-17 (exit code 127).
--> Continue? [y/N] 
+-> Continue? [y/N]
 
 
 sdwdate offline vm

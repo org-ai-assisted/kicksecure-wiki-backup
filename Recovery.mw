@@ -133,9 +133,13 @@ Choose an option.
 
 {{IconSet|h1|3}} Adding <code>single</code> activates Linux recovery mode.
 
-{{IconSet|h1|4}} Follow the [[Grub#Kernel_Boot_Parameter_Change|Temporary Kernel Boot Parameter Change]] instructions to change the kernel parameters for a single boot.
+{{IconSet|h1|4}} Adding <code>SYSTEMD_SULOGIN_FORCE=1</code> allows you to access a root shell in recovery mode.
 
-{{IconSet|h1|5}} Done.
+{{IconSet|h1|5}} Additional or different options from the table above may be needed to access the particular kind of recovery mode you need.
+
+{{IconSet|h1|6}} Follow the [[Grub#Kernel_Boot_Parameter_Change|Temporary Kernel Boot Parameter Change]] instructions to change the kernel parameters for a single boot.
+
+{{IconSet|h1|7}} Done.
 
 Kernel parameters have been selected and adjusted for a single boot.
 }}
@@ -308,7 +312,7 @@ Which ISO to use? The [[ISO|{{project_name_short}} ISO]] should be suitable for 
 
 {{IconSet|h1|6}} After setting the boot order, find the option to Save Changes and Exit. The exact wording might vary, but it's typically something like "Save & Exit" or "Exit Saving Changes." Confirm your changes, and your PC will restart.
 
-{{IconSet|h1|7}} If everything is set correctly, your PC should now boot from the Flash or DVD. You might see a message like "Press any key to boot from CD/DVD..." 
+{{IconSet|h1|7}} If everything is set correctly, your PC should now boot from the Flash or DVD. You might see a message like "Press any key to boot from CD/DVD..."
 If you see this message, press any key on your keyboard to start booting from the DVD.
 
 {{IconSet|h1|8}} Done.

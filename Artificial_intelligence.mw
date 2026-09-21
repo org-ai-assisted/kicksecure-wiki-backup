@@ -153,7 +153,7 @@ Statements about data (not source code) that were made <u>before</u> the first p
 [https://www.gnu.org/licenses/license-recommendations.html gnu.org: "How to Choose a License for Your Own Work" chapter "Other data for programs"]
 
 {{quotation
-|quote=(Game art is a different issue, because it [https://www.gnu.org/philosophy/copyright-versus-community.html isn't software].) 
+|quote=(Game art is a different issue, because it [https://www.gnu.org/philosophy/copyright-versus-community.html isn't software].)
 |context=[https://www.gnu.org/philosophy/nonfree-games.en.html Nonfree DRM'd Games on GNU/Linux: Good or Bad?]
 }}
 
@@ -300,7 +300,7 @@ The [https://opensource.org/ai/open-source-ai-definition The <u>O</u>pen <u>S</u
 * https://codeberg.org/OSI-Concerns
 * https://codeberg.org/OSI-Reform-Platform
 * https://lwn.net/Articles/995159/
-* 
+*
 https://www.reddit.com/r/opensource/comments/1gdzhvm/a_community_statement_supporting_the_open_source/
 * https://web.archive.org/web/20251004053233/https://opensourcedeclaration.org/
 * https://web.archive.org/web/20251018074338/https://opensourcedefinition.org/
@@ -417,7 +417,7 @@ Permissions.
 
 * Read access to actions and metadata
 * Read and write access to checks, code, discussions, issues, pull requests, repository hooks, and workflows
-|context=<code>https://github.com/organizations/org-name/settings/installations</code> -> configure 
+|context=<code>https://github.com/organizations/org-name/settings/installations</code> -> configure
 }}
 
 Blast radius: every repo where the App is installed / steal API key
@@ -436,6 +436,7 @@ Blast radius: every repo where the App is installed / steal API key
 * https://lists.debian.org/debian-project/2023/03/msg00026.html
 * https://www.wired.com/story/the-myth-of-open-source-ai/
 * https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4543807
+* https://machine-bullshit.github.io/
 
 = Tickets =
 * Quote [https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm "Dolly 2.0, the first open source, instruction-following LLM"]. But is it really Open Source? Hence ticket [https://github.com/databrickslabs/dolly/issues/212 step by step instructions on how to build this AI from source code] was created.
