@@ -1,0 +1,104 @@
+# Consolidated INTERNAL redirects (replaces per-page #REDIRECT stub files).
+# Format: <source page title><TAB><target page title>. One redirect per line.
+# Lines starting with '#' and blank lines are ignored. Sorted by source.
+# Editable by content maintainers; the static generator reads this at build.
+Account and Mobile Security	Mobile Phone Security
+Advertisements	Transparency
+Ai	Artificial_intelligence
+Authorship	Credits
+Avoid nonfree software	Avoid nonfreedom software
+Backdoors	Backdoor
+Basic Host Security	Essential Host Security
+DMCA	Terms_of_Service#DMCA_Policy
+Design/x	Dev/notepad
+Dev	Design
+Dev/About Computer (In)Security	Dev/About Computer Insecurity
+Dev/Affiliate	Transparency
+Dev/Build Documentation/VM	Dev/Build Documentation/images
+Dev/OpenSUSE	Dev/openSUSE
+Dev/Wiki	Dev/wiki
+Dev/advertising	Transparency
+Dev/boot modes	Dev/user-sysmaint-split
+Dev/derivative-maker	Dev/Derivative-Maker
+Dev/user-admin-split	Dev/user-sysmaint-split
+Disclaimer	Terms of Service
+Donate by Affiliate Link	Donate/Affiliate Link
+Features	About
+File:500.png	File:{{project_name_long}} old logo.png
+File:Kicksecure-image-hero-image.jpg	File:Kicksecure-image-hero-image.jpeg
+File:Qubes-Whonix-Gateway TemplateVM Qubes VM Manager Settings.png	File:Qubes-Whonix-Gateway Template Qubes VM Manager Settings.png
+First Time User	About
+Free Support Principle	Self_Support_First_Policy
+Freedom Software	Reasons_for_Freedom_Software
+Hardened Malloc Kicksecure	Hardened Malloc Light
+Host Browser	Browser
+Host Firewall Basics	Host_Firewall
+Host Live Mode	Live_Mode
+Impressum	Imprint
+KVM Testers Only Version	KVM
+KVM/Project Signing Key	Main/Project Signing Key
+KVM/Verify the virtual machine images using Linux	Verify_the_images_using_Linux
+KVM/Verify the virtual machine images using the command line	Verify_the_images_using_Linux
+Kicksecure	About
+Kicksecure in Qubes	Qubes
+Kicksecure-Qubes	Qubes
+Kicksecure:Copyright	Copyright
+Kicksecure:Copyrights	Copyright
+LKRG	Linux_Kernel_Runtime_Guard_LKRG
+License Agreement	Copyright
+Main Page	About
+Malware	Malware_and_Firmware_Trojans
+Old Stable and Earlier Releases	Changelog
+Open-source Hardware	Open Source Hardware
+Payments	Donate
+Payments/AUD	Donate/AUD
+Payments/EUR	Donate/EUR
+Payments/GBP	Donate/GBP
+Payments/USD	Donate/USD
+Please use Search Engines and see Documentation First	Please_Use_Search_Engines_And_See_Documentation_First
+Priority Support	Plus Support
+Professional Support	Premium Support
+Qubes/AppArmor	AppArmor
+Qubes/Install	Qubes
+Qubes/Uninstall	Qubes
+Rads	RAM_Adjusted_Desktop_Starter
+RaspberryPi	Raspberry Pi
+Release Notes	About
+Sandbox-app-launcher	vm-app-manager
+Security in Real World	About
+Serial Console	Recovery#Serial_Console
+Sq	Sequoia-PGP
+Stable Release	Changelog
+TLS	SSL
+Template:Linux Installer Download Kicksecure	Template:Linux Installer Preinstalled
+Template:Non-qubes-project	Template:Non-q-project
+Template:Torify apt-get traffic	Template:Torify apt traffic
+Template:Verify the virtual machine images	Template:Verify the images
+Template:VirtualBox	Template:VirtualBox Based Installation Guide
+Terms of Use	Terms of Service
+Testers Release	Changelog
+Testpage4	Testpage5
+Undocumented	unsupported
+Untested	Unsupported
+Update	Operating_System_Software_and_Updates
+Upgrade	Operating_System_Software_and_Updates
+VM Live Mode	Live_Mode
+VM Live Mode/Immutable Disk Method on VirtualBox	Read-only
+VM Live Mode/Read Only Mode Hard Drive	read-only
+Verify the Kicksecure images	Verify_the_images
+Verify the virtual machine images	Verify the images
+Verify the virtual machine images using Linux	Verify the images using Linux
+Verify the virtual machine images using Windows	Verify the images using Windows
+Verify the virtual machine images using macOS	Verify the images using macOS
+Verify the virtual machine images using other operating systems	Signing_Key
+Verify the virtual machine images using the command line	Verify_the_images_using_Linux
+VirtualBox Testers Only Version	VirtualBox
+VirtualBox Testers Only Version/CLI	VirtualBox
+VirtualBox Testers Only Version/XFCE	VirtualBox
+VirtualBox/CLI	VirtualBox
+VirtualBox/Verify the virtual machine images using Linux	Verify_the_images_using_Linux
+VirtualBox/Verify the virtual machine images using the command line	Verify_the_images_using_Linux
+VirtualBox/XFCE	VirtualBox
+Vu	Desktop#Virtual_Consoles
+Windows	VirtualBox
+Windows Quick Start	VirtualBox

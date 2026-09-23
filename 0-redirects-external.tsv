@@ -1,0 +1,5 @@
+# Consolidated EXTERNAL redirects (replaces per-page {{#externalredirect:}} stubs).
+# Format: <source page title><TAB><absolute https/http URL>. One per line.
+# Lines starting with '#' and blank lines are ignored. Sorted by source.
+# Editable by content maintainers; the static generator reads this at build.
+Moved:Documentation Markup Format Converters	https://www.kicksecure.com/wiki/Dev/Documentation_Markup_Format_Converters
