@@ -527,7 +527,7 @@ sudo reboot
 
 * Go to virt-manager main window (the window listing your virtual machines), then go to:
 
-<code> Edit -> Preferences -> General -> tick "Enable XML editing" </code>
+<code> Edit &rarr; Preferences &rarr; General &rarr; tick "Enable XML editing" </code>
 
 [[File:PCI-1.png|500px]]
 
