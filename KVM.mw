@@ -525,6 +525,8 @@ sudo reboot
 
 === User ===
 
+'''Note''': Don't combine inserting a dGPU with [https://www.whonix.org/wiki/KVM#3D_Graphics_Acceleration 3D Graphics Acceleration] in the VM (revert the 3D steps if you have enabled it).
+
 * Go to virt-manager main window (the window listing your virtual machines), then go to:
 
 <code> Edit &rarr; Preferences &rarr; General &rarr; tick "Enable XML editing" </code>
