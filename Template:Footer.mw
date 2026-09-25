@@ -4,4 +4,6 @@
 {{#widgetfooter:}}
 </div>
 {{#flyinnotification:}}
-}}
+}}<noinclude>
+[[Category:MultiWiki]]
+</noinclude>
