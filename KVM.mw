@@ -430,16 +430,6 @@ omit_drivers+=" nouveau nvidia nvidia_drm nvidia_modeset nvidia_uvm "
 
 <code>force_drivers</code> makes dracut attempt to load modules early, while <code>omit_drivers</code> excludes the listed drivers from the generated initramfs.
 
-==== Give the account KVM access and create the VFIO access group ====
-
-{{CodeSelect|code=
-sudo groupadd -f vfio
-}}
-
-{{CodeSelect|code=
-sudo usermod -aG vfio,kvm user
-}}
-
 ==== Configure memory-lock limits ====
 
 * Edit per-account PAM login limits:
@@ -511,7 +501,7 @@ sudoedit /etc/udev/rules.d/70-vfio-user.rules
 * Add:
 
 {{CodeSelect|code=
-SUBSYSTEM=="vfio", KERNEL=="17", OWNER="root", GROUP="vfio", MODE="0660"
+SUBSYSTEM=="vfio", KERNEL=="17", OWNER="root", GROUP="user", MODE="0660"
 }}
 
 * Then reboot:
