@@ -392,7 +392,7 @@ sudoedit /etc/default/grub.d/50_user.cfg
 * Then add (the important one which represents the dGPU is <code>10de:28a0</code> in our case) :
 
 {{CodeSelect|code=
-GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX nouveau.noaccel=1 intel_iommu=on vfio-pci.ids=10de:28a0,10de:22be"
+GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX intel_iommu=on vfio-pci.ids=10de:28a0,10de:22be"
 }}
 
 ==== Blacklist the host from loading Nvidia drivers ====
