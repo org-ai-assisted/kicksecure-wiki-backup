@@ -186,34 +186,22 @@ https://github.com/Kicksecure/security-misc/blob/master/etc/ssh/ssh_config.d/30_
 
 ==== Rationale on recommended encryption algorithms ====
 
-The above client configuration sets a number of cryptography-related algorithms as preferred over others and disables several others. The rationale for these choices is described below. Algorithms are sorted by order of preference.
+Both configurations offer only the strongest algorithms and disable all others. The rationale for these choices is described below.
 
 * '''Ciphers'''
 ** <u>Description:</u> Symmetric encryption ciphers used to secure data in real time as it is passed between the SSH client and server.
 ** <u>Algorithms:</u>
-*** <code>chacha20-poly1305@openssh.com</code>: Has a higher security margin than any other algorithm provided in Debian Bookworm.<ref>
-https://crypto.stackexchange.com/a/101056
-</ref> <ref>
-https://eprint.iacr.org/2019/1492.pdf
-</ref> This mode provides authenticated encryption, which prevents malleability attacks.<ref>
+*** <code>aes256-gcm@openssh.com</code>: The only cipher offered. It is an AES mode that provides authenticated encryption,<ref>
+https://crypto.stackexchange.com/questions/103242/why-gcm-is-used-more-often-than-ctr
+</ref> which prevents malleability attacks.<ref>
 https://andrea.corbellini.name/2023/03/09/authenticated-encryption/
 </ref>
-*** <code>aes256-gcm@openssh.com</code>: An AES mode that provides authenticated encryption.<ref>
-https://crypto.stackexchange.com/questions/103242/why-gcm-is-used-more-often-than-ctr
-</ref> This algorithm is ranked below <code>chacha20-poly1305@openssh.com</code> because of potential safety concerns with nonce handling and poorly designed implementations.<ref>
-https://crypto.stackexchange.com/questions/42982/safety-of-random-nonce-with-aes-gcm
-</ref> <ref>
-https://eprint.iacr.org/2016/475.pdf
-</ref>
-*** <code>aes256-ctr</code>: Does not provide authenticated encryption and should be combined with an encrypt-then-MAC algorithm (as described in the MACs section below). <ref>
-https://manpages.debian.org/bookworm/openssh-client/ssh_config.5.en.html#MACs
-</ref> This encryption method is likely safe even when using a MAC algorithm that verifies integrity after decryption, due to SSH's implementation of MAC verification. <ref>
+*** Other algorithms are not offered. <code>chacha20-poly1305@openssh.com</code> is also a strong authenticated-encryption cipher<ref>
+https://crypto.stackexchange.com/a/101056
+</ref> but is not used. <code>aes256-ctr</code> does not provide authenticated encryption.<ref>
 https://crypto.stackexchange.com/a/44028
-</ref> Still, verification after decryption is generally dangerous, so this method is ranked lower than the others.
-*** Other algorithms are not recommended; all cipher block chaining (CBC) algorithms in OpenSSH have been disabled by default since OpenSSH 7.6. <ref>
+</ref> Cipher block chaining (CBC) algorithms are disabled by default in OpenSSH.<ref>
 https://www.openssh.com/txt/release-7.6
-</ref> Variants of AES with 128 bits of security are believed to be quantum-safe but may not be, depending on the speed at which quantum computers develop. <ref>
-https://crypto.stackexchange.com/a/102672/133564
 </ref> There is little reason to use 192-bit AES keys when 256-bit keys are available.
 
 * '''MACs'''
@@ -232,12 +220,12 @@ https://crypto.stackexchange.com/a/67350/133564
 https://www.virtuesecurity.com/kb/ssh-weak-mac-algorithms-enabled/
 </ref> SHA1- and md5-based algorithms are potentially insecure due to known vulnerabilities in their hash functions. SHA2 without HMAC is potentially dangerous due to length extension attacks. <ref>
 https://crypto.stackexchange.com/a/50881/133564, search answer for "length extension"
-</ref> Generating the MAC first, then encrypting, is generally a bad idea, as mentioned in the <code>aes256-ctr</code> rationale above.
+</ref> Generating the MAC first, then encrypting (encrypt-and-MAC), is generally a bad idea.
 
 * '''KexAlgorithms'''
 ** <u>Description:</u> Encryption algorithms used for exchanging the symmetric encryption keys that will secure the connection.
 ** <u>Algorithms:</u>
-*** <code>sntrup761x25519-sha512</code>: Believed to be at least equivalent in security to Curve25519, which is the best non-quantum-secure algorithm provided. <ref>
+*** <code>sntrup761x25519-sha512</code>: Believed to be at least equivalent in security to Curve25519, the best classical (non-post-quantum) algorithm. <ref>
 https://www.ietf.org/archive/id/draft-josefsson-ntruprime-ssh-02.html
 </ref> This algorithm combines Curve25519 with NTRU Prime, which is currently believed to be post-quantum secure. <ref>
 https://eprint.iacr.org/2016/461
@@ -249,13 +237,12 @@ https://blog.cr.yp.to/20231003-countcorrectly.html
 </ref> <ref>
 https://blog.cr.yp.to/20231125-kyber.html
 </ref> It is therefore recommended to assume ML-KEM is not post-quantum secure and offers no additional protection over Curve25519.
-**** Note: <code>mlkem768x25519-sha256</code> is included in the current configuration.
-*** <code>curve25519-sha256</code>: Not post-quantum-secure. Widely used and believed to be secure against classical computers.
-*** Other algorithms are not recommended; nistp-based algorithms are likely intentionally broken <ref>
+*** <code>curve25519-sha256</code>: Not offered. It is not post-quantum-secure, although it is widely used and believed to be secure against classical computers.
+*** Other algorithms are not offered; nistp-based algorithms are likely intentionally broken <ref>
 https://credelius.com/credelius/?p=97
 </ref> and are difficult to implement correctly. <ref>
 https://cr.yp.to/talks/2013.05.31/slides-dan+tanja-20130531-4x3.pdf
-</ref> Diffie-Hellman algorithms are rarely used, computationally expensive, and offer no security advantages over Curve25519. <ref>
+</ref> Diffie-Hellman algorithms are rarely used, computationally expensive, and offer no security advantages. <ref>
 https://www.openssh.com/txt/release-10.0
 </ref>
 
@@ -439,7 +426,7 @@ These are the completed SSH configuration files. Please note that the entries pr
 
 The Ciphers, MACs, and Kex algorithms are all among the strongest available at the time of writing with OpenSSH 10.0p2 on Debian trixie. The entries in the configuration files above are the most important and will establish a functional and well-guarded setup. Use ed25519 keys only. RSA and ECDSA are outdated. Use the <code>ssh-keygen</code> command to generate the keys.
 
-Both the server configuration (<code>/etc/ssh/sshd_config.d/30_security-misc.conf</code>) and the client configuration (<code>/etc/ssh/ssh_config.d/30_security-misc.conf</code>) use the strictest set: '''only''' post-quantum key exchange (<code>sntrup761x25519-sha512</code> and <code>mlkem768x25519-sha256</code>) and '''only''' the <code>aes256-gcm@openssh.com</code> cipher. This is the strongest posture: it resists harvest-now-decrypt-later attacks and achieves the top score on the [https://www.sshaudit.com/ ssh-audit] audit. As a consequence, the server only accepts a post-quantum-capable client and the client only connects to a post-quantum-capable server. To reach a server that offers a narrower algorithm set, override per-host in <code>~/.ssh/config</code> or in a higher-numbered <code>/etc/ssh/ssh_config.d/50_user.conf</code> drop-in.
+Both the server configuration (<code>/etc/ssh/sshd_config.d/30_security-misc.conf</code>) and the client configuration (<code>/etc/ssh/ssh_config.d/30_security-misc.conf</code>) use the strictest set: '''only''' post-quantum key exchange (<code>sntrup761x25519-sha512</code> and <code>mlkem768x25519-sha256</code>) and '''only''' the <code>aes256-gcm@openssh.com</code> cipher. This is the strongest posture and resists harvest-now-decrypt-later attacks. As a consequence, the server only accepts a post-quantum-capable client and the client only connects to a post-quantum-capable server. To reach a server that offers a narrower algorithm set, override per-host in <code>~/.ssh/config</code> or in a higher-numbered <code>/etc/ssh/ssh_config.d/50_user.conf</code> drop-in.
 
 The <code>VisualHostKey yes</code> entry in the <code>/etc/ssh/ssh_config.d/30_security-misc.conf</code> file ensures that when you log in, OpenSSH shows you an ASCII-generated picture of what the key looks like. In addition to all other verifications, this is one last line of defense to alert you to a changed or incorrect key.
 
@@ -468,7 +455,7 @@ sudo iptables -A OUTPUT --j DROP
 
 This ensures the outgoing rules you have are the only ones that allow traffic. Iptables parses in order, so when it does not see a rule matching a packet not on your list, it checks each one in the chain until it finds a match with the last rule and drops the packet. Also, SSH only uses the TCP protocol, so no UDP rules are explicitly needed.
 
-This should complete the SSH setup. Some people also recommend re-generating the moduli file that comes in <code>/etc/ssh</code>. If you use the settings above, look at the kex algorithms. Since no Diffie-Hellman group exchange kex algorithms are used to exchange keys, it is unnecessary to regenerate the moduli. The chosen kex algorithms are the post-quantum hybrids <code>sntrup761x25519-sha512</code> and <code>mlkem768x25519-sha256</code> (the client additionally offers <code>curve25519-sha256</code>).
+This should complete the SSH setup. Some people also recommend re-generating the moduli file that comes in <code>/etc/ssh</code>. If you use the settings above, look at the kex algorithms. Since no Diffie-Hellman group exchange kex algorithms are used to exchange keys, it is unnecessary to regenerate the moduli. The chosen kex algorithms are the post-quantum hybrids <code>sntrup761x25519-sha512</code> and <code>mlkem768x25519-sha256</code>.
 
 = SSH Login Comparison Table =
 
