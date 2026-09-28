@@ -411,7 +411,7 @@ blacklist nvidia_uvm
 
 ==== Configure dracut to load VFIO early ====
 
-* Create and edit a file in <code>modprobe.d</code>: 
+* Create and edit a file in <code>dracut.conf.d</code>: 
 
 {{CodeSelect|code=
 sudoedit /etc/dracut.conf.d/vfio.conf
