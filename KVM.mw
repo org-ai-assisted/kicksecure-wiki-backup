@@ -357,7 +357,7 @@ VGA compatible controller [0300]: Intel Raptor Lake-S UHD Graphics
 0000:01:00.1 Audio device [0403]: NVIDIA Corporation AD107 High Definition Audio Controller [10de:22be] 
 </pre>
 
-'''Note''': These IDs/addresses for the dGPU <code>0000:01:00.0</code>, <code>10de:28a0</code>, <code>0000:01:00.1</code>, <code>10de:22be</code>. We are going to use them later.
+'''Note''': These IDs/addresses for the dGPU <code>0000:01:00.0</code>, <code>10de:28a0</code>, <code>0000:01:00.1</code>, <code>10de:22be</code> we are going to use them later.
 
 '''3.''' Check for Input-output memory management ([https://en.wikipedia.org/wiki/Input%E2%80%93output_memory_management_unit IOMMU]) support:
 
