@@ -385,7 +385,7 @@ Boot into SYSMAINT Then follow these steps:
 sudoedit /etc/default/grub.d/50_user.cfg
 }}
 
-* Then add (the important one which represents the dGPU is <code>10de:28a0</code> in our case) :
+* Then add the IOMMU and dGPU readings you obtained above:
 
 {{CodeSelect|code=
 GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX intel_iommu=on vfio-pci.ids=10de:28a0,10de:22be"
