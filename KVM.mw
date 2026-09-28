@@ -375,11 +375,7 @@ intel_iommu=on
 
 === SYSMAINT side (root/admin) ===
 
-'''1.''' Switch to [[Nvidia#Software_Rendering_(Pixman)|software rendering (Pixman)]].
-
-'''2.''' [[Nvidia#Debian_Repository|Install Nvidia]] and make sure it is [[Nvidia#Check_NVIDIA_Functionality|recognized]] by SYSMAINT (optional, to make sure your card is working properly before inserting it, or if you want to switch back later).
-
-Then follow these steps:
+Boot into SYSMAINT Then follow these steps:
 
 ==== GRUB ====
 
