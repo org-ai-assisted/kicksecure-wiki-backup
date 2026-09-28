@@ -249,7 +249,7 @@ https://blog.cr.yp.to/20231003-countcorrectly.html
 </ref> <ref>
 https://blog.cr.yp.to/20231125-kyber.html
 </ref> It is therefore recommended to assume ML-KEM is not post-quantum secure and offers no additional protection over Curve25519.
-**** Note: In the recommended configuration above, <code>mlkem768x25519-sha256</code> is not included because it is not supported in Debian 12 and, thus, not supported in {{project_name_short}} 17. It will be added when Debian 13 is released and Kicksecure is ported to it.
+**** Note: <code>mlkem768x25519-sha256</code> requires OpenSSH 9.9 or later (Debian 13 / trixie and newer) and is included in the current configuration. On older releases whose OpenSSH lacks it, the post-quantum protection is provided by <code>sntrup761x25519-sha512</code> alone.
 *** <code>curve25519-sha256</code>: Not post-quantum-secure. Widely used and believed to be secure against classical computers.
 *** Other algorithms are not recommended; nistp-based algorithms are likely intentionally broken <ref>
 https://credelius.com/credelius/?p=97
@@ -437,7 +437,9 @@ Keep the SSH connection open.
 
 These are the completed SSH configuration files. Please note that the entries preceded by a <code>#</code> are not necessary for functional use; they are included only as examples of what is possible in SSH. If you do not have a specific use for any of the commented-out options in either configuration file, do not use them at all.
 
-The Ciphers, MACs, and Kex algorithms are all the strongest available at the time of writing with OpenSSH 9.2p1 on Debian Bookworm. The entries in the configuration files above are the most important and will establish a functional and well-guarded setup. Use ed25519 keys only. RSA and ECDSA are outdated. Use the <code>ssh-keygen</code> command to generate the keys.
+The Ciphers, MACs, and Kex algorithms are all among the strongest available at the time of writing with OpenSSH 10.0p2 on Debian trixie. The entries in the configuration files above are the most important and will establish a functional and well-guarded setup. Use ed25519 keys only. RSA and ECDSA are outdated. Use the <code>ssh-keygen</code> command to generate the keys.
+
+The '''server''' configuration (<code>/etc/ssh/sshd_config.d/30_security-misc.conf</code>) is deliberately stricter than the client configuration. It offers '''only''' post-quantum key exchange (<code>sntrup761x25519-sha512</code> and <code>mlkem768x25519-sha256</code>, without the classical <code>curve25519-sha256</code>) and '''only''' the <code>aes256-gcm@openssh.com</code> cipher (without <code>chacha20-poly1305@openssh.com</code>). This is the strongest posture: it resists harvest-now-decrypt-later attacks and removes the residual Terrapin (CVE-2023-48795) exposure that <code>chacha20-poly1305@openssh.com</code> leaves for unpatched peers, and it achieves the top score on the [https://www.sshaudit.com/ ssh-audit] server audit. As a consequence it '''requires a post-quantum-capable client (OpenSSH 9.0 or newer) to connect'''; older or non-post-quantum clients cannot connect to such a server. The client configuration (<code>/etc/ssh/ssh_config.d/30_security-misc.conf</code>) deliberately stays broader (it still offers <code>curve25519-sha256</code>, <code>chacha20-poly1305@openssh.com</code>, and <code>aes256-ctr</code>) so that connecting out to older or non-post-quantum servers continues to work.
 
 The <code>VisualHostKey yes</code> entry in the <code>/etc/ssh/ssh_config.d/30_security-misc.conf</code> file ensures that when you log in, OpenSSH shows you an ASCII-generated picture of what the key looks like. In addition to all other verifications, this is one last line of defense to alert you to a changed or incorrect key.
 
@@ -466,7 +468,7 @@ sudo iptables -A OUTPUT --j DROP
 
 This ensures the outgoing rules you have are the only ones that allow traffic. Iptables parses in order, so when it does not see a rule matching a packet not on your list, it checks each one in the chain until it finds a match with the last rule and drops the packet. Also, SSH only uses the TCP protocol, so no UDP rules are explicitly needed.
 
-This should complete the SSH setup. Some people also recommend re-generating the moduli file that comes in <code>/etc/ssh</code>. If you use the settings above, look at the kex algorithms. Since no Diffie-Hellman group exchange kex algorithms are used to exchange keys, it is unnecessary to regenerate the moduli. The chosen kex algo is curve25519.
+This should complete the SSH setup. Some people also recommend re-generating the moduli file that comes in <code>/etc/ssh</code>. If you use the settings above, look at the kex algorithms. Since no Diffie-Hellman group exchange kex algorithms are used to exchange keys, it is unnecessary to regenerate the moduli. The chosen kex algorithms are the post-quantum hybrids <code>sntrup761x25519-sha512</code> and <code>mlkem768x25519-sha256</code> (the client additionally offers <code>curve25519-sha256</code>).
 
 = SSH Login Comparison Table =
 
