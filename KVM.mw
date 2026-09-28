@@ -472,14 +472,6 @@ sudo update-grub
 sudo dracut --force --regenerate-all 
 }}
 
-===== Reboot =====
-
-{{CodeSelect|code=
-sudo reboot
-}}
-
-* Then boot into SYSMAINT again.
-
 ==== Create persistent permissions for the verified group ====
 
 {{CodeSelect|code=
@@ -510,7 +502,7 @@ SUBSYSTEM=="vfio", KERNEL=="17", OWNER="root", GROUP="user", MODE="0660"
 sudo reboot
 }}
 
-* This time boot into user.
+* Then boot into user.
 
 === User ===
 
