@@ -337,7 +337,7 @@ There are '''hardware''' and '''software''' requirements that need to be met:
 
 == Hardware ==
 
-'''1.''' Make sure you have an [https://en.wikipedia.org/wiki/Integrated_GPU#Integrated_graphics_processing_unit Integrated GPU] (built-in GPU in your processor). Most PCs with a dGPU (hybrid) also come with an iGPU by default, but sometimes that is not the case <ref>https://forums.kicksecure.com/t/black-login-screen-crash-due-to-nouveau-gsp-killing-labwc/1556/17</ref>. In order to check that, run:
+'''1.''' Make sure you have an [https://en.wikipedia.org/wiki/Integrated_GPU#Integrated_graphics_processing_unit Integrated GPU] (built-in GPU in your processor). Most PCs with a dGPU also come with an iGPU (hybrid) by default, but sometimes that is not the case <ref>https://forums.kicksecure.com/t/black-login-screen-crash-due-to-nouveau-gsp-killing-labwc/1556/17</ref>. In order to check that, run:
 
 {{CodeSelect|code=
 lspci -Dnnk {{!}} grep -A4 -E 'VGA{{!}}3D{{!}}Audio'
