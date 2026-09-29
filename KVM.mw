@@ -333,7 +333,7 @@ Start {{project_name_short}}:
 
 One of the unique features of KVM is that it allows the host's dedicated/discrete GPU (e.g Nvidia) to be inserted directly into the VM instead of using only virtualized graphics.
 
-There are '''hardware''' and '''software''' requirements that need to be met: 
+There are '''hardware''' and '''software''' requirements that need to be met:
 
 == Hardware ==
 
@@ -354,7 +354,7 @@ VGA compatible controller [0300]: Intel Raptor Lake-S UHD Graphics
 <pre>
 0000:01:00.0 VGA compatible controller [0300]: NVIDIA Corporation AD107M [Geforce RTX 4060 Max-Q / Mobile] [10de:28a0]
         kernel driver in use: nouveau
-0000:01:00.1 Audio device [0403]: NVIDIA Corporation AD107 High Definition Audio Controller [10de:22be] 
+0000:01:00.1 Audio device [0403]: NVIDIA Corporation AD107 High Definition Audio Controller [10de:22be]
 </pre>
 
 '''Note''': These IDs/addresses for the dGPU <code>0000:01:00.0</code>, <code>10de:28a0</code>, <code>0000:01:00.1</code>, <code>10de:22be</code> we are going to use them later.
@@ -393,13 +393,13 @@ GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX intel_iommu=on vfio-pci.ids=10de:28a0,10
 
 ==== Blacklist the host from loading Nvidia drivers ====
 
-* Create and edit a file in <code>modprobe.d</code>: 
+* Create and edit a file in <code>modprobe.d</code>:
 
 {{CodeSelect|code=
 sudoedit /etc/modprobe.d/blacklist-nvidia.conf
 }}
 
-* Add these entries to the blacklist: 
+* Add these entries to the blacklist:
 
 {{CodeSelect|code=
 blacklist nouveau
@@ -411,7 +411,7 @@ blacklist nvidia_uvm
 
 ==== Configure dracut to load VFIO early ====
 
-* Create and edit a file in <code>dracut.conf.d</code>: 
+* Create and edit a file in <code>dracut.conf.d</code>:
 
 {{CodeSelect|code=
 sudoedit /etc/dracut.conf.d/vfio.conf
@@ -465,7 +465,7 @@ sudo update-grub
 ===== Dracut =====
 
 {{CodeSelect|code=
-sudo dracut --force --regenerate-all 
+sudo dracut --force --regenerate-all
 }}
 
 ==== Create persistent permissions for the verified group ====
@@ -523,13 +523,13 @@ sudo reboot
 * Go to the added PCI/graphics card, then click XML and change <code>managed="yes"</code> to <code>managed="no"</code>. Then click Apply (this is important for the <code>qemu:///session</code>/user-level case).
 
 <pre>
-<hostdev mode="subsystem" type="pci" managed="yes> 
+<hostdev mode="subsystem" type="pci" managed="yes>
 </pre>
 
 [[File:PCI-6.png|500px]]
 
 <pre>
-<hostdev mode="subsystem" type="pci" managed="no> 
+<hostdev mode="subsystem" type="pci" managed="no>
 </pre>
 
 [[File:PCI-7.png|500px]]

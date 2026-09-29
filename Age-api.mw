@@ -52,8 +52,8 @@ Review required!
 |-
 
 ! <!-- jurisdiction --> Federal
-| <!-- status --> 
-| <!-- timeline --> 
+| <!-- status -->
+| <!-- timeline -->
 | <!-- sources --> [https://www.congress.gov/bill/119th-congress/house-bill/8250/all-info info] / [https://www.congress.gov/bill/119th-congress/house-bill/8250/text text]
 | <!-- notes --> operating system provider
 |-
@@ -262,7 +262,7 @@ Compilation of some major statements and/or (proposed) source code changes by so
 * https://x.com/midnightbsd/status/2027101491211718765
 
 {{quotation
-|quote=California residents are not authorized to use MidnightBSD for desktop use in the state of California effective January 1, 2027. California law [https://legiscan.com/CA/text/AB1043/id/3269704 CA AB1043] requires a complex age verification system implemented for operating systems with no exceptions for small open source projects. 
+|quote=California residents are not authorized to use MidnightBSD for desktop use in the state of California effective January 1, 2027. California law [https://legiscan.com/CA/text/AB1043/id/3269704 CA AB1043] requires a complex age verification system implemented for operating systems with no exceptions for small open source projects.
 |context=https://github.com/MidnightBSD/src/commit/7d956a27123f2d77a05313826c29a0329a923254
 }}
 

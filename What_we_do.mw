@@ -163,7 +163,7 @@ https://github.com/Kicksecure/kicksecure-meta-packages/blob/master/debian/contro
 * Handling transitions and regressions caused by upstream changes (toolchain, dependencies, defaults).
 
 {{IconSet|h1|6}} '''APT repository operations and signing'''
-* APT repository updated. 
+* APT repository updated.
 * Managing signing keys, signing automation, and key rollover procedures.
 * Keeping repository configuration guidance and documentation current.
 

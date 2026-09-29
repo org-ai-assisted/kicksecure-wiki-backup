@@ -143,7 +143,7 @@ Expected output if 3D is disabled:
 [loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 383 FrameTime: 2.612 ms
 [loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 357 FrameTime: 2.804 ms
 =======================================================
-                                  glmark2 Score: 323 
+                                  glmark2 Score: 323
 =======================================================
 </pre>
 

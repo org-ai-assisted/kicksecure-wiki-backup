@@ -8,7 +8,7 @@ Trezor Hardware Wallet
 {{crypto_hardware_wallets_mininav}}
 = Introduction =
 [https://trezor.io/ Trezor] is a hardware cryptocurrency wallet created by SatoshiLabs.
-Its [https://github.com/trezor/trezor-firmware firmware] and [https://github.com/trezor/trezor-hardware PCB design] are open source. Its [https://github.com/trezor/trezor-suite client software] source code is source-available, but under a restrictive license. 
+Its [https://github.com/trezor/trezor-firmware firmware] and [https://github.com/trezor/trezor-hardware PCB design] are open source. Its [https://github.com/trezor/trezor-suite client software] source code is source-available, but under a restrictive license.
 
 Trezor Safe&#x202F;3 and Safe&#x202F;5 incorporate a secure element known as OPTIGA&#x202F;Trust&#x202F;M (V3) <ref>
 [https://trezor.io/learn/security-privacy/how-trezor-keeps-you-safe/secure-elements-in-trezor-safe-devices Secure Elements in Trezor Safe devices]

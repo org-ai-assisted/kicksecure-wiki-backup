@@ -31,7 +31,7 @@ Technically, most indexing services try to avoid polling. On Linux, they will us
 ** <u>Same malicious file did not work:</u> The same malicious file used to accomplish RCE in file indexing service GNOME tracker-miner, which used libcue to parse cue files, could not trigger that same attack chain in {{project_name_short}} when the indexing service was not installed.
 ** <u>Attack chain:</u> What happened in case of [https://github.blog/security/vulnerability-research/coordinated-disclosure-1-click-rce-on-gnome-cve-2023-43641/ GitHub Security Lab: Coordinated disclosure - 1-click RCE on GNOME (CVE-2023-43641)] was: GNOME file indexing service -> saw a [https://en.wikipedia.org/wiki/Cue_sheet_(computing) <code>.cue</code>] file -> parsed it -> parser exploit -> RCE.
 * <u>What libcue is:</u>
-{{quotation 
+{{quotation
 |quote=libcue is a library used for parsing cue sheets, a metadata format for describing the layout of the tracks on a CD.
 }}
 * <u>Low practical value:</u> For most users today, indexing <code>.cue</code> "track layout" metadata is a niche feature. Cue sheets are mainly used for full-disc audio rips (for example a single large audio file plus a cue sheet), optical disc images (BIN/CUE), and some media players or emulators that want track level navigation or CD-Text style metadata. For typical desktop file search, this functionality is rarely essential. <ref>

@@ -66,9 +66,9 @@ Choose the installation source, ensure <code>Install</code> is selected, then cl
 
 Choices for installation:
 
-* Either from the Debian repository, which is going to be the [https://www.firefox.com/en-US/browsers/enterprise/ ESR version]. 
+* Either from the Debian repository, which is going to be the [https://www.firefox.com/en-US/browsers/enterprise/ ESR version].
 * [https://www.mozilla.org/en-US/firefox/all/desktop-release/ Rapid Release] version from the official Firefox repository.
-* The [https://flathub.org/en/apps/org.mozilla.firefox Rapid Release] version of Firefox, verified and uploaded to the Flathub repository. 
+* The [https://flathub.org/en/apps/org.mozilla.firefox Rapid Release] version of Firefox, verified and uploaded to the Flathub repository.
 
 Select: <code>Install</code>
 

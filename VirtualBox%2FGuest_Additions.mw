@@ -14,7 +14,7 @@ Guest Additions provides features such as clipboard sharing, seamless mouse inte
 
 [[#VirtualBox Guest Additions|Guest Additions are installed by default in {{project_name_short}} and its derivatives such as {{Whonix}}.]]
 
-<u>Important:</u> Clipboard sharing is currently '''broken in {{project_name_short}} 18'''. See [[#Clipboard Sharing|Clipboard Sharing]] for details.  
+<u>Important:</u> Clipboard sharing is currently '''broken in {{project_name_short}} 18'''. See [[#Clipboard Sharing|Clipboard Sharing]] for details.
 }}
 = Clipboard Sharing =
 {{IntroLike|
@@ -601,7 +601,7 @@ ls -la /opt/VBoxGuestAdditions-*/init/
 === Kernel Upgrades ===
 The following issue may occur during kernel [[Operating System Software and Updates|upgrades]].
 
-This issue should be rare. It is only known to happen when using <code>initramfs-tools</code>. At time of writing, {{project_name_short}} switched from <code>initramfs-tools</code> to [[dracut]] by default. 
+This issue should be rare. It is only known to happen when using <code>initramfs-tools</code>. At time of writing, {{project_name_short}} switched from <code>initramfs-tools</code> to [[dracut]] by default.
 
 <pre>
 /etc/kernel/postinst.d/vboxadd:

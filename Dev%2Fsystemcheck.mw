@@ -10,7 +10,7 @@ Dev/systemcheck
 }}
 {{archived}}
 This page would require some updates.
-= Technical Information = 
+= Technical Information =
 * <u>Nothing is compiled:</u> systemcheck is implemented as scripts rather than compiled binaries.
 * <u>Source code inspection:</u> It can be easily inspected in the source code.
 * <u>Inspiration:</u> systemcheck was inspired by browser based check websites.

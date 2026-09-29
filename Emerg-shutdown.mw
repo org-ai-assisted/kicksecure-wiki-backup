@@ -43,7 +43,7 @@ Both of these actions are expected to be fast and easy to do even in high-stress
 {{mbox
 | type    = notice
 | image   = [[File:Ambox_notice.png|40px|alt=Info]]
-| text    = 
+| text    =
 Known issue:
 
 <code>emerg-shutdown</code> bypasses [[ram-wipe]]. This may make cold boot attacks easier. A normal shutdown is therefore more secure if an attacker is not physically present. Of course, <code>emerg-shutdown</code> should be used if an attacker is physically present, because quick shutdown is more important than explicitly wiping memory contents in this scenario.

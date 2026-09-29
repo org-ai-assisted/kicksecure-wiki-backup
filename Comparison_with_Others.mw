@@ -300,7 +300,7 @@ https://forums.kicksecure.com/t/iso-cryptsetup-full-disk-encryption-fde-set-more
 
 <!-- Encryption & Date Protection -->
 ! [[emerg-shutdown|Emergency shutdown]]
-| 
+|
 * Forcibly powers off the system if the boot drive is removed.
 * Forcibly powers off the system via a "panic key sequence" (default: {{Keypress|Ctrl|Alt|End}}).
 * Can be triggered by running: <code>sudo /run/emerg-shutdown --instant-shutdown</code>

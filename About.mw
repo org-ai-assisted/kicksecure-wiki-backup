@@ -1,7 +1,7 @@
 {{#kicksecure_css_page_about:}}{{Header}} {{hide_all_banners}}
 {{title|title=
 {{project_name_long}} - A Security Hardened Linux Distribution
-}} 
+}}
 {{#seo:
 |description={{project_name_long}} Overview. Security by Design, Usability by default. A Hardened Fork of Debian.
 |image=Kicksecure-image-twitter-post.jpg

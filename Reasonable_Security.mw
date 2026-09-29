@@ -198,7 +198,7 @@ tens of thousands of employees
 = Conclusion =
 Reasonable security means balancing protection cost versus expected loss and as secure as reasonably practicable. Further security gains would require disproportionate sacrifice elsewhere.
 
-There's no [[Perfect Security]]. One needs to target a threat model and aim for reasonable security, acknowledging unknown flaws may remain. 
+There's no [[Perfect Security]]. One needs to target a threat model and aim for reasonable security, acknowledging unknown flaws may remain.
 
 {{Footer}}
 [[Category:Documentation]]

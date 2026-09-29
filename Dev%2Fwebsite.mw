@@ -575,7 +575,7 @@ Patrick:
 
 '''DEV'''
 * Done
-* This bugreport was found https://phabricator.wikimedia.org/T309778 in this documentation 
+* This bugreport was found https://phabricator.wikimedia.org/T309778 in this documentation
 * In the doc is states (with link to the bug) <blockquote>If the quote contains multiple paragraphs the tags need to be on separate lines to display properly, i.e.: </blockquote>
 * Therefore I changed the quotation template to a more robust version (the one recommended bugproof version in the doc). Now the tests work
 * Tests on wikitest in Quotation and Blockquote were changed to reflect this

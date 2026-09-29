@@ -419,7 +419,7 @@ Then open the program and use it as normal. AppArmor detects which files need to
 rsyslog auditd
 }}
 
-'''2.''' rsyslog enabling. 
+'''2.''' rsyslog enabling.
 
 {{CodeSelect|code=
 sudo systemctl enable rsyslog

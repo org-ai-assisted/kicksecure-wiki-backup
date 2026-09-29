@@ -54,7 +54,7 @@ It is now possible to combine these codes to determine the language to export. F
 {{IconSet|h1|4}} Reconfigure locales.
 
 Reconfigure locales with the following command. <ref>
-EDIT by Contributor: 
+EDIT by Contributor:
 
 Reverted. Citation required. Debian upstream bug report required.
 
@@ -256,7 +256,7 @@ sudo apt install firefox-esr-l10n-de
 
 When installing an application with <code>apt</code>, begin by looking for the existence of language packs associated with the application. These packages are easily identified by the expression ''-l10n-'' put after the name of the application's package name. Then proceed to install the language pack. '''Apt''' will automatically install the main application with it. This method works with '''Thunderbird''', '''Firefox''' and some majors applications.
 
-Example to get '''Thunderbird''' running in French: 
+Example to get '''Thunderbird''' running in French:
 
 {{Box|text=
 {{IconSet|h1|1}} Update the package lists.

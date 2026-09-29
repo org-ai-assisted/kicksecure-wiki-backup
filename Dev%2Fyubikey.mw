@@ -89,7 +89,7 @@ https://github.com/the2nd/ykluks
 
 {| class="wikitable"
 |+ Static Password vs Challenge Response
-|- 
+|-
 | || Static Password || Challenge Response
 |-
 | BIOS password entry
@@ -142,7 +142,7 @@ A YubiKey can help strengthen passwords for login, screensavers, BIOS, full disk
 
 {| class="wikitable"
 |+ yubikey
-|- 
+|-
 | || Protection
 |-
 | Simple Password phishing <ref>User replying to fraudulent password request by e-mail.</ref>

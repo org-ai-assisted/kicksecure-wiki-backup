@@ -21,18 +21,18 @@ There are two kinds of boxes.
 
 '''Box type A'''
 
-You keep the keys.  
-You can turn the box off and safely look at everything inside.  
-If needed, you can also choose to place your own trusted camera inside the box before anything else starts.  
+You keep the keys.
+You can turn the box off and safely look at everything inside.
+If needed, you can also choose to place your own trusted camera inside the box before anything else starts.
 Nothing inside can run, hide, or secretly come back without being seen.
 
 This is '''Deep Scan Ready'''.
 
 '''Box type B'''
 
-The company that made the box keeps the keys.  
-You are told to trust their checker.  
-You cannot look inside first, and you cannot place your own monitoring tools inside.  
+The company that made the box keeps the keys.
+You are told to trust their checker.
+You cannot look inside first, and you cannot place your own monitoring tools inside.
 If something bad can fool their checker, you may never know.
 
 This is '''Deep Scan Restricted'''.
@@ -61,7 +61,7 @@ An important rule for deep virus scans is: do not boot a device suspected of bei
 }}
 
 {{quotation
-|quote=Use offline scanners: If the rootkit is particularly stubborn or your regular antivirus software fails to detect it, you can try offline scanners. These antivirus tools run from a bootable USB or CD/DVD, allowing them to scan your system without the rootkit being active. 
+|quote=Use offline scanners: If the rootkit is particularly stubborn or your regular antivirus software fails to detect it, you can try offline scanners. These antivirus tools run from a bootable USB or CD/DVD, allowing them to scan your system without the rootkit being active.
 |context=[https://us.norton.com/blog/malware/rootkit Norton blog: Rootkit]
 }}
 
@@ -138,10 +138,10 @@ In security terms, these approaches are called different '''trust models'''. A t
 
 Two contrasting trust models are described below.
 
-* <u>Vendor rooted trust:</u> Vendor lockdown and vendor lock in.  
+* <u>Vendor rooted trust:</u> Vendor lockdown and vendor lock in.
 ** In this model, the platform decides what is allowed, and the vendor controls the root of trust, for example which cryptographic keys are accepted and which software is permitted to run.
 ** This means that the user mainly receives protection against third party attackers, but must inherently trust the vendor. If the vendor makes a mistake, is compromised, pressured, or behaves maliciously, the user has limited ability to independently detect or override that behavior.
-* <u>User verifiable trust:</u> Trust minimization through independent verification.  
+* <u>User verifiable trust:</u> Trust minimization through independent verification.
 ** In this model, the platform itself may be included in the threat model. This means the system is not automatically trusted simply because it is running.
 ** Because of this assumption, the design focuses on giving the device owner ways to check, verify, and if necessary replace the platform from outside, without trusting it while it is being inspected.
 

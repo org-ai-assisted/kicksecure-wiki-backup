@@ -530,7 +530,7 @@ Started removing almost all initramfs-tools-related code from the Kicksecure and
 === Work on optimizing memory usage of Qubes-Whonix ===
 Date: 2025-08-22
 
-Disabled memlockd in general, disabled emerg-shutdown on Qubes, replaced some sleep calls with a lower-memory alternative "light_sleep", and researched possible ways of reducing RAM consumption in sdwdate-gui and privleap. 
+Disabled memlockd in general, disabled emerg-shutdown on Qubes, replaced some sleep calls with a lower-memory alternative "light_sleep", and researched possible ways of reducing RAM consumption in sdwdate-gui and privleap.
 
 === Actually fix derivative-maker merge issue ===
 Date: 2025-08-22
@@ -5292,7 +5292,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Template stylistic upgrades
 *** freedom software
 *** flatpak
-*** flatpak_add_repository_short 
+*** flatpak_add_repository_short
 
 * 2025-08-07
 ** GitHub Link update

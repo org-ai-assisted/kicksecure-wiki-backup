@@ -307,7 +307,7 @@ example: https://api.github.com/users/adrelanos/gpg_keys
 {| class="wikitable"
 |+ ''GnuPG Key Encryption vs OpenPGP Hardware Protection Comparison''
 
-|- 
+|-
 
 | '''Domain''' || '''GnuPG Encryption of OpenPGP Private Key''' || '''Hardware Protection''' <ref>Token or smartcard.</ref>
 |-

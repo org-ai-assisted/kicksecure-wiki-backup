@@ -146,7 +146,7 @@ user = "user"
 **** Patrick: "fundamentally read-only" is the critical term. I would argue both ISO and SquashFS can be "mounted" as read-write. It's not trivial for sure. Quote chapter [[Verified_Boot#ISO_Considerations|ISO Considerations]]:
 **** <blockquote>It's hard to modify an ISO read/write. There is no public software available to really mount an ISO read/write. But it's possible in theory. The ISO should be considered read-write for attackers but read-only for the public. There is the Open Source <code>growisofs</code> tool. Also, other attacks are conceivable. Since [https://wiki.debian.org/RepackBootableISO Repacking an ISO] is documented in the Debian wiki, this can be used for both legitimate and malicious purposes and is much easier than mounting an ISO read/write.</blockquote>
 **** Patrick: As for [https://unix.stackexchange.com/questions/80305/mounting-a-squashfs-filesystem-in-read-write SquashFS, it can be extracted, modified and repacked]. So in conclusion the risk of "privileged malware from making persistent modifications to the system" is still applicable independently of the underlying filesystem?
-***** Aaron: This depends on a couple of factors, namely "practical vs. theoretical security" and presence of cryptographic verification. While in theory an attacker who gains root access might be able to modify a read-only filesystem to infect it in all manner of different ways (in-place modifications, repacking, etc.), it still requires a much higher amount of effort to modify anything, decreasing the number of interested attackers and increasing the possibility of attack failure. Furthermore, if Verified Boot is used, modifying the filesystem will simply break it rather than allowing persistent modification. Without using a fundamentally read-only filesystem, the effort of changing an "immutable" filesystem is dramatically lowered and Verified Boot is rendered 
+***** Aaron: This depends on a couple of factors, namely "practical vs. theoretical security" and presence of cryptographic verification. While in theory an attacker who gains root access might be able to modify a read-only filesystem to infect it in all manner of different ways (in-place modifications, repacking, etc.), it still requires a much higher amount of effort to modify anything, decreasing the number of interested attackers and increasing the possibility of attack failure. Furthermore, if Verified Boot is used, modifying the filesystem will simply break it rather than allowing persistent modification. Without using a fundamentally read-only filesystem, the effort of changing an "immutable" filesystem is dramatically lowered and Verified Boot is rendered
 
 ----
 
@@ -577,7 +577,7 @@ Re-enable Hyper-V and related Windows security features. Increases system securi
 * Patrick: Merged.
 
 == misc AI review #3 ==
-* most seems unnecessary 
+* most seems unnecessary
 * https://github.com/assisted-by-ai/tb-updater/pull/1
 * https://github.com/assisted-by-ai/tb-updater/pull/2
 * https://github.com/assisted-by-ai/tb-updater/pull/3
@@ -1284,13 +1284,13 @@ zsh: exit 3     systemctl status sdwdate-gui-qubes@1-1483-1000.service
 Dec 04 09:24:22 sys-net systemd[1]: Starting sdwdate-gui-qubes@1-1483-1000.service - sdwdate graphical user interface - Qubes socket proxy (PID 1483/UID 1000)...
 Dec 04 09:24:32 sys-net systemd[1]: Started sdwdate-gui-qubes@1-1483-1000.service - sdwdate graphical user interface - Qubes socket proxy (PID 1483/UID 1000).
 Dec 04 09:24:32 sys-net systemd[1]: sdwdate-gui-qubes@1-1483-1000.service: Deactivated successfully.
-[root ~]# 
+[root ~]#
 </pre>
 
 * systemd probably does not like that a Type=notify unit can exit
 
 <pre>
-systemctl --no-legend --no-pager --no-block --state=failed,activating,deactivating list-units &#x25CF; sdwdate-gui-qubes@49-1483-1000.service loaded 
+systemctl --no-legend --no-pager --no-block --state=failed,activating,deactivating list-units &#x25CF; sdwdate-gui-qubes@49-1483-1000.service loaded
 </pre>
 <pre>
 activating start start sdwdate graphical user interface - Qubes socket proxy (PID 1483/UID 1000) can we avoid getting stuck in that state?
@@ -1300,7 +1300,7 @@ activating start start sdwdate graphical user interface - Qubes socket proxy (PI
 * Patrick: Merged.
 
 == helper-scripts - sanitize-string  and strip-html improvements ==
-* sanitize-string 
+* sanitize-string
 ** please add pipe support
 ** currently: "sanitize-string: Usage: sanitize-string string [max_length]",
 *** would be better to have string length as mandatory first argument? Perhaps nolimit as a keyword? Please update code base.
@@ -1311,7 +1311,7 @@ activating start start sdwdate graphical user interface - Qubes socket proxy (PI
 * Patrick: Merged.
 * small lint issue: https://github.com/Kicksecure/helper-scripts/actions/runs/19847500678/job/56867679739
 ** Aaron: Fixed.
-* Should sanitize-string act like stcatn, i.e. always ensure there is a trailing newline at the end? 
+* Should sanitize-string act like stcatn, i.e. always ensure there is a trailing newline at the end?
 ** Aaron: Unsure. I would initially argue no, strings may legitimately not contain a trailing newline. If in the future we need to sanitize a string and ensure it is terminated with a newline, we should add a new option to sanitize-string to do this.
 * AI:
 
@@ -1492,9 +1492,9 @@ sdwdate_status_changed: WARNING: Could not parse JSON from sdwdate
 * Aaron: Reproduced issue, discovered root cause ("All users may connect to this network" was disabled). Documented that one should not disable this setting with user-sysmaint-split installed, and documented how to fix the system after this happens.
 
 == privleapd restart bug ==
-* hit this in Kicksecure for Qubes by changing privleapd configuration and restarting it a lot 
+* hit this in Kicksecure for Qubes by changing privleapd configuration and restarting it a lot
 <pre>
-sudo genmkfile install && sudo systemctl restart privleapd && systemcheck --verbose --function check_kernel_messages        
+sudo genmkfile install && sudo systemctl restart privleapd && systemcheck --verbose --function check_kernel_messages
 /usr/share/genmkfile/make-helper-one.bsh: INFO: install
 /usr/libexec/systemcheck/systemcheck: WARNING: Cannot communicate with privleapd. File '/run/privleapd/comm/user' does not exist. Cannot use privleap.
 
@@ -1579,7 +1579,7 @@ Nov 24 13:35:01 host systemd[1]: Starting sdwdate.service - Secure Distributed W
 Nov 24 13:35:02 host systemd[1]: Started sdwdate.service - Secure Distributed Web Date.
 Nov 24 13:35:02 host sdwdate[15405]: 2025-11-24 13:35:02 - sdwdate - INFO - sdwdate (Secure Distributed Web Date) started. PID: 15405
 
-sudo journalctl | grep stuck      
+sudo journalctl | grep stuck
 Nov 19 11:07:44 host kernel: watchdog: BUG: soft lockup - CPU#2 stuck for 2381s! [swapper/2:0]
 Nov 19 22:28:10 host kernel: watchdog: BUG: soft lockup - CPU#2 stuck for 38019s! [swapper/2:0]
 Nov 22 11:35:36 host kernel: watchdog: BUG: soft lockup - CPU#1 stuck for 47763s! [swapper/1:0]
@@ -1667,7 +1667,7 @@ printf '%s\n' '${rpc_config_file} qrexec action is prohibited in PERSISTENT Mode
 
 == Qubes - user-sysmaint-split - kernel modes - Standalone VM bug ==
 * QVMM shows user session boot option only for Standalone VM
-* bug: Standalone doesn't inherit boot options from Template 
+* bug: Standalone doesn't inherit boot options from Template
 * user might report bug at Qubes
 * Aaron: Could not reproduce bug by making a new standalone from a Whonix-Workstation 18 template.
 ** Found Qubes bug report, asked for clarification on the issue.
@@ -1745,10 +1745,10 @@ Symlink: No
 
 Parent Folder Symlink: No
 
-Category   Read   Write  Execute 
-Owner      Yes    Yes    Yes     
-Group      Yes    No     Yes     
-Public     Yes    No     Yes     
+Category   Read   Write  Execute
+Owner      Yes    Yes    Yes
+Group      Yes    No     Yes
+Public     Yes    No     Yes
 
 Special Attributes:
 SUID: Not Set
@@ -1846,7 +1846,7 @@ Nov 21 15:34:16 host pipewire[1803]: mod.rt: RTKit error: org.freedesktop.DBus.E
 == trixie-port - sdwdate-gui - broken inside sys-net ==
 * only during boot
 <pre>
-systemctl list-units --failed                         
+systemctl list-units --failed
   UNIT                                  LOAD   ACTIVE SUB    DESCRIPTION                                                     >
 &#x25CF; sdwdate-gui-qubes@0-1531-1000.service loaded failed failed sdwdate graphical user interface - Qubes socket proxy (PID 1531/>
 </pre>
@@ -1988,7 +1988,7 @@ Nov 18 09:01:02 localhost privleapd[1143]: send_action_results: INFO: Action 'sd
 * Patrick: Merged.
 
 == trixie-port - leapctl - could not connect to privleapd ==
-* Tor could not bind. At second boot. 
+* Tor could not bind. At second boot.
 * VirtualBox
 * 18.0.6.8
 * upgraded
@@ -2035,7 +2035,7 @@ Nov 18 09:01:02 localhost privleapd[1143]: send_action_results: INFO: Action 'sd
 * Patrick: Merged.
 
 == trixie-port - Tor could not bind to IPv6 race condition ==
-* Tor could not bind. At second boot. 
+* Tor could not bind. At second boot.
 * VirtualBox
 * happened at first boot only
 * happened just once. difficult to reproduce.
@@ -2729,7 +2729,7 @@ make_cross_build_platform_list="i386 amd64 arm64" ./build-steps.d/*_create-debia
 </pre>
 
 * please re-implement for Wayland, if sane.
-* Aaron: Doing this exactly as described may be hard on Wayland, because there is no location where the display configuration is saved any longer, it is always generated dynamically and must be fixed manually by the user if desired. However, what we can do is set the resolution of all displays to 1920x1080 if the appropriate hypervisor helpers (VBoxDRMClient, spice-vdagentd) are not active when wlr_resize_helper launches. 
+* Aaron: Doing this exactly as described may be hard on Wayland, because there is no location where the display configuration is saved any longer, it is always generated dynamically and must be fixed manually by the user if desired. However, what we can do is set the resolution of all displays to 1920x1080 if the appropriate hypervisor helpers (VBoxDRMClient, spice-vdagentd) are not active when wlr_resize_helper launches.
 ** Implemented this in vm-config-dist.
 * Patrick: Merged.
 
@@ -3146,7 +3146,7 @@ Done, but operation failed!
 
 == setxkbmap replacement too for wayland ==
 * "setxkbmap de" used to be handy.
-* implement 
+* implement
 * add to helper-scripts
 * Aaron: Implemented: https://github.com/ArrayBolt3/helper-scripts/commit/41ae1e120672b94351a4c3889181bb9be2991eb0
 ** Patrick: Merged.
@@ -3171,13 +3171,13 @@ Done, but operation failed!
 == kloak - systemd ordering cycle ==
 * host: trixie (non-Kicksecure)
 <pre>
- [SKIP} kloak.service to stop ordering cycle loop 
+ [SKIP} kloak.service to stop ordering cycle loop
 </pre>
 <pre>
 graphical.target: Found ordering cycle on multi-user.target/start
 graphical.target: Found dependency on kloak.service/start
 graphical.target: Found dependency on graphical.target/start
-graphical.target: Job kloak.service/start deleted to break ordering cycle starting with graphical.target/start 
+graphical.target: Job kloak.service/start deleted to break ordering cycle starting with graphical.target/start
 </pre>
 * wild guess: related to removal of symlinks?
 * no more information available. Will hopefully be posted in the forums.
@@ -3484,7 +3484,7 @@ IPC connection failure!IPC connect: service=usbguard: Operation not permitted
 * Patrick: Please try hardening-check and address, if applicable.
 
 <pre>
-hardening-check /usr/libexec/sdwdate/sclockadj 
+hardening-check /usr/libexec/sdwdate/sclockadj
 /usr/libexec/sdwdate/sclockadj:
  Position Independent Executable: yes
  Stack protected: yes

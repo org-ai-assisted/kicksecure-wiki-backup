@@ -549,9 +549,9 @@ lsblk
 }}
 
 <pre>
-[sysmaint ~]% lsblk 
+[sysmaint ~]% lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
-sda           8:0    0 476.9G  0 disk 
+sda           8:0    0 476.9G  0 disk
 &#x251C;&#x2500;sda1        8:1    0   4G  0 part /boot
 &#x251C;&#x2500;sda2        8:2    0 472.9G  0 part /
 </pre>
@@ -559,12 +559,12 @@ sda           8:0    0 476.9G  0 disk
 If your hard drive is NVMe you will see <code>nvme0</code>:
 
 <pre>
-nvme0n1     259:0    0 953.9G  0 disk 
-&#x2514;&#x2500;nvme0n1p1 259:1    0 953.9G  0 part 
-nvme1n1     259:2    0 953.9G  0 disk 
-&#x251C;&#x2500;nvme1n1p1 259:3    0   200M  0 part 
-&#x251C;&#x2500;nvme1n1p2 259:4    0    16M  0 part 
-&#x251C;&#x2500;nvme1n1p3 259:5    0 952.9G  0 part 
+nvme0n1     259:0    0 953.9G  0 disk
+&#x2514;&#x2500;nvme0n1p1 259:1    0 953.9G  0 part
+nvme1n1     259:2    0 953.9G  0 disk
+&#x251C;&#x2500;nvme1n1p1 259:3    0   200M  0 part
+&#x251C;&#x2500;nvme1n1p2 259:4    0    16M  0 part
+&#x251C;&#x2500;nvme1n1p3 259:5    0 952.9G  0 part
 &#x2514;&#x2500;nvme1n1p4 259:6    0   735M  0 part
 </pre>
 
@@ -578,18 +578,18 @@ sudo smartctl -a /dev/nvme0
 [sysmaint ~]% sudo smartctl -a /dev/nvme0
 smartctl 7.5 2025-04-30 r5714 [x86_64-linux-6.18.5+deb14-amd64] (local build)
 Copyright (C) 2002-25, Bruce Allen, Christian Franke, www.smartmontools.org
-                                                                                                                                                                                                                  
-=== START OF INFORMATION SECTION ===                                                                                                                                                                              
-Model Number:                       SAMSUNG MZVL81T0HELB-00BH1                                                                                                                                                    
-Serial Number:                      S79UNX0XA46408                                                                                                                                                                
-Firmware Version:                   HPS3NKXM                                                                                                                                                                      
-PCI Vendor/Subsystem ID:            0x144d                                                                                                                                                                        
-IEEE OUI Identifier:                0x002538                                                                                                                                                                      
-Total NVM Capacity:                 1,024,209,543,168 [1.02 TB]                                                                                                                                                   
-Unallocated NVM Capacity:           0                                                                                                                                                                             
-Controller ID:                      1                                                                                                                                                                             
-NVMe Version:                       2.0                                                                                                                                                                           
-Number of Namespaces:               1                                                                                                                                                                             
+
+=== START OF INFORMATION SECTION ===
+Model Number:                       SAMSUNG MZVL81T0HELB-00BH1
+Serial Number:                      S79UNX0XA46408
+Firmware Version:                   HPS3NKXM
+PCI Vendor/Subsystem ID:            0x144d
+IEEE OUI Identifier:                0x002538
+Total NVM Capacity:                 1,024,209,543,168 [1.02 TB]
+Unallocated NVM Capacity:           0
+Controller ID:                      1
+NVMe Version:                       2.0
+Number of Namespaces:               1
 Namespace 1 Size/Capacity:          1,024,209,543,168 [1.02 TB]
 Namespace 1 Utilization:            129,641,730,048 [129 GB]
 Namespace 1 Formatted LBA Size:     512
@@ -739,18 +739,18 @@ St Op     Max   Active     Idle   RL RT WL WT  Ent_Lat  Ex_Lat
 Supported LBA Sizes (NSID 0x1)
 Id Fmt  Data  Metadt  Rel_Perf
  0 +     512       0         0
- 1 -    4096       0         0                                                                                                                                                                                    
-                                                                                                                                                                                                                  
-=== START OF SMART DATA SECTION ===                                                                                                                                                                               
-SMART overall-health self-assessment test result: PASSED                                                                                                                                                          
-                                                                                                                                                                                                                  
-SMART/Health Information (NVMe Log 0x02, NSID 0xffffffff)                                                                                                                                                         
-Critical Warning:                   0x00                                                                                                                                                                          
-Temperature:                        38 Celsius                                                                                                                                                                    
-Available Spare:                    100%                                                                                                                                                                          
-Available Spare Threshold:          5%                                                                                                                                                                            
-Percentage Used:                    0%                                                                                                                                                                            
-Data Units Read:                    4,164,393 [2.13 TB]                                                                                                                                                           
+ 1 -    4096       0         0
+
+=== START OF SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+SMART/Health Information (NVMe Log 0x02, NSID 0xffffffff)
+Critical Warning:                   0x00
+Temperature:                        38 Celsius
+Available Spare:                    100%
+Available Spare Threshold:          5%
+Percentage Used:                    0%
+Data Units Read:                    4,164,393 [2.13 TB]
 Data Units Written:                 6,451,885 [3.30 TB]
 Host Read Commands:                 42,873,546
 Host Write Commands:                46,909,935
@@ -843,7 +843,7 @@ sudo sensors-detect
 Then answer all of the questions with '''YES''':
 
 <pre>
-[sysmaint ~]% sudo sensors-detect      
+[sysmaint ~]% sudo sensors-detect
 # sensors-detect version 3.6.2
 # System: LENOVO 7458WX3 [ThinkPad X200] (laptop)
 # Kernel: 6.12.63+deb13-amd64 x86_64
@@ -946,7 +946,7 @@ Do you want to scan it? (yes/NO/selectively): yes
 
 
 Now follows a summary of the probes I have just done.
-Just press ENTER to continue: 
+Just press ENTER to continue:
 
 Driver `coretemp':
   * Chip `Intel digital thermal sensor' (confidence: 9)
@@ -984,7 +984,7 @@ sudo dracut -f
 
 <pre>
 [sysmaint ~]% sudo modprobe coretemp
-[sysmaint ~]% sudo dracut -f        
+[sysmaint ~]% sudo dracut -f
 dracut[I]: Executing: /usr/bin/dracut -f
 dracut[I]: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
 dracut[I]: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
@@ -1095,25 +1095,25 @@ sensors
 }}
 
 <pre>
-[sysmaint ~]% sensors 
+[sysmaint ~]% sensors
 thinkpad-isa-0000
 Adapter: ISA adapter
 fan1:        3405 RPM
 fan2:        3405 RPM
-CPU:          +43.0&deg;C  
-GPU:          +42.0&deg;C  
-temp3:            N/A  
-temp4:        +46.0&deg;C  
-temp5:            N/A  
-temp6:            N/A  
-temp7:            N/A  
-temp8:            N/A  
+CPU:          +43.0&deg;C
+GPU:          +42.0&deg;C
+temp3:            N/A
+temp4:        +46.0&deg;C
+temp5:            N/A
+temp6:            N/A
+temp7:            N/A
+temp8:            N/A
 pwm1:            128%
 
 acpitz-acpi-0
 Adapter: ACPI interface
-temp1:        +43.0&deg;C  
-temp2:        +44.0&deg;C  
+temp1:        +43.0&deg;C
+temp2:        +44.0&deg;C
 
 coretemp-isa-0000
 Adapter: ISA adapter

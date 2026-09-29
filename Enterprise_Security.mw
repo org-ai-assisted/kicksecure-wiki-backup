@@ -46,7 +46,7 @@ Some provide only sha256 checksum files. No file signed by tools such as gpg, si
 |-
 
 ! Signed software packages are verified by the package manager
-| 
+|
 | {{Yes}}
 | {{Yes}}
 |-
@@ -79,7 +79,7 @@ https://debconf24.debconf.org/talks/91-linux-live-patching-in-debian/
 |-
 
 ! Community support
-| 
+|
 | {{Yes}} <ref>
 [[Community Support]]
 </ref>
@@ -104,13 +104,13 @@ https://www.reddit.com/r/redhat
 |-
 
 ! Extended LTS long-term support (5 years) by vendor
-| 
+|
 | {{No}}
 | {{Yes}}
 |-
 
 ! Extended LTS long-term support (5 - 19 years) by vendor
-| 
+|
 | {{No}}
 | {{Yes}} <ref>
 {{quotation

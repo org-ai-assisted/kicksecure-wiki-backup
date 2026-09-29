@@ -91,7 +91,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| 
+|
 | IBM System/390
 | <code>s390x</code>
 | {{No}}
@@ -100,7 +100,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| 
+|
 | MIPS
 | <code>mipsel</code>, <code>mips64el</code>
 | {{No}}
@@ -109,8 +109,8 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| 
-| 
+|
+|
 | <code>i386</code>
 | [[Unsupported]]
 | [[Unsupported]]

@@ -32,11 +32,11 @@ VirtualBox: .ova image installation for VirtualBox (priority for Windows users r
 
 === ISO ===
 
-.iso installation should be tested on all supported hypervisors, as it can produce unexpected results e.g a completely black screen when booting the .iso for installation inside Qubes HVM due to a resolution issue <ref> [https://github.com/QubesOS/qubes-issues/issues/10424 10424] [https://github.com/QubesOS/qubes-issues/issues/10426 10426] </ref>. 
+.iso installation should be tested on all supported hypervisors, as it can produce unexpected results e.g a completely black screen when booting the .iso for installation inside Qubes HVM due to a resolution issue <ref> [https://github.com/QubesOS/qubes-issues/issues/10424 10424] [https://github.com/QubesOS/qubes-issues/issues/10426 10426] </ref>.
 
 == Before and During Installation ==
 
-* Download URLs are all functional with proper speed 
+* Download URLs are all functional with proper speed
 
 * Validate checksum and signature verification (including the website instructions for verification).
 
@@ -66,7 +66,7 @@ VirtualBox: .ova image installation for VirtualBox (priority for Windows users r
 *** Changing number and date format (all expected options are displayed and functional).
 *** Partitioning is functional (automatic/default and manual).
 *** Encryption is functional (note: also installing without encryption).
-*** Other options, if available, such as file system types e.g ext4, Btrfs..etc. 
+*** Other options, if available, such as file system types e.g ext4, Btrfs..etc.
 * Check that the installation process is smooth (expected time, errors..).
 
 === For hypervisor-specific images ===
@@ -77,7 +77,7 @@ VirtualBox: .ova image installation for VirtualBox (priority for Windows users r
 
 * Encryption is functional (.iso specific).
 * No errors, failures, warnings, or unexpected behavior during ISO boot; if any occur, verify whether they are normal/expected.
-* Make sure to: 
+* Make sure to:
 ** Boot into every available boot menu option (live, user/admin, persistent, etc).
 ** Test any keys indicated for specific functionality (e.g GRUB options).
 ** Confirm all expected packages/apps are present and functional.
@@ -97,7 +97,7 @@ VirtualBox: .ova image installation for VirtualBox (priority for Windows users r
 ** GPU passthrough is functional.
 
 = Footnotes =
-	
+
 <references />
-		
+
 {{Footer}}

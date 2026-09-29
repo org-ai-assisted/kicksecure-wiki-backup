@@ -132,7 +132,7 @@ The effect will only last for this boot session; once the system is restarted, t
 
 = Permanent Configuration Changes =
 {{IntroLike|
-Follow these steps to permanently change GRUB configuration settings such as add and/or remove kernel boot parameters. 
+Follow these steps to permanently change GRUB configuration settings such as add and/or remove kernel boot parameters.
 }}
 
 {{Box|text=
@@ -354,7 +354,7 @@ This is related to [[Full Disk Encryption|{{fde}}]].
 = Kicksecure Specific =
 == Screenshots ==
 <gallery>
-File:kicksecure-live-mode-sysmaint-session.png 
+File:kicksecure-live-mode-sysmaint-session.png
 File:kicksecure-live-mode-user-session.png
 File:kicksecure-persistent-mode-sysmaint-session.png
 File:kicksecure-persistent-mode-user-session.png
@@ -366,7 +366,7 @@ File {{CodeSelect|inline=true|code=
 /etc/default/grub.d/20_dist-base-files.cfg
 }}
 
-<u>Technical information:</u> 
+<u>Technical information:</u>
 
 <u>For advanced users only.</u> Laymen users an skip this additional explanation. See [[Dev/boot#.2Fetc.2Fdefault.2Fgrub.d.2F20_dist-base-files.cfg|<code>/etc/default/grub.d/20_dist-base-files.cfg</code>]].
 
