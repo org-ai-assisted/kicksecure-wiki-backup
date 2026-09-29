@@ -19,6 +19,48 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 
 = arraybolt3 =
+== 2026-09-27 ==
+=== Fourth wave of AI refactor code review #7 ===
+Date: 2026-09-27
+
+Finished initial review of derivative-maker. Successfully built an ISO and got it to boot and install. Pushed some fixes to live-config-dist and discussed some follow-up fixes with Patrick.
+
+== 2026-09-25 ==
+=== Fourth wave of AI refactor code review #6 ===
+Date: 2026-09-25
+
+Continuing to work through derivative-maker.
+
+== 2026-09-24 ==
+=== Fourth wave of AI refactor code review #5 ===
+Date: 2026-09-24
+
+More merging of new repos, more review of derivative-maker.
+
+== 2026-09-23 ==
+=== Fourth wave of AI refactor code review #4 ===
+Date: 2026-09-23
+
+Finished merging repos other than derivative-maker, did a lot more review on derivative-maker itself.
+
+== 2026-09-22 ==
+=== Fourth wave of AI refactor code review #3 ===
+Date: 2026-09-22
+
+Merged more AI-assisted changes to several repos, left off in the middle of sdwdate.
+
+== 2026-09-21 ==
+=== Fourth wave of AI refactor code review #2 + vulnerability reporting policy ===
+Date: 2026-09-21
+
+Merged and pushed helper-scripts and systemcheck changes. Started reviewing privleap changes. Also began drafting a vulnerability reporting policy for both Kicksecure and Whonix.
+
+== 2026-09-20 ==
+=== Fourth wave of AI refactor code review #1 ===
+Date: 2026-09-20
+
+Merged, reviewed, and polished all changed repos except for derivative-maker. Started review of derivative-maker.
+
 == 2026-09-19 ==
 === tor-control-panel refactor #5 ===
 Date: 2026-09-19
