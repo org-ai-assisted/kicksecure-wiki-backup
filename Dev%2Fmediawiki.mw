@@ -768,8 +768,8 @@ Backport the new changes implemented by https://github.com/Archi-Strasbourg/medi
 ** In side the Template:Header /mw-combined-skincss.min.css which combines header.css and localSkin.css
 * Relevant files
 ** [[Template:Header]]
-** [[Widget:Header]]
-** [[Widget:HeaderLocalWiki]]
+** Widget:Header
+** Widget:HeaderLocalWiki
 ** {{CustomRepo|Header.js}}
 ** {{CustomRepo|Header.css}}
 ** {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/LocalSkin.css LocalSkin.css}}
@@ -790,7 +790,7 @@ Backport the new changes implemented by https://github.com/Archi-Strasbourg/medi
 ** https://www.{{project_clearnet}}/wiki/MediaWiki:Imprint
 * Relevant files
 ** [[Template:Footer]]
-** [[Widget:Footer]]
+** Widget:Footer
 ** {{CustomRepo|Footer.js}}
 ** {{CustomRepo|Footer.css}}
 ** {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/LocalSkin.css LocalSkin.css}}
@@ -809,7 +809,7 @@ The footer is structually (html) positioned in the main content area. The vector
 == Homepage (<code><nowiki>/wiki/Homepage</nowiki></code>) ==
 
 * The <code><nowiki>[[Homepage]]</nowiki></code> (avoiding link for SEO) is an improved version of the [https://github.com/{{project_name_short}}/{{project_name_short}}-Website old {{project_name_short}} plain HTML/CSS based homepage]
-* It is realized via [[Widget:Page_Homepage]] and {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/Page_Homepage.css Page_Homepage.css}}
+* It is realized via Widget:Page_Homepage and {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/Page_Homepage.css Page_Homepage.css}}
 * Visitors can view it under <code><nowiki>https://</nowiki>www.{{project_clearnet}}</code>.
 ** <code><nowiki>https://</nowiki>www.{{project_clearnet}}</code> is the canonical domain name.
 ** Implemented using <code><nowiki>https://</nowiki>www.{{project_clearnet}}</code><code><nowiki>/wiki/Homepage</nowiki></code>.
@@ -910,10 +910,10 @@ or
 
 == Supermenu and Edit Button ==
 
-* The supermenu template [[Template:Header]] passes 2 parameters to the widget [[Widget:Header]] : $page and $revision
+* The supermenu template [[Template:Header]] passes 2 parameters to the widget Widget:Header : $page and $revision
 * By that the edit link is constructed: /w/index.php?title=&lt;!--{$page}--&gt;&action=edit&oldid=&lt;!--{$revision}--&gt;
 * This means that even the current revision has the "oldid" url query parameter which is not necessary, but at the moment (2022-02-02) and for the foreseeable future will not cause any problems.
-* However if there will be a problem in the future simply go to [[Widget:Header]] and change the line to /w/index.php?title=&lt;!--{$page}--&gt;&action=edit
+* However if there will be a problem in the future simply go to Widget:Header and change the line to /w/index.php?title=&lt;!--{$page}--&gt;&action=edit
 * Upgrade via JS (2023-02-06) in {{CustomRepo|Header.js}}
 ** Via Javascipt it is checked whether in the URL there is a query parameter oldid.
 ** The presence of this oldid parameter would indicate that the user visits and old page and therefore if he clicks "edit" he wants to edit based on this old version of the page. In this case the edit link in the super menu will stay as described above.
@@ -1226,7 +1226,7 @@ In the above example icon and image are both used which is not very sensible. Mo
 ## {{CustomRepo|CodeSelectHighlightList.js}}
 ## {{CustomRepo|CodeSelect.css}}
 ## [[Template:CodeSelect]]
-## [[Widget:CodeSelect]]
+## Widget:CodeSelect
 # '''USAGE''', parameters :
 ## '''code''' (mandatory, wikitext) : This parameter can be text of all kinds. It can even be HTML (in HTML mode)
 ##* Example : <code><nowiki>{{CodeSelect|code=echo "Hello World"}}</nowiki></code> renders to {{CodeSelect|code=echo "Hello World"}}
@@ -1449,7 +1449,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 * The relevant files are
 ** [[Template:Payments]]
 ** {{CustomRepo|Donation_Panel.css}}
-** [[Widget:Donation_Panel]]
+** Widget:Donation_Panel
 ** [[Template:Html_Donation_Panel_Crypto]]
 * Usage: It is implemented into a page lik so <code><nowiki>{{Payments}}</nowiki></code> using the [[Template:Payments]] which uses the following files automatically. These files need to be present for the donation panel to work: [[Template:Pay_Bitcoin]], [[Template:Pay_bitcoin_qr_imgurl]], [[Template:Pay_Monero]], [[Template:Pay_monero_qr_imgurl]], [[Template:Pay_Ethereum]], [[Template:Pay_ethereum_qr_imgurl]], [[Template:project_name_long]], [[Template:project_name_short]]
 * Implementation
@@ -1488,7 +1488,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 
 # The download button template offers a convinient way to show a graphically pleasing download button
 # The relevant files are
-## [[Widget:Download_Button]]
+## Widget:Download_Button
 ## {{CustomRepo|Download_Button.css}}
 ## {{CustomRepo|Download_Button.js}}
 # '''Usage''' call the Widget <code><nowiki>{{#widget:Download_Button...}}</nowiki></code>
@@ -1505,7 +1505,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 ## '''redirectUrl | string, optional''' - If set then after clicking Download and after 1 second the page will be redirected to the given URL
 ##* '''NOTE''': The redirectURL is secured against external links. This is done to safeguard against malicious editor attacks. If an external url is given then in the browser dev tools console there will be an error displayed and no redirect will be executed.
 ## '''modal | boolean, optional''' - If set to true, then the "pay-as-you-go-modal" will be opened. This modal has a donation appeal, a paypal, crypto and other payments module and the download is delayed for a couple of settings (can be set in {{CustomRepo|Download_Button.js}}). This modal uses this special loading technique for parts of its HTML and data: [[Dev/mediawiki#JavaScript_Ajax_Loading_for_special_cases|JavaScript Ajax Loading for special cases]]
-# '''NOTE''': We tried using a template to track all usage of the Download_Button. Unfortunately this is technically very unfavorable for this use case. Read [[Widget:Download_Button]] for further information. To find the uses of Download_Button, type into search <code><nowiki>#widget:Download_Button</nowiki></code>
+# '''NOTE''': We tried using a template to track all usage of the Download_Button. Unfortunately this is technically very unfavorable for this use case. Read Widget:Download_Button for further information. To find the uses of Download_Button, type into search <code><nowiki>#widget:Download_Button</nowiki></code>
 
 == DownloadTableUnified Template ==
 
@@ -1532,7 +1532,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 ** Syntax: <code><nowiki>{{#widget:EagerImage|src=/w/images/a/af/Github-mark.svg|addToClass=cs-white|alt=GitHub logo example}}</nowiki></code>
 ** Result {{#eagerimage:src=/w/images/a/af/Github-mark.svg|addToClass=cs-white|alt=GitHub logo example}}
 * Relevant files
-** [[Widget:EagerImage]]
+** Widget:EagerImage
 
 == EditorAddNewEditButtons ==
 
@@ -1634,7 +1634,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 ** If all ".mw-collapsible-text" are already opened then the "Expand All" button will show "Collapse All" and if clicked all ".mw-collapsible-text" elements will be collapsed
 * Relevant files
 ** [[Template:Expand_or_Collapse_All]]
-** [[Widget:Expand_or_Collapse_All]]
+** Widget:Expand_or_Collapse_All
 ** {{CustomRepo|ExpandOrCollapseAll.js}}
 * Usage: <code><nowiki>{{Expand_or_Collapse_All}}</nowiki></code>
 
@@ -1647,7 +1647,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 # Documentation for wiki editors: [[Dev/wiki#Links]]
 # It is realized via the files
 ## [[Template:ExtLink]]
-## [[Widget:ExtLink]]
+## Widget:ExtLink
 ## {{CustomRepo|ExtLink.css}}
 # '''Detailed Documentation'''
 ## '''Don't use the widget directly, only the template'''
@@ -1711,7 +1711,7 @@ The modal also has a '''toggle button''' at the top now which de/actives the coo
 ** Note : A dismissable Fly-In-Notification which is also functional for no-JS (NoScript) enabled browsers is too much effort to implement. It would require a MediaWiki extension / PHP.
 * Relevant files
 ** [[Template:FlyInNotification]]
-** [[Widget:FlyInNotification]]
+** Widget:FlyInNotification
 ** {{CustomRepo|FlyInNotification.css}}
 ** {{CustomRepo|FlyInNotification.js}}
 ** [[TestpageForFlyInNotification]]
@@ -1793,7 +1793,7 @@ File:Example.jpg|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 * Further examples and tests here: [[Dev/wikitest#Github_link_Template|Github_link Template]]
 * Relevant files
 ** [[Template:Github_link]]
-** [[Widget:Github_link]]
+** Widget:Github_link
 
 == GoogleOff Template ==
 
@@ -1841,7 +1841,7 @@ File:Example.jpg|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 ** '''addToClass (optional)''' : Additions to the (optinal) class attribute for the headline
 * Relevant files
 ** [[Template:Headline]] (Title in tab without adding to table of contents (TOC))
-** [[Widget:Headline]]
+** Widget:Headline
 * Example
 ** Code <code><nowiki>{{Headline|h=2|content=Test Headline}}</nowiki></code>
 ** Render <div class="info-box">{{Headline|h=2|content=Test Headline}}</div>
@@ -1851,7 +1851,7 @@ File:Example.jpg|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 * In MediaWiki templates it is basically impossible to use Html comments and have them rendered on the final page. This is intentional by Mediawiki to reduce unnecessary output. Sometimes however comments are needed
 * Because of that we created the widget HtmlComment. This allows HTML comments in Templates
 * Relevant files
-** [[Widget:HtmlComment]]
+** Widget:HtmlComment
 * '''USAGE'''
 ** <code><nowiki>{{#widget:HtmlComment|content=Your HTML comment content}}</nowiki></code>
 ** This will create a real HTML comment (which of course is only seen in source code)
@@ -1882,7 +1882,7 @@ File:Example.jpg|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 * The Icon Bullet List is like a bullet list with Fontawesome icons instead of bullet points
 * Relevant files
 ** {{CustomRepo|Icon_Bullet_List.css}}
-** [[Widget:Icon_Bullet_List]]
+** Widget:Icon_Bullet_List
 * '''Usage''' : call #widget:Icon_Bullet_List. Parameters:
 ** '''item (mandatory, string)''' : This parameter is separated into two parts, separated by a comma ",". The first part is the content of the <code><nowiki><i class="fas..."></i></nowiki></code> class parameter for the Fontawesome image. The second part is the text for the bullet points. HTML elements like <nowiki><b></b></nowiki> are permitted. '''NOTE''': Only the first comma is a separator, all following commas will not be interpreted and therefore can be used as normal text structuring elements
 ** '''addClass (optional, string)''' : This parameter is added the the class-attribute of the <nowiki><ul></ul></nowiki> parent element for the list. You can use the ''specific keywords "minimal" and "inverse"''
@@ -2012,7 +2012,7 @@ with '''wikitext''' and newlines
 * If the text is longer than the image or the image is longer than the text, the smaller one will always be in the middle
 * Relevant files
 ** [[Template:LeftRightImageText]]
-** [[Widget:LeftRightImageText]]
+** Widget:LeftRightImageText
 ** {{CustomRepo|LeftRightImageText.css}}
 * '''USAGE''' : Template <code><nowiki>{{LeftRightImageText|...}}</nowiki></code>. Parameters
 ** <code>image</code> : The image with should be shown next to the text. '''NOTE''': For this parameter there is a difference between template and widget. In template you simply use the file name for image like "Information-275708-640.png". In the widget you have to use real relative link like "w/images/thumb/7/70/Information-275708-640.png/300px-Information-275708-640.png"
@@ -2468,7 +2468,7 @@ Deprecated upstream? Problem?
 ## This template solves the problem by automatically analysing the context (which domain the user is on) and creating the link automatically based on the context
 # Relevant files
 ## [[Template:Subdomain_link]] - only this template should be used by editors
-## [[Widget:Subdomain_link]] - this widget should only be edited by devs
+## Widget:Subdomain_link - this widget should only be edited by devs
 # '''USAGE''' : Use template <code><nowiki>{{Subdomain_link|...}}</nowiki></code> with the following parameters
 ## <code>text | string, default: ""</code> : the text you want to display in your link. The effect of this parameter is influenced by the parameter result. If not <code>|result=link</code> then this parameter text is obsolete
 ## <code>sub | string, default: ""</code> : the subdomain without any special character. If you want forums.{{project_clearnet}}, use "forums"
@@ -2499,7 +2499,7 @@ Deprecated upstream? Problem?
 * More examples: [[Dev/wikitest#SVG_template_and_widget|SVG template and widget]]
 * Relevant files
 ** [[Template:SVG]]
-** [[Widget:SVG]]
+** Widget:SVG
 
 == Tab Template / Tab Content Controller ==
 
@@ -2704,7 +2704,7 @@ Section 2 content
 * To have a convenient way to show videos we introduced VideoLink
 * Relevant files
 ** [[Template:VideoLink]]
-** [[Widget:VideoLink]]
+** Widget:VideoLink
 ** {{CustomRepo|VideoLink.css}}
 * '''USAGE''' : Only use the template <code><nowiki>{{VideoLink|...}}</nowiki></code>
 ** '''videoid''': The videoid parameter is valid for all YouTube-link platforms. For each platform there is an icon generated as a link where the videoid is part of the url.
@@ -2750,7 +2750,7 @@ Section 2 content
 ** Result {{WikiBookIndex}}
 * '''Relevant files'''
 ** [[Template:WikiBookIndex]]
-** [[Widget:WikiBookIndex]]
+** Widget:WikiBookIndex
 ** {{CustomRepo|WikiBookIndex.css}}
 
 = CSS Design Documentation (Alphabetical order) =

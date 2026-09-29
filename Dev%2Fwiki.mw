@@ -618,11 +618,11 @@ The root page {{project_clearnet}} (without anything after the slash (<code>/</c
 
 Editing the homepage is unfortunately not that simple.
 
-The edit button on the homepage is functional but the wiki source is not obvious how that works. Homepage is raw HTML based on a wiki widget, [[Widget:Page_Homepage]] but that cannot be edited by non-admins for security reasons. The MediaWiki Widget extension lacks the capability to moderate edits.
+The edit button on the homepage is functional but the wiki source is not obvious how that works. Homepage is raw HTML based on a wiki widget, Widget:Page_Homepage but that cannot be edited by non-admins for security reasons. The MediaWiki Widget extension lacks the capability to moderate edits.
 
 The homepage widget source code however can be viewed in a copy/paste friendly format.
 
-'''1.''' View [[Widget:Page_Homepage]] wiki source and copy it as-is to [[Dev/Page_Homepage]] to update that page as updates to that page are currently manual.
+'''1.''' View Widget:Page_Homepage wiki source and copy it as-is to [[Dev/Page_Homepage]] to update that page as updates to that page are currently manual.
 
 '''2.''' Edit [[Dev/Page_Homepage]].
 
@@ -979,7 +979,7 @@ broken link: <nowiki>https://example.com</nowiki>
 
 = Footer =
 == Diaspora ==
-[[Widget:Footer]]
+Widget:Footer
 
 <pre>
       <a class="expand-button-50" href="https://diasp.org/u/<!--{$projectNameShortLowerCase}-->" target="_blank" title="<!--{$projectName}--> on Diaspora">

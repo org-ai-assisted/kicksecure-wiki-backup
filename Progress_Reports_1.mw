@@ -6633,7 +6633,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Phabricator ticket analysis
 
 * 2023-06-06
-** New [[Widget:EagerImage]]
+** New Widget:EagerImage
 ** Tab Controller
 *** Complete upgrade of syntax, in all files [[Template:Tab]], JS file and CSS file
 **** All features were ported and new features added
@@ -6651,7 +6651,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 *** Reimagining + Documentation
 
 * 2023-06-01
-** new widget [[Widget:Headline]] + documentation
+** new widget Widget:Headline + documentation
 ** TabContentController
 *** nojs upgrade
 **** searchAndReplace all occurrences of [[Template:Tab]] on Kicksecure and Whonix
@@ -7484,7 +7484,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 * 2022-09-15
 ** review and improvement Main_Page
 ** new [[Template:LeftRightImageText]] + documentation
-** upgrade [[Widget:Download_Button]] (scalable by fontsize) + documenation
+** upgrade Widget:Download_Button (scalable by fontsize) + documenation
 ** review of About, Features, FAQ and more
 
 * 2022-09-13
@@ -7825,7 +7825,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Back to Top Button introduced
 ** Rejected: Scrollable Table Bugfix - this is a result of the table being hidden in an invisible element, so not a bug. If the table is hidden is has no dimension and so it cannot "know" if its content is oversize
 ** Footnotes always respect newlines setting and discussion (later reverted)
-** [[Widget:Download_Button]]: responsive for small displays (under 450px)
+** Widget:Download_Button: responsive for small displays (under 450px)
 
 * 2022-02-02
 ** mini navigation (buttons on top of some pages) visually enhanced
@@ -7904,7 +7904,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 
 * 2021-12-28: Footer redesigned
 
-* 2021-12-24: Template [[Template:Subdomain_link]] and [[Widget:Subdomain_link]] created (ability to link without knowing the website context)
+* 2021-12-24: Template [[Template:Subdomain_link]] and Widget:Subdomain_link created (ability to link without knowing the website context)
 
 * 2021-12-23: CodeSelect further improved: less white space, more compact, better nojs-version, better js-animation
 
