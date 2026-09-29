@@ -44,7 +44,7 @@ The Kicksecure ISO wiki page is forked from the Tails Install page, from the fol
 - https://tails.net/install/linux/index.en.html
 - https://tails.net/install/expert/index.en.html
 
--->{{VirtualBox_CSS}} __NOTOC__ {{Intro|
+-->__NOTOC__ {{Intro|
 This is a guide for easily '''creating a {{project_name_short}} Live USB stick, then booting {{project_name_short}} from this stick and then optionally installing {{project_name_short}} to your hard drive from this stick'''. To prepare, you need a USB stick. In the process, you will download our <code>.iso</code> file.
 }}
 

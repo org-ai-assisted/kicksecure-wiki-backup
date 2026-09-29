@@ -53,7 +53,7 @@ Paragraph to jump over
 
 '''Tests 1: Blockquote Lines Working and failing'''
 
-Test 1.1: Expected theoretically two paragraphs p1 has line1 and line2 in it, p2 has line3 and line4. Expected: {{IconSet|false|FAILURE} due to long standing Mediawiki bug.
+Test 1.1: Expected theoretically two paragraphs p1 has line1 and line2 in it, p2 has line3 and line4. Expected: {{IconSet|false|FAILURE}} due to long standing Mediawiki bug.
 
 <blockquote>line1
 line2

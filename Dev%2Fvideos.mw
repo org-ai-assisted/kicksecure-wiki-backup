@@ -1,4 +1,4 @@
-{{#kicksecure_css_page_dev_videos:}}{{Header}}
+{{Header}}
 {{title|title=
 Dev/videos
 }}
