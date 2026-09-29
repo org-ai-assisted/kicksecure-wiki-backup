@@ -251,7 +251,7 @@ Documentation:
 {{Anchor|KGpg}}
 == KGpg ==
 [https://apps.kde.org/kgpg/ KGpg homepage]
-[https://packages.debian.org/{{Stable_project_version_based_on_Debian_codename}/kgpg Debian package for KGpg]
+[https://packages.debian.org/{{Stable_project_version_based_on_Debian_codename}}/kgpg Debian package for KGpg]
 
 KGpg is a {{gui}} frontend for GnuPG. It can be used to create and manage encryption keys, and sign, encrypt, and decrypt files.
 

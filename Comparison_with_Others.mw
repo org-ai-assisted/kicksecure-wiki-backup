@@ -572,8 +572,7 @@ Debian's live-build has an open, security-tagged bug about authenticating all fi
 | {{No}}
 |-
 
-! [[Grub#Temporary_Kernel_Boot_Parameter_Change|GRUB boot menu with keyboard layout selection sub-menu (<code>set-grub-keymap</code>)
-]]
+! [[Grub#Temporary_Kernel_Boot_Parameter_Change|GRUB boot menu with keyboard layout selection sub-menu (<code>set-grub-keymap</code>)]]
 | GRUB bootloader includes a sub-menu for selecting keyboard layouts to support localized access at boot time.
 | {{Yes}}
 | {{No}}

@@ -250,8 +250,7 @@ sudo apt full-upgrade
 
 '''8.''' Virtualizer-specific troubleshooting.
 
-* [[VirtualBox/Troubleshooting|VirtualBox Troubleshooting]] / [[VirtualBox/Troubleshooting#General VirtualBox Troubleshooting Steps|General VirtualBox Troubleshooting Steps
-]]
+* [[VirtualBox/Troubleshooting|VirtualBox Troubleshooting]] / [[VirtualBox/Troubleshooting#General VirtualBox Troubleshooting Steps|General VirtualBox Troubleshooting Steps]]
 * [[KVM#Troubleshooting|KVM Troubleshooting]]
 
 '''9.''' Check if other VMs are functional, such as newly created ones or those from a different vendor.

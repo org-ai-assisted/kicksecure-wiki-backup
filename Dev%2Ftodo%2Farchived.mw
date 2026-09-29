@@ -6584,7 +6584,7 @@ build machine:
 * todo: mass edit the wiki to add the archived links.
 ** Should we use a wiki template such as <code><nowiki>[[Template:Archive_link]]</nowiki></code>?
 *** This might require a custom plugin, but I believe it should work. Archive.today works with links such as <code>https://archive.today/https://google.com</code> - clicking a link such as this will take you to a search page showing all of the archived copies archive.today has of that particular link so far. The user is then free to choose which version to look at
-*** Custom mediawiki extension already existing: {{Github_link|repo=mediawiki-link-to-archive
+*** Custom mediawiki extension already existing: {{Github_link|repo=mediawiki-link-to-archive}}
 **** Moved to separate task.
 **** It's already adding the web archive links.
 **** Could be extended to add the archive.today links.
@@ -6653,7 +6653,7 @@ Aaron:
 ** Done, modified branch is at https://github.com/ArrayBolt3/developer-meta-files/tree/arraybolt3/tbb-version-detection-v2
 
 == add archive.ph support to mediawiki-link-to-archive mediawiki extension ==
-* Custom mediawiki extension already existing: {{Github_link|repo=mediawiki-link-to-archive
+* Custom mediawiki extension already existing: {{Github_link|repo=mediawiki-link-to-archive}}
 * It's already adding the web archive links.
 * Please add archive.ph links.
 * Based on archive.ph supporting <code><nowiki>https:|path=//archive.today/https://google.com}}</nowiki></code> format.

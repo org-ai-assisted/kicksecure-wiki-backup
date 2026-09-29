@@ -206,10 +206,6 @@ Encrypted containers have the twin advantages of flexibility and mobility of fol
 
 == Zulucrypt ==
 
-{{mbox
-| type    = notice
-| image   = [[File:Ambox_notice.png|40px|alt=Info]]
-
 Zulucrypt is the Linux answer to encrypted containers, making use of the reliable LUKS disk encryption specification. It is compatible with encrypted [https://www.dyne.org/software/tomb/ tomb files] and also capable of reading and creating Truecrypt / [https://www.veracrypt.fr/en/Home.html VeraCrypt] containers. Note that Veracrypt containers only support a maximum password length of 64 characters, but LUKS has a maximum value of 32,767 (although a recently fixed bug had limited it to only 100 characters). <ref>https://github.com/mhogomchungu/zuluCrypt/issues/113</ref> Until it is possible to use 20-word diceware passphrases to lock LUKS containers, it is recommended to use [[Passwords#Guidelines|makepasswd]] to generate 43 character strings. These can then be pasted into a text file that is encrypted with GPG -- which does not have low character limits -- essentially creating a makeshift key file.
 
 Containers grow dynamically as more data is added. Opened containers are  mounted under <code>/run/media/private/user</code>. More than one password may be added for access, making use of LUKS' key slots feature behind the scenes. <ref>https://crypto.stackexchange.com/questions/24022/luks-multiple-key-slots-whats-the-intuition</ref>

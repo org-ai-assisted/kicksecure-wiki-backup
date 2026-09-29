@@ -85,8 +85,7 @@ This documentation is a course on security on the Internet. {{project_name_short
 <div class="use-3-columns strict-list-columns mw-collapsible-content">
 * [[Basic_Security_Guide_Introduction|Introduction]]
 * [[Unicode|Invisible Malicious Unicode Risks]]
-* [[Unicode-show|<code>unicode-show</code> - Detect and annotate non-ASCII or suspicious Unicode characters in text or files.
-]]
+* [[Unicode-show|<code>unicode-show</code> - Detect and annotate non-ASCII or suspicious Unicode characters in text or files.]]
 * [[Stdisplay|stdisplay (clean unicode, safe <code>echo</code>]]
 * [[Shell_scripting|Shell Scripting Risks]]
 * [[Essential_Host_Security|Essential Host Security]]
@@ -390,6 +389,8 @@ This documentation is a course on security on the Internet. {{project_name_short
 ** [[Copy.fail|copy.fail security vulnerability (CVE-2026-31431)]]
 </div>
 </div>
+
+See also: [[Special:BrowserStorage|Browser Storage]] -- view or clear the data this site keeps in your browser.
 
 {{Footer}}
 [[Category:Documentation]]
