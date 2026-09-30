@@ -90,6 +90,7 @@ See:
 * [[#Hardware_preparation|Hardware preparation]]
 * [[#Initramfs_launch|Initramfs launch]]
 * [[#Root_filesystem_discovery_and_handoff|Root filesystem discovery and handoff]]
+* [[#hardened_cmdline_boot_hang|Boot hang from hardened kernel command line options on specific hardware]]
 }} <!-- close tab -->
 
 {{Tab
@@ -305,6 +306,89 @@ The purpose of this test is to determine whether one of the additional Kicksecur
 
 </div>
 </div>
+
+=== Boot hang from hardened kernel command line options on specific hardware ===
+{{Anchor|hardened_cmdline_boot_hang}}
+
+{{IntroLike|
+Use this section when [[grub|GRUB]] loads the kernel and initramfs, but boot then hangs on specific physical hardware, especially on a headless server reachable only over a serial console. This has been observed on bare-metal AMD systems, where virtual machines cannot reproduce the failure.
+}}
+
+On some physical hardware, two of Kicksecure's hardened kernel command line options can hang boot before the system becomes reachable. Virtual machines do not reproduce this, because they lack the real IOMMU, PCI, and EFI hardware involved.
+
+{{mbox
+| image   = [[File:Ambox_notice.png|40px]]
+| text    = Observed on an AMD bare-metal dedicated server (AMD Ryzen 7 9700X). All other hardening on the same machine boots normally, for example <code>iommu=force</code>, <code>iommu.strict=1</code>, and the CPU mitigation and <code>nosmt</code> options.
+}}
+
+==== Symptom ====
+
+* GRUB loads the kernel and initramfs, then the serial console goes completely silent, even with <code>earlyprintk</code> enabled.
+* The machine never finishes booting and never becomes reachable via SSH.
+* The failure looks like a bricked machine, but it is caused by kernel command line options, not by hardware damage.
+
+==== Cause ====
+
+Two hardened kernel command line options, set by the [https://github.com/{{project_name_short}}/security-misc security-misc] package in <code>/etc/default/grub.d/40_kernel_hardening.cfg</code>, hang this hardware:
+
+* <code>efi=disable_early_pci_dma</code> hangs very early, inside the EFI stub, before the kernel console is initialized. This is why the serial console stays completely silent.
+* <code>amd_iommu=force_isolation</code> hangs later, during udev device enumeration.
+
+==== Diagnosis via serial console ====
+
+{{IntroLike|
+On a headless server, use the server's serial-over-LAN console to watch the boot. Kicksecure silences boot output by default, so that silencing must be defeated first; otherwise the serial console shows nothing even on a healthy boot.
+}}
+
+{{IconSet|h1|1}} Ensure a serial console is configured.
+
+The [https://github.com/{{project_name_short}}/serial-console-enable serial-console-enable] package sets <code>console=ttyS0,115200</code> so that kernel and boot messages are sent to the serial console. See also [[Recovery#Serial_Console|Serial Console]].
+
+{{IconSet|h1|2}} Defeat Kicksecure's boot output silencing so the hang becomes visible.
+
+Use either method:
+
+* Install (or emulate) the [[Debug-misc|debug-misc]] package. It removes <code>quiet</code> and <code>loglevel=0</code> and enables verbose boot output.
+* Alternatively, temporarily add <code>ignore_loglevel printk.devkmsg=on rd.emergency=shell</code> to the kernel command line and neutralize the sysctl that silences kernel printk output.
+
+{{IconSet|h1|3}} Watch the serial console during boot to identify which stage hangs.
+
+* A completely silent console, with no kernel messages at all, points at the EFI stub stage, that is <code>efi=disable_early_pci_dma</code>.
+* A hang after some kernel messages, during device enumeration, points at <code>amd_iommu=force_isolation</code>.
+
+==== Workaround ====
+
+{{mbox
+| image   = [[File:Ambox_warning_pn.svg.png|40px]]
+| text    = Removing these options disables the corresponding security hardening. Remove only the specific options that hang the affected hardware.
+}}
+
+Create a drop-in file that removes only the two problematic options. Files in <code>/etc/default/grub.d</code> are sourced in order, so a file sorting after <code>40_kernel_hardening.cfg</code> (for example <code>50_user.cfg</code>) can undo them. See [[Grub#Permanent_Configuration_Changes|GRUB Permanent Configuration Changes]] for the general procedure.
+
+{{Open with root rights|
+filename=/etc/default/grub.d/50_user.cfg
+}}
+
+Remove the two options from both variables.
+
+{{CodeSelect|code=
+GRUB_CMDLINE_LINUX="$(echo "$GRUB_CMDLINE_LINUX" {{!}} str_replace "efi=disable_early_pci_dma" "")"
+GRUB_CMDLINE_LINUX="$(echo "$GRUB_CMDLINE_LINUX" {{!}} str_replace "amd_iommu=force_isolation" "")"
+GRUB_CMDLINE_LINUX_DEFAULT="$(echo "$GRUB_CMDLINE_LINUX_DEFAULT" {{!}} str_replace "efi=disable_early_pci_dma" "")"
+GRUB_CMDLINE_LINUX_DEFAULT="$(echo "$GRUB_CMDLINE_LINUX_DEFAULT" {{!}} str_replace "amd_iommu=force_isolation" "")"
+}}
+
+Regenerate the GRUB configuration.
+
+{{CodeSelect|code=
+sudo update-grub
+}}
+
+Reboot. The machine should now boot and become reachable.
+
+==== Proper fix ====
+
+The proper fix belongs upstream in the [https://github.com/{{project_name_short}}/security-misc security-misc] package, making these options conditional on hardware support rather than setting them unconditionally.
 
 === Chroot Boot Recovery ===
 
