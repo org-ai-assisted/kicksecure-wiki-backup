@@ -64,6 +64,10 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 ** We need to run `apt update` with ONLY cdrom.sources in use before trying to install the bootloader, otherwise the list files aren't able to find the bootloader packages on the on-ISO repo
 ** We need to run `debconf-set-selections` in Calamares config, I initially put it in initializer-dist not realizing that because I only run it if `grub-efi-amd64` is installed at build time, it never gets run because `grub-efi-amd64` is never installed at build time.
 
+== fix derivative-maker mechanism to continue despite an error ==
+* Aaron:
+** One should be able to press 'c' and then Enter to continue despite an error. However, right now derivative-maker will claim it is allowing execution to continue, and then will bail out anyway. Debug and fix.
+
 == tor-control-panel fixup ==
 * Aaron:
 ** Improve reliability, code quality
