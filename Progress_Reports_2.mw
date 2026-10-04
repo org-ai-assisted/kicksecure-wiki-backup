@@ -23,7 +23,7 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 === Fourth wave of AI refactor code review #13 ===
 Date: 2026-10-03
 
-Reviewed and merged more repos. Need to undo some changes to legacy-dist as we want to keep the mok-ok mechanism I removed.
+Reviewed and merged more repos. Need to undo some changes to helper-scripts as we want to keep the mok-ok mechanism I removed.
 
 == 2026-10-02 ==
 === Fourth wave of AI refactor code review #12 ===
