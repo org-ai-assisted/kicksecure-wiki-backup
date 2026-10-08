@@ -95,7 +95,7 @@ Before relying on the security of the BIOS password, the user should research th
 '''A)''' [[Grub#GRUB_Bootloader_Authentication_Password_Prompt|GRUB <u>Bootloader Authentication Password Prompt</u>]] (related to protecting GRUB menu and settings from unauthorized changes);
 * '''Figure:''' ''GRUB Bootloader Authentication Password Prompt''
 ** [[File:grub_bootloader_password.jpg]]
-'''B)''' [[Grub#EFI-_GRUB_Disk_Decryption_Password_Prompt|EFI BIOS]] or [[Grub#Legacy_BIOS_-GRUB_Disk_Decryption_Password_Prompt|Legacy BIOS]] <u>Disk Decryption Password Prompt</u> (related to unlocking an encrypted <code>/boot</code>):
+'''B)''' [[Grub#EFI_-_GRUB_Bootloader_Disk_Decryption_Password_Prompt|EFI BIOS]] or [[Grub#Legacy_BIOS_-_GRUB_Bootloader_Disk_Decryption_Password_Prompt|Legacy BIOS]] <u>Disk Decryption Password Prompt</u> (related to unlocking an encrypted <code>/boot</code>):
 * '''Figure:''' ''GRUB Bootloader Disk Decryption Password Prompt (EFI)''
 ** [[File:EFIGrubpass.png|600px]]
 

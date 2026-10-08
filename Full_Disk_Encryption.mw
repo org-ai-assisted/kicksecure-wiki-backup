@@ -132,7 +132,7 @@ Technically, authentication happens during early boot, not pre-boot.
 
 [[File:Dracutpass-cropped.png|frameless|1200px|alt={{project_name_short}} GRUB|initramfs (dracut) Based Encryption Password Prompt (cropped) - Example]]
 
-<u>See also:</u> [[Grub#initramfs_.28initramfs-tools_or_dracut.29_Based_Encryption_Password_Prompt|initramfs (dracut) Based Encryption Password Prompt]]
+<u>See also:</u> [[Grub#initramfs_(initramfs-tools_or_dracut)_Based_Encryption_Password_Prompt|initramfs (dracut) Based Encryption Password Prompt]]
 
 = Decryption =
 == Temporary Decryption while using FDE ==

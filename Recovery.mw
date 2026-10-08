@@ -737,7 +737,7 @@ Forum discussion: https://forums.whonix.org/t/serial-console-in-virtualbox/8021
 |image=[[File:Logo-kvm.png|25px]]
 |addToClass=info-box
 |content=
-See [[KVM]], [[KVM#Command_Line_Interface_.28CLI.29|serial console]].
+See [[KVM]], [[KVM#CLI|serial console]].
 
 Wiki TODO: documentation needs to be ported here from https://www.whonix.org/wiki/KVM#Command_Line_Interface_.28CLI.29
 

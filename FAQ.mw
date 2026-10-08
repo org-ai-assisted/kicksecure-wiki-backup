@@ -25,7 +25,7 @@ To protect a user's security on the Internet [https://www.{{project_clearnet}}/#
 {{project_name_short}} deploys [https://www.{{project_clearnet}}/#security numerous security mechanisms] to mitigate such attacks.
 
 == How is {{project_name_short}} different from others? ==
-{{project_name_short}} [[About#design|protects]] you from [[Malware|viruses]].
+{{project_name_short}} [[About#Design|protects]] you from [[Malware|viruses]].
 
 {{project_name_short}} is a complete operating system (OS). A web browser, [[Software#Office_Suite|office suite]], and [[Software|more]] come pre-configured with security in mind.
 

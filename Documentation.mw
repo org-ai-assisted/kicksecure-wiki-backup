@@ -261,7 +261,7 @@ This documentation is a course on security on the Internet. {{project_name_short
 <div></div>
 * [[PQCrypto|Post-Quantum Cryptography (PQCrypto)]]
 * [[OpenPGP|OpenPGP Overview]]
-* [[Software#OpenPGP_.28GnuPG_Frontend.29_OpenPGP|Text Encryption]]
+* [[Software#GnuPG_(OpenPGP)|Text Encryption]]
 <div></div>
 </div>
 </div>

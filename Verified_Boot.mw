@@ -437,7 +437,7 @@ It's hard to modify an ISO read/write. There is no public software available to 
 Suppose someone writes the ISO to USB. Then the live session is compromised. By clever ISO read/write editing, the ISO compromise is made persistent. Would verified boot be able to come to the rescue here? It might.
 
 == Challenges with Key Management with Secure Boot ==
-The computer needs to have the proper Secure Boot keys somewhere to verify the ISO image and detect if it is compromised. Due to how shim is implemented on Freedom Software Linux distributions, in practical terms, one might need to rely on Microsoft's keys. A lot of this is elaborated on the [[Dev/Secure Boot]] wiki page. This means the attacker must not be able to access a leaked Microsoft key. This is not only a theoretic consideration. Microsoft's signing key has been leaked in the past, see [[Verified_Boot#Compromised_Verified_Boot_Vendor_Key|Compromised Verified Boot Vendor Key]].
+The computer needs to have the proper Secure Boot keys somewhere to verify the ISO image and detect if it is compromised. Due to how shim is implemented on Freedom Software Linux distributions, in practical terms, one might need to rely on Microsoft's keys. A lot of this is elaborated on the [[Dev/Secure Boot]] wiki page. This means the attacker must not be able to access a leaked Microsoft key. This is not only a theoretic consideration. Microsoft's signing key has been leaked in the past, see [[Verified_Boot#Compromised_Verified_Boot_Vendor_Keys|Compromised Verified Boot Vendor Key]].
 
 Furthermore, any shim signed my Microsoft (such as Debian's shim) would still be bootable along with other maliciously modified operating system parts (part of Debian).
 

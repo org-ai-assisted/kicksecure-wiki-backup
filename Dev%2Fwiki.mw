@@ -299,11 +299,11 @@ upstream bug reports:
 
 === Internal Direct Links to Anchors ===
 * For direct links to anchors on internal pages, use this syntax
-** Syntax <code><nowiki>[[#Internal_direct_links_to_anchors|Example direct link to this very chapter]]</nowiki></code>
-** Result [[#Internal_direct_links_to_anchors|Example direct link to this very chapter]]
+** Syntax <code><nowiki>[[#Internal_Direct_Links_to_Anchors|Example direct link to this very chapter]]</nowiki></code>
+** Result [[#Internal_Direct_Links_to_Anchors|Example direct link to this very chapter]]
 * Or if you want to link to a chapter / anchor on another page on this wiki
-** Syntax <code><nowiki>[[Dev/wiki#Internal_direct_links_to_anchors|Same direct link to this very chapter, but how you would use it on another page]]</nowiki></code>
-** Result [[Dev/wiki#Internal_direct_links_to_anchors|Same direct link to this very chapter, but how you would use it on another page]]
+** Syntax <code><nowiki>[[Dev/wiki#Internal_Direct_Links_to_Anchors|Same direct link to this very chapter, but how you would use it on another page]]</nowiki></code>
+** Result [[Dev/wiki#Internal_Direct_Links_to_Anchors|Same direct link to this very chapter, but how you would use it on another page]]
 
 == Default MediaWiki External Link Creation ==
 # clearnet &rarr; automatically adding links to web archives
@@ -608,7 +608,7 @@ Using tab controllers is difficult. See [[Dev/mediawiki#Tab_Template_.2F_Tab_Con
 
 = MediaWiki Spam whitelist =
 
-Mediawiki spam filter [https://meta.wikimedia.org/w/index.php?title=Spam_blacklist&action=raw&sb_ver=1 list] has blocked archive.ph and perplexity.ai by default, which led to the inability to submit any modifications to any page in the wiki, even with admin rights. So both have been whitelisted in [[MediaWiki:Spam-whitelist|{{project name short}}]] and [https://www.whonix.org/wiki/MediaWiki:Spam-whitelist Whonix].
+Mediawiki spam filter [https://meta.wikimedia.org/w/index.php?title=Spam_blacklist&action=raw&sb_ver=1 list] has blocked archive.ph and perplexity.ai by default, which led to the inability to submit any modifications to any page in the wiki, even with admin rights. So both have been whitelisted in {{project name short}} and [https://www.whonix.org/wiki/MediaWiki:Spam-whitelist Whonix].
 
 = Homepage Edits =
 
@@ -802,7 +802,7 @@ Example:
 ** https://www.kicksecure.com/w/index.php?search=%23widget%3AIcon_Bullet_List
 
 = ReplaceText =
-'''1.''' Go to [[Special:ReplaceText]].
+'''1.''' Go to Special:ReplaceText.
 
 '''2.''' If:
 

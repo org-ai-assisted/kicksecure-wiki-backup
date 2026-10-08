@@ -144,7 +144,7 @@ This is documented on the [[unrestricted admin mode]] wiki page.
 * '''Systemd target:''' {{Github_link|
 https://github.com/Kicksecure/user-sysmaint-split/blob/master/usr/lib/systemd/system/sysmaint-boot.target
 }}, a systemd target similar to single user mode (kernel parameter <code>single</code>).
-* '''Minimal services:''' Start only [[#Minimal services|minimal services]] when booting into sysmaint session (<code>sysmaint-boot.target</code>).
+* '''Minimal services:''' Start only [[#Minimal_Services|minimal services]] when booting into sysmaint session (<code>sysmaint-boot.target</code>).
 * '''Systemd unit:''' [https://github.com/Kicksecure/user-sysmaint-split/blob/master/usr/lib/systemd/system/sysmaint-boot.service sysmaint-boot.service], handles system reconfiguration when switching between modes.
 * {{Github_link|
 https://github.com/Kicksecure/user-sysmaint-split

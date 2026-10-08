@@ -470,7 +470,7 @@ sudo touch /etc/testfile
 The process is complete.
 
 = Uninstallation =
-See [[Unrestricted_admin_mode#Uninstalling_user-sysmaint-split_and_enabling_Unrestricted_Admin_Mode|Uninstalling user-sysmaint-split and enabling Unrestricted Admin Mode]].
+See [[Unrestricted_admin_mode#Uninstalling_user-sysmaint-split_and_Enabling_Unrestricted_Admin_Mode|Uninstalling user-sysmaint-split and enabling Unrestricted Admin Mode]].
 
 = Known Issues =
 * <u>Compatibility issues:</u> Known application compatibility limitations and related forum discussions.

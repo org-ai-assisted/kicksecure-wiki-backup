@@ -138,7 +138,7 @@ All Default-Download-Version {{project_name_short}} variants have the {{project_
 |-
 
 ! {{project_name_short}} Built from Source Code
-| If [[Dev/Build Documentation|{{project_name_short}} is built from source code]], the {{project_name_short}} APT Repository is not added by default. The only exception is if users opt-in using the build configuration [[Build_Configuration#Project_APT_Repository|Project APT Repository]]. It is also possible to [[#Verify Disabled {{project_name_short}} APT Repository|verify]] that it is already disabled.
+| If [[Dev/Build Documentation|{{project_name_short}} is built from source code]], the {{project_name_short}} APT Repository is not added by default. The only exception is if users opt-in using the build configuration [[Build_Configuration#Project_APT_Repository|Project APT Repository]]. It is also possible to [[#Verify {{project_name_short}} APT Repository is Disabled|verify]] that it is already disabled.
 |-
 
 ! {{project_name_short}} Default-Download-Version: GUI
@@ -156,7 +156,7 @@ sudo repository-dist --disable
 
 |}
 
-Users can [[#Verify Disabled {{project_name_short}} APT Repository|optionally verify]] the {{project_name_short}} APT repository is disabled after this procedure.
+Users can [[#Verify {{project_name_short}} APT Repository is Disabled|optionally verify]] the {{project_name_short}} APT repository is disabled after this procedure.
 
 == Verify {{project_name_short}} APT Repository is Disabled ==
 

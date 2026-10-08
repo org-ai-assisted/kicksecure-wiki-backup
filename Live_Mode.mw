@@ -142,7 +142,7 @@ There are two choices:
 
 == {{project_name_short}} live mode vs Tails comparison ==
 
-{{project_name_short}} live mode is based on the [[grub-live]] package which is developed and maintained by the team behind Kicksecure and Whonix. The grub-live package is not only available for Whonix and Kicksecure, but also for many other Linux distributions. To compare Tails and {{project_name_short}} live mode, see [[grub-live#comparison_between_grub-live_and_Tails]].
+{{project_name_short}} live mode is based on the [[grub-live]] package which is developed and maintained by the team behind Kicksecure and Whonix. The grub-live package is not only available for Whonix and Kicksecure, but also for many other Linux distributions. To compare Tails and {{project_name_short}} live mode, see [[grub-live#Comparison_between_grub-live_and_Tails]].
 
 = '''''VM GUEST''''' specifics (Virtual Machine VM) =
 

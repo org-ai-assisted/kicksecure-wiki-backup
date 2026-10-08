@@ -516,11 +516,11 @@ Header:
 * new: https://www.kicksecure.com/w/index.php?title=MediaWiki:Header.js&oldid=59272
 * diff: https://www.kicksecure.com/w/index.php?title=MediaWiki%3AHeader.js&type=revision&diff=59272&oldid=58824
 
-Entry point is always [[Mediawiki:Common.js]]?
+Entry point is always Mediawiki:Common.js?
 
 '''Dev''': Common.js has been transformed into a standalone library and is therefore now marked as Multiwiki. Common.js now imports {{CustomRepo|ImportScripts.js}} which is NOT MultiWiki (see [[Dev/mediawiki#Multiwiki_definitions]]). This is done so Common.js is a true library and ImportScripts is now LocalWiki specific and there can be individual imports. Note: ImportScripts is loaded at the bottom of the file for call order reasons, therefore every loaded file will have the wikiJsLoader already available.
 
-To disable all, remove all from [[Mediawiki:Common.js]]?
+To disable all, remove all from Mediawiki:Common.js?
 
 '''Dev''': To disable all remove the following line at the bottom of Common.js
 <pre>
@@ -647,7 +647,7 @@ Test
 == Wiki Js Loader ==
 
 # As per now our research shows no option of the MediaWiki mw.loader API to load our own scripts and make them dependent on each other. So user script dependency does not seem to be supported
-# Therefore we created our own resource loader under window.wikiJsLoader, see [[Mediawiki:Common.js]]. The challenge is to provide a mechanism to load modules which are yet unknown and which can only be known once they are loaded and registered due to the asynchronous loading by mw.loader.load
+# Therefore we created our own resource loader under window.wikiJsLoader, see Mediawiki:Common.js. The challenge is to provide a mechanism to load modules which are yet unknown and which can only be known once they are loaded and registered due to the asynchronous loading by mw.loader.load
 ## '''Caution:''' Circular dependencies are not resolved and will be a roadblock for all batches containing these.
 # The loader offers 4 methods
 ## register( name, dependencies, waitForCallback, fn ) - This method registers a function (fn,type:function) in the registry, including its module name (name,type:string), its dependencies (depedencies,type:array-of-strings, other user module names) and if the whole mechanism should wait for their callback (waitForCallback,type:boolean)
@@ -659,7 +659,7 @@ Test
 ### First all depedencies will be checked, if they are not met then the script will not execute futher. But if another register process is completed then load will automatically be triggered again to check if NOW all dependencies are met and we can execute further
 ### This way scripts will be able to execute exactly when their dependencies are met, not earlier. This is especially necessary as the mw.loader seems to load our scripts asynchronously
 # Relevant files
-## [[Mediawiki:Common.js]]
+## Mediawiki:Common.js
 
 === Wiki Js Loader Usage ===
 

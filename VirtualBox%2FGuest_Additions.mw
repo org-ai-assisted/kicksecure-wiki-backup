@@ -478,7 +478,7 @@ Whenever the Linux kernel package or <code>virtualbox-guest-additions-iso</code>
 <code>debian/vm-config-dist.triggers</code>
 </ref>
 
-<code>vbox-guest-installer</code> will refuse to install VirtualBox guest additions from <code>virtualbox-guest-additions-iso</code> when either <code>virtualbox-guest-x11</code> and/or <code>virtualbox-guest-utils</code> is still installed. This is because only one installation source should be active at the same time, as mentioned in chapter [[#VirtualBox/Guest_Additions#VirtualBox_Guest_Additions_Installation_Sources|VirtualBox Guest Additions Installation Sources]].
+<code>vbox-guest-installer</code> will refuse to install VirtualBox guest additions from <code>virtualbox-guest-additions-iso</code> when either <code>virtualbox-guest-x11</code> and/or <code>virtualbox-guest-utils</code> is still installed. This is because only one installation source should be active at the same time, as mentioned in chapter [[#VirtualBox Guest Additions Installation Sources|VirtualBox Guest Additions Installation Sources]].
 
 To use <code>vbox-guest-installer</code>, see [[VirtualBox/Guest_Additions#Migration_to_Oracle_Style_VirtualBox_Guest_Additions|Migration to <u>Oracle Style</u> VirtualBox Guest Additions]].
 

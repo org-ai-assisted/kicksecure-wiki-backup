@@ -559,7 +559,7 @@ https://github.com/Kicksecure/repository-dist
 *** "verification is a continuous process happening as data is loaded into memory"
 *** "This means if malware manages to modify the /usr/bin/mv program despite immutability, then dm-verity would notice this the next time the user or system is attempting to execute that command."
 *** This security gained from this feature is somewhat reduced if the attacker can use ephermal overlays.
-** consider [[Sysmaint#enable_sudo_access_in_USER_session|enable sudo access in USER session]] (developer debug mode): disable verified boot + write to disk + regenerate verified boot hash tree (this is to ease debugging issues only happening in user session but not in sysmaint session)
+** consider [[Sysmaint#Enable_sudo_access_in_user_session|enable sudo access in USER session]] (developer debug mode): disable verified boot + write to disk + regenerate verified boot hash tree (this is to ease debugging issues only happening in user session but not in sysmaint session)
 * prefer Debian on true read-only filesystem without ephemeral overlay to benefit from kernel verified continuous verification after boot feature
 ** [[Verified_Boot#Challenges_with_Immutable_Filesystems|Challenges with Immutable Filesystems]]
 *** As-needed ephemeral overlays

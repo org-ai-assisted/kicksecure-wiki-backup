@@ -3221,7 +3221,7 @@ Setting up bindp (3:4.2-1) ...
 == install an onscreen keyboard by default ==
 * todo
 * purpose: configuration a keyboard layout when not knowing how to enter some special character such as "=" on the keyboard using the local keyboard
-* related: [[Software#On-Screen_Keyboard|On-Screen Keyboard]]
+* related: [[Software#On-Screen_Keyboard_(wvkbd)|On-Screen Keyboard]]
 * Aaron: Done, new commits pushed to developer-meta-files, kicksecure-meta-packages, and usability-misc for this.
 * Patrick: Merged.
 
@@ -3446,7 +3446,7 @@ IPC connection failure!IPC connect: service=usbguard: Operation not permitted
 == remove unnecessary dependencies from arc-theme ==
 * https://github.com/UbuntuBudgie/arc-theme/pull/2
 * since upstream is unlikely to react, could you please send a patch to Debian instead if that seems possible/useful?
-* or perhaps a different, better theme? separate ticket: [[#desktop theme improvements]]
+* or perhaps a different, better theme? separate ticket: [[#trixie_port_-_desktop_theme_improvements]]
 * Aaron: Pinged Ubuntu Budgie upstream via Matrix, got a response, waiting to see how (or if) that develops. Debian is likely not the right place to override this unless we absolutely have to do that. In either event, the dependencies won't be removed until Forky at best.
 * Cancelled, we are not using the arc theme any longer.
 

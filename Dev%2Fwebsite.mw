@@ -501,7 +501,7 @@ mycontent
 * Tests were created [[Dev/wikitest#CSS_Extension_Fork|CSS Extension Fork tests]]
 * JS and CSS file was created
 * {{IconSet|maybe|Note}} This seemingly long abandoned file [[User:Patrick/myskin.css]] is now used for a test in our testing suite (not-allowed namespaces). So this file should be protected for this reason.
-* Documentation has been updated [[Dev/mediawiki#Extension_CSS_Fork|Extension CSS Fork doc]]
+* Documentation has been updated [[Dev/mediawiki#Extension_CSS_Fork_(RETIRED)|Extension CSS Fork doc]]
 * {{IconSet|false|WARNING}}
 ** The tests were created with the help of AI. And thereby a security vulnerability was found
 ** This should probably be fixed in our fork

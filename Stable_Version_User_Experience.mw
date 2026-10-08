@@ -72,7 +72,7 @@ A Kicksecure development goal is to avoid becoming a broken mess where documenta
 
 '''Hypothetical Questions:'''
 
-* The desktop does not start, sound does not work? -> Recompile your kernel + enable [[Operating_System_Hardening#Module_Loading Module Loading|module loading]].
+* The desktop does not start, sound does not work? -> Recompile your kernel + enable [[Operating_System_Hardening#Module_Loading|module loading]].
 
 == User Choices ==
 

@@ -80,7 +80,7 @@ The multiple, serious consequences of an email breach emphasize the importance o
 |-
 
 ! 2FA requires Google
-| Google authenticator is the most popular 2FA implementation, but not the only one -- Google software is not necessary to take advantage of 2FA. Many services link to and recommend Google authenticator, but any Time-based One-time Password (TOTP) implementation will work, see: [[#Software Choices|Software Choices]].
+| Google authenticator is the most popular 2FA implementation, but not the only one -- Google software is not necessary to take advantage of 2FA. Many services link to and recommend Google authenticator, but any Time-based One-time Password (TOTP) implementation will work, see: [[#Authenticator_Software_Choices|Software Choices]].
 
 |-
 

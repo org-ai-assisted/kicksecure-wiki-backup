@@ -7948,9 +7948,9 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 * 2021-12-13: discuss (easy, not important): cannot click inspect on other websites
 
 * 2021-12-13 CSS very basic review. Answers for the following questions are desired:
-** Is Whonix wiki currently using [[Mediawiki:Foreground.css]]? Yes.
-** Is [[Mediawiki:Common.css]] currently in use? Also Yes.
-** Advantages and disadvantages of merging these pages? -> No. Keep and [[Mediawiki:Common.css]] and [[Mediawiki:Foreground.css]] separate. Split into essentials (CSS for CodeSelect in [[Mediawiki:Common.css]]) and skin (Foreground) ([[Mediawiki:Foreground.css]]) specific.
+** Is Whonix wiki currently using Mediawiki:Foreground.css? Yes.
+** Is Mediawiki:Common.css currently in use? Also Yes.
+** Advantages and disadvantages of merging these pages? -> No. Keep and Mediawiki:Common.css and Mediawiki:Foreground.css separate. Split into essentials (CSS for CodeSelect in Mediawiki:Common.css) and skin (Foreground) (Mediawiki:Foreground.css) specific.
 
 }}
 

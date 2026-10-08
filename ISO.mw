@@ -788,7 +788,7 @@ If you boot from the correct device (where {{project_name_short}} LXQt is instal
 
 [[File:Dracutpass-cropped.png|frameless|1200px|alt=initramfs (dracut) Based Encryption Password Prompt - Example (cropped)|initramfs (dracut) Based Encryption Password Prompt - Example (cropped)]]
 
-This is an [[Grub#initramfs_.28initramfs-tools_or_dracut.29_Based_Encryption_Password_Prompt|initramfs (dracut) Based Encryption Password Prompt]].
+This is an [[Grub#initramfs_(initramfs-tools_or_dracut)_Based_Encryption_Password_Prompt|initramfs (dracut) Based Encryption Password Prompt]].
 
 '''{{IconSet|h2|3}} The {{project_name_short}} desktop will appear.'''
 

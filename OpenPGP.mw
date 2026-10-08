@@ -107,7 +107,7 @@ Also see:
 }}
 
 = Related Tools =
-Encrypt, decrypt, sign, and verify text using [[Software#OpenPGP_.28GnuPG_Frontend.29| OpenPGP (GnuPG Frontend)]].
+Encrypt, decrypt, sign, and verify text using [[Software#GnuPG_(OpenPGP)| OpenPGP (GnuPG Frontend)]].
 
 = Issues with PGP =
 

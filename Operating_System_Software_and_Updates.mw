@@ -154,7 +154,7 @@ https://forums.whonix.org/t/whonix-xfce-for-virtualbox-users-ram-increase-requir
 
 {{IconSet|h1|2}} Flatpak Update
 
-This step is only required if the user previously manually installed any software using [[Install_Software#flatpak|flatpak]]. It can be skipped otherwise.
+This step is only required if the user previously manually installed any software using [[Install_Software#Flatpak|flatpak]]. It can be skipped otherwise.
 
 * [[{{Non_q_project_name_short}}|{{non_q_project_name_long}}]] {{CodeSelect|code=
 flatpak update
