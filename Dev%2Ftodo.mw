@@ -1131,7 +1131,7 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 ** Add an option to leaprun that overrides which UID it acts as. By default, this override should apply unconditionally.
 ** Add another option to leaprun that causes it to only trigger the override if the <code>FAKEROOTKEY</code> environment variable is set, and causes it to ignore the override otherwise.
 ** Now any code that calls leaprun under fakeroot can pass arguments like <code>--user-override="${USER}" --user-override-fakeroot</code>.
-** Implemented, commit pushed to leaprun. We still need to use this mechanism in our DNF wrapper though.
+** Implemented, commit pushed to privleap. We still need to use this mechanism in our DNF wrapper though.
 
 == *-base-files - /boot-on-fat32 compatibility ==
 * https://github.com/Kicksecure/kicksecure-base-files/issues/2, see attached PRs
