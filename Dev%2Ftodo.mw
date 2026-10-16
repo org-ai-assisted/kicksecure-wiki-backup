@@ -66,6 +66,11 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 ** Add another option to leaprun that causes it to only trigger the override if the <code>FAKEROOTKEY</code> environment variable is set, and causes it to ignore the override otherwise.
 ** Now any code that calls leaprun under fakeroot can pass arguments like <code>--user-override="${USER}" --user-override-fakeroot</code>.
 
+== privleap tests - allow running a partial test suite ==
+* Aaron:
+** Right now we have to run the entire test suite to test any change to any one of privleap's components. This is wasteful, especially now that we track test coverage during runs, making tests take much longer than they used to.
+** Allow the user to specify which program they want to run the test suite of, so that useless tests can be skipped over.
+
 == privleapd - expose the calling user's ID to actions ==
 * Aaron:
 ** The calling user should be recorded in an environment variable. This is along the lines of <code>SUDO_USER</code> and <code>PKEXEC_UID</code>.
