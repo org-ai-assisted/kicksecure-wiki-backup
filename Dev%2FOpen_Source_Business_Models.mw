@@ -35,24 +35,24 @@ Relies on voluntary financial contributions from users or supporters.
 
 {{quotation
 |quote=ice cream money, $ 7 USD / month
-|context=[https://www.youtube.com/watch?v=G6ZupYzr_Zg Keynote: Commercial Open Source Business Models - Sid Sijbrandij, Co-founder & CEO, GitLab]
+|source=[https://www.youtube.com/watch?v=G6ZupYzr_Zg Keynote: Commercial Open Source Business Models - Sid Sijbrandij, Co-founder & CEO, GitLab]
 }}
 
 {{quotation
 |quote=up to $ 1000 USD / month
-|context=Same as above.
+|author=Same as above.
 }}
 
 [https://github.com/zloirock/core-js core-js]:
 
 {{quotation
 |quote=I'm fucking tired. Free open-source software is fundamentally broken. I could stop working on this silently, but I want to give open-source one last chance.
-|context=[https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md core-js post about Open Source having a broken / challenging business model]
+|source=[https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md core-js post about Open Source having a broken / challenging business model]
 }}
 
 {{quotation
 |quote=This JavaScript library is EVERYWHERE. Its maintainer is broke
-|context=[https://www.thestack.technology/core-js-maintainer-denis-pusharev-license-broke-angry/ The Stack Technology article about core-js maintainer]
+|source=[https://www.thestack.technology/core-js-maintainer-denis-pusharev-license-broke-angry/ The Stack Technology article about core-js maintainer]
 }}
 
 Better success examples:
@@ -105,7 +105,7 @@ This is not merely theoretical.
 
 {{quotation
 |quote=I personally know people who attempted much more mainstream projects and still failed to reach the minimum funding target. In those cases, donors were refunded and the campaign produced no payout.
-|context=Experience of a project core developer.
+|author=Experience of a project core developer.
 }}
 
 At the time of writing, Kickstarter does not support Bitcoin, let alone Monero, for pledges. See: [https://help.kickstarter.com/hc/en-us/articles/115005066433-What-forms-of-payment-can-I-use-to-make-a-pledge What forms of payment can I use to make a pledge?]
@@ -243,7 +243,7 @@ Business models successfully used by megacorporations with a lot of investors ar
 MuseScore.org is home to the Open Source MuseScore program for Windows, macOS, Linux, and its developers, contributors and users community. Its forum is the ideal place to ask any question related to the MuseScore program.
 
 MuseScore.com is a community site to share your sheet music with your friends via the web and for the mobile apps for iOS and Android. The site has social features such as embedding, commenting, annotating, statistics, groups. The site offers free accounts, but has a Pro Account for those who want more.
-|context=[https://musescore.org/en/faq#faq-20657 MuseScore FAQ]
+|source=[https://musescore.org/en/faq#faq-20657 MuseScore FAQ]
 }}
 
 == Open Core Model ==
@@ -324,7 +324,7 @@ Finding sustainable business models is more challenging for Open Source projects
 
 {{quotation
 |quote=A 5% royalty is due only if you are distributing an off-the-shelf product that incorporates Unreal Engine code (such as a game). Provided that you notify us on time using the Release Form, you will only owe royalties once the lifetime gross revenue from that product exceeds $1 million USD; in other words, the first $1 million will be royalty-exempt.
-|context=[https://www.unrealengine.com/en-US/faq Unreal Engine FAQ]
+|source=[https://www.unrealengine.com/en-US/faq Unreal Engine FAQ]
 }}
 
 === Grayjay ===
@@ -340,7 +340,7 @@ Finding sustainable business models is more challenging for Open Source projects
 {{quotation
 |quote=
 The project will remain open-source, no matter if Infinity is sustainable or not, but the code related to Google Play billing and API key will not be published on GitHub.
-|context=[https://www.reddit.com/r/Infinity_For_Reddit/comments/147bhsg/the_future_of_infinity/ The future of Infinity for Reddit discussion]
+|source=[https://www.reddit.com/r/Infinity_For_Reddit/comments/147bhsg/the_future_of_infinity/ The future of Infinity for Reddit discussion]
 }}
 
 Any closed source parts of an otherwise mostly Open Source software make it nonetheless proprietary.
@@ -356,7 +356,8 @@ The ethos of the Free Software movement acknowledges and supports the legitimacy
 |quote=Many people believe that the spirit of the GNU Project is that you should not charge money for distributing copies of software, or that you should charge as little as possible-just enough to cover the cost. This is a misunderstanding.
 
 Actually, we encourage people who redistribute free software to charge as much as they wish or can. If a license does not permit users to make copies and sell them, it is a nonfree license. If this seems surprising to you, please read on.
-|context=GNU Project: [https://www.gnu.org/philosophy/selling.en.html Selling Free Software]
+|author=GNU Project
+|source=[https://www.gnu.org/philosophy/selling.en.html Selling Free Software]
 }}
 
 "Free" in Free Software refers to freedom, not price. FLOSS can and does coexist with commercial elements, and it is available for commercial use, development, and distribution. The GNU Project further elucidates:
@@ -365,7 +366,8 @@ Actually, we encourage people who redistribute free software to charge as much a
 |quote=Free software can be commercial
 
 "Free software" does not mean "noncommercial." On the contrary, a free program must be available for commercial use, commercial development, and commercial distribution.
-|context=GNU Project: [https://www.gnu.org/philosophy/free-sw.en.html#:~:text=to%20that%20plan.-,Free%20software%20can%20be%20commercial,could%20not%20achieve%20its%20aims. What is Free Software?]
+|author=GNU Project
+|source=[https://www.gnu.org/philosophy/free-sw.en.html#:~:text=to%20that%20plan.-,Free%20software%20can%20be%20commercial,could%20not%20achieve%20its%20aims. What is Free Software?]
 }}
 
 Moreover, David A. Wheeler's essay substantiates that Free-Libre / Open Source Software (FLOSS) is intrinsically commercial software, indicating that commercialization is not antithetical to the principles of Open Source and free software.

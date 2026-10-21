@@ -45,7 +45,7 @@ Because of this, we have decided to rapid-prototype these defenses in a controll
 For details about the defenses themselves, please see [https://github.com/mikeperry-tor/vanguards/blob/master/README_TECHNICAL.md README_TECHNICAL.md].
 
 For additional security information, please see [https://github.com/mikeperry-tor/vanguards/blob/master/README_SECURITY.md README_SECURITY.md].
-|context=https://github.com/mikeperry-tor/vanguards
+|source=https://github.com/mikeperry-tor/vanguards
 }}
 
 A [https://github.com/mikeperry-tor/vanguards/issues/91 very comprehensive bug report] was submitted by an advanced user in 2022.
@@ -63,7 +63,7 @@ During this process, one of the two primary developers on onion services resigne
 We do have pending funding for general DoS defenses that should be finalized soon, but that also does not cover onion service development. We will need to show other progress for that funder; any DoS defenses specifically for onion services will still have to be done "on the side".
 
 Normally, I would not air our dirty laundry like this, but since it will have a direct impact on people like you, it seemed important to explain why we're going to be especially unresponsive to issues with onion services for the next while.
-|context=https://github.com/mikeperry-tor/vanguards/issues/91#issuecomment-1228698338
+|source=https://github.com/mikeperry-tor/vanguards/issues/91#issuecomment-1228698338
 }}
 
 As per the [https://github.com/mikeperry-tor/vanguards/commits/master/ Vanguards commit history], the last substantial code change in Vanguards happened in 2021. There were some minor commits in 2023, but these were only related to [https://github.com/dependabot Dependabot].
@@ -94,13 +94,13 @@ See [https://blog.torproject.org/announcing-vanguards-for-arti/ Announcing Vangu
 {{quotation
 |quote=
 Arti's Vanguards implementation is based on the research behind Tor's [https://blog.torproject.org/announcing-vanguards-add-onion-services/ Vanguards add-on], and offers similar protections to its [https://github.com/mikeperry-tor/vanguards/blob/master/README_TECHNICAL.md#the-vanguards-subsystem Vanguards component].
-|context=https://blog.torproject.org/announcing-vanguards-for-arti/
+|source=https://blog.torproject.org/announcing-vanguards-for-arti/
 }}
 
 {{quotation
 |quote=
 The other experimental defenses from the add-on are not yet implemented in Arti (but they are on our roadmap!)
-|context=https://blog.torproject.org/announcing-vanguards-for-arti/
+|source=https://blog.torproject.org/announcing-vanguards-for-arti/
 }}
 
 = Lack of Onion Reachability Debugging Tools =
@@ -263,7 +263,7 @@ Closes issues:
 Commits:
 
 * [https://gitlab.tails.boum.org/tails/tails/-/commit/ec83674736c5cf91292d56d0a5a1ae69341c60a5 APT: use non-onion HTTPS sources for Debian repositories]
-|context=[https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog Tails changelog]
+|source=[https://gitlab.tails.boum.org/tails/tails/-/blob/bc2536554cd61f51c744c032b688af09ed5136de/debian/changelog Tails changelog]
 }}
 
 * [https://forum.qubes-os.org/t/whonix-update-issue/40671/3 Qubes onion and Debian onion issue user bug report]
@@ -281,7 +281,7 @@ Commits:
 
 {{quotation
 |quote=At some points, the attacks impacted the network severely enough that users could not load pages or access onion services.
-|context=https://blog.torproject.org/tor-network-ddos-attack/
+|source=https://blog.torproject.org/tor-network-ddos-attack/
 }}
 
 = Non-Solutions =
@@ -293,7 +293,7 @@ Commits:
 
 {{quotation
 |quote=As of December 2023, it does not support the Proof Of Work anti-DoS defense ([https://onionservices.torproject.org/technology/security/pow/ PoW]), but this is [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/issues/13 being planned].
-|context=https://onionservices.torproject.org/apps/web/checklist/#using-onionbalance
+|source=https://onionservices.torproject.org/apps/web/checklist/#using-onionbalance
 }}
 
 * Bug: [https://gitlab.torproject.org/tpo/onion-services/onionbalance/-/work_items/9 OnionBalance issue descriptor loading error]

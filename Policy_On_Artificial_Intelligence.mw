@@ -31,7 +31,7 @@ Do not post AI-generated content in communications or source code contributions 
 = Rationale =
 {{quotation
 |quote=Generative AI allows potential contributors to generate large amounts of content quickly and at near-zero cost. If these contributions are of high quality, they will be welcome. Unfortunately, however, they are often of low quality, in which case it is easy for even a single GenAI-assisted contributor to overwhelm the entire project's human review capacity.
-|context=[https://doc.qubes-os.org/en/latest/introduction/contributing.html#using-ai-in-contributions Qubes OS: Using AI in contributions] / [https://forum.qubes-os.org/t/guidance-on-using-ai-in-contributions/39626 Qubes forum discussion: Guidance on using AI in contributions]
+|source=[https://doc.qubes-os.org/en/latest/introduction/contributing.html#using-ai-in-contributions Qubes OS: Using AI in contributions] / [https://forum.qubes-os.org/t/guidance-on-using-ai-in-contributions/39626 Qubes forum discussion: Guidance on using AI in contributions]
 }}
 
 = Examples of Nonsensical AI Generated Posts =
@@ -80,14 +80,14 @@ Non-exhaustive list:
 |quote=To specifically address the worries about the effectiveness of llms, I recommend everyone read the AI review comments on e.g. #39010. AI is at the point where it is catching issues that human reviewers would likely miss and allows us to start making progress on reviewing prs that we otherwise would not find time to review (of course a full human review is still required).
 
 For all the other concerns, this is not a battle to fight on the systemd issue tracker. Those considering a new init system because of this will also need to look for a new kernel as Linux itself is accepting AI contributions as well these days (https://docs.kernel.org/process/generated-content.html).
-|context=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/daandemeyer Daan De Meyer (@daandemeyer), systemd/mkosi maintainer]
+|source=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/daandemeyer Daan De Meyer (@daandemeyer), systemd/mkosi maintainer]
 }}
 
 {{quotation
 |quote=Just to briefly say one thing: it would be dishonest to not accept the fact that Claude code reviews actually got really really good recently. AI code reviews went from 95% slop and 5% ok, to 80% really good, and 20% garbage. It has been finding real CVEs in the past weeks, and it's just too good to ignore now. Whatever you think of AI, if one is honest, then one has to respect those Claude reviews. Without them systemd code quality would be worse, vulnerabilities that exist would not be found, and that's not a good thing for the world. Just denying all this completely would leave people more vulnerable, code quality much worse and I cannot see how anyone would benefit from that. Yes, AI is problematic in many ways, but it's not a binary thing, and I'd rather be in front of the CVE wave crashing in on us, then leaving it all to blackhat hackers to take benefit of.
 
 The world is a complex place. Things are ambivalent.
-|context=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/poettering Lennart Poettering (@poettering), systemd developer)]
+|source=[https://github.com/systemd/systemd/issues/41085 systemd: Disallow usage of generative AI to write code], [https://github.com/poettering Lennart Poettering (@poettering), systemd developer)]
 }}
 
 There are projects that track types of use of AI by Open Source projects:

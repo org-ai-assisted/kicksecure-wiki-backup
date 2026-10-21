@@ -321,17 +321,17 @@ Qubes users can manually change MAC addresses in the NetVM by following either t
 
 {{quotation
 |quote=This is currently applied by Debian and Fedora templates only.
-|context=https://github.com/QubesOS/qubes-issues/issues/938#issuecomment-1221605861
+|source=https://github.com/QubesOS/qubes-issues/issues/938#issuecomment-1221605861
 }}
 
 {{quotation
 |quote=Ethernet MAC randomization by default was denied.
-|context=https://github.com/QubesOS/qubes-issues/issues/938#issuecomment-1300587911
+|source=https://github.com/QubesOS/qubes-issues/issues/938#issuecomment-1300587911
 }}
 
 {{quotation
 |quote=Consequently, users wanting Ethernet MAC randomization will need to modify their templates manually, including in all newly downloaded templates after OEL deprecation.
-|context=https://github.com/QubesOS/qubes-issues/issues/938#issuecomment-1300587911
+|source=https://github.com/QubesOS/qubes-issues/issues/938#issuecomment-1300587911
 }}
 
 Refer to the following Qubes documentation and related support items for further information and advice:

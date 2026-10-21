@@ -21,7 +21,7 @@ Spectre/Meltdown security vulnerability caused by flaws in processors and how to
 
 {{quotation
 |quote=A CPU is not just a dumb piece of hardware that can do basic calculations at high speed. Modern CPUs from Intel and AMD have many "software-like" features built-in. To name a few from a plethora of examples:
-|context=[[Open_Source_Hardware#Open_Source_BIOS_and_Firmware_Security_Impact|Open Source BIOS and Firmware Security Impact]]
+|source=[[Open_Source_Hardware#Open_Source_BIOS_and_Firmware_Security_Impact|Open Source BIOS and Firmware Security Impact]]
 }}
 
 Security issues have been discovered in CPUs.

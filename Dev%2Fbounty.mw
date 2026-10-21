@@ -52,7 +52,8 @@ Ideally we could let developers make bids.
 
 Maybe we can use something '''like''' bountysource.com. An alternative to bountysource.com would be desirable, because they take a 10% fee for all withdrawals. Do you know any alternatives by chance?
 
-|context=Whonix: [https://github.com/Whonix/Gentoo-Port/issues/17 Where to discuss bounties?]
+|author=Whonix
+|source=[https://github.com/Whonix/Gentoo-Port/issues/17 Where to discuss bounties?]
 }}
 
 The term "bids" above refers to developers proposing a price and an estimated amount of work for completing a task. While this can help discover realistic pricing, it can also create incentives to underbid. Underbidding can negatively affect quality.

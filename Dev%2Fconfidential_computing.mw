@@ -91,7 +91,7 @@ Total Memory Encryption - Multi-Key (TME-MK)
 
 {{quotation
 |quote=Intel has introduced Intel&reg; Total Memory Encryption - Multi-Key (Intel&reg; TME-MK), a new memory encryption technology, on 3rd generation Intel&reg; Xeon&reg; Scalable processors (formerly code named Ice Lake).
-|context=https://www.intel.com/content/www/us/en/developer/articles/news/runtime-encryption-of-memory-with-intel-tme-mk.html
+|source=https://www.intel.com/content/www/us/en/developer/articles/news/runtime-encryption-of-memory-with-intel-tme-mk.html
 }}
 
 * Provides granular, user-controllable full memory encryption. Multiple keys can be used at once, allowing a hypervisor to use one key for the host and different keys for each guest. The performance impact of using TME-MK is negligible (less than 2%).
@@ -134,7 +134,7 @@ sudo fwupdmgr security
 
 {{quotation
 |quote=Intel&reg; Hardware Shield on the Intel vPro&reg; platform as they pertain to helping to protect system memory. It covers both software and hardware security capabilities. Specifically, this document provides in-depth information Intel&reg; TME.
-|context=https://www.intel.com/content/www/us/en/architecture-and-technology/vpro/hardware-shield/total-memory-encrpytion.html
+|source=https://www.intel.com/content/www/us/en/architecture-and-technology/vpro/hardware-shield/total-memory-encrpytion.html
 }}
 
 Intel TME-MK might only be available in combination with Intel vPro. However, Intel vPro comes often (or always?) packages with Intel ME and Intel AMT, which many users would rather not have inside their CPU. See [[Out-of-band Management Technology]].
@@ -191,7 +191,7 @@ site:ark.intel.com "Intel&reg; Total Memory Encryption - Multi Key"
 ==== AMD TSME ====
 {{quotation
 |quote=Transparent SME (TSME) as the name implies is a stricter subset of SME that requires no software intervention. Under TSME, all memory pages are encrypted regardless of the C-bit value. TSME is designed for legacy OS and hypervisor software that cannot be modified. Note that when TSME is enabled, standard SME as well as SEV are still available. TSME and SME share a memory encryption key.
-|context=https://en.wikichip.org/wiki/x86/sme#Transparent_SME
+|source=https://en.wikichip.org/wiki/x86/sme#Transparent_SME
 }}
 
 * https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/white-papers/memory-encryption-white-paper.pdf
@@ -221,7 +221,7 @@ AMD Secure Memory Encryption (SME) active
 {{quotation
 |quote=
 GD-183A: AMD Infinity Guard features vary by EPYC&trade; Processor generations and/or series. Infinity Guard security features must be enabled by server OEMs and/or Cloud Service Providers to operate. Check with your OEM or provider to confirm support of these features. Learn more about Infinity Guard at http://www.amd.com/en/products/processors/server/epyc/infinity-guard.html.
-|context=footnote 1 on https://www.amd.com/en/products/processors/server/epyc/infinity-guard.html
+|author=footnote 1 on https://www.amd.com/en/products/processors/server/epyc/infinity-guard.html
 }}
 
 * Infinity Guard is a brand name for AMDs collection of hypervisor security features, including Secure Encrypted Virtualization technologies.
@@ -471,7 +471,7 @@ Rough time estimate to get TRESOR working in Linux: possibly around 80 hours of 
 |quote=NOTE: The source packages required to build reproducible versions of our node firmware and software stack are only available to active users of the IntegriCloud&trade; platform, auditors for active users of the IntegriCloud&trade; platform, and security researchers.
 
 Please contact us at support@integricloud.com with your IntegriCloud&trade; username to request access to the source packages and build instructions.
-|context=https://www.integricloud.com/content/base/software.html
+|source=https://www.integricloud.com/content/base/software.html
 }}
 
 * Asked by e-mail about this in October 2024 but did not receive an e-mail at time of writing.

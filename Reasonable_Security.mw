@@ -28,26 +28,32 @@ When is a program secure enough?
 ** Requires understanding of the tradeoffs involved
 * Is Internet Explorer secure enough?
 ** Depends on context
-|context=[https://scholar.google.com/citations?user=19kNRU0AAAAJ Steve Zdancewic, Professor of Computer and Information Science, University of Pennsylvania]: [https://www.cis.upenn.edu/~stevez/cis551/2006/web/lectures/CIS551-01.pdf Computer and Network Security]
+|author=[https://scholar.google.com/citations?user=19kNRU0AAAAJ Steve Zdancewic, Professor of Computer and Information Science, University of Pennsylvania]
+|source=[https://www.cis.upenn.edu/~stevez/cis551/2006/web/lectures/CIS551-01.pdf Computer and Network Security]
 }}
 
 {{quotation
 |quote=Security is meant to prevent bad things from happening; one side-effect is often to prevent useful things from happening. Typically, a tradeoff is necessary between security and other important project goals: functionality, usability, efficiency, time-to-market, and simplicity
-|context=Dr. Bill Young, Department of Computer Sciences, University of Texas at Austin: [https://www.cs.utexas.edu/~byoung/cs361/lecture2.pdf Foundations of Computer Security, Lecture 2: Why Security is Hard]
+|author=Dr. Bill Young
+|role=Department of Computer Sciences, University of Texas at Austin
+|source=[https://www.cs.utexas.edu/~byoung/cs361/lecture2.pdf Foundations of Computer Security, Lecture 2: Why Security is Hard]
 }}
 
 Coined "practical security" instead of "reasonable security" but a similar concept.
 
 {{quotation
 |quote=Practical security balances the cost of protection and the risk of loss, which is the cost of recovering from a loss times its probability.
-|context=2000: [https://en.wikipedia.org/wiki/Butler_Lampson Butler W. Lampson], Microsoft, [https://www.cs.cornell.edu/courses/cs5430/2023fa/NL02.Lampson.pdf Computer Security in the Real World] <ref>
+|author=[https://en.wikipedia.org/wiki/Butler_Lampson Butler W. Lampson]
+|role=Microsoft
+|source=2000: [https://www.cs.cornell.edu/courses/cs5430/2023fa/NL02.Lampson.pdf Computer Security in the Real World] <ref>
 https://www.acsac.org/2000/papers/lampson.pdf
 </ref>
 }}
 
 {{quotation
 |quote=As secure as reasonably practicable means that an incremental improvement in security would require a disproportionate deterioration of meeting other system cost, schedule, or performance objectives; would violate system constraints; or would require unacceptable concessions such as an unacceptable change in the way operations are performed.
-|context=[https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology National Institute of Standards and Technology (NIST)]: [https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1r1.pdf Engineering Trustworthy Secure Systems]
+|author=[https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology National Institute of Standards and Technology (NIST)]
+|source=[https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1r1.pdf Engineering Trustworthy Secure Systems]
 }}
 
 = Qubes Viewpoint on Reasonable Security =
@@ -55,7 +61,9 @@ https://www.acsac.org/2000/papers/lampson.pdf
 |quote=Creating Qubes OS has been a great challenge, especially for such a small team as ours, but ultimately, I'm very glad with the final outcome - it really is a stable and reasonably secure desktop OS. In fact I cannot think of any more secure alternative...
 
 I use the term "reasonably secure", because when it comes to defensive security it's difficult to use definite statements ("secure", "unbreakable", etc), unless one can formally prove the whole design and implementation to be 100% secure.
-|context=Security researcher and Qubes founder, Joanna Rutkowska, [https://theinvisiblethings.blogspot.com/2012/09/introducing-qubes-10.html Introducing Qubes 1.0!]
+|author=Joanna Rutkowska
+|role=Security researcher and Qubes founder
+|source=[https://theinvisiblethings.blogspot.com/2012/09/introducing-qubes-10.html Introducing Qubes 1.0!]
 }}
 
 {{quotation
@@ -74,14 +82,18 @@ So, we believe Qubes OS represents a reasonably secure OS. In fact I'm not aware
 
 {{quotation
 |quote="We don't make empty promises to our users that we know no one can deliver on," he said. "We do, however, find it amusing that many security experts around the world have deemed a 'reasonably secure' operating system to be the most secure operating system available."
-|context=Andrew David Wong (@adw), interview in Hosting Advice: [https://www.hostingadvice.com/blog/qubes-offers-security-by-compartmentalization/ Security by Compartmentalization: Qubes is an Open-Source OS Tackling the Most Sophisticated Modern Threats]
+|author=Andrew David Wong (@adw)
+|role=interview in Hosting Advice
+|source=[https://www.hostingadvice.com/blog/qubes-offers-security-by-compartmentalization/ Security by Compartmentalization: Qubes is an Open-Source OS Tackling the Most Sophisticated Modern Threats]
 }}
 
 {{quotation
 |quote=
 ... for years we have been, similarly, assuming the underlying hardware, together with all the firmware that runs on it, such as the BIOS/UEFI and the SMM, GPU/NIC/SATA/HDD/EC firmware, etc., is all... trusted.<br />
 But isn't that a rational assumption, after all?
-|context=Security researcher and Qubes founder, Joanna Rutkowska: [https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf Intel x86 considered harmful]
+|author=Joanna Rutkowska
+|role=Security researcher and Qubes founder
+|source=[https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf Intel x86 considered harmful]
 }}
 
 Her answer, simplified: "No". Long answer:
@@ -94,7 +106,9 @@ This topic is elaborated on the [[Open_Source_Hardware|Open Source Hardware]] wi
 
 {{quotation
 |quote=Defensive security is a difficult game, because one doesn't immediately see whether a given solution works or not. This is in stark contrast to other engineering disciplines (and to offensive security) where one usually have immediate feedback on whether something works well or not.
-|context=Security researcher and Qubes founder, Joanna Rutkowska: [https://blog.invisiblethings.org/2012/06/27/some-comments-on-operation-high-roller.html Some comments on "Operation High Roller"]
+|author=Joanna Rutkowska
+|role=Security researcher and Qubes founder
+|source=[https://blog.invisiblethings.org/2012/06/27/some-comments-on-operation-high-roller.html Some comments on "Operation High Roller"]
 }}
 
 {{quotation
@@ -105,7 +119,9 @@ What should we - users or admins - do in such a situation? Patch, obviously. But
 That's an inconvenient question for many of us - computer security professionals - to answer. Usually we would mutter something about Raising the Bar(TM), the high costs of targeted attacks, attackers not wanting to burn 0-days, or only nation state actors being able to afford such attacks, and that in case one is on their list of targets, the game is over anyway and no point in fighting. Plus some classic [https://xkcd.com/538/ cartoon].
 
 While the above line of defense might work (temporarily), it really doesn't provide for much comfort, long term, I think. We need better answers and better solutions. This post, together with a recently introduced feature in Qubes OS 3.2 and (upcoming) 4.0, is an attempt to offer such a solution.
-|context=Security researcher and Qubes founder, Joanna Rutkowska: [https://blog.invisiblethings.org/2017/04/26/qubes-compromise-recovery.html Compromise recovery on Qubes OS: individual VMs & full system cases]
+|author=Joanna Rutkowska
+|role=Security researcher and Qubes founder
+|source=[https://blog.invisiblethings.org/2017/04/26/qubes-compromise-recovery.html Compromise recovery on Qubes OS: individual VMs & full system cases]
 }}
 
 "Solution" is a somewhat non-ideal wording in this context. What is offered is not a full solution but rather a mitigation. Specifically, a compromise recovery method using Qubes backup restoration in paranoid mode. This mitigation does not fundamentally alter the broader situation, where attackers generally retain an advantage over defenders.
@@ -126,7 +142,9 @@ However, [[Qubes|Kicksecure for Qubes Template]] and {{whonix_wiki
 
 {{quotation
 |quote=So computer and network security in practice starts at the hardware and firmware underneath the endpoints.
-|context=Security researcher and Qubes founder, Joanna Rutkowska: [https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf Intel x86 considered harmful]
+|author=Joanna Rutkowska
+|role=Security researcher and Qubes founder
+|source=[https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf Intel x86 considered harmful]
 }}
 
 {{quotation
@@ -145,7 +163,9 @@ This raises an interesting question: once we realize firmware, and (some) hardwa
 
 {{quotation
 |quote=...
-|context=Security researcher and Qubes founder, Joanna Rutkowska: [https://blog.invisiblethings.org/papers/2015/state_harmful.pdf State considered harmful, A proposal for a stateless laptop]
+|author=Joanna Rutkowska
+|role=Security researcher and Qubes founder
+|source=[https://blog.invisiblethings.org/papers/2015/state_harmful.pdf State considered harmful, A proposal for a stateless laptop]
 }}
 
 = User Perspectives =
@@ -157,7 +177,7 @@ Qubes forum discussion: [https://forum.qubes-os.org/t/qubes-os-a-reasonably-secu
 Even 'security' alone is not a well defined term, but a process to address your threat model. As that should describe your goals and the things you want to 'protect' from different kind of threat actors.
 [...]
 So it is reasonable secure, as there is no ultimate security. And because it is provides you the best available and feasible soultion to address a lot of security concers related to a desktop computer - but surely not all of them.
-|context=https://forum.qubes-os.org/t/qubes-os-a-reasonably-secure-operating-system/31799/11
+|source=https://forum.qubes-os.org/t/qubes-os-a-reasonably-secure-operating-system/31799/11
 }}
 
 {{quotation
@@ -170,12 +190,12 @@ In the epistomological sense, no. There's no way in hard science to prove you ar
 I assume this is why Qubes OS makes claims that it is a "reasonably secure OS" - not that it is a "secure OS".
 
 It is the unknown flaws that may one day still threaten you, and there is no way to prove there are zero flaws left.
-|context=https://forum.qubes-os.org/t/building-a-fully-immutable-linux-os-image-fully-verified-with-your-own-secure-boot-key/34412/19
+|source=https://forum.qubes-os.org/t/building-a-fully-immutable-linux-os-image-fully-verified-with-your-own-secure-boot-key/34412/19
 }}
 
 {{quotation
 |quote=[..] Note that Qubes OS is a reasonably secure OS, not maximally secure OS. [...]
-|context=https://forum.qubes-os.org/t/more-practical-security-for-qubes-and-more-realistic-threat-model/7349/17
+|source=https://forum.qubes-os.org/t/more-practical-security-for-qubes-and-more-realistic-threat-model/7349/17
 }}
 
 = misc =

@@ -56,7 +56,8 @@ Using SUID instead is also not a suitable alternative. SUID is also a risk. (Hen
 [...]
 
 This is a security trade-off. Disallowing unprivileged use of user namespaces reduces the kernel's attack surface, which mitigates some attacks; but it also disallows some sandboxing techniques, which prevents other attacks from being mitigated. Making <code>bwrap</code> or <code>flatpak-bwrap</code> setuid root also carries some risk: an attacker might be able to exploit vulnerabilities in <code>bwrap</code> to achieve root privilege escalation.
-|context=flatpak wiki, chapter [https://github.com/flatpak/flatpak/wiki/User-namespace-requirements#setuid-bubblewrap Setuid bubblewrap]
+|author=flatpak wiki
+|source=chapter [https://github.com/flatpak/flatpak/wiki/User-namespace-requirements#setuid-bubblewrap Setuid bubblewrap]
 }}
 
 Therefore Kicksecure does not use suid-root bubblewrap.
@@ -64,7 +65,7 @@ Therefore Kicksecure does not use suid-root bubblewrap.
 = Future =
 {{quotation
 |quote=Access to unprivileged user namespaces have become too much of a security threat for Ubuntu. The upstream AppArmor project recently introduced a mechanism 49 to allow the use of unprivileged user namespaces to only those applications that both require the access and are appropriately confined by AppArmor (and to deny access to all other applications)
-|context=[https://discourse.ubuntu.com/t/spec-unprivileged-user-namespace-restrictions-via-apparmor-in-ubuntu-23-10/37626 AppArmor unprivileged user namespace restrictions in Ubuntu 23.10]
+|source=[https://discourse.ubuntu.com/t/spec-unprivileged-user-namespace-restrictions-via-apparmor-in-ubuntu-23-10/37626 AppArmor unprivileged user namespace restrictions in Ubuntu 23.10]
 }}
 
 Kernel parameter <code>kernel.apparmor_restrict_unprivileged_userns=0</code> is unfortunately Ubuntu-specific, hence not re-usable by Kicksecure.

@@ -268,7 +268,7 @@ Do not <code>local -a BASH_REMATCH</code>!
 
 {{quotation
 |quote=Note specifically: <code>Bash sets BASH_REMATCH in the global scope; declaring it as a local variable will lead to unexpected results.</code>
-|context=[https://www.gnu.org/software/bash/manual/bash.html GNU Bash manual]
+|source=[https://www.gnu.org/software/bash/manual/bash.html GNU Bash manual]
 }}
 
 = POSIX array =
@@ -362,7 +362,7 @@ Do not use <code>stecho</code> or <code>stprint</code> here, because <code>find 
 
 {{quotation
 |quote=The starting points in file have to be separated by ASCII NUL characters. Two consecutive NUL characters, i.e., a starting point with a Zero-length file name is not allowed and will lead to an error diagnostic followed by a non-Zero exit code later.
-|context=[https://manpages.debian.org/unstable/findutils/find.1.en.html Debian <code>find</code> man page]
+|source=[https://manpages.debian.org/unstable/findutils/find.1.en.html Debian <code>find</code> man page]
 }}
 
 A single trailing <code>NUL</code> is normal. Two consecutive <code>NUL</code> bytes would mean an empty file name entry, which is invalid.

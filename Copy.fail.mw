@@ -24,7 +24,7 @@ In simple terms, this vulnerability can allow code that is already running as a 
 
 {{quotation
 |quote=If your kernel was built between 2017 and the patch -- which covers essentially every mainstream Linux distribution -- you're in scope.
-|context=[https://copy.fail/ Copy Fail: official disclosure and mitigation]
+|source=[https://copy.fail/ Copy Fail: official disclosure and mitigation]
 }}
 
 * <u>Help wanted:</u> Yes. See [[Copy.fail#Help_Wanted_-_Contribute|Help Wanted - Contribute]].
@@ -61,7 +61,7 @@ What does this break? For the vast majority of systems - nothing measurable.
 * Performance: <code>AF_ALG</code> is a userspace front door to the kernel crypto API. Disabling it does not slow anything that wasn't already calling it; for the things that were, performance falls back to a normal userspace crypto library, which is what almost everything else already does.
 
 For untrusted workloads (containers, sandboxes, CI), block <code>AF_ALG</code> socket creation via seccomp regardless of patch state.
-|context=[https://copy.fail/#mitigation Copy Fail - Mitigation]
+|source=[https://copy.fail/#mitigation Copy Fail - Mitigation]
 }}
 
 The following caution explains why the temporary mitigation should not be treated as risk-free:
@@ -71,7 +71,7 @@ The following caution explains why the temporary mitigation should not be treate
 I'd like to also point out that the copy.fail website may underplay the impact this mitigation has on userspace. It's not the easiest thing in the world to find out everywhere where an AF_ALG socket is opened and then set up in AEAD mode in Debian, but so far I've found that at least bluez, cryptsetup, iwd, and stress-ng contain code that does this, as does a particular test in some Rust code in rustc, firefox-esr, and thunderbird. libkcapi is also a thing, anything that does AEAD with it will be affected. Simply nuking this part of the kernel API from orbit is not a universally safe operation.<br/><br/>
 
 (Note that I've not yet made any of these applications misbehave by applying the mitigation, I tried some experiments with cryptsetup and the results were inconclusive. So this might be safe enough for most people.)
-|context=[https://forums.kicksecure.com/u/arraybolt3 @arraybolt3] quote [https://www.openwall.com/lists/oss-security/2026/04/30/5 Aaron Rainbolt on oss-security]
+|source=[https://forums.kicksecure.com/u/arraybolt3 @arraybolt3] quote [https://www.openwall.com/lists/oss-security/2026/04/30/5 Aaron Rainbolt on oss-security]
 }}
 
 = Technical background =
@@ -88,7 +88,7 @@ This section is intended for advanced users, administrators, developers, and con
 
 {{quotation
 |quote=Ideally, there should be no SUID binaries reachable from the user account, as otherwise significant extra attack surface inside the VM is exposed (dynamic linker, libc startup, portions of Linux kernel including ELF loader, etc.)
-|context=[https://github.com/QubesOS/qubes-issues/issues/2695 Quote] security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
+|source=[https://github.com/QubesOS/qubes-issues/issues/2695 Quote] security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
 }}
 
 [[About|{{project_name_short}}]] has been working towards making SUID unreachable for non-root user accounts by implementing [[SUID_Disabler_and_Permission_Hardener|SUID Disabler and Permission Hardener]], which is part of {{Github_link|

@@ -87,7 +87,7 @@ System DNS has been disabled.
 == Disable All DNS ==
 {{quotation
 |quote=Many applications do actually not use system DNS but their own internal DNS implementation.
-|context = [[DNS_Security#Potential_Obstacles|DNS Security, chapter Potential Obstacles]]
+|source=[[DNS_Security#Potential_Obstacles|DNS Security, chapter Potential Obstacles]]
 }}
 
 = Enabling systemd-resolved =

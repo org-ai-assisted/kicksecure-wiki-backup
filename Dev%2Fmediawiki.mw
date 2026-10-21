@@ -2279,12 +2279,16 @@ Example pre[data-code] : <pre data-code>test pre[data-code]</pre>
 Example Code {{CodeSelect|code={{Quotation
 {{!}}quote=An important quote from a developer
 {{!}}image=Deep-web-1106648640.jpg
-{{!}}context=Name, Position, Link
+{{!}}author=Name
+{{!}}role=Position
+{{!}}source=Link
 }}}}
 
 Example {{Quotation|quote=An important quote from a developer
 |image=Deep-web-1106648640.jpg
-|context=Name, Position, Link
+|author=Name
+|role=Position
+|source=Link
 }}
 
 == ScrollAutoWrapper ==

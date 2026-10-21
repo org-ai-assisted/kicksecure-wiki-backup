@@ -47,7 +47,7 @@ We self-host a copy of balenaEtcher because:
 * It prevents GitHub from serving rogue downloads (targeted or not). We might still get a rogue download ourselves but:
 ** We download balenaEtcher several times from different locations to prevent targeted attacks.
 ** We download balenaEtcher in a limited time window, which might save our users some supply chain issues. If our users were to download balenaEtcher every time, a short-time supply chain attack would definitely affect some of them.
-|context=[https://tails.net/contribute/design/installation_instructions/#index6h1 Tails installation instructions]
+|source=[https://tails.net/contribute/design/installation_instructions/#index6h1 Tails installation instructions]
 }}
 
 {{quotation
@@ -83,14 +83,14 @@ third parties (such as Google, Mixpanel) what image is being installed;
 and even if we did this audit work now, our results would be invalidated
 by every new Etcher release. So it seems we have two options:
 
-|context=[https://gitlab.tails.boum.org/tails/tails/-/issues/16381 intrigeri, Tails developer]
+|source=[https://gitlab.tails.boum.org/tails/tails/-/issues/16381 intrigeri, Tails developer]
 }}
 
 {{quotation
 |quote=After adding MitM to my packet sniffing I can confirm gameindustry's findings that balenaEtcher exfiltrates very sensitive information. For instance, the filename of the image will let Balena know that the user is flashing Tails, full details: [https://gitlab.tails.boum.org/tails/tails/uploads/2bdaec1725d89ededc786212ee768bd3/exfil.json exfil.json]. It also exfiltrates tons of information about the host system to sentry.io, an "app monitoring service", definitely making it uniquely identifiable.
 Disabling the telemetry in its configuration indeed does stop it from exfiltrating the <code>exfil.json</code> from above, but it doesn't do anything about the data sent to sentry.io, which includes the image name, so there is no way to configure balenaEtcher to not leak that Tails is being flashed.
 The good UX of balenaEtcher is not worth this.
-|context=[https://gitlab.tails.boum.org/tails/tails/-/issues/16381 anonym, Tails developer]
+|source=[https://gitlab.tails.boum.org/tails/tails/-/issues/16381 anonym, Tails developer]
 }}
 
 The issue of Telemetry is known by balena, the developer of etcher as per github issues [https://github.com/balena-io/etcher/issues/3784 Telemtery should be opt-in], [https://github.com/balena-io/etcher/issues/2977 Etcher secretly spies on the user without consent.] balena however closed the tickets and no changes have been made.
@@ -103,7 +103,7 @@ This has resulted in bad press for Tails.
 What I wonder about, in the context of Tails, an operating system focused on privacy and security, is why the providers of the Tails Foundation suggest BalenaEtcher as the primary program for creating images of the operating system on their own website. It is absolutely incomprehensible and not only negligent but also contradicts any understanding of security and data privacy.
 
 The Tails Foundation has been contacted in this regard and has been approached for comment.
-|context=[https://www.gameindustry.eu/reviews/balenaetcher/ GameIndustry BalenaEtcher Review and Privacy Analysis]
+|source=[https://www.gameindustry.eu/reviews/balenaetcher/ GameIndustry BalenaEtcher Review and Privacy Analysis]
 }}
 
 See also:
@@ -272,14 +272,14 @@ Without advanced knowledge of OpenPGP, verifying with OpenPGP provides the same 
 None of our personas would have enough knowledge of OpenPGP to use the OpenPGP Web of Trust with confidence.
 
 Providing basic (and never exhaustive) instructions has proven to be very time-consuming to our help desk and technical writers. See [https://gitlab.tails.boum.org/tails/tails/-/issues/17900 #17900].
-|context=[https://tails.net/contribute/design/download_verification/ Tails Design, Download verification]
+|source=[https://tails.net/contribute/design/download_verification/ Tails Design, Download verification]
 }}
 
 {{quotation
 |quote=[...] the huge majority of our users should not even be suggested to do an OpenPGP-based verification.
 We've spent so much time in the past trying to make it doable for them,
 and now I can see why we gave up.
-|context=[https://gitlab.tails.boum.org/tails/tails/-/issues/11785 intrigeri, Tails developer]
+|source=[https://gitlab.tails.boum.org/tails/tails/-/issues/11785 intrigeri, Tails developer]
 }}
 
 == Benefits of Hash Sum Verification of Third-Party Tools in the Absence of Digital Software Signatures ==

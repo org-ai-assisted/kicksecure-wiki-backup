@@ -62,7 +62,7 @@ If you have [https://learn.microsoft.com/en-us/windows/security/application-secu
 === KDE ISO Image Writer ===
 {{quotation
 |quote=The last block was not fully written (-1 of 1,048,576 bytes)!
-|context=KDE ISO Image Writer Error Message
+|author=KDE ISO Image Writer Error Message
 }}
 
 [[File:isoimagewritererror.png|400px|KDE ISO Image Writer Error Message]]

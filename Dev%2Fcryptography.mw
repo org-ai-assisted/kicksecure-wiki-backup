@@ -18,7 +18,7 @@ https://www.schneier.com/blog/archives/2009/07/another_new_aes.html
 |quote=Speed and its security impact
 
 Cryptographic performance problems have frequently caused users to reduce their cryptographic security levels or to turn off cryptography entirely.
-|context=[https://cr.yp.to/highspeed/coolnacl-20120725.pdf The security impact of a new cryptographic library] by well-known, respected cryptographers <ref>
+|source=[https://cr.yp.to/highspeed/coolnacl-20120725.pdf The security impact of a new cryptographic library] by well-known, respected cryptographers <ref>
 * Daniel J. Bernstein (Department of Computer Science, University of Illinois at Chicago, USA)
 * Tanja Lange (Department of Mathematics and Computer Science, Technische Universiteit Eindhoven, Netherlands)
 * Peter Schwabe (Research Center for Information Technology Innovation and Institute of Information Science, Academia Sinica, Taiwan)
@@ -36,17 +36,17 @@ Cryptographic performance problems have frequently caused users to reduce their 
 {{quotation
 |quote=
 Concretely, think about a demo showing that spending a billion dollars on quantum computation can break a thousand X25519 keys. Yikes! We should be aiming for much higher security than that! We don't even want a billion-dollar attack to be able to break one key! Users who care about the security of their data will be happy that we deployed post-quantum cryptography. But are the users going to say "Let's turn off X25519 and make each session a million dollars cheaper to attack"? I'm skeptical. I think users will need to see much cheaper attacks before agreeing that X25519 has negligible security value.
-|context=https://blog.cr.yp.to/20240102-hybrid.html
+|source=https://blog.cr.yp.to/20240102-hybrid.html
 }}
 
 {{quotation
 |quote=Speed drives adoption, Daniel J. Bernstein (djb) probably understand this more than anyone else. And this is what led Adam Langley to decide to either stay on SHA-2 or move to BLAKE2. Is that a good advice? Should we all follow his steps?
-|context=https://cryptologie.net/posts/maybe-you-shouldnt-skip-sha-3/
+|source=https://cryptologie.net/posts/maybe-you-shouldnt-skip-sha-3/
 }}
 
 {{quotation
 |quote=The choice of key size is a tradeoff between the risk of key compromise and performance.
-|context=http://csrc.nist.gov/publications/nistpubs/800-81r1/sp-800-81r1.pdf
+|source=http://csrc.nist.gov/publications/nistpubs/800-81r1/sp-800-81r1.pdf
 }}
 
 * https://iacr.org/archive/pkc2006/39580209/39580209.pdf
@@ -57,7 +57,7 @@ Concretely, think about a demo showing that spending a billion dollars on quantu
 * Are "special" primes dangerous?
 * Are "random" primes dangerous?
 * Are primes required to be 3 mod 4?
-|context=https://cr.yp.to/papers/safecurves-20240809.pdf
+|source=https://cr.yp.to/papers/safecurves-20240809.pdf
 }}
 
 These questions go far beyond 128 vs 256 vs 512 bits of security.

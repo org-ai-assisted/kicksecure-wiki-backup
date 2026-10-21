@@ -13,12 +13,12 @@ Use [https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe <code
 
 {{Quotation
 |quote=Authenticode employs digital signature technology to ensure the authorship and integrity of binary data, such as installable software.
-|context=[https://learn.microsoft.com/en-us/windows/win32/seccrypto/time-stamping-authenticode-signatures Microsoft Windows website]
+|source=[https://learn.microsoft.com/en-us/windows/win32/seccrypto/time-stamping-authenticode-signatures Microsoft Windows website]
 }}
 
 {{Quotation
 |quote=Authenticode enables vendors of downloadable executable code (like plug-ins or ActiveX controls) to attach digital certificates to their products. This reassures end users about the code's source and confirms it hasn't been altered. It allows users to decide whether to accept or reject online software components before downloading.
-|context=[https://learn.microsoft.com/en-us/windows/win32/secgloss/a-gly Microsoft Security Glossary]
+|source=[https://learn.microsoft.com/en-us/windows/win32/secgloss/a-gly Microsoft Security Glossary]
 }}
 
 = Install SignTool =

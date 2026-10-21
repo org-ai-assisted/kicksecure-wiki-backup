@@ -36,7 +36,7 @@ In summary, verifying digital signatures is a crucial step in maintaining the se
 = Unfixable Documentation Usability Issue =
 {{quotation
 |quote=Could you provider easier digital signature verification documentation please?
-|context=Common user support request. (Paraphrased.)
+|author=Common user support request. (Paraphrased.)
 }}
 
 * <u>Inherently difficult topic:</u> Non-technical users often struggle with these concepts. This is complicated stuff, and as early as 1999 the [https://people.eecs.berkeley.edu/~tygar/papers/Why_Johnny_Cant_Encrypt/USENIX.pdf Why Johnny Can't Encrypt: A Usability Evaluation of PGP 5.0] paper was published.
@@ -48,7 +48,7 @@ In summary, verifying digital signatures is a crucial step in maintaining the se
 = Verification Commands Cannot Replace Key Verification =
 {{quotation
 |quote=Why not just provide the verification commands or a script to copy and paste?
-|context=Common user support request. (Paraphrased.)
+|author=Common user support request. (Paraphrased.)
 }}
 
 * <u>Copy and paste is not enough:</u> If asking over https/onion (such as in forums or by e-mail) is required, then copying and pasting these commands is not helpful because the answer is complicated.
@@ -235,7 +235,8 @@ Due to the complexity of this issue and very low user awareness, it is unlikely 
 {{quotation
 |quote=OpenPGP signatures<br/><br/>
 <b>Unless the user knows how to verify the signing key through the OpenPGP Web of Trust,</b> this technique ultimately relies on a correct download of the signing key and signature, and thus on HTTPS.
-|context=Tails: [https://tails.net/contribute/design/download_verification/ Design: Download verification]
+|author=Tails
+|source=[https://tails.net/contribute/design/download_verification/ Design: Download verification]
 }}
 
 {{quotation
@@ -264,7 +265,8 @@ We should take a step back and reflect on the broader strategy:
 * Shall we find better ways of telling people that they are on their own?
 
 This is on our 2020-2022 roadmap.
-|context=Tails: Development ticket: [https://gitlab.tails.boum.org/tails/tails/-/issues/17900 Remove our OpenPGP verification instructions]
+|author=Tails
+|source=Development ticket: [https://gitlab.tails.boum.org/tails/tails/-/issues/17900 Remove our OpenPGP verification instructions]
 }}
 
 == Information Security Level ==

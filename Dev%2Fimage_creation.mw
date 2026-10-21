@@ -11,7 +11,7 @@ Installing GRUB onto a disk image is a bit of a black art.
 }}
 {{quotation|quote=
 Installing GRUB onto a disk image is a bit of a black art. I haven't found any good documentation for it. This plugin is written based on de-ciphering the build_openstack_image script. Here is an explanation of what I _THINK_ is happening.
-|context=[https://gitlab.com/larswirzenius/vmdb2/-/blob/main/vmdb/plugins/grub_plugin.py Lars Wirzenius, Debian Developer]
+|source=[https://gitlab.com/larswirzenius/vmdb2/-/blob/main/vmdb/plugins/grub_plugin.py Lars Wirzenius, Debian Developer]
 }}
 
 {{quotation|quote=
@@ -30,7 +30,7 @@ Further, there's some configuration tweaking we need to do. See the code. Don't 
 For cleanliness, we also undo any bind mounts into the chroot. Don't want to leave them in case they cause trouble.
 
 Note that this is currently assuming that UEFI and either the amd64 (a.k.a. x86_64) or arm64 (a.k.a. aarch64) architectures are being used. These should probably not be hardcoded. Patch welcome.
-|context=[https://gitlab.com/larswirzenius/vmdb2/-/blob/main/vmdb/plugins/grub_plugin.py Lars Wirzenius, Debian Developer]
+|source=[https://gitlab.com/larswirzenius/vmdb2/-/blob/main/vmdb/plugins/grub_plugin.py Lars Wirzenius, Debian Developer]
 }}
 
 {{quotation
@@ -49,7 +49,8 @@ really is. Read how ARM systems boot, what UEFI really means,
 how UEFI binaries interact with firmware, how openSUSE is
 going to move to UEFI based boot on ARM and how UEFI
 enables convergence of the Enterprise and Embedded markets.
-|context=PDF: https://www.bsdforen.de/attachments/uefi-on-top-of-u-boot-pdf.4528/
+|author=PDF
+|source=https://www.bsdforen.de/attachments/uefi-on-top-of-u-boot-pdf.4528/
 }}
 
 Example projects to demonstrate technical challenges:

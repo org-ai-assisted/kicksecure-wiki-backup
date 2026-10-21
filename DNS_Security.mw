@@ -117,7 +117,8 @@ https://community.cloudflare.com/t/does-the-cloudflared-dns-client-locally-verif
 ** DNSSEC is a low priority for <code>systemd-resolved</code> developers <ref>
 {{quotation
 |quote=But yes, DNSSEC issues are not a high priority for us at the moment. Other DNS issues are more relevant.
-|context=July 2023: [https://github.com/systemd/systemd/issues/25676#issuecomment-1634810897 Lennart Poettering, systemd developer]
+|author=July 2023
+|source=[https://github.com/systemd/systemd/issues/25676#issuecomment-1634810897 Lennart Poettering, systemd developer]
 }}
 </ref>;
 ** has a history of DNSSEC related security issues <ref>

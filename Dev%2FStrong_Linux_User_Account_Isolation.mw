@@ -24,7 +24,8 @@ We are aiming to provide a comprehensive, rather complete overview. There are ma
 
 '''Example''': {{Quotation
 |quote=The solution to this is simple: you shouldn't be logging in on the console as root in the first place! (What, are you crazy or something?). Proper Unix hygiene dictates that you should log in as yourself, and su to root as necessary. People who spend their day logged in as root are just begging for disaster.
-|context=XScreenSaver FAQ, answer to "[https://www.jwz.org/xscreensaver/faq.html#root-lock When I'm logged in as root, XScreenSaver won't lock my screen!]"
+|author=XScreenSaver FAQ
+|source=answer to "[https://www.jwz.org/xscreensaver/faq.html#root-lock When I'm logged in as root, XScreenSaver won't lock my screen!]"
 }}
 
 Sounds quite important, right? Is it? What kind of disaster awaits if being logged in as root? No automatic security disaster. Many applications (such as Kate; Wayland) refuse to run as root. Due to this convention, it is best to go with the flow (what most Linux distributions do) and avoid being logged in as root. As many actions as possible should be done with a non-root user.
@@ -59,7 +60,9 @@ In this chapter we would like to introduce the topic of user account isolation m
 ** Log in as root (<code>sudo su</code>)
 ** Execute individual commands with root rights (<code>sudo command</code>).
 * '''Insight from sudo's co-author:''' {{Quotation
-|context=Bob Coggeshall, co-author of sudo <ref>Bob Coggeshall is mentioned on [https://www.sudo.ws/about/history/ sudo history].</ref>, [https://security.stackexchange.com/a/233042 complete answer here]
+|author=Bob Coggeshall
+|role=co-author of sudo
+|source=[https://security.stackexchange.com/a/233042 complete answer here] <ref>Bob Coggeshall is mentioned on [https://www.sudo.ws/about/history/ sudo history].</ref>
 |quote=I am the co-author of sudo. It was written in the early 80's specifically to address a need to protect the integrity of a shared resource (A VAX-11/750 running BSD UNIX) from its users (the faculty of the CS Department at SUNY/Buffalo). At the time, the only other option was 'su' which required everyone share a single password. Had a calamity occurred it would have been difficult or impossible to sift through the forensics ...
 }}
 
@@ -375,7 +378,7 @@ Once the user logs out, the console device's permissions revert, preventing proc
 {{quotation
 |quote=This is about where the process is started and what has connected as controlling terminal. It isn't anything Qubes specific. A non-privileged process cannot inject characters into a separate session (let's forget about X11 breaking all this assumptions, as we are talking about non-X11 session), especially if it's of a different user, similarly as it cannot write to files it doesn't have write permission. to. You can think of it as a write access to <code>/dev/tty</code> (or <code>/dev/hvc0</code> in this case). When you login on <code>/dev/hvc0</code>, login process (running as root) will setup permission to <code>/dev/hvc0</code> and also pass an open FD to it to your shell. Then, you (user, and that shell) will be able to interact with <code>/dev/hvc0</code> and specifically run commands connected to it. If you don't login there, login process will not set the permissions, so you won't have access.
 This does assume kernel enforced permissions are effective, but as we are talking here about in-VM account isolation only, it's a reasonable assumption.
-|context=[https://github.com/QubesOS/qubes-issues/issues/2695#issuecomment-521646366 Comment by Marek Marczykowski-G&oacute;recki, Qubes lead developer]
+|source=[https://github.com/QubesOS/qubes-issues/issues/2695#issuecomment-521646366 Comment by Marek Marczykowski-G&oacute;recki, Qubes lead developer]
 }}
 
 This raises the question of how it is possible to switch between virtual consoles using a keypress such as Ctrl+Alt+Fn, or by using a command such as <code>chvt</code>. Virtual console switching is done by one of two things - the kernel virtual console code itself, or a program that can control any one of the virtual console devices.
@@ -471,7 +474,7 @@ https://github.com/Kicksecure/security-misc/pull/282
 
 {{quotation
 |quote=Many programs use $TMPDIR for storing temporary files. Not all of them are good at securing the permissions of those files. libpam-tmpdir sets $TMPDIR and $TMP for PAM sessions and sets the permissions quite tight. This helps system security by having an extra layer of security, making such symlink attacks and other /tmp based attacks harder or impossible
-|context=Debian package [https://packages.debian.org/libpam-tmpdir libpam-tmpdir - automatic per-user temporary directories]
+|author=Debian package [https://packages.debian.org/libpam-tmpdir libpam-tmpdir - automatic per-user temporary directories]
 }}
 
 <u>Discussion:</u>
@@ -534,7 +537,9 @@ zsh: exit 126   sudo nano
 ** <u>General limitations:</u> Although <code>run0</code> is likely more secure than <code>sudo</code> in some ways, <code>run0</code> has a number of limitations that are not immediately obvious and may make it unsuitable for use in some situations. <ref>
 {{quotation
 |quote=It's larger than doas. Way larger. run0 (really systemd-run) is 2642 lines long (including newlines and whatnot), and is heavily tied into the systemd codebase, which is about 1.3 million lines of C code. It's unclear how much of that could be used to exploit run0, but some of it quite possibly can. doas on the other hand is relatively isolated (the only library it uses beyond the C standard library is PAM), and is only 1,850 lines long. Ergo, less attack surface.
-|context=Kicksecure developer, Aaron Rainbolt, [https://forums.whonix.org/t/replace-sudo-with-doas/17482/28 forum post]
+|author=Aaron Rainbolt
+|role=Kicksecure developer
+|source=[https://forums.whonix.org/t/replace-sudo-with-doas/17482/28 forum post]
 }}
 </ref><ref>
 [https://github.com/QubesOS/qubes-issues/issues/10780#issuecomment-4139112072 GitHub issue comment]
@@ -548,7 +553,7 @@ zsh: exit 126   sudo nano
 *** <u>Polkit helper SUID binary:</u> Because <code>run0</code> uses Polkit for authorization, a SUID binary (<code>/usr/lib/polkit-1/polkit-agent-helper-1</code>) is used as part of the application launch process. This does not directly undo the benefits of <code>run0</code> itself not being SUID, as the SUID code is likely processing much less untrusted data, but many of the issues of SUID binaries in general still apply.
 {{quotation
 |quote=Ideally, there should be no SUID binaries reachable from the user account, as otherwise significant extra attack surface inside the VM is exposed (dynamic linker, libc startup, portions of Linux kernel including ELF loader, etc.)
-|context=[https://github.com/QubesOS/qubes-issues/issues/2695#issuecomment-301320361 comment on Qubes ticket Automate vm sudo authorization setup] by security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
+|source=[https://github.com/QubesOS/qubes-issues/issues/2695#issuecomment-301320361 comment on Qubes ticket Automate vm sudo authorization setup] by security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
 }}
 * <u>{{project_name_short}} default behavior:</u> In {{project_name_short}}, <code>run0</code> is not usable in user sessions by default, because <code>/usr/lib/polkit-1/polkit-agent-helper-1</code> is inaccessible to accounts other than <code>sysmaint</code> when <code>user-sysmaint-split</code> is installed.
 ** <u>When usable:</u> <code>run0</code> is usable when booted into [[sysmaint]] session.
@@ -772,7 +777,7 @@ https://en.wikipedia.org/wiki/Setuid
 
 {{quotation
 |quote=Ideally, there should be no SUID binaries reachable from the user account, as otherwise significant extra attack surface inside the VM is exposed (dynamic linker, libc startup, portions of Linux kernel including ELF loader, etc.)
-|context=[https://github.com/QubesOS/qubes-issues/issues/2695#issuecomment-301320361 comment on Qubes ticket Automate vm sudo authorization setup] by security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
+|source=[https://github.com/QubesOS/qubes-issues/issues/2695#issuecomment-301320361 comment on Qubes ticket Automate vm sudo authorization setup] by security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
 }}
 
 To address this issue, [[SUID_Disabler_and_Permission_Hardener|SUID Disabler and Permission Hardener]] has been created.
@@ -809,7 +814,8 @@ Motivation of user/root isolation in Qubes? In the past, there have been Xen vul
 
 {{quotation
 |quote=All three vulnerabilities have the potential to enable a guest virtual machine to break out of the hypervisor isolation. However, in order to exploit this vulnerability, an attacker would need to be running code in kernel mode of one or more VMs on the system. Any system that allows untrusted users to run arbitrary kernels will be particularly vulnerable.
-|context=Xen Project: [https://xenproject.org/blog/updates-on-xsa-213-xsa-214-and-xsa-215/ Updates on XSA-213, XSA-214 and XSA-215]
+|author=Xen Project
+|source=[https://xenproject.org/blog/updates-on-xsa-213-xsa-214-and-xsa-215/ Updates on XSA-213, XSA-214 and XSA-215]
 }}
 
 [https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-030-2017.txt Qubes Security Bulletin #30]

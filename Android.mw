@@ -158,7 +158,7 @@ Note: <u>Underline</u> added.
 
 {{quotation
 |quote=Abstract -- Smartphones and tablets have become prime targets for malware, due to the valuable private and corporate information they hold. While <u>Anti-Virus (AV) program</u> may successfully detect malicious applications (apps), <u>they remain ineffective against low-level rootkits</u> that evade detection mechanisms by masking their own presence.
-|context=[https://arxiv.org/pdf/1512.04116 JoKER: Trusted Detection of Kernel Rootkits in Android Devices via JTAG Interface]
+|source=[https://arxiv.org/pdf/1512.04116 JoKER: Trusted Detection of Kernel Rootkits in Android Devices via JTAG Interface]
 }}
 
 <div class="toccolours mw-collapsible mw-collapsed">
@@ -248,7 +248,8 @@ Phone vendors often treat JTAG as a security risk, so it is commonly disabled or
 |quote=Turn Off JTAG by Default<br/>
 
 To minimize security risks, JTAG capabilities should be disabled by default in production systems or end-user devices. This precautionary measure reduces the potential attack surface by ensuring that the JTAG interface cannot be exploited unless specifically enabled for essential testing or debugging purposes. For instance, manufacturers can implement a system where JTAG is only activated temporarily during authorized maintenance activities, thereby protecting devices from unauthorized access.
-|context=ACL Digital: [https://www.acldigital.com/blogs/jtag-technology-security-guide Protect and Validate Essential JTAG Practices for Electronics]
+|author=ACL Digital
+|source=[https://www.acldigital.com/blogs/jtag-technology-security-guide Protect and Validate Essential JTAG Practices for Electronics]
 }}
 
 However, JTAG can also be used for security analysis.
@@ -257,7 +258,7 @@ However, JTAG can also be used for security analysis.
 |quote=Could JTAG be used for security analysis?<br/>
 
 Yes, JTAG can be utilized for security analysis purposes. By accessing a device's internal state via its JTAG interface, security researchers can scrutinize firmware, identify potential vulnerabilities, and assess the effectiveness of security measures. This analysis may involve examining memory contents, identifying unauthorized access points, and assessing the resilience of cryptographic implementations. JTAG provides valuable insights into a device's security posture, aiding in the development of robust defenses against potential threats and exploits.
-|context=[https://www.lenovo.com/us/en/glossary/what-is-jtag Lenovo: What is JTAG?]
+|source=[https://www.lenovo.com/us/en/glossary/what-is-jtag Lenovo: What is JTAG?]
 }}
 
 The research paper acknowledges the awkwardness of requiring JTAG access.
@@ -278,7 +279,8 @@ On many Android devices, deep investigation (including searching for sophisticat
 |quote=Android [...]<br/>
 
 security mechanisms such as application sandboxing, encryption, and file-based access controls pose challenges to forensic data acquisition
-|context=International Journal of Forensic Science: [https://rfppl.co.in/subscription/upload_pdf/vinay-chauhan-sir-1745219615.pdf Forensic Techniques for Android Devices Using Logical Extraction and Temporary Root Methods], Vinay Chauhan, Neeraj Kumar, et al. Forensic Techniques for Android Devices Using Logical Extraction and Temporary Root Methods. Int Jr of Forensic Sci. 2025; 8(1): 51-55.
+|author=International Journal of Forensic Science
+|source=[https://rfppl.co.in/subscription/upload_pdf/vinay-chauhan-sir-1745219615.pdf Forensic Techniques for Android Devices Using Logical Extraction and Temporary Root Methods], Vinay Chauhan, Neeraj Kumar, et al. Forensic Techniques for Android Devices Using Logical Extraction and Temporary Root Methods. Int Jr of Forensic Sci. 2025; 8(1): 51-55.
 }}
 
 <div class="toccolours mw-collapsible mw-collapsed">
@@ -463,7 +465,8 @@ On stock Android, many techniques needed to independently check the whole device
 | &#x26A0;&#xFE0F; Limited. <ref>
 {{quotation
 |quote=Managing expectations: When reviewing a device, you may find no traces of known threats. While this is a positive signal, it doesn't definitively mean the device hasn't been compromised. Even after thorough manual analysis, various factors may limit the effectiveness of log-based forensics. If there are strong suspicions of compromise (for example, a threat notification from a platform), it is advisable to consider combining log-based methods with other forensic techniques mentioned earlier.
-|context=[https://forensics.socialtic.org/en/index.html Documentation repository on consensual digital forensics for the defense of Human Rights]: [https://forensics.socialtic.org/en/explainers/03-explainer-log-forensics-android/index.html Explainer: Introduction to log-based forensics on Android devices]
+|author=[https://forensics.socialtic.org/en/index.html Documentation repository on consensual digital forensics for the defense of Human Rights]
+|source=[https://forensics.socialtic.org/en/explainers/03-explainer-log-forensics-android/index.html Explainer: Introduction to log-based forensics on Android devices]
 }}
 </ref>
 |-
@@ -496,7 +499,8 @@ Note: <u>Underline</u> added. <b>Bold</b> added.
 <u>Unfortunately Android devices provide much less observability than their iOS cousins. <b>Android stores very little diagnostic information useful to triage potential compromises</b>, and because of this mvt-android capabilities are limited as well.</u>
 
 However, not all is lost.
-|context=[https://mvt.re Mobile Verification Toolkit]: [https://docs.mvt.re/en/latest/android/methodology/ Methodology for Android forensic]
+|author=[https://mvt.re Mobile Verification Toolkit]
+|source=[https://docs.mvt.re/en/latest/android/methodology/ Methodology for Android forensic]
 }}
 
 {{quotation
@@ -511,13 +515,14 @@ This and all previous investigations demonstrate how attacks against mobile devi
 <u>While iOS devices provide at least some useful diagnostics, historical records are scarce and easily tampered with. Other devices provide little to <b>no help conducting consensual forensics analysis.</b></u> Although much can be done to improve the security posture of mobile devices and mitigate the risks of attacks such as those documented in this report, even more could be achieved by improving the ability for device owners and technical experts to perform regular checks of the system's integrity.
 
 Therefore, <u>Amnesty International strongly encourages  device vendors to explore options to make their devices more auditable, without of course sacrificing any security and privacy protections already in place.</u> Platform developers and phone manufacturers should regularly engage in conversations with civil society to better understand the challenges faced by HRDs, who are often under-represented in cybersecurity debates.
-|context=[https://www.amnesty.org/ Amnesty International]'s [https://securitylab.amnesty.org/tools-and-guides/ security labs]: [https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/ Forensic Methodology Report: How to catch NSO Group's Pegasus]
+|author=[https://www.amnesty.org/ Amnesty International]'s [https://securitylab.amnesty.org/tools-and-guides/ security labs]
+|source=[https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/ Forensic Methodology Report: How to catch NSO Group's Pegasus]
 }}
 
 = Resources =
 {{quotation
 |quote=Bootloader lock. A locked bootloader prevents the loading and execution of any code other than that signed by the device manufacturer. In order to flash (or boot into) a custom image such as a custom recovery with the ability to access and image the data partition, one must first unlock the bootloader. This, in turn, would immediately destroy the cryptographic keys used to encrypt the data partition, and wipe the data, making official bootloader unlock a bad strategy for the purpose of physical acquisition.
-|context=[https://blog.elcomsoft.com/2017/10/ios-vs-android-physical-data-extraction-and-data-protection-compared/ Elcomsoft: iOS vs. Android physical data extraction and data protection compared]
+|source=[https://blog.elcomsoft.com/2017/10/ios-vs-android-physical-data-extraction-and-data-protection-compared/ Elcomsoft: iOS vs. Android physical data extraction and data protection compared]
 }}
 * [https://www.forensicfocus.com/articles/imaging-locked-motorola-devices-via-bootloader-exploit/ Forensic Focus: Imaging locked Motorola devices via bootloader exploit]
 

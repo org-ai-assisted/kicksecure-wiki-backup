@@ -13,7 +13,7 @@ Enable and disable USBGuard on Kicksecure.
 = Introduction =
 {{quotation
 |quote=USBGuard [...] helps to protect your computer against rogue USB devices (a.k.a. BadUSB) by implementing basic whitelisting and blacklisting capabilities based on device attributes.
-|context=[https://usbguard.github.io/ USBGuard Homepage]
+|source=[https://usbguard.github.io/ USBGuard Homepage]
 }}
 
 Untrusted USB devices can pose a substantial threat in certain situations. Adversaries can sometimes insert USB devices while a victim is away from their computer, or replace legitimate USB devices with lookalikes. A common attack is to plug a device into a victim's system that injects a pre-programmed keystroke sequence upon insertion. This keystroke sequence runs arbitrary code on the device (for instance, by opening a terminal and then typing shell commands into it), and the attacker leverages this to download and install a more useful payload such as a remote access trojan or information stealer. <ref>

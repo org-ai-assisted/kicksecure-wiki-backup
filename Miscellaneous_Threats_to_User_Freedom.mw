@@ -211,7 +211,8 @@ For most device classes (phones, tablets, TVs), the freedom of general computing
 
 {{quotation
 |quote=Restricted Boot takes control of the computer away from the user and puts it in the hands of someone else.
-|context=Free Software Foundation: [https://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/whitepaper-web?utm_source=chatgpt.com Free Software Foundation recommendations for free operating system distributions considering Secure Boot]
+|author=Free Software Foundation
+|source=[https://www.fsf.org/campaigns/secure-boot-vs-restricted-boot/whitepaper-web?utm_source=chatgpt.com Free Software Foundation recommendations for free operating system distributions considering Secure Boot]
 }}
 
 Desktop computers are under attack too with [https://www.fsf.org/campaigns/campaigns/secure-boot-vs-restricted-boot/ Microsoft's Restricted Boot ("Secure Boot")] ([https://www.fsf.org/campaigns/campaigns-summaries#secureboot summary]) feature. Restricted Boot did not prevent booting alternative operating systems yet on the PC (Intel/AMD64 architecture), but novice users must either use operating systems whose bootloaders were permitted by Microsoft (suddenly Microsoft is in control of which operating system can run) or click through scary security warnings when disabling the restricted boot feature in the BIOS through a procedure that is complicated for non-technical users. There is also the option of deploying one's own keys, which is even more complicated. The actual security of restricted boot in the real world has turned out to be worthless since centralized keys/signing will always be vulnerable to secret leaks. <ref>
@@ -229,7 +230,7 @@ But the PC market (Intel/AMD64 architecture) is shrinking and gradually being re
 
 {{quotation
 |quote=But concentrating on these problems misses the wider point. The x86 market remains one where users are able to run whatever they want, but the x86 market is shrinking. Users are purchasing tablets and other ARM-based ultraportables. Some users are using phones as their primary computing device. In contrast to the x86 market, Microsoft's policies for the ARM market restrict user freedom. Windows Phone and Windows RT devices are required to boot only signed binaries, with no option for the end user to disable the signature validation or install their own keys. While the underlying technology is identical, this differing set of default policies means that Microsoft's ARM implementation is better described as Restricted Boot. The hardware vendors and Microsoft define which software will run on these systems. The owner gets no say.
-|context=https://mjg59.dreamwidth.org/23817.html
+|source=https://mjg59.dreamwidth.org/23817.html
 }}
 
 See also [[Dev/Secure_Boot|Secure Boot (developers)]].
@@ -312,7 +313,7 @@ The [https://www.gnu.org/licenses/gpl-3.0.en.html GPL] has led significant corpo
 
 {{Quotation
 |quote="Free software," like free societies, has its enemies. Microsoft has waged a war against the GPL, warning whoever will listen that the GPL is a "dangerous" license.
-|context=[https://www.gnu.org/doc/fsfs3-hardcover.pdf Free Software, Free Society (fsfs3)] page 8
+|source=[https://www.gnu.org/doc/fsfs3-hardcover.pdf Free Software, Free Society (fsfs3)] page 8
 }}
 
 === Apple ===
@@ -320,7 +321,7 @@ The [https://www.gnu.org/licenses/gpl-3.0.en.html GPL] has led significant corpo
 
 {{Quotation
 |quote= Apple is very hostile to the GNU GPL, Apple is directly and indirectly trying to pressure people not defend the users freedom. Please join us to standing up to apple.
-|context= [https://www.youtube.com/watch?v=n9YDz-Iwgyw&t=1641s Reclaim your freedom with free libre software now] 27:23
+|source=[https://www.youtube.com/watch?v=n9YDz-Iwgyw&t=1641s Reclaim your freedom with free libre software now] 27:23
 }}
 
 ==Promoting Non-Copyleft Licenses==
@@ -331,7 +332,7 @@ The key distinction between copyleft and non-copyleft licenses can be summarized
 
 {{Quotation
 |quote= Copyleft licenses such as the GNU GPL insist that modified versions of the program must be free software as well. Non-copyleft licenses do not insist on this.
-|context= [https://www.gnu.org/licenses/bsd.html The BSD License Problem]
+|source=[https://www.gnu.org/licenses/bsd.html The BSD License Problem]
 }}
 
 ==Examples of big corporations benefiting from this vulnerability==
@@ -346,7 +347,7 @@ IBM utilizes Apache server (Freedom Software) to create non-freedom IBM HTTP Ser
 
 {{Quotation
 |quote=IBM HTTP Server is based on Apache HTTP Server 2.4.12, with additional fixes.
-|context=[https://www.ibm.com/docs/en/ibm-http-server/9.0.5?topic=overview-key-differences-from-apache-http-server Key differences from the Apache HTTP Server]
+|source=[https://www.ibm.com/docs/en/ibm-http-server/9.0.5?topic=overview-key-differences-from-apache-http-server Key differences from the Apache HTTP Server]
 }}
 
 Richard Stallman is addressing the issue of [https://www.youtube.com/watch?v=n9YDz-Iwgyw&t=1461s using weak licenses].
@@ -357,7 +358,7 @@ After profiting from the non-copyleft license of Android (except the kernel) and
 
 {{Quotation
 |quote=There are rumors about Google wanting to change the kernel on Android. There is another Google Kernel Project [https://en.wikipedia.org/wiki/Fuchsia_(operating_system) Fuchsia]
-|context=[https://www.youtube.com/watch?v=2JZ7l0LdkDs&t=1190s John Sullivan, Executive Director of FSF in an Interview with Bryan Lunduke in 2017] 19:50
+|source=[https://www.youtube.com/watch?v=2JZ7l0LdkDs&t=1190s John Sullivan, Executive Director of FSF in an Interview with Bryan Lunduke in 2017] 19:50
 }}
 
 So, it's very important to license your software carefully and make wise choices. A Copyleft license is recommended <ref>
@@ -537,7 +538,7 @@ Without root access, it's not really Free Software (as in freedom).
 
 {{Quotation
 |quote=The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
-|context=[https://www.gnu.org/philosophy/free-sw.en.html GNU Project: Definition of Free Software, What is Free Software?]
+|source=[https://www.gnu.org/philosophy/free-sw.en.html GNU Project: Definition of Free Software, What is Free Software?]
 }}
 
 Having "root" or "administrator" access means you have full control over a system. You can install, modify, or remove software; change system settings; and access all files, processes, and network traffic. If you don't have full control over the environment in which the software runs, then the freedoms given by the software license are somewhat moot. Android (forks) might meet the legal threshold of being Free Software but not in spirit.

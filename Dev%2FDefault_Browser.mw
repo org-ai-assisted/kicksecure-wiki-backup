@@ -135,7 +135,7 @@ There may be technical solutions for all of this, but making the default browser
 
 {{quotation
 |quote=Keeping the Firefox branding and improving upon it might be more user-friendly than shipping unpopular brand browsers.
-|context={{Github_link|
+|author={{Github_link|
 https://github.com/Kicksecure/security-misc/issues/192#issuecomment-1910675642
 }}
 }}
@@ -159,7 +159,7 @@ https://github.com/Kicksecure/security-misc/issues/192#issuecomment-1910675642
 
 {{quotation
 |quote=You must enable DRM to play some audio or video on this page. [https://support.mozilla.org/en-US/kb/enable-drm Learn more] <code>[Enable DRM]</code>
-|context=Firefox when visiting a DRM test website
+|author=Firefox when visiting a DRM test website
 }}
 
 '''Other:'''
@@ -215,7 +215,7 @@ Firefox long had functionality considered spyware by many people. Here are some 
 |quote=So they will sell your personal data, just anonymized which we know doesn't really work.
 
 OHTTPS requires you to trust third parties.
-|context=https://www.reddit.com/r/firefox/comments/1iznn90/in_response_to_people_saying_mozilla_is_removing/
+|source=https://www.reddit.com/r/firefox/comments/1iznn90/in_response_to_people_saying_mozilla_is_removing/
 }}
 
 === Firefox Miscellaneous ===
@@ -230,7 +230,7 @@ Firefox ESR might be less secure than Firefox stable. <ref>
 
 {{quotation
 |quote=Over time the ESR will be less secure than the regular release of Firefox, as new functionality will not be added at the same pace as Firefox, and only high-risk/impact security patches will be backported. It is important that organizations deploying this software understand and accept this.
-|context=https://wiki.mozilla.org/Enterprise/Firefox/ExtendedSupport:Proposal#Risks
+|source=https://wiki.mozilla.org/Enterprise/Firefox/ExtendedSupport:Proposal#Risks
 }}
 
 A newer statement or research could not be found at time of writing.
@@ -292,7 +292,8 @@ judgment to achieve the same quality as the official Firefox binaries.
 In case of derivatives of Debian, Firefox branding can be used as long
 as the patches applied are in the same category as described above.
 Ubuntu having a different packaging, this does not apply to that distribution.
-|context=Debian issue tracker, [https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=815006 Renaming Iceweasel to Firefox]
+|author=Debian issue tracker
+|source=[https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=815006 Renaming Iceweasel to Firefox]
 }}
 
 Opinion by a non-lawyer:
@@ -303,13 +304,13 @@ The phrasing <code>can be used as long as the patches applied are in the same ca
 
 {{quotation
 |quote=Following a trademark violation report ([https://github.com/portapps/phyrox-portable/issues/11 #11]) from Mozilla, Firefox portable has been named Phyrox portable on Portapps. Nothing changes except its name.
-|context=[https://github.com/portapps/phyrox-portable phyrox-portable]
+|source=[https://github.com/portapps/phyrox-portable phyrox-portable]
 }}
 
 {{quotation
 |quote=
 But even modest changes to preferences (such as whether "Know Your Rights" information is displayed to users) are sufficient to violate our policy against distributing modified versions of Mozilla software with our trademarks. Of course, end-users may choose to change preferences and settings in Firefox. But we don't allow others to distribute unofficial versions of "Firefox" with modified configurations or preferences.
-|context=[https://github.com/portapps/phyrox-portable/issues/11#issuecomment-550461232 phyrox-portable published an e-mail from a Mozilla attorney.]
+|source=[https://github.com/portapps/phyrox-portable/issues/11#issuecomment-550461232 phyrox-portable published an e-mail from a Mozilla attorney.]
 }}
 
 Does this apply to Linux distributions that is not really primarily about distributing Firefox? Probably yes, since Mozilla had also a past conflict with Debian.
@@ -319,7 +320,7 @@ Does this apply to Linux distributions that is not really primarily about distri
 Changes requiring Mozilla's prior written permission include (but are not limited to):
 
 * Changing the default home page or adding bookmarks,
-|context=[https://www.mozilla.org/en-US/foundation/trademarks/distribution-policy/ Mozilla Trademark Distribution Policy]
+|source=[https://www.mozilla.org/en-US/foundation/trademarks/distribution-policy/ Mozilla Trademark Distribution Policy]
 }}
 
 Potentially also [[#LibreFox|Mozilla vs LibreFox]] had a trademark conflict.
@@ -876,7 +877,8 @@ LibreFox, from which LibreWolf was forked, also had a IJWY (I Just Want You To S
 
 {{quotation
 |quote=This is a set of settings that aim to remove all the server links embedded in Firefox and other calling home functions in the purpose of blocking un-needed connections. The objective is zero unauthorized connection (ping/telemetry/Mozilla/Google...).
-|context=LibreFox, [https://github.com/intika/Librefox/tree/master?tab=readme-ov-file#ijwy-i-just-want-you-to-shut-up IJWY (I Just Want You To Shut Up)] feature
+|author=LibreFox
+|source=[https://github.com/intika/Librefox/tree/master?tab=readme-ov-file#ijwy-i-just-want-you-to-shut-up IJWY (I Just Want You To Shut Up)] feature
 }}
 
 Last mention of IJWY in LibreWolf's settings file has been removed in this git diff.
@@ -901,7 +903,7 @@ LibreWolf lags behind Firefox a few days up to 1 week.
 
 {{quotation
 |quote=Regarding Librewolf's slow updates, I think this issue has been very greatly exaggerated, having used it as one of my browsers for almost over 30 months, I personally do not recall it ever really being more than one week behind Firefox, usually it is only a couple working days at worst.
-|context={{Github_link|
+|author={{Github_link|
 https://github.com/Kicksecure/security-misc/issues/192#issuecomment-1910407278
 }}
 }}
@@ -1060,7 +1062,7 @@ PureOS previously maintained PureBrowser, but it got deprecated due to the too h
 {{quotation
 |quote=
 There seem to be lots projects out there to "unMozilla" Firefox (removing things like DRM, telemetry, Pocket integration, etc) but it's getting harder to do that with every Firefox release. That's what we were up against with PureBrowser and it unfortunately became too daunting of a task (even with tracking ESR like we were). We also wanted to release close to upstream so we had the latest security patches ASAP but again, became unfeasible for our small team.
-|context=https://forums.puri.sm/t/purebrowser-removed-after-update/8635/11
+|source=https://forums.puri.sm/t/purebrowser-removed-after-update/8635/11
 }}
 
 A Librewolf developer also confirmed that hard forking Firefox is infeasible.
@@ -1071,7 +1073,8 @@ A Librewolf developer also confirmed that hard forking Firefox is infeasible.
 No, we are absolutely not prepared to do that. We are a (very) small team with a rather limited amount of time (and energy) to work on LibreWolf even with it just the way it currently is. We would not even remotely be able to fork and maintain a browser fully, let alone to continually develop and improve it. Nor would we have the expertise to do so. Which would mean that if we tried to do that, we would most certainly release an insecure product, getting worse over time, which I would not ever want to be responsible for.
 
 Sorry to disappoint on that front - but: it is what it is.
-|context=Librewolf feature request: [https://codeberg.org/librewolf/issues/issues/2252 Prepared to fork Firefox?], reply by [https://codeberg.org/ohfp ohfp], Librewolf developer
+|author=Librewolf feature request
+|source=[https://codeberg.org/librewolf/issues/issues/2252 Prepared to fork Firefox?], reply by [https://codeberg.org/ohfp ohfp], Librewolf developer
 }}
 
 == Waterfox ==
@@ -1306,7 +1309,7 @@ No suitable, well-maintained with timely security upgrades, vendor-neutral, acce
 {{quotation
 |quote=
 This is an application which can require more than 6 hours per build on a fast computer. We allocated a new build server with high specifications (Ryzen 9 3900, 128GB RAM, NMVe) and reduced the time it took to build Chromium to a little more than an hour.
-|context=[https://blog.linuxmint.com/?p=3978 Linux Mint]
+|source=[https://blog.linuxmint.com/?p=3978 Linux Mint]
 }}
 
 * https://www.youtube.com/watch?v=z1Eq0xlVs3g

@@ -23,7 +23,7 @@ This is <u>not</u> legal advice. As per [[Terms of Service]] wiki chapter, there
 
 {{quotation
 |quote=The Services are not for use by anyone under the age of 18.
-|context=[[Terms of Service]] chapter [[Terms_of_Service#Minimum_Age|Minimum Age]]
+|source=[[Terms of Service]] chapter [[Terms_of_Service#Minimum_Age|Minimum Age]]
 }}
 
 = Introduction =
@@ -187,7 +187,7 @@ As [[Age-api#system76|system76]] pointed out.
 
 {{quotation
 |quote=Most System76 employees installed operating systems and created accounts on their computer when they were under 18. They did this out of curiosity. Many started writing software. Some were already writing operating systems. I'm sure the story is similar at most tech companies. Limiting a child's ability to explore what they can do with a computer limits their future. Removing user limitations to the computer (proprietary software, locked-down platforms like Android and iOS) is why System76 exists.
-|context=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
+|source=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
 }}
 
 == Absurdities ==
@@ -203,7 +203,7 @@ As [[Age-api#system76|system76]] pointed out.
 
 {{quotation
 |quote=In a bizarre twist, under its current wording, a Linux distribution downloaded from the internet could technically make the downloader the "device manufacturer". They are the entity responsible for providing a freely distributed operating system to the device. In practice, this type of language is rarely enforced.
-|context=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
+|source=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
 }}
 
 == Discussions ==
@@ -238,7 +238,8 @@ As [[Age-api#system76|system76]] pointed out.
 {{quotation
 |quote=App Store and Device-Level Age Verification
 
-|context=EFF: [https://www.eff.org/deeplinks/2025/12/year-states-chose-surveillance-over-safety-2025-review The Year States Chose Surveillance Over Safety: 2025 in Review]
+|author=EFF
+|source=[https://www.eff.org/deeplinks/2025/12/year-states-chose-surveillance-over-safety-2025-review The Year States Chose Surveillance Over Safety: 2025 in Review]
 }}
 
 === mcneeslaw ===
@@ -263,7 +264,7 @@ Compilation of some major statements and/or (proposed) source code changes by so
 
 {{quotation
 |quote=California residents are not authorized to use MidnightBSD for desktop use in the state of California effective January 1, 2027. California law [https://legiscan.com/CA/text/AB1043/id/3269704 CA AB1043] requires a complex age verification system implemented for operating systems with no exceptions for small open source projects.
-|context=https://github.com/MidnightBSD/src/commit/7d956a27123f2d77a05313826c29a0329a923254
+|source=https://github.com/MidnightBSD/src/commit/7d956a27123f2d77a05313826c29a0329a923254
 }}
 
 * https://github.com/MidnightBSD/src/blob/4e64ffa192dbd651a07a7f8295e682296c4d6c30/COPYRIGHT#L7
@@ -293,7 +294,7 @@ Update:
 
 {{quotation
 |quote=In a bizarre twist, under its current wording, a Linux distribution downloaded from the internet could technically make the downloader the "device manufacturer". They are the entity responsible for providing a freely distributed operating system to the device. In practice, this type of language is rarely enforced. Nonetheless, it highlights how laws written for centralized platforms like iOS and Android struggle to define who is responsible in open computing ecosystems where anyone can install or distribute the operating system.
-|context=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
+|source=[https://blog.system76.com/post/system76-on-age-verification System76 on Age Verification Laws]
 }}
 
 {{quotation
@@ -306,7 +307,7 @@ Update:
 
 {{quotation
 |quote=Should these laws stand, I'd hope to only do the bare minimum required to comply with the spirit of the law.
-|context=https://lists.freedesktop.org/archives/xdg/2026-March/014801.html
+|source=https://lists.freedesktop.org/archives/xdg/2026-March/014801.html
 }}
 
 * https://lists.debian.org/debian-devel/2026/03/msg00178.html
@@ -410,7 +411,7 @@ The following is a contingency plan only. It is not a specific implementation pl
 
 {{quotation
 |quote=The Services are not for use by anyone under the age of 18.
-|context={{project_name_short}} [[Terms of Service]] (ToS) chapter [[Terms_of_Service#Minimum_Age|Minimum Age]] (since at least 2019)
+|author={{project_name_short}} [[Terms of Service]] (ToS) chapter [[Terms_of_Service#Minimum_Age|Minimum Age]] (since at least 2019)
 }}
 
 * <u>What happens if a user enters an age under 18:</u> If a user enters an age under 18, the setup program <code>setup-wizard-dist</code> will prohibit use per ToS.
@@ -842,7 +843,7 @@ Interesting sounding ideas:
 
 {{quotation
 |quote=I doubt the state of California can actually succeed in applying the law to Debian, Ubuntu and other free, open-source OS's.  A few arguments come to mind.  Under the Bernstein v. DOJ, source code is protected speech.  The attempt at "compelled speech" probably won't pass muster.  There is an arguable constitutional right to anonymous speech probably infringed upon by any compusory technical requirement for age disclosure. California lacks the jurisdiction to enforce its state laws against providers outside its borders. Enforcement is impossible.  Under the license, any user can legally fork the software to remove the age-verification module. And there is always the commerce clause argument. The rush to comply could be a waiver of all these arguments.  ~vince
-|context=https://lists.debian.org/debian-devel/2026/03/msg00029.html
+|source=https://lists.debian.org/debian-devel/2026/03/msg00029.html
 }}
 
 At the time of writing, no public statements by FSF, GNU, FSFE, OSI or EFF existed to the knowledge of the author.
@@ -857,14 +858,16 @@ Underline added.
 
 {{quotation
 |quote=6. "COVERED MANUFACTURER" SHALL MEAN A MANUFACTURER OF AN INTERNET-EN- ABLED DEVICE, <u>AN OPERATING SYSTEM PROVIDER</u>, OR AN APPLICATION STORE.
-|context=The New York State Senate: [https://www.nysenate.gov/legislation/bills/2025/S8102/amendment/A Senate Bill S8102A] ([https://web.archive.org/web/20260305182153/https://www.nysenate.gov/legislation/bills/2025/S8102/amendment/A archived])
+|author=The New York State Senate
+|source=[https://www.nysenate.gov/legislation/bills/2025/S8102/amendment/A Senate Bill S8102A] ([https://web.archive.org/web/20260305182153/https://www.nysenate.gov/legislation/bills/2025/S8102/amendment/A archived])
 }}
 
 Bold added. Underline added.
 
 {{quotation
 |quote=<u>To require devices to conduct '''commercially reasonable age assurance''' for users under the age of 18 at the point of device activation,</u> unlocking the ability to enforce all other digital privacy and safety laws for underage users
-|context=The New York State Senate: [https://www.nysenate.gov/legislation/bills/2025/S8102/amendment/A Senate Bill S8102A]
+|author=The New York State Senate
+|source=[https://www.nysenate.gov/legislation/bills/2025/S8102/amendment/A Senate Bill S8102A]
 }}
 
 Bill PDF
@@ -880,7 +883,7 @@ Bold added. Underline added.
 
 {{quotation
 |quote=1. "Age assurance" shall mean any method to reasonably determine the age category of a user, using methods that reasonably prevent against circumvention. Such method may include a method that meets the requirements of article <u>forty-five</u> of this chapter, <u>'''or'''</u> may be a method that is identified pursuant to new regulations promulgated by the attorney general consistent with section <u>fifteen hundred forty-five</u> of this article
-|context=https://web.archive.org/web/20260305091554/https://legislation.nysenate.gov/pdf/bills/2025/s8102a
+|source=https://web.archive.org/web/20260305091554/https://legislation.nysenate.gov/pdf/bills/2025/s8102a
 }}
 
 Section <u>fifteen hundred forty-five</u> might refer to [https://www.nysenate.gov/legislation/laws/GBS/1501 The Laws of New York Consolidated Laws of New York CHAPTER 20 General Business ARTICLE 45 Safe For Kids Act, SECTION <u>1501</u>].
@@ -917,7 +920,8 @@ ag.ny.gov: [https://ag.ny.gov/resources/individuals/consumer-issues/technology/p
 
 {{quotation
 |quote=(h) Age Assurance Method. The term Age Assurance Method means any type of age estimation, age inference, or age verification.
-|context=ag.ny.gov: [https://ag.ny.gov/sites/default/files/regulatory-documents/safe-for-kids-act-nprm.pdf Stop Addictive Feeds Exploitation, (SAFE) for Kids Act, Office of the New York State Attorney General Letitia James, Economic Justice Division, Notice of Proposed Rulemaking]
+|author=ag.ny.gov
+|source=[https://ag.ny.gov/sites/default/files/regulatory-documents/safe-for-kids-act-nprm.pdf Stop Addictive Feeds Exploitation, (SAFE) for Kids Act, Office of the New York State Attorney General Letitia James, Economic Justice Division, Notice of Proposed Rulemaking]
 }}
 
 {{quotation
@@ -944,7 +948,8 @@ Streaming services and video game developers contend that this bill's framework,
 their respective products. Many of these companies have existing age verification systems in place, addressing complexities such as multi-user accounts shared by a family and user profiles utilized across multiple devices. As this bill does not take effect until January 1, 2027, I urge the Legislature to enact legislation in 2026 to address these particular concerns.
 
 [...]
-|context=gov.ca.gov: [https://www.gov.ca.gov/wp-content/uploads/2025/10/AB-1043-Signing-Message.pdf AB 1043 signing message]
+|author=gov.ca.gov
+|source=[https://www.gov.ca.gov/wp-content/uploads/2025/10/AB-1043-Signing-Message.pdf AB 1043 signing message]
 }}
 
 = Potential Arguments =

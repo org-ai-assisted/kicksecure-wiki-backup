@@ -269,7 +269,7 @@ When writing this blog post I checked back with the twisted community since it i
 Twisted's code imports the module unicodedata in the standard python library. This module changed between python 2.4 and python 2.5. The python 2.4 version causes the twisted code to (correctly) throw an exception if the input is outside unicode 3.2, whereas no exception is thrown when using unicodedata from python 2.5, instead causing incorrect behavior in twisted's implementation of nodeprep.prepare()
 
 So changes in the standard python library from one python version to the next introduced a subtle bug in twisted's nodepre.prepare() function which in turn introduced a security issue in Spotify's account creation.
-|context=https://engineering.atspotify.com/2013/06/creative-usernames
+|source=https://engineering.atspotify.com/2013/06/creative-usernames
 }}
 
 = secure from what =

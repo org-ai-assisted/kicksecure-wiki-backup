@@ -164,7 +164,7 @@ A related topic is CPU fingerprinting. Even if the non-privileged CPU instructio
 
 {{quotation
 |quote=CPUs are fingerprintable in many more ways than simply checking CPUID (for example, you can try to use features not advertised on CPUID and see what happens).
-|context=[https://github.com/jpouellet Jean-Philippe Ouellet], Qubes contributor is Qubes issue [https://github.com/QubesOS/qubes-issues/issues/1142#issuecomment-317281716 Stop telling VMs the exact physical CPU model in the computer]
+|source=[https://github.com/jpouellet Jean-Philippe Ouellet], Qubes contributor is Qubes issue [https://github.com/QubesOS/qubes-issues/issues/1142#issuecomment-317281716 Stop telling VMs the exact physical CPU model in the computer]
 }}
 
 = CPUID Spoofing Testing =
@@ -189,7 +189,7 @@ Due to the lengthy output of <code>cpuid</code> with many different details, man
 = Technical Challenges =
 {{quotation
 |quote=[...] CPU model with various details (the CPUID instruction) that is essential for the system within the VM to function correctly (to know what instructions it can use, to know what mitigations against speculative execution should be applied etc). Masking some of of it is potentially possible (like pretending you are running on a CPU from 10 years ago), with all the disadvantages of it.
-|context=Marek (Qubes OS lead developer) in Qubes issue [https://github.com/QubesOS/qubes-issues/issues/1142 Stop telling VMs the exact physical CPU model in the computer]
+|author=Marek (Qubes OS lead developer) in Qubes issue [https://github.com/QubesOS/qubes-issues/issues/1142 Stop telling VMs the exact physical CPU model in the computer]
 }}
 
 = Superficial Hiding =

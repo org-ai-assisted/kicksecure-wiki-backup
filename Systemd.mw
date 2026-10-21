@@ -361,7 +361,7 @@ Bad things:
 * journal log being binary
 * adding <code>systemd</code> into the names of tools such as <code>systemd-resolved</code>, <code>systemd-networkd</code> and making these systemd-dependent
 * systemd-boot only supporting Intel/AMD64 architecture
-|context={{project_name_short}} lead developer opinion.
+|author={{project_name_short}} lead developer opinion.
 }}
 
 = Systemd User Environment Variables Configuration =

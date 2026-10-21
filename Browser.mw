@@ -224,7 +224,9 @@ Browsers that are non-freedom software (closed source) (not Open Source) are onl
 
 {{quotation
 |quote=The vault domain is an ultimately trusted one where I generate and keep all my passwords (using keepass) and master GPG keys. Of course, this vault domain has no networking access. Most of those passwords, such as the email server access password is also kept in the specific domains which uses them, such as the work domain, and more specifically in the Thunderbird client (there is absolutely no point in not allowing e.g. Thunderbird to remember the password - if it got compromised it would just steal it the next time I manually enter it)
-|context=Joanna Rutkowska, security researcher and founder of Qubes OS blog post [https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html Partitioning my digital life into security domains]
+|author=Joanna Rutkowska
+|role=security researcher and founder of Qubes OS
+|source=blog post [https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html Partitioning my digital life into security domains]
 }}
 
 * Low value account passwords:

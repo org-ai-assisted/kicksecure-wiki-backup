@@ -37,7 +37,7 @@ This is related to [[Full Disk Encryption|{{fde}}]].
 </ref> <ref>
 {{quotation
 |quote=Initramfs images are also called "initrd".
-|context=dracut man page
+|author=dracut man page
 }}
 </ref>
 

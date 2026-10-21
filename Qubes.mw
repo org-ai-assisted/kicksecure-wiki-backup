@@ -260,7 +260,7 @@ If using in-VM kernel:
 
 {{quotation
 |quote=it's problematic for VMs with PCI devices (especially when using Debian kernel, due to old wifi drivers, but there are also other factors like significantly slower boot time in HVM mode).
-|context=https://github.com/QubesOS/qubes-issues/issues/9570#issuecomment-2468812870
+|source=https://github.com/QubesOS/qubes-issues/issues/9570#issuecomment-2468812870
 }}
 
 == ClockVM ==

@@ -80,7 +80,7 @@ Summary:
 
 {{Quotation
 |quote=In 5.6.1, the threat actor introduced a code snippet aimed at enhancing the modularity of the backdoor. This modification enables the potential injection of different variants via test files in subsequent stages.
-|context=[https://www.sentinelone.com/blog/xz-utils-backdoor-threat-actor-planned-to-inject-further-vulnerabilities/ XZ Utils Backdoor - Threat Actor Planned to Inject Further Vulnerabilities]
+|source=[https://www.sentinelone.com/blog/xz-utils-backdoor-threat-actor-planned-to-inject-further-vulnerabilities/ XZ Utils Backdoor - Threat Actor Planned to Inject Further Vulnerabilities]
 }}
 
 In the cases of Copay and the xz malicious backdoor, we can be abundantly sure by looking at the code that it is inexcusable. This can be seen directly on the source code level. For both Copay and xz, there is no question and no doubt at all. Nobody is speculating about it, and no excuses have been made. The consensus is clear that these were intentional malicious backdoors. There's no question about it.

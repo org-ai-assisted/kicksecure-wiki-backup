@@ -38,12 +38,14 @@ This page explains a Linux TCP Initial Sequence Number (ISN) side-channel inform
 
 {{quotation
 |quote=What the Linux ISN leaks is the difference between two timestamps, not the timestamp itself. A difference lets you work out drift and skew, which can help someone fingerprint the computer hardware, its environment and load. Of course that only works if you can probe a computer, and maintain the same source/destination port and IP address.
-|context=[https://gitlab.torproject.org/legacy/trac/-/issues/16659 Add research idea for Linux TCP Initial Sequence Numbers may aid correlation]: [https://gitlab.torproject.org/legacy/trac/-/issues/16659#note_2196161 comment by Steven J. Murdoch]
+|author=[https://gitlab.torproject.org/legacy/trac/-/issues/16659 Add research idea for Linux TCP Initial Sequence Numbers may aid correlation]
+|source=[https://gitlab.torproject.org/legacy/trac/-/issues/16659#note_2196161 comment by Steven J. Murdoch]
 }}
 
 {{quotation
 |quote=... it is worth complaining to the kernel developers for the simple reason that adding the 64ns timer post-hash probably *does* leak side channels about CPU activity, and that may prove very dangerous for long-running cryptographic operations (along the lines of the hot-or-not issue). Unfortunately, someone probably needs to produce more research papers before they will listen.
-|context=[https://gitlab.torproject.org/legacy/trac/-/issues/16659 Add research idea for Linux TCP Initial Sequence Numbers may aid correlation]: [https://gitlab.torproject.org/legacy/trac/-/issues/16659#note_2196153 comment by Mike Perry]
+|author=[https://gitlab.torproject.org/legacy/trac/-/issues/16659 Add research idea for Linux TCP Initial Sequence Numbers may aid correlation]
+|source=[https://gitlab.torproject.org/legacy/trac/-/issues/16659#note_2196153 comment by Mike Perry]
 }}
 
 * <u>Further reading:</u>

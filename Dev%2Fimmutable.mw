@@ -16,7 +16,7 @@ Do you mean <code>immutable</code> or <code>image based</code>?
 
 {{quotation
 |quote=Usually instead of talking about an "immutable" system that allows in place updates, it'd be more useful and accurate to say "image based".
-|context=[https://blog.verbum.org/2020/08/22/immutable-%E2%86%92-reprovisionable-anti-hysteresis/ "Immutable" &rarr; reprovisionable, anti-hysteresis]
+|source=[https://blog.verbum.org/2020/08/22/immutable-%E2%86%92-reprovisionable-anti-hysteresis/ "Immutable" &rarr; reprovisionable, anti-hysteresis]
 }}
 
 For anti-hysteresis, see also [[Dev/Stateless]].
@@ -28,61 +28,61 @@ Because it's very misleading. These system as a whole is not immutable, or read-
 
 * the user being root on their own computer
 * In place OS updates
-|context=[https://blog.verbum.org/2020/08/22/immutable-%E2%86%92-reprovisionable-anti-hysteresis/ "Immutable" &rarr; reprovisionable, anti-hysteresis]
+|source=[https://blog.verbum.org/2020/08/22/immutable-%E2%86%92-reprovisionable-anti-hysteresis/ "Immutable" &rarr; reprovisionable, anti-hysteresis]
 }}
 
 = Definition of Immutable =
 == Immutable as defined by other projects ==
 {{quotation
 |quote=Immutable Linux operating systems are aimed to introduce reliable, more secure approach to Linux. For such systems, the core components like kernel, system libraries or critical system files are read-only and cannot be modified permanently. Any changes made to the core system components are lost when system reboots, but many of immutable systems preserve user information, yet it is not obligatory.
-|context=[https://github.com/3mdeb/verified-boot/blob/55df31bf0645767e18c4dac7e19bf62d788e9df8/verified_boot_main.md?plain=1#L867 3mdeb Verified Boot research]
+|source=[https://github.com/3mdeb/verified-boot/blob/55df31bf0645767e18c4dac7e19bf62d788e9df8/verified_boot_main.md?plain=1#L867 3mdeb Verified Boot research]
 }}
 
 {{quotation
 |quote=Differently from RHEL images, RHEL for Edge is an immutable operating system, that is, it contains a read-only root directory with the following characteristics:
-|context=[https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/composing_installing_and_managing_rhel_for_edge_images/Red_Hat_Enterprise_Linux-10-Composing_installing_and_managing_RHEL_for_Edge_images-en-US.pdf RHEL for Edge documentation]
+|source=[https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/composing_installing_and_managing_rhel_for_edge_images/Red_Hat_Enterprise_Linux-10-Composing_installing_and_managing_RHEL_for_Edge_images-en-US.pdf RHEL for Edge documentation]
 }}
 
 {{quotation
 |quote=Ubuntu Core is immutable and strictly confined. There is a clean separation between the kernel, OS image and applications, each updated independently and protected against corruption.
-|context=[https://ubuntu.com/core Ubuntu Core]
+|source=[https://ubuntu.com/core Ubuntu Core]
 }}
 
 {{quotation
 |quote=MicroOS is a distribution aimed at providing an immutable base OS for containerized applications. It is based on Tumbleweed package versions, but uses a btrfs snapshot-based system so that updates only apply on reboot. This avoids any chance of an update breaking a running system, and allows for easy automated rollback. References to "MicroOS" by itself typically point to its use as a server or container-host OS, with no graphical environment.
-|context=[https://en.opensuse.org/openSUSE%3AFAQ openSUSE:FAQ]
+|source=[https://en.opensuse.org/openSUSE%3AFAQ openSUSE:FAQ]
 }}
 
 {{quotation
 |quote=Bootc systems follow the concept of an immutable operating system. Apart from the following two exceptions, /etc and /var, all directories are mounted read-only once deployed on a physical or virtual machine. However, during a container build the entire file-system is writable.
-|context=[https://docs.fedoraproject.org/en-US/bootc/getting-started/ Fedora Bootc documentation]
+|source=[https://docs.fedoraproject.org/en-US/bootc/getting-started/ Fedora Bootc documentation]
 }}
 
 {{quotation
 |quote=Silverblue is immutable and it uses the 'image mode' update model managed by rpm-ostree.
-|context=[https://docs.fedoraproject.org/en-US/dei/brand-framework/resource-pack/ Fedora Silverblue documentation]
+|source=[https://docs.fedoraproject.org/en-US/dei/brand-framework/resource-pack/ Fedora Silverblue documentation]
 }}
 
 {{quotation
 |quote=Immutable - a file or directory is immutable if it cannot be modified or deleted by the user directly.
-|context=[https://abroot.vanillaos.org/ VanillaOS ABRoot]
+|source=[https://abroot.vanillaos.org/ VanillaOS ABRoot]
 }}
 
 {{quotation
 |quote=An immutable file system is a file system that cannot be changed once it has been installed. It is accessed read-only.
-|context=[https://documentation.suse.com/sle-micro/6.0/html/Micro-sudo-configure-superuser-privileges/index.html SUSE Micro documentation]
+|source=[https://documentation.suse.com/sle-micro/6.0/html/Micro-sudo-configure-superuser-privileges/index.html SUSE Micro documentation]
 }}
 
 {{quotation
 |quote=Main features of the openSUSE MicroOS is:
 * Read-only root filesystem to avoid accidental modifications of the OS
 * The Transactional Updates technology leverages btrfs snapshots to apply package updates without interfering with the running system
-|context=[https://en.opensuse.org/Portal:MicroOS openSUSE MicroOS Portal]
+|source=[https://en.opensuse.org/Portal:MicroOS openSUSE MicroOS Portal]
 }}
 
 {{quotation
 |quote=Read-only: The primary characteristic of an immutable OS is that the running system cannot be directly modified by users or applications.
-|context=[https://ubuntu.com/blog/ubuntu-core-an-immutable-linux-desktop Ubuntu Core as an immutable Linux Desktop base]
+|source=[https://ubuntu.com/blog/ubuntu-core-an-immutable-linux-desktop Ubuntu Core as an immutable Linux Desktop base]
 }}
 
 {{quotation
@@ -93,17 +93,17 @@ Before we can discuss what differentiates Ubuntu Core from other immutable opera
 # Atomic updates: Updates are applied atomically; meaning they're successfully applied all at once or not at all.
 # Predictable: Because the core operating system doesn't change, its behaviour is predictable across devices.
 # Isolated Applications: Applications are isolated from the core operating system and from each other, usually through containerisation. This ensures that changes made by an application don't affect the core system or other applications.
-|context=[https://ubuntu.com/blog/ubuntu-core-an-immutable-linux-desktop Ubuntu Core as an immutable Linux Desktop base]
+|source=[https://ubuntu.com/blog/ubuntu-core-an-immutable-linux-desktop Ubuntu Core as an immutable Linux Desktop base]
 }}
 
 {{quotation
 |quote=RHEL for Edge is an immutable operating system that contains a read-only root directory, and has following characteristics:
-|context=[https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/pdf/composing_installing_and_managing_rhel_for_edge_images/Red_Hat_Enterprise_Linux-8-Composing_installing_and_managing_RHEL_for_Edge_images-en-US.pdf RHEL for Edge documentation (RHEL 8)]
+|source=[https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/pdf/composing_installing_and_managing_rhel_for_edge_images/Red_Hat_Enterprise_Linux-8-Composing_installing_and_managing_RHEL_for_Edge_images-en-US.pdf RHEL for Edge documentation (RHEL 8)]
 }}
 
 {{quotation
 |quote=By making the system partition read-only, Flatcar Container Linux eliminates a whole class of high-impact security vulnerabilities.
-|context=[https://www.flatcar.org/ Flatcar Container Linux]
+|source=[https://www.flatcar.org/ Flatcar Container Linux]
 }}
 
 == Other uses of the Word Immutable ==
@@ -133,7 +133,7 @@ VirtualBox has a setting called <code>Immutable</code>. It is documented on the 
 | You are not completely blocked from installing packages. For instance, Fedora's rpm-ostree allows installing packages. <ref>
 {{quotation
 |quote=Add a layered package with the <code>rpm-ostree install</code> command
-|context=https://docs.fedoraproject.org/en-US/iot/add-layered/
+|source=https://docs.fedoraproject.org/en-US/iot/add-layered/
 }}
 </ref>
 
@@ -176,7 +176,7 @@ On the [[Grub-live#Security_Considerations|grub-live wiki page, in chapter Secur
 
 {{quotation
 |quote=It's hard to modify an ISO read/write. There is no public software available to really mount an ISO read/write. But it's possible in theory. The ISO should be considered read-write for attackers but read-only for the public. There is the Open Source <code>growisofs</code> tool. Also, other attacks are conceivable. Since [https://wiki.debian.org/RepackBootableISO Repacking an ISO] is documented in the Debian wiki, this can be used for both legitimate and malicious purposes and is much easier than mounting an ISO read/write.
-|context=[[Verified_Boot#ISO_Considerations|Verified Boot wiki page, chapter ISO Considerations]]
+|source=[[Verified_Boot#ISO_Considerations|Verified Boot wiki page, chapter ISO Considerations]]
 }}
 
 Maybe it is a valid consideration if there an ephemeral (temporary, in RAM) read-write overlay such as overlayfs that privileged users (such as root) can write to or is the image fully read-only without ephemeral overlay?

@@ -22,12 +22,12 @@ Trends do not sound promising on general trends in computer security.
 
 {{quotation
 |quote=More and more companies (such as google chrome to pick one example among a trend) move to an approach where security bug reports are disregarded unless a proof of concept exploit is being provided. Mitigation methods for bad, potentially exploitable code are preferred over actual security bug fixes because there is too much source code, complexity is too high and the total number of bugs is unmanageable.
-|context=[https://www.youtube.com/watch?v=31xA9p3pYE4 36C3 - Das n&uuml;tzlich-unbedenklich Spektrum] - paraphrased quote
+|source=[https://www.youtube.com/watch?v=31xA9p3pYE4 36C3 - Das n&uuml;tzlich-unbedenklich Spektrum] - paraphrased quote
 }}
 
 {{quotation
 |quote=While many developers acknowledge the importance of applying a security-led approach in the software development lifecycle, 86% do not view application security as a top priority when writing code.
-|context=[https://www.securecodewarrior.com/press-releases/secure-code-warrior-survey-finds-86-of-developers-do-not-view-application-security-as-a-top-priority Secure Code Warrior Survey Finds 86% of Developers Do Not View Application Security As a Top Priority]
+|source=[https://www.securecodewarrior.com/press-releases/secure-code-warrior-survey-finds-86-of-developers-do-not-view-application-security-as-a-top-priority Secure Code Warrior Survey Finds 86% of Developers Do Not View Application Security As a Top Priority]
 }}
 
 See also [[Linux User Experience versus Commercial Operating Systems]] to learn about organizational issues in the Open Source ecosystem.
@@ -60,7 +60,7 @@ to work around the shortcomings in your silicon. And the guy said "the first gen
 was done by the old gray beard guys that really know what they are doing. The new generation was
 done by kids who are straight out of school who didn't know to ask what the change in packaging
 would do to inductive spikes."
-|context=https://mirror.tcb13.com/loss-of-know.txt
+|source=https://mirror.tcb13.com/loss-of-know.txt
 }}
 
 = Unavailability of Bootstrappable Builds =
@@ -88,14 +88,14 @@ This is partially because by the time the software was written there were no eas
 = Too Much Source Code =
 {{quotation
 |quote=It's open source. Don't like it?  Why don't you fork it?
-|context=Common discussion pattern.
+|author=Common discussion pattern.
 }}
 
 To address that, some of the reasons for the invention of Open Source need to be recapitulated. In the past, someone would have said:
 
 {{quotation
 |quote=You've got the binary. Just use a disassembler and then look at the disassembly.
-|context=Illustrative discussion.
+|author=Illustrative discussion.
 }}
 
 However, disassembly is not an acceptable answer, that anyone would take serious, because the disassembly is:
@@ -112,7 +112,7 @@ However, what's happening nowadays is...
 
 {{quotation
 |quote=Want the source code? Here you go. 5 million lines of it.
-|context=Illustrative discussion.
+|author=Illustrative discussion.
 }}
 
 Millions of lines of source code (that on top of that keeps constantly changing, called updates) is beyond overwhelming, simply impractical and infeasible.
@@ -162,7 +162,8 @@ Librewolf (a fork of Firefox, with an emphasis on privacy and security) develope
 No, we are absolutely not prepared to do that. We are a (very) small team with a rather limited amount of time (and energy) to work on LibreWolf even with it just the way it currently is. We would not even remotely be able to fork and maintain a browser fully, let alone to continually develop and improve it. Nor would we have the expertise to do so. Which would mean that if we tried to do that, we would most certainly release an insecure product, getting worse over time, which I would not ever want to be responsible for.
 
 Sorry to disappoint on that front - but: it is what it is.
-|context=Librewolf feature request: [https://codeberg.org/librewolf/issues/issues/2252 Prepared to fork Firefox?], reply by [https://codeberg.org/ohfp ohfp], Librewolf developer
+|author=Librewolf feature request
+|source=[https://codeberg.org/librewolf/issues/issues/2252 Prepared to fork Firefox?], reply by [https://codeberg.org/ohfp ohfp], Librewolf developer
 }}
 
 For example, feature request [https://codeberg.org/librewolf/issues/issues/1779 Radio Silence by Default for Browser Startup and Background Connections aka "Disable Phone Home" #1779] is simply not doable. No community software fork of Firefox can tame Firefox. It's simply impossible.
@@ -173,7 +174,8 @@ Firefox is not fork-friendly, see [[Dev/Default_Browser#Firefox_Potential_Legal_
 
 {{quotation
 |quote=I don't understand most of the diff between one kernel version and the next, and I don't have time to read all of it either.
-|context=[https://en.wikipedia.org/wiki/Matthew_Garrett Matthew_Garrett]: [https://codon.org.uk/~mjg59/blog/p/to-update-blobs-or-not-to-update-blobs/ To update blobs or not to update blobs]
+|author=[https://en.wikipedia.org/wiki/Matthew_Garrett Matthew_Garrett]
+|source=[https://codon.org.uk/~mjg59/blog/p/to-update-blobs-or-not-to-update-blobs/ To update blobs or not to update blobs]
 }}
 
 = Scattered Attention =
@@ -198,18 +200,18 @@ Trusted Computing Base (TCB) should be kept minimal.
 |quote=Security-critical code
 
 [...] A successful attack against any of these components could compromise the system's security. This code can be thought of as the Trusted Computing Base (TCB) of Qubes OS. One of the main goals of the project is to keep the TCB to an absolute minimum.
-|context=https://www.qubes-os.org/doc/security-critical-code/
+|source=https://www.qubes-os.org/doc/security-critical-code/
 }}
 
 {{quotation
 |quote=The size of the current TCB is on the order of hundreds of thousands of lines of C code, which is several orders of magnitude less than other OSes. (In Windows, Linux, and Mac OSes, the amount of trusted code is typically on the order of tens of millions of lines of C code.)
-|context=https://www.qubes-os.org/doc/security-critical-code/
+|source=https://www.qubes-os.org/doc/security-critical-code/
 }}
 
 {{quotation
 |quote=
 considering that SeaBIOS is just 50k lines of clean code (of which maybe just a few thousands would be active at specific configuration)
-|context=https://github.com/microsoft/mu/issues/52#issuecomment-448993481
+|source=https://github.com/microsoft/mu/issues/52#issuecomment-448993481
 }}
 
 = Too Much Complexity =
@@ -236,7 +238,8 @@ Although Open Source remains beneficial and critical, the complexity of modern p
 |quote=You can't secure what you don't understand.
 
 The worst enemy of security is complexity. This has been true since the beginning of computers, and it's likely to be true for the foreseeable future.
-|context=[https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier]: [https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html A Plea for Simplicity]
+|author=[https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier]
+|source=[https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html A Plea for Simplicity]
 }}
 
 Massive complexity introduced by more and more complex hardware.
@@ -275,7 +278,9 @@ While Open Source remains valuable and critical, the endless cycle of developmen
 
 {{quotation
 |quote=I believe that, even if all the sharpest vulnerability researchers could spend all their lives auditing all the application software we use, and finally identify all the relevant bugs, this process would never catch up with the pace at which new bugs are being added by application developers into new apps, or even into newer versions of the apps previously audited.
-|context=Security researcher and Qubes founder, Joanna Rutkowska, [https://blog.invisiblethings.org/2017/04/26/qubes-compromise-recovery.html Compromise recovery on Qubes OS: individual VMs & full system cases]
+|author=Joanna Rutkowska
+|role=Security researcher and Qubes founder
+|source=[https://blog.invisiblethings.org/2017/04/26/qubes-compromise-recovery.html Compromise recovery on Qubes OS: individual VMs & full system cases]
 }}
 
 = No Review Process =

@@ -70,7 +70,7 @@ add rule inet filter output meta l4proto tcp socks_filter
 This line adds a new rule to the `inet filter output` chain for the TCP protocol, and hooks the `socks_filter` chain to this rule.
 
 In summary, this script defines a rule to drop outgoing TCP packets that appear to be SOCKS5 connection requests to the IP address `8.8.8.8`. This could be used to block certain types of SOCKS proxy connections on the system.
-|context=AI generated using Claude 3 Sonnet.
+|author=AI generated using Claude 3 Sonnet.
 }}
 
 = Other Potential Solutions =

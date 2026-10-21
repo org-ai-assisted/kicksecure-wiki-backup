@@ -21,7 +21,7 @@ How-To: Use Session Private Messenger with {{project_name_short}}.
 
 {{quotation
 |quote=A detailed blog post on why Session removed PFS (Perfect Forward Secrecy), and what that means for users can be found [https://getsession.org/session-protocol-technical-information here].
-|context=[https://getsession.org/a-response-to-recent-claims-about-sessions-security-architecture A Response to Recent Claims About Session's Security Architecture]
+|source=[https://getsession.org/a-response-to-recent-claims-about-sessions-security-architecture A Response to Recent Claims About Session's Security Architecture]
 }}
 
 = Install the Session Desktop Client =

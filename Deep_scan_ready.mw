@@ -47,27 +47,27 @@ In the deep scan ready model, users control verification keys (cryptographic key
 An important rule for deep virus scans is: do not boot a device suspected of being infected with [[malware]], because active malware can hide itself, fake "clean" results, erase evidence. <ref>
 {{quotation
 |quote=Live analysis provides valuable, volatile information that may not be available during an offline analysis of a hard drive, e.g., dynamic data such as running processes and open ports, which are only available during system operation. However, when one of the processes on a machine includes a rootkit, the 90 ADVANCES IN DIGITAL FORENSICS III investigator must question if the results of a live analysis are tainted. When rootkits are running, the data and processes they have modified are still in use by the operating system, but this fact is not visible to the user. In fact, our experiments demonstrate that even if a live response cannot detect what is hidden, it can still provide an investigator with details about what was available to the user. This information can also help the investigator determine what the rootkit was hiding.
-|context=[https://opendl.ifip-tc6.org/db/conf/ifip11-9/df2007/ToddBPFSR07.pdf IFIP Open Digital Library: Todd et al. PDF]
+|source=[https://opendl.ifip-tc6.org/db/conf/ifip11-9/df2007/ToddBPFSR07.pdf IFIP Open Digital Library: Todd et al. PDF]
 }}
 
 {{quotation
 |quote=If you suspect a rootkit virus, one way to detect the infection is to power down the computer and execute the scan from a known clean system.
-|context=[https://www.kaspersky.com/resource-center/definitions/what-is-rootkit Kaspersky Resource Center: What is a rootkit?]
+|source=[https://www.kaspersky.com/resource-center/definitions/what-is-rootkit Kaspersky Resource Center: What is a rootkit?]
 }}
 
 {{quotation
 |quote=Hidden malware: Rootkits can install and conceal other types of malware within your network, making detecting and removing them difficult.
-|context=[https://us.norton.com/blog/malware/rootkit Norton blog: Rootkit]
+|source=[https://us.norton.com/blog/malware/rootkit Norton blog: Rootkit]
 }}
 
 {{quotation
 |quote=Use offline scanners: If the rootkit is particularly stubborn or your regular antivirus software fails to detect it, you can try offline scanners. These antivirus tools run from a bootable USB or CD/DVD, allowing them to scan your system without the rootkit being active.
-|context=[https://us.norton.com/blog/malware/rootkit Norton blog: Rootkit]
+|source=[https://us.norton.com/blog/malware/rootkit Norton blog: Rootkit]
 }}
 
 {{quotation
 |quote=By analyzing memory dumps, examiners can ensure clean working environment and no active resistance from the rootkit.
-|context=[https://www.forensicfocus.com/articles/understanding-rootkits/ Forensic Focus: Understanding rootkits]
+|source=[https://www.forensicfocus.com/articles/understanding-rootkits/ Forensic Focus: Understanding rootkits]
 }}
 
 See also [https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-offline Microsoft Defender Offline].
@@ -159,14 +159,16 @@ The central distinction is not about convenience, but about control. In one mode
 
 {{quotation
 |quote=Computer users must not be required to seek external authorization to exercise their freedoms.
-|context=Free Software Foundation: [https://www.fsf.org/campaigns/campaigns/secure-boot-vs-restricted-boot/ Will your computer's "Secure Boot" turn out to be "Restricted Boot"?]
+|author=Free Software Foundation
+|source=[https://www.fsf.org/campaigns/campaigns/secure-boot-vs-restricted-boot/ Will your computer's "Secure Boot" turn out to be "Restricted Boot"?]
 }}
 
 This quote highlights the concern that a system which requires external approval to function places inherent limits on the user's autonomy.
 
 {{quotation
 |quote="Treacherous computing" is a more appropriate name, because the plan is designed to make sure your computer will systematically disobey you. In fact, it is designed to stop your computer from functioning as a general-purpose computer. Every operation may require explicit permission.
-|context=The GNU Project: [https://www.gnu.org/philosophy/can-you-trust.en.html Can You Trust Your Computer?]
+|author=The GNU Project
+|source=[https://www.gnu.org/philosophy/can-you-trust.en.html Can You Trust Your Computer?]
 }}
 
 This perspective reflects a long standing critique of systems where control is shifted away from the owner and into external entities.

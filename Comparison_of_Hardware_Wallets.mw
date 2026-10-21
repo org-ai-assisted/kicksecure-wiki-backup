@@ -18,8 +18,7 @@ The main objective of the comparison table is to highlight an important aspect: 
 {{Quotation
 |quote=
 And open source doesn't really solve this. It's impossible to have guarantees that the electronic itself is not backdoored, nor that the firmware that runs inside the wallet is the one you audited.
-|context=
-[https://twitter.com/P3b7_/status/1659187094764285952 Ledger CTO]
+|source=[https://twitter.com/P3b7_/status/1659187094764285952 Ledger CTO]
 }}
 
 Only the latest and best hardware wallets by vendors are considered. Older models are disregarded.
@@ -74,8 +73,7 @@ Initially this might have been possible and is still documented on the website.
 {{Quotation
 |quote=
 You can install unofficial firmware on OneKey devices, but doing so will erase device storage and display a warning every time you boot.
-|context=
-https://help.onekey.so/hc/en-us/articles/6118461753743-Common-Security-Threats
+|source=https://help.onekey.so/hc/en-us/articles/6118461753743-Common-Security-Threats
 }}
 
 This feature might be been deprecated.
@@ -83,8 +81,7 @@ This feature might be been deprecated.
 {{Quotation
 |quote=
 No longer support installing firmware with unofficial signatures
-|context=
-https://github.com/OneKeyHQ/firmware/releases/tag/classic%2Fv3.0.0
+|source=https://github.com/OneKeyHQ/firmware/releases/tag/classic%2Fv3.0.0
 }}
 </ref>
 | {{Yes}}
@@ -98,8 +95,7 @@ https://github.com/OneKeyHQ/firmware/releases/tag/classic%2Fv3.0.0
 {{Quotation
 |quote=
 Mk3 and earlier made a virtual serial port available over USB. As it was only useful to developers, it was disabled by default. Mk4 uses a real universal asynchronous receiver-transmitter (UART) leading to physical pins. It is not only disabled by default, but it also cannot be accessed without breaking the case. A developer wanting to interact with the pins must be willing to damage the COLDCARD's case to do so, but the option is there if needed.
-|context=
-[https://github.com/Coldcard/firmware/blob/master/docs/mk4-security-model.md#virtual-debug-serial-port-removed coldcard MK4 Security Model]
+|source=[https://github.com/Coldcard/firmware/blob/master/docs/mk4-security-model.md#virtual-debug-serial-port-removed coldcard MK4 Security Model]
 }}
 </ref>
 |-

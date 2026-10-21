@@ -21,14 +21,14 @@ If one wants to accomplish maximum security, any Linux distribution should be av
 {{quotation
 |quote=LFS offers you added security
 You will compile the entire system from source, thus allowing you to audit everything, if you wish to do so, and apply all the security patches you want or need to apply. You don't have to wait for someone else to provide a new binary package that (hopefully) fixes a security hole. Often, you never truly know whether a security hole is fixed or not unless you do it yourself.
-|context=[https://www.linuxfromscratch.org/lfs/ Why would I want an LFS system?]
+|source=[https://www.linuxfromscratch.org/lfs/ Why would I want an LFS system?]
 }}
 
 LFS allows to tailor the operating system for a specific use-case only. The attack surface can be limited to one specific use-case only.
 
 {{quotation
 |quote=If you want it done right, do it yourself.
-|context=Common idiom.
+|author=Common idiom.
 }}
 
 A Linux distinction necessarily needs to make decisions on behalf of its users.

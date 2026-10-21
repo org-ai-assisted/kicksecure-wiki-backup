@@ -122,7 +122,7 @@ For a video showing that hardware based encryption (in a different context) can 
 
 {{quotation|
 |quote=From my personal perspective, in terms of threats customers already need to trust AMD with manufacturing something as complex as a CPU without introducing bugs (let alone backdoors). "Cleaning" one small piece of this complex system (i.e. the PSP's firmware) would be a drop in the ocean.
-|context=Security researcher [https://www.user.tu-berlin.de/cwerling/ Christian Werling] in [https://github.com/PSPReverse/PSPTool/issues/54 Question, regarding psp]
+|author=Security researcher [https://www.user.tu-berlin.de/cwerling/ Christian Werling] in [https://github.com/PSPReverse/PSPTool/issues/54 Question, regarding psp]
 }}
 
 Can modern hardware be audited? For the most part, no. Security researchers can investigate and sometimes discover hardware security vulnerabilities such as Spectre and Meltdown. Occasionally, a significant vulnerability is uncovered, akin to finding a needle in a haystack. However, it is generally not feasible to audit the entirety of modern hardware comprehensively.
@@ -130,7 +130,9 @@ Can modern hardware be audited? For the most part, no. Security researchers can 
 {{quotation
 |quote=it is a completely opaque construction. We absolutely no way to examine what's inside.
 
-|context=Joanna Rutkowska, security researcher and founder of Qubes OS, at timestamp 7:40, [https://www.youtube.com/watch?v=rcwngbUrZNg Joanna Rutkowska: Towards (reasonably) trustworthy x86 laptops]
+|author=Joanna Rutkowska
+|role=security researcher and founder of Qubes OS, at timestamp 7:40
+|source=[https://www.youtube.com/watch?v=rcwngbUrZNg Joanna Rutkowska: Towards (reasonably) trustworthy x86 laptops]
 }}
 
 Can one hardware producer audit another? No.
@@ -139,7 +141,9 @@ Can one hardware producer audit another? No.
 |quote=Some people believe that processor backdoors do not exist in reality, because if they did, the competing CPU makers would be able to find them in each others' products, and later would likely cause a "leak" to the public about such backdoors (think: Black PR). Here people make an assumption that AMD or Intel is technically capable of reversing each others processors, which seems to be a natural consequence of them being able to produce them.
 
 I don't think I fully agree with such an assumption though. Just the fact that you are capable of designing and producing a CPU, doesn't mean you can also reverse engineer it. Just the fact that Adobe can write a few hundred megabyte application, doesn't mean they are automatically capable of also reverse engineering similar applications of that size. Even if we assumed that it is technically feasible to use some electron microscope to scan and map all the electronic elements from the processor, there is still a problem of interpreting of how all those hundreds of millions of transistors actually work.
-|context=Joanna Rutkowska, security researcher and founder of Qubes OS, [https://blog.invisiblethings.org/2009/06/01/more-thoughts-on-cpu-backdoors.html More Thoughts on CPU backdoors]
+|author=Joanna Rutkowska
+|role=security researcher and founder of Qubes OS
+|source=[https://blog.invisiblethings.org/2009/06/01/more-thoughts-on-cpu-backdoors.html More Thoughts on CPU backdoors]
 }}
 
 See also:
@@ -171,7 +175,9 @@ related:
 
 {{quotation
 |quote=Unfortunately there is nothing that could stop a processor vendor to provide its customers with a different blueprints than those that are used to actually "burn" the processors. So, the additional requirement would be needed that they also allow to audit their manufacturing process.
-|context=Joanna Rutkowska, security researcher and founder of Qubes OS, [https://theinvisiblethings.blogspot.com/2009/03/trusting-hardware.html Trusting Hardware]
+|author=Joanna Rutkowska
+|role=security researcher and founder of Qubes OS
+|source=[https://theinvisiblethings.blogspot.com/2009/03/trusting-hardware.html Trusting Hardware]
 }}
 
 {{quotation
@@ -179,7 +185,9 @@ related:
 Some people believe that processor backdoors do not exist in reality, because if they did, the competing CPU makers would be able to find them in each others' products, and later would likely cause a "leak" to the public about such backdoors (think: Black PR). Here people make an assumption that AMD or Intel is technically capable of reversing each others processors, which seems to be a natural consequence of them being able to produce them.
 
 I don't think I fully agree with such an assumption though. Just the fact that you are capable of designing and producing a CPU, doesn't mean you can also reverse engineer it. Just the fact that Adobe can write a few hundred megabyte application, doesn't mean they are automatically capable of also reverse engineering similar applications of that size. Even if we assumed that it is technically feasible to use some electron microscope to scan and map all the electronic elements from the processor, there is still a problem of interpreting of how all those hundreds of millions of transistors actually work.
-|context=Joanna Rutkowska, security researcher and founder of Qubes OS, [https://blog.invisiblethings.org/2009/06/01/more-thoughts-on-cpu-backdoors.html More Thoughts on CPU backdoors]
+|author=Joanna Rutkowska
+|role=security researcher and founder of Qubes OS
+|source=[https://blog.invisiblethings.org/2009/06/01/more-thoughts-on-cpu-backdoors.html More Thoughts on CPU backdoors]
 }}
 
 For a deeper understanding of how modern processors are produced and function, it is recommended to watch videos on the subject. These videos provide insightful information on the complexities and intricacies involved in processor production.
@@ -298,7 +306,7 @@ However, they still have a number of closed-source binary blobs and the FSF also
 {{quotation
 |quote=
 The Pandaboard has another serious flaw: a WiFi and Bluetooth chip that can't work without nonfree software. The workaround is to get an external USB device for these functions, if you want them. See the documentation of your board for information about using these USB devices with it.
-|context=[https://www.fsf.org/resources/hw/single-board-computers single-board computers (SBCs)]
+|source=[https://www.fsf.org/resources/hw/single-board-computers single-board computers (SBCs)]
 }}
 
 Running tier 1 Linux distributions is often difficult or impossible. See [[Dev/boot#ARM|Dev/boot wiki page chapter ARM]].

@@ -22,7 +22,7 @@ The important question is:
 
 {{quotation
 |quote=Who controlled the computer that created the official downloads?
-|context=Plain-language build trust question.
+|author=Plain-language build trust question.
 }}
 
 == Recipe analogy ==
@@ -39,7 +39,7 @@ The concern is simple:
 
 {{quotation
 |quote=The recipe may be public, but the finished meal still depends on the kitchen.
-|context=Build trust analogy.
+|author=Build trust analogy.
 }}
 
 If someone else controls the kitchen, users must trust both the recipe author and that kitchen.
@@ -92,7 +92,7 @@ Examples include GitHub Actions, Google Cloud, Microsoft Azure, Amazon AWS, or a
 == Why this matters ==
 {{quotation
 |quote=If I choose Open Source to avoid Google, Microsoft, Amazon, or similar companies, the official downloads should not silently depend on those same companies as trusted build authorities.
-|context=Paraphrased expectation of security and privacy enthusiasts.
+|author=Paraphrased expectation of security and privacy enthusiasts.
 }}
 
 That expectation is not part of the formal [https://opensource.org/osd {{osd}}]. The Open Source Definition is about source code freedoms. It does not require self-hosted builds, avoidance of proprietary infrastructure or [[Binary_Build_Locations#Reproducible_builds|reproducible builds]].
@@ -142,7 +142,7 @@ Comparison of who controls the computer that create official downloads for selec
 | <!-- evidence --> Mozilla says shippable builds were moved from AWS to GCP. Mozilla issue tracker and Firefox CI configuration provide additional technical evidence.<ref>
 {{quotation
 |quote=moving shippable builds and Android emulator tests from AWS over to GCP
-|context=[https://discourse.mozilla.org/t/engineering-effectiveness-newsletter-august-and-september-2022-edition/106802 Mozilla Discourse: Engineering Effectiveness Newsletter, August and September 2022]
+|source=[https://discourse.mozilla.org/t/engineering-effectiveness-newsletter-august-and-september-2022-edition/106802 Mozilla Discourse: Engineering Effectiveness Newsletter, August and September 2022]
 }}
 
 Mozilla issue tracker: [https://phabricator.services.mozilla.com/D157765 Bug 1547111 - Migrate shippable builds from AWS to GCP r=ahal!,jmaher!]
@@ -160,7 +160,7 @@ Mozilla issue tracker: [https://phabricator.services.mozilla.com/D157765 Bug 154
 |quote=Release automation
 
 We have now setup release automation so that Github actions automatically trigger a release build and publish a release when we push a tag to the repository.
-|context=https://github.com/fork-maintainers/iceraven-browser
+|source=https://github.com/fork-maintainers/iceraven-browser
 }}
 </ref>
 |-
@@ -187,7 +187,7 @@ Flatpak's build orchestrator [https://github.com/flathub-infra/vorarbeiter Vorar
 * MIT Computer Science & Artificial Intelligence Lab (hosting)
 * Greek Research and Technology Network (GRNET) (hosting)
 * ...
-|context=https://db.debian.org/machines.cgi?sortby=purpose&sortorder=dsc
+|source=https://db.debian.org/machines.cgi?sortby=purpose&sortorder=dsc
 }}
 </ref>
 |-
@@ -229,17 +229,17 @@ In simple terms, a "build" means turning source code and other declared inputs i
 * <u>Amazon-backed build infrastructure:</u> Flathub uses a build system called [https://github.com/flathub-infra/vorarbeiter Vorarbeiter]. Flathub describes Vorarbeiter as sitting between GitHub and GitHub Actions. Flathub later stated that it fully switched to [https://runs-on.com/ RunsOn] for all builds. RunsOn provides GitHub Actions runners using AWS infrastructure. AWS means [https://aws.amazon.com/ Amazon Web Services], Amazon's cloud platform. Therefore, current public Flathub documentation shows that Flathub builds use GitHub Actions, RunsOn, and AWS-backed infrastructure.<ref>
 {{quotation
 |quote=The new service is a middleman between GitHub and GitHub Actions.
-|context=[https://docs.flathub.org/blog/vorarbeiter-is-here Flathub: Vorarbeiter is here]
+|source=[https://docs.flathub.org/blog/vorarbeiter-is-here Flathub: Vorarbeiter is here]
 }}
 
 {{quotation
 |quote=Since then, we have fully switched to RunsOn for all builds.
-|context=[https://docs.flathub.org/blog/vorarbeiter-2026 Flathub: What's new in Vorarbeiter]
+|source=[https://docs.flathub.org/blog/vorarbeiter-2026 Flathub: What's new in Vorarbeiter]
 }}
 
 {{quotation
 |quote=Thank you RunsOn team and AWS for making this possible!
-|context=[https://docs.flathub.org/blog/vorarbeiter-2026 Flathub: What's new in Vorarbeiter]
+|source=[https://docs.flathub.org/blog/vorarbeiter-2026 Flathub: What's new in Vorarbeiter]
 }}
 </ref>
 
@@ -250,12 +250,12 @@ In simple terms, a "build" means turning source code and other declared inputs i
 * <u>Build-from-source transparency:</u> Flathub has a policy saying that source-available submissions should be built entirely from source code, including runtime dependencies included in the manifest, with possible exceptions. <ref>
 {{quotation
 |quote=All source available submissions must be built entirely from source code.
-|context=[https://docs.flathub.org/docs/for-app-authors/requirements Flathub: Requirements]
+|source=[https://docs.flathub.org/docs/for-app-authors/requirements Flathub: Requirements]
 }}
 
 {{quotation
 |quote=Exceptions can be granted on a case-by-case basis.
-|context=[https://docs.flathub.org/docs/for-app-authors/requirements Flathub: Requirements]
+|source=[https://docs.flathub.org/docs/for-app-authors/requirements Flathub: Requirements]
 }}
 </ref>
 ** <u>No clear per-app source/prebuilt-files indicator:</u> Flathub does not currently prominently show ordinary users whether a specific Flatpak was fully built from source code or whether any already-built upstream files were used during the build process. A feature request to show this on <code>flathub.org</code> was closed as not planned. <ref>
@@ -265,25 +265,25 @@ In simple terms, a "build" means turning source code and other declared inputs i
 ** <u>Limited reproducibility scope:</u> Flathub describes its reproducibility testing as testing <code>x86_64</code> builds targeting the stable repository. <ref>
 {{quotation
 |quote=We have started testing binary reproducibility of x86_64 builds targetting the stable repository.
-|context=[https://docs.flathub.org/blog/vorarbeiter-2026 Flathub: What's new in Vorarbeiter]
+|source=[https://docs.flathub.org/blog/vorarbeiter-2026 Flathub: What's new in Vorarbeiter]
 }}
 </ref>
 ** <u>Direct uploads and failures:</u> Flathub states that direct uploads are not currently tested by its reproducibility system and that reproducibility failures are not currently acted on. <ref>
 {{quotation
 |quote=Failures are not currently acted on. When we collect more results, we may start to surface them to app maintainers for investigation. We also don't test direct uploads at the moment.
-|context=[https://docs.flathub.org/blog/vorarbeiter-2026 Flathub: What's new in Vorarbeiter]
+|source=[https://docs.flathub.org/blog/vorarbeiter-2026 Flathub: What's new in Vorarbeiter]
 }}
 </ref>
 ** <u>Source versus packaging distinction:</u> Reproducible packaging is not the same as proving that everything was compiled from original source code. It proves that the same recipe produced the same Flatpak again. If the recipe used a prebuilt upstream program as an input, reproducibility shows that the same program was packaged again in the same way.
 ** <u>Reporting-path trust:</u> The reproducibility checker says it rebuilds Flatpak apps published on Flathub and compares the result using <code>diffoscope</code>. <code>diffoscope</code> is a tool that compares two build outputs and explains what differs. The checker documentation also says Amazon S3 upload support is optional and used for uploading <code>diffoscope</code> results. S3 means [https://aws.amazon.com/s3/ Amazon S3], Amazon's cloud object storage service. S3 is storage, not a build machine. This means Amazon infrastructure may be used to store or serve detailed comparison reports. <ref>
 {{quotation
 |quote=A tool to rebuild Flatpak apps published on Flathub and compare reproducibility using diffoscope.
-|context=[https://github.com/flathub-infra/flathub-repro-checker flathub-repro-checker]
+|source=[https://github.com/flathub-infra/flathub-repro-checker flathub-repro-checker]
 }}
 
 {{quotation
 |quote=boto3 is optionally used to upload diffoscope results as a zip file to Amazon S3
-|context=[https://github.com/flathub-infra/flathub-repro-checker flathub-repro-checker]
+|source=[https://github.com/flathub-infra/flathub-repro-checker flathub-repro-checker]
 }}
 </ref>
 *** <u>Reporting-path attack surface:</u> A compromised or malicious reporting/storage path could theoretically hide, replace, remove, or misrepresent reproducibility artifacts shown to users.
@@ -316,7 +316,7 @@ Reproducible builds answer the question:
 
 {{quotation
 |quote=Can someone else independently produce the same program from the same source code?
-|context=Reproducible builds question.
+|author=Reproducible builds question.
 }}
 
 That is related, but separate.
@@ -331,7 +331,7 @@ In simple terms:
 
 {{quotation
 |quote=If the original meal was cooked in Amazon's kitchen, the strongest check is not another check controlled by the same kitchen.
-|context=Reproducible builds and independent verification analogy.
+|author=Reproducible builds and independent verification analogy.
 }}
 
 For strongest verification, reproducible build checks should be possible outside the same cloud company or hosted build platform used for the official build.
@@ -427,12 +427,12 @@ Other Free Software, Open Source, government, and software supply-chain security
 The [https://sfconservancy.org/GiveUpGitHub/ Software Freedom Conservancy] argues that Free and Open Source Software projects should not normalize reliance on GitHub's proprietary developer infrastructure. This supports the broader point that the tools and platforms used to develop and publish Open Source software can matter, not only the source license. <ref>
 {{quotation
 |quote=GitHub itself is the very opposite of FOSS.
-|context=[https://sfconservancy.org/GiveUpGitHub/ Software Freedom Conservancy: Give Up GitHub]
+|source=[https://sfconservancy.org/GiveUpGitHub/ Software Freedom Conservancy: Give Up GitHub]
 }}
 
 {{quotation
 |quote=reject GitHub's proprietary services
-|context=[https://sfconservancy.org/GiveUpGitHub/ Software Freedom Conservancy: Give Up GitHub]
+|source=[https://sfconservancy.org/GiveUpGitHub/ Software Freedom Conservancy: Give Up GitHub]
 }}
 </ref>
 
@@ -443,19 +443,19 @@ This does not by itself prove that GitHub-built binaries are malicious. It suppo
 The Dutch government developer portal makes a direct integrity argument about code and binaries. It argues that hosting source code is critical infrastructure, that code or binaries in repositories must not be tampered with, and that the government needs full control over its Git forge. <ref>
 {{quotation
 |quote=Het hosten van broncode is een kritiek onderdeel van de infrastructuur
-|context=[https://developer.overheid.nl/blog/2025/11/11/git-forge-overheid Developer Overheid: Aanbeveling voor de Git-werkplaats van de overheid]
+|source=[https://developer.overheid.nl/blog/2025/11/11/git-forge-overheid Developer Overheid: Aanbeveling voor de Git-werkplaats van de overheid]
 }}
 
 {{quotation
 |quote=volledige beschikking te hebben over een Git-forge
-|context=[https://developer.overheid.nl/blog/2025/11/11/git-forge-overheid Developer Overheid: Aanbeveling voor de Git-werkplaats van de overheid]
+|source=[https://developer.overheid.nl/blog/2025/11/11/git-forge-overheid Developer Overheid: Aanbeveling voor de Git-werkplaats van de overheid]
 }}
 </ref>
 
 A later Dutch government page says <code>code.overheid.nl</code> is fully self-hosted and supports digital sovereignty. <ref>
 {{quotation
 |quote=fully self-hosted and supports digital sovereignty
-|context=[https://www.nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform/ Digital Government: Soft launch of open-source code platform for government]
+|source=[https://www.nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform/ Digital Government: Soft launch of open-source code platform for government]
 }}
 </ref>
 
@@ -466,7 +466,7 @@ This is close to the concern discussed on this page: whoever controls the infras
 The Tor Project's deterministic builds article gives a strong build-time attack model. It argues that malware can attack software development and build processes themselves, and that deterministic, distributed builds are a defense against targeted attacks. <ref>
 {{quotation
 |quote=malware that attacks the software development and build processes
-|context=[https://blog.torproject.org/deterministic-builds-part-one-cyberwar-and-global-compromise/ Tor Project: Deterministic Builds Part One]
+|source=[https://blog.torproject.org/deterministic-builds-part-one-cyberwar-and-global-compromise/ Tor Project: Deterministic Builds Part One]
 }}
 </ref>
 
@@ -477,12 +477,12 @@ In simpler terms: the danger is not only malicious source code. The danger can a
 The Reproducible Builds project describes reproducible builds as creating an independently verifiable path from source code to binary code. It also says reproducible builds help detect unauthorized changes to the build process and give users confidence that downloaded binaries match the untampered source code. <ref>
 {{quotation
 |quote=independently-verifiable path from source to binary code
-|context=[https://reproducible-builds.org/ Reproducible Builds]
+|source=[https://reproducible-builds.org/ Reproducible Builds]
 }}
 
 {{quotation
 |quote=detect unauthorized changes to the build process early
-|context=[https://reproducible-builds.org/ Reproducible Builds]
+|source=[https://reproducible-builds.org/ Reproducible Builds]
 }}
 </ref>
 
@@ -493,14 +493,14 @@ This supports the point that source code visibility alone is not enough. Users a
 SLSA describes a build integrity threat as an adversary introducing behavior into an artifact without changing the source code. This directly matches the build-time backdoor concern discussed on this page. <ref>
 {{quotation
 |quote=introduce behavior to an artifact without changing its source code
-|context=[https://slsa.dev/spec/v1.2/threats SLSA: Threats and mitigations]
+|source=[https://slsa.dev/spec/v1.2/threats SLSA: Threats and mitigations]
 }}
 </ref>
 
 SLSA provenance also records details about the build, including the builder identity, build parameters, dependencies, and execution details. This supports documenting who built the binary, how it was built, and what infrastructure was involved. <ref>
 {{quotation
 |quote=Details specific to this particular execution of the build.
-|context=[https://slsa.dev/spec/v1.0/provenance SLSA: Provenance]
+|source=[https://slsa.dev/spec/v1.0/provenance SLSA: Provenance]
 }}
 </ref>
 
@@ -509,12 +509,12 @@ SLSA provenance also records details about the build, including the builder iden
 The Go project explains the source-to-binary problem in plain terms: Open Source code can be inspected, but most users download compiled binaries, and a supply-chain attacker could replace served binaries while leaving the source code unchanged. <ref>
 {{quotation
 |quote=leaving the source code unmodified
-|context=[https://go.dev/blog/rebuild Go Blog: Perfectly Reproducible, Verified Go Toolchains]
+|source=[https://go.dev/blog/rebuild Go Blog: Perfectly Reproducible, Verified Go Toolchains]
 }}
 
 {{quotation
 |quote=posted binaries are free of hidden changes
-|context=[https://go.dev/blog/rebuild Go Blog: Perfectly Reproducible, Verified Go Toolchains]
+|source=[https://go.dev/blog/rebuild Go Blog: Perfectly Reproducible, Verified Go Toolchains]
 }}
 </ref>
 
@@ -525,19 +525,19 @@ The Go article also gives a useful independence lesson: verifying a package with
 Gitian describes a software distribution method where binaries are verified by multiple builders. It says this removes the build and distribution process as a single point of failure. <ref>
 {{quotation
 |quote=verified by multiple builders
-|context=[https://gitian.org/ Gitian]
+|source=[https://gitian.org/ Gitian]
 }}
 
 {{quotation
 |quote=single point of failure
-|context=[https://gitian.org/ Gitian]
+|source=[https://gitian.org/ Gitian]
 }}
 </ref>
 
 Bitcoin Optech similarly explains that reproducible builds mean no single person or computer needs to be trusted to produce the executable binaries most users run. <ref>
 {{quotation
 |quote=no one person or computer needs to be trusted
-|context=[https://bitcoinops.org/en/topics/reproducible-builds/ Bitcoin Optech: Reproducible builds]
+|source=[https://bitcoinops.org/en/topics/reproducible-builds/ Bitcoin Optech: Reproducible builds]
 }}
 </ref>
 
@@ -548,7 +548,7 @@ This supports the positive model discussed on this page: independent rebuilders 
 The Open Technology Fund describes reproducible builds as creating an independently verifiable path from source to binary and preventing attacks against the complex systems that build shared digital infrastructure. <ref>
 {{quotation
 |quote=preventing attacks targeting the complex systems
-|context=[https://www.opentech.fund/security-safety-audits/reproducible-builds-security-audit/ Open Technology Fund: Reproducible Builds]
+|source=[https://www.opentech.fund/security-safety-audits/reproducible-builds-security-audit/ Open Technology Fund: Reproducible Builds]
 }}
 </ref>
 

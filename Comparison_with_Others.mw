@@ -854,22 +854,22 @@ https://forums.whonix.org/t/reproducible-builds-innovation/23057
 
 {{quotation
 |quote=[https://github.com/kpcyrd/repro-threshold repro-threshold], which implements an APT transport that "defines a threshold of at least X of my N trusted rebuilders need to confirm they reproduced the binary" before installing Debian packages.
-|context=[https://reproducible-builds.org/reports/2025-11/ Reproducible Builds News]
+|source=[https://reproducible-builds.org/reports/2025-11/ Reproducible Builds News]
 }}
 
 {{quotation
 |quote=We stand on the shoulders of giants - Kicksecure and many other Libre software projects are only made possible because people invested in writing code that is kept accessible for the public benefit.
-|context=[[Reasons_for_Freedom_Software|Reasons for Freedom Software / Open Source]]
+|source=[[Reasons_for_Freedom_Software|Reasons for Freedom Software / Open Source]]
 }}
 
 {{quotation
 |quote=Debian - the best parent one can have
-|context=[https://puri.sm/posts/what-is-pureos-and-how-is-it-built/ PureOS]
+|source=[https://puri.sm/posts/what-is-pureos-and-how-is-it-built/ PureOS]
 }}
 
 {{quotation
 |quote=Reasons for being based on Debian:
-|context={{whonix_wiki
+|author={{whonix_wiki
 |wikipage=Dev/Operating_System#Debian
 |text=chapter Debian - Security-Focused Operating System Comparison as Base for Whonix
 }}

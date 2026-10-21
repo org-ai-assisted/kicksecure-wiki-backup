@@ -180,14 +180,14 @@ Debian official image nowadays includes non-freedom firmware.
 
 {{quotation
 |quote=The Debian official media may include firmware that is otherwise not part of the Debian system to enable use of Debian with hardware that requires such firmware.
-|context=https://www.debian.org/vote/2022/vote_003#texte
+|source=https://www.debian.org/vote/2022/vote_003#texte
 }}
 
 {{quotation
 |quote=The winners
 
 Option 5 "Change SC for non-free firmware in installer, one installer"
-|context=https://www.debian.org/vote/2022/vote_003#outcome
+|source=https://www.debian.org/vote/2022/vote_003#outcome
 }}
 
 Note: SC stands for the Debian Social Contract.

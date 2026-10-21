@@ -40,12 +40,13 @@ Packaging serves several crucial purposes in software distribution, ensuring not
 
 {{quotation
 |quote=Lintian dissects Debian packages and reports bugs and policy violations. It contains automated checks for many aspects of Debian policy as well as some checks for common errors. Every Debian maintainer should check packages with this tool.
-|context=[https://salsa.debian.org/lintian/lintian Lintian on Debian Salsa]
+|source=[https://salsa.debian.org/lintian/lintian Lintian on Debian Salsa]
 }}
 
 {{quotation
 |quote=Command-line tool and website running thousands of checks to analyze packages, suggest fixes for source, packaging, software, and spelling, useful across various distros and platforms, not just Debian.
-|context=fosdem presentation, [https://archive.fosdem.org/2021/schedule/event/mariadb_distros/attachments/slides/4381/export/events/attachments/mariadb_distros/slides/4381/FOSDEM_2021_MariaDB_post_release_QA_in_Debian_and_Ubuntu_by_Otto_Kekalainen.pdf MariaDB post-release quality assurance in Debian and Ubuntu]
+|author=fosdem presentation
+|source=[https://archive.fosdem.org/2021/schedule/event/mariadb_distros/attachments/slides/4381/export/events/attachments/mariadb_distros/slides/4381/FOSDEM_2021_MariaDB_post_release_QA_in_Debian_and_Ubuntu_by_Otto_Kekalainen.pdf MariaDB post-release quality assurance in Debian and Ubuntu]
 }}
 * '''Architecture support:''' Upstream often provides packages and/or source code for a limited number of architectures (or Intel / AMD64 only). Distributions often build packages for multiple architectures. To learn more about how Debian does that, see [https://buildd.debian.org/ Debian Buildd - Debian Package Auto-Building].
 * '''Continuous Integration:''' For example, [https://ci.debian.net/ debci - Debian Continuous Integration].
@@ -226,12 +227,12 @@ Why distributions are still making use of <code>/etc</code>? The most likely rea
 
 {{quotation
 |quote=Note that while <code>systemd</code> itself explicitly supports booting up with entirely unpopulated images (<code>/usr/</code> being the only required directory to be populated) distributions might not be there yet: depending on your distribution further, manual work might be required to make this scenario work.
-|context=[https://systemd.io/BUILDING_IMAGES/ Building Images Safely]
+|source=[https://systemd.io/BUILDING_IMAGES/ Building Images Safely]
 }}
 
 {{quotation
 |quote=While a lot of work has gone into ensuring systemd systems can safely boot with unpopulated /etc/ trees,
-|context=[https://systemd.io/BUILDING_IMAGES/ Building Images Safely]
+|source=[https://systemd.io/BUILDING_IMAGES/ Building Images Safely]
 }}
 
 [https://uapi-group.org/ The Linux Userspace API Group] quote ticket [https://github.com/uapi-group/specifications/issues/76 Tracking upstream projects that do not support hermetic-usr for configuration] lists Linux software packages that still require configuration in <code>/etc</code> that do not support the <code>/usr</code> folder for configuration yet.
@@ -246,14 +247,14 @@ How can you help?
 [...]
 
 At this point some distributions (such as Fedora) are (probably more by accident than on purpose) already mostly hermetic in <code>/usr/</code>, at least for the most basic parts of the OS. However, this is not complete: many daemons require to have specific resources set up in <code>/var/</code> or <code>/etc/</code> before they can work, and the relevant packages do not carry <code>systemd-tmpfiles</code> descriptions that add them if missing. So there are two ways you could help here: politically, it would be highly relevant to convince distributions that an OS that is hermetic in <code>/usr/</code> is highly desirable and it's a worthy goal for packagers to get there. More specifically, it would be desirable if RPM/dpkg packages would ship with enough <code>systemd-tmpfiles</code> information so that configuration files the packages strictly need for operation are symlinked (or copied) from <code>/usr/share/factory/</code> if they are missing (even better of course would be if packages from their upstream sources on would just work with an empty <code>/etc/</code> and <code>/var/</code>, and create themselves what they need and default to good defaults in absence of configuration files).
-|context=systemd blog post [https://0pointer.net/blog/fitting-everything-together.html Fitting Everything Together]
+|author=systemd blog post [https://0pointer.net/blog/fitting-everything-together.html Fitting Everything Together]
 }}
 
 Marek (Qubes OS lead developer) also agrees with this.
 
 {{quotation
 |quote=, /etc is for user changes, packages should avoid modifying config files there of other packages if possible.
-|context=[https://github.com/QubesOS/qubes-issues/issues/8832#issuecomment-1881139726 Qubes issue tracker]
+|source=[https://github.com/QubesOS/qubes-issues/issues/8832#issuecomment-1881139726 Qubes issue tracker]
 }}
 
 Patrick (Kicksecure lead developer) also agrees with this.

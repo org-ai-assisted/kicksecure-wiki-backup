@@ -73,7 +73,7 @@ Tails offers <code>.img</code> and <code>.iso</code> images. Tails has a ticket 
 * The differences in the code base for Live Systems vs. Installer Systems vs. Installed Systems should be reduced as much as possible.
 
 {{quotation
-|context=[https://0pointer.net/blog/fitting-everything-together.html Fitting Everything Together]
+|source=[https://0pointer.net/blog/fitting-everything-together.html Fitting Everything Together]
 |quote=
 Live Systems vs. Installer Systems vs. Installed Systems
 

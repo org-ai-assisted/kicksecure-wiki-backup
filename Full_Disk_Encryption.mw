@@ -424,7 +424,7 @@ In case of a TPM stored inside the system (soldered or CPU):
 
 {{quotation
 |quote=Even though this sounds a lot weaker than the FIDO2/PKCS#11 model TPM2 still bring benefits for securing your systems: because the cryptographic key material stored in TPM2 devices cannot be extracted (at least that's the theory), if you bind your hard disk encryption to it, it means attackers cannot just copy your disk and analyze it offline -- they always need access to the TPM2 chip too to have a chance to acquire the necessary cryptographic keys. Thus, they can still steal your whole PC and analyze it, but they cannot just copy the disk without you noticing and analyze the copy.
-|context=https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
+|source=https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
 }}
 
 External FIDO2 security token are more secure than built-in TPM because the user can more easily carry and/or hide them.
@@ -437,7 +437,7 @@ The use case might be to use TPM Transparent Encryption but have a backup passwo
 === TPM to Strengthen Weak Passwords ===
 {{quotation
 |quote=TPM2 stuff to allow short (4 digits or so) "PINs" for unlocking the harddisk, i.e. kind of a low-entropy password you type in. The reason this is reasonably safe is that in this case the PIN is passed to the TPM2 which enforces that not more than some limited amount of unlock attempts may be made within some time frame, and that after too many attempts the PIN is invalidated altogether. Thus making dictionary attacks harder (which would normally be easier given the short length of the PINs).
-|context=https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
+|source=https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
 }}
 
 === TPM plus Password ===
@@ -447,7 +447,7 @@ At the time of writing, this is unavailable in any Linux distribution. See the c
 
 {{quotation
 |quote=1) Require a disk encryption password *as well as* the TPM-backed key. You want the TPM component in order to avoid a compromised boot process giving an attacker access to the disk, but having the entire FDE key automatically sent over an unencrypted bus is a problem.
-|context=[https://x.com/mjg59/status/1420480679523930116 mjg59's thread on disk encryption password '''<u>and</u>''' the TPM-backed key]
+|source=[https://x.com/mjg59/status/1420480679523930116 mjg59's thread on disk encryption password '''<u>and</u>''' the TPM-backed key]
 }}
 
 == Complexity Risk ==
@@ -462,7 +462,7 @@ The system's complexity should remain within the user's technical capabilities. 
 [...]
 
 Nothing updates the enrollment automatically after you initially enrolled it, hence after the first kernel/initrd update you have to manually re-enroll things again, and again, and again ... after every update.
-|context=https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
+|source=https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html
 }}
 
 == Security ==
@@ -470,7 +470,7 @@ Using full disk encryption with a strong password is more secure than using a TP
 
 {{quotation
 |quote=According to the researcher, targeted attacks can bypass BitLocker's encryption by directly accessing the hardware and extracting the encryption keys stored in the computer's Trusted Platform Module (TPM) via the LPC bus.
-|context=[https://www.techspot.com/news/101792-microsoft-bitlocker-encryption-can-cracked-43-seconds-4.html Microsoft BitLocker encryption cracked in just 43 seconds with a $4 Raspberry Pi Pico]
+|source=[https://www.techspot.com/news/101792-microsoft-bitlocker-encryption-can-cracked-43-seconds-4.html Microsoft BitLocker encryption cracked in just 43 seconds with a $4 Raspberry Pi Pico]
 }}
 
 {{VideoLink
@@ -489,7 +489,7 @@ As you establish an alternative unlock method using only the on-board hardware o
 That being said you have to trust (or better, verify) that the manufacturer did not mess anything up in the overall platform design for this to be considered a fairly safe decryption alternative. There are a range of cases where things did not work out as planned. For example, when [https://dolosgroup.io/blog/2021/7/9/from-stolen-laptop-to-inside-the-company-network security researches showed that BitLocker on a Lenovo notebook would use unencrypted SPI communication] with the TPM2 leaking the LUKS passphrase in plain text without even altering the system, or that BitLocker used the native encryption features of SSD drives that you can [https://blog.elcomsoft.com/2019/01/life-after-trim-using-factory-access-mode-for-imaging-ssd-drives/ by-pass through factory reset].
 
 These examples are all about BitLocker but it should make it clear that if the overall design is broken, then the secret is accessible and this alternative method less secure than a passphrase only present in your head (and somewhere safe like a password manager). On the other hand, keep in mind that in most cases elaborate research and attacks to access a drive's data are not worth the effort for an opportunistic bad actor. Additionally, not having to enter a passphrase on every boot should help adoption of this technology as it is transparent but adds additional hurdles to unwanted access.
-|context=[https://fedoramagazine.org/automatically-decrypt-your-disk-using-tpm2/ Fedora Magazine: Automatically decrypt your disk using TPM2]
+|source=[https://fedoramagazine.org/automatically-decrypt-your-disk-using-tpm2/ Fedora Magazine: Automatically decrypt your disk using TPM2]
 }}
 
 * https://www.bleepingcomputer.com/news/security/new-tpm-20-flaws-could-let-hackers-steal-cryptographic-keys/
@@ -669,14 +669,14 @@ YubiKey has a [https://www.yubico.com/blog/yubikey-static-password-offers-up-opt
 
 {{quotation
 |quote=YubiKey can function as a USB keyboard that types out characters with the touch of a button
-|context=https://www.yubico.com/blog/yubikey-static-password-offers-up-options/
+|source=https://www.yubico.com/blog/yubikey-static-password-offers-up-options/
 }}
 
 As of September 2024, [https://www.nitrokey.com/blog/2023/nitrokey-3-firmware-release-0 nitokey blog comment mentions that Nitrokey does not have a static password feature].
 
 {{quotation
 |quote=Ordinary static passwords can be stored securely in the Nitrokey hardware. For this purpose the Nitrokey App serves as a simple password manager.
-|context=https://www.nitrokey.com/news/2015/passwords-are-dead-long-live-latchkey
+|source=https://www.nitrokey.com/news/2015/passwords-are-dead-long-live-latchkey
 }}
 
 This probably will not work during pre-boot authentication.

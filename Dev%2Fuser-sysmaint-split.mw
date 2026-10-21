@@ -169,7 +169,7 @@ Privilege Escalation Tools are SUID applications, which can be a security risk f
 
 {{quotation
 |quote=Ideally, there should be no SUID binaries reachable from the user account, as otherwise significant extra attack surface inside the VM is exposed (dynamic linker, libc startup, portions of Linux kernel including ELF loader, etc.)
-|context=[https://github.com/QubesOS/qubes-issues/issues/2695 Quote] security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
+|source=[https://github.com/QubesOS/qubes-issues/issues/2695 Quote] security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
 }}
 
 SUID related risks are elaborated on the [[SUID Disabler and Permission Hardener]] wiki page.

@@ -807,7 +807,7 @@ The SSPL mandates that not only the source code of the forked software used to p
 
 {{quotation
 |quote=It also protects our continued investment in developing products that we distribute for free and in the open by restricting cloud service providers from offering Elasticsearch and Kibana as a service without contributing back.
-|context=[https://www.elastic.co/pricing/faq/licensing elasticsearch]
+|source=[https://www.elastic.co/pricing/faq/licensing elasticsearch]
 }}
 
 In the realm of the General Public License (GPL), software that "links" to GPL-licensed software must also be GPL-licensed. The term "linking" in this context is technical, referring to processes like a C compiler/linker incorporating a GPL'd library. There have been debates around the nuances of static versus dynamic linking in this regard.
@@ -816,14 +816,14 @@ The proponents of SSPL argue that the concept of a SaaS service utilizing server
 
 {{quotation
 |quote=In short, we believe that in today's world, linking has been superseded by the provision of programs as services and the connection of programs over networks as the main form of program combination.
-|context=[https://lists.opensource.org/pipermail/license-review_lists.opensource.org/2018-October/003672.html Eliot Horowitz, MongoDB]
+|source=[https://lists.opensource.org/pipermail/license-review_lists.opensource.org/2018-October/003672.html Eliot Horowitz, MongoDB]
 }}
 
 This SSPL, however, was not accepted by the Open Source Initiative (OSI). They rejected the SSPL as it was seen to violate the Open Source Definition (OSD).
 
 {{quotation
 |quote=The license must not place restrictions on other software that is distributed along with the licensed software. For example, the license must not insist that all other programs distributed on the same medium must be open-source software.
-|context=[https://opensource.org/osd/ Open Source Definition (OSD), point 9]
+|source=[https://opensource.org/osd/ Open Source Definition (OSD), point 9]
 }}
 
 According to OSI, this stipulation by the SSPL could potentially categorize software under this license as non-free, due to the restrictive conditions it imposes on other software distributed alongside it.

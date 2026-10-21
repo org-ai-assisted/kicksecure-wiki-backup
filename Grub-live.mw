@@ -173,7 +173,7 @@ Avoid writing to arbitrary (non-boot) host disks:
 {{quotation
 |quote=
 Tails takes care not to use any filesystem that might exist on the host machine's hard drive, unless explicitly told to do so by the user. The Debian Live persistence feature is disabled by passing <code>nopersistence</code> over the kernel command line to live-boot.
-|context=https://tails.boum.org/contribute/design/
+|source=https://tails.boum.org/contribute/design/
 }}
 </ref>
 | {{Yes}} <ref name=tails-avoid-host-disk-usage />
