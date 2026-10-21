@@ -191,7 +191,7 @@ Roll your two six-sided dice to generate each individual number in the pad, unti
 
 <blockquote>Never ever simply use normal six-sided dice by adding the values of two dice. This method is statistically unsuitable to produce values from 0 to 9 and thus absolutely insecure (the total of 7 will occur about 6 times more often that the values 2 or 12). Instead, use one black and one white die and assign a value to each of the 36 combinations, taking in account the order/colour of the dice (see table below). This way, each combination has a .0277 probability (1 on 36). We can produce three series of values between 0 and 9. The remaining 6 combinations (with a black 6) are simply disregarded, which doesn't affect the probability of the other combinations.</blockquote>
 
-&#x200B;{{mbox
+{{mbox
 | type    = notice
 | image   = [[File:Ambox_notice.png|40px|alt=Info]]
 | text    = '''Reminder:''' This key material should be stored in a small pad at all times and <u>not</u> stored on a computer or removable media device such as a CD, USB and so on.
@@ -283,7 +283,7 @@ U  S  I N G     W  I N D  O Z  E    S  P  Y  W  A R  E (,)
 111 000 000 90 80 2 82 71 2 4 6 91  80 1 6 82 3 71 77 99 82 5 71 77 83 99 5 77
 </pre>
 Note that codebooks exist for use with common words, but for simplicity that has not been used in this example.
-&#x200B;
+
 To prepare the message for encryption, the numbers above are arranged in groups of five:
 
 86755 43879 93839 97026 62829 96751 49984 83347 49986 34725 89299 83808 88618 22939 01110 00000 90802 82712 46918 01682 37177 99825 71778 39957 79191
@@ -329,7 +329,7 @@ Upon receiving an encrypted message:
 * the digits are added together (without carry; for example 9 + 7 = 6, not 16) to generate the plaincode
 * the checkerboard is used to re-covert the plaincode digits into plaintext
 
-&#x200B;To decrypt the message, the receiver verifies the first group of the message to ensure that he uses the correct one-time pad sheet. Next, he writes the proper one-time pad digits underneath the ciphertext and adds the key to the ciphertext, digit by digit, without carry (e.g. 9 + 6 = 5 and not 15). The first group is skipped as it is only used to identify the key.
+To decrypt the message, the receiver verifies the first group of the message to ensure that he uses the correct one-time pad sheet. Next, he writes the proper one-time pad digits underneath the ciphertext and adds the key to the ciphertext, digit by digit, without carry (e.g. 9 + 6 = 5 and not 15). The first group is skipped as it is only used to identify the key.
 
 '''Ciphertext''' : 32065 45537 90324 76673 32901 20548 29000 85061 60079 07384 02424 54101 38911 78319 15195 46017 52254 58179 89323 54433 05980 95493 36042 20413 83683 99494
 
@@ -372,7 +372,7 @@ The Words-Per-Sentence (WPS) system is a simple yet effective text-based method 
 To avoid statistical bias, some sentences with less than five words or more than fourteen words should be added (these are later simply ignored). The advantages of this method are an excellent linguistic freedom and the lack of complex calculations or conversions. Always start by writing a meaningful text and then play with the words to obtain the required sentence length. Exclude the salutation in a letter from the system, as a nine-letter salutation would arouse suspicion. The random digits produce an average of ten-words sentences.</blockquote>
 
 Using the example on this page, the first five digit cipher (32065) could be buried in the following email:
-&#x200B;
+
 <pre>Dear Patrick,
 
 I really, really love the latest Kicksecure release!
@@ -389,7 +389,7 @@ Private.
 Words per sentence = 8, 7, 5, 11, 10
 WPS (-5) = 32065
 
-&#x200B;So long as the recipient understood that sentences with less than four words long are ignored (as well as any future sentences of more than 14 words), they would quickly identify the first cipher in the message as 32065.
+So long as the recipient understood that sentences with less than four words long are ignored (as well as any future sentences of more than 14 words), they would quickly identify the first cipher in the message as 32065.
 
 = Footnotes =
 <references />
