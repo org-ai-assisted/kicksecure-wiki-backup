@@ -12,8 +12,6 @@ ASCII only.
 }} <noinclude>{{intro|hidden=true|A secure by default operating system with the latest security research in place.}}</noinclude> {{Hide_all_banners}}
 
 {{hide_all_banners}}
-'''Security-Focused Operating System'''
-
 [[Reasonable Security|Reasonably Secure]] - [[Stable Version User Experience|Stable by Design]] - [[Comparison with Others|Hardened Debian Linux]]
 
 [[ISO|Download Now]] - Learn: [[About|What Is Kicksecure?]]
@@ -49,16 +47,6 @@ ASCII only.
 * [https://forums.kicksecure.com/ Forum]
 * [https://forums.kicksecure.com/c/news News]
 * [[Donate]]
-
-== Included Applications ==
-Pre-installed applications are reviewed and configured for security.
-* [[E-Mail|Thunderbird]]
-* [[Passwords|KeePassXC]]
-* [[Software#Media Player|VLC]]
-* [[Software#Terminal|Terminal]]
-* [[Electrum]]
-* [[Bitcoin]]
-* [[Monero]]
 
 <span id="security"></span>
 == Security Features ==
