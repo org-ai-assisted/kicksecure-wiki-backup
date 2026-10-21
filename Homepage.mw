@@ -14,7 +14,9 @@ ASCII only.
 {{hide_all_banners}}
 {{#sloganpills:item=Reasonable Security,Reasonably Secure|item=Stable Version User Experience,Stable by Design|item=Comparison with Others,Hardened Debian Linux}}
 
-{{#downloadbutton:url=/wiki/ISO|text=Download Now}} Learn: [[About|What Is Kicksecure?]]
+{{#downloadbutton:url=/wiki/ISO|text=Download Now}}
+
+Learn: [[About|What Is Kicksecure?]]
 
 <span id="download"></span>
 == Download ==
