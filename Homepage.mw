@@ -12,7 +12,7 @@ ASCII only.
 }} <noinclude>{{intro|hidden=true|A secure by default operating system with the latest security research in place.}}</noinclude> {{Hide_all_banners}}
 
 {{hide_all_banners}}
-[[Reasonable Security|Reasonably Secure]] - [[Stable Version User Experience|Stable by Design]] - [[Comparison with Others|Hardened Debian Linux]]
+{{#sloganpills:item=Reasonable Security,Reasonably Secure|item=Stable Version User Experience,Stable by Design|item=Comparison with Others,Hardened Debian Linux}}
 
 [[ISO|Download Now]] - Learn: [[About|What Is Kicksecure?]]
 
