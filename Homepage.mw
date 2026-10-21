@@ -1,18 +1,8 @@
 <!--
-WIKI EDITORS NOTE
-
-To edit, see the following pages instead:
-
-https://www.kicksecure.com/wiki/Widget:Page_Homepage
-
-https://www.kicksecure.com/wiki/MediaWiki:Page_Homepage.css
-
-Wiki editor documentation:
-https://www.kicksecure.com/wiki/Dev/wiki#Homepage_Edits
-
-Developer Documentation (not useful for simple content changes):
-https://www.kicksecure.com/wiki/Dev/mediawiki#Homepage_(/wiki/Homepage)
-
+Kicksecure homepage source. The page BODY below is the homepage content
+(authored here, served by mw-static-generator as a normal page). Production's
+Widget:Page_Homepage is not reproduced -- edits land here until cutover.
+ASCII only.
 -->{{Header}} {{Title|title=
 {{project_name_short}} - Secure by Default Operating System
 }} {{#seo:
@@ -20,5 +10,124 @@ https://www.kicksecure.com/wiki/Dev/mediawiki#Homepage_(/wiki/Homepage)
 |description=A secure by default operating system with the latest security research in place.
 |image=Kicksecure-image-hero-image.jpeg
 }} <noinclude>{{intro|hidden=true|A secure by default operating system with the latest security research in place.}}</noinclude> {{Hide_all_banners}}
-{{#pagehomepage:project={{project_name_short}}|page={{FULLPAGENAME}}|shareUrl={{canonicalurl:{{FULLPAGENAME}}}}}}
+
+{{hide_all_banners}}
+'''Security-Focused Operating System'''
+
+[[Reasonable Security|Reasonably Secure]] - [[Stable Version User Experience|Stable by Design]] - [[Comparison with Others|Hardened Debian Linux]]
+
+[[ISO|Download Now]] - Learn: [[About|What Is Kicksecure?]]
+
+<span id="download"></span>
+== Download ==
+
+'''Hardware'''
+* [[ISO|On Computer]]
+* [[USB Installation|On USB]]
+
+'''Virtual Machine'''
+* [[Windows]]
+* [[MacOS|macOS]]
+* [[Linux|VirtualBox Linux installer]]
+* [[VirtualBox]]
+* [[Qubes]]
+* [[KVM]]
+
+'''Other'''
+* [[Debian|Debian+]]
+* [[Chroot|chroot]]
+* [[Dev/Build Documentation|Source Code]]
+* [[ARM64]]
+* [[Raspberry Pi|Raspberry Pi (RPi)]]
+* [[PPC64|ppc64el (POWER9/10)]]
+* [[RISCV64]]
+
+== Documentation ==
+* [[Documentation|Wiki]]
+* [[FAQ]]
+* [[#Security Features|Features]]
+* [https://forums.kicksecure.com/ Forum]
+* [https://forums.kicksecure.com/c/news News]
+* [[Donate]]
+
+== Included Applications ==
+Pre-installed applications are reviewed and configured for security.
+* [[E-Mail|Thunderbird]]
+* [[Passwords|KeePassXC]]
+* [[Software#Media Player|VLC]]
+* [[Software#Terminal|Terminal]]
+* [[Electrum]]
+* [[Bitcoin]]
+* [[Monero]]
+
+<span id="security"></span>
+== Security Features ==
+Fully featured with advanced security components.
+* [[Operating System Software and Updates|Protection from Targeted Malicious Updates]] -- Kicksecure update servers know neither the identity nor IP address of the user because all upgrades are downloaded over Tor.
+* [https://github.com/Kicksecure/security-misc Kernel Self Protection Settings] -- Kicksecure uses strong kernel hardening settings, as recommended by the Kernel Self Protection Project (KSPP).
+* [[sdwdate|Time Attack Protection]] -- Kicksecure protects its users from time attacks by implementing Boot Clock Randomization and secure network time synchronization using sdwdate.
+* [[Debian Tips#Open Ports|No Open Ports by Default]] -- Kicksecure provides a much lower attack surface since there are no open server ports by default, unlike in some other Linux distributions.
+* [https://github.com/Kicksecure/tirdad CPU Information Leak Protection (TCP ISN Randomization)] -- Without TCP ISN randomization, sensitive information about a system's CPU activity can leak through outgoing traffic, exposing the system to side-channel attacks. Tirdad protects against this vulnerability.
+* [[Download|Available for Many Virtualizers]] -- With support for multiple virtualization options, trying out Kicksecure is easy. VMs also help contain and prevent the spread of malware.
+* [https://github.com/Kicksecure/security-misc Brute Force Defense] -- Kicksecure protects Linux user accounts against brute force attacks by using pam_faillock.
+* [[Dev/Entropy|Entropy Enhancements]] -- Strong entropy is required for computer security to ensure the unpredictability and randomness of cryptographic keys and other security-related processes. Kicksecure makes encryption more secure thanks to preinstalled random number generators.
+* [[Live Mode]] -- Booting into Live Mode is as simple as choosing Live Mode in the boot menu. After the session, all data will be gone.
+* [[Ram-wipe|Ram Wipe]] -- ram-wipe is a software project designed to protect against RAM extraction attacks by erasing the contents of a computer's random access memory (RAM) when the system is shut down or restarted.
+* [[USBGuard]] -- USBGuard attempts to mitigate a limited subset of USB hardware attacks by rejecting most USB devices that are plugged in after boot.
+* [[Debian|Based on Linux]] -- Linux is highly reliable, secure, free, and Open Source. That's why Kicksecure is based on Linux.
+* [[Forcing .onion on Project|Onion Website for Enhanced Connection Security]] -- Our website offers an alternative onion service. This provides higher connection security between the user and the server.
+* [[AppArmor|Risk Minimization]] -- AppArmor profiles restrict the capabilities of commonly used, high-risk applications.
+* [[Dev/Strong Linux User Account Isolation|Strong Linux User Account Isolation]] -- Kicksecure strengthens user account boundaries with console hardening, anti-bruteforce protections, strict permission defaults, and per-user temporary directory isolation.
+* [[Sysmaint|Safer System Maintenance through User-Sysmaint-Split]] -- Kicksecure boosts security by separating everyday use from system admin tasks. Two accounts are used by default, one for daily work and one for maintenance, limiting what harm malware could do.
+* [[Dev/Strong Linux User Account Isolation#libpam-tmpdir|Safer Temporary Files with libpam-tmpdir]] -- Kicksecure includes libpam-tmpdir to improve system security by isolating temporary files per user and tightening file permissions, reducing the risk of /tmp-based and symlink attacks.
+* [[About#Implementation of the Securing Debian Manual|Hardening with Securing Debian Manual]] -- Kicksecure applies key system hardening techniques from the Securing Debian Manual by default, and adds original research to boost the baseline security.
+* [[Documentation|Comprehensive Security Documentation]] -- Knowledge is a defense: Kicksecure offers extensive documentation to empower users with critical security information and best practices.
+* [[Malware|Virus Protection]] -- Kicksecure provides additional security hardening measures and user education for better protection from virus attacks.
+* [[Dev/Strong Linux User Account Isolation#Console Lockdown|Console Lockdown]] -- Legacy login methods can be a security risk. Console Lockdown disables them for improved security hardening.
+* [[Dev/Strong Linux User Account Isolation#Permission Lockdown|Home Folder Permission Lockdown]] -- Kicksecure locks down user home folders by default, preventing one user from viewing another's files. This adds an extra layer of privacy and security.
+* [[Dev/Strong Linux User Account Isolation#umask hardening|Umask Hardening for Safer File Permissions]] -- Kicksecure improves file security by setting a stricter default umask for non-root accounts, so new files aren't readable by others unless explicitly allowed.
+* [[About|Based on Debian]] -- Kicksecure is based on Debian, one of the most reliable Linux distributions.
+* [[Verifying Software Signatures|Digitally signed releases]] -- Downloads are signed so genuine Kicksecure releases can be verified.
+* [[Trust#canary|Warrant Canary]] -- A canary confirms that no warrants have ever been served on the Kicksecure project.
+* [[Swap-file-creator|Swap File Creator]] -- swap-file-creator automatically creates and enables a swap file on LUKS-encrypted disks at boot, helping prevent low-RAM freezes without exposing swap on unencrypted storage by default.
+* [[SUID Disabler and Permission Hardener]] -- SUID Disabler and Permission Hardener enhances system security by strengthening the isolation of Linux user accounts and more.
+* [[About#Default security software|Lean Default Install]] -- Fewer unnecessary services are installed by default, which helps reduce the attack surface.
+* [https://github.com/Kicksecure/open-link-confirmation Open Link Confirmation] -- Helps prevent accidental link opening in supported browsers.
+* [https://github.com/Kicksecure/security-misc Bluetooth Hardening] -- Bluetooth is disabled by default and requires manual user activation when needed.
+* [https://github.com/Kicksecure/security-misc/tree/master/etc/ssh Hardened SSH Defaults] -- Strong SSH defaults help reduce risk when using SSH as a client or running an SSH server.
+* [[Full Disk Encryption|Full Disk Encryption by Default]] -- The installer enables Full Disk Encryption by default, helping protect data if a device is lost or stolen.
+* [[Systemcheck#Physical Security Check|Physical Security Check]] -- systemcheck can point out common physical security weaknesses like missing disk encryption or unsafe login settings.
+* [[Recovery#Recovery Mode|Recovery Options Lockdown]] -- Safer defaults reduce risky recovery paths that can weaken physical security.
+* [[Protection Against Physical Attacks#Bootloader Password|Bootloader Password Support]] -- Helps users set a bootloader password to protect boot settings against tampering.
+* [[emerg-shutdown|Emergency Shutdown]] -- Quickly powers off the system in emergencies, helping protect sensitive data during physical compromise scenarios.
+* [[Login#Configuring Passwords|Password and Disk Passphrase Tools]] -- Simple command line tools help change login passwords and disk encryption passphrases safely.
+* [[Unicode#Searching Files and Folders for Unicode|Unicode Defense]] -- Pre-installed tools help detect suspicious Unicode in files and reduce the risk of hidden tricks in source code reviews.
+* [[System Maintenance Panel|Usability Tools and Convenience]] -- Friendly helpers for maintenance, setup, keyboard layouts, automation, and permission inspection.
+* [[Digital Signature Policy]] -- Signed git commits, tags, and images are required. Unsigned code is strictly prohibited in builds and deployments. Documentation encourages digital signature verification.
+
+<span id="values"></span>
+== Freedom Values ==
+* [https://github.com/Kicksecure Open Source] -- We respect user rights to review, scrutinize, modify, and redistribute Kicksecure. This improves security and privacy for everyone.
+* [[Reasons for Freedom Software|Freedom Software]] -- Kicksecure is Freedom Software and contains software developed by the Free Software Foundation and the GNU Project.
+* [[What we do|Research and Implementation Project]] -- Kicksecure is an actively maintained research project making constant improvements; no shortcomings are ever hidden from users.
+* [[Reasons for Freedom Software|Fully Auditable]] -- Kicksecure is independently verifiable by security experts and software developers around the world. This improves security and privacy for everyone.
+* [[Deep scan ready|Deep Scan Ready]] -- Kicksecure supports offline inspection so you can verify storage and boot components from a clean external environment, without trusting the running system.
+* [[Reasons for Freedom Software#No Intentional User Freedom Restrictions|Complete respect for privacy and user freedom]] -- Kicksecure respects data privacy principles. We don't make advertising deals or collect sensitive personal data.
+
+<span id="upcoming"></span>
+== Upcoming Security Enhancements ==
+* [[Sandbox-app-launcher|Sandbox App Launcher]] -- sandbox-app-launcher is an application launcher that can start each application inside its own restrictive sandbox. Each application runs as its own user, in a bubblewrap sandbox and confined by AppArmor.
+* [[apparmor.d|AppArmor.d]] -- apparmor.d - Full system Mandatory Access Control (MAC) policy - "AppArmor for everything".
+* [[Dev/VirusForget|Deactivate malware after reboot]] -- Deactivate malware after reboot from non-root compromise.
+* [[Hardened-kernel|Hardened Linux Kernel]] -- A hardened Linux kernel configuration and patch set.
+* [[Security-misc#Reduce Kernel Information Leaks|Limit Kernel Information Leaks]] -- Limit kernel and hardware information exposure to non-root users.
+* [[Security-misc#hidepid|Hide Other Users' Processes]] -- Hide other users' processes for better isolation.
+* [[Noexec|Enhanced Security via Mount Options (noexec)]] -- Harden writable directories using mount options such as noexec, nodev, and nosuid.
+* [https://forums.whonix.org/t/lock-down-interpreters-compilers-interpreter-lock-compiler-lock/18499 Limit Compiler and Interpreter Access] -- Reduce post-compromise capability by restricting compilers and interpreters by default.
+* [https://forums.whonix.org/t/use-codecrypt-to-sign-whonix-releases/7844/2 Post-quantum cryptography resistant signing of releases] -- Add quantum-resistant signatures to strengthen long-term release integrity.
+
+<span id="contribute"></span>
+== Get Involved ==
+Join the team! '''Your help is very welcome!''' As a patron, a multiplier, or even a contributor!
+* [[Contribute]]
 {{Footer}}
