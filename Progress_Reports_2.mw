@@ -19,6 +19,205 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 
 = arraybolt3 =
+== 2026-10-21 ==
+=== kloak AI bug report handling #2 ===
+Date: 2026-10-21
+
+Continuing to work through AI bug reports on kloak. Substantially improved the initialization code.
+
+== 2026-10-20 ==
+=== kloak AI bug report handling #1 ===
+Date: 2026-10-20
+
+Started fixing a number of bugs and shortcomings in Kloak found by AI.
+
+=== tor-control-panel refactor #10 ===
+Date: 2026-10-20
+
+Fixed more issues reported by AI.
+
+== 2026-10-19 ==
+=== tor-control-panel refactor #9 ===
+Date: 2026-10-19
+
+Wrote attempted fixes for a lot of issues reported by AI, started adding a "basic mode" (Anon Connection Wizard equivalent).
+
+=== Finish sdwdate preparation for oss-scanner ===
+Date: 2026-10-19
+
+Finished review, fixes the threat model a bit, ensured that the repository passed <code>reuse lint</code>, and pushed changes.
+
+== 2026-10-18 ==
+=== sdwdate preparation for oss-scanner submission ===
+Date: 2026-10-18
+
+Reviewed many AI-assisted changes, rewrote threat model and sclockadj.c.
+
+=== tor-control-panel refactor #8 ===
+Date: 2026-10-18
+
+Lots of bugfixing, some hardening and UX impovements.
+
+== 2026-10-17 ==
+=== tor-control-panel refactor #7 ===
+Date: 2026-10-17
+
+Fixed several bugs and UX issues and did some functionality testing. Still a little bit of work left to do, on implementation, and I need to create and run through a full test plan. For now, Anon Connection Wizard will be deprecated in favor of relying solely on Tor Control Panel.
+
+=== Fix more sdwdate-gui bugs, use semi-event-based mechanism in qrexec proxy ===
+Date: 2026-10-17
+
+AI found a few more minor bugs, which are now fixed. Also avoided polling qrexec to detect when sdwdate-gui-server came up on sys-whonix (though polling is still used internal to sys-whonix).
+
+== 2026-10-16 ==
+=== tor-control-panel refactor #6 ===
+Date: 2026-10-16
+
+At this point the GUI is effectively done, still working out some issues in actual operation.
+
+=== Expose caller UID to privleap actions ===
+Date: 2026-10-16
+
+This is necessary for a tor-control-panel fix.
+
+=== Allow partial privleap testsuite runs ===
+Date: 2026-10-16
+
+Adjusted privleap's test system so that one can now test just one of privleap's programs at a time.
+
+== 2026-10-15 ==
+=== Add user override + fakeroot compatibility options to leaprun ===
+Date: 2026-10-15
+
+Now one can tell leaprun to try to act as a different user than the one it thinks it is running as. This is mostly useful when running under fakeroot. Also added a <code>--clean</code> option to <code>run_autopkgtest</code> for quickly getting rid of test artifacts.
+
+=== Merge pull requests for *-base-files to fix theme file installation ===
+Date: 2026-10-15
+
+Merged several PRs that fall back to copying theme files if symlinking doesn't work. Changed them to copy unconditionally, to match with what we do in GRUB.
+
+=== Fourth wave of AI refactor code review #25 ===
+Date: 2026-10-15
+
+Mostly worked on developer-meta-files. Also gave some more feedback on the ISO persistent mode scripts.
+
+== 2026-10-14 ==
+=== Fourth wave of AI refactor code review #24 ===
+Date: 2026-10-14
+
+Fixed several issues in sdwdate-gui and systemcheck, marked other potential issues as non-issues. Reviewed derivative-maker changes.
+
+== 2026-10-13 ==
+=== Fourth wave of AI refactor code review #23 ===
+Date: 2026-10-13
+
+Merged some changes from an sdwdate-gui refactor, also read through and discussed the overlay pack mechanism in helper-scripts, and discussed how to handle the introduction of an "ISO live but persistent wanted" mode.
+
+== 2026-10-12 ==
+=== Fourth wave of AI refactor code review #22 ===
+Date: 2026-10-12
+
+Mostly focused on review of ISO persistent mode mechanism. Discussed concerns and shortcomings with Patrick.
+
+== 2026-10-11 ==
+=== Fourth wave of AI refactor code review #21 ===
+Date: 2026-10-11
+
+More code review and merge. Was able to get an ISO to build and successfully install on a BIOS VM running under Qubes OS.
+
+== 2026-10-10 ==
+=== Fourth wave of AI refactor code review #20 ===
+Date: 2026-10-10
+
+Reviewed and merged more code. Notably, finished working through the initial restyling of systemcheck.
+
+== 2026-10-09 ==
+=== Fourth wave of AI refactor code review #19 ===
+Date: 2026-10-09
+
+Misc research and help with fixing grub installation on BIOS systems, worked through another chunk of systemcheck.
+
+== 2026-10-08 ==
+=== Fourth wave of AI refactor code review #18 ===
+Date: 2026-10-08
+
+More repo review and merge work, plus some fixing and refactoring.
+
+== 2026-10-07 ==
+=== Fourth wave of AI refactor code review #17 ===
+Date: 2026-10-07
+
+More repo review and merge work.
+
+== 2026-10-06 ==
+=== Fourth wave of AI refactor code review #16 ===
+Date: 2026-10-06
+
+Reviewed and merged several more repos, continuing work on systemcheck. Was unable to review derivative-maker due to merge conflicts.
+
+== 2026-10-05 ==
+=== Fourth wave of AI refactor code review #15 ===
+Date: 2026-10-05
+
+Reviewed and merged several more repos, then continued work on systemcheck.
+
+== 2026-10-04 ==
+=== Fourth wave of AI refactor code review #14 ===
+Date: 2026-10-04
+
+Reviewed and merged more repos. Left off in the middle of systemcheck.
+
+== 2026-10-03 ==
+=== Fourth wave of AI refactor code review #13 ===
+Date: 2026-10-03
+
+Reviewed and merged more repos. Need to undo some changes to helper-scripts as we want to keep the mok-ok mechanism I removed.
+
+== 2026-10-02 ==
+=== Fourth wave of AI refactor code review #12 ===
+Date: 2026-10-02
+
+Reviewed several more repos.
+
+== 2026-10-01 ==
+=== Fourth wave of AI refactor code review #11 ===
+Date: 2026-10-01
+
+Reviewed several more repos. Discussed SSH encryption algorithm choice with Patrick.
+
+=== Get ISO bootloader installation working ===
+Date: 2026-10-01
+
+Made several more fixes to the ISO build code. Successfully built an ISO, installed it, and confirmed that both the normal and fallback bootloaders appeared properly installed.
+
+== 2026-09-30 ==
+=== More ISO bootloader installation fixes ===
+Date: 2026-09-30
+
+Found and fixed more bugs, built a couple test ISOs. The last ISO might be functional but hasn't been tested yet.
+
+=== Investigate, attempt to fix error ignore mechanism ===
+Date: 2026-09-30
+
+Figured out that errexit wasn't being disabled as it should in all instances, and found that <code>pre</code> was using some variables that weren't set yet. Attempted to fix the issue.
+
+=== Fourth wave of AI refactor code review #10 ===
+Date: 2026-09-30
+
+Review and adjust changes to several repos that Patrick had already merged changes into.
+
+== 2026-09-29 ==
+=== Fourth wave of AI refactor code review #9 ===
+Date: 2026-09-29
+
+Reviewed and merged various AI-assisted fixes to derivative-maker and other repos.
+
+== 2026-09-28 ==
+=== Fourth wave of AI refactor code review #8 ===
+Date: 2026-09-28
+
+More ISO fixes, mainly related to adding a local package repo and fixing bootloader installation. Also did some work on Tor Control Panel during ISO builds.
+
 == 2026-09-27 ==
 === Fourth wave of AI refactor code review #7 ===
 Date: 2026-09-27
@@ -2224,7 +2423,7 @@ Looked at some of the Sequoia-PGP code Patrick added, made minor changes (mostly
 === systemcheck and metapackage updates to simplify code, detect issues with leaprun actions and unexpected persistent dirs on Qubes ===
 Date: 2026-02-22
 
-Added extra dummy packages to kicksecure-meta-packages to allow simplifying code that would conditionally install packages in other situations. Added functionality to systemcheck to detect if /etc, /usr, or /var are persistent in Qubes AppVMs (they should not be), also wrote code that checks if leaprun actions are able to be run before running them (this is too slow to be practical and isn't working quite as intended yet).
+Added extra dummy packages to kicksecure-meta-packages to allow simplifying code that would conditionally install packages in other situations. Added functionality to systemcheck to detect if /etc, /usr, or /var are persistent in Qubes AppVMs (they should not be), also wrote code that checks if leaprun actions are able to be run before running them (this is too slow to be practical and isn't working quite as intended yet). 
 
 === Finish testing and polish of Whonix-Starter ===
 Date: 2026-02-22

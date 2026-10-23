@@ -22,8 +22,9 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
-== fix Calamares installer icon trust ==
-* The "Install to Hard Drive" icon is marked as untrusted by default, fix it
+== kloak issue review ==
+* https://github.com/Whonix/kloak/issues
+* https://github.com/org-ai-assisted/kloak/pull/41
 
 == derivative-maker - reproducible - initial review ==
 * included tasks:
@@ -253,7 +254,7 @@ zsh: exit 1     reboot
 * Whonix is about 1.5 to 3 seconds slower in app startup in many test cases.
 * Investigate, find ways to reduce the performance delta
 
-== keyboard layout localesctl bug ==
+== keyboard layout localesctl bug == 
 * https://forums.whonix.org/t/keyboard-layout-whonix-18/23094
 
 == dracut improvements ==
@@ -340,7 +341,7 @@ find . | grep --fixed-strings motd.d
 * https://packages.debian.org/trixie/sequoia-chameleon-gnupg
 ** Can we just symlink /usr/bin/gpg to /usr/bin/gpg-sq?
 * Aaron: Unsure if replacing gpg with gpg-sq wholesale is a good idea. Quoting the blog post on gpg-sq:
-** "A consequence of not modifying GnuPG's state but using an overlay is that changes made using the Chameleon will not be picked up by GnuPG. For example, if you import a certificate using the Chameleon, it will only be inserted into the overlay, and GnuPG will not see it."
+** "A consequence of not modifying GnuPG’s state but using an overlay is that changes made using the Chameleon will not be picked up by GnuPG. For example, if you import a certificate using the Chameleon, it will only be inserted into the overlay, and GnuPG will not see it."
 ** Would prefer porting to sq's native API instead, to avoid consistency issues.
 * Aaron: Delay until after the release of Kicksecure 18 perhaps? That way the work done here doesn't end up causing us major problems before the release is complete.
 ** Delaying this may be essential, as Whonix 18 should release before Qubes OS R4.3 does.
@@ -559,7 +560,7 @@ https://github.com/Kicksecure/repository-dist
 *** "verification is a continuous process happening as data is loaded into memory"
 *** "This means if malware manages to modify the /usr/bin/mv program despite immutability, then dm-verity would notice this the next time the user or system is attempting to execute that command."
 *** This security gained from this feature is somewhat reduced if the attacker can use ephermal overlays.
-** consider [[Sysmaint#Enable_sudo_access_in_user_session|enable sudo access in USER session]] (developer debug mode): disable verified boot + write to disk + regenerate verified boot hash tree (this is to ease debugging issues only happening in user session but not in sysmaint session)
+** consider [[Sysmaint#enable_sudo_access_in_USER_session|enable sudo access in USER session]] (developer debug mode): disable verified boot + write to disk + regenerate verified boot hash tree (this is to ease debugging issues only happening in user session but not in sysmaint session)
 * prefer Debian on true read-only filesystem without ephemeral overlay to benefit from kernel verified continuous verification after boot feature
 ** [[Verified_Boot#Challenges_with_Immutable_Filesystems|Challenges with Immutable Filesystems]]
 *** As-needed ephemeral overlays
@@ -888,7 +889,7 @@ f4cc44bdad86254a9b4aa355320e52e1749c93c0 to f4cc44bdad86254a9b4aa355320e52e1749c
 * use cases: towards kiosk mode (low priority), optional feature: enforce boot into user session if GRUB bootloader password is unknown
 * Aaron: Difficult, because (quoting info page for GRUB):
 
-<blockquote>The 'grub-mkconfig' program does not yet have built-in support for generating configuration files with authentication.  You can use '/etc/grub.d/40_custom' to add simple superuser authentication, by adding 'set superusers=' and 'password' or 'password_pbkdf2' commands.</blockquote>
+<blockquote>The ‘grub-mkconfig’ program does not yet have built-in support for generating configuration files with authentication.  You can use ‘/etc/grub.d/40_custom’ to add simple superuser authentication, by adding ‘set superusers=’ and ‘password’ or ‘password_pbkdf2’ commands.</blockquote>
 
 * That is, while one can write boot entries that allow only specific users to run them, this requires building the grub.cfg file by hand, <code>grub-mkconfig</code> and <code>/etc/grub.d</code> cannot be used at all if going this route.
 ** Might be possible to contribute upstream support for restricting boot entries?
@@ -1114,6 +1115,50 @@ debsums: changed file /etc/machine-id (from dist-base-files package) - issue for
 * Note that the use of apt-get in the binary stage appears to be very baked into live-build's logic. It's pretty unlikely this will change.
 
 = REVIEW PLEASE =
+== sdwdate-gui - event-based notification when server becomes available ==
+* Aaron:
+** Right now we poll endlessly to see when the server becomes available under Qubes. This wastes resources. Switch to an event-based mechanism.
+** Implemented, commit pushed to sdwdate-gui.
+
+== privleapd - expose the calling user's ID to actions ==
+* Aaron:
+** The calling user should be recorded in an environment variable. This is along the lines of <code>SUDO_USER</code> and <code>PKEXEC_UID</code>.
+** Needed to implement a safer method for passing torrc data from Tor Control Panel and Anon Connection Wizard to a run-as-root script that writes the real configuration file.
+** Implemented, commit pushed to privleap.
+
+== privleap tests - allow running a partial test suite ==
+* Aaron:
+** Right now we have to run the entire test suite to test any change to any one of privleap's components. This is wasteful, especially now that we track test coverage during runs, making tests take much longer than they used to.
+** Allow the user to specify which program they want to run the test suite of, so that useless tests can be skipped over.
+** Implemented, commit pushed to privleap
+
+== leaprun - add options for fakeroot compatibility ==
+* Aaron:
+** Right now, leaprun assumes the UID it sees is the UID it runs as. When running under fakeroot, leaprun breaks because it attempts to connect to root's comm socket, which may not exist and which it does not have access to.
+** Add an option to leaprun that overrides which UID it acts as. By default, this override should apply unconditionally.
+** Add another option to leaprun that causes it to only trigger the override if the <code>FAKEROOTKEY</code> environment variable is set, and causes it to ignore the override otherwise.
+** Now any code that calls leaprun under fakeroot can pass arguments like <code>--user-override="${USER}" --user-override-fakeroot</code>.
+** Implemented, commit pushed to privleap. We still need to use this mechanism in our DNF wrapper though.
+
+== *-base-files - /boot-on-fat32 compatibility ==
+* https://github.com/Kicksecure/kicksecure-base-files/issues/2, see attached PRs
+** Aaron: Done, commits pushed to kicksecure-base-files, anon-ws-base-files, and anon-gw-base-files.
+
+== fix ISO bootloader installation ==
+* Aaron:
+** We need to run `apt update` with ONLY cdrom.sources in use before trying to install the bootloader, otherwise the list files aren't able to find the bootloader packages on the on-ISO repo
+** We need to run `debconf-set-selections` in Calamares config, I initially put it in initializer-dist not realizing that because I only run it if `grub-efi-amd64` is installed at build time, it never gets run because `grub-efi-amd64` is never installed at build time.
+** Got an ISO to build and install successfully with the EFI fallback bootloader properly handled.
+
+== fix derivative-maker mechanism to continue despite an error ==
+* Aaron:
+** One should be able to press 'c' and then Enter to continue despite an error. However, right now derivative-maker will claim it is allowing execution to continue, and then will bail out anyway. Debug and fix.
+** Problem partially identified, attempted fix created and pushed to derivative-maker.
+
+== fix Calamares installer icon trust ==
+* The "Install to Hard Drive" icon is marked as untrusted by default, fix it
+** Aaron: Fixed, commit pushed to live-config-dist.
+
 == fix Wayland clipboard sharing for latest VirtualBox update ==
 * Aaron:
 ** https://forums.whonix.org/t/shared-clipboard-fixed/23258/5
@@ -2205,7 +2250,7 @@ Apr 03 11:25:03 kicksecure.com privleapd[1578]: Traceback (most recent call last
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:   File "/usr/lib/python3/dist-packages/privleap/privleapd.py", line 528, in get_client_initial_msg
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:   File "/usr/lib/python3/dist-packages/privleap/privleap.py", line 771, in get_msg
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:     if i == 0:
-Apr 03 11:25:03 kicksecure.com privleapd[1578]:
+Apr 03 11:25:03 kicksecure.com privleapd[1578]:     
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:         # If space_idx isn't equal to len(recv_buf), we hit an actual
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:         # space, so we want to pick up scanning immediately *after*
@@ -2456,7 +2501,7 @@ kloak[1895]: WARNING: Could not get Wayland display, will await escape key combo
 
 {{quotation
 |quote=The Services are not for use by anyone under the age of 18.
-|source=[[Terms of Service]] chapter [[Terms_of_Service#Minimum_Age|Minimum Age]]
+|context=[[Terms of Service]] chapter [[Terms_of_Service#Minimum_Age|Minimum Age]]
 }}
 
 setup-wizard-dist has something similar.
@@ -2474,8 +2519,8 @@ Because the Terms of Service prohibit use by anyone under the age of 18, you are
 </pre>
 
 * 8) Separate age API from terms of service.
-** age-api: collect age &rarr; compute bracket &rarr; store bracket &rarr; provide query API
-** setup-wizard-dist: read bracket &rarr; enforce project policy (18+ only)
+** age-api: collect age → compute bracket → store bracket → provide query API
+** setup-wizard-dist: read bracket → enforce project policy (18+ only)
 * new ideas:
 ** should have a versioned age bracket file
 ** should have a versioned age bracket query tool
@@ -2529,7 +2574,7 @@ TLS might mitigate this attack but higher security than what TLS can offer shoul
 '''Solution:'''
 
 Server side:
-Sign, automatically periodically re-sign update metadata.
+Sign, automatically periodically re-sign update metadata. 
 
 Client side:
 Accept only metadata signed up to a certain age.
@@ -2812,8 +2857,8 @@ sudo genmkfile install && TB_NO_CLEANUP=true update-torbrowser --reset --noaskst
 
 == compiled flags wiki page improvements ==
 * https://www.kicksecure.com/wiki/Dev/compiler_hardening
-* It warns "Do NOT use -fsanitize=address", but the Clang x86_64 CodeSelect includes -fsanitize=address,undefined`?
-* Also there's an empty <code>TODO</code> entry where a flag name seems missing.
+* It warns “Do NOT use -fsanitize=address”, but the Clang x86_64 CodeSelect includes -fsanitize=address,undefined`?
+* Also there’s an empty <code>TODO</code> entry where a flag name seems missing.
 ** Aaron: Both issues fixed.
 * Patrick: OK.
 
