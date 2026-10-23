@@ -71,7 +71,7 @@ Your Page's cover photo:
 {{project_name_short}} '''post images''' on Facebook should be Open Graph compatible.
 
 This is required for facebook share.<br />
-[[[ {{Share}} ]]]
+{{Share}}
 
 https://developers.facebook.com/docs/sharing/webmasters/images
 
