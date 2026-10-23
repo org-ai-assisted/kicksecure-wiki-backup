@@ -20,7 +20,7 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 
 = arraybolt3 =
 == 2026-10-22 ==
-=== kloak AI bug report handling #2 ===
+=== kloak AI bug report handling #3 ===
 Date: 2026-10-22
 
 Worked on handling button release on device disconnect. Got stuck on an issue with queue item removal silently failing, which turned out to be because I was mistakenly using the same queue linking pointers in two different queues.
