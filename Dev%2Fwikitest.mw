@@ -860,6 +860,27 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 </p>
 }}
 
+== Link Blue Comparison ==
+
+Demonstrates the in-text link colour decision: the applied blue <code>#1d70b8</code>
+(GOV.UK-style) versus the brighter <code>#1f6feb</code> candidate that was tried and reverted.
+Both clear Lighthouse <code>link-in-text-block</code> (3:1 vs body text); only <code>#1d70b8</code>
+also clears <code>color-contrast</code> (>=4.5:1) on tinted surfaces, where <code>#1f6feb</code>
+drops to about 3.5:1.
+
+=== On the page background (white) ===
+
+Applied <code>#1d70b8</code>: <span class="lk-applied">[[Documentation|example in-text link]]</span>.
+Brighter <code>#1f6feb</code>: <span class="lk-brighter">[[Documentation|example in-text link]]</span>.
+On white both are readable (about 5.2:1 and 4.6:1 vs the background) and both pass.
+
+=== On a tinted surface ===
+
+<div class="info-box">
+<p>Applied <code>#1d70b8</code>: <span class="lk-applied">[[Documentation|example in-text link]]</span>. Brighter <code>#1f6feb</code>: <span class="lk-brighter">[[Documentation|example in-text link]]</span>.</p>
+<p>Against this surface the brighter <code>#1f6feb</code> falls to about 3.5:1 and fails <code>color-contrast</code>, while the applied <code>#1d70b8</code> stays about 4.6:1 and passes -- which is why <code>#1d70b8</code> is the shipped link colour.</p>
+</div>
+
 == mbox test ==
 
 Below you should see a box around the test text
