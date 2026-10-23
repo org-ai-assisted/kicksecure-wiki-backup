@@ -2479,32 +2479,6 @@ Deprecated upstream? Problem?
 ## <code>append | string, default: ""</code> : an addition to the link after the domain. Always start with slash "/". Example: "/thread/12387" &rarr; "{{project_clearnet}}/thread/12387"
 ## <code>result | string, standard: "link"</code> : determines what the widget returns. Options (A) link - then an a-hyperlink will be created (B) url - then only the final url will be created (C) parts - then a string will be created. First part protocol "http", then comma, then "domain", example: "https,{{project_clearnet}}"
 
-== SVG template and widget ==
-
-* In MediaWiki SVGs in wikitext are always rendered as PNGs, see [https://www.mediawiki.org/wiki/Manual:Image_administration#SVG official MediaWiki documentation].
-** This has significant downsides, because we lose that SVGs can be smaller in size and are infinitely scalable. And the SVG to PNG rendering by MediaWiki is sometimes pretty bad.
-** So we created the Template:SVG (which internally uses the Widget:Template) to fix this problem and use SVGs natively
-* '''Parameters'''
-** '''1 (anonymous) | string, mandatory''' : The filename as it is saved in MediaWiki. No <code><nowiki>[[File:...]]</nowiki></code> or anything, just the plain filename like <code>SvgImage.svg</code>
-** '''width | number, optional''' : The fixed width in pixels. If this parameter is omitted then width will be set to "auto"
-** '''height | number, optional''' : The fixed height in pixels. If this parameter is omitted then height will be set to "auto"
-** '''2 (anonymous) | number, optional''' : The fixed width in pixels, like width, but as an anonymous parameter to imitade the File-sytax for usual images. If width is given however then this parameter is ignored
-** '''NOTE''' : For the parameters <code>width</code>, <code>height</code> and <code>2 (anonymous)</code> you can also append "px" (for "pixels") after the number. This makes it even more similar to the File-syntax. (This is just for usability. The "px" will be removed automatically because we're using the width and height attribute im <code>img</code> where only numbers are allowed, which mean the pixels)
-* '''NOTE''' : Always use the template, NOT the widget
-* '''Example'''
-** Syntax <code><nowiki>{{SVG|Kicksecure-logo-rectangle.svg|height=50}}</nowiki></code>
-** Result {{SVG|Kicksecure-logo-rectangle.svg|height=50}}
-* '''Example for width as anonymous second param'''
-** Syntax <code><nowiki>{{SVG|Kicksecure-logo-rectangle.svg|100}}</nowiki></code>
-** Result {{SVG|Kicksecure-logo-rectangle.svg|100}}
-* '''Example for anonymous second param and height with px suffix'''
-** Syntax <code><nowiki>{{SVG|Kicksecure-logo-rectangle.svg|100px|height=80px}}</nowiki></code>
-** Result {{SVG|Kicksecure-logo-rectangle.svg|100px|height=80px}}
-* More examples: [[Dev/wikitest#SVG_template_and_widget|SVG template and widget]]
-* Relevant files
-** [[Template:SVG]]
-** Widget:SVG
-
 == Tab Template / Tab Content Controller ==
 
 * A tab controller to conveniently show content as tabbed content areas

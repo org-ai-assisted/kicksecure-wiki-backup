@@ -1130,28 +1130,6 @@ Test 3 : Same as above, but export as parts
 |result=parts
 }}
 
-== SVG template and widget ==
-
-SVG without width or height
-
-{{SVG|Kicksecure-logo-rectangle.svg}}
-
-SVG with width 100
-
-{{SVG|Kicksecure-logo-rectangle.svg|width=100}}
-
-SVG with width 100 but as second anonymous parameter
-
-{{SVG|Kicksecure-logo-rectangle.svg|100}}
-
-SVG with height 50
-
-{{SVG|Kicksecure-logo-rectangle.svg|height=50}}
-
-SVG with <code>100px</code> as second anonymous parameter and <code>80px</code> as height parameter. No <code>px</code> should be in either the width or height attribute ("px" is cut)
-
-{{SVG|Kicksecure-logo-rectangle.svg|100px|height=80px}}
-
 == Tab Controller ==
 
 === Tab Controller pre-selected tab Test ===

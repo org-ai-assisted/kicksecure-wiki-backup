@@ -58,7 +58,7 @@ Was broken. Now functional.
 |content=
 {{Tab
 |title= === {{project_name_short}} ===
-|image={{SVG|Kicksecure-logo-rectangle.svg|25px}}
+|image=[[File:Kicksecure-logo-rectangle.svg|25px]]
 |content=
 test
 }}
@@ -79,17 +79,13 @@ Patrick:
 
 '''DEV'''
 * Done
-* See documentation here [[Dev/mediawiki#SVG_template_and_widget|SVG template and widget]]
-
 Patrick:
 
 * also possible to say like <code>100px</code>. that it is how it is commonly used in mediawiki syntax.
 
 '''DEV'''
 * Done
-* The px is now auto-filtered in height, width and 2 (anon)
-* See documentation here [[Dev/mediawiki#SVG_template_and_widget|SVG template and widget]]
-* wikitest was also updated
+* The px is now auto-filtered in height, width and 2 (anon)* wikitest was also updated
 
 * Admin found that "image not loading bug" still persists
 
