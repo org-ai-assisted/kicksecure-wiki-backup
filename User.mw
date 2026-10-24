@@ -362,22 +362,22 @@ Please note that preventing shell login does not prevent all types of logins. SS
 
 = Attribution =
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#user-limits
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#user-limits
 |text=Limiting resource usage: the limits.conf file
 }}
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#user-restrict
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#user-restrict
 |text=Restricting users's access
 }}
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1440
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1440
 |text=User auditing
 }}
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s17.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s17.en.html
 |text=File system limits and control, Using quotas
 }}
 

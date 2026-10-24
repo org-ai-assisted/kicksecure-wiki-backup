@@ -347,7 +347,7 @@ In an ideal world, the extra <code>sysmaint</code> user would be unnecessary, an
 </ref>
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1382
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1382
 |text=Using su
 }}
 
@@ -1107,7 +1107,7 @@ The term "sudoless" can therefore be confusing, should either be avoided or clar
 
 = Attribution =
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1391
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1391
 |text=Using sudo
 }}
 

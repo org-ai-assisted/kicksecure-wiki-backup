@@ -583,7 +583,7 @@ This supports both the HOTP and TOTP algorithms.
 ** The [https://github.com/QubesOS/qubes-app-yubikey Qubes' YubiKey package] for configuring YubiKey login support could be ported to Debian.
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html
 |text=Password security in PAM
 }}
 

@@ -437,7 +437,7 @@ https://forums.whonix.org/t/re-mount-home-and-other-with-noexec-and-nosuid-among
 = Attribution =
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s10.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s10.en.html
 |text=Mounting partitions the right way
 }}
 

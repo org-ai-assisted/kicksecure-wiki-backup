@@ -269,7 +269,7 @@ To successfully and safely complete the installation, note the following:
 * From a security perspective, it is safest to avoid Internet connections until ready.
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch03s03.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch03s03.en.html
 |text=Do not plug to the Internet until ready
 }}
 
@@ -359,7 +359,7 @@ A safe configuration must show no ports are open (no reply).
 
 == Security ==
 
-[https://www.debian.org/doc/manuals/securing-debian-manual/ch12.en.html#id-1.13.3.2 Quote]:
+[https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch12.en.html#id-1.13.3.2 Quote]:
 
 <blockquote>'''Is Debian more secure than X?'''
 
@@ -370,8 +370,8 @@ It is unclear if Debian is referring to running services after installing them o
 
 Some useful security links are listed below. Some content in the references are outdated because they only apply to older Debian versions. Similarly, some content does not apply to {{project_name_short}} hosts.
 
-* [https://www.debian.org/doc/manuals/securing-debian-manual/index.en.html Securing Debian Manual]
-* [https://www.debian.org/doc/manuals/securing-debian-manual/ch12.en.html Securing Debian Manual Chapter 12: Frequently asked Questions (FAQ)]
+* [https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/index.en.html Securing Debian Manual]
+* [https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch12.en.html Securing Debian Manual Chapter 12: Frequently asked Questions (FAQ)]
 * [https://web.archive.org/web/20111214174314/http://hermann-uwe.de/blog/towards-a-moderately-paranoid-debian-laptop-setup--part-1-base-system Towards a moderately paranoid Debian laptop setup] (this is also useful for non-laptops)
 
 == sudoers ==

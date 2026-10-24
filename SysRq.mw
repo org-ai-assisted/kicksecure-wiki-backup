@@ -211,7 +211,7 @@ Forum development discussion: [https://forums.whonix.org/t/sysrq-magic-sysrq-key
 = Attribution =
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/restrict-sysrq.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/restrict-sysrq.en.html
 |text=Restricting the use of the Magic SysRq key
 }}
 

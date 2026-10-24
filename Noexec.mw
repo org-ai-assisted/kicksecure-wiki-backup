@@ -60,12 +60,12 @@ Could be configured to use a different directory https://docs.flatpak.org/en/lat
 = Attribution =
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s10.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s10.en.html
 |text=Mounting partitions the right way
 }}
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s10.en.html#idm1102
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s10.en.html#idm1102
 |text=Setting /tmp noexec
 }}
 

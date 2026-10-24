@@ -182,7 +182,7 @@ Better encryption is achieved via preinstalled random number generators, specifi
 | Kicksecure provides a much lower attack surface since there are no open server ports by default unlike other Linux distributions ([[Debian_Tips#Open_Ports|such as Debian]]). All unsolicited incoming connections are rejected.
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch03s05.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch03s05.en.html
 |text=Run the minimum number of services required
 }}
 |-
@@ -305,7 +305,7 @@ While many valuable security guides exist, better security and privacy for the m
 For these reasons {{project_name_short}} will remain focused on enabling the majority of (reasonable) hardening settings by default, and allowing additional settings to be easily enforced via installable packages. For further information on this topic, see: [https://forums.whonix.org/t/the-problem-with-security-guides-and-how-we-can-fix-it/8563 The Problem with Security Guides and How We Can Fix It].
 
 == Implementation of the Securing Debian Manual ==
-The {{project_name_short}} project has been studying the [https://www.debian.org/doc/manuals/securing-debian-manual/ Securing Debian Manual], which is a security hardening guide for Debian. {{project_name_short}} is applying the operating system hardening, suggested in the manual, by default as much as reasonably possible.
+The {{project_name_short}} project has been studying the [https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ Securing Debian Manual], which is a security hardening guide for Debian. {{project_name_short}} is applying the operating system hardening, suggested in the manual, by default as much as reasonably possible.
 
 Unfortunately, the Securing Debian Manual has not been updated in a while <ref>
 Securing Debian Manual:
@@ -319,7 +319,7 @@ still referring to:
 For attribution, the wiki [[Template:Sdebian]] is added to all wiki pages where the Securing Debian Manual has been considered. A list of these pages can be found on [[Special:WhatLinksHere/Template:Sdebian]]. Example for the disclaimer below:
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/intro.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/intro.en.html
 |text=Introduction
 }}
 

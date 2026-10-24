@@ -85,7 +85,7 @@ It should be noted that this is hardware dependent. There are:
 Before relying on the security of the BIOS password, the user should research the security of their motherboard's BIOS.
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch03.en.html#bios-passwd
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch03.en.html#bios-passwd
 |text=Choose a BIOS password
 }}
 
@@ -343,7 +343,7 @@ This is [[Unsupported|undocumented]].
 See also: [[Grub|GRUB]]
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/lilo-passwd.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/lilo-passwd.en.html
 |text=Set a (...) GRUB password
 }}
 

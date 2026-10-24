@@ -24,7 +24,7 @@ Experience has shown that "security through obscurity" does not work. Public dis
 Users should consider subscribing to the Debian [https://lists.debian.org/debian-security-announce/ security announcement mailing list] to stay informed about the latest security advisories.
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04.en.html#debian-sec-announce
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04.en.html#debian-sec-announce
 |text=Subscribe to the Debian Security Announce mailing list
 }}
 
@@ -36,8 +36,8 @@ Before attempting additional hardening measures below, be sure to fully understa
 
 * [https://wiki.debian.org/HardeningWalkthrough Debian Hardening Walkthrough]
 * [https://www.debian.org/security/ Debian Security Information]
-* [https://www.debian.org/doc/manuals/securing-debian-manual/index.en.html Securing Debian Manual]
-** [https://www.debian.org/doc/manuals/securing-debian-manual/automatic-harden.en.html Securing Debian Manual Chapter 6 - Automatic hardening of Debian systems]
+* [https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/index.en.html Securing Debian Manual]
+** [https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/automatic-harden.en.html Securing Debian Manual Chapter 6 - Automatic hardening of Debian systems]
 
 Readers are welcome to add any additional hardening resources to this list.
 

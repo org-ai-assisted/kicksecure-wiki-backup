@@ -173,17 +173,17 @@ https://github.com/Kicksecure/security-misc/blob/master/etc/security/access-secu
 * [https://forums.whonix.org/t/etc-security-hardening-console-lockdown-pam-access-access-conf/8592 Forum discussion on console lockdown and PAM access configuration]
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch03.en.html#bios-passwd
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch03.en.html#bios-passwd
 |text=Choose a BIOS password
 }}
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#pam-rootaccess
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#pam-rootaccess
 |text=User access control in PAM
 }}
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1397
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1397
 |text=Disallow remote administrative access
 }}
 
@@ -233,7 +233,7 @@ https://github.com/Kicksecure/security-misc/blob/master/etc/securetty.security-m
 }}
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#pam-rootaccess
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#pam-rootaccess
 |text=User access control in PAM
 }}
 
@@ -287,7 +287,7 @@ Additionally, [[Security-misc#SUID_Disabling_and_Permission_Hardening|SUID Disab
 * [https://forums.whonix.org/t/restrict-root-access/7658 Restrict root access]
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1382
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1382
 |text=Using su
 }}
 
@@ -419,7 +419,7 @@ Removes read, write, and execute access for others for all users who have home f
 * <code>/usr/share/pam-configs/mkhomedir-security-misc</code>
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1560
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1560
 |text=Limiting access to other user's information
 }}
 
@@ -456,7 +456,7 @@ https://github.com/Kicksecure/security-misc/pull/282
 }}
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1514
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch04s11.en.html#idm1514
 |text=Setting users umasks
 }}
 

@@ -749,7 +749,7 @@ The process of setting up non-torified (clearnet TLS) updates has been completed
 * [[Firmware Security and Updates]]
 
 {{sdebian
-|link=https://www.debian.org/doc/manuals/securing-debian-manual/security-update.en.html
+|link=https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/security-update.en.html
 |text=Execute a security update
 }}
 

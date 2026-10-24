@@ -205,7 +205,7 @@ Debian package selection depends on installer choices and tasks. For example, Ex
 | All unsolicited incoming connections are blocked
 | {{Yes}}
 | {{BlueBackground}} Depends. <ref>
-Debian's default listening services and open ports depend on installation choices and configuration. See also: [https://www.debian.org/doc/manuals/securing-debian-manual/ch12.en.html Securing Debian Manual FAQ] and [[Debian_Tips#Open_Ports|Debian Open Ports]].
+Debian's default listening services and open ports depend on installation choices and configuration. See also: [https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ch12.en.html Securing Debian Manual FAQ] and [[Debian_Tips#Open_Ports|Debian Open Ports]].
 </ref>
 |-
 
@@ -694,7 +694,7 @@ Debian's live-build has an open, security-tagged bug about authenticating all fi
 ! Comprehensive security [[Documentation]]
 | In-depth guides and resources to help users understand, implement, and maintain strong security practices.
 | {{Yes}} ([[System_Hardening_Checklist|System Hardening Checklist]])
-| {{Yes}} <ref>[https://www.debian.org/doc/manuals/securing-debian-manual/ Securing Debian Manual]</ref>
+| {{Yes}} <ref>[https://web.archive.org/web/20260831/https://www.debian.org/doc/manuals/securing-debian-manual/ Securing Debian Manual]</ref>
 |-
 
 ! Signed downloads
