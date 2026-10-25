@@ -68,6 +68,11 @@ follow-up tasks for claude - will be done by Patrick - after arraybolt3 initial 
 ** Improve reliability, code quality
 ** Merge in most recent updates from troubador in the process
 
+== kloak - security and verification improvements ==
+* Aaron:
+** Split out parts of kloak that purely work on arithmetic so that AI can write more effective tests for them.
+** Isolate kloak from UNIX sockets so AppArmor confinement is more effective.
+
 == sandbox-manager-dist ==
 * Polish, implement https://github.com/ArrayBolt3/sandbox-manager-dist/blob/master/sandbox-manager-dist-design.md
 * Keep in mind that room should be left for vm-app-manager features to be integrated into this
