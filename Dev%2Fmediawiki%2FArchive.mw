@@ -1539,7 +1539,6 @@ The following features are RETIRED
 ** Parameter
 *** '''addToClass (optional, string)''' : This parameter's text will be added to the class attribute of the content image wrapper container
 *** '''w100 (optional, boolean)''' :  Makes an image always width 100%. This parameter if true will add the class ciw-w100 to the content iamge wrapper container. This will make the container and all its children <code>width: 100%; display: inline-block;</code>. This parameter was introduced as a helper due to a changed in the way images are handled in MediaWiki since version 1.40.
-** Example with wrapper Code {{CodeSelect|code={{ContentImage{{!}}[[File:Image-too-wide-demonstration.jpg]]}}}}
 ** Example without wrapper <pre>[[File:Image-too-wide-demonstration.jpg]]</pre>
 ** Example with wrapper {{ContentImage|[[File:Image-too-wide-demonstration.jpg]]}}
 * Relevant files

@@ -58,7 +58,7 @@ MediaWiki upstream (historical references for the original extension):
 |title=Current snapshot of the content that we include via Headscript
 |smallTitle=true
 |content=
-The current <head> snapshot was relocated to source control because it contains
+The current &lt;head&gt; snapshot was relocated to source control because it contains
 literal script and link tags the wiki WAF (ModSecurity CRS) rejects on save.
 See docs/wiki-development.mediawiki in the mediawiki-customized-dist repository.
 }}
@@ -465,9 +465,6 @@ All files called in Headscript usually have a headscript version number, but not
 ** Therefore subsetting is rejected until it's free again in the future maybe
 ** Below are all the FontAwesome icons currently in use in our wikis
 
-<div class="info-box mw-collapsible mw-collapsed">
-FontAwesome Icons currently in use
-<div class="mw-collapsible-content">
 <pre>
 fa-solid fa-1
 fa-solid fa-2
@@ -590,8 +587,6 @@ fa-regular fa-star
 Also the additional functional classes
 fa-fw
 </pre>
-</div>
-</div>
 
 ==== fontawsome font-display: swap ====
 

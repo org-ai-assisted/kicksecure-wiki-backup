@@ -186,10 +186,8 @@ echo 'Hello World'
 }}
 * Html insert mode [[Shell#Hidden_Text_Attacks|hidden text attack]] example
 
-<div class="code-select insert-mode-html">sudo apt<span style="position: absolute; opacity: 0; width: 1px; height: 1em; display: inline-block; overflow: hidden;"> install malware1
-
+<div class="code-select insert-mode-html">sudo apt<span class="clipboard-trap-hidden"> install malware1
 sudo apt install malware2
-
 sudo apt</span> update</div>
 * Html insert mode styling example
 ** <span class="code-select insert-mode-html">More <b>Info</b> here</span>

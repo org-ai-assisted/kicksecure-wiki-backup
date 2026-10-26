@@ -32,10 +32,8 @@ Consider this example. Looks innocent enough, just checking if there's updates i
 
 {{IconSet|h1|3}} Copy the following into the clipboard by pressing the copy button.
 
-<div class="code-select insert-mode-html">sudo apt<span style="position: absolute; opacity: 0; width: 1px; height: 1em; display: inline-block; overflow: hidden;"> install malware1
-
+<div class="code-select insert-mode-html">sudo apt<span class="clipboard-trap-hidden"> install malware1
 sudo apt install malware2
-
 sudo apt</span> update</div>
 
 {{IconSet|h1|4}} Paste the text into a text editor of your choice.
