@@ -620,7 +620,7 @@ What we currently have:
 There are two different ways we currently add fonts.
 
 * 1) link rel="stylesheet" for font awesome
-* 2) <style type="text/css"> for Roboto / Cousine
+* 2) &lt;style type="text/css"&gt; for Roboto / Cousine
 
 Would it make sense to load font awesome the way Roboto is load?
 
