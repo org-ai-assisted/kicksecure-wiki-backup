@@ -927,8 +927,6 @@ Test 2
 
 <div class="mini-modal" id="mini-modal-test" data-url-hash="mini-modal-test">
 <div class="info-box">
-{{Headline|content=Mini modal test}}
-
 Mini Modal test content
 </div>
 </div>
