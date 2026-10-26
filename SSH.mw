@@ -56,7 +56,7 @@ https://stribika.github.io/2015/01/04/secure-secure-shell.html
 ! SSH Servers
 |
 * <u>Preferred transport:</u> Prefer SSH servers available through a [[Onion Services|Tor Onion Service]] for stronger encryption and authentication.
-* <u>Optional feature:</u> Consider using [[Onion_Services#Step_3:_Configure_Onion_Services_Authentication|Onion Services Authentication]] but also note [[#Onion_Services#Onion_Services_Reliability_Issues|Onion Services Reliability Issues]].
+* <u>Optional feature:</u> Consider using [[Onion_Services#Step_3:_Configure_Onion_Services_Authentication|Onion Services Authentication]] but also note [[Onion_Services#Onion_Services_Reliability_Issues|Onion Services Reliability Issues]].
 * <u>NAT traversal:</u> Tor also provides [https://en.wikipedia.org/wiki/Hole_punching_%28networking%29 NAT hole-punching] so it is unnecessary to register with a DNS service or open up the LAN to outside access.
 * <u>Non-hidden servers:</u> If the server is known to the public (non-hidden), single Tor hops can be used for the server, see: [[Non Anonymous Onion Encryption and NAT Traversal]].
 |-

@@ -507,6 +507,7 @@ Adding owner /proc/*/cgroup r, to profile.
 
 The following local profiles were changed. Would you like to save them?
 
+<pre>
  [1 - /**/*-browser/Browser/firefox]
 (S)ave Changes / Save Selec(t)ed Profile / [(V)iew Changes] / View Changes b/w (C)lean profiles / Abo(r)t
 </pre>

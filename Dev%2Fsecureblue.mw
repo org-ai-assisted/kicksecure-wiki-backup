@@ -50,7 +50,7 @@ secureblue <code>/etc/sysctl.d/hardening.conf</code> file as of commit [https://
 kernel.printk = 3 3 3 3
 </pre>
 
-Past attribution as of [https://github.com/secureblue/secureblue/blob/c824e7e37b8a09d827458a8dac12df0b96e42f37/POSTINSTALL-README.md#create-a-separate-wheel-account-for-admin-purposes <code>POSTINSTALL-README.md</code> git commit </code>c824e7e37b8a09d827458a8dac12df0b96e42f37</code>] was.
+Past attribution as of [https://github.com/secureblue/secureblue/blob/c824e7e37b8a09d827458a8dac12df0b96e42f37/POSTINSTALL-README.md#create-a-separate-wheel-account-for-admin-purposes <code>POSTINSTALL-README.md</code> git commit <code>c824e7e37b8a09d827458a8dac12df0b96e42f37</code>] was.
 
 <blockquote>
 - Setting numerous hardened sysctl values (Inspired by but not the same as Kicksecure's)
