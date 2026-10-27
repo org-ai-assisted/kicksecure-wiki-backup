@@ -22,6 +22,9 @@ Developer task list and work queue. This page summarizes short-term development 
 }}
 
 = TODO DEV =
+== kloak sandboxing ==
+* Split kloak into a privileged proxy and unprivileged Wayland interface, to harden against AppArmor limitations
+
 == derivative-maker - reproducible - initial review ==
 * included tasks:
 ** full non-malicious review
@@ -812,9 +815,6 @@ https://forums.whonix.org/t/how-to-enable-3d-acceleration-in-kvm/16501/25
 == research shred ==
 * research if shred is still useful nowadays
 * if not, should be replaced by safe-rm
-
-== kloak sandboxing ==
-* Split kloak into a privileged proxy and unprivileged Wayland interface, to harden against AppArmor limitations
 
 == port to Debian forky ==
 * compositior
