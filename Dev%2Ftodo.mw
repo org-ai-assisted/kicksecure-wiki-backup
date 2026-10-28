@@ -254,7 +254,7 @@ zsh: exit 1     reboot
 * Whonix is about 1.5 to 3 seconds slower in app startup in many test cases.
 * Investigate, find ways to reduce the performance delta
 
-== keyboard layout localesctl bug == 
+== keyboard layout localesctl bug ==
 * https://forums.whonix.org/t/keyboard-layout-whonix-18/23094
 
 == dracut improvements ==
@@ -2250,7 +2250,7 @@ Apr 03 11:25:03 kicksecure.com privleapd[1578]: Traceback (most recent call last
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:   File "/usr/lib/python3/dist-packages/privleap/privleapd.py", line 528, in get_client_initial_msg
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:   File "/usr/lib/python3/dist-packages/privleap/privleap.py", line 771, in get_msg
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:     if i == 0:
-Apr 03 11:25:03 kicksecure.com privleapd[1578]:     
+Apr 03 11:25:03 kicksecure.com privleapd[1578]:
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:         # If space_idx isn't equal to len(recv_buf), we hit an actual
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Apr 03 11:25:03 kicksecure.com privleapd[1578]:         # space, so we want to pick up scanning immediately *after*
@@ -2574,7 +2574,7 @@ TLS might mitigate this attack but higher security than what TLS can offer shoul
 '''Solution:'''
 
 Server side:
-Sign, automatically periodically re-sign update metadata. 
+Sign, automatically periodically re-sign update metadata.
 
 Client side:
 Accept only metadata signed up to a certain age.
