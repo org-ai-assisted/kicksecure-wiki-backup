@@ -33,7 +33,7 @@ Non-exhaustive list if common <code>sh</code> / <code>bash</code> scripting feat
 ** <u>Variable expansion:</u> <code>$NAME</code>; <code>${NAME}</code>;
 ** <u>Parameter expansion operators:</u> <code>${NAME:-...}</code>; <code>${NAME:=...}</code>; <code>${NAME:+...}</code>; <code>${NAME:?...}</code>; <code>${NAME#...}</code>; <code>${NAME##...}</code>; <code>${NAME%...}</code>; <code>${NAME%%...}</code>;
 ** <u>Arithmetic:</u> <code>$((...))</code>; <code>((...))</code>; <code>let</code>;
-** <u>Test / conditions:</u> <code>[ ]</code>; <code>[[ ]]</code>; <code>test</code>;
+** <u>Test / conditions:</u> <code>[ ]</code>; <code><nowiki>[[ ]]</nowiki></code>; <code>test</code>;
 ** <u>Conditional keywords:</u> <code>if</code>; <code>then</code>; <code>elif</code>; <code>else</code>; <code>fi</code>;
 ** <u>Case statements:</u> <code>case</code>; <code>in</code>; <code>esac</code>;
 ** <u>Loops:</u> <code>for</code>; <code>select</code>; <code>while</code>; <code>until</code>; <code>do</code>; <code>done</code>;
