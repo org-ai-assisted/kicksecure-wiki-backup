@@ -1,0 +1,1 @@
+<div class="align-{{#switch:{{{1|middle}}}|left=left|right=right|#default=center}}">{{{2}}}</div><noinclude>[[Category:MultiWiki]]</noinclude>
