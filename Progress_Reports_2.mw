@@ -19,6 +19,17 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 
 = arraybolt3 =
+== 2026-10-31 ==
+=== Sandboxed kloak refactor #5 ===
+Date: 2026-10-31
+
+Reworked the communication protocol between parent and child processes, as the original iteration turned out to break C rules due to nesting flex array structs into other structs.
+
+=== Finish firmware experiment workstation hardware build, begin OS setup ===
+Date: 2026-10-31
+
+Installed coreboot-15h firmware, added additional hard disk drives, installed Kicksecure 18 on the primary SSD, installed updates and switched to developer repos. A little more work needs done to prepare it for development use.
+
 == 2026-10-30 ==
 === Sandboxed kloak refactor #4 ===
 Date: 2026-10-30
