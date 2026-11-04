@@ -406,16 +406,16 @@ See [[Dev/nonfree]]
 
 * '''A)''' Build a {{project_name_gateway_short}} virtual machine image.
 ** {{CodeSelect|code=
-~/derivative-maker/derivative-maker --flavor {{project_name_short_lowercase}}-lxqt --target virtualbox --repo true
+~/derivative-maker/derivative-maker --flavor {{project_name_short_lowercase}}-lxqt --target virtualbox --repo true --freshness current
 }}
 * '''B)''' Build a {{project_name_gateway_short}} ISO image.
 ** Including derivative repository and non-freedom firmware.
 *** {{CodeSelect|code=
-~/derivative-maker/derivative-maker --flavor {{project_name_short_lowercase}}-lxqt --target iso --repo true --freedom false
+~/derivative-maker/derivative-maker --flavor {{project_name_short_lowercase}}-lxqt --target iso --repo true --freedom false --freshness current
 }}
 ** Excluding derivative repository and non-freedom firmware, freedom software only.
 *** {{CodeSelect|code=
-~/derivative-maker/derivative-maker --flavor {{project_name_short_lowercase}}-lxqt --target iso --repo true --freedom true
+~/derivative-maker/derivative-maker --flavor {{project_name_short_lowercase}}-lxqt --target iso --repo true --freedom true --freshness current
 }}
 
 ----
