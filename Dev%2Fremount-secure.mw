@@ -11,6 +11,8 @@ Secure Mount Options for better Security Hardening / /etc/fstab modifications by
 
 Considering the most maintainable, stable solution. See also [[Dev/maintainability]] and [[Stable Version User Experience]].
 
+'''Status:''' The chosen mechanism is <code>remount-secure</code>: a single systemd oneshot that remounts directories securely at boot (see [[#Default Mount Option Policy]], [[#Relationship to pam_namespace]] and [[#Pairing with AppArmor (W^X)]]). It touches no <code>/etc/fstab</code>, so it covers Qubes and non-Qubes uniformly. No generator and no second mechanism are used, to avoid competing mount operations. The alternative approaches enumerated below are retained for design rationale.
+
 See also:
 
 * [[Security-misc#Remount_Secure|Remount Secure]]
@@ -321,6 +323,77 @@ Disadvantages:
 *** not applicable to file systems at boot
 *** there's no better alternative than the kernel adding a feature to configure default mount options
 **** todo: kernel feature request
+
+= Default Mount Option Policy =
+
+Defaults (maximum hardening):
+
+* <code>nosuid</code> and <code>nodev</code>: applied wherever applicable, always.
+* <code>noexec</code>: enabled by default on all user-writable data directories: <code>/home</code>, <code>/root</code>, <code>/tmp</code>, <code>/dev/shm</code>, <code>/srv</code>, <code>/media</code>, <code>/mnt</code>, <code>/var/tmp</code>, <code>/var/log</code>, <code>/var/cache</code>, <code>/boot</code>. See [[noexec]].
+* Not <code>noexec</code>: <code>/var</code> (<code>dpkg</code> runs maintainer scripts from <code>/var/lib/dpkg/info</code>), and <code>/usr</code>, <code>/etc</code>, <code>/opt</code> (legitimate executables).
+* Configurable via the <code>remountsecure=</code> levels: <code>remountsecure=2</code> opts <code>/home</code> out of <code>noexec</code>; <code>remountsecure=0</code> disables.
+
+Implementation:
+
+* A single systemd oneshot remounts at runtime; no <code>/etc/fstab</code> changes, so Qubes and non-Qubes are covered uniformly.
+* Uses <code>rbind</code> so a directory's submounts are preserved (a plain bind would hide them).
+* The <code>remountsecure=</code> kernel parameter (0 to 3) selects the level; default is 3 (highest).
+* Disabled by default via systemd preset until validated on a VM, then enabled by default (<code>50-security-misc.preset</code>, {{Github_link|
+https://github.com/Kicksecure/security-misc/pull/152
+}}).
+* Future: a daemon mode could additionally harden filesystems attached at runtime (removable media). For removable media, configuring UDisks2 mount options at mount time avoids a remount race.
+
+= Relationship to pam_namespace =
+
+<code>pam_namespace</code> can polyinstantiate directories (for example a per-user <code>/tmp</code> and <code>/dev/shm</code> via the <code>tmpfs</code> method). Such an instance is a fresh <code>tmpfs</code> mounted per session at login, inside that session's private mount namespace. Remount Secure runs once at boot against the global mounts and therefore cannot reach a per-session instance created later at login.
+
+Division of responsibility (one policy, two enforcement points, never two mechanisms on the same mount):
+
+* '''One policy source''': Remount Secure and its configuration define which directories get <code>nosuid</code>, <code>nodev</code>, and <code>noexec</code>. <code>pam_namespace</code> must not define a divergent policy.
+* '''Remount Secure''' enforces that policy on global and persistent mounts, on <code>/home</code> and data directories, and owns all <code>noexec</code> decisions for those.
+* '''<code>pam_namespace</code>''' enforces the same policy only on the per-session instances it itself creates, because it is the only mechanism that can reach them. It must set at least <code>nosuid,nodev</code> on those instances; if the policy enables <code>noexec</code> for <code>/tmp</code> or <code>/dev/shm</code>, the per-session instances must carry it too, since Remount Secure cannot add it afterwards.
+* <code>pam_namespace</code> must not harden global or persistent mounts.
+* Rationale: a single authoritative policy with clearly separated enforcement points is more maintainable than two mechanisms competing on the same mount. See [[Dev/maintainability]].
+
+= Pairing with AppArmor (W^X) =
+
+Mount <code>noexec</code> alone is not sufficient: it can be bypassed by running code through an interpreter, through the dynamic loader, or by creating executable memory mappings. It must be paired with an AppArmor rule that denies executable memory-mapping (the <code>m</code> permission) on the writable, <code>noexec</code> paths, enforcing write-xor-execute (W^X).
+
+Evidence that <code>noexec</code> is bypassable.
+
+Interpreters / dynamic code:
+
+{{quotation
+|quote=This scenario plays out for all programs that accept dynamic code at runtime. So not only shell scripts, but also awk, Python, Perl, etc...
+|source=Chromium OS security docs, https://chromium.googlesource.com/chromiumos/docs/+/HEAD/security/noexec_shell_scripts.md
+}}
+
+Dynamic loader:
+
+{{quotation
+|quote=ld.so /tmp/a.out will happily pass, even /tmp/a.out is mounted as non-exec.
+|source=Linux kernel-hardening list, https://www.openwall.com/lists/kernel-hardening/2024/07/19/3
+}}
+
+Executable memory via memfd:
+
+{{quotation
+|quote=this executable nature of memfd opens a door for NoExec bypass
+|source=Linux kernel documentation, https://docs.kernel.org/userspace-api/mfd_noexec.html
+}}
+
+See also madaidan's Linux hardening guide (https://madaidans-insecurities.github.io/guides/linux-hardening.html): "Be aware that noexec can be bypassed via shell scripts."
+
+AppArmor's <code>m</code> permission controls executable mapping:
+
+{{quotation
+|quote=m - allow PROT_EXEC with mmap(2) calls
+|source=apparmor.d(5), https://manpages.debian.org/unstable/apparmor/apparmor.d.5.en.html
+}}
+
+Denying <code>m</code> on a writable path therefore prevents mapping that file executable.
+
+Conclusion (our inference from the sources above, not a single cited statement): mount <code>noexec</code> on writable data directories must be backed by an AppArmor policy denying the <code>m</code> permission on those paths, so that an interpreter, loader, or mmap bypass cannot execute attacker-controlled code from them.
 
 = Issues =
 * {{Github_link|
