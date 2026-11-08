@@ -328,7 +328,7 @@ Disadvantages:
 
 Defaults (maximum hardening):
 
-* <code>nosuid</code> and <code>nodev</code>: applied wherever applicable, always (except where a directory inherently needs an exception, e.g. <code>/dev</code> keeps device nodes, <code>/usr</code> keeps <code>nodev</code> off its own concern).
+* <code>nosuid</code> and <code>nodev</code>: applied wherever applicable, with inherent exceptions: <code>/dev</code> omits <code>nodev</code> because it holds device nodes; <code>/usr</code> omits <code>nosuid</code> because <code>setuid</code> programs such as <code>sudo</code> live there.
 * <code>noexec</code>, in three tiers mapped onto the <code>remountsecure=</code> level:
 ** '''Always''' (even at the lowest active level; these never need execution): <code>/boot</code>, <code>/boot/efi</code>, <code>/dev</code>, <code>/var/log</code>. (<code>/sys</code> is already <code>nosuid,nodev,noexec</code> by default, so <code>remount-secure</code> does not remount it.)
 ** '''Level 2 and up''' (most data directories): <code>/run</code>, <code>/tmp</code>, <code>/dev/shm</code>, <code>/var/tmp</code>, <code>/var/cache</code>, <code>/srv</code>, <code>/media</code>, <code>/mnt</code>.
