@@ -328,10 +328,13 @@ Disadvantages:
 
 Defaults (maximum hardening):
 
-* <code>nosuid</code> and <code>nodev</code>: applied wherever applicable, always.
-* <code>noexec</code>: enabled by default on all user-writable data directories: <code>/home</code>, <code>/root</code>, <code>/tmp</code>, <code>/dev/shm</code>, <code>/srv</code>, <code>/media</code>, <code>/mnt</code>, <code>/var/tmp</code>, <code>/var/log</code>, <code>/var/cache</code>, <code>/boot</code>. See [[noexec]].
-* Not <code>noexec</code>: <code>/var</code> (<code>dpkg</code> runs maintainer scripts from <code>/var/lib/dpkg/info</code>), and <code>/usr</code>, <code>/etc</code>, <code>/opt</code> (legitimate executables).
-* Configurable via the <code>remountsecure=</code> levels: <code>remountsecure=2</code> opts <code>/home</code> out of <code>noexec</code>; <code>remountsecure=0</code> disables.
+* <code>nosuid</code> and <code>nodev</code>: applied wherever applicable, always (except where a directory inherently needs an exception, e.g. <code>/dev</code> keeps device nodes, <code>/usr</code> keeps <code>nodev</code> off its own concern).
+* <code>noexec</code>, in three tiers mapped onto the <code>remountsecure=</code> level:
+** '''Always''' (even at the lowest active level; these never need execution): <code>/boot</code>, <code>/boot/efi</code>, <code>/dev</code>, <code>/sys</code>, <code>/var/log</code>.
+** '''Level 2 and up''' (most data directories): <code>/run</code>, <code>/tmp</code>, <code>/dev/shm</code>, <code>/var/tmp</code>, <code>/var/cache</code>, <code>/srv</code>, <code>/media</code>, <code>/mnt</code>.
+** '''Level 3 only''' (default, highest): <code>/home</code> and <code>/root</code>.
+* '''Never''' <code>noexec</code>: <code>/</code>, <code>/var</code> (<code>dpkg</code> runs maintainer scripts from <code>/var/lib/dpkg/info</code>), <code>/usr</code>, <code>/etc</code>, <code>/opt</code> (legitimate executables). See [[noexec]].
+* Configurable via the <code>remountsecure=</code> levels: <code>remountsecure=2</code> opts <code>/home</code> and <code>/root</code> out of <code>noexec</code>; <code>remountsecure=0</code> disables.
 
 Implementation:
 
