@@ -29,12 +29,12 @@ While these measures will provide greater security, they may affect advanced use
 === Configuration ===
 Secure mount options are applied at boot by the <code>remount-secure</code> service from the [[security-misc]] package. It remounts directories at runtime and requires '''no <code>/etc/fstab</code> changes''', so it behaves the same on Qubes and non-Qubes.
 
-By default (level 3, highest) <code>nosuid</code> and <code>nodev</code> are applied wherever applicable, and <code>noexec</code> is applied to directories that should never execute code: structural directories (<code>/boot</code>, <code>/boot/efi</code>, <code>/dev</code>, <code>/sys</code>, <code>/var/log</code>), most data directories (<code>/run</code>, <code>/tmp</code>, <code>/dev/shm</code>, <code>/var/tmp</code>, <code>/var/cache</code>, <code>/srv</code>, <code>/media</code>, <code>/mnt</code>), and the home directories (<code>/home</code>, <code>/root</code>). <code>/var</code> keeps exec because <code>dpkg</code> runs package maintainer scripts from <code>/var/lib/dpkg/info</code>; <code>/</code>, <code>/usr</code>, <code>/etc</code> and <code>/opt</code> keep exec too.
+By default (level 3, highest) <code>nosuid</code> and <code>nodev</code> are applied wherever applicable, and <code>noexec</code> is applied to directories that should never execute code: structural directories (<code>/boot</code>, <code>/boot/efi</code>, <code>/dev</code>, <code>/var/log</code>), most data directories (<code>/run</code>, <code>/tmp</code>, <code>/dev/shm</code>, <code>/var/tmp</code>, <code>/var/cache</code>, <code>/srv</code>, <code>/media</code>, <code>/mnt</code>), and the home directories (<code>/home</code>, <code>/root</code>). <code>/var</code> keeps exec because <code>dpkg</code> runs package maintainer scripts from <code>/var/lib/dpkg/info</code>; <code>/</code>, <code>/usr</code>, <code>/etc</code> and <code>/opt</code> keep exec too.
 
 The level is selected with the <code>remountsecure=</code> kernel parameter, configured in <code>/etc/default/grub.d/40_remount_secure.cfg</code>:
 
 * <code>remountsecure=0</code> - disable.
-* <code>remountsecure=1</code> - <code>nosuid</code> and <code>nodev</code> only, plus <code>noexec</code> on structural directories that never need execution (<code>/boot</code>, <code>/boot/efi</code>, <code>/dev</code>, <code>/sys</code>, <code>/var/log</code>).
+* <code>remountsecure=1</code> - <code>nosuid</code> and <code>nodev</code> only, plus <code>noexec</code> on structural directories that never need execution (<code>/boot</code>, <code>/boot/efi</code>, <code>/dev</code>, <code>/var/log</code>).
 * <code>remountsecure=2</code> - also <code>noexec</code> for most data directories, '''excluding''' <code>/home</code> and <code>/root</code>.
 * <code>remountsecure=3</code> - also <code>noexec</code> for <code>/home</code> and <code>/root</code> (default, highest).
 
@@ -49,8 +49,6 @@ The full per-directory policy:
 | <code>/boot/efi</code> || yes || yes || yes || yes || yes
 |-
 | <code>/dev</code> <ref name="dev-nodev">No <code>nodev</code>: <code>/dev</code> is where device nodes legitimately live.</ref> || yes || no || yes || yes || yes
-|-
-| <code>/sys</code> || yes || yes || yes || yes || yes
 |-
 | <code>/var/log</code> || yes || yes || yes || yes || yes
 |-
@@ -83,7 +81,7 @@ The full per-directory policy:
 | <code>/opt</code> <ref name="opt-exec">Keeps <code>exec</code>: optional software (for example Firefox installed from a tarball) is placed here.</ref> || yes || yes || no || no || no
 |}
 
-The root filesystem <code>/</code> is not remounted and is left as-is.
+The root filesystem <code>/</code> is not remounted. <code>/sys</code> is not remounted either; it is already mounted <code>nosuid,nodev,noexec</code> by default.
 
 For example, to keep hardening but allow execution in <code>/home</code> (and <code>/root</code>), set <code>remountsecure=2</code> in that file, then run:
 
