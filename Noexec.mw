@@ -38,6 +38,53 @@ The level is selected with the <code>remountsecure=</code> kernel parameter, con
 * <code>remountsecure=2</code> - also <code>noexec</code> for most data directories, '''excluding''' <code>/home</code> and <code>/root</code>.
 * <code>remountsecure=3</code> - also <code>noexec</code> for <code>/home</code> and <code>/root</code> (default, highest).
 
+The full per-directory policy:
+
+{| class="wikitable"
+|+ Mount options applied by <code>remount-secure</code>, per directory and level
+! Directory !! <code>nosuid</code> !! <code>nodev</code> !! <code>noexec</code><br>level 1 !! <code>noexec</code><br>level 2 !! <code>noexec</code><br>level 3<br>(default)
+|-
+| <code>/boot</code> || yes || yes || yes || yes || yes
+|-
+| <code>/boot/efi</code> || yes || yes || yes || yes || yes
+|-
+| <code>/dev</code> <ref name="dev-nodev">No <code>nodev</code>: <code>/dev</code> is where device nodes legitimately live.</ref> || yes || no || yes || yes || yes
+|-
+| <code>/sys</code> || yes || yes || yes || yes || yes
+|-
+| <code>/var/log</code> || yes || yes || yes || yes || yes
+|-
+| <code>/run</code> || yes || yes || no || yes || yes
+|-
+| <code>/dev/shm</code> || yes || yes || no || yes || yes
+|-
+| <code>/tmp</code> || yes || yes || no || yes || yes
+|-
+| <code>/var/tmp</code> || yes || yes || no || yes || yes
+|-
+| <code>/var/cache</code> || yes || yes || no || yes || yes
+|-
+| <code>/srv</code> || yes || yes || no || yes || yes
+|-
+| <code>/media</code> || yes || yes || no || yes || yes
+|-
+| <code>/mnt</code> || yes || yes || no || yes || yes
+|-
+| <code>/home</code> || yes || yes || no || no || yes
+|-
+| <code>/root</code> || yes || yes || no || no || yes
+|-
+| <code>/var</code> <ref name="var-exec">Keeps <code>exec</code>: <code>dpkg</code> runs package maintainer scripts from <code>/var/lib/dpkg/info</code>.</ref> || yes || yes || no || no || no
+|-
+| <code>/usr</code> <ref name="usr-nosuid">No <code>nosuid</code>: <code>setuid</code> programs such as <code>sudo</code> live under <code>/usr</code>.</ref> || no || yes || no || no || no
+|-
+| <code>/etc</code> || yes || yes || no || no || no
+|-
+| <code>/opt</code> <ref name="opt-exec">Keeps <code>exec</code>: optional software (for example Firefox installed from a tarball) is placed here.</ref> || yes || yes || no || no || no
+|}
+
+The root filesystem <code>/</code> is not remounted and is left as-is.
+
 For example, to keep hardening but allow execution in <code>/home</code> (and <code>/root</code>), set <code>remountsecure=2</code> in that file, then run:
 
 <pre>

@@ -376,7 +376,7 @@ What <code>noexec</code> does '''not''' stop (both reproduced):
 |source=Chromium OS security docs, https://chromium.googlesource.com/chromiumos/docs/+/HEAD/security/noexec_shell_scripts.md
 }}
 
-* '''Fileless execution.''' <code>memfd_create(2)</code> plus <code>execveat(2)</code> runs code from anonymous memory, touching no filesystem at all. Reproduced at the default <code>vm.memfd_noexec=0</code>; <code>vm.memfd_noexec=2</code> closes this vector.
+* '''Fileless execution.''' <code>memfd_create(2)</code> plus <code>execveat(2)</code> runs code from anonymous memory, touching no filesystem at all. Reproduced at the default <code>vm.memfd_noexec=0</code>. <code>vm.memfd_noexec=2</code> closes this vector and is now set by [[security-misc]]; the weaker <code>=1</code> is insufficient, because an attacker simply passes <code>MFD_EXEC</code> (confirmed below).
 
 {{quotation
 |quote=this executable nature of memfd opens a door for NoExec bypass
@@ -398,7 +398,7 @@ Full W^X is a combination of controls, each with limits; there is no single glob
 
 : But this constrains only '''confined''' programs; an unconfined shell or interpreter is unaffected, and each application needs its own profile. So AppArmor hardens specific sensitive applications (browser, PDF and media viewers, network daemons) against write-then-execute attacks such as JIT spray or loading a writable shared object. It is '''not''' a system-wide W^X and does '''not''' stop the interpreter vector (interpreting source or bytecode is not a <code>PROT_EXEC</code> file mapping). On a <code>noexec</code> mount a <code>PROT_EXEC</code> file mapping is already refused by the mount flag, so for files on that mount the <code>m</code> denial is largely redundant with <code>noexec</code>; its value is for paths not under a <code>noexec</code> mount.
 * '''The interpreter vector''' is addressed by restricting access to interpreters and compilers, tracked separately as [https://forums.whonix.org/t/lock-down-interpreters-compilers-interpreter-lock-compiler-lock/18499 interpreter lock / compiler lock], not by <code>noexec</code> and not by AppArmor <code>m</code>.
-* '''The memfd vector''' is addressed by <code>vm.memfd_noexec=2</code>.
+* '''The memfd vector''' is addressed by <code>vm.memfd_noexec=2</code>, set by [[security-misc]].
 
 Conclusion: <code>noexec</code> on writable data directories raises the bar (it stops a naive <code>execve</code> and the loader route) but is not W^X by itself. The honest answer to "pair it with AppArmor" is that AppArmor W^X is per-application and does not cover the interpreter or fileless vectors; a fuller W^X is <code>noexec</code> plus interpreter/compiler lockdown plus <code>vm.memfd_noexec=2</code> plus per-application AppArmor confinement, each with the limits above.
 
@@ -411,7 +411,7 @@ The claims above were reproduced inside a private user and mount namespace (<cod
 * Shell script on a <code>noexec</code> tmpfs: <code>./s.sh</code> -> Permission denied; <code>sh s.sh</code> -> runs.
 * Python script on a <code>noexec</code> tmpfs: <code>python3 p.py</code> -> runs.
 * ELF on a <code>noexec</code> tmpfs: <code>./myecho</code> -> Permission denied; <code>ld.so ./myecho</code> -> "failed to map segment" (blocked). Control: the same <code>ld.so ./myecho</code> on an exec tmpfs runs, confirming the only difference is the mount flag.
-* <code>memfd_create(2)</code> + exec of <code>/proc/self/fd/N</code> -> runs, with <code>vm.memfd_noexec=0</code>.
+* <code>memfd_create(2)</code> + <code>execveat(2)</code>, tested per <code>vm.memfd_noexec</code> value on the Kicksecure kernel (Linux 6.12.111, each value in its own PID namespace): at <code>0</code> a no-flag memfd executes (the bypass); at <code>1</code> the no-flag path is denied but an explicit <code>MFD_EXEC</code> memfd still executes; at <code>2</code> <code>memfd_create(MFD_EXEC)</code> is refused at creation, closing the vector. Common system tooling (<code>systemd</code>, <code>journald</code>, <code>apt</code>, <code>dpkg</code>, <code>python3</code>, <code>perl</code>, <code>gpg</code>, <code>openssl</code>) is unaffected at <code>2</code>; a child PID namespace cannot weaken a stricter host value.
 
 = Issues =
 * {{Github_link|
