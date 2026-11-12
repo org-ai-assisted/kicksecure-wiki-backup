@@ -18,6 +18,7 @@
 
 {{Tab
 |title= = Hardware =
+|image=[[File:Computer-laptop.svg]]
 |addToClass=info-box
 |content=
 {{IntroLike|
@@ -30,12 +31,9 @@ Select Intel or Apple Silicon.
 
 {{Tab
 |title= = Virtual Machines =
+|image=[[File:Logo-virtualbox-500x500.png]]
 |addToClass=info-box
 |content=
-{{IntroLike|
-Select Intel or Apple Silicon.
-}}
-
 {{Tab
 |type=controller
 |content=

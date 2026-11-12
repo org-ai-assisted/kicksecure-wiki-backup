@@ -12,9 +12,14 @@ Security-Focused Operating System
 }} <noinclude>{{intro|hidden=true|A secure by default operating system with the latest security research in place.}}</noinclude> {{Hide_all_banners}}
 
 {{hide_all_banners}}
-{{#sloganpills:item=Reasonable Security,Reasonably Secure|item=Stable Version User Experience,Stable by Design|item=Comparison with Others,Hardened Debian Linux}}
+{{#checklist:
+intro={{project_name_short}} gives your desktop
+|item=<a href="/wiki/Reasonable_Security"><b>Reasonable security</b></a> hardened against real-world threats
+|item=<a href="/wiki/Stable_Version_User_Experience"><b>Stable, everyday usability</b></a> secure by design
+|item=<a href="/wiki/Comparison_with_Others"><b>Hardened Debian Linux</b></a> under the hood
+}}
 
-{{#downloadbutton:url=/wiki/ISO|text=Download Now}}
+{{Align|middle|{{DownloadButton|url=/wiki/ISO|text=Download {{project_name_short}}}}}}
 
 Learn: [[About|What Is Kicksecure?]]
 
