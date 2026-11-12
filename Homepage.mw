@@ -4,9 +4,9 @@ Kicksecure homepage source. The page BODY below is the homepage content
 Widget:Page_Homepage is not reproduced -- edits land here until cutover.
 ASCII only.
 -->{{Header}} {{Title|title=
-{{project_name_short}} - Secure by Default Operating System
+Security-Focused Operating System
 }} {{#seo:
-|title={{project_name_short}} - Secure by Default Operating System
+|title=Security-Focused Operating System
 |description=A secure by default operating system with the latest security research in place.
 |image=Kicksecure-image-hero-image.jpeg
 }} <noinclude>{{intro|hidden=true|A secure by default operating system with the latest security research in place.}}</noinclude> {{Hide_all_banners}}
@@ -21,26 +21,7 @@ Learn: [[About|What Is Kicksecure?]]
 <span id="download"></span>
 == Download ==
 
-'''Hardware'''
-* [[ISO|On Computer]]
-* [[USB Installation|On USB]]
-
-'''Virtual Machine'''
-* [[Windows]]
-* [[MacOS|macOS]]
-* [[Linux|VirtualBox Linux installer]]
-* [[VirtualBox]]
-* [[Qubes]]
-* [[KVM]]
-
-'''Other'''
-* [[Debian|Debian+]]
-* [[Chroot|chroot]]
-* [[Dev/Build Documentation|Source Code]]
-* [[ARM64]]
-* [[Raspberry Pi|Raspberry Pi (RPi)]]
-* [[PPC64|ppc64el (POWER9/10)]]
-* [[RISCV64]]
+{{#downloadgrid:intro=Kicksecure is available for:|groups={{#downloadgroup:label=Hardware|tiles={{#downloadtile:url=/wiki/ISO|image=Computer-laptop.svg|label=On Computer|alt=Kicksecure on Computer}}{{#downloadtile:url=/wiki/USB_Installation|image=Logo-usb-500x500.png|label=On USB|alt=Kicksecure on USB}}}}{{#downloadgroup:label=Virtual Machine|tiles={{#downloadtile:url=/wiki/Windows|image=Windows_logo_-_2012.svg.png|label=Windows|alt=Kicksecure for Windows}}{{#downloadtile:url=/wiki/MacOS|image=Logo-apple-500x500.png|label=macOS|alt=Kicksecure for macOS}}{{#downloadtile:url=/wiki/Linux|image=Logo-linux-500x500.png|label=VirtualBox Linux installer|alt=Kicksecure VirtualBox Linux installer}}{{#downloadtile:url=/wiki/VirtualBox|image=Virtualbox_logo.png|label=VirtualBox|alt=Kicksecure for VirtualBox}}{{#downloadtile:url=/wiki/Qubes|image=Qubes-logo-blue.png|label=Qubes|alt=Kicksecure for Qubes}}{{#downloadtile:url=/wiki/KVM|image=Kvm-new-logo.png|label=KVM|alt=Kicksecure for KVM}}}}{{#downloadgroup:label=Other|tiles={{#downloadtile:url=/wiki/Debian|image=Logo-debian-500x500.png|label=Debian+|alt=Kicksecure Debian}}{{#downloadtile:url=/wiki/Chroot|image=Logo-chroot-500x500.png|label=chroot|alt=Kicksecure chroot}}{{#downloadtile:url=/wiki/Dev/Build_Documentation|image=Source-code-icon.png|label=Source Code|alt=Kicksecure Source Code}}{{#downloadtile:url=/wiki/ARM64|image=Arm64-logo.svg|label=ARM64|alt=Kicksecure for ARM64}}{{#downloadtile:url=/wiki/Raspberry_Pi|image=Raspberry-pi-logo.svg|label=Raspberry Pi (RPi)|alt=Kicksecure for Raspberry Pi}}{{#downloadtile:url=/wiki/PPC64|image=Ppc64-logo.svg|label=ppc64el (POWER9/10)|alt=Kicksecure for ppc64el}}{{#downloadtile:url=/wiki/RISCV64|image=Riscv64-logo.svg|label=RISCV64|alt=Kicksecure for RISCV64}}}}}}
 
 == Documentation ==
 * [[Documentation|Wiki]]
