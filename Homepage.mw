@@ -3,7 +3,8 @@ Kicksecure homepage source. The page BODY below is the homepage content
 (authored here, served by mw-static-generator as a normal page). Production's
 Widget:Page_Homepage is not reproduced -- edits land here until cutover.
 ASCII only.
--->{{Header}} {{Title|title=
+-->__NOTOC__
+{{Header}} {{Title|title=
 Security-Focused Operating System
 }} {{#seo:
 |title=Security-Focused Operating System
