@@ -15,6 +15,7 @@ While the idea of achieving perfect security is appealing, it is fundamentally i
 
 {{quotation
 |quote=For a variety of technical reasons, computer security is extraordinarily weak. If a sufficiently skilled, funded, and motivated attacker wants in to your computer, they're in. If they're not, it's because you're not high enough on their priority list to bother with.
+|image=Bruce-Schneier.jpg
 |author=[https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier]
 |source=[https://www.schneier.com/blog/archives/2016/02/security_vs_sur.html Security vs. Surveillance]
 }}
@@ -23,12 +24,14 @@ While the idea of achieving perfect security is appealing, it is fundamentally i
 |quote=You can't secure what you don't understand.
 
 The worst enemy of security is complexity. This has been true since the beginning of computers, and it's likely to be true for the foreseeable future.
+|image=Bruce-Schneier.jpg
 |author=[https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier]
 |source=[https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html A Plea for Simplicity]
 }}
 
 {{quotation
 |quote=A secure system must defend against all possible attacks--including those unknown to the defender. But defenders, having limited resources, typically develop defenses only for attacks they know about. New kinds of attacks are then likely to succeed. So our growing dependence on networked computing systems puts at risk individuals, commercial enterprises, the public sector, and our military.
+|image=Cornell-University-seal.png
 |author=[https://en.wikipedia.org/wiki/Fred_B._Schneider Fred B. Schneider]
 |role=Professor of Computer Science
 |source=[https://www.cs.cornell.edu/fbs/publications/SoS.blueprint.pdf Blueprint for a science of cybersecurity]
@@ -36,6 +39,7 @@ The worst enemy of security is complexity. This has been true since the beginnin
 
 {{quotation
 |quote=So computer and network security in practice starts at the hardware and firmware underneath the endpoints. Their security provides an upper bound for the security of anything built on top.
+|image=Joanna-Rutkowska.jpg
 |author=Joanna Rutkowska
 |role=Security researcher and Qubes founder
 |source=[https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf Intel x86 considered harmful]
@@ -45,6 +49,7 @@ See also [[Open_Source_Hardware#Hardware_Trust_in_Modern_Computing|Hardware Trus
 
 {{quotation
 |quote=Defensive security is a difficult game, because one doesn't immediately see whether a given solution works or not. This is in stark contrast to other engineering disciplines (and to offensive security) where one usually have immediate feedback on whether something works well or not.
+|image=Joanna-Rutkowska.jpg
 |author=Joanna Rutkowska
 |role=Security researcher and Qubes founder
 |source=[https://blog.invisiblethings.org/2012/06/27/some-comments-on-operation-high-roller.html Some comments on "Operation High Roller"]
@@ -52,6 +57,7 @@ See also [[Open_Source_Hardware#Hardware_Trust_in_Modern_Computing|Hardware Trus
 
 {{quotation
 |quote=Well, what's wrong with perfect defenses? The answer is simple: They cost too much.
+|image=Butler-Lampson.jpg
 |author=[https://en.wikipedia.org/wiki/Butler_Lampson Butler W. Lampson]
 |role=Microsoft
 |source=2000: [https://www.cs.cornell.edu/courses/cs5430/2023fa/NL02.Lampson.pdf Computer Security in the Real World] <ref>
@@ -61,16 +67,20 @@ https://www.acsac.org/2000/papers/lampson.pdf
 
 {{quotation
 |quote=Bugs: Secure systems are complicated, hence imperfect.
+|image=Butler-Lampson.jpg
 |author=Butler Lampson
 |source=2009: [https://cacm.acm.org/opinion/usable-security-how-to-get-it/ Usable Security: How to Get It]
 }}
 
 {{quotation
 |quote=Second, security gets in the way of other things you want.
+|image=Butler-Lampson.jpg
+|author=Butler Lampson
 }}
 
 {{quotation
 |quote=Research in cybersecurity may seem reactive, specific, ephemeral, and indeed ineffective. Despite decades of innovation in defense, even the most critical software systems turn out to be vulnerable to attacks. Time and again. Offense and defense forever on repeat. Even provable security, meant to provide an indubitable guarantee of security, does not stop attackers from finding security flaws. As we reflect on our achievements, we are left wondering: Can security be solved once and for all?
+|image=Cornell-University-seal.png
 |author=Marcel B&ouml;hme
 |role=Cornell University
 |source=[https://arxiv.org/abs/2402.01944 Fundamental Challenges in Cybersecurity and a Philosophy of Vulnerability-Guided Hardening]
@@ -78,6 +88,7 @@ https://www.acsac.org/2000/papers/lampson.pdf
 
 {{quotation
 |quote=The term "secure operating system" is both considered an ideal and an oxymoron. Systems that provide a high degree of assurance in enforcement have been called secure systems, or even more frequently "trusted" systems 1. However, it is also true that no system of modern complexity is completely secure. The difficulty of preventing errors in programming and the challenges of trying to remove such errors means that no system as complex as an operating system can be completely secure.
+|image=UT-San-Antonio-logo.svg
 |author=Ravi Sandhu
 |role=University of Texas, San Antonio
 |source=[https://www.cs.columbia.edu/~suman/security_arch/s00126ed1v01y200808spt001.pdf Operating System Security, Synthesis Lectures on Information Security, Privacy and Trust]
@@ -85,6 +96,7 @@ https://www.acsac.org/2000/papers/lampson.pdf
 
 {{quotation
 |quote=Every security system will eventually fail; there is no such thing as a 100% secure system.
+|image=Roman-Yampolskiy.jpg
 |author=Roman V. Yampolskiy
 |role=M. S. Spellchecker, Cornell University
 |source=[https://arxiv.org/abs/1610.07997 Artificial Intelligence Safety and Cybersecurity: a Timeline of AI Failures]
@@ -92,6 +104,7 @@ https://www.acsac.org/2000/papers/lampson.pdf
 
 {{quotation
 |quote='Absolute' security could be achieved only at unlimited cost.
+|image=NIST-logo.svg
 |author=NIST
 |source=[https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5424.pdf A Study of Federal Agency Needs for Information Technology Security]
 }}
@@ -102,6 +115,7 @@ https://www.acsac.org/2000/papers/lampson.pdf
 [...]
 
 There is no perfect security in any real system--hardware fails, people make mistakes, and attacks outside our expectations may defeat our protection mechanisms.
+|image=Gene-Spafford.jpg
 |author=[https://en.wikipedia.org/wiki/Gene_Spafford Gene Spafford]
 |role=Professor of Computer Science
 |source=[https://cacm.acm.org/opinion/answering-the-wrong-questions-is-no-answer/ Answering the Wrong Questions Is No Answer]
@@ -109,11 +123,13 @@ There is no perfect security in any real system--hardware fails, people make mis
 
 {{quotation
 |quote=The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards - and even then I have my doubts.
+|image=Gene-Spafford.jpg
 |author=Gene Spafford ([https://en.wikiquote.org/wiki/Gene_Spafford wikiquote])
 }}
 
 {{quotation
 |quote=Program testing can be used to show the presence of bugs, but never to show their absence!
+|image=Edsger-Dijkstra.jpg
 |source=[https://en.wikipedia.org/wiki/Edsger_W._Dijkstra Edsger W. Dijkstra]
 }}
 
@@ -121,6 +137,7 @@ There is no perfect security in any real system--hardware fails, people make mis
 |quote=One of the few solid theoretical results in the study of computer viruses is Cohen's 1987 demonstration that there is no algorithm that can perfectly detect all possible viruses [1].
 
 [1] Fred Cohen, "Computer Viruses: Theory and Experiments", Computers and Security 6 (1987) 22-35
+|image=IBM-logo.svg
 |author=David M. Chess and Steve R. White IBM Thomas J. Watson Research Center
 |source=[https://web.mit.edu/6.857/OldStuff/Fall03/ref/ChessWhite-AnUndetectableComputerVirus.pdf An Undetectable Computer Virus]
 }}
@@ -129,6 +146,7 @@ There is no perfect security in any real system--hardware fails, people make mis
 |quote=Perfect security is unachievable in any useful system. We trade-off security with other important goals: functionality, usability, efficiency, time-to-market, and simplicity.<br/><br/>
 "The three golden rules to ensure computer security are: do not own a computer; do not power it on; and do not use it." -Robert H. Morris (mid 1980's), former chief scientist of the National Computer Security Center<br/><br/>
 It is '''undecidable''' whether a given piece of software contains malicious functionality.
+|image=University-of-Texas-at-Austin-logo.svg
 |author=Dr. Bill Young
 |role=Department of Computer Science, University of Texas at Austin
 |source=[https://www.cs.utexas.edu/~byoung/cyberwarfare-slides.pdf US Army War College Fellowship, Cyber Defense/Offense]
@@ -136,6 +154,7 @@ It is '''undecidable''' whether a given piece of software contains malicious fun
 
 {{quotation
 |quote=The defender has to find and eliminate all exploitable vulnerabilities; the attacker only needs to find one!
+|image=University-of-Texas-at-Austin-logo.svg
 |author=Dr. Bill Young
 |role=Department of Computer Sciences, University of Texas at Austin
 |source=[https://www.cs.utexas.edu/~byoung/cs361/lecture2.pdf Foundations of Computer Security, Lecture 2: Why Security is Hard]
