@@ -203,7 +203,7 @@ For {{project_name_short}} with CLI (for advanced users only):
 }} <!-- close tab: Windows -->
 {{Tab
 |title= = Mac =
-|content=[[MacOS]]
+|content=[[MacOS|macOS]]
 |image=[[File:Logo-apple-500x500.png|25px]]
 |addToClass=margin-top-20
 }} <!-- close tab: Mac --> <!-- Dedicated link to MacOS wiki page in the Whonix wiki and this is a MultiWiki page. -->

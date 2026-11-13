@@ -157,12 +157,12 @@ It is not advisable to recommend replacing balenaEtcher (Open Source, [[#balenaE
 
 Functional. Has usability issues.
 
-== For MacOS Host Operating Systems ==
-USBImager is suggested because KDE ISO Image Writer is unavailable for MacOS. Not maintained by a huge project but also no negative information about USBImager could be found.
+== For macOS Host Operating Systems ==
+USBImager is suggested because KDE ISO Image Writer is unavailable for macOS. Not maintained by a huge project but also no negative information about USBImager could be found.
 
 related:
 
-* [[MacOS Hosts]]
+* [[MacOS Hosts|macOS Hosts]]
 
 == For Linux Host Operating Systems ==
 GNOME Disks is suggested. Usability isn't as good as balenaEtcher or KDE ISO Image Writer. GNOME Disks' interface is more complicated to use for users. GNOME is also a huge project and no negative information about GNOME Disks could be found. GNOME Disks is available from official Debian and many other Linux distribution's package sources, which simplifies its installation and no manual digital software signatures verification is requires since this is usually handled by the distribution's package manager.

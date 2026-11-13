@@ -5,7 +5,7 @@ Please follow these steps to install {{project_name_short}} {{{flavor}}} for Vir
 }} {{javascript-looks-better-with-javascript}} {{Anchor|Landing}}
 {{Box|text=
 == {{IconSet|h1|1}} Download {{project_name_short}} {{{flavor}}} ==
-{{project_name_short}} {{{flavor}}} is available for Windows, MacOS and Linux.
+{{project_name_short}} {{{flavor}}} is available for Windows, macOS and Linux.
 
 {{Tab
 |type=controller
