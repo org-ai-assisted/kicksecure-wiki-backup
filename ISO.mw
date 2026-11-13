@@ -55,10 +55,10 @@ This is a guide for easily '''creating a {{project_name_short}} Live USB stick, 
 {{IconSet|h4|1}} '''[[#Download.2C_Create_Live_USB|Download, Create Live USB]] : In this chapter you will learn how to create a {{project_name_short}} Live USB stick. (Steps 1-5)'''
 
 <gallery widths=170 class="thumb-gallery-style justify-left">
-File:Iso-page-step1-download.svg|Download ISO
-File:Iso-page-step3-flash-usb.svg|Flash ISO to USB
-File:Iso-page-step4-boot-usb.svg|Boot from USB
-File:Iso-page-step4-boot-done.svg|Live {{project_name_short}} running
+File:Iso-page-step1-download.svg|link=#Download,_Create_Live_USB|Download ISO
+File:Iso-page-step3-flash-usb.svg|link=#Download,_Create_Live_USB|Flash ISO to USB
+File:Iso-page-step4-boot-usb.svg|link=#Download,_Create_Live_USB|Boot from USB
+File:Iso-page-step4-boot-done.svg|link=#Download,_Create_Live_USB|Live {{project_name_short}} running
 </gallery>
 }}
 
@@ -67,9 +67,9 @@ File:Iso-page-step4-boot-done.svg|Live {{project_name_short}} running
 {{IconSet|h4|2}} '''[[#Install_{{project_name_short}}_.28Optional.29|Install {{project_name_short}} (Optional)]] : In this chapter you learn how to install {{project_name_short}} to your hard drive from the Live USB stick you created. (Steps 4-7)'''
 
 <gallery widths=170 class="thumb-gallery-style justify-left">
-File:Iso-page-step5-start-install.svg|Click install in Live {{project_name_short}}
-File:Iso-page-step6-7-remove-boot-hdd.svg|Remove USB, boot from HD
-File:Iso-page-step7-hdd-boot-done.svg|Local {{project_name_short}} running
+File:Iso-page-step5-start-install.svg|link=#Install_{{project_name_short}}_(Optional)|Click install in Live {{project_name_short}}
+File:Iso-page-step6-7-remove-boot-hdd.svg|link=#Install_{{project_name_short}}_(Optional)|Remove USB, boot from HD
+File:Iso-page-step7-hdd-boot-done.svg|link=#Install_{{project_name_short}}_(Optional)|Local {{project_name_short}} running
 </gallery>
 }}
 
