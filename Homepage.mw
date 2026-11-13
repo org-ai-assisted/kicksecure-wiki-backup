@@ -13,10 +13,10 @@ Security-Focused Operating System
 
 {{hide_all_banners}}
 {{#checklist:
-intro={{project_name_short}} gives your desktop
-|item=<a href="/wiki/Reasonable_Security"><b>Reasonable security</b></a> hardened against real-world threats
-|item=<a href="/wiki/Stable_Version_User_Experience"><b>Stable, everyday usability</b></a> secure by design
-|item=<a href="/wiki/Comparison_with_Others"><b>Hardened Debian Linux</b></a> under the hood
+intro={{project_name_short}} gives you
+|item=<a href="/wiki/Reasonable_Security"><b>Reasonable security</b></a>
+|item=<a href="/wiki/Stable_Version_User_Experience"><b>Stable, everyday usability</b></a>
+|item=<a href="/wiki/Comparison_with_Others"><b>Hardened Debian Linux</b></a>
 }}
 
 {{Align|middle|{{DownloadButton|url=/wiki/Download|text=Download {{project_name_short}}}}}}
