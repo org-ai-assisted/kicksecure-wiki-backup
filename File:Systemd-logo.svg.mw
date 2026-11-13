@@ -1,7 +1,17 @@
-Official systemd project logo, used as an attribution avatar for quotations from the systemd issue tracker.
+Description: Official systemd project logo, used as an attribution avatar for quotations from the systemd issue tracker.
 
 Source: https://github.com/systemd/systemd/blob/main/docs/assets/systemd-logo.svg
 
+Source archive: https://web.archive.org/web/20261113085614/https://github.com/systemd/systemd/blob/main/docs/assets/systemd-logo.svg
+
+Original source: Maintained by the systemd project in its own source repository; brand guidance at https://brand.systemd.io/
+
+Original source archive: https://web.archive.org/web/20261031155322/https://brand.systemd.io/
+
+Author: The systemd project
+
 License: LGPL-2.1-or-later
+
+Note: An internal CSS style block was added to set the wordmark color for dark-mode visibility; the green symbol fill is unchanged.
 
 [[Category:MultiWiki]]
