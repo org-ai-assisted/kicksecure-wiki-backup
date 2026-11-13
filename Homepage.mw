@@ -19,7 +19,7 @@ intro={{project_name_short}} gives your desktop
 |item=<a href="/wiki/Comparison_with_Others"><b>Hardened Debian Linux</b></a> under the hood
 }}
 
-{{Align|middle|{{DownloadButton|url=/wiki/ISO|text=Download {{project_name_short}}}}}}
+{{Align|middle|{{DownloadButton|url=/wiki/Download|text=Download {{project_name_short}}}}}}
 
 Learn: [[About|What Is Kicksecure?]]
 
