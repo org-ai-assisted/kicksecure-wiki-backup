@@ -212,8 +212,8 @@ Qubes forum discussion: [https://forum.qubes-os.org/t/qubes-os-a-reasonably-secu
 Even 'security' alone is not a well defined term, but a process to address your threat model. As that should describe your goals and the things you want to 'protect' from different kind of threat actors.
 [...]
 So it is reasonable secure, as there is no ultimate security. And because it is provides you the best available and feasible soultion to address a lot of security concers related to a desktop computer - but surely not all of them.
-|image=Qubes-logo-icon.png
-|author=Qubes OS forum
+|image=Generic-user-icon.svg
+|author=Qubes OS forum (community member)
 |source=https://forum.qubes-os.org/t/qubes-os-a-reasonably-secure-operating-system/31799/11
 }}
 
@@ -227,15 +227,15 @@ In the epistomological sense, no. There's no way in hard science to prove you ar
 I assume this is why Qubes OS makes claims that it is a "reasonably secure OS" - not that it is a "secure OS".
 
 It is the unknown flaws that may one day still threaten you, and there is no way to prove there are zero flaws left.
-|image=Qubes-logo-icon.png
-|author=Qubes OS forum
+|image=Generic-user-icon.svg
+|author=Qubes OS forum (community member)
 |source=https://forum.qubes-os.org/t/building-a-fully-immutable-linux-os-image-fully-verified-with-your-own-secure-boot-key/34412/19
 }}
 
 {{quotation
 |quote=[..] Note that Qubes OS is a reasonably secure OS, not maximally secure OS. [...]
-|image=Qubes-logo-icon.png
-|author=Qubes OS forum
+|image=Generic-user-icon.svg
+|author=Qubes OS forum (community member)
 |source=https://forum.qubes-os.org/t/more-practical-security-for-qubes-and-more-realistic-threat-model/7349/17
 }}
 
