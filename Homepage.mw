@@ -82,6 +82,44 @@ Fully featured with advanced security components.
 * [[System Maintenance Panel|Usability Tools and Convenience]] -- Friendly helpers for maintenance, setup, keyboard layouts, automation, and permission inspection.
 * [[Digital Signature Policy]] -- Signed git commits, tags, and images are required. Unsigned code is strictly prohibited in builds and deployments. Documentation encourages digital signature verification.
 
+<span id="debian"></span>
+== Is Kicksecure '''safer''' than Debian? ==
+Kicksecure is Debian, hardened. It ships dozens of security defaults out of the box that stock Debian leaves you to configure yourself.
+{| class="wikitable comparison-table"
+|-
+! Feature !! Kicksecure !! Debian
+|-
+| {{#faicon:shield-halved}} Hardening by Default {{#infotooltip:|text=Kicksecure enables dozens of <a href="/wiki/Comparison_with_Others" title="Comparison_with_Others">security-hardening defaults</a> automatically. On stock Debian most hardening is left to the user to research and configure.}} || {{#cmp:yes}} || {{#cmp:no}}
+|-
+| {{#faicon:user-lock}} Account and Login Protection {{#infotooltip:|text=Locked root account, a <a href="/wiki/Sysmaint" title="Sysmaint">separate admin and daily-use account split</a>, and brute-force login limits are on by default. Stock Debian does not enable these.}} || {{#cmp:yes}} || {{#cmp:no}}
+|-
+| {{#faicon:microchip}} Kernel Hardening {{#infotooltip:|text=Strong <a href="/wiki/Hardened-kernel" title="Hardened-kernel">kernel self-protection settings</a> and risky kernel modules blacklisted by default, following the Kernel Self Protection Project. Debian ships stock kernel settings.}} || {{#cmp:yes}} || {{#cmp:no}}
+|-
+| {{#faicon:network-wired}} Network and SSH Hardening {{#infotooltip:|text=<a href="/wiki/Debian_Tips#Open_Ports" title="Debian_Tips#Open_Ports">No open server ports by default</a>, a hardened network stack, authenticated time synchronization, and hardened SSH defaults. Debian leaves these to the user.}} || {{#cmp:yes}} || {{#cmp:no}}
+|-
+| colspan="3" | {{#cmpmore:}}
+|-
+| {{#faicon:regular clock}} Time Attack Protection {{#infotooltip:|text=Boot clock randomization and secure network time synchronization (<a href="/wiki/Sdwdate" title="Sdwdate">sdwdate</a>) protect against <a href="/wiki/Time_Attacks" title="Time_Attacks">time-based attacks</a>. Not present in stock Debian.}} || {{#cmp:yes}} || {{#cmp:no}}
+|-
+| {{#faicon:user-secret}} Reduced Data Leaks {{#infotooltip:|text=Crash dumps limited, thumbnailing and file indexing disabled, and <a href="/wiki/USBGuard" title="USBGuard">USBGuard</a> enabled to reduce information leaks. Debian leaves these enabled or unset.}} || {{#cmp:yes}} || {{#cmp:no}}
+|-
+| {{#faicon:memory}} RAM Wipe at Shutdown {{#infotooltip:|text=Kicksecure can <a href="/wiki/Ram-wipe" title="Ram-wipe">wipe the contents of RAM at shutdown</a> to protect against memory extraction attacks. Debian does not.}} || {{#cmp:yes}} || {{#cmp:no}}
+|-
+| {{#faicon:code}} Open Source / Freedom {{#infotooltip:|text=Both Kicksecure and Debian are fully <a href="/wiki/Reasons_for_Freedom_Software" title="Reasons_for_Freedom_Software">Open Source and Freedom Software</a>.}} || {{#cmp:yes}} || {{#cmp:yes}}
+|-
+| colspan="3" | {{#cmpmore:end}}
+|-
+| {{#faicon:server}} CPU Architecture Support {{#infotooltip:|text=Debian supports more CPU architectures (x86_64, ARM, PPC, RISC-V and more). Kicksecure supports a <a href="/wiki/Architecture_Support" title="Architecture_Support">smaller subset</a>.}} || {{#cmp:limited}} || {{#cmp:yes}}
+|-
+| {{#faicon:desktop}} Interface Choice {{#infotooltip:|text=Kicksecure provides a command-line interface and the LXQt desktop. Debian offers <a href="/wiki/Other_Desktop_Environments" title="Other_Desktop_Environments">many desktop environments</a> (GNOME, KDE, Xfce, LXQt, MATE and more).}} || {{#cmp:limited}} || {{#cmp:yes}}
+|-
+| {{#faicon:dollar-sign}} Pricing || FREE or Donation || FREE or Donation
+|-
+|  || {{#ctabutton:url=/wiki/Download|text=Download Kicksecure now!}} ||
+|}
+
+{{#learnmore:url=/wiki/Comparison_with_Others|text=Kicksecure versus Debian}}
+
 <span id="values"></span>
 == Freedom Values ==
 * [https://github.com/Kicksecure Open Source] -- We respect user rights to review, scrutinize, modify, and redistribute Kicksecure. This improves security and privacy for everyone.
