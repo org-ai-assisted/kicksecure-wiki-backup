@@ -1,5 +1,5 @@
 <blockquote class="quotation">
-{{{quote}}}{{#if: {{{author|}}}{{{role|}}}{{{source|}}}{{{image|}}} | <span class="blockquote-context">{{#if: {{{image|}}} | [[File:{{{image}}}|class=author-image]]}}{{#if: {{{author|}}} | <span class="nm">{{{author}}}</span>}}{{#if: {{{role|}}} | <span class="rl">{{{role}}}</span>}}{{#if: {{{source|}}} | <span class="src">{{{source}}}</span>}}</span>}}
+{{{quote}}}{{#if: {{{author|}}}{{{role|}}}{{{source|}}}{{{image|}}} | <span class="blockquote-context">{{#if: {{{image|}}} | [[File:{{{image}}}|class=author-image {{#switch:{{{image-layout|}}}|banner=logo-banner}}]]}}{{#if: {{{author|}}} | <span class="nm">{{{author}}}</span>}}{{#if: {{{role|}}} | <span class="rl">{{{role}}}</span>}}{{#if: {{{source|}}} | <span class="src">{{{source}}}</span>}}</span>}}
 </blockquote><noinclude>
 [[Category:MultiWiki]]
 
