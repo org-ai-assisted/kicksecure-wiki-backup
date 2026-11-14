@@ -24,7 +24,7 @@ File:logo-usb-500x500.png{{!}}{{nowrap|USB}} Installation{{!}}link=USB Installat
 {{#tag:gallery|
 File:Logo-windows-500x500.png{{!}}Windows{{!}}link=Windows Quick Start
 File:logo-apple-500x500.png{{!}}macOS{{!}}link=MacOS
-File:logo-linux-variety-500x500.png{{!}}{{project_name_short}} for VirtualBox Linux installer{{!}}link=Linux
+File:logo-linux-variety-500x500.png{{!}}VirtualBox (Linux){{!}}link=Linux
 File:Virtualbox_logo.png{{!}}VirtualBox{{!}}link=VirtualBox
 File:qubes-logo-blue.png{{!}}Qubes{{!}}link=Qubes
 File:Kvm-new-logo.png{{!}}KVM{{!}}link=KVM
@@ -50,7 +50,7 @@ File:Riscv64-logo.svg{{!}}Installation on {{nowrap|RISCV64}}{{!}}link=RISCV64
 | text = '''Special''' : For expert users specialized use cases
 }}
 {{#tag:gallery|
-File:Logo-debian-500x500.png{{!}}Install {{project_name_short}} on Debian (transform Debian into {{project_name_short}}){{!}}link=Debian
+File:Logo-debian-500x500.png{{!}}Debian{{!}}link=Debian
 File:Logo-chroot-500x500.png{{!}}chroot{{!}}link=Chroot
 File:Source-code-icon.png{{!}}class=notpageimage{{!}}Source Code{{!}}link=Dev/Build_Documentation
 |heights={{{size}}}
