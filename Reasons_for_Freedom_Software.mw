@@ -4,13 +4,11 @@ Reasons for Freedom Software / Open Source
 }}
 {{#seo:
 |description=Why Open Source / Freedom Software are essential for user security, privacy and freedom.
-|image=Pay-706798-640.jpg
 }}
 {{about_mininav}}
 {{ThumbGallery|
 [[File:Heckert gnu.big.png|150px|thumb|GNU logo.<br /> {{project_name_short}} is Freedom Software.]]
 [[File:Osi standard logo 0.png|150px|thumb|OSI logo.<br /> {{project_name_short}} is Open Source.]]
-[[File:Pay-706798-640.jpg|150px|thumb]]
 }}
 {{intro|
 Why Open Source / Freedom Software are essential for user security, privacy and freedom. Security, Legal, Ethical and other Reasons. No Intentional User Freedom Restrictions.
@@ -98,7 +96,6 @@ Since [[Based_on_Debian|{{project_name_short}} is based on Debian]] it is valid 
 Simply put, the end user maintains ultimate control over the final {{project_name_short}} configuration that best suits their needs.
 
 = Software Fork Friendly =
-[[File:Pay-706798-640.jpg|150px|thumb|{{project_name_short}} is free of charge.]]
 
 {{project_name_short}} policy is that the name of the project should ideally be a variable so it can be easily changed through a software fork.
 

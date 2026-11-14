@@ -4,9 +4,7 @@ title=apt-file
 }}
 {{#seo:
 |description=HowTo: install apt-file. It can be used to show which files are included by a package.
-|image=Aptfiles1614223640.jpg
 }}
-[[File:Aptfiles1614223640.jpg|thumb]]
 {{intro|
 HowTo: install apt-file. It can be used to show which files are included by a package.
 }}

@@ -4,10 +4,8 @@ Frequently Asked Questions - {{project_name_long}} FAQ
 }}
 {{#seo:
 |description=What is {{project_name_short}}? How does {{project_name_short}} work?
-|image=Faq-463379640.jpg
 }}
 {{documentation_mininav}}
-[[File:Faq-463379640.jpg|thumb]]
 {{intro|
 {{project_name_short}} is software designed to preserve security online. It can be installed on computer hardware. It is an operating system.
 

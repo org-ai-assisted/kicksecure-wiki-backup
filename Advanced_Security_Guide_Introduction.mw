@@ -4,9 +4,7 @@ Advanced Security Guide Introduction
 }}
 {{#seo:
 |description=Improving {{project_name_long}} and Linux Security for Advanced Users, {{project_name_long}} Hardening
-|image=Padlocks337569640.jpg
 }}
-[[File:Padlocks337569640.jpg|thumb]]
 {{intro|
 {{security_intro}}
 

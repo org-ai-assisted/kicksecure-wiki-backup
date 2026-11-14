@@ -4,9 +4,7 @@
 }}
 {{#seo:
 |description=Users should follow official {{project_name_short}} news, especially the important-news category. Important News is used for critical announcements such as security advisories, possible upgrade issues, and important stable releases.
-|image=Carriage-clock-797833640.jpg
 }}
-[[File:Carriage-clock-797833640.jpg|thumb]]
 {{intro|
 To stay safe and informed, users should follow official {{project_name_short}} news, especially the Important News category.
 

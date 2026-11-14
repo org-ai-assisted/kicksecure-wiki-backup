@@ -4,9 +4,7 @@ Only Community Support for {{project_name_long}} KVM specific Installation and S
 }}
 {{#seo:
 |description=
-|image=Whykvm157638640.png
 }}
-[[File:Whykvm157638640.png|100px|thumb]]
 {{intro|
 {{project_name_short}} KVM maintainer availability is mostly limited to the [[#User Help Forum|User Help Forum]]. However, even there, user support activity is very low to non-existent. <ref>
 https://forums.whonix.org/u/hulahoop/summary

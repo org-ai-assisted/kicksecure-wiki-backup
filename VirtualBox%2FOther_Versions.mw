@@ -4,13 +4,11 @@ Install Newer Versions of VirtualBox
 }}
 {{#seo:
 |description=This wiki page documents how to install different versions of VirtualBox from sources other than the default repositories, such as Debian unstable or directly from the developers of VirtualBox (Oracle) software package repository or virtualbox.org website.
-|image=Otherversions-1695760640.jpg
 }}
 <div class="mininav">
 * [[VirtualBox/Recommended_Version|Install the Recommended VirtualBox Version]]
 * [[VirtualBox/Other_Versions|Install Newer Versions of VirtualBox]]
 </div>
-[[File:Otherversions-1695760640.jpg|thumb]]
 {{intro|
 This wiki page documents how to install different versions of VirtualBox from sources other than the default repositories, such as Debian unstable or directly from the developers of VirtualBox (Oracle) software package repository or <code>virtualbox.org</code> website.
 }}

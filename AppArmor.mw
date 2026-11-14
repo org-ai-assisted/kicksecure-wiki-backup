@@ -1,7 +1,6 @@
 {{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for {{project_name_long}} and other Linux distributions.
-|image=Coat-of-mail-948960640.jpg
 }}
 {{title|title=
 AppArmor

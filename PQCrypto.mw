@@ -1,12 +1,10 @@
 {{Header}}
 {{#seo:
 |description=In ~10 years Quantum Computers will break todays common asymmetric public-key cryptography algorithms used for web encryption (https), e-mail encryption (gnupg...), ssh and others.
-|image=Quantum-869533640.jpg
 }}
 {{Title|title=
 Post-Quantum Cryptography (PQCrypto)
 }}
-[[File:Quantum-869533640.jpg|thumb]]
 {{intro|
 In ~10 years Quantum Computers will break todays common asymmetric public-key cryptography algorithms used for web encryption (https), e-mail encryption (gnupg...), ssh and others.
 }}

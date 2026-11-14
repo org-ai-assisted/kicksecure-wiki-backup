@@ -4,10 +4,8 @@ Dev/apt-revoker
 }}
 {{#seo:
 |description=Concept for developing software to revoke APT signing keys in case these are compromised.
-|image=Roll-160319640.jpg
 }}
 {{dev_apt_mininav}}
-[[File:Roll-160319640.jpg|thumb]]
 {{intro|
 Concept for developing software to revoke APT signing keys in case these are compromised.
 }}

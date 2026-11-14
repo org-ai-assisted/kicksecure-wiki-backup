@@ -4,9 +4,7 @@ Higher Screen Resolution without VirtualBox Guest Additions
 }}
 {{#seo:
 |description=This wiki page provides a guide on how to achieve higher screen resolution in VirtualBox without installing VirtualBox Guest Additions inside the VM.
-|image=Anaglyph-102548640.jpg
 }}
-[[File:Anaglyph-102548640.jpg|thumb]]
 {{archived}}
 {{intro|
 This wiki page provides a guide on how to achieve higher screen resolution in VirtualBox without installing VirtualBox Guest Additions inside the VM.
