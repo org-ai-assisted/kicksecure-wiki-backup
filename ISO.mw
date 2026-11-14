@@ -5,7 +5,7 @@
 {{#seo:
 |description={{project_name_short}} Installation Guide. This guide will help you download the ISO image, create your bootable media, and install {{project_name_short}} on your computer.
 |image=/w/images/thumb/d/d6/Computer-laptop.svg/300px-Computer-laptop.svg.png
-}} [[File:Computer-laptop.svg|thumb|180px]]
+}} [[File:Computer-laptop.svg|frameless|right|180px]]
 <!--
 Copyright:
 
@@ -54,7 +54,7 @@ This is a guide for easily '''creating a {{project_name_short}} Live USB stick, 
 |text=
 {{IconSet|h4|1}} '''[[#Download.2C_Create_Live_USB|Download, Create Live USB]] : In this chapter you will learn how to create a {{project_name_short}} Live USB stick. (Steps 1-5)'''
 
-<gallery widths=170 class="thumb-gallery-style justify-left">
+<gallery widths=170 class="thumb-gallery-style step-index justify-left">
 File:Iso-page-step1-download.svg|link=#1_Download_Kicksecure_LXQt_ISO|Download ISO
 File:Iso-page-step3-flash-usb.svg|link=#2_Write_the_ISO_to_USB|Flash ISO to USB
 File:Iso-page-step4-boot-usb.svg|link=#3_Boot_the_ISO|Boot from USB
@@ -66,7 +66,7 @@ File:Iso-page-step4-boot-done.svg|link=#3_Boot_the_ISO|Live {{project_name_short
 |text=
 {{IconSet|h4|2}} '''[[#Install_{{project_name_short}}_.28Optional.29|Install {{project_name_short}} (Optional)]] : In this chapter you learn how to install {{project_name_short}} to your hard drive from the Live USB stick you created. (Steps 4-7)'''
 
-<gallery widths=170 class="thumb-gallery-style justify-left">
+<gallery widths=170 class="thumb-gallery-style step-index justify-left">
 File:Iso-page-step5-start-install.svg|link=#4_Start_installation|Click install in Live {{project_name_short}}
 File:Iso-page-step6-7-remove-boot-hdd.svg|link=#5_Remove_installation_media|Remove USB, boot from HD
 File:Iso-page-step7-hdd-boot-done.svg|link=#6_Boot_installed_Kicksecure|Local {{project_name_short}} running
