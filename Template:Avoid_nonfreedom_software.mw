@@ -21,19 +21,29 @@ For more information on installing third-party [https://www.gnu.org/philosophy/f
 
 {{Freedom_Software_Security}}
 
-As Free Software pioneer [https://www.stallman.org/ Richard Stallman] puts it:
+{{quotation
+|quote=... If you run a nonfree program on your computer, it denies your freedom; the main one harmed is you. ...
 
-* "... If you run a nonfree program on your computer, it denies your freedom; the main one harmed is you. ..."
-* "Every nonfree program has a lord, a master -- and if you use the program, he is your master."
-* "To have the choice between proprietary software packages, is being able to choose your master. Freedom means not having a master. And in the area of computing, freedom means not using proprietary software."
+Every nonfree program has a lord, a master -- and if you use the program, he is your master.
 
-Or as the [https://www.gnu.org/ GNU project] puts it:
+To have the choice between proprietary software packages, is being able to choose your master. Freedom means not having a master. And in the area of computing, freedom means not using proprietary software.
+|image=Richard_Stallman.jpg
+|author=[https://www.stallman.org/ Richard Stallman]
+|role=Free Software pioneer
+}}
 
-* <blockquote>[https://www.gnu.org/proprietary/proprietary.html Proprietary Software Is Often Malware]</blockquote>
-* <blockquote>Nonfree (proprietary) software is very often malware (designed to mistreat the user). Nonfree software is controlled by its developers, which puts them in a position of power over the users; [https://www.gnu.org/philosophy/free-software-even-more-important.html that is the basic injustice]. The developers and manufacturers often exercise that power to the detriment of the users they ought to serve.</blockquote>
-* <blockquote>This typically takes the form of malicious functionalities.</blockquote>
-* <blockquote>Some malicious functionalities are mediated by back doors.</blockquote>
-* <blockquote>Back door: any feature of a program that enables someone who is not supposed to be in control of the computer where it is installed to send it commands. (added by editor "Most times without consent or awareness.")</blockquote>
+{{quotation
+|quote=Nonfree (proprietary) software is very often malware (designed to mistreat the user). Nonfree software is controlled by its developers, which puts them in a position of power over the users; [https://www.gnu.org/philosophy/free-software-even-more-important.html that is the basic injustice]. The developers and manufacturers often exercise that power to the detriment of the users they ought to serve.
+
+This typically takes the form of malicious functionalities.
+
+Some malicious functionalities are mediated by back doors.
+
+Back door: any feature of a program that enables someone who is not supposed to be in control of the computer where it is installed to send it commands. (added by editor "Most times without consent or awareness.")
+|image=Heckert_gnu.big.png
+|author=[https://www.gnu.org/ GNU Project]
+|source=[https://www.gnu.org/proprietary/proprietary.html Proprietary Software Is Often Malware]
+}}
 
 The GNU project created a [https://www.gnu.org/proprietary/proprietary-back-doors.html list with examples of Proprietary Back Doors]. The [https://www.eff.org/ Electronic Frontier Foundation] (EFF) has [https://www.eff.org/deeplinks/2015/02/who-really-owns-your-drones other examples of the use of back doors].
 
