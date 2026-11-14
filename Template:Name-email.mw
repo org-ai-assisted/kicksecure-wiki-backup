@@ -2,7 +2,7 @@
 {{Header}}
 </noinclude><span class="antispam-email-tooltip">{{GoogleOff
 |span=true
-|content=<code>adrelanos(at){{project_clearnet}}</code> (Replace <code>(at)</code> with <code>@</code>.)<button type="button" class="antispam-email-info" popovertarget="pop-contact-email" aria-label="Why you should not e-mail"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></button><span id="pop-contact-email" popover class="antispam-email-popover"><button type="button" class="info-close popover-close" popovertarget="pop-contact-email" popovertargetaction="hide" aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><span>Please '''DO NOT''' use e-mail for one of the following reasons:</span>{{contact_icon_bullet_list}}</span>}}</span><noinclude>
+|content=<code>adrelanos(at){{project_clearnet}}</code> (Replace <code>(at)</code> with <code>@</code>.)<button type="button" class="antispam-email-info" popovertarget="pop-contact-email" popovertargetaction="show" aria-label="Why you should not e-mail"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></button><span id="pop-contact-email" popover class="antispam-email-popover"><button type="button" class="info-close popover-close" popovertarget="pop-contact-email" popovertargetaction="hide" aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><span>Please '''DO NOT''' use e-mail for one of the following reasons:</span>{{contact_icon_bullet_list}}</span>}}</span><noinclude>
 [[Category:MultiWiki]]
 {{Footer}}
 </noinclude>
