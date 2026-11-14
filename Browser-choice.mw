@@ -30,7 +30,7 @@ In the Kicksecure GRUB boot menu, select <code>PERSISTENT Mode | SYSMAINT Sessio
 
 '''Figure:''' ''Kicksecure GRUB Boot Menu''
 
-[[File:Boot-into-Sysmaint-session-1.svg|600px]]
+[[File:Boot-into-Sysmaint-session-1.svg.png|600px]]
 
 {{IconSet|h1|2}} Click <code>Install a Browser</code>
 
@@ -104,7 +104,7 @@ In the Kicksecure GRUB boot menu, select <code>PERSISTENT Mode | USER Session | 
 
 '''Figure:''' ''Kicksecure GRUB Boot Menu''
 
-[[File:boot-into-user-session-9.svg|600px]]
+[[File:boot-into-user-session-9.svg.png|600px]]
 
 {{IconSet|h1|10}} Start the browser.
 

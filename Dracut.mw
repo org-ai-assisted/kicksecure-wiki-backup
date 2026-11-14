@@ -4,10 +4,10 @@ dracut
 }}
 {{#seo:
 |description=dracut is an initial ramdisk (also called "initrd" or "initramfs") generator for Linux systems.
-|image=Dracut.svg
+|image=Dracut.svg.png
 }}
 {{troubleshooting_mininav}}
-[[File:Dracut.svg|thumb|100px|dracut logo]]
+[[File:Dracut.svg.png|thumb|100px|dracut logo]]
 {{intro|
 <code>dracut</code> is an initial ramdisk (also called <code>initrd</code> or <code>initramfs</code>) generator. It assembles the early userspace image used during boot.
 }}
