@@ -3,7 +3,7 @@
 append/append-once/overwrite
 }}
 {{#seo:
-|description=The <code>append</code>, <code>append-once</code>, and <code>overwrite</code> utilities safely append a line to a file. <code>append</code> appends a line unconditionally, <code>append-once</code> appends a line only if the line isn't present in the file already, and <code>overwrite</code> overwrites the entire contents of the file with the provided line. The scripts feature sanity checks, atomic write operations, and a simplified interface.
+|description=The append, append-once, and overwrite utilities safely append a line to a file. append appends a line unconditionally, append-once appends a line only if the line isn't present in the file already, and overwrite overwrites the entire contents of the file with the provided line. The scripts feature sanity checks, atomic write operations, and a simplified interface.
 }}
 {{intro|
 How to use the <code>append</code>, <code>append-once</code>, and <code>overwrite</code> to append and replace data in files.

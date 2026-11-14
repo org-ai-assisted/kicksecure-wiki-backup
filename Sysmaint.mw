@@ -3,7 +3,7 @@
 title=sysmaint - System Maintenance User
 }}
 {{#seo:
-|description=Sysmaint, or system maintenance, is an account created by the [[sysmaint|<code>user-sysmaint-split</code>]] feature. It increases security. Read about this feature, how to use it, and our rationale on this page. "permission denied: sudo"
+|description=Sysmaint, or system maintenance, is an account created by the user-sysmaint-split feature. It increases security. Read about this feature, how to use it, and our rationale on this page. "permission denied: sudo"
 |image=Usersysmaint-clipart.svg
 }}
 {{passwords_mininav}}

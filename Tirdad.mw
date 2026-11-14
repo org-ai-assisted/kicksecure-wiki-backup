@@ -3,7 +3,7 @@
 tirdad - TCP ISN CPU Information Leak Protection
 }}
 {{#seo:
-|description=Overview of a Linux TCP Initial Sequence Number (ISN) side-channel information leak and how <code>tirdad</code> helps mitigate it by randomizing TCP ISNs.
+|description=Overview of a Linux TCP Initial Sequence Number (ISN) side-channel information leak and how tirdad helps mitigate it by randomizing TCP ISNs.
 }}
 {{intro|
 This page explains a Linux TCP Initial Sequence Number (ISN) side-channel information leak and introduces <code>tirdad</code>, a kernel module that helps mitigate it by randomizing TCP ISNs.
