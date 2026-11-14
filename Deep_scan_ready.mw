@@ -159,6 +159,7 @@ The central distinction is not about convenience, but about control. In one mode
 
 {{quotation
 |quote=Computer users must not be required to seek external authorization to exercise their freedoms.
+|image=Free_Software_Foundation_logo.svg
 |author=Free Software Foundation
 |source=[https://www.fsf.org/campaigns/campaigns/secure-boot-vs-restricted-boot/ Will your computer's "Secure Boot" turn out to be "Restricted Boot"?]
 }}
@@ -167,6 +168,7 @@ This quote highlights the concern that a system which requires external approval
 
 {{quotation
 |quote="Treacherous computing" is a more appropriate name, because the plan is designed to make sure your computer will systematically disobey you. In fact, it is designed to stop your computer from functioning as a general-purpose computer. Every operation may require explicit permission.
+|image=Heckert_gnu.big.png
 |author=The GNU Project
 |source=[https://www.gnu.org/philosophy/can-you-trust.en.html Can You Trust Your Computer?]
 }}
@@ -326,7 +328,7 @@ This page documents the concept of deep scan readiness and explains how differen
 * [https://forums.kicksecure.com/t/no-rescue-mode/1171 hard rescue mode refusal]
 
 = See Also =
-https://www.youtube.com/watch?v=zcFg0ZJ2E_A
+* {{VideoLink|videoid=zcFg0ZJ2E_A|text=DroidGuard: A Deep Dive into SafetyNet}}
 
 {{mobile_mininav}}
 {{boot_firmware}}
