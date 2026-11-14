@@ -48,26 +48,37 @@ An important rule for deep virus scans is: do not boot a device suspected of bei
 {{quotation
 |quote=Live analysis provides valuable, volatile information that may not be available during an offline analysis of a hard drive, e.g., dynamic data such as running processes and open ports, which are only available during system operation. However, when one of the processes on a machine includes a rootkit, the 90 ADVANCES IN DIGITAL FORENSICS III investigator must question if the results of a live analysis are tainted. When rootkits are running, the data and processes they have modified are still in use by the operating system, but this fact is not visible to the user. In fact, our experiments demonstrate that even if a live response cannot detect what is hidden, it can still provide an investigator with details about what was available to the user. This information can also help the investigator determine what the rootkit was hiding.
 |source=[https://opendl.ifip-tc6.org/db/conf/ifip11-9/df2007/ToddBPFSR07.pdf IFIP Open Digital Library: Todd et al. PDF]
+|author=Todd et al. (IFIP)
 }}
 
 {{quotation
 |quote=If you suspect a rootkit virus, one way to detect the infection is to power down the computer and execute the scan from a known clean system.
 |source=[https://www.kaspersky.com/resource-center/definitions/what-is-rootkit Kaspersky Resource Center: What is a rootkit?]
+|image=Kaspersky_logo.svg
+|image-layout=banner
+|author=Kaspersky
 }}
 
 {{quotation
 |quote=Hidden malware: Rootkits can install and conceal other types of malware within your network, making detecting and removing them difficult.
 |source=[https://us.norton.com/blog/malware/rootkit Norton blog: Rootkit]
+|image=Norton_logo.svg
+|image-layout=banner
+|author=Norton
 }}
 
 {{quotation
 |quote=Use offline scanners: If the rootkit is particularly stubborn or your regular antivirus software fails to detect it, you can try offline scanners. These antivirus tools run from a bootable USB or CD/DVD, allowing them to scan your system without the rootkit being active.
 |source=[https://us.norton.com/blog/malware/rootkit Norton blog: Rootkit]
+|image=Norton_logo.svg
+|image-layout=banner
+|author=Norton
 }}
 
 {{quotation
 |quote=By analyzing memory dumps, examiners can ensure clean working environment and no active resistance from the rootkit.
 |source=[https://www.forensicfocus.com/articles/understanding-rootkits/ Forensic Focus: Understanding rootkits]
+|author=Forensic Focus
 }}
 
 See also [https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-offline Microsoft Defender Offline].
