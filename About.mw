@@ -71,7 +71,7 @@ In {{project_name_short}} no unnecessary software is installed by default such a
 
 {{Vspacer|10}}
 
-{{ThumbGallery|
+{{ThumbGallery|mode=logos|
 [[File:Kicksecure-basic-logo.png|thumb|100px|[[Dev/Logo|{{project_name_short}} logo]]|alt=Kicksecure Logo]]
 [[File:Debian.png|thumb|100px|alt=Debian logo|Debian logo]]
 [[File:Linuxkerneltux.png|thumb|100px|alt=Linux logo|Linux logo]]
