@@ -67,13 +67,61 @@ Kicksecure is Debian, hardened. It ships dozens of security defaults out of the 
 
 {{#learnmore:url=/wiki/Comparison_with_Others|text=Kicksecure versus Debian}}
 
-== Documentation ==
-* [[Documentation|Wiki]]
-* [[FAQ]]
-* [[#Security Features|Features]]
-* [https://forums.kicksecure.com/ Forum]
-* [https://forums.kicksecure.com/c/news News]
-* [[Donate]]
+{{LeftRightImageText
+|image=Kicksecure-promo.jpg
+|addToClass=promo-style
+|imagelink=About#Hardening_by_Default
+|imageAlt=Kicksecure promo image
+|text=
+<h2>Security Hardened</h2>
+<p>
+{{project_name_short}} uses an extensively security reconfigured of the Debian base (Hardened) which can be run either on bare metal or inside multiple <u>v</u>irtual <u>m</u>achines (VMs) on top of the host OS. Its architecture provides a substantial layer of protection from malware. Applications are pre-installed and configured with safe defaults to make them ready for use with minimal user input.
+</p>
+}}
+
+{{Vspacer|15}}
+
+{{LeftRightImageText
+|image=Onion-website-promo.jpg
+|addToClass=promo-style
+|imageright=1
+|imagelink=About#Hardening_by_Default
+|imageAlt=Torified apt promo image
+|text=
+<h2>Secure and Privacy-Protected Software Installation and Upgrades</h2>
+<p>
+The security and privacy of default software management (installing and upgrading software) are much better, making it harder for anyone to send you targeted, malicious software updates. This only applies to system updates over Tor, not all your internet traffic. [[About#Hardening_by_Default|Learn more]]
+</p>
+}}
+
+{{Vspacer|15}}
+
+{{LeftRightImageText
+|image=Selected-software-promo.jpg
+|addToClass=promo-style
+|imagelink=About#Hardening_by_Default
+|imageAlt=Selected software promo image
+|text=
+<h2>Curated Software Pre-Selection</h2>
+<p>
+In {{project_name_short}} no unnecessary software is installed by default such as exim, samba, cups etc. At the same time security enhancing software like AppArmor, sdwdate and tirdad are preinstalled. [[About#Hardening_by_Default|Learn more]].
+</p>
+}}
+
+{{Vspacer|15}}
+
+{{LeftRightImageText
+|image=Optimized-defaults-promo.jpg
+|addToClass=promo-style
+|imageright=1
+|imagelink=About#Hardening_by_Default
+|imageAlt=Optimized defaults promo image
+|text=
+<h2>Optimized defaults</h2>
+<p>
+{{project_name_short}} enhances all kinds of security settings, including: kernel hardening, Strong Linux User Account Isolation, disabling legacy login methods, higher quality randomness (entropy), network hardening, root access restrictions, application-specific hardening and much more. [[About#Hardening_by_Default|Learn more]].
+</p>
+}}
 
 <span id="security"></span>
 == Security Features ==
