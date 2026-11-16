@@ -2112,7 +2112,7 @@ renders to :
 Example 2 using (1) dark style (2) an icon and (3) an info paragraph :
 {{CodeSelect|code=
 <div class="mininav mn-dark">
-This navigation is special
+Example Navigation Title
 * [[About]]
 * [[File:Tux.png|50px|link=]][[Linux]]
 * [[FAQ]]
@@ -2122,7 +2122,7 @@ This navigation is special
 renders to :
 
 <div class="mininav mn-dark">
-This navigation is special
+Example Navigation Title
 * [[About]]
 * [[File:Tux.png|50px|link=]][[Linux]]
 * [[FAQ]]
