@@ -1,4 +1,4 @@
-{{ExtLink
+[[File:Whonix-logo-icon.svg|class=link-icon|link=|alt=]] {{ExtLink
 |text={{{text}}}
 |https://www.whonix.org/wiki/{{#replace:{{{wikipage}}}| |_}}
 }}
