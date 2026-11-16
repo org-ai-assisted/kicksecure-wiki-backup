@@ -423,16 +423,13 @@ upstream bug reports:
 == Kicksecure website link ==
 * To specifically link to the kicksecure wiki use this shortcut
 * Similar to [[#Kicksecure_wiki_link]], but (1) the parameters are not named, one is page and two is text and (2) the page always has to have <code>wiki/</code> explicitely as a prefix
-* Syntax: <pre>{{Kicksecure_link|wiki/Test|Kicksecure}}</pre>
-* Result: {{Kicksecure_link
-|wiki/Test
-|Kicksecure
-}}
+* Syntax: <pre>[https://www.kicksecure.com/wiki/Test Kicksecure]</pre>
+* Result: [https://www.kicksecure.com/wiki/Test Kicksecure]
 
 == Twitter link ==
-* Syntax: <pre>{{Twitter_link|link-without-domain-name|description}}</pre>
-* Preformatted Example: <pre>{{Twitter_link|moxie/status/1337434126186553345|was debunked by Moxie Marlinspike}}</pre>
-* Live Example: {{Twitter_link|moxie/status/1337434126186553345|was debunked by Moxie Marlinspike}}
+* Syntax: <pre>[https://x.com/link-without-domain-name description]</pre>
+* Preformatted Example: <pre>[https://x.com/moxie/status/1337434126186553345 was debunked by Moxie Marlinspike]</pre>
+* Live Example: [https://x.com/moxie/status/1337434126186553345 was debunked by Moxie Marlinspike]
 
 = Special:SpecialPages =
 

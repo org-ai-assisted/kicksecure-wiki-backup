@@ -17,7 +17,7 @@ An overview of the threat model for cryptocurrency hardware wallets, including h
 | type    = notice
 | image   = [[File:Ambox_notice.png|40px|alt=Info]]
 | text    = Hardware wallets <u>might</u> increase security under some threat models but this requires knowledge. Most users lack the required background knowledge and will still lose their cryptocurrency under many different attack models. <ref>
-{{Twitter_link|JWWeatherman_/status/1327712434572947456|Twitter}}
+[https://x.com/JWWeatherman_/status/1327712434572947456 Twitter]
 </ref>
 }}
 
@@ -213,7 +213,7 @@ One of the servers, arbitrarily, is selected as the "main" server.
 No actual reports of this happening in the media. More correct wording might be "would have been"?
 </ref> sufficient to hack Trezor.
 ***** [https://www.wired.com/story/i-forgot-my-pin-an-epic-tale-of-losing-dollar30000-in-bitcoin/ Trezor was impressively hacked by a 15-year-old for a price of $3,700 (0.85 BTC at the time)] <ref>
-{{Twitter_link|el33th4xor/status/925013437226221569|Twitter}}
+[https://x.com/el33th4xor/status/925013437226221569 Twitter]
 </ref>
 ****** A Trezor can be secured against physical attacks or theft by using a passphrase. See: [https://blog.trezor.io/our-response-to-the-read-protection-downgrade-attack-28d23f8949c6 Crypto Security Firm Unciphered Claims Ability to Physically Hack Trezor T Wallet]
 ***** [https://www.coindesk.com/tech/2023/05/24/crypto-security-firm-unciphered-claims-ability-to-physically-hack-trezor-t-wallet/ Crypto Security Firm Unciphered Claims Ability to Physically Hack Trezor T Wallet]
@@ -449,7 +449,7 @@ When BOLOS needs to be upgraded, a secure channel is established between the Sec
 
 The very reason for using a hardware wallet is that your computer IS compromised, trusting it makes using the hardware wallet an expensive security theatre (or 2FA at best).
 Always verify on the HWW device screen!
-|author={{Twitter_link|_benkaufman/status/1341700878072504321|Thread: 10 Rules for Verification on a #Bitcoin Hardware Wallet}}
+|author=[https://x.com/_benkaufman/status/1341700878072504321 Thread: 10 Rules for Verification on a #Bitcoin Hardware Wallet]
 }}
 
 Indeed. This is a different way to put it than the formal wording above.
@@ -527,7 +527,7 @@ Ledger in the past claimed:
 
 {{Quotation
 |quote=Hi - your private keys never leave the Secure Element chip, which has never been hacked. The Secure Element is 3rd party certified, and is the same technology as used in passports and credit cards. A firmware update cannot extract the private keys from the Secure Element.
-|author={{twitter_link|Ledger/status/1592551225970548736|Ledger Twitter}}
+|author=[https://x.com/Ledger/status/1592551225970548736 Ledger Twitter]
 }}
 
 {{Quotation
@@ -566,23 +566,23 @@ People are worried about the increased attack surface.
 
 {{Quotation
 |quote=1) Answer me this one: What stops a hacker from exploiting the new code that you added to the firmware to extract the shards based on a users seed?
-|author={{twitter_link|TanukiBTC/status/1658532505908043794|@TanukiBTC on Twitter}}
+|author=[https://x.com/TanukiBTC/status/1658532505908043794 @TanukiBTC on Twitter]
 }}
 
 {{Quotation
 |quote=More importantly, what stops Ledger themselves updating the firmware with a backdoor that uploads your keys to whichever government agency asked them nicely?
-|author={{twitter_link|HaxorMarty/status/1658586894744035330|@HaxorMarty on Twitter}}
+|author=[https://x.com/HaxorMarty/status/1658586894744035330 @HaxorMarty on Twitter]
 }}
 
 {{Quotation
 |quote=The only concern is if we get subpoenaed by a government.
-|author={{twitter_link|BitcoinNewsCom/status/1660697401160548373|Ledger CEO}}
+|author=[https://x.com/BitcoinNewsCom/status/1660697401160548373 Ledger CEO]
 }}
 
 {{Quotation
 |quote=
 One of my concerns with the new @Ledger Recover service is that they appears to be sharding via Shamir's Secret Sharing, but doing so in a proprietary way and possibly in a naive fashion. We don't know, as it is not open source. [1/11]
-|author={{twitter_link|ChristopherA/status/1659061319004454913|Christopher Allen}}
+|author=[https://x.com/ChristopherA/status/1659061319004454913 Christopher Allen]
 }}
 
 = Resources =

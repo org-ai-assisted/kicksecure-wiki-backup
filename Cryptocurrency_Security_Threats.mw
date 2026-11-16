@@ -34,7 +34,7 @@ Related: [[Live Mode]].
 To be able to restore a multisig setup, every cosigner MUST back up all <u>extended public keys (<code>xpub</code>s)</u> (also known as Master Public Keys (MPKs)) of all cosigners as well as the <u>derivation path</u>. <ref>
 * https://bitcoin.stackexchange.com/questions/107450/is-there-a-multisignature-scheme-that-dont-need-xpub-backups
 * https://bitcointalk.org/index.php?topic=2280898.msg23146497
-* {{Twitter_link|_benma_/status/1229414020391800833|Twitter}}
+* [https://x.com/_benma_/status/1229414020391800833 Twitter]
 </ref> For example, with a quorum of 2/4 setup:
 
 <pre>
@@ -49,7 +49,7 @@ It is highly recommended to exercise the multisig restoration process before rel
 {{Quotation
 |quote=
 Now let's talk some multisig...
-|author={{Twitter_link|mflaxman|@mflaxman}}
+|author=[https://x.com/mflaxman @mflaxman]
 |source=[https://btcguide.github.io btcguide.github.io] guide
 }}
 
@@ -110,7 +110,7 @@ Please note: Some things here might not be fully accurate for the expert user (e
 That said, if you see inaccuracies or mistakes (or just have questions), please comment!!
 
 Also check out some more info on multisig setups over at:
-|author={{Twitter_link|mflaxman|@mflaxman}}
+|author=[https://x.com/mflaxman @mflaxman]
 |source=[https://btcguide.github.io btcguide.github.io] guide
 }}
 

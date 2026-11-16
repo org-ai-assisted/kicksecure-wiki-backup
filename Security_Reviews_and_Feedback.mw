@@ -37,7 +37,7 @@ Independent researchers occasionally conduct partial security audits, a practice
 |text=35C3 - wallet.fail
 }}.
 * <code>Libbitcoin Explorer</code> (<code>bx</code>): [https://milksad.info/distrust.co Distrust] and independent researchers conducted a partial audit known as [https://milksad.info/ Milk Sad Disclosure].
-* [[Kicksecure]]: {{Twitter_link|ProudmuslimDev|ProudmuslimDev}} performed an audit of a single script (whereas a Linux distribution consists of potentially hundreds of thousands of scripts and programs): {{Twitter_link|ProudmuslimDev/status/1878163686365544823|privilege escalation issue (Twitter)}} ([https://forums.kicksecure.com/t/upgrade-nonroot-privilege-escalation-issue/886 upgrade-nonroot privilege escalation issue (forums)]).
+* [[Kicksecure]]: [https://x.com/ProudmuslimDev ProudmuslimDev] performed an audit of a single script (whereas a Linux distribution consists of potentially hundreds of thousands of scripts and programs): [https://x.com/ProudmuslimDev/status/1878163686365544823 privilege escalation issue (Twitter)] ([https://forums.kicksecure.com/t/upgrade-nonroot-privilege-escalation-issue/886 upgrade-nonroot privilege escalation issue (forums)]).
 * [https://tails.net Tails]: [https://tails.net/news/version_6.11/index.en.html Critical security fixes].
 
 Typically, researchers identify areas of interest either through their own investigations or by being directed to them by others. If a particular issue captures their attention, they may examine a few specific aspects in greater detail. White hat hackers who uncover security vulnerabilities may choose to publish a full public disclosure for the benefit of the community.
