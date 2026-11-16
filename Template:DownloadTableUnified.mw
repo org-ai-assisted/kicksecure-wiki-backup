@@ -34,49 +34,28 @@
 {{mbox
 |addToClass=cs-gray-light
 |text=
-{{Tab
-|type=controller
-|linkid=link1
-|content=
-{{Tab
-|title= ==== OpenPGP {{{flavor}}} {{{version_type}}} ====
-|image=[[File:GnuPG-Logo.svg|25px]]
-|active=true
-|content=
-<div class="margin-top-20">{{#downloadbutton:text=OpenPGP Signature
-|icon=sig
+'''OpenPGP {{{flavor}}} {{{version_type}}}'''
+
+{{#downloadbutton:text=OpenPGP Signature
+|addToClass=dlb-verify
 |url=/download/{{{after_slash}}}/{{{version}}}/{{{project_name}}}-{{{flavor}}}-{{{version}}}.{{{extension}}}.asc
 }}
-</div>
-
-<hr>
 
 {{signing_key_main}}
-}} <!-- close tab: OpenPGP -->
 
-{{Tab
-|title= ==== signify {{{flavor}}} {{{version_type}}} ====
-|image=[[File:Signify_Logo.svg.png|25px]]
-|active=false
-|content=
+'''signify {{{flavor}}} {{{version_type}}}'''
 
 {{#downloadbutton:text=SHA-512 checksum file
-|icon=sig
+|addToClass=dlb-verify
 |url=/download/{{{after_slash}}}/{{{version}}}/{{{project_name}}}-{{{flavor}}}-{{{version}}}.{{{extension}}}.sha512sums
 }}
 
-<hr>
-
 {{#downloadbutton:text=SHA-512 checksum file signify signature
-|icon=sig
+|addToClass=dlb-verify
 |url=/download/{{{after_slash}}}/{{{version}}}/{{{project_name}}}-{{{flavor}}}-{{{version}}}.{{{extension}}}.sha512sums.sig
 }}
 
-<hr>
-
 {{signing_key_main_signify}}
-}} <!-- close: tab signify -->
-}} <!-- close: tab controller -->
 
 <div class="vspacer-20"></div>
 {{Icon|fa-solid fa-circle-info cs-yellow}} Read [[Verify the images]] to learn more about the verification process for the images.
