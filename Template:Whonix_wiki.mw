@@ -1,4 +1,4 @@
 {{ExtLink
 |text={{{text}}}
-|https://www.whonix.org/wiki/{{{wikipage}}}
+|https://www.whonix.org/wiki/{{#replace:{{{wikipage}}}| |_}}
 }}
