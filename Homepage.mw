@@ -24,6 +24,14 @@ intro={{project_name_short}} gives you
 
 {{Align|middle|Learn: [[About|What Is Kicksecure?]]}}
 
+<div class="built-on-label">Built on free software</div>
+{{ThumbGallery|mode=logos|
+[[File:Debian.png|thumb|120px|alt=Debian logo|Debian]]
+[[File:Linuxkerneltux.png|thumb|120px|alt=Linux kernel logo|Linux]]
+[[File:Heckert_gnu.big.png|thumb|120px|alt=GNU logo|GNU]]
+[[File:Osi_standard_logo_0.png|thumb|120px|alt=OSI logo|OSI]]
+}}
+
 <span id="download"></span>
 == Download ==
 

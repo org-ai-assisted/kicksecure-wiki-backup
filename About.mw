@@ -13,17 +13,6 @@ Security Hardened Linux Distribution
 {{project_name_short}} is a complete computer operating system. Numerous applications come pre-installed with safe defaults which can be used immediately upon installation with minimal user input.
 }}
 
-{{Vspacer|10}}
-
-{{ThumbGallery|mode=logos|
-[[File:Kicksecure-basic-logo.png|thumb|100px|[[Dev/Logo|{{project_name_short}} logo]]|alt=Kicksecure Logo]]
-[[File:Debian.png|thumb|100px|alt=Debian logo|Debian logo]]
-[[File:Linuxkerneltux.png|thumb|100px|alt=Linux logo|Linux logo]]
-[[File:Osi_standard_logo_0.png|thumb|100px|alt=OSI logo|OSI logo]]
-[[File:Heckert_gnu.big.png|thumb|100px|alt=GNU logo|GNU logo]]
-[[File:Kicksecure-seal.png|thumb|100px|alt=Kicksecure seal|Kicksecure seal]]
-}}
-
 __TOC__
 
 = Hardening by Default =
