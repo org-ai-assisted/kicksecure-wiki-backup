@@ -1,0 +1,28 @@
+{{Header}}
+{{title|title=
+Lead image: full-bleed hero (treatment C)
+}}
+{{#seo:
+|description=Test page for treatment C, the opt-in full-bleed hero lead image above the title.
+|image=Kicksecure-Desktop.png
+}}
+{{documentation_mininav}}
+[[File:Kicksecure-Desktop.png|thumb|class=lead-hero|alt=Kicksecure desktop|The Kicksecure desktop, shown as a full-bleed hero above the title.]]
+{{intro|
+This page demonstrates '''treatment C''', an opt-in hero. A full-bleed lead image opens the page above the title, with its caption and credit below it, then the title and body follow. This is the Zeit and Tagesschau feature shape: image first, striking, reserved for a page whose lead image earns the whole opening.
+}}
+
+== How to opt in ==
+
+Add <code>class=lead-hero</code> to the File link:
+
+ <nowiki>[[File:Kicksecure-Desktop.png|thumb|class=lead-hero|A full-bleed hero lead image.]]</nowiki>
+
+The image is emitted first, above the title, matching how feature articles open. Use it sparingly, only when the lead image is strong enough to lead the whole page.
+
+== Accessibility note ==
+
+Because the hero comes before the title, a screen reader meets the image and its caption before the page name. That is an informed, opt-in trade for the striking opening, and matches how the newspapers that use this shape are built. For ordinary documentation pages prefer treatment A or B, which keep the title first on screen as well as in the markup.
+
+{{Footer}}
+[[Category:Documentation]]

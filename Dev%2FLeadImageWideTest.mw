@@ -1,0 +1,28 @@
+{{Header}}
+{{title|title=
+Lead image: full-width captioned (treatment B)
+}}
+{{#seo:
+|description=Test page for treatment B, the opt-in full-width captioned lead image below the title.
+|image=Kicksecure-Desktop.png
+}}
+{{documentation_mininav}}
+[[File:Kicksecure-Desktop.png|thumb|class=lead-wide|alt=Kicksecure desktop|The Kicksecure desktop. A full-width captioned lead image sits below the title.]]
+{{intro|
+This page demonstrates '''treatment B''', an opt-in. The title reads first, then a large lead image spans the full content width with its caption and credit directly below it. This is the Welt and New York Times standard-article shape, and the safe choice for a prominent screenshot or diagram.
+}}
+
+== How to opt in ==
+
+Add <code>class=lead-wide</code> to the File link:
+
+ <nowiki>[[File:Kicksecure-Desktop.png|thumb|class=lead-wide|A full-width captioned lead image.]]</nowiki>
+
+The figure is no longer floated; it becomes a block as wide as the prose, captioned below. The page title still comes first in both the markup and on screen.
+
+== Body text ==
+
+Because the image is full width rather than floated, the body text begins below it. This treatment suits a wide screenshot that deserves the whole column and would look cramped squeezed into a float.
+
+{{Footer}}
+[[Category:Documentation]]

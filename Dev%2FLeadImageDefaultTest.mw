@@ -1,0 +1,28 @@
+{{Header}}
+{{title|title=
+Lead image: default right-float (treatment A)
+}}
+{{#seo:
+|description=Test page for treatment A, the default right-float lead image.
+|image=Debian.png
+}}
+{{documentation_mininav}}
+[[File:Debian.png|thumb|alt=Debian logo|A small lead image. By default it floats to the right of the body text.]]
+{{intro|
+This page demonstrates '''treatment A''', the default. A small lead image floats to the right and the page title stays first and full width above the body. The text column is the same width as a page that has no image at all, which is the point of the default: most lead images are small logos or icons and should not push the title down or shrink the prose.
+}}
+
+== When the default applies ==
+
+Treatment A is what you get from ordinary MediaWiki markup, with no extra opt-in:
+
+ <nowiki>[[File:Debian.png|thumb|A small lead image.]]</nowiki>
+
+The title reads first, the float sits beside the text, and nothing about the layout changes when the image is absent. Use it for logos, icons, and any image narrower than roughly half the column.
+
+== Body text ==
+
+The paragraphs here exist only to give the float something to sit beside, so the right-float behaviour is visible. On a narrow screen the float drops to full width and the text flows below it, exactly as a standard thumbnail does.
+
+{{Footer}}
+[[Category:Documentation]]
