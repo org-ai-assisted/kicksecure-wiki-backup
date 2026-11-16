@@ -58,7 +58,7 @@ This is a guide for easily '''creating a {{project_name_short}} Live USB stick, 
 File:Iso-page-step1-download.svg|link=#1_Download_Kicksecure_LXQt_ISO|Download ISO
 File:Iso-page-step3-flash-usb.svg|link=#2_Write_the_ISO_to_USB|Flash ISO to USB
 File:Iso-page-step4-boot-usb.svg|link=#3_Boot_the_ISO|Boot from USB
-File:Iso-page-step4-boot-done.svg|link=#3_Boot_the_ISO|Live {{project_name_short}} running
+File:Iso-page-step4-boot-done.svg|link=#Live_Running|Live {{project_name_short}} running
 </gallery>
 }}
 
@@ -647,6 +647,7 @@ If the computer starts on {{project_name_short}} ISO, the GRUB Boot Loader will 
 
 [[File:{{project_name_short}}-ISO-GRUB.png|600px|frameless|alt={{project_name_short}} ISO GRUB|{{project_name_short}} ISO GRUB]]
 
+{{Anchor|Live_Running}}
 '''{{IconSet|h2|8}} After boot, you will encounter the {{project_name_short}} desktop.'''
 
 '''Figure:''' ''{{project_name_short}} Desktop''
