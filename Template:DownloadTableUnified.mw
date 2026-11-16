@@ -43,7 +43,7 @@
 |image=[[File:GnuPG-Logo.svg|25px]]
 |active=true
 |content=
-<div class="margin-top-20">[[File:Icon-openpgp.png|40px]] {{#downloadbutton:text=OpenPGP Signature
+<div class="margin-top-20">{{#downloadbutton:text=OpenPGP Signature
 |icon=sig
 |url=/download/{{{after_slash}}}/{{{version}}}/{{{project_name}}}-{{{flavor}}}-{{{version}}}.{{{extension}}}.asc
 }}
@@ -51,7 +51,7 @@
 
 <hr>
 
-[[File:Icon-key.png|40px]] {{signing_key_main}}
+{{signing_key_main}}
 }} <!-- close tab: OpenPGP -->
 
 {{Tab
@@ -60,26 +60,26 @@
 |active=false
 |content=
 
-[[File:Icon-sha512.png|40px]] {{#downloadbutton:text=SHA-512 checksum file
+{{#downloadbutton:text=SHA-512 checksum file
 |icon=sig
 |url=/download/{{{after_slash}}}/{{{version}}}/{{{project_name}}}-{{{flavor}}}-{{{version}}}.{{{extension}}}.sha512sums
 }}
 
 <hr>
 
-[[File:Icon-sha512signify.png|40px]] {{#downloadbutton:text=SHA-512 checksum file signify signature
+{{#downloadbutton:text=SHA-512 checksum file signify signature
 |icon=sig
 |url=/download/{{{after_slash}}}/{{{version}}}/{{{project_name}}}-{{{flavor}}}-{{{version}}}.{{{extension}}}.sha512sums.sig
 }}
 
 <hr>
 
-[[File:Icon-key.png|40px]] {{signing_key_main_signify}}
+{{signing_key_main_signify}}
 }} <!-- close: tab signify -->
 }} <!-- close: tab controller -->
 
 <div class="vspacer-20"></div>
-{{Icon|fa-solid fa-info cs-yellow}} Read [[Verify the images]] to learn more about the verification process for the images.
+{{Icon|fa-solid fa-circle-info cs-yellow}} Read [[Verify the images]] to learn more about the verification process for the images.
 }} <!-- close mbox -->
 
 </div>
