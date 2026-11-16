@@ -98,9 +98,7 @@ zsh: exit 1     unicode-show trojan-source/Python/early-return.py
 </pre>
 
 = Source Code =
-* {{Github_link|
-https://github.com/Kicksecure/helper-scripts/blob/master/usr/bin/unicode-show
-}}
+* https://github.com/Kicksecure/helper-scripts/blob/master/usr/bin/unicode-show
 
 <references/>
 {{Footer}}

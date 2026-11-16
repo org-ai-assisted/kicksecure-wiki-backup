@@ -37,9 +37,7 @@ ALSA, PulseAudio, PipeWire - Development Considerations
 = Kicksecure, security-misc bug reports =
 
 * https://forums.whonix.org/t/kicksecure-17-2-2-0-unreleased-version-sound-driver-issue/20379
-* {{Github_link|
-https://github.com/Kicksecure/security-misc/issues/271
-}}
+* https://github.com/Kicksecure/security-misc/issues/271
 = Impact of Host Operating System =
 None. Unspecific to Windows host versus Linux host.
 
@@ -81,9 +79,7 @@ systemd --user start xdg-desktop-portal
 **** [https://gitlab.xfce.org/xfce/xfce4-session/-/issues/159 Does xdg-desktop-portal-xfce exist, or should it exist?]
 *** TODO research: how to implement this by default as a Linux distribution
 **** in Debian <code>trixie</code> perhaps https://packages.debian.org/trixie/xdg-desktop-portal-xapp would work
-** Fixed by {{Github_link|
-https://github.com/Kicksecure/kicksecure-meta-packages/pull/1?
-}}
+** Fixed by https://github.com/Kicksecure/kicksecure-meta-packages/pull/1?
 
 == SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed? ==
 https://forums.whonix.org/t/port-from-pulseaudio-to-pipewire-for-audio-support/16879/43

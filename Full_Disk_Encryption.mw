@@ -473,10 +473,7 @@ Using full disk encryption with a strong password is more secure than using a TP
 |source=[https://www.techspot.com/news/101792-microsoft-bitlocker-encryption-can-cracked-43-seconds-4.html Microsoft BitLocker encryption cracked in just 43 seconds with a $4 Raspberry Pi Pico]
 }}
 
-{{VideoLink
-|videoid=wTl4vEednkQ
-|text=Breaking Bitlocker - Bypassing the Windows Disk Encryption
-}}
+[https://www.youtube.com/watch?v=wTl4vEednkQ Breaking Bitlocker - Bypassing the Windows Disk Encryption]
 
 * https://www.guru3d.com/story/researchers-expose-vulnerabilities-in-amds-firmware-based-tpms/
 

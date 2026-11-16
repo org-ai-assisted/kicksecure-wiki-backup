@@ -97,9 +97,7 @@ This is a common issue:
 == Illustrative Examples ==
 Pull requests that were minimal and required no prior communication:
 
-* {{Github_link|
-https://github.com/Kicksecure/legacy-dist/pull/1
-}}
+* https://github.com/Kicksecure/legacy-dist/pull/1
 
 == Good First Issues ==
 
@@ -122,15 +120,9 @@ There are also a number of relatively self-contained source code repositories. S
 
 Examples of mostly self-contained repositories include:
 
-* {{Github_link|
-https://github.com/Kicksecure/sysmaint-panel
-}}
-* {{Github_link|
-https://github.com/Kicksecure/sdwdate
-}}
-* {{Github_link|
-https://github.com/Kicksecure/sdwdate-gui
-}}
+* https://github.com/Kicksecure/sysmaint-panel
+* https://github.com/Kicksecure/sdwdate
+* https://github.com/Kicksecure/sdwdate-gui
 
 Try finding a task from our [[Reporting_Bugs#Issue_Tracker|Issue Tracker]].
 

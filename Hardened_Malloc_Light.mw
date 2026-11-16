@@ -33,12 +33,8 @@ The development goal of Hardened Malloc Light is pre-installation by default.
 
 Hardened Malloc Light uses different compile time options.
 
-* {{Github_link|
-https://github.com/Kicksecure/hardened_malloc/blob/master/debian/rules#L17
-}}
-* {{Github_link|
-https://github.com/Kicksecure/hardened_malloc/blob/master/debian/rules#L18
-}}
+* https://github.com/Kicksecure/hardened_malloc/blob/master/debian/rules#L17
+* https://github.com/Kicksecure/hardened_malloc/blob/master/debian/rules#L18
 
 Both, Hardened Malloc (Default) and Hardened Malloc Light are already installed by default but not yet enabled by default.
 
@@ -56,9 +52,7 @@ Readers who wish to discuss the integration of Hardened Malloc with {{project_na
 {{Testers-only}}
 
 Package <code>hardened-malloc-light-enable</code> <ref>
-{{Github_link|
 https://github.com/Kicksecure/hardened_malloc/blob/master/debian/control#L42
-}}
 </ref> is provided as an easy way to enable Hardened Malloc Light globally.
 
 {{Install Package|package=

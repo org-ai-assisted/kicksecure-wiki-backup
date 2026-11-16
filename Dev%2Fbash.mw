@@ -39,14 +39,8 @@ Supporting multiple command line parameters with spaces in wrapper scripts, safe
 = Safe ways to print =
 For this style guide, do not use <code>echo</code>. Use <code>printf</code> with an explicit format string instead.
 
-* {{VideoLink
-|videoid=lq98MM2ogBk
-|text=bash's echo command is broken
-}}
-* {{VideoLink
-|videoid=ft0_cw54qak
-|text=echo is broken: a follow-up video
-}}
+* [https://www.youtube.com/watch?v=lq98MM2ogBk bash's echo command is broken]
+* [https://www.youtube.com/watch?v=ft0_cw54qak echo is broken: a follow-up video]
 
 <code>shellcheck</code> bug reports:
 
@@ -544,10 +538,7 @@ Usually not needed. When a subshell detects an error due to <code>errexit</code>
 = Resources =
 * [https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md shellharden: How to do things safely in bash]
 * [https://dwheeler.com/essays/fixing-unix-linux-filenames.html David A. Wheeler: Fixing Unix/Linux/POSIX filenames]
-* use with care: {{VideoLink
-|videoid=DvDu8_A2uhs
-|text=Seat Belts and Airbags for bash
-}}
+* use with care: [https://www.youtube.com/watch?v=DvDu8_A2uhs Seat Belts and Airbags for bash]
 ** use with care: [https://github.com/pottmi/stringent.sh stringent.sh]
 
 = See Also =

@@ -12,10 +12,7 @@ Hardware backdoors, vulnerabilities versus malicious backdoors, real-world examp
 = Vulnerability versus Malicious Backdoor =
 The word "backdoor" is not well defined. A vulnerability (or "bugdoor") can serve as a backdoor. Hence, many people use the terms vulnerability and backdoor as synonyms. This, however, confuses the boundaries between vulnerability and "malicious backdoors," for which a stronger word than just "backdoor" must now be used.
 
-{{VideoLink
-|videoid=sq0TaUfkAW8
-|text=Innocent Vulnerabilities vs Malicious Backdoors How to Manage Your Risk
-}}
+[https://www.youtube.com/watch?v=sq0TaUfkAW8 Innocent Vulnerabilities vs Malicious Backdoors How to Manage Your Risk]
 
 == Vulnerability Example ==
 

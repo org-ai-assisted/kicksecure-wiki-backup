@@ -244,21 +244,12 @@ The worst enemy of security is complexity. This has been true since the beginnin
 
 Massive complexity introduced by more and more complex hardware.
 
-* {{VideoLink
-|videoid=36myc8wQhLo
-|text=USENIX ATC '21/OSDI '21 Joint Keynote Address-It's Time for Operating Systems to Rediscover Hardware
-}}
-* {{VideoLink
-|videoid=kZRE7HIO3vk
-|text=The Thirty Million Line Problem
-}}
+* [https://www.youtube.com/watch?v=36myc8wQhLo USENIX ATC '21/OSDI '21 Joint Keynote Address-It's Time for Operating Systems to Rediscover Hardware]
+* [https://www.youtube.com/watch?v=kZRE7HIO3vk The Thirty Million Line Problem]
 
 Complexity risking collapse.
 
-{{VideoLink
-|videoid=ZSRHeXYDLko
-|text=Preventing the Collapse of Civilization / Jonathan Blow (Thekla, Inc)
-}}
+[https://www.youtube.com/watch?v=ZSRHeXYDLko Preventing the Collapse of Civilization / Jonathan Blow (Thekla, Inc)]
 
 = No Final Specification =
 
@@ -382,10 +373,7 @@ You can tell it to accept other, external untrusted instructions in a restricted
 
 = See Also =
 * [[Android|Android Insecurity]]
-* {{VideoLink
-|videoid=_ahcUuNO4so
-|text=Crypto Won't Save You Either
-}}
+* [https://www.youtube.com/watch?v=_ahcUuNO4so Crypto Won't Save You Either]
 * https://xkcd.com/2347/
 * https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd
 * [https://grsecurity.net/~spender/interview_notes.txt grsecurity's Brad Spengler: Interview Notes]

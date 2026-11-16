@@ -91,26 +91,16 @@ This section is intended for advanced users, administrators, developers, and con
 |source=[https://github.com/QubesOS/qubes-issues/issues/2695 Quote] security researcher [https://en.wikipedia.org/wiki/Solar_Designer Solar Designer]
 }}
 
-[[About|{{project_name_short}}]] has been working towards making SUID unreachable for non-root user accounts by implementing [[SUID_Disabler_and_Permission_Hardener|SUID Disabler and Permission Hardener]], which is part of {{Github_link|
-https://github.com/Kicksecure/security-misc
-}}. However, {{project_name_short}} has not been able to disable all SUID for non-root users yet due to the massive development effort required and converting SUID binaries to Linux capabilities not being a high priority for the wider security community. ([[Dev/About_Computer_Insecurity#Scattered_Attention|Scattered Attention]])
+[[About|{{project_name_short}}]] has been working towards making SUID unreachable for non-root user accounts by implementing [[SUID_Disabler_and_Permission_Hardener|SUID Disabler and Permission Hardener]], which is part of https://github.com/Kicksecure/security-misc. However, {{project_name_short}} has not been able to disable all SUID for non-root users yet due to the massive development effort required and converting SUID binaries to Linux capabilities not being a high priority for the wider security community. ([[Dev/About_Computer_Insecurity#Scattered_Attention|Scattered Attention]])
 
-Configuration folder {{Github_link|
-https://github.com/Kicksecure/security-misc/tree/master/usr/lib/permission-hardener.d
-}} contains documented whitelists of SUID binaries such as:
+Configuration folder https://github.com/Kicksecure/security-misc/tree/master/usr/lib/permission-hardener.d contains documented whitelists of SUID binaries such as:
 
 * <code>fusermount</code>: disabling would break AppImages / Docker
-** {{Github_link|
-https://github.com/Kicksecure/security-misc/blob/master/usr/lib/permission-hardener.d/25_default_whitelist_fuse.conf%23security-misc-shared
-}}
+** https://github.com/Kicksecure/security-misc/blob/master/usr/lib/permission-hardener.d/25_default_whitelist_fuse.conf%23security-misc-shared
 * <code>pam-tmpdir-helper</code>: disabling would break [[Dev/Strong_Linux_User_Account_Isolation#libpam-tmpdir|libpam-tmpdir]], which is a security feature.
-** {{Github_link|
-https://github.com/Kicksecure/security-misc/blob/master/usr/lib/permission-hardener.d/25_default_whitelist_pam.conf%23security-misc-shared
-}}
+** https://github.com/Kicksecure/security-misc/blob/master/usr/lib/permission-hardener.d/25_default_whitelist_pam.conf%23security-misc-shared
 * Qubes specific: <code>qfile-unpacker</code>
-** {{Github_link|
-https://github.com/Kicksecure/security-misc/blob/master/usr/lib/permission-hardener.d/25_default_whitelist_qubes.conf%23security-misc-shared
-}}
+** https://github.com/Kicksecure/security-misc/blob/master/usr/lib/permission-hardener.d/25_default_whitelist_qubes.conf%23security-misc-shared
 
 To see a list of SUIDs reachable for account <code>user</code>, refer to [[SUID_Disabler_and_Permission_Hardener#Search_for_SUID_SGID|Search for SUID SGID]]. At the time of writing, the list of SUID binaries is greatly reduced compared to most other Linux distributions, but unfortunately not zero. Current list:
 

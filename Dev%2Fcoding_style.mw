@@ -84,11 +84,7 @@ There may be older code (from before the introduction of <code>str_replace</code
 
 == Use <code>str_replace</code> whenever possible ==
 
-{{Github_link|
-https://github.com/Kicksecure/helper-scripts/blob/master/usr/bin/str_replace
-}} is installed by default in {{project_name_short}} ({{Github_link|
-https://github.com/Kicksecure/helper-scripts/blob/master/man/str_replace.1.ronn
-}}). <ref>
+https://github.com/Kicksecure/helper-scripts/blob/master/usr/bin/str_replace is installed by default in {{project_name_short}} (https://github.com/Kicksecure/helper-scripts/blob/master/man/str_replace.1.ronn). <ref>
 https://github.com/Samer-Al-iraqi/Linux-str_replace/
 </ref>
 

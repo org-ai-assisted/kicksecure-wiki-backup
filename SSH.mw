@@ -179,9 +179,7 @@ featherpad /etc/ssh/ssh_config.d/30_security-misc.conf
 
 See also:
 
-* {{Github_link|
-https://github.com/Kicksecure/security-misc/blob/master/etc/ssh/ssh_config.d/30_security-misc.conf%23security-misc-shared
-}}
+* https://github.com/Kicksecure/security-misc/blob/master/etc/ssh/ssh_config.d/30_security-misc.conf%23security-misc-shared
 * https://manpages.debian.org/ssh_config
 
 ==== Rationale on recommended encryption algorithms ====
@@ -371,12 +369,7 @@ The following configuration file no longer allows root or any other user to log 
 * {{CodeSelect|inline=true|code=
 featherpad /etc/ssh/sshd_config.d/30_security-misc.conf
 }}
-* {{Github_link
-|gituser=Kicksecure
-|repo=security-misc
-|path=/blob/master/etc/ssh/sshd_config.d/30_security-misc.conf%23security-misc-shared
-|text=<code>/etc/ssh/sshd_config.d/30_security-misc.conf</code>
-}}
+* [https://github.com/Kicksecure/security-misc/blob/master/etc/ssh/sshd_config.d/30_security-misc.conf%23security-misc-shared <code>/etc/ssh/sshd_config.d/30_security-misc.conf</code>]
 
 {{IconSet|h1|8}} Create the SSH group and add your SSH user (in this example, the user <code>user</code>) to the SSH group.
 

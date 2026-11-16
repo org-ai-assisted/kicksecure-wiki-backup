@@ -22,8 +22,8 @@ This wiki page provides a high-level overview only. For the step-by-step instruc
 
 = See Also =
 * https://docs.dasharo.com/projects/sovereign-boot-wizard/
-* {{VideoLink|videoid=sCohCVvcp7E|text=Sovereign Boot Wizard RC1 Demo}}
-* {{VideoLink|videoid=680OddBR1ds|text=Sovereign Boot related video}}
+* [https://www.youtube.com/watch?v=sCohCVvcp7E Sovereign Boot Wizard RC1 Demo]
+* [https://www.youtube.com/watch?v=680OddBR1ds Sovereign Boot related video]
 * https://github.com/3mdeb/verified-boot/pull/30
 * https://github.com/Dasharo/dasharo-issues/milestone/86
 * https://github.com/Dasharo/dasharo-issues/issues?q=is%3Aissue%20state%3Aopen%20label%3ASovereignBoot

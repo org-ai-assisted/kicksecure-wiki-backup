@@ -24,7 +24,7 @@ Developers and [[contributors]] cannot be expected to perform deep investigation
 |-
 
 | Computer hardware and software quality are getting worse, not better.
-| {{VideoLink |videoid=ZSRHeXYDLko |text=Preventing the Collapse of Civilization / Jonathan Blow (Thekla, Inc)}}
+| [https://www.youtube.com/watch?v=ZSRHeXYDLko Preventing the Collapse of Civilization / Jonathan Blow (Thekla, Inc)]
 |-
 
 | Complexity is too high and increasing.
@@ -32,10 +32,7 @@ Developers and [[contributors]] cannot be expected to perform deep investigation
 |-
 
 | Increasing hardware complexity.
-| {{VideoLink
-|videoid=36myc8wQhLo
-|text=USENIX ATC '21/OSDI '21 Joint Keynote Address It's Time for Operating Systems to Rediscover Hardware
-}}
+| [https://www.youtube.com/watch?v=36myc8wQhLo USENIX ATC '21/OSDI '21 Joint Keynote Address It's Time for Operating Systems to Rediscover Hardware]
 |-
 
 | We, as Open Source software developers, do not control the hardware.
@@ -100,10 +97,7 @@ Empathy is needed to understand their viewpoint, which may be different from the
 
 This does not mean that Linux distribution developers should control upstream projects. It also does not mean that distribution developers would do a perfect job if they had that authority.
 
-No Linux distribution developer fully understands the entire system. The system is too large and complex for one person to understand every component and every interaction. This is elaborated in the {{VideoLink
-|videoid=kZRE7HIO3vk
-|text=The Thirty Million Line Problem
-}} video.
+No Linux distribution developer fully understands the entire system. The system is too large and complex for one person to understand every component and every interaction. This is elaborated in the [https://www.youtube.com/watch?v=kZRE7HIO3vk The Thirty Million Line Problem] video.
 
 = What This Means for Users =
 

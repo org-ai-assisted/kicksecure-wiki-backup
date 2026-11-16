@@ -82,10 +82,7 @@ The Tails project shares similar views on the maintainability of Linux distribut
 |source=[https://web.archive.org/web/20240627000529/https://tails.net/contribute/how/promote/material/slides/NDH2k16-20160702/slides_NDH2k16.pdf/ Tails: Security, Maintainability and Usability]
 }}
 
-{{VideoLink
-|videoid=S9vXTSOFp_o
-|text=HackerZVoice - NDH2K16 - Tails - Security, Maintainability and Usability, pick three!
-}}
+[https://www.youtube.com/watch?v=S9vXTSOFp_o HackerZVoice - NDH2K16 - Tails - Security, Maintainability and Usability, pick three!]
 
 forums discussion: [https://forums.whonix.org/t/focus-on-low-effort-maintainability/9067 focus on low-effort maintainability]
 
@@ -107,10 +104,7 @@ The discontinuation of Linux distributions is often attributed to various factor
 * https://lowendbox.com/blog/open-source-but-not-open-contributions/
 * https://github.com/readme/featured/how-open-is-open-source
 * https://github.com/benbjohnson/litestream/commit/a8d63b54aa5bd2d9639af01e1e0c2098a65b323a#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5R121
-* {{VideoLink
-|videoid=uC4Xay0q9_Q
-|text=Global Maintainer Summit 2021: Bart&#x142;omiej P&#x142;otka-Should I merge this feature?
-}}
+* [https://www.youtube.com/watch?v=uC4Xay0q9_Q Global Maintainer Summit 2021: Bart&#x142;omiej P&#x142;otka-Should I merge this feature?]
 * (Note: There are many more references that could be listed here.)
 
 = Practical Examples =

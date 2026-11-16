@@ -231,12 +231,7 @@ Debian's default listening services and open ports depend on installation choice
 |
 * <u>Client hardening:</u> Secure defaults for SSH client cryptography, key exchange, MACs, and host key algorithms.
 * <u>Server hardening:</u> Restrictive authentication defaults, strong cryptography, and reduced attack surface.
-| {{Yes}} <ref>Settings are maintained as part of the security-misc package, see {{Github_link
-|gituser=Kicksecure
-|repo=security-misc
-|path=/blob/master/etc/ssh
-|text=<code>/etc/ssh</code> folder
-}}.</ref>
+| {{Yes}} <ref>Settings are maintained as part of the security-misc package, see [https://github.com/Kicksecure/security-misc/blob/master/etc/ssh <code>/etc/ssh</code> folder].</ref>
 | {{No}}
 |-
 
@@ -396,9 +391,7 @@ https://forums.kicksecure.com/t/iso-cryptsetup-full-disk-encryption-fde-set-more
 ! {{anchor|show=true|unicode}} Protects its in-house source code from malicious [[unicode]]
 | [https://trojansource.codes/ Some Vulnerabilities are Invisible. Rather than inserting logical bugs, adversaries can attack the encoding of source code files to inject vulnerabilities. These adversarial encodings produce no visual artifacts.]
 | {{Yes}} <ref>
-* {{Github_link|
-https://github.com/Kicksecure/developer-meta-files/blob/master/usr/bin/dm-check-unicode
-}}
+* https://github.com/Kicksecure/developer-meta-files/blob/master/usr/bin/dm-check-unicode
 * https://forums.whonix.org/t/detecting-malicious-unicode-in-source-code-and-pull-requests/13754/29
 </ref>
 | {{No}} <ref>

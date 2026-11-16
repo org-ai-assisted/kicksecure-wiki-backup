@@ -162,9 +162,7 @@ Click the folder icon with a <code>+</code> symbol in the upper right-hand secti
 {{IconSet|true|5}} '''Host Shared Folder Selection.'''
 
 <code>Folder Name</code> &rarr; Type: <code>shared</code>. A different folder name can be used, but manual mounting in the VM will be required.<ref>
-The script only mounts folders named <code>shared</code>. See {{Github_link|
-https://github.com/Kicksecure/vm-config-dist/blob/master/usr/libexec/vm-config-dist/mount-shared
-}}.</ref> Then press <code>Select Folder</code>. <ref>Do <u>not</u> use <code>share</code> (without the trailing <code>d</code>)!</ref>
+The script only mounts folders named <code>shared</code>. See https://github.com/Kicksecure/vm-config-dist/blob/master/usr/libexec/vm-config-dist/mount-shared.</ref> Then press <code>Select Folder</code>. <ref>Do <u>not</u> use <code>share</code> (without the trailing <code>d</code>)!</ref>
 
 '''Figure:''' ''Host Shared Folder Selection''
 
@@ -199,9 +197,7 @@ Press <code>OK</code> to close the VirtualBox settings.
 {{IconSet|true|10}} '''Notice.'''
 
 No group modifications required. Documentation is complete as is. <ref>
-For better usability, the pre-installed {{project_name_short}} package [https://github.com/{{project_name_short}}/vm-config-dist vm-config-dist] has already added the account <code>user</code> to the group <code>vboxsf</code>. This is implemented in {{Github_link|
-https://github.com/Kicksecure/vm-config-dist/blob/master/usr/libexec/vm-config-dist/mount-shared
-}}, which runs automatically on boot.
+For better usability, the pre-installed {{project_name_short}} package [https://github.com/{{project_name_short}}/vm-config-dist vm-config-dist] has already added the account <code>user</code> to the group <code>vboxsf</code>. This is implemented in https://github.com/Kicksecure/vm-config-dist/blob/master/usr/libexec/vm-config-dist/mount-shared, which runs automatically on boot.
 </ref>
 
 {{IconSet|true|11}} '''Done.'''
@@ -211,9 +207,7 @@ The process is now complete, and the shared folder can be used.
 {{IconSet|true|12}} '''Usage.'''
 
 The shared folder will be accessible via <code>/mnt/shared</code> inside the VM. <ref>
-This is hardcoded in {{Github_link|
-https://github.com/Kicksecure/vm-config-dist/blob/master/usr/libexec/vm-config-dist/mount-shared
-}}. Previously, VirtualBox's built-in shared folder mounting was used, but it is no longer used because it sometimes silently fails to mount a shared folder and has very inflexible permissions.
+This is hardcoded in https://github.com/Kicksecure/vm-config-dist/blob/master/usr/libexec/vm-config-dist/mount-shared. Previously, VirtualBox's built-in shared folder mounting was used, but it is no longer used because it sometimes silently fails to mount a shared folder and has very inflexible permissions.
 </ref> The folder can be opened using a [[Software#File Manager|file manager]] such as Thunar, for example. To open it using the command line, run:
 
 {{CodeSelect|inline=true|code=
@@ -466,9 +460,7 @@ There are multiple sources to install {{Code2|VirtualBox guest additions}} from.
 </ref>
 
 == vbox-guest-installer ==
-{{Github_link|
-https://github.com/Kicksecure/vm-config-dist/blob/master/usr/bin/vbox-guest-installer
-}} is an installation helper created by {{project_name_short}} developers. It is a utility that improves usability by allowing installation of {{Code2|VirtualBox guest additions}} from Debian's (<code>packages.debian.org</code>) package [https://packages.debian.org/sid/virtualbox-guest-additions-iso <code>virtualbox-guest-additions-iso</code>].
+https://github.com/Kicksecure/vm-config-dist/blob/master/usr/bin/vbox-guest-installer is an installation helper created by {{project_name_short}} developers. It is a utility that improves usability by allowing installation of {{Code2|VirtualBox guest additions}} from Debian's (<code>packages.debian.org</code>) package [https://packages.debian.org/sid/virtualbox-guest-additions-iso <code>virtualbox-guest-additions-iso</code>].
 
 * Not enabled by default.
 * Usually no user action required.

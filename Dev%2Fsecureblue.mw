@@ -120,9 +120,7 @@ The effectiveness of this approach is unclear. Leak-proof MAC Randomization has 
 
 TODO Kicksecure:
 
-* {{Github_link|
-https://github.com/Kicksecure/security-misc/issues/184
-}}
+* https://github.com/Kicksecure/security-misc/issues/184
 * See also [[MAC Address]].
 
 <blockquote>
