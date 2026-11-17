@@ -7,7 +7,7 @@ Android Insecurity
 |image=Android_Insecurity.png
 }}
 {{mobile_mininav}}
-[[File:Android_Insecurity.png|thumb]]
+[[File:Android_Insecurity.png|thumb|class=lead-wide]]
 {{intro|
 Many Android phones are designed to block full, independent inspection of the whole device unless you first gain special privileges (for example, root access or an unlocked bootloader). This is insecure because it creates a single point of trust and users cannot independently audit what is installed or what updates are delivered. The sections below explain the practical limitations and why they matter, with technical references for readers who need them.
 }}
