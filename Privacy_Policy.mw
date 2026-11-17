@@ -269,7 +269,7 @@ Whenever possible we disable IP logging in the web server which means that the I
 
 We reserve the right to enable IP logging in special circumstances which could include for example the case of technical attacks on {{name-short}} or for purposes required by law.
 
-This policy is in place to minimize the amount of stored data. Historically this resulted in periods where IP addresses are effectively excluded from [[#Log Files]]. However, future periods with IP logging enabled cannot be predicted.
+This policy is in place to minimize the amount of stored data. Historically this resulted in periods where IP addresses are effectively excluded from [[#Usage Data|log files]]. However, future periods with IP logging enabled cannot be predicted.
 }}
 
 ==== Tracking and Cookies Data ====
