@@ -411,7 +411,7 @@ NVIDIA support involves a tradeoff between software freedom, hardware support, p
 * {{IconSet|h1|A}} <u>Freedom software:</u> There is a freedom software driver for many NVIDIA GPUs: [[#NVIDIA_Freedom_Software_Nouveau_Driver|Nouveau]]. Nouveau is a reverse engineered driver because NVIDIA provides limited public hardware documentation. This lack of documentation makes it harder for the freedom software community to implement and maintain full feature support and performance (compared to vendors with more public documentation). <ref>
 https://en.wikipedia.org/wiki/Nouveau_(software)#Tools
 </ref>
-* {{IconSet|h1|B}} <u>Non-freedom:</u> NVIDIA hardware is proprietary (non-freedom). NVIDIA's official driver and much of its user space stack are also proprietary (non-freedom). This is often viewed as unfriendly to free/open-source software, and has led to public criticism. Linus Torvalds cursed NVIDIA in a well known talk at Aalto University ({{VideoLink|videoid=MShbP3OpASA|text=Aalto Talk with Linus Torvalds [Full-length]}}).
+* {{IconSet|h1|B}} <u>Non-freedom:</u> NVIDIA hardware is proprietary (non-freedom). NVIDIA's official driver and much of its user space stack are also proprietary (non-freedom). This is often viewed as unfriendly to free/open-source software, and has led to public criticism. Linus Torvalds cursed NVIDIA in a well known talk at Aalto University ([https://www.youtube.com/watch?v=MShbP3OpASA Aalto Talk with Linus Torvalds (Full-length)]).
 
 = Footnotes =
 <references />
