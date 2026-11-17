@@ -5706,7 +5706,7 @@ chsh: PAM: Authentication failure
 * [[Dev/user-sysmaint-split]] has been updated
 * Please review.
 * Ideas for chapter [[Dev/user-sysmaint-split#Server_Support|Server Support]], and
-* chapter [[Dev/user-sysmaint-split#Todo|Todo]]?
+* chapter [[Dev/user-sysmaint-split|Todo]]?
 * Related to upcoming tasks run0, sudoless, doas.
 * I do not believe we should be implementing opt-out by having the user uninstall or delete things. Instead, let's provide a "Classic" option that the user can select at the boot menu, and provide guidance on modifying the default boot option.
 ** Patrick: The "classic" option would be confusing in the boot menu. Better to make user-sysmaint-split package uninstallable: dummy-dependency user-sysmaint-split
@@ -5954,7 +5954,7 @@ error: prohibited by secure boot policy
 ** Yes, it is. Adding it should fix this issue.
 * Done: https://github.com/ArrayBolt3/derivative-maker
 * Requires live-build changes from https://salsa.debian.org/ArrayBolt3/live-build/-/tree/arraybolt3/lb-dracut?ref_type=heads for all changes to work.
-* note: increase RAM in Qubes VM to avoid dropping to CLI (no GUI). Full instructions are here: [[Qubes#ISO|Qubes, ISO]]
+* note: increase RAM in Qubes VM to avoid dropping to CLI (no GUI). Full instructions are here: [[Qubes|Qubes, ISO]]
 
 == ISO - GRUB boot options text - add version number ==
 <pre>
