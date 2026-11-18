@@ -7,7 +7,7 @@ Strong Linux User Account Isolation
 |image=Useraccountisolatiom123123.jpg
 }}
 {{passwords_mininav}}
-[[File:Useraccountisolatiom123123.jpg|200px|thumb]]
+[[File:Useraccountisolatiom123123.jpg|200px|thumb|alt=]]
 {{intro|
 Protect Linux User Accounts against Brute Force Attacks, Administrative ("Root") Account Locking, Console Lockdown, sudo password sniffing, X Windows System / Wayland Password Sniffing, /proc/pid/sched spy on keystrokes, Linux user account cracking, pam_faillock, pam-tally2, pam-cracklib, /etc/securetty
 }}
@@ -118,7 +118,7 @@ In this chapter we compare non-hardened vs. {{project_name_short}}-hardened Linu
 ** '''Shared temporary folder:''' Command [http://manpages.debian.org/mktemp <code>mktemp</code>] creates a directory in folder <code>/tmp</code>, which is shared among all Linux user accounts.
 
 == {{project_name_short}} Hardened Linux Distributions ==
-[[File:Kicksecure-seal.png|thumb|Kicksecure seal|200px]]
+[[File:Kicksecure-seal.png|thumb|Kicksecure seal|200px|alt=Square yellow and blue badge reading Hardened by Kicksecure]]
 
 {{mbox
 |icon=fa-solid fa-arrow-up cs-green
@@ -145,7 +145,7 @@ On the flip-side, if the [[#Prevent Malware from Sniffing the Root Password|Prev
 Once proposal [[Dev/user-sysmaint-split|user-sysmaint-split (Role-Based Boot Modes)]] has been implemented there will be a strong guidance for users to better separate their limited (everyday use) account (<code>user</code>) and administrative account (<code>sysmaint</code>). This would result in a robust [[root#Prevent Malware from Sniffing the Root Password|Prevention of Malware Sniffing the Root Password]].
 
 == Console Lockdown ==
-[[File:Console-lockdown.jpg|thumb]]
+[[File:Console-lockdown.jpg|thumb|alt=]]
 
 Console lockdown restricts console access to members of the group <code>console</code>. Everyone else, except members of the group <code>console-unrestricted</code>, is restricted from using the console. This includes blocking access via ancient, unpopular login methods such as <code>/bin/login</code> over networks, which might be exploitable ([https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0797 CVE-2001-0797]). This is implemented using <code>pam_access</code> for the PAM service <code>login</code> (<code>/etc/pam.d/login</code>), and is part of the package [https://github.com/{{project_name_short}}/security-misc security-misc].
 
@@ -179,7 +179,7 @@ By {{project_name_long}} default:
 
 == Bruteforcing Linux Account Passwords Protection ==
 {{Anchor|Bruteforcing Linux User Account Passwords Protection}}
-[[File:Franck-v-_E1PQXKUkMw-unsplash.jpg|thumb|200px]]
+[[File:Franck-v-_E1PQXKUkMw-unsplash.jpg|thumb|200px|alt=Many white-feathered arrows seen from below against a dark wooden ceiling]]
 
 Bruteforcing into Linux user accounts is severely limited by the package [https://github.com/{{project_name_short}}/security-misc security-misc].
 
@@ -383,7 +383,7 @@ By Debian default, users who are not members of the group <code>sudo</code> cann
 
 == Permission Lockdown ==
 {{anchor|access rights restrictions}}
-[[File:Homelock-hp-promo.jpg|thumb]]
+[[File:Homelock-hp-promo.jpg|thumb|alt=]]
 Strong Linux User Account Separation. Access rights restrictions.
 
 For example, <code>user1</code> using home folder <code>/home/user1</code> cannot read <code>user2</code>'s files in the <code>/home/user2</code> home folder.
@@ -400,7 +400,7 @@ Removes read, write, and execute access for others for all users who have home f
 }}
 
 == umask hardening ==
-[[File:Umask-clipart.svg|thumb]]
+[[File:Umask-clipart.svg|thumb|alt=]]
 
 Complements Permission Hardening for folders outside of <code>/home</code>.
 
@@ -431,7 +431,7 @@ Discussions:
 }}
 
 == libpam-tmpdir ==
-[[File:Tmpdir-hp-promo.jpg|thumb]]
+[[File:Tmpdir-hp-promo.jpg|thumb|alt=]]
 
 <u>Temporary files based attacks:</u>
 
@@ -452,7 +452,7 @@ Discussions:
 * [https://forums.whonix.org/t/make-symlink-attacks-and-other-tmp-based-attacks-harder-or-impossible-using-libpam-tmpdir/8488 make symlink attacks and other /tmp based attacks harder or impossible using libpam-tmpdir]
 
 == user-sysmaint-split ==
-[[File:Usersysmaint-clipart.svg|thumb|200px]]
+[[File:Usersysmaint-clipart.svg|thumb|200px|alt=]]
 
 Thanks to [[Dev/user-sysmaint-split]] / [[sysmaint]] attack surface from privilege escalation tools such as <code>sudo</code> should be completely mitigated.
 
@@ -564,7 +564,7 @@ For example, if a <code>su</code>-like executable (<code>su-ng</code> / <code>su
 == Physical Security Check ==
 '''Figure:''' ''systemcheck - Physical Security Check''
 
-[[File:physical-security-check.png|600px]]
+[[File:physical-security-check.png|600px|alt=Systemcheck output listing user-sysmaint-split and Full Disk Encryption enabled, GRUB password absent, and a table showing no passwords and GUI autologin enabled]]
 
 See [[systemcheck]] chapter [[Systemcheck#Physical_Security_Check|Physical Security Check]].
 

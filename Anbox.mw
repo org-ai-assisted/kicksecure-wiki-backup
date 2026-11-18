@@ -11,8 +11,8 @@ Anbox - Run Android Applications and Games
 | image   = [[File:Ambox_warning_pn.svg.png|40px]]
 | text    = https://anbox.io/ redirects to https://github.com/anbox which says it is deprecated.
 }}
-[[File:anbox_apps_short.png|thumb|center]]
-[[File:Androidosicon.png|Android OS Icon|150px|thumb]]
+[[File:anbox_apps_short.png|thumb|center|alt=Anbox Application Manager window showing a grid of Android app icons such as AFWall+, F-Droid, Firefox, orWall, VLC and Settings]]
+[[File:Androidosicon.png|Android OS Icon|150px|thumb|alt=]]
 {{intro|
 Anbox allows Android applications and mobile games to run inside {{project_name_short}}.
 }}
@@ -378,11 +378,11 @@ adb install FDroid.apk
 
 '''Figure:''' ''F-Droid Images''
 
-[[File:fdroid.png|1000px]]
+[[File:fdroid.png|1000px|alt=F-Droid app search list in Anbox showing Android apps such as aTalk, FairEmail and Fedilab with download buttons]]
 
-[[File:fdroid2.png|1000px]]
+[[File:fdroid2.png|1000px|alt=F-Droid Installed Apps list showing AFWall+, andOTP, Briar, DuckDuckGo, FairEmail and other apps with versions]]
 
-[[File:fdroid3.png|1000px]]
+[[File:fdroid3.png|1000px|alt=F-Droid Latest tab showing app tiles such as NewPipe, Nextcloud Dev and openHAB, with a bottom navigation bar]]
 
 == File Sharing ==
 Start a file manager with root rights. <ref>

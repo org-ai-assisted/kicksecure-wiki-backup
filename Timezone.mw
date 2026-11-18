@@ -7,7 +7,7 @@ System Timezone
 |image=Timezone123123451.png
 }}
 {{time_mininav}}
-[[File:Timezone123123451.png|thumb]]
+[[File:Timezone123123451.png|thumb|alt=Map of North America with time zones colored by region, each labeled with its UTC offset from Alaska UTC-9 to Atlantic UTC-4]]
 {{intro|
 Information about the system timezone setting and instructions on how to change it.
 }}
@@ -40,7 +40,7 @@ sudo dpkg-reconfigure tzdata
 
 '''Figure:''' ''Configuring tzdata - region selection''
 
-[[File:timeconf.png|600px]]
+[[File:timeconf.png|600px|alt=dpkg-reconfigure tzdata dialog asking for geographic area, with None of the above selected]]
 
 '''3.''' Select "None of the above".
 
@@ -48,7 +48,7 @@ sudo dpkg-reconfigure tzdata
 
 '''Figure:''' ''Configuring tzdata - timezone selection''
 
-[[File:timeconf2.png|600px]]
+[[File:timeconf2.png|600px|alt=dpkg-reconfigure tzdata dialog listing time zones, with UTC selected]]
 
 '''5.''' Select <code>UTC</code>.
 
@@ -72,7 +72,7 @@ It should appear similar to the following:
 
 '''Figure:''' ''<code>timedatectl</code> sample output''
 
-[[File:timeconf3.png|600px]]
+[[File:timeconf3.png|600px|alt=Terminal output of timedatectl: time zone Etc/UTC, system clock synchronized no, NTP service n/a]]
 
 '''10.''' Done.
 

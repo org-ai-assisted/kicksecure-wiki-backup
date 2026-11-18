@@ -19,7 +19,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 ! Source builds: freedom setting
 |-
 
-| [[File:Intel-amd-combi-logo.svg|50px|link=Intel_AMD64]]
+| [[File:Intel-amd-combi-logo.svg|50px|link=Intel_AMD64|alt=]]
 | [[Intel_AMD64|Intel / AMD64]]
 | <code>amd64</code>
 | {{Yes}}
@@ -28,7 +28,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| [[File:Arm64-logo.svg|50px|link=ARM64]]
+| [[File:Arm64-logo.svg|50px|link=ARM64|alt=]]
 | [[ARM64|ARM]]
 | <code>armel</code>, <code>armhf</code>, <code>arm64</code>
 | {{No}}
@@ -37,7 +37,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| [[File:raspberry-pi-logo.svg|50px|link=Raspberry_Pi]]
+| [[File:raspberry-pi-logo.svg|50px|link=Raspberry_Pi|alt=]]
 | [[Raspberry_Pi|Raspberry Pi (RPi)]]
 | <code>armhf</code>
 | {{No}}
@@ -46,7 +46,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| [[File:Ppc64-logo.svg|50px|link=PPC64]]
+| [[File:Ppc64-logo.svg|50px|link=PPC64|alt=]]
 | [[PPC64|Power]]
 | <code>ppc64el</code>
 | {{No}}
@@ -55,7 +55,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| [[File:Riscv64-logo.svg|50px|link=RISCV64]]
+| [[File:Riscv64-logo.svg|50px|link=RISCV64|alt=]]
 | [[RISCV64|RISCV]]
 | <code>riscv64</code>
 | {{No}}
@@ -64,7 +64,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| [[File:Apple-with-intel-logo.jpg|50px|link=macOS#Intel-based_MacBook]]
+| [[File:Apple-with-intel-logo.jpg|50px|link=macOS#Intel-based_MacBook|alt=]]
 | [[macOS#Intel-based_MacBook|Intel-based Mac]]
 | <code>amd64</code>
 | {{No}}
@@ -73,7 +73,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| [[File:Apple-mx-logo.jpg|50px|link=MacOS#Apple_Silicon]]
+| [[File:Apple-mx-logo.jpg|50px|link=MacOS#Apple_Silicon|alt=]]
 | [[MacOS#Apple_Silicon|Apple Silicon Mac]]
 | <code>arm64</code>
 | {{No}}
@@ -82,7 +82,7 @@ This page discusses the security arguments for and against shipping non-freedom 
 | Mandatory choice: <code>--freedom true</code> / <code>--freedom false</code>
 |-
 
-| [[File:Logo-apple-500x500.png|50px|link=macOS]]
+| [[File:Logo-apple-500x500.png|50px|link=macOS|alt=]]
 | [[macOS|Apple Mac (Generic)]]
 | <code>amd64</code>, <code>arm64</code>
 | {{No}}

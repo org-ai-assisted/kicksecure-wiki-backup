@@ -7,7 +7,7 @@
 Invisible Malicious Unicode Risks
 }}
 {{unicode_mininav}}
-[[File:Unicode123123.png|thumb]]
+[[File:Unicode123123.png|thumb|alt=]]
 {{intro|
 This wiki page explains the security risk of invisible characters in Unicode that can be copied and pasted into terminal emulators or introduced as vulnerabilities/backdoors in source code contributions, along with documentation that can help to check files and folders for malicious Unicode.
 }}

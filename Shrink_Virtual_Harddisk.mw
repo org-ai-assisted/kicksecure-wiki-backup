@@ -10,7 +10,7 @@ Shrink Virtual Hard Disk Size
 * [[Grow_Virtual_Harddisk|Virtual Hard Disk Size Increase]]
 * [[Shrink_Virtual_Harddisk|Shrink Virtual Hard Disk Size]]
 </div>
-[[File:Shrink_Virtual_Harddisk.png|200px|thumb]]
+[[File:Shrink_Virtual_Harddisk.png|200px|thumb|alt=]]
 {{intro|
 Free disk space. Decrease the size of a virtual disk. Decrease virtual machine storage capacity.
 }}
@@ -113,7 +113,7 @@ Platform-specific. Select your virtualizer.
 
 {{Tab
 |title= == VirtualBox ==
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -124,7 +124,7 @@ sudo zerofree -v /dev/sda3
 
 {{Tab
 |title= == KVM ==
-|image=[[File:Kvm-new-logo.png|25px]]
+|image=[[File:Kvm-new-logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -136,7 +136,7 @@ sudo zerofree -v /dev/vda1
 
 {{Tab
 |title= == Qubes ==
-|image=[[File:Qubes-logo-blue.png|25px]]
+|image=[[File:Qubes-logo-blue.png|25px|alt=]]
 |addToClass=info-box
 |active=false
 |content=
@@ -161,7 +161,7 @@ Platform-specific. Select your virtualizer.
 
 {{Tab
 |title= == VirtualBox ==
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 Host operating system-specific.
@@ -182,7 +182,7 @@ Forum discussions:
 
 {{Tab
 |title= == KVM ==
-|image=[[File:Kvm-new-logo.png|25px]]
+|image=[[File:Kvm-new-logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -237,7 +237,7 @@ Forum discussion: [https://forums.whonix.org/t/is-it-possible-to-re-shrink-the-q
 
 {{Tab
 |title= == Qubes ==
-|image=[[File:Qubes-logo-blue.png|25px]]
+|image=[[File:Qubes-logo-blue.png|25px|alt=]]
 |addToClass=info-box
 |active=false
 |content=

@@ -7,7 +7,7 @@ title=sysmaint - System Maintenance User
 |image=Usersysmaint-clipart.svg
 }}
 {{passwords_mininav}}
-[[File:Usersysmaint-clipart.svg|thumb|200px]]
+[[File:Usersysmaint-clipart.svg|thumb|200px|alt=]]
 {{intro|
 * <u>Overview:</u> Sysmaint, or system maintenance, is an account created by the [[sysmaint|<code>user-sysmaint-split</code>]] feature. It increases security by separating daily activities from administrative tasks.
 * <u>Default:</u> {{project_name_short}}-LXQt and {{project_name_short}}-Qubes comes with [[sysmaint|<code>user-sysmaint-split</code>]] by default.
@@ -34,13 +34,13 @@ permission denied: pkexec
 
 '''Image:''' ''Kicksecure - sysmaint Boot Option in [[Grub|GRUB]] Boot Menu''
 
-[[File:kicksecure-persistent-mode-sysmaint-session.png|Persistent Mode - Sysmaint Session - GRUB Boot Menu Option]]
+[[File:kicksecure-persistent-mode-sysmaint-session.png|Persistent Mode - Sysmaint Session - GRUB Boot Menu Option|alt=Boot mode menu with the PERSISTENT Mode, SYSMAINT Session, system maintenance tasks entry highlighted]]
 
 [[Qubes|Kicksecure for Qubes]]:
 
 '''Image:''' ''Kicksecure - sysmaint Boot Option in Qubes VM Manager (QVMM)''
 
-[[File:Kicksecure-persistent-mode-sysmaint-session-qubes.png|Persistent Mode - Sysmaint Session - Qubes Boot Mode]]
+[[File:Kicksecure-persistent-mode-sysmaint-session-qubes.png|Persistent Mode - Sysmaint Session - Qubes Boot Mode|alt=Qube settings Advanced tab in dom0 with the boot mode list open, PERSISTENT Mode - SYSMAINT Session highlighted]]
 
 = Overview: What is sysmaint and Why Should I Care? =
 {{project_name_short}} comes with a security feature called [[sysmaint|<code>user-sysmaint-split</code>]] enabled by default (in {{gui}} (LXQt) version and Qubes version). This feature creates two separate user accounts:
@@ -138,12 +138,12 @@ Select your platform.
 {{Tab
 |type=section
 |title= == {{project_name_short}} ==
-|image=[[File:{{project_name_short}}-logo-icon.svg]]
+|image=[[File:{{project_name_short}}-logo-icon.svg|alt=]]
 |content=
 {{IconSet|h2|2}} Notices.
 
-[[File:System-maintenance-panel.png|thumb|The sysmaint desktop session.]]
-[[File:Sysmaint-tty.png|thumb|The sysmaint console session.]]
+[[File:System-maintenance-panel.png|thumb|The sysmaint desktop session.|alt=Desktop with the panel window open, listing update, administration, and misc buttons, above a taskbar with volume and clock]]
+[[File:Sysmaint-tty.png|thumb|The sysmaint console session.|alt=Text console showing the Kicksecure welcome banner, login as sysmaint, and a notice that this account has sudoers capabilities]]
 
 {{Box|text=
 * <u>Privilege escalation tools restricted:</u> When <code>user-sysmaint-split</code> is installed, the account <code>user</code> can no longer use privilege escalation tools (<code>sudo</code>, <code>su</code>, <code>pkexec</code>) when logged into any account other than <code>sysmaint</code>.
@@ -160,13 +160,13 @@ Select your platform.
 
 '''Figure:''' ''Persistent Mode - Sysmaint Session - GRUB Boot Menu Option''
 
-[[File:kicksecure-persistent-mode-sysmaint-session.png|Persistent Mode - Sysmaint Session - GRUB Boot Menu Option|600px]]
+[[File:kicksecure-persistent-mode-sysmaint-session.png|Persistent Mode - Sysmaint Session - GRUB Boot Menu Option|600px|alt=Boot mode menu with the PERSISTENT Mode, SYSMAINT Session, system maintenance tasks entry highlighted]]
 
 {{IconSet|h2|5}} The system will boot into a minimal desktop session with the [[System_Maintenance_Panel|System Maintenance Panel]] running.
 
 '''Figure:''' ''System Maintenance Panel''
 
-[[File:Sysmaint-panel.png|System Maintenance Panel|600px]]
+[[File:Sysmaint-panel.png|System Maintenance Panel|600px|alt=Panel with buttons grouped under Software Updates, System Administration, and Misc, such as Install Updates, Create User, Reboot]]
 
 {{IconSet|h2|6}} Perform your system maintenance tasks.
 
@@ -182,7 +182,7 @@ The procedure is now complete.
 {{Tab
 |type=section
 |title= == {{q_project_name_long}} ==
-|image=[[File:Qubes-logo-icon.png]]
+|image=[[File:Qubes-logo-icon.png|alt=]]
 |content=
 {{IconSet|h2|2}} Qubes version specific.
 
@@ -288,7 +288,7 @@ Select your platform.
 {{Tab
 |type=section
 |title= == {{project_name_short}} ==
-|image=[[File:{{project_name_short}}-logo-icon.svg]]
+|image=[[File:{{project_name_short}}-logo-icon.svg|alt=]]
 |content=
 {{IconSet|h2|2}} Notice.
 
@@ -304,7 +304,7 @@ This is a security feature. <ref>
 {{Tab
 |type=section
 |title= == {{q_project_name_long}} ==
-|image=[[File:Qubes-logo-icon.png]]
+|image=[[File:Qubes-logo-icon.png|alt=]]
 |content=
 {{IconSet|h2|2}} Notice.
 

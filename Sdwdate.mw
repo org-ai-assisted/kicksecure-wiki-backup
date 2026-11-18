@@ -7,7 +7,7 @@ title=sdwdate: Secure Distributed Web Date
 |image=sdwdate2.png
 }}
 {{time_mininav}}
-[[File:sdwdate2.png|[[sdwdate-gui]] Control Panel|thumb]]
+[[File:sdwdate2.png|[[sdwdate-gui]] Control Panel|thumb|alt=Tray menu with Show Tor status, Tor control panel, Show sdwdate status, Open sdwdate's log, Restart sdwdate, Stop sdwdate and Exit]]
 {{intro|
 sdwdate - Secure Distributed Web Date - Homepage
 }}
@@ -384,11 +384,11 @@ The links below are listed to keep track of pool candidates:
 
 '''Figure:''' ''sdwdate GUI Control Panel''
 
-[[File:sdwdate2.png|470px|border]]
+[[File:sdwdate2.png|470px|border|alt=Tray menu with Show Tor status, Tor control panel, Show sdwdate status, Open sdwdate's log, Restart sdwdate, Stop sdwdate and Exit]]
 
 '''Figure:''' ''sdwdate GUI Successful Check''
 
-[[File:sdwdate3.png|470px|border]]
+[[File:sdwdate3.png|470px|border|alt=Time Synchronization Monitor window: Last message from sdwdate, Success. Sleeping for 169.15 minutes, with a Close button]]
 
 = Clock Fixing =
 == Demonstration ==

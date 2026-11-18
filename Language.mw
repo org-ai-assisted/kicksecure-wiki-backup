@@ -11,7 +11,7 @@ Change the System or Browser Language
 * [[Keyboard Layout]]
 * [[Mouse]]
 </div>
-[[File:Language.png|thumb|200px]]
+[[File:Language.png|thumb|200px|alt=Word cloud of greetings in many languages, such as Hello, Bonjour, Ciao and Hola]]
 {{intro|
 This wiki page provides information on how to change the system language in Kicksecure, as well as how to install additional languages and input methods.
 }}
@@ -77,7 +77,7 @@ This is required for the changes to take effect.
 
 '''Figure:''' ''Japanese Locale in {{project_name_short}}''
 
-[[File:Kicksecure-terminal-japanese.png]]
+[[File:Kicksecure-terminal-japanese.png|alt=Terminal window with Japanese menus; the Actions menu is open, listing tab, split and search commands with shortcuts]]
 
 }}
 
@@ -107,7 +107,7 @@ fonts-noto-cjk
 
 '''Figure:''' ''Japanese Font Installation in {{project_name_short}}''
 
-[[File:Anonwhonixjapanesefont.png]]
+[[File:Anonwhonixjapanesefont.png|alt=Kicksecure terminal installing packages with Japanese-language output and correctly rendered Japanese fonts]]
 
 == Input Method ==
 
@@ -187,7 +187,7 @@ Input method configuration is now complete.
 
 '''Figure:''' ''Japanese Input in {{project_name_short}}''
 
-[[File:Kicksecure-japanese-input-featherpad.png]]
+[[File:Kicksecure-japanese-input-featherpad.png|alt=FeatherPad text editor on a Kicksecure desktop with Japanese input: a candidate list offers hiragana conversions for the typed text]]
 }}
 
 = Individual applications =
@@ -215,7 +215,7 @@ Using <u>one</u> of the methods below is sufficient to change the language in [h
 
 '''Figure:''' ''Firefox Language Selection''
 
-[[File:Torbrowserlanguageselection.png]]
+[[File:Torbrowserlanguageselection.png|alt=Firefox Language Settings dialog listing English (United States) with Move Up, Move Down, Remove, Add, Cancel and OK buttons]]
 
 === Mozilla Firefox Language Pack Method ===
 

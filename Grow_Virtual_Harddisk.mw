@@ -51,7 +51,7 @@ Either move important files via shared folders <ref>
 |content=
 {{Tab
 |title= == VirtualBox ==
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |addToClass=info-box
 |active=false
 |content=
@@ -167,7 +167,7 @@ The procedure is complete.
 
 {{Tab
 |title= == KVM ==
-|image=[[File:Kvm-new-logo.png|25px]]
+|image=[[File:Kvm-new-logo.png|25px|alt=]]
 |addToClass=info-box
 |active=false
 |content=
@@ -219,7 +219,7 @@ The procedure is complete.
 
 {{Tab
 |title= == Qubes ==
-|image=[[File:Qubes-logo-blue.png|25px]]
+|image=[[File:Qubes-logo-blue.png|25px|alt=]]
 |addToClass=info-box
 |active=false
 |content=

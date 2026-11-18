@@ -7,7 +7,7 @@ Network Time Synchronization
 |image=TineSynchronization2134234.jpg
 }}
 {{time_mininav}}
-[[File:TineSynchronization2134234.jpg|thumb]]
+[[File:TineSynchronization2134234.jpg|thumb|alt=]]
 {{intro|
 A reasonably accurate host clock is required for many general security properties. An inaccurate clock can lead to broken internet connectivity and time related security issues.
 }}

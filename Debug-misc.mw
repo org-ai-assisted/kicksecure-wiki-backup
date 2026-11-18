@@ -7,7 +7,7 @@
 {{title|title=
 debug-misc: Enable Easier Debugging
 }}
-[[File:Debug-misc31231.jpg|thumb]]
+[[File:Debug-misc31231.jpg|thumb|alt=]]
 {{intro|
 The [https://github.com/{{project_name_short}}/debug-misc debug-misc] package is the simplest solution to enable many settings required for troubleshooting issues and debugging.
 }}

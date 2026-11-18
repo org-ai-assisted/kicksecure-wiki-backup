@@ -6,7 +6,7 @@ VirtualBox Guest Additions: Clipboard Sharing, Shared Folder, and More
 |description=Instructions for using VirtualBox Guest Additions in {{project_name_long}}. Includes Clipboard Sharing, Shared Folder, Mouse Integration, Graphics Performance, and more.
 |image=VirtualBox_Guest_Additions.png
 }}
-[[File:VirtualBox_Guest_Additions.png|200px|thumb]]
+[[File:VirtualBox_Guest_Additions.png|200px|thumb|alt=]]
 {{intro|
 VirtualBox Guest Additions is a software package that provides additional functionality to virtual machines (VMs) running in VirtualBox. The Guest Additions package includes drivers and utilities that enhance both performance and usability of the VMs.
 
@@ -119,7 +119,7 @@ Forum discussion: [https://forums.whonix.org/t/security-risks-of-virtualbox-shar
 {{Tab
 |title= === Kicksecure ===
 |addToClass=info-box
-|image=[[File:Kicksecure-logo-rectangle.svg|50px]]
+|image=[[File:Kicksecure-logo-rectangle.svg|50px|alt=]]
 |content=
 <u>If you are using Kicksecure (or a derivative such as Whonix)</u>, follow the steps below.
 
@@ -141,7 +141,7 @@ On the host operating system, create a folder to be shared with the {{VM}}. For 
 
 '''Figure:''' ''Screenshot showing how to open VirtualBox VM Settings''
 
-[[File:Vbox-shared-folder-1.png|600px]]
+[[File:Vbox-shared-folder-1.png|600px|alt=VirtualBox Manager context menu for the Kicksecure-Xfce VM with Settings highlighted]]
 
 {{IconSet|true|3}} '''Add new shared folder.'''
 
@@ -149,7 +149,7 @@ Click the folder icon with a <code>+</code> symbol in the upper right-hand secti
 
 '''Figure:''' ''Screenshot showing VirtualBox Shared Folder Add <code>+</code> Symbol''
 
-[[File:vbox-shared-folder-2.png|600px]]
+[[File:vbox-shared-folder-2.png|600px|alt=Kicksecure-Xfce Settings, Shared Folders page, empty list, with tooltip Adds new shared folder on the plus button]]
 
 {{IconSet|true|4}} '''Host Shared Folder Selection.'''
 
@@ -157,7 +157,7 @@ Click the folder icon with a <code>+</code> symbol in the upper right-hand secti
 
 '''Figure:''' ''Screenshot showing Host Shared Folder Selection''
 
-[[File:vbox-shared-folder-3.png|600px]]
+[[File:vbox-shared-folder-3.png|600px|alt=Add Share dialog with the Folder Path dropdown open and Other highlighted, plus Read-only and Auto-mount checkboxes]]
 
 {{IconSet|true|5}} '''Host Shared Folder Selection.'''
 
@@ -166,7 +166,7 @@ The script only mounts folders named <code>shared</code>. See https://github.com
 
 '''Figure:''' ''Host Shared Folder Selection''
 
-[[File:vbox-shared-folder-4.png|600px]]
+[[File:vbox-shared-folder-4.png|600px|alt=Windows folder picker with the shared folder selected and a Select Folder button]]
 
 {{IconSet|true|6}} '''Shared Folder Settings'''
 
@@ -178,7 +178,7 @@ If you do not wish to write to that folder from within the VM, you are free to c
 
 '''Figure:''' ''Shared Folder Settings''
 
-[[File:vbox-shared-folder-5.png|600px]]
+[[File:vbox-shared-folder-5.png|600px|alt=VirtualBox settings for Kicksecure-Xfce, Shared Folders pane, with the Add Share dialog filled in: folder path, folder name shared, read-only and auto-mount unchecked.]]
 
 {{IconSet|true|7}} '''Confirm shared folder settings.'''
 
@@ -190,7 +190,7 @@ Press <code>OK</code> to close the VirtualBox settings.
 
 '''Figure:''' ''Completed VirtualBox Shared Folder Settings Screenshot''
 
-[[File:vbox-shared-folder-6.png|600px]]
+[[File:vbox-shared-folder-6.png|600px|alt=VirtualBox Shared Folders list showing the added share named shared, with Full access and Auto Mount set to Yes.]]
 
 {{IconSet|true|9}} '''Reboot the virtual machine.'''
 
@@ -218,7 +218,7 @@ cd /mnt/shared
 {{Tab
 |title= === Whonix ===
 |addToClass=info-box
-|image=[[File:Whonix-logo-icon.svg|25px]]
+|image=[[File:Whonix-logo-icon.svg|25px|alt=]]
 |content=
 Same as Kicksecure. Follow the same instructions as for Kicksecure.
 }}
@@ -226,7 +226,7 @@ Same as Kicksecure. Follow the same instructions as for Kicksecure.
 {{Tab
 |title= === Other Operating Systems ===
 |addToClass=info-box
-|image=[[File:any12312.png]]
+|image=[[File:any12312.png|alt=]]
 |content=
 <u>If you are using [[Other Operating Systems|other operating systems]]</u> (not using {{project_name_short}} or a derivative such as [[Whonix|Whonix]]) inside the VM, additional steps are required.
 
@@ -255,7 +255,7 @@ sudo adduser sysmaint vboxsf
 {{Tab
 |title= === Generic VirtualBox Method ===
 |addToClass=info-box
-|image=[[File:Virtualbox_logo.png]]
+|image=[[File:Virtualbox_logo.png|alt=]]
 |content=
 Shared folders are a generic VirtualBox feature. They are used the same way across most Linux distributions, including Debian. In case of issues, everything written on this wiki can be disregarded. For context, see also [[Introduction]].
 

@@ -12,7 +12,7 @@ __TOC__
 |type=section
 |linkid=os-nonqubes
 |addToClass=info-box
-|image=[[File:{{project_name_short}}-logo-icon.svg|25px]]
+|image=[[File:{{project_name_short}}-logo-icon.svg|25px|alt=]]
 |title= {{Headline|h=5|content={{non_q_project_name_short}}}}
 |content=
 {{IconSet|h3|2}} Notes.
@@ -34,7 +34,7 @@ sudoedit {{{filename|MissingFileName}}}
 |type=section
 |linkid=os-qubes-template
 |addToClass=info-box
-|image=[[File:Qubes-logo-blue.png|25px]]
+|image=[[File:Qubes-logo-blue.png|25px|alt=]]
 |title= {{Headline|h=5|content={{q_project_name_short}}}}
 |content=
 {{IconSet|h3|2}} Notes.
@@ -67,7 +67,7 @@ sudoedit {{{filename|MissingFileName}}}
 |type=section
 |linkid=os-other
 |addToClass=info-box
-|image=[[File:Any12312.png|25px]]
+|image=[[File:Any12312.png|25px|alt=]]
 |title= {{Headline|h=5|content=Others and Alternatives}}
 |content=
 {{IconSet|h3|2}} Notes.

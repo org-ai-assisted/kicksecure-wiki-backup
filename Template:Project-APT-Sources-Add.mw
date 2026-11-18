@@ -11,7 +11,7 @@ Choose exactly one option: Option <u>A</u>, Option <u>B</u> <u>'''OR'''</u> Opti
 {{Tab
 |active=true
 |addToClass=info-box
-|image=[[File:Iconfinder_tor_386502.png|50px]]
+|image=[[File:Iconfinder_tor_386502.png|50px|alt=]]
 |title= {{Headline|h=5|content=A : Onion Rep.}}
 |content=
 '''Option <u>A</u>''': Add the {{project_name_short}} Onion repository.
@@ -37,7 +37,7 @@ Signed-By: /usr/share/keyrings/derivative.asc" {{!}} sudo tee /etc/apt/sources.l
 }}
 {{Tab
 |addToClass=info-box
-|image=[[File:Deep-web-1106648640.jpg|50px]]
+|image=[[File:Deep-web-1106648640.jpg|50px|alt=]]
 |title={{Headline|h=5|content=B : Clearnet Rep. via Tor}}
 |content=
 '''Option <u>B</u>''': Add the {{project_name_short}} clearnet repository via Tor.
@@ -63,7 +63,7 @@ Signed-By: /usr/share/keyrings/derivative.asc" {{!}} sudo tee /etc/apt/sources.l
 }}
 {{Tab
 |addToClass=info-box
-|image=[[File:Icon-lock.png|50px]]
+|image=[[File:Icon-lock.png|50px|alt=]]
 |title={{Headline|h=5|content=C : Clearnet Rep.}}
 |content=
 '''Option <u>C</u>''': Add the {{project_name_short}} clearnet repository over clearnet.

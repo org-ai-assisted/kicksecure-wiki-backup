@@ -6,7 +6,7 @@ RAM Adjusted Desktop Starter (rads)
 |description=rads - Starts [no] desktop environment based on available RAM. Automatically boots into graphical desktop environment, when there is enough RAM. Or into terminal-only, when there is too little RAM. Useful inside virtual machines.
 |image=RAM_Adjusted_Desktop_Starter.png
 }}
-[[File:RAM_Adjusted_Desktop_Starter.png|200px|thumb]]
+[[File:RAM_Adjusted_Desktop_Starter.png|200px|thumb|alt=Diagram: low RAM detected boots into terminal mode, sufficient RAM detected boots into a graphical desktop]]
 {{intro|
 rads - Starts [no] desktop environment based on available RAM. Automatically boots into graphical desktop environment, when there is enough RAM. Or into terminal-only, when there is too little RAM. Useful inside virtual machines.
 }}

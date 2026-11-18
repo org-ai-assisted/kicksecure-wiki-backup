@@ -13,19 +13,19 @@ This only works for users with computers that do not have "{{kicksecure_wiki
 
 '''Figure:''' ''Ubuntu Software Center icon''
 
-[[File:Ubuntu software icon.png|border|Ubuntu Software icon]]
+[[File:Ubuntu software icon.png|border|Ubuntu Software icon|alt=]]
 
 {{IconSet|h3|3}} '''Click on the magnifying glass to search. &rarr; Type <code>virtualbox</code>. &rarr; Press enter. &rarr; In the search results, click on VirtualBox.'''
 
 '''Figure:''' ''Ubuntu Software Center - Search For VirtualBox''
 
-[[File:Search for Virtualbox.png|border|search for virtualbox]]
+[[File:Search for Virtualbox.png|border|search for virtualbox|alt=Ubuntu Software Center search for virtualbox showing the VirtualBox result with a three-star rating]]
 
 {{IconSet|h3|4}} '''Click on Install and wait.'''
 
 '''Figure:''' ''Ubuntu Software Center Search Result''
 
-[[File:Install Virtualbox.png|border|Install Virtualbox]]
+[[File:Install Virtualbox.png|border|Install Virtualbox|alt=Ubuntu Software Center page for VirtualBox from the ubuntu-jammy-updates source, rated three stars, with a green Install button.]]
 
 {{IconSet|h3|5}} '''Installation of VirtualBox has been completed.'''
 
@@ -33,13 +33,13 @@ When the installation has completed, the install icon changes to the uninstall i
 
 '''Figure:''' ''Ubuntu Software Center - VirtualBox has been installed''
 
-[[File:Uninstall Virtualbox.png|border|Uninstall Virtualbox]]
+[[File:Uninstall Virtualbox.png|border|Uninstall Virtualbox|alt=]]
 
 {{IconSet|h3|6}} '''Click on Show Applications. &rarr; Click on Virtual Box to start the VirtualBox {{gui}}.'''
 
 '''Figure:''' ''Ubuntu Software Center #4''
 
-[[File:Show Applications.png|border|Show Applications]]
+[[File:Show Applications.png|border|Show Applications|alt=Ubuntu applications grid with Startup Disk Creator, Calculator, Text Editor, VirtualBox and a Utilities folder]]
 
 {{IconSet|h3|7}} '''Prevent KVM from conflicting with VirtualBox.'''
 

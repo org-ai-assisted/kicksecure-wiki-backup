@@ -7,7 +7,7 @@ Point Release
 |image=Pointrelease213123.jpg
 }}
 {{release_mininav}}
-[[File:Location_dot_black.svg|thumb|200px]]
+[[File:Location_dot_black.svg|thumb|200px|alt=]]
 {{intro|
 A point release is not a separate, new version of {{project_name_long}}. Instead, it is a re-release of {{project_name_long}} which is inclusive of all updates up to a certain point.
 }}

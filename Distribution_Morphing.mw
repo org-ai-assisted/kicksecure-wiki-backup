@@ -6,7 +6,7 @@ Distribution Morphing - Transforming a Linux Distribution into Another Linux Dis
 |description=What is distro morphing? A process of converting one installed Linux distribution into another derivative.
 |image=Distromorphing421.png
 }}
-[[File:Distromorphing421.png|thumb|A visual representation of distribution morphing]]
+[[File:Distromorphing421.png|thumb|A visual representation of distribution morphing|alt=Four colored arrows in a row pointing right, showing stepwise transformation]]
 {{intro|
 Distribution morphing refers to the process of transforming an existing Linux distribution into a different, usually derivative, distribution by installing specific packages and making necessary configurations.
 }}

@@ -7,17 +7,17 @@ grub-live - boot an existing Host OS or VM into Live Mode
 |image=Live-mode-promo.jpg
 }}
 {{live}}
-[[File:Live-mode-promo.jpg|thumb|Live Mode boot entry selectable in boot menu. ([[Live_Mode#Starting_Live_Mode|more screenshots]])]]
+[[File:Live-mode-promo.jpg|thumb|Live Mode boot entry selectable in boot menu. ([[Live_Mode#Starting_Live_Mode|more screenshots]])|alt=GNU GRUB boot menu with Kicksecure GNU/Linux, advanced options and a LIVE mode USER entry]]
 {{intro|
 The grub-live package offers an additional "LIVE mode" boot menu entry for the [https://www.gnu.org/software/grub/ GNU GRUB boot loader].
 
 This package is potentially compatible with many Linux distributions such as Debian. In {{project_name_long}} and {{Whonix}}, it is installed by default. Grub-live can be applied to a host {{os}} as well as to a guest OS on a virtual machine.
 }}
-[[File:Grub-live_mode_indicator_in_debian.cleaned.png|thumb|Debian Live Mode Boot ([[Live Mode]])]]
+[[File:Grub-live_mode_indicator_in_debian.cleaned.png|thumb|Debian Live Mode Boot ([[Live Mode]])|alt=GRUB menu on Debian with the LIVE mode USER (For daily activities.) entry selected]]
 
-[[File:Grub-live mode indicator in kicksecure.cleaned.png|thumb|[[Kicksecure|{{project_name_short}}]] Live Mode Boot ([[Live Mode]])]]
+[[File:Grub-live mode indicator in kicksecure.cleaned.png|thumb|[[Kicksecure|{{project_name_short}}]] Live Mode Boot ([[Live Mode]])|alt=GRUB menu on Kicksecure with the LIVE mode USER (For daily activities.) entry selected]]
 
-[[File:live_boot.png|Live Mode Boot|thumb|[[Whonix|{{Whonix}}]] Live Mode Boot ([[Live Mode]])]]
+[[File:live_boot.png|Live Mode Boot|thumb|[[Whonix|{{Whonix}}]] Live Mode Boot ([[Live Mode]])|alt=GNU GRUB boot menu with the Live-mode GNU/Linux entry selected among the normal and advanced boot options]]
 
 = Context =
 

@@ -7,7 +7,7 @@
 
 {{Tab
 |title= === Ubuntu ===
-|image=[[File:Logo-ubuntusvg.png|50px]]
+|image=[[File:Logo-ubuntusvg.png|50px|alt=]]
 |content=
 <div class="vspacer-10"></div>
 * '''Choose below how you want to install the utility.'''
@@ -21,7 +21,7 @@
 |content=
 {{Tab
 |title= ==== Command Line ====
-|image=[[File:Utilities-terminal.png|50px]]
+|image=[[File:Utilities-terminal.png|50px|alt=]]
 |active=true
 |content=
 {{Install_Package|package=
@@ -30,7 +30,7 @@ gnome-disk-utility
 }} <!-- close tab : Ubuntu command line -->
 {{Tab
 |title= ==== Software Center ====
-|image=[[File:Ubuntu_software_icon.png|50px]]
+|image=[[File:Ubuntu_software_icon.png|50px|alt=]]
 |content=
 '''Similar''' to the following.
 
@@ -46,7 +46,7 @@ gnome-disk-utility
 
 {{Tab
 |title= === Debian ===
-|image=[[File:Logo-debian-500x500.png|50px]]
+|image=[[File:Logo-debian-500x500.png|50px|alt=]]
 |content=
 In Debian, the package is named <code>gnome-disk-utility</code>.
 
@@ -57,7 +57,7 @@ gnome-disk-utility
 
 {{Tab
 |title= === Other Linux ===
-|image=[[File:Logo-linux-500x500.png|50px]]
+|image=[[File:Logo-linux-500x500.png|50px|alt=]]
 |content=
 {{Box|text=
 <u>Hosts using a non-Debian operating system:</u>

@@ -6,7 +6,7 @@ Platform-specific Desktop Tips
 |description={{project_name_long}} Platform-specific Desktop Tips and Tricks, RAM Adjusted Desktop Starter, Virtual Console, Full-Screen
 |image=Desktop-tips.png
 }}
-[[File:Desktop-tips.png|200px|thumb]]
+[[File:Desktop-tips.png|200px|thumb|alt=Illustration of a desktop window with tip bubbles and an open book, titled Platform-specific Desktop Tips]]
 {{intro|
 {{project_name_short}} Platform-specific Desktop Tips and Tricks, RAM Adjusted Desktop Starter, Virtual Console, Full-Screen
 }}
@@ -70,7 +70,7 @@ Alternatively, use the menu option:
 
 == Virtual Consoles ==
 === Using {{project_name_short}} as a Host Operating System ===
-[[File:virtual_console.png|thumb|virtual console]]
+[[File:virtual_console.png|thumb|virtual console|alt=Text console screen showing a LUKS disk passphrase prompt, the Kicksecure welcome message with default login instructions, and a localhost login prompt.]]
 
 [https://en.wikipedia.org/wiki/Virtual_console Virtual consoles] is a feature inherited from Debian GNU/Linux which is unfamiliar to many users. The following keyboard shortcuts activate the Debian (not {{project_name_short}}) feature:
 
@@ -156,7 +156,7 @@ The procedure is complete.
 = {{non_q_project_name_short}} =
 
 == Disable Autologin ==
-[[File:Gui_login.png|thumb|graphical login screen (by login manager <code>greetd + wlgreet</code>)]]
+[[File:Gui_login.png|thumb|graphical login screen (by login manager <code>greetd + wlgreet</code>)|alt=Black screen with a bordered box showing the word Login and a username prompt.]]
 
 Autologin is enabled by default in the login manager by {{project_name_short}}.
 

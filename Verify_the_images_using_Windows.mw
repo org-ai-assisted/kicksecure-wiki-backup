@@ -6,12 +6,12 @@ Verify {{project_name_long}} Virtual Machine Images in Windows
 |description=Instructions for OpenPGP Verification of {{project_name_short}} Images using Windows
 |image=Verify_images_on_windows.png
 }}
-[[File:Verify_images_on_windows.png|200px|thumb]]
+[[File:Verify_images_on_windows.png|200px|thumb|alt=]]
 {{intro|
 Instructions for OpenPGP Verification of {{project_name_short}} Images using Windows
 }}
 = Introduction =
-[[image:Windows_logo_-_2012.svg.png|thumb]]
+[[image:Windows_logo_-_2012.svg.png|thumb|alt=]]
 
 {{always_verify_signatures_reminder}}
 
@@ -61,7 +61,7 @@ Upon successful verification, the following output will appear:
 
 '''Figure:''' ''Successful Verification''
 
-[[image:signtool_verify_gpg4win_success.png]]
+[[image:signtool_verify_gpg4win_success.png|alt=Signtool output: Successfully verified gpg4win-3.1.9.exe, algorithm sha256]]
 
 {{mbox
 | image   = [[File:Ambox_warning_pn.svg.png|40px]]

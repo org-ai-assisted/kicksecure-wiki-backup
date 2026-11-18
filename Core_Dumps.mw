@@ -6,7 +6,7 @@ Core Dumps
 |description=Security and Privacy Risks Posed by Core Dumps
 |image=Coredumps.png
 }}
-[[File:Coredumps.png|200px|thumb]]
+[[File:Coredumps.png|200px|thumb|alt=]]
 {{intro|
 Security and Privacy Risks Posed by Core Dumps
 }}
@@ -46,7 +46,7 @@ Select your platform.
 |content=
 {{Tab
 |title= == {{project_name_long}} ==
-|image=[[File:Kicksecure-logo-rectangle.svg|50px]]
+|image=[[File:Kicksecure-logo-rectangle.svg|50px|alt=]]
 |addToClass=info-box
 |active=true
 |content=
@@ -55,7 +55,7 @@ Core Dumps are disabled by default in {{project_name_long}}.
 
 {{Tab
 |title= == Using other Linux based operating systems ==
-|image=[[File:Logo-linux-500x500.png|25px]]
+|image=[[File:Logo-linux-500x500.png|25px|alt=]]
 |addToClass=info-box
 |content=
 

@@ -11,7 +11,7 @@ title={{project_name_long}} for KVM
 |contributor=[https://forums.{{project_clearnet}}/users/hulahoop HulaHoop]
 |support=[[KVM/Support|Community support only!]]
 }}
-[[File:Download-kvm.jpg|<code>unofficial logo re-design for the [https://www.linux-kvm.org KVM] virtualizer + Kicksecure</code>|thumb]]
+[[File:Download-kvm.jpg|<code>unofficial logo re-design for the [https://www.linux-kvm.org KVM] virtualizer + Kicksecure</code>|thumb|alt=KVM penguin mascot plus Kicksecure logo]]
 {{kvm_logo}}
 {{intro|
 This is the KVM flavor of the {{project_name_short}} project.
@@ -69,7 +69,7 @@ Advanced users are encouraged to [[Dev/Build_Documentation|build]] {{project_nam
     {{Tab
     |active=true
     |title= === stable LXQt ===
-    |image=[[File:Rg1024_brick_tile.png]]
+    |image=[[File:Rg1024_brick_tile.png|alt=]]
     |content=
         {{DownloadTableUnified
             |project_name={{project_name_short}}
@@ -85,7 +85,7 @@ Advanced users are encouraged to [[Dev/Build_Documentation|build]] {{project_nam
 
     {{Tab
     |title= === testers LXQt ===
-    |image=[[File:Cornues.png]]
+    |image=[[File:Cornues.png|alt=]]
     |content=
         {{DownloadTableUnified
             |project_name={{project_name_short}}
@@ -116,7 +116,7 @@ Advanced users are encouraged to [[Dev/Build_Documentation|build]] {{project_nam
     {{Tab
     |active=true
     |title= === stable CLI ===
-    |image=[[File:Rg1024_brick_tile.png]]
+    |image=[[File:Rg1024_brick_tile.png|alt=]]
     |content=
         {{DownloadTableUnified
             |project_name={{project_name_short}}
@@ -132,7 +132,7 @@ Advanced users are encouraged to [[Dev/Build_Documentation|build]] {{project_nam
 
     {{Tab
     |title= === testers CLI ===
-    |image=[[File:Cornues.png]]
+    |image=[[File:Cornues.png|alt=]]
     |content=
         {{DownloadTableUnified
             |project_name={{project_name_short}}
@@ -296,13 +296,13 @@ Go to <code>Virtual Machine Manager</code> &rarr; <code>File</code> &rarr; <code
 
 Images:
 
-[[File:enable-qemu-session-1.png|500px]]
+[[File:enable-qemu-session-1.png|500px|alt=Virtual Machine Manager window with the File menu highlighted]]
 
-[[File:enable-qemu-session-2.png|500px]]
+[[File:enable-qemu-session-2.png|500px|alt=Virtual Machine Manager File menu with Add Connection highlighted]]
 
-[[File:enable-qemu-session-3.png|500px]]
+[[File:enable-qemu-session-3.png|500px|alt=Add Connection dialog with the Hypervisor dropdown open and QEMU/KVM user session highlighted]]
 
-[[File:enable-qemu-session-4.png|500px]]
+[[File:enable-qemu-session-4.png|500px|alt=Add Connection dialog with QEMU/KVM user session selected, Autoconnect checked, and generated URI qemu:///session]]
 
 After that start {{project_name_long}} VM.
 
@@ -508,17 +508,17 @@ sudo reboot
 
 <code> Edit &rarr; Preferences &rarr; General &rarr; tick "Enable XML editing" </code>
 
-[[File:PCI-1.png|500px]]
+[[File:PCI-1.png|500px|alt=virt-manager Edit menu open with Preferences highlighted]]
 
-[[File:PCI-2.png|500px]]
+[[File:PCI-2.png|500px|alt=virt-manager Preferences dialog, General tab, with Enable XML editing checked]]
 
 * After that, select the VM to which you want to attach the GPU, then click the Open button. Click the light bulb icon (Show virtual hardware details), go to the bottom, and click Add Hardware. Go to PCI Host Devices, select your graphics card, then click Finish.
 
-[[File:PCI-3.png|500px]]
+[[File:PCI-3.png|500px|alt=virt-manager main window listing a shut-off virtual machine named debian13 under QEMU/KVM User session]]
 
-[[File:PCI-4.png|500px]]
+[[File:PCI-4.png|500px|alt=virt-manager details view of debian13 showing hardware list and an Overview with KVM, x86_64, Q35 and UEFI firmware]]
 
-[[File:PCI-5.png|500px]]
+[[File:PCI-5.png|500px|alt=Add New Virtual Hardware dialog with PCI Host Device selected and an NVIDIA GeForce RTX 4060 entry highlighted in the host device list]]
 
 * Go to the added PCI/graphics card, then click XML and change <code>managed="yes"</code> to <code>managed="no"</code>. Then click Apply (this is important for the <code>qemu:///session</code>/user-level case).
 
@@ -526,17 +526,17 @@ sudo reboot
 <hostdev mode="subsystem" type="pci" managed="yes>
 </pre>
 
-[[File:PCI-6.png|500px]]
+[[File:PCI-6.png|500px|alt=virt-manager XML tab of the added PCI device showing a hostdev element with managed set to yes]]
 
 <pre>
 <hostdev mode="subsystem" type="pci" managed="no>
 </pre>
 
-[[File:PCI-7.png|500px]]
+[[File:PCI-7.png|500px|alt=virt-manager XML tab of the PCI device with the hostdev managed attribute being edited to no]]
 
 * After that, run your VM, and the graphics card should appear in the VM (don't forget to install the graphics card driver in the VM as well).
 
-[[File:PCI-8.png|500px]]
+[[File:PCI-8.png|500px|alt=Guest desktop in virt-manager with a terminal showing nvidia-smi output listing the NVIDIA GeForce RTX 4060 GPU]]
 
 * Done
 

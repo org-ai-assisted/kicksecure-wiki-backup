@@ -5,7 +5,7 @@ HowTo: Build the Linux Kernel Runtime Guard (LKRG) Debian Package from Source Co
 {{#seo:
 |image=P_lkrg2.png
 }}
-[[File:P_lkrg2.png|LKRG logo|126px|thumb]]
+[[File:P_lkrg2.png|LKRG logo|126px|thumb|alt=]]
 {{Archived}}
 {{intro|
 These are instructions on how to build the LKRG Debian Package from source code while [[Verifying Software Signatures|verifying software signatures]] for better security. If these instructions look a bit daunting and if you never before verified software signatures, you could alternativly have a look at these simpler instructions [[Linux_Kernel_Runtime_Guard_LKRG/Build_Debian_Package_from_Source_Code/Easy|here]].

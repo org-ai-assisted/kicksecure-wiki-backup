@@ -9,7 +9,7 @@ title=System Hardening Checklist
 |difficulty=easy
 |contributor=[https://forums.whonix.org/users/torjunkie torjunkie]
 |support=[[Support]]
-}} [[File:Kicksecure-image-seal.svg|thumb|200px]] [[File:Hardening-13423213.jpg|thumb]]
+}} [[File:Kicksecure-image-seal.svg|thumb|200px|alt=Badge reading Hardened by Kicksecure]] [[File:Hardening-13423213.jpg|thumb|alt=]]
 {{intro|
 {{project_name_short}} comes with [[Homepage#security|many security features]]. {{project_name_short}} is hardened by default and also provides extensive [[Documentation]] including this System Hardening Checklist. The more you know, the safer you can be.
 

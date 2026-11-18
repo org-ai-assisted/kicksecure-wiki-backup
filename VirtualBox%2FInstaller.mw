@@ -14,7 +14,7 @@ It supports Debian, Fedora, and their derivatives such as Ubuntu (starting from 
 * [[VirtualBox/Guest_Additions|Guest Additions and Shared Folders]]
 * [[VirtualBox/Troubleshooting|VirtualBox Troubleshooting]]
 </div>
-[[File:Virtualbox-installer.png|thumb|200px|VirtualBox Installer Logo]]
+[[File:Virtualbox-installer.png|thumb|200px|VirtualBox Installer Logo|alt=]]
 {{intro|
 The VirtualBox Linux Installer offers a user-friendly method to install VirtualBox on Linux systems.
 

@@ -7,7 +7,7 @@ title=ram-wipe - Wipe RAM on shutdown and reboot
 |image=Ram-wipe.png
 }}
 {{fde-mininav}}
-[[File:Ram-wipe.png|200px|thumb|ram-wipe logo]]
+[[File:Ram-wipe.png|200px|thumb|ram-wipe logo|alt=]]
 {{intro|
 Wipe RAM at shutdown to prevent information extraction from memory.
 

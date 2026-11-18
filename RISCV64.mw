@@ -7,8 +7,8 @@ Installation of {{project_name_long}} on a RISCV64
 |image=Download-riscv64.jpg
 }}
 {{architecture_mininav}}
-[[File:Download-riscv64.jpg|thumb]]
-[[File:Riscv64-logo.svg|thumb|200px]]
+[[File:Download-riscv64.jpg|thumb|alt=RISC-V chip logo plus Kicksecure logo]]
+[[File:Riscv64-logo.svg|thumb|200px|alt=]]
 {{intro|
 {{project_name_short}} can be installed on a RISCV64. Here's how.
 }}

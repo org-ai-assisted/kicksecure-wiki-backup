@@ -6,7 +6,7 @@ title=Debian Host Operating System Tips
 |description=Debian tips, tricks, recommendations related to {{project_name_long}}.
 |image=Debian.png
 }}
-[[File:Debian.png|Debian Logo|200px|thumb]]
+[[File:Debian.png|Debian Logo|200px|thumb|alt=]]
 {{intro|
 Debian tips, tricks, recommendations related to {{project_name_short}}.
 }}
@@ -165,7 +165,7 @@ Select your currently used {{os}}.
 |title= === Debian ===
 |addToClass=info-box
 |type=section
-|image=[[File:Debian.png|25px]]
+|image=[[File:Debian.png|25px|alt=]]
 |active=true
 |content=
 [[Undocumented]].
@@ -174,7 +174,7 @@ Select your currently used {{os}}.
 |title= === Qubes ===
 |addToClass=info-box
 |type=section
-|image=[[File:Qubes-logo-blue.png|25px]]
+|image=[[File:Qubes-logo-blue.png|25px|alt=]]
 |content=
 These instructions are for users of Qubes only.
 

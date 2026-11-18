@@ -6,7 +6,7 @@ Secure Shell (SSH)
 |description=SSH Hardening Tips; Recommended Client and Server Settings for better Security
 |image=Sshlogo.png
 }}
-[[File:Sshlogo.png|SSH Logo|thumb]]
+[[File:Sshlogo.png|SSH Logo|thumb|alt=]]
 {{intro|
 SSH Hardening Tips; Recommended Client and Server Settings for better Security
 }}
@@ -18,7 +18,7 @@ The Secure Shell server, <code>openssh-server</code>, is not installed on any ve
 
 '''Figure:''' ''Example SSH Login'' <ref>https://devconnected.com/how-to-install-and-enable-ssh-server-on-debian-10/</ref>
 
-[[File:Sshlogin.png|border]]
+[[File:Sshlogin.png|border|alt=Terminal showing an ssh connection to 127.0.0.1 port 2222, accepting the host key fingerprint, and a Debian login prompt]]
 
 = General Hardening Tips =
 
@@ -163,7 +163,7 @@ If the SSH login was successful, the shell prompt will be different from the usu
 
 '''Figure:''' ''Example SSH Login'' <ref>https://devconnected.com/how-to-install-and-enable-ssh-server-on-debian-10/</ref>
 
-[[File:Sshlogin.png|border]]
+[[File:Sshlogin.png|border|alt=Terminal showing an ssh connection to 127.0.0.1 port 2222, accepting the host key fingerprint, and a Debian login prompt]]
 
 == Client and Server Configuration File Settings ==
 

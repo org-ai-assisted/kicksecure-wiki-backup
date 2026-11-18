@@ -6,11 +6,11 @@
 
 {{IconSet|false|NO}} Then consider the following instructions:
 
-{{Icon|fa-solid fa-chevron-right}} [[File:Tux.png|15px|link=]] [[Verify_the_images_using_Linux|For Linux]]
+{{Icon|fa-solid fa-chevron-right}} [[File:Tux.png|15px|link=|alt=]] [[Verify_the_images_using_Linux|For Linux]]
 
-{{Icon|fa-solid fa-chevron-right}} [[File:Logo-windows-500x500.png|15px|link=]] [[Verify_the_images_using_Windows|For Windows]]
+{{Icon|fa-solid fa-chevron-right}} [[File:Logo-windows-500x500.png|15px|link=|alt=]] [[Verify_the_images_using_Windows|For Windows]]
 
-{{Icon|fa-solid fa-chevron-right}} [[File:logo-apple-500x500.png|15px]] [[Verify_the_images_using_macOS|For macOS]]
+{{Icon|fa-solid fa-chevron-right}} [[File:logo-apple-500x500.png|15px|alt=]] [[Verify_the_images_using_macOS|For macOS]]
 <noinclude>
 {{footer}}
 [[Category:MultiWiki]]

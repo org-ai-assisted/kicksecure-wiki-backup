@@ -7,7 +7,7 @@ Secure Boot
 |image=Secureboot12312.png
 }}
 {{boot_firmware}}
-[[File:Secureboot12312.png|thumb|50px]]
+[[File:Secureboot12312.png|thumb|50px|alt=]]
 {{intro|
 Information on Secure Boot and DKMS Signing Key (MOK Key) Enrollment to ensure kernel modules can be loaded on systems with Secure Boot enabled.
 }}
@@ -155,27 +155,27 @@ sudo reboot
 
 At boot, you'll see the MOK Manager EFI interface:
 
-[[File:mok-key-1.png|SHIM UEFI key management]]
+[[File:mok-key-1.png|SHIM UEFI key management|alt=Blue boot screen of Shim UEFI key management prompting to press any key to perform MOK management, with a 3 second boot countdown]]
 
 {{IconSet|h1|9}} Press any key to enter it, then select "Enroll MOK":
 
-[[File:mok-key-2.png|Perform MOK management]]
+[[File:mok-key-2.png|Perform MOK management|alt=MOK management menu with options Continue boot, Enroll MOK, Enroll key from disk and Enroll hash from disk; Enroll MOK is highlighted]]
 
 {{IconSet|h1|10}} Then select "Continue":
 
-[[File:mok-key-3.png|Enroll MOK]]
+[[File:mok-key-3.png|Enroll MOK|alt=Enroll MOK screen with the options View key 0 and Continue; Continue is highlighted]]
 
 {{IconSet|h1|11}} Confirm with "Yes" when prompted:
 
-[[File:mok-key-4.png|Enroll the key(s)?]]
+[[File:mok-key-4.png|Enroll the key(s)?|alt=Prompt asking Enroll the key(s)? with the choices No and Yes; Yes is highlighted]]
 
 {{IconSet|h1|12}} After this, enter the password you set up in step 6:
 
-[[File:mok-key-5.png|Enroll the key(s)?]]
+[[File:mok-key-5.png|Enroll the key(s)?|alt=Enroll the key(s) screen with an empty Password field awaiting input]]
 
 {{IconSet|h1|13}} At this point, you are done. Select "Reboot" and the computer will reboot, trusting the key for your modules:
 
-[[File:mok-key-6.png|Perform MOK management]]
+[[File:mok-key-6.png|Perform MOK management|alt=MOK management menu with options Reboot, Enroll key from disk and Enroll hash from disk; Reboot is highlighted]]
 
 {{IconSet|h1|14}} After reboot, you can inspect the MOK certificates with the following command:
 

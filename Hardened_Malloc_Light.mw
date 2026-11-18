@@ -10,7 +10,7 @@ Hardened Malloc Light
 * [[Hardened Malloc|Hardened Malloc (Default)]]
 * [[Hardened Malloc Light]]
 </div>
-[[File:Malloc.jpg|thumb]]
+[[File:Malloc.jpg|thumb|alt=]]
 {{intro|
 Hardened Memory Allocator for many Applications to increase Security.
 }}

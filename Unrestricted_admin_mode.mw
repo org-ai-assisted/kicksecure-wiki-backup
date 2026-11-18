@@ -7,8 +7,8 @@ Unrestricted Admin Mode
 |image=Unrestricted_admin_mode.png
 }}
 {{passwords_mininav}}
-[[File:Unrestricted_admin_mode.png|200px|thumb]]
-[[File:kicksecure-remove-user-sysmaint-split.png|200px|thumb|remove <code>user-sysmaint-split</code> boot menu entry]]
+[[File:Unrestricted_admin_mode.png|200px|thumb|alt=]]
+[[File:kicksecure-remove-user-sysmaint-split.png|200px|thumb|remove <code>user-sysmaint-split</code> boot menu entry|alt=Boot mode menu with the REMOVE user-sysmaint-split, enable unrestricted admin mode entry highlighted]]
 {{intro|
 In {{project_name_short}}, administrative ("[[root|<code>root</code>]]") access is restricted by default for greater security. However, '''unrestricted admin mode can be configured'''. Read more about unrestricted admin mode and how to configure {{project_name_short}} to suit your needs.
 }}
@@ -44,7 +44,7 @@ Platform specific. Select your platform.
 
 {{Tab
 |title= == {{project_name_short}} ==
-|image=[[File:{{project_name_short}}-logo-icon.svg]]
+|image=[[File:{{project_name_short}}-logo-icon.svg|alt=]]
 |content=
 
 Select a method.
@@ -64,7 +64,7 @@ If the <code>user-sysmaint-split</code> package is installed by default, the eas
 
 '''Figure:''' ''Remove <code>user-sysmaint-split</code> boot menu entry''
 
-[[File:kicksecure-remove-user-sysmaint-split.png|600px|Remove <code>user-sysmaint-split</code> boot menu entry]]
+[[File:kicksecure-remove-user-sysmaint-split.png|600px|Remove <code>user-sysmaint-split</code> boot menu entry|alt=Boot mode menu with the REMOVE user-sysmaint-split, enable unrestricted admin mode entry highlighted]]
 
 {{IconSet|h1|3}} Authenticate as necessary to log in as the <code>sysmaint</code> account. You may have to provide a disk encryption passphrase and/or the user password for the <code>sysmaint</code> account, if either or both passwords are set.
 
@@ -96,7 +96,7 @@ sudo dummy-dependency --purge --yes user-sysmaint-split
 
 {{Tab
 |title= == {{q_project_name_long}} ==
-|image=[[File:Qubes-logo-icon.png]]
+|image=[[File:Qubes-logo-icon.png|alt=]]
 |content=
 {{IconSet|h1|1}} Notice of alternative option.
 

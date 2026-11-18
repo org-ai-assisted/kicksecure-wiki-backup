@@ -6,7 +6,7 @@
 |description={{project_name_short}} stable / testers / developers APT Repository. How to change from one suite to another? How to disable {{project_name_short}} APT Repository?
 |image=kicksecurerepositorywizard.png
 }}
-[[File:kicksecurerepositorywizard.png|{{project_name_short}} Derivative Repository Tool|thumb]]
+[[File:kicksecurerepositorywizard.png|{{project_name_short}} Derivative Repository Tool|thumb|alt=Kicksecure Repository Wizard page asking whether to automatically install updates from the derivative team, with Yes selected]]
 {{intro|
 {{project_name_short}} stable / testers / developers APT Repository. How to change from one suite to another? How to disable {{project_name_short}} APT Repository?
 }}
@@ -38,11 +38,11 @@ If you are using [[Qubes|{{q_project_name_short}}]], please press Expand on the 
 
 *'''Figure:''' ''Wizard Repository Selection''
 
-[[File:Kicksecure_Repository_Wizard_select_repo.png|border]]
+[[File:Kicksecure_Repository_Wizard_select_repo.png|border|alt=Kicksecure Repository Wizard repository choice with Stable, Stable Proposed Updates, Testers, and Developers, Stable selected]]
 
 *'''Figure:''' ''Wizard Auto-update Configuration''
 
-[[File:Kicksecure_Repository_Wizard_install_updates.png|border]]
+[[File:Kicksecure_Repository_Wizard_install_updates.png|border|alt=Kicksecure Repository Wizard asking whether to automatically install updates from the derivative team, with Yes selected]]
 
 </div>
 </div>
@@ -56,11 +56,11 @@ If you are using [[About|{{project_name_short}}]], please press Expand on the ri
 
 '''Figure:''' ''Start Menu''
 
-[[File:kicksecurexfcerepositorygui.png|600px]]
+[[File:kicksecurexfcerepositorygui.png|600px|alt=Application menu in the System category with the Repository entry highlighted and its Derivative Repository tooltip]]
 
 '''Figure:''' ''Super user password''
 
-[[File:kicksecurexfcerepositoryguirootpassword.png|600px]]
+[[File:kicksecurexfcerepositoryguirootpassword.png|600px|alt=LXQt sudo dialog asking for a password to run repository-dist-wizard]]
 
 </div>
 </div>
@@ -69,11 +69,11 @@ Afterwards, the following window will appear.
 
 '''Figure:''' ''Auto-update Configuration''
 
-[[File:kicksecurerepositorywizard.png||600px]]
+[[File:kicksecurerepositorywizard.png||600px|alt=Kicksecure Repository Wizard page asking whether to automatically install updates from the derivative team, with Yes selected]]
 
 '''Figure:''' ''Repository Selection''
 
-[[File:kicksecurerepositorywizard2.png||600px]]
+[[File:kicksecurerepositorywizard2.png||600px|alt=Kicksecure Repository Wizard page for choosing a repository, Kicksecure Stable Repository selected]]
 
 == Command Line Interface ==
 
@@ -89,11 +89,11 @@ sudo repository-dist
 
 '''Figure:''' ''Launch Terminal''
 
-[[File:whonixrepocli.png|600px]]
+[[File:whonixrepocli.png|600px|alt=Desktop taskbar with a red arrow pointing to the terminal launcher icon]]
 
 '''Figure:''' ''Run repository-dist''
 
-[[File:whonixrepocli2.png|600px]]
+[[File:whonixrepocli2.png|600px|alt=Terminal showing the Whonix welcome banner, with the command sudo whonix_repository entered and a sudo password prompt waiting]]
 
 Choose one of the following repositories based on personal preferences.
 

@@ -6,7 +6,7 @@
 {{Title|title=
 Entropy, Randomness, /dev/random vs /dev/urandom, Entropy Sources, Entropy Gathering Daemons, RDRAND
 }}
-[[File:Random_entropy.png|thumb]]
+[[File:Random_entropy.png|thumb|alt=]]
 {{intro|
 Technical Design Documentation about Entropy
 }}

@@ -6,9 +6,9 @@
 |description=Information about the {{project_name_short}} Linux Installer for Testers and Developers.
 }}
 <div class="mininav">
-* [[File:Windows logo - 2012.svg.png|25px|link=]] [[Dev/Windows Installer]]
-* [[File:Windows logo - 2012.svg.png|25px|link=]] [[Dev/Windows Starter]]
-* [[File:Tux.png|25px|link=]] [[Dev/Linux Installer]]
+* [[File:Windows logo - 2012.svg.png|25px|link=|alt=]] [[Dev/Windows Installer]]
+* [[File:Windows logo - 2012.svg.png|25px|link=|alt=]] [[Dev/Windows Starter]]
+* [[File:Tux.png|25px|link=|alt=]] [[Dev/Linux Installer]]
 </div>
 {{intro|
 Information about the {{project_name_short}} Linux Installer for Testers and Developers. User documentation for the Installer can be found on the [[Linux|{{project_name_short}} for Linux download]] or [[VirtualBox/Installer]] page

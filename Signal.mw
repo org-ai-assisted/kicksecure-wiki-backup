@@ -6,7 +6,7 @@
 {{title|title=
 Send Signal Messages with {{project_name_short}}
 }}
-[[File:Signal.png|<code>Signal</code> Logo|thumb]]
+[[File:Signal.png|<code>Signal</code> Logo|thumb|alt=]]
 {{intro|
 How-to: Use Signal Private Messenger with {{project_name_short}}.
 }}
@@ -139,7 +139,7 @@ After launching the desktop client, it must be linked with the mobile phone. Be 
 
 '''Figure:''' ''Signal Desktop in {{project_name_short}}''
 
-[[File:Signaldesktop.png|border]]
+[[File:Signaldesktop.png|border|alt=Signal Desktop window titled Link your phone to Signal Desktop, showing a QR code and Android and iOS linking steps]]
 
 = Claims That Signal Encryption Is Broken =
 

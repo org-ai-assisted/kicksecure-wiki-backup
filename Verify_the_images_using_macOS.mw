@@ -36,13 +36,13 @@ OpenPGP Verification of {{project_name_short}} Images in macOS
 |description=Instructions for OpenPGP Verification of {{project_name_short}} Images in macOS
 |image=Verify_images_on_mac.png
 }}
-[[File:Verify_images_on_mac.png|200px|thumb]]
+[[File:Verify_images_on_mac.png|200px|thumb|alt=]]
 {{intro|
 Instructions for OpenPGP Verification of {{project_name_short}} Images in macOS
 }}
 {{always_verify_signatures_reminder}}
 = macOS using GPGTools =
-[[File:logo-apple-500x500.png|thumb|link=|class=hide-enlarge|200px|macOS]]
+[[File:logo-apple-500x500.png|thumb|link=|class=hide-enlarge|200px|macOS|alt=]]
 GnuPG is a common free software implementation of OpenPGP. Various versions and graphical front-ends are available for macOS. Follow these steps:
 # Navigate to [https://www.gpgtools.org/ GPGTools] to download the available suite -- detailed installation and user documentation is also available on the site.
 # After installing GPGTools, follow the same instructions found on the [[Verify_the_images_using_Linux|Verify Virtual Machine Images on the Command Line]] page.

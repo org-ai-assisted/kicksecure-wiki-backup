@@ -6,7 +6,7 @@ Two-factor Authentication (2FA)
 |description=How novice and advanced users can benefit from Two-factor Authentication (2FA). Avoiding inaccessible online accounts/logins. Time-based One-time Password (TOTP). "Google Authenticator." Universal Second Factor (U2F) security/physical keys.
 |image=2FA.jpg
 }}
-[[File:2FA.jpg|thumb]]
+[[File:2FA.jpg|thumb|alt=]]
 {{intro|
 How novice and advanced users can benefit from Two-factor Authentication (2FA). Avoiding inaccessible online accounts/logins. Time-based One-time Password (TOTP). "Google Authenticator." Universal Second Factor (U2F) security/physical keys.
 }}
@@ -512,39 +512,39 @@ If anonymity is required, it is strongly recommended to only run 2FA software in
 
 '''1.''' Navigate to Discourse preferences.
 
-[[File:2FA-discourse-prefernces.png|400px]]
+[[File:2FA-discourse-prefernces.png|400px|alt=Discourse user menu with the profile tab and the Preferences entry highlighted in red]]
 
 '''2.''' <code>Click on Security</code> &rarr; <code>Manage Two-Factor Authentication</code>
 
-[[File:2FA-discourse-security.png|400px]]
+[[File:2FA-discourse-security.png|400px|alt=Discourse Preferences with the Security tab highlighted and a highlighted Manage Two-Factor Authentication button]]
 
 '''3.''' <code>Enter your password</code> &rarr; <code>Click Continue</code>
 
-[[File:2FA-discourse-enterpassword.png|400px]]
+[[File:2FA-discourse-enterpassword.png|400px|alt=Discourse Preferences page asking to confirm the account password, with a Continue button]]
 
 '''4.''' Click on <code>Add Authenticator</code>
 
-[[File:2FA-discourse-addauth.png|400px]]
+[[File:2FA-discourse-addauth.png|400px|alt=Discourse Preferences page with a red arrow pointing to the Add Authenticator button under Token-Based Authenticators]]
 
 '''5.''' <code>Select Enter manually</code> &rarr; <code>Take a copy of the QR code</code>
 
-[[File:2FA-discourse-showcode.png|400px]]
+[[File:2FA-discourse-showcode.png|400px|alt=Discourse Add Authenticator dialog with a redacted QR code and the Enter manually link highlighted]]
 
 '''6.''' <code>Open KeePassXC</code> &rarr; <code>Right-click on the Discourse account</code> &rarr; <code>Select Time-based one-time password</code> &rarr; <code>Set up TOTP...</code>
 
-[[File:2FA-keepassxc.png|400px]]
+[[File:2FA-keepassxc.png|400px|alt=KeePassXC context menu on the Discourse entry, Time-based one-time password submenu with Set up TOTP selected]]
 
 '''7.''' <code>Add the QR code in the empty Key field</code> &rarr; <code>Click OK</code>
 
-[[File:2FA-keepassxc-addkey.png|400px]]
+[[File:2FA-keepassxc-addkey.png|400px|alt=KeePassXC TOTP setup dialog with a Key field and Default RFC 6238 token settings selected]]
 
 '''8.''' Select <code>Copy TOTP</code>; new keys are regenerated every 30 seconds.
 
-[[File:2FA-keepassxc-copykey.png|400px]]
+[[File:2FA-keepassxc-copykey.png|400px|alt=KeePassXC context menu on the Discourse entry, Time-based one-time password submenu with Copy TOTP highlighted]]
 
 '''9.''' <code>Add your username to My Authenticator</code> &rarr; <code>Add the generated TOTP to Code</code> &rarr; <code>Click Enable</code>
 
-[[File:2FA-discourse-addkey.png|400px]]
+[[File:2FA-discourse-addkey.png|400px|alt=Discourse Add Authenticator dialog with a QR code and arrows pointing to the Name and Code fields]]
 
 }}
 

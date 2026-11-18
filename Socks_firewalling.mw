@@ -6,7 +6,7 @@ SOCKS Firewalling
 |description=SOCKS firewalling using Netfilter on Linux systems to filter SOCKS proxy traffic based on destination addresses or other criteria.
 |image=Socks-firewall123123.png
 }}
-[[File:Socks-firewall123123.png|thumb|200px]]
+[[File:Socks-firewall123123.png|thumb|200px|alt=]]
 {{intro|
 SOCKS proxies are commonly used to relay network traffic, often for privacy or censorship circumvention purposes. While the Netfilter packet filtering framework in Linux operates at the network layer, the SOCKS protocol operates at the higher session layer. This article explains the challenges of filtering SOCKS traffic using Netfilter and explores potential solutions, including deep packet inspection techniques and third-party tools.
 }}

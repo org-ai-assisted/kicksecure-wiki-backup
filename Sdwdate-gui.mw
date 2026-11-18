@@ -7,7 +7,7 @@ title=sdwdate-gui: Secure Distributed Web Date Graphical User Interface
 |image=sdwdate1.png
 }}
 {{time_mininav}}
-[[File:sdwdate1.png|sdwdate-gui systray with popup on mouse hover|thumb]]
+[[File:sdwdate1.png|sdwdate-gui systray with popup on mouse hover|thumb|alt=Tray tooltip reading Time Synchronisation Monitor, Right-click for menu, beside the clock and sdwdate icon]]
 {{intro|
 sdwdate - Secure Distributed Web Date - systray - graphical user interface (GUI) - Homepage
 }}
@@ -42,15 +42,15 @@ In summary, sdwdate-gui simplifies the interaction with the sdwdate service, ens
 = Screenshots =
 '''Figure:''' ''sdwdate-gui Systray with Popup on Mouse Hover''
 
-[[File:Sdwdate1.png]]
+[[File:Sdwdate1.png|alt=Tray tooltip reading Time Synchronisation Monitor, Right-click for menu, beside the clock and sdwdate icon]]
 
 '''Figure:''' ''sdwdate-gui Functions''
 
-[[File:Sdwdate2.png]]
+[[File:Sdwdate2.png|alt=Tray menu with Show Tor status, Tor control panel, Show sdwdate status, Open sdwdate's log, Restart sdwdate, Stop sdwdate and Exit]]
 
 '''Figure:''' ''sdwdate-gui Successful Time Fetching''
 
-[[File:Sdwdate3.png]]
+[[File:Sdwdate3.png|alt=Time Synchronization Monitor window: Last message from sdwdate, Success. Sleeping for 169.15 minutes, with a Close button]]
 
 = Troubleshooting =
 == {{q_project_name_long}} - Unexpected Autostart of {{project_name_gateway_vm}} ==

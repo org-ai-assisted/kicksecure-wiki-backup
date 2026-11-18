@@ -9,7 +9,7 @@ Donate to {{project_name_short}} using PayPal. Most currencies. Many payment opt
 '''1.''' <u>No account is required</u> for many payment options (such as credit card).<br/>
 '''2.''' Most currencies.<br/>
 '''3.''' [[#Payment Options|Many payment options]].<br/>
-'''4.''' [[File:Iconfinder_tor_386502.png|15px|link=]] [[#PayPal versus Tor|Tor Browser users note this.]]
+'''4.''' [[File:Iconfinder_tor_386502.png|15px|link=|alt=]] [[#PayPal versus Tor|Tor Browser users note this.]]
 </div>
 
 <div class="info-box paypal-panel">
@@ -52,7 +52,7 @@ The following payment options are supported by PayPal. Possibly others too. Avai
 Browser specific.
 
 * '''A)''' Most browser (such as Mozilla Firefox or Chrome): No special notice.
-* '''B)''' [[File:Iconfinder_tor_386502.png|15px|link=]] <u>Tor Browser:</u>
+* '''B)''' [[File:Iconfinder_tor_386502.png|15px|link=|alt=]] <u>Tor Browser:</u>
 ** If using Tor or Tor Browser, at time of writing PayPal was blocking connections from the Tor network.
 ** PayPal very most likely requires use of a clearnet browser.
 ** This is a decision by PayPal and [[unspecific|unspecific to {{project_name_short}}]].

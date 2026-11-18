@@ -7,8 +7,8 @@ Deep Scan Ready
 |image=Deep_scan_ready_icon.png
 }}
 {{malware_mininav}}
-[[File:Deep_scan_ready_icon.png|thumb]]
-[[File:Deep_Scan_Ready.png|thumb]]
+[[File:Deep_scan_ready_icon.png|thumb|alt=Deep Scan Ready badge: laptop, hard drive, USB drive and a magnifying glass over files with a shield checkmark]]
+[[File:Deep_Scan_Ready.png|thumb|alt=Infected powered-off laptop inspected from a clean external laptop for boot, kernel and system files; offline full disk scan and boot chain check while malware is inactive]]
 {{intro|
 Deep scan ready means the owner can safely look at everything while the device is off, and if necessary, watch what happens when it starts.
 }}
@@ -280,7 +280,7 @@ This topic is discussed in more detail in the wiki chapter [[Android#Malware_Ana
 |}
 
 = Deep Scan Restricted =
-[[File:Deep_Scan_Restricted.png|thumb]]
+[[File:Deep_Scan_Restricted.png|thumb|alt=Deep Scan Restricted badge: worried person surrounded by padlocks, chains, a hard drive and a blocked magnifying glass]]
 
 Deep scan restricted means that the device owner is not able to fully inspect the operating system and the boot process from a clean, independent external system.
 
@@ -329,7 +329,7 @@ In simple terms, the owner cannot step outside the device to check it independen
 
 '''Figure:''' ''Deep Scan Ready versus Deep Scan Restricted''
 
-[[File:Deep_Scan_Ready_versus_Deep_Scan_Restricted.png|600px]]
+[[File:Deep_Scan_Ready_versus_Deep_Scan_Restricted.png|600px|alt=Side-by-side comparison: owner-controlled device scanned offline from a trusted external system, versus vendor-locked device with locked bootloader and no external inspection]]
 
 = rationale for this page =
 This page documents the concept of deep scan readiness and explains how different platform designs affect an owner's ability to inspect and investigate their own device. While many traditional Linux distributions already support these capabilities, they are not universal across all platforms. The page exists to clarify the distinction between owner-controlled systems and vendor-restricted systems, and to describe how these design choices influence deep scanning, malware analysis, and forensic investigation.

@@ -37,7 +37,7 @@ Download the {{project_name_short}} Signing Key
 |description=Get {{project_name_short}} OpenPGP signing key. Verify {{project_name_short}} Downloads, APT Repository and/or Source Code.
 |image=Keysigning.jpg
 }}
-[[File:Keysigning.jpg|thumb]]
+[[File:Keysigning.jpg|thumb|alt=]]
 {{intro|
 Get {{project_name_short}} OpenPGP signing key. Verify {{project_name_short}} Downloads, APT Repository and/or Source Code.
 }}
@@ -58,7 +58,7 @@ EDITORS NOTES:
 - Not recommending curl: Because it may not be installed on their host. Perhaps Windows users are looking at these instructions.
 - Instructions target regular users. Not from-source-builders.
 -->
-[[File:GnuPG-Logo.svg|thumb|100px|GnuPG logo]]
+[[File:GnuPG-Logo.svg|thumb|100px|GnuPG logo|alt=]]
 
 {{Box|text=
 {{gpg_init}}
@@ -72,7 +72,7 @@ EDITORS NOTES:
 |content=
 {{Tab
 |title= == Windows, macOS, Linux ==
-|image=[[File:Any12312.png|25px]]
+|image=[[File:Any12312.png|25px|alt=]]
 |content=
 {{IconSet|h1|2}} [[Secure_Downloads|Securely]] download [[Patrick Schleizer]]'s (adrelanos') [[OpenPGP]] key. <ref>
 <!--
@@ -149,7 +149,7 @@ gpg:              unchanged: 1
 }} <!-- close tab: Windows, Linux, Mac -->
 {{Tab
 |title= == Kicksecure or Whonix ==
-|image=[[File:{{project_name_short}}-logo-icon.svg|25px]]
+|image=[[File:{{project_name_short}}-logo-icon.svg|25px|alt=]]
 |content=
 {{IconSet|h1|2}} {{signing_key_main_increase_trust}}
 
@@ -169,7 +169,7 @@ Steps {{IconSet|h1|2}} to {{IconSet|h1|8}} (which would be required for Windows,
 }} <!-- close tab: Kicksecure or Whonix -->
 {{Tab
 |title= == Debian ==
-|image=[[File:Debian.png|25px]]
+|image=[[File:Debian.png|25px|alt=]]
 |content=
 {{IconSet|h1|2}} Install <code>extrepo</code>. <ref>
 The extrepo-offline-data Debian package unfortunately is too old and lacks the most recent (extended) version of the signing key.
@@ -219,9 +219,9 @@ Proceed to step {{IconSet|h1|9}} below.
 
 If verifying {{project_name_short}} images, navigate to the relevant verification page below to finish the process:
 
-* [[File:Tux.png|15px|link=]] [[Verify the_virtual_machine_images_using_the_command line|In Linux]]
-* [[File:Logo-windows-500x500.png|15px|link=]] [[Verify_the_images_using_Windows|In Windows]]
-* [[File:logo-apple-500x500.png|15px]] [[Verify_the_images_using_macOS|In macOS]]
+* [[File:Tux.png|15px|link=|alt=]] [[Verify the_virtual_machine_images_using_the_command line|In Linux]]
+* [[File:Logo-windows-500x500.png|15px|link=|alt=]] [[Verify_the_images_using_Windows|In Windows]]
+* [[File:logo-apple-500x500.png|15px|alt=]] [[Verify_the_images_using_macOS|In macOS]]
 }}
 
 = OpenPGP Key Features =
@@ -325,7 +325,7 @@ Nowadays a trust path to the key fingerprint can be established through Debian b
 </ref>
 
 == Download the signify Key ==
-[[File:Signify_Logo.svg.png|thumb|100px|signify]]
+[[File:Signify_Logo.svg.png|thumb|100px|signify|alt=]]
 
 {{mbox
 | type    = notice

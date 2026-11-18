@@ -6,7 +6,7 @@ Download Security
 |description=Digital signature verification of any downloaded software (such as {{project_name_short}}) is an important step for system security.
 |image=Download-security.png
 }}
-[[File:Download-security.png|200px|thumb]]
+[[File:Download-security.png|200px|thumb|alt=Downloaded file with checkmark, shield padlock and hash value A4 B7 2C 9E]]
 {{intro|
 {{GoogleOff|content=
 {{security_intro}}

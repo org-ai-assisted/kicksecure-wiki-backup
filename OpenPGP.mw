@@ -38,13 +38,13 @@ OpenPGP
 |image=GnuPG-Logo.svg
 }}
 {{verification_tools_mininav}}
-[[File:GnuPG-Logo.svg|thumb|100px|GnuPG logo]]
+[[File:GnuPG-Logo.svg|thumb|100px|GnuPG logo|alt=]]
 {{intro|
 OpenPGP, gpg, Related Tools, Links, Advanced Topics, The OpenPGP Web of Trust, Bootstrapping OpenPGP keys from the web
 }}
 [[File:hauke_laging_gepruefter_artikel.en.png|400px|link=http://www.openpgp-schulungen.de/fuer/webautoren/|[https://www.hauke-laging.de/ Hauke Laging]'s clearsigned version of this text can be found here: [[OpenPGP_Certified]]. <br />
 <br />
-The [http://www.openpgp-schulungen.de/fuer/webautoren/ certification] image ([https://www.whonix.org/wiki/File:Hauke_laging_gepruefter_artikel.en.png hauke_laging_gepruefter_artikel.en.png]) is copyrighted by [https://www.hauke-laging.de/ Hauke Laging].|thumb]]
+The [http://www.openpgp-schulungen.de/fuer/webautoren/ certification] image ([https://www.whonix.org/wiki/File:Hauke_laging_gepruefter_artikel.en.png hauke_laging_gepruefter_artikel.en.png]) is copyrighted by [https://www.hauke-laging.de/ Hauke Laging].|thumb|alt=Badge reading Crypto for everyone, reviewed article.]]
 = Introduction =
 
 OpenPGP is: <ref>https://www.openpgp.org/about/</ref> <ref>https://www.openpgp.org/</ref>
@@ -62,7 +62,7 @@ OpenPGP has an impressive resume and a host of applications, developer libraries
 
 '''Figure:''' ''How PGP Works'' <ref>https://en.wikipedia.org/wiki/File:PGP_diagram.svg</ref>
 
-[[File:HowPGPworks.png|border]]
+[[File:HowPGPworks.png|border|alt=Diagram of hybrid encryption: data is encrypted with a random key, the key is encrypted with the receiver's public key via RSA, and decryption reverses this with the private key.]]
 
 To learn more about this topic, refer to the following resources:
 * [https://www.openpgp.org/ OpenPGP website]
@@ -161,7 +161,7 @@ machine-parseable interface provides a stable and well documented API independen
 This might get easier with Sequoia.
 
 = Sequoia =
-[[File:Sequoia.svg|100px|thumb|Sequoia logo]]
+[[File:Sequoia.svg|100px|thumb|Sequoia logo|alt=]]
 
 [https://sequoia-pgp.org/ Sequoia] might be a suitable replacement for GnuPG.
 

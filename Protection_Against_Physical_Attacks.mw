@@ -39,7 +39,7 @@ Protection against Physical Attacks
 }}
 {{physical-mininav}}
 {{passwords_mininav}}
-[[File:Protectionagainst234234234.jpg|thumb]]
+[[File:Protectionagainst234234234.jpg|thumb|alt=]]
 {{intro|
 BIOS Password, Problematic Interfaces, Screen Lock, Virtual Consoles, Login Screen, Side Channel Attacks
 }}
@@ -92,10 +92,10 @@ Before relying on the security of the BIOS password, the user should research th
 
 '''A)''' [[Grub#GRUB_Bootloader_Authentication_Password_Prompt|GRUB <u>Bootloader Authentication Password Prompt</u>]] (related to protecting GRUB menu and settings from unauthorized changes);
 * '''Figure:''' ''GRUB Bootloader Authentication Password Prompt''
-** [[File:grub_bootloader_password.jpg]]
+** [[File:grub_bootloader_password.jpg|alt=GRUB boot screen text prompting Enter username with user typed, then Enter password]]
 '''B)''' [[Grub#EFI_-_GRUB_Bootloader_Disk_Decryption_Password_Prompt|EFI BIOS]] or [[Grub#Legacy_BIOS_-_GRUB_Bootloader_Disk_Decryption_Password_Prompt|Legacy BIOS]] <u>Disk Decryption Password Prompt</u> (related to unlocking an encrypted <code>/boot</code>):
 * '''Figure:''' ''GRUB Bootloader Disk Decryption Password Prompt (EFI)''
-** [[File:EFIGrubpass.png|600px]]
+** [[File:EFIGrubpass.png|600px|alt=VirtualBox EFI boot screen showing GRUB asking to enter the passphrase for the encrypted disk, with two no such device errors]]
 
 This chapter focuses on the <u>bootloader authentication password</u>.
 
@@ -203,7 +203,7 @@ You'll be prompted to enter a password.
 
 '''Figure:''' ''GRUB bootloader password prompt''
 
-[[File:bootloader-pass.png|400px]]
+[[File:bootloader-pass.png|400px|alt=Terminal prompt asking for username and password, with username user entered]]
 
 (We plan to update this screenshot to say "user".)
 
@@ -286,7 +286,7 @@ sudo update-grub
 
 {{IconSet|h1|7}} Reboot. A prompt should appear if you press the <code>e</code> key, <code>Esc</code>, or if you want to run Kicksecure from the boot menu, asking for a username and password.
 
-[[File:bootloader-pass.png|400px]]
+[[File:bootloader-pass.png|400px|alt=Terminal prompt asking for username and password, with username user entered]]
 
 {{IconSet|h1|8}} Done.
 
@@ -442,7 +442,7 @@ This keystroke kills the X server, and on some systems, leaves you at a text con
 Best avoided unless a screen lock is being used. See also above.
 
 = Virtual Consoles =
-[[File:virtual_console.png|thumb|virtual console example]]
+[[File:virtual_console.png|thumb|virtual console example|alt=Text console screen showing a LUKS disk passphrase prompt, the Kicksecure welcome message with default login instructions, and a localhost login prompt.]]
 
 Linux allows you to access a text-only user interface to the system by pressing a key combo like Ctrl+Alt+F1, Ctrl+Alt+F2, etc. These virtual consoles are not locked by the GUI screen locker, and do not automatically time out. If you use virtual consoles for any reason, you should always run <code>exit</code> to log out of the virtual console immediately after you are done using it. It's also advisable to check all virtual consoles and log out of them before leaving the system unattended. <ref name=screenlocker-security-forum-discussion /> <ref>
 [https://www.jwz.org/xscreensaver/faq.html Quote xscreensaver FAQ]:
@@ -460,7 +460,7 @@ See also:
 * [[Server_Security_Guide#User_Account_Password_Security|Server Security Guide, User Account Password Security]]
 
 = Login Screen =
-[[File:Gui_login.png|thumb|graphical login screen (by login manager <code>greetd + wlgreet</code>)]]
+[[File:Gui_login.png|thumb|graphical login screen (by login manager <code>greetd + wlgreet</code>)|alt=Black screen with a bordered box showing the word Login and a username prompt.]]
 
 <u>Host versus VMs:</u>
 

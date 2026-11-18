@@ -6,7 +6,7 @@ Social Engineering and (Spear) Phishing
 |description=Defenses against Scams, Social Engineering and (Spear) Phishing
 |image=Road-sign-464653_960_720.jpg
 }}
-[[File:Road-sign-464653 960 720.jpg|thumb]]
+[[File:Road-sign-464653 960 720.jpg|thumb|alt=]]
 {{intro|
 Defenses against Scams, Social Engineering and (Spear) Phishing
 }}
@@ -215,11 +215,11 @@ Security researcher Xudong Zheng provided a proof-of-concept homograph attack in
 
 '''Figure:''' ''Fake <code>apple.com</code> Website''
 
-[[File:IDNhomographexample.png|border]]
+[[File:IDNhomographexample.png|border|alt=Browser tab titled IDN Homograph Example whose address bar shows https://www.apple.com, on a page explaining it is a proof-of-concept Unicode domain flaw demo.]]
 
 '''Figure:''' ''Real <code>apple.com</code> Website''
 
-[[File:Realapplewebsite.png|border]]
+[[File:Realapplewebsite.png|border|alt=Browser showing the genuine apple.com page with https and padlock in the address bar, advertising the iPhone 12]]
 
 This example illustrates that if the punycode form does not appear by default when multiple different languages are in use (hiding the unicode form), user confusion and spoofing attacks remain a distinct possibility unless a site's URL or SSL certificate is carefully examined.
 
@@ -230,7 +230,7 @@ When navigating to the same fake <code>apple.com</code> website in Tor Browser, 
 
 '''Figure:''' ''Fake <code>apple.com</code> Website in Punycode Format''
 
-[[File:Torbrowserwithpunycode.png|border]]
+[[File:Torbrowserwithpunycode.png|border|alt=Browser address bar showing the punycode domain xn--80ak6aa92e.com on a page titled IDN Homograph Example, a demonstration of a Unicode lookalike domain]]
 
 As the fingerprinting risk of this configuration change is unknown, it is currently unrecommended. To mitigate against this threat, avoid clicking on links to popular websites via emails or on social networking or other sites. Instead, manually type the website address into the URL bar or navigate to sites via reputable search engines. Browser extensions do exist to detect whether visited websites are homographs of another domain from user-defined lists, but this action is unrecommended in Tor Browser due to the fingerprinting risk.
 
@@ -240,7 +240,7 @@ lthough the tool highlights a number of potential domain names that could be use
 
 '''Figure:''' ''IDN Check for <code>kicksecure.com</code>''
 
-[[File:IDNchecker.png|border]]
+[[File:IDNchecker.png|border|alt=Hold Integrity IDN Checker results for kicksecure.com, warning that 165 lookalike domains are possible, including a punycode variant with a dotted k.]]
 
 For further reading on this topic, see:
 

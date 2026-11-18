@@ -89,7 +89,7 @@ Telegram is another delivery method for news updates.
 
 The Telegram News Channel provides {{project_name_short}} website <code>{{project_clearnet}}</code> server status updates and news updates.
 
-[[File:1024px-Telegram_2019_Logo.svg.png|25px|link=https://t.me/s/{{project_telegram_all_news_channel_name}}]] {{ExtLink
+[[File:1024px-Telegram_2019_Logo.svg.png|25px|link=https://t.me/s/{{project_telegram_all_news_channel_name}}|alt=]] {{ExtLink
 |https://t.me/s/{{project_telegram_all_news_channel_name}}
 |text={{project_name_short}} Telegram News Channel
 |icons=none
@@ -107,17 +107,17 @@ Do not rely on social media for the latest {{project_name_short}} news or for ur
 
 Some messages from the {{project_name_short}} Feature Blog are also posted on:
 
-* [[File:1024px-Telegram_2019_Logo.svg.png|25px|link=https://t.me/s/{{project_name_short}}]] {{ExtLink
+* [[File:1024px-Telegram_2019_Logo.svg.png|25px|link=https://t.me/s/{{project_name_short}}|alt=]] {{ExtLink
 |https://t.me/s/{{project_name_short}}
 |text={{project_name_short}} Telegram News Channel
 |icons=none
 }}
-* [[File:twitter.png|25px|link=https://twitter.com/{{project_name_short}}]] {{ExtLink
+* [[File:twitter.png|25px|link=https://twitter.com/{{project_name_short}}|alt=]] {{ExtLink
 |https://twitter.com/{{project_name_short}}
 |text={{project_name_short}} Twitter Profile
 |icons=none
 }}
-* [[File:facebook.png|25px|link=https://www.facebook.com/{{project_name_short}}]] {{ExtLink
+* [[File:facebook.png|25px|link=https://www.facebook.com/{{project_name_short}}|alt=]] {{ExtLink
 |https://www.facebook.com/{{project_name_short}}
 |text={{project_name_short}} Facebook Profile
 |icons=none

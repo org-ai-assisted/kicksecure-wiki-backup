@@ -5,7 +5,7 @@
 <div class="info-box">
 == Option 1 : Graphical User Interface ([[{{{link}}}/LXQt|{{project_name_short}} with LXQt]]) ==
 
-[[File:kicksecurehome.png|400px|{{project_name_gateway_long}} LXQt|link={{{link}}}/LXQt|class="float-left"]]
+[[File:kicksecurehome.png|400px|{{project_name_gateway_long}} LXQt|link={{{link}}}/LXQt|class="float-left"|alt=Empty Kicksecure LXQt desktop with a panel at the top and Trash, File System and Home icons]]
 <div class="margin-bottom-20">
 * Beginner-friendly
 * Easy to use
@@ -16,7 +16,7 @@
 
 == Option 2 : Text Terminal Only ([[{{{link}}}/CLI|{{project_name_short}} with CLI]]) ==
 
-[[File:Kicksecure_cli.png|400px|{{project_name_gateway_short}} LXQt|link={{{link}}}/CLI|class="float-left"]]
+[[File:Kicksecure_cli.png|400px|{{project_name_gateway_short}} LXQt|link={{{link}}}/CLI|class="float-left"|alt=Kicksecure command line welcome banner showing default username user and password changeme, followed by a logged-in user session]]
 <div class="margin-bottom-20">
 * Advanced users
 * Low system requirements

@@ -13,7 +13,7 @@ Select your platform.
 {{Tab
 |title= ====={{project_name_workstation_long}}=====
 |type=section
-|image=[[File:Kicksecure-logo-rectangle.svg|50px]]
+|image=[[File:Kicksecure-logo-rectangle.svg|50px|alt=]]
 |content=
 <u>'''If''' you are using {{project_name_workstation_long}}</u> (<code>{{project_name_workstation_vm}}</code>), run.
 
@@ -25,7 +25,7 @@ Select your platform.
 {{Tab
 |title= =====Qubes=====
 |type=section
-|image=[[File:Qubes-logo-icon.png|25px]]
+|image=[[File:Qubes-logo-icon.png|25px|alt=]]
 |content=
 <u>'''If''' you are using a Qubes Template</u> (<code>{{project_name_workstation_template}}</code>), run. <ref>
 Using Qubes UpdatesProxy (<code>http://127.0.0.1:8082/</code>) because Qubes Templates are non-networked by Qubes default and therefore require UpdatesProxy for connectivity. (APT in Qubes Templates is configured to use UpdatesProxy by Qubes default.)

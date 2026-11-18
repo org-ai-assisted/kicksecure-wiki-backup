@@ -8,7 +8,7 @@ Privacy Policy Technical Details
 }}
 {{server_mininav}}
 {{legal_documents}}
-[[File:Privacy_Policy_Technical_Details.png|200px|thumb]]
+[[File:Privacy_Policy_Technical_Details.png|200px|thumb|alt=]]
 {{intro|
 Technical Details on some of the Technical Measures by {{project_name_short}} to increase privacy and security on {{project_clearnet}}.
 }}
@@ -403,7 +403,7 @@ secure protocols = https, onion
 
 '''Figure:''' ''TLS HSTS failure''
 
-[[File:TLS_HSTS_failure.png|470px]]
+[[File:TLS_HSTS_failure.png|470px|alt=Firefox error page: Did Not Connect, Potential Security Issue, because forums.whonix.org requires a secure connection under HSTS]]
 
 This could have many reasons.
 

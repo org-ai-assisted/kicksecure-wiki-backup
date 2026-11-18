@@ -5,7 +5,7 @@
 |description=Using {{q_project_name_short}}
 |image=Download-qubes.jpg
 }}
-[[File:Download-qubes.jpg|thumb]]
+[[File:Download-qubes.jpg|thumb|alt=Qubes OS logo plus Kicksecure logo]]
 {{intro|
 [[About|{{project_name_long}}]] for [https://www.qubes-os.org Qubes OS].
 }}
@@ -131,39 +131,39 @@ If the user wishes to use the ISO for any reason (such as testing, development, 
 
 {{IconSet|h1|1}} Create a new App Qube, following the instructions in the image.
 
-[[File:kickiso.png|600px]]
+[[File:kickiso.png|600px|alt=Qubes Create new qube dialog with numbered steps: new qube button, name Kicksecure, type StandaloneVM, and Advanced tab]]
 
 {{IconSet|h1|2}} Remove "Install system from device" because we want to modify the VM before installing Kicksecure on it, then press "OK" to create the Kicksecure App Qube.
 
-[[File:kickiso2.png|600px]]
+[[File:kickiso2.png|600px|alt=Advanced tab of the Create new qube dialog with the install system from device checkbox marked 1 and OK marked 2]]
 
 {{IconSet|h1|3}} Enter the Kicksecure Qube settings.
 
-[[File:kickiso3.png|600px]]
+[[File:kickiso3.png|600px|alt=Qubes Manager toolbar with red arrows pointing from the qube settings button to the Kicksecure StandaloneVM row]]
 
 {{IconSet|h1|4}} Preferably, change system storage to 20 GB, then press "Advanced".
 
-[[File:kickiso4.png|600px]]
+[[File:kickiso4.png|600px|alt=Qubes settings Basic tab with system storage max size 20 GB marked 1 and the Advanced tab marked 2]]
 
 {{IconSet|h1|5}} Disable "Include in memory balancing", then increase "Initial memory" to preferably 4 GB. Press "Apply" to adjust the edited settings, then press "Boot qube from CD-ROM" to choose the Kicksecure ISO.
 
-[[File:kickiso5.png|600px]]
+[[File:kickiso5.png|600px|alt=Qubes settings Advanced tab with numbered steps: disable memory balancing, set 4000 MB memory, Apply, and Boot qube from CD-ROM]]
 
 {{IconSet|h1|6}} Choose the App Qube where you have downloaded the Kicksecure ISO, then press "..." to browse for the ISO path.
 
-[[File:kickiso6.png|600px]]
+[[File:kickiso6.png|600px|alt=Boot Kicksecure from device dialog with from file in qube selected, debian-personal chosen, and the browse button indicated]]
 
 {{IconSet|h1|7}} Choose the Kicksecure ISO.
 
-[[File:kickiso7.png|600px]]
+[[File:kickiso7.png|600px|alt=File chooser in debian-personal showing Kicksecure-Xfce-17.2.0.7.iso, 1.4 GB, in the Downloads folder]]
 
 {{IconSet|h1|8}} Make sure everything is correctly chosen, then press "OK".
 
-[[File:kickiso8.png|600px]]
+[[File:kickiso8.png|600px|alt=Boot from device dialog with the ISO path filled in and an arrow pointing to the OK button]]
 
 {{IconSet|h1|9}} Kicksecure is booted and ready to be installed. Kicksecure supports offline installation, so there is no need for network configuration before installation.
 
-[[File:kickiso9.png|600px]]
+[[File:kickiso9.png|600px|alt=GRUB boot menu offering Kicksecure Live ISO 17.2.0.7 GNU/Linux and Advanced options]]
 
 {{IconSet|h1|10}} Done
 
@@ -173,15 +173,15 @@ If you want to use the internet before or after installation, you need to go thr
 
 {{IconSet|h1|1}} Right-click on the Network Manager taskbar icon, then choose "Edit connections..."
 
-[[File:kickiso10.png|600px]]
+[[File:kickiso10.png|600px|alt=Kicksecure live desktop in a Qubes window with the network tray menu open and Edit Connections highlighted]]
 
 {{IconSet|h1|2}} Choose "Wired connection 1", then press the settings (gear) icon.
 
-[[File:kickiso11.png|600px]]
+[[File:kickiso11.png|600px|alt=Network Connections window listing Wired connection 1 under Ethernet, with the edit button tooltip shown]]
 
 {{IconSet|h1|3}} Choose "IPv4 settings", then under "Method", select "Manual", and press "Add".
 
-[[File:kickiso12.png|600px]]
+[[File:kickiso12.png|600px|alt=Editing Wired connection 1 dialog on the IPv4 Settings tab with Manual method and empty address and DNS fields]]
 
 {{IconSet|h1|4}} Fill in the blanks with the <code>Net qube</code> info, except for the subnet mask, which should be set as <code>255.255.255.0</code> instead of <code>255</code> at the end <ref>
 https://github.com/QubesOS/qubes-issues/issues/4189#issuecomment-515803005
@@ -189,11 +189,11 @@ https://github.com/QubesOS/qubes-issues/issues/4189#issuecomment-515803005
 https://github.com/QubesOS/qubes-issues/issues/7412
 </ref>.
 
-[[File:kickiso13.png|600px]]
+[[File:kickiso13.png|600px|alt=Qubes settings for Kicksecure with the net qube IP, netmask, gateway, and virtual DNS values highlighted in red]]
 
 {{IconSet|h1|5}} After filling in the blanks, press "Save." The Network Manager gear should update itself with the newly added information.
 
-[[File:kickiso14.png|600px]]
+[[File:kickiso14.png|600px|alt=IPv4 Settings dialog filled in with address 10.137.0.25, gateway 10.138.24.120, and DNS servers 10.139.1.1 and 10.139.1.2]]
 
 {{IconSet|h1|6}} Note.
 
@@ -231,7 +231,7 @@ If the user will see:
 
 '''Figure:''' ''virtual console login screen''
 
-[[File:virtual_console.png|600px]]
+[[File:virtual_console.png|600px|alt=Text console screen showing a LUKS disk passphrase prompt, the Kicksecure welcome message with default login instructions, and a localhost login prompt.]]
 
 Then increase RAM according to the instructions in chapter [[#ISO]] to have the graphical entry.
 

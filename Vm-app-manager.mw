@@ -10,7 +10,7 @@ vm-app-manager - Virtualization-powered application sandbox
 * [[vm-app-manager|vm-app-manager - Virtualization-powered application sandbox]]
 * [[sandbox-app-launcher]]
 </div>
-[[File:Sandboxing123123.png|thumb]]
+[[File:Sandboxing123123.png|thumb|alt=]]
 {{intro|
 vm-app-manager will be a virtual machine manager that allows users to install and run applications in virtualized environments. Applications will be somewhat integrated with the host to ease use, but will be incapable of compromising the host. This is a concept, implementation is not yet underway.
 }}

@@ -20,7 +20,7 @@ __TOC__
 {{Tab
 |addToClass=margin-top-20
 |title= = Debian, Fedora and Derivatives =
-|image=[[File:Logo-linux-variety-500x500.png|60px]]
+|image=[[File:Logo-linux-variety-500x500.png|60px|alt=]]
 |content=
 {{Tab
 |type=controller
@@ -28,9 +28,9 @@ __TOC__
 {{Tab
 |active=true
 |title= == GUI ==
-|image=[[File:Clipart-gui.svg]]
+|image=[[File:Clipart-gui.svg|alt=]]
 |content=
-[[File:Gui-preview.jpg|{{project_name_short}} LXQt in VirtualBox|thumb]]
+[[File:Gui-preview.jpg|{{project_name_short}} LXQt in VirtualBox|thumb|alt=Oracle VirtualBox window titled Kicksecure-LXQt running, showing a purple-to-blue LXQt desktop with Computer, Trash and user home icons.]]
 {{#iconbulletlist:addClass=minimal
 |fontSize=18px
 |item=fa-solid fa-info cs-blue,{{project_name_short}} with LXQt {{gui}}.
@@ -62,10 +62,10 @@ The process of installing {{project_name_short}} is complete.
 }}<!-- close tab content : GUI -->
 {{Tab
 |title= == CLI ==
-|image=[[File:Utilities-terminal.png|50px]]
+|image=[[File:Utilities-terminal.png|50px|alt=]]
 |content=
 {{GoogleOff|content=
-[[File:Cli-preview.jpg|{{project_name_short}} CLI in VirtualBox|thumb|240px]]
+[[File:Cli-preview.jpg|{{project_name_short}} CLI in VirtualBox|thumb|240px|alt=VirtualBox window running Kicksecure-CLI showing the welcome text with the default username and password.]]
 {{#iconbulletlist:addClass=minimal
 |fontSize=18px
 |item=fa-solid fa-info cs-blue,{{project_name_short}} with {{cli}}.
@@ -134,7 +134,7 @@ In the following table, the pipe symbol is escaped due to its containment within
 }}<!-- close tab-controller : Debian, Fedora and Derivatives -->
 {{Tab
 |title= = Kicksecure =
-|image=[[File:Kicksecure-logo-icon.svg|25px]]
+|image=[[File:Kicksecure-logo-icon.svg|25px|alt=]]
 |content=
 {{box|text=
 {{#iconbulletlist:addClass=inverse minimal
@@ -172,7 +172,7 @@ For {{project_name_short}} with CLI (for advanced users only):
 }} <!-- close tab content : Kicksecure -->
 {{Tab
 |title= = Ubuntu =
-|image=[[File:Logo-ubuntusvg.png|25px]]
+|image=[[File:Logo-ubuntusvg.png|25px|alt=]]
 |content=
 {{box|text=
 {{#iconbulletlist:addClass=inverse minimal
@@ -185,7 +185,7 @@ For {{project_name_short}} with CLI (for advanced users only):
 }} <!-- close tab content : Ubuntu -->
 {{Tab
 |title= = Other Linux Distributions =
-|image=[[File:Logo-linux-500x500.png|25px]]
+|image=[[File:Logo-linux-500x500.png|25px|alt=]]
 |addToClass=margin-top-20
 |content=
 {{#iconbulletlist:addClass=minimal
@@ -198,13 +198,13 @@ For {{project_name_short}} with CLI (for advanced users only):
 {{Tab
 |title= = Windows =
 |content=[[VirtualBox]]
-|image=[[File:Logo-windows-500x500.png|25px]]
+|image=[[File:Logo-windows-500x500.png|25px|alt=]]
 |addToClass=margin-top-20
 }} <!-- close tab: Windows -->
 {{Tab
 |title= = Mac =
 |content=[[MacOS|macOS]]
-|image=[[File:Logo-apple-500x500.png|25px]]
+|image=[[File:Logo-apple-500x500.png|25px|alt=]]
 |addToClass=margin-top-20
 }} <!-- close tab: Mac --> <!-- Dedicated link to MacOS wiki page in the Whonix wiki and this is a MultiWiki page. -->
 }} <!-- End Tab Controller : Supported Linux distributions -->

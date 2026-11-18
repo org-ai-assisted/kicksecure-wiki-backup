@@ -6,7 +6,7 @@ swap-file-creator
 |description=Creates a swap file on LUKS-encrypted systems, optionally on unencrypted disks.
 |image=File-swap-promo.jpg
 }}
-[[File:File-swap-promo.jpg|thumb|swap-file-creator logo]]
+[[File:File-swap-promo.jpg|thumb|swap-file-creator logo|alt=]]
 {{intro|
 Creates a swap file on LUKS-encrypted systems. Useful for systems with low RAM, such as virtual machines.
 }}

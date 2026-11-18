@@ -7,7 +7,7 @@ Linux Kernel Runtime Guard (LKRG) for Debian, Whonix, Qubes, Kicksecure
 |description=LKRG performs runtime integrity checking of the Linux kernel and detection of security vulnerability exploits against the kernel.
 |image=P_lkrg2.png
 }}
-[[File:P_lkrg2.png|thumb|LKRG logo]]
+[[File:P_lkrg2.png|thumb|LKRG logo|alt=]]
 {{intro|
 LKRG performs runtime integrity checking of the Linux kernel and detection of security vulnerability exploits against the kernel.
 }}
@@ -33,7 +33,7 @@ This is a lightweight [https://en.wikipedia.org/wiki/Fork_(software_development)
 
 = Download =
 
-[[File:P_lkrg2.png|LKRG logo|100px|link= https://lkrg.org/ ]] [[File:Debian.png|30px|link=#debian]] [[File:Kicksecure-basic-logo.png|30px|link=#non-qubes-whonix]] [[File:qubes-logo-blue.png|30px|link=#qubes]] [[File:Tux.png|30px|link=#linux]] '''{{free}}''' [[File:210px-Download_Button.svg.png|210px|link=#Installation|alt=Download LKRG]]
+[[File:P_lkrg2.png|LKRG logo|100px|link= https://lkrg.org/ |alt=]] [[File:Debian.png|30px|link=#debian|alt=]] [[File:Kicksecure-basic-logo.png|30px|link=#non-qubes-whonix|alt=]] [[File:qubes-logo-blue.png|30px|link=#qubes|alt=]] [[File:Tux.png|30px|link=#linux|alt=]] '''{{free}}''' [[File:210px-Download_Button.svg.png|210px|link=#Installation|alt=Download LKRG]]
 
 = LKRG Overview =
 This is only a very brief introduction, since LKRG technical details are not the focus of this page. [https://lkrg.org/ Quote official LKRG homepage]:
@@ -97,23 +97,23 @@ We used to accept donations for LKRG via Patreon, but we currently don't. Some o
 ! '''Note'''
 |-
 
-| [[File:Debian.png|50px]]
+| [[File:Debian.png|50px|alt=]]
 | Debian hosts
 | Follow the instructions below to install from the {{project_name_short}} repository. <ref>
 https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=944476
 </ref>
-| If intending to run the VirtualBox [[File:Virtualbox_logo.png|25px|link=]] host software (such as for running {{project_name_short}} [[File:Kicksecure-basic-logo.png|25px|link=]] virtual machine (VM)) [[#Configuration|additional configuration is required]]. <ref>
+| If intending to run the VirtualBox [[File:Virtualbox_logo.png|25px|link=|alt=]] host software (such as for running {{project_name_short}} [[File:Kicksecure-basic-logo.png|25px|link=|alt=]] virtual machine (VM)) [[#Configuration|additional configuration is required]]. <ref>
 LKRG <u>can</u> be installed inside VirtualBox guest VM without configuration changes required.
 </ref>
 |-
 
-| {{Anchor|non-qubes-whonix}}[[File:Kicksecure-basic-logo.png|50px]]
+| {{Anchor|non-qubes-whonix}}[[File:Kicksecure-basic-logo.png|50px|alt=]]
 | [[{{non_q_project_name_short}}|{{non_q_project_name_short}}]]
 | Follow the installation instructions below.
 | In {{project_name_short}}, skip the following "Add {{project_name_short}} repository" step since it is already enabled by default.
 |-
 
-| {{Anchor|qubes}}[[File:qubes-logo-blue.png|50px]]
+| {{Anchor|qubes}}[[File:qubes-logo-blue.png|50px|alt=]]
 | [https://www.qubes-os.org Qubes OS] Debian based VMs
 | Follow [[Linux_Kernel_Runtime_Guard_LKRG/Qubes|these LKRG Qubes instructions]].
 | See footnote. <ref name=qubes-lkrg>
@@ -121,13 +121,13 @@ LKRG <u>can</u> be installed inside VirtualBox guest VM without configuration ch
 </ref>
 |-
 
-| {{Anchor|qubes-debian}}[[File:qubes-logo-blue.png|50px]] [[File:Kicksecure-basic-logo.png|50px]]
+| {{Anchor|qubes-debian}}[[File:qubes-logo-blue.png|50px|alt=]] [[File:Kicksecure-basic-logo.png|50px|alt=]]
 | [[{{q_project_name_short}}|{{q_project_name_long}}]]
 | Follow [[Linux_Kernel_Runtime_Guard_LKRG/Qubes|these LKRG {{q_project_name_short}} instructions]].
 | See footnote. <ref name=qubes-lkrg />
 |-
 
-| {{Anchor|linux}}[[File:Tux.png|50px]]
+| {{Anchor|linux}}[[File:Tux.png|50px|alt=]]
 | Other Linux distributions
 | LKRG is available for most Linux distributions.
 | Follow the installation instructions for non-Debian distributions on the [https://lkrg.org/ official LKRG homepage].

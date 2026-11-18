@@ -7,7 +7,7 @@ Broken Boot
 |image=Broken_boot123.jpg
 }}
 {{troubleshooting_mininav}}
-[[File:Broken_boot123.jpg|thumb]]
+[[File:Broken_boot123.jpg|thumb|alt=Close-up of shattered glass radiating from a central impact point]]
 {{intro|
 The system or {{VM}} is no longer booting?
 
@@ -15,7 +15,7 @@ This can be [[Dev/image_creation|very difficult]] to analyze and difficult to fi
 }}
 
 == What to do first ==
-[[File:kicksecure-persistent-mode-user-session.png|[[grub|GRUB]] boot menu|thumb]]
+[[File:kicksecure-persistent-mode-user-session.png|[[grub|GRUB]] boot menu|thumb|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]
 
 {{IntroLike|
 Start here. Identify where the boot process stops, then follow only the matching recovery path. This page contains multiple recovery methods; not every method applies to every boot failure.
@@ -79,7 +79,7 @@ See:
 |title= ==C. GRUB appears, but Kicksecure does not start==
 |type=section
 |content=
-[[File:kicksecure-persistent-mode-user-session.png|[[grub|GRUB]] boot menu|thumb]]
+[[File:kicksecure-persistent-mode-user-session.png|[[grub|GRUB]] boot menu|thumb|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]
 
 {{IconSet|h2|C}} GRUB appears, but boot hangs, freezes, blackscreens, or drops to a prompt.
 
@@ -263,7 +263,7 @@ sudo apt-get install --reinstall greetd wlgreet
 *** Your desktop might not load or may behave erratically if your system's graphics drivers are not working properly with your graphics hardware. You can try to boot with safe graphics mode to see if this is a likely issue. To do this, when Kicksecure's boot menu appears, press <code>e</code> to edit the boot options. Move the cursor down to the line that starts with <code>linux</code>, then move your cursor to immediately after the <code>ro</code> argument and type <code>nomodeset</code>, ensuring that the newly added option is separated from surrounding options with at least one space on each side. Then press Ctrl+X to boot.
 
 === GRUB appears, but Kicksecure live USB does not start ===
-[[File:kicksecure-persistent-mode-user-session.png|[[grub|GRUB]] boot menu|thumb]]
+[[File:kicksecure-persistent-mode-user-session.png|[[grub|GRUB]] boot menu|thumb|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]
 
 {{IntroLike|
 Use this section when the Kicksecure live USB reaches GRUB, but boot hangs, freezes, shows a black screen, or drops to a prompt before the live system starts. This is different from repairing an installed system.
@@ -551,7 +551,7 @@ Super Grub2 Disk is now installed.
 
 Insert your Super Grub2 Disk USB drive into the computer you wish to boot, then boot the system from the USB drive. You will be shown the Super Grub2 Disk user interface.
 
-[[File:Super Grub2 Disk.png|thumb|The Super Grub2 Disk user interface.]]
+[[File:Super Grub2 Disk.png|thumb|The Super Grub2 Disk user interface.|alt=Super Grub2 Disk boot menu with entries such as Languages, Detect and show boot methods, Boot manually and Print devices/partitions]]
 
 To find available operating systems on the computer, use the arrow keys to select "Detect and show boot methods", then press Enter and wait for OS autodetection to complete. You will be shown a list of boot options.
 

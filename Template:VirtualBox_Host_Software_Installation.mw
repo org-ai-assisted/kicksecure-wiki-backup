@@ -21,7 +21,7 @@ If you see the following error message:
 
 '''Figure:''' ''Microsoft Visual C++ 2019 Redistributable Package Error''
 
-[[File:VirtualBox_Microsoft_Visual_C_2019_Redistributable_Package.png|Microsoft Visual C++ 2019 Redistributable Package Error]]
+[[File:VirtualBox_Microsoft_Visual_C_2019_Redistributable_Package.png|Microsoft Visual C++ 2019 Redistributable Package Error|alt=Oracle VM VirtualBox 7.0.10 Setup warning dialog saying the Microsoft Visual C++ 2019 Redistributable Package must be installed first, with an OK button.]]
 
 {{quotation
 |quote=
@@ -50,7 +50,7 @@ After downloading the VirtualBox installer exe and starting it, the user should 
 
 '''Figure:''' ''Windows signature signature verification window for VirtualBox''
 
-[[File:Virtualbox_windows_digital_software_verification.png|400px|border]]
+[[File:Virtualbox_windows_digital_software_verification.png|400px|border|alt=Windows User Account Control prompt for Oracle VM VirtualBox 6.1.12 installer showing Verified publisher: Oracle Corporation, with Yes and No buttons.]]
 
 Advanced users might wish to learn more about {{kicksecure_wiki
 |wikipage=Authenticode
@@ -192,7 +192,7 @@ The procedure of installing the VirtualBox host software is complete.
 }}<!-- close tab : Debian -->
 {{Tab
 |title= === Kicksecure ===
-|image=[[File:Kicksecure-logo-rectangle.svg|50px]]
+|image=[[File:Kicksecure-logo-rectangle.svg|50px|alt=]]
 |content=
 {{Box|text=
 '''{{Kicksecure}} host operating systems'''

@@ -7,7 +7,7 @@ Operating System Software and Updates
 |image=Operatingsystemupdated234234.jpg
 }}
 {{release_mininav}}
-[[File:Operatingsystemupdated234234.jpg|thumb]]
+[[File:Operatingsystemupdated234234.jpg|thumb|alt=]]
 {{intro|
 This page contains details on updating the {{project_name_short}} operating system, including frozen packages. Most software in {{project_name_short}} is maintained in a frozen state to ensure stability, so updates primarily focus on critical security fixes. The page also covers update indicators, version numbers, release upgrades versus re-installation, and common issues and their solutions.
 }}
@@ -97,7 +97,7 @@ Select your platform.
 
 {{Tab
 |title= === {{non_q_project_name_short}} ===
-|image=[[File:{{project_name_short}}-logo-icon.svg]]
+|image=[[File:{{project_name_short}}-logo-icon.svg|alt=]]
 |content=
 There are [[Systemcheck#Update_Notifications_by_updatecheck|Update Notifications by updatecheck]].
 
@@ -106,7 +106,7 @@ Otherwise, no special notice.
 
 {{Tab
 |title= === {{q_project_name_short}} ===
-|image=[[File:Qubes-logo-icon.png]]
+|image=[[File:Qubes-logo-icon.png|alt=]]
 |content=
 {{mbox
 | type    = notice
@@ -615,7 +615,7 @@ To confirm everything is functional, update the package lists and then upgrade t
 sudo apt update && sudo apt full-upgrade
 }}
 
-[[File:Windows_logo_-_2012.svg.png|15px|link=]] Windows <u>10</u>, [[File:Virtualbox_logo.png|25px|link=]] VirtualBox users only: refer to the [https://forums.whonix.org/t/hash-sum-mismatch-downloads-all-fail-since-win10-2004-update/9740/2 Hash Sum mismatch?] forum thread.
+[[File:Windows_logo_-_2012.svg.png|15px|link=|alt=]] Windows <u>10</u>, [[File:Virtualbox_logo.png|25px|link=|alt=]] VirtualBox users only: refer to the [https://forums.whonix.org/t/hash-sum-mismatch-downloads-all-fail-since-win10-2004-update/9740/2 Hash Sum mismatch?] forum thread.
 
 == Non-functional Onion Services ==
 

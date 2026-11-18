@@ -721,9 +721,9 @@ Backport the new changes implemented by https://github.com/Archi-Strasbourg/medi
 ** The Kicksecure team pointed out that images with a self reference and links the a self reference are handled differently. While a link is rendered to an a-lement with the classes "selflink mw-selflink", there is no such thing with images which are not identifiable as linking to the very page they're on https://phabricator.wikimedia.org/T336256 - a contributor said they could prove different on their own system. But this can be demonstrated on this system
 *** Self link [[Dev/mediawiki]]
 *** Compare to link to <code><nowiki>[[Homepage]]</nowiki></code> (avoiding link for SEO)
-*** Image link to image source [[File:Kicksecure-badge.png|35px]]
-*** Image link to About [[File:Kicksecure-badge.png|35px|link=About]]
-*** Image link to this page (self link) [[File:Kicksecure-badge.png|35px|link=Dev/mediawiki]]
+*** Image link to image source [[File:Kicksecure-badge.png|35px|alt=Hardened by Kicksecure badge with the Kicksecure logo]]
+*** Image link to About [[File:Kicksecure-badge.png|35px|link=About|alt=Hardened by Kicksecure badge with the Kicksecure logo]]
+*** Image link to this page (self link) [[File:Kicksecure-badge.png|35px|link=Dev/mediawiki|alt=Hardened by Kicksecure badge with the Kicksecure logo]]
 *** The images have links and the syntax is correct as the links work, but there is no "selflink mw-selflink" classes present
 ** Parsoid is bound to take over in the future. But currently they are working on applying selflink to normal links. So it will probably still take a lot of time for Parsoid to replace the legacy parser https://phabricator.wikimedia.org/T69486 - in this issue there was a reference to the image selflink problem that our team brought up. There seems to be current progress however https://gerrit.wikimedia.org/r/c/mediawiki/services/parsoid/+/991827
 
@@ -951,12 +951,12 @@ For demonstrative purposes only: https://web.archive.org/web/20220204103725/http
 *# NOTE: Because of this behavior thumbnails do NOT need to be wrapped in [[Dev/mediawiki#ContentImage_.28Template.29_-_image_wrapper_for_overlenght_images]]
 
 == Back To Top Button==
-[[File:BackToTheTopButton2.png|thumb|Illustrative, cropped screenshot of the back to the top scrolling button]]
+[[File:BackToTheTopButton2.png|thumb|Illustrative, cropped screenshot of the back to the top scrolling button|alt=]]
 
 '''Figure:''' ''Back to the Top Button''
 
 {{ContentImage|
-[[File:BackToTheTopButton1.png|470px]]
+[[File:BackToTheTopButton1.png|470px|alt=Wiki page with a gray square back-to-top button with an up chevron at the bottom right, under a sticky header with Kicksecure logo and Donate]]
 }}
 
 * Back to Top Button is realized via {{CustomRepo|BackToTopButton.css}} and {{CustomRepo|BackToTopButton.js}} which are imported in Common.css and Common.js and thereby available for all pages, including Vector styled pages
@@ -1392,7 +1392,7 @@ Example 2 Result {{Box|addToClass=position-relative|text={{ComingSoon}}text box<
 * These are the relevant files
 ** {{CustomRepo|DebugViaUrlModal.js}}
 ** {{CustomRepo|DebugViaUrlModal.css}}
-[[File:DebugViaUrlModal-legend.jpg|300px]]
+[[File:DebugViaUrlModal-legend.jpg|300px|alt=Debugging helper dialog with a generated URL box (A), link button (B), buttons Select JS, No JS, No CSS, No JS+CSS (C) and a list of MediaWiki scripts marked on or off (D)]]
 * Here you can see the modal
 ** (A) is the CodeSelect-Box where you can copy the generated link
 ** (B) is a button where you can directly open the generated link
@@ -2087,7 +2087,7 @@ Example 2 using (1) dark style (2) an icon and (3) an info paragraph :
 <div class="mininav mn-dark">
 Example Navigation Title
 * [[About]]
-* [[File:Tux.png|50px|link=]][[Linux]]
+* [[File:Tux.png|50px|link=|alt=]][[Linux]]
 * [[FAQ]]
 </div>
 }}
@@ -2097,7 +2097,7 @@ renders to :
 <div class="mininav mn-dark">
 Example Navigation Title
 * [[About]]
-* [[File:Tux.png|50px|link=]][[Linux]]
+* [[File:Tux.png|50px|link=|alt=]][[Linux]]
 * [[FAQ]]
 </div>
 
@@ -2535,7 +2535,7 @@ Section 2 content
 {{Tab
 |title= ==Section 1==
 |type=section
-|image=[[File:Logo-linux-500x500.png|25px]]
+|image=[[File:Logo-linux-500x500.png|25px|alt=]]
 |addToClass=info-box
 |active=true
 |content=Section 1 content
@@ -2615,9 +2615,9 @@ Section 2 content
 ** This can be easily achieved using the Template ThumbGallery. Simply wrap you thumbs into the template and below 540px display width these thumbnails will become a gallery
 ** Example {{CodeSelect|code=
 {{ThumbGallery{{!}}justify=left{{!}}mode=gallery{{!}}
-[[File:Kicksecure-basic-logo.png|thumb|100px|[[Dev/Logo|{{project_name_short}} logo]]]]
-[[File:Debian.png|thumb|100px|Debian logo]]
-[[File:Linuxkerneltux.png|thumb|100px|Linux logo]]
+[[File:Kicksecure-basic-logo.png|thumb|100px|[[Dev/Logo|{{project_name_short}} logo]]|alt=]]
+[[File:Debian.png|thumb|100px|Debian logo|alt=]]
+[[File:Linuxkerneltux.png|thumb|100px|Linux logo|alt=]]
 }}
 }}
 * '''Tests''' : [[Dev/wikitest#ThumbGallery_.28Template.29|ThumbGallery (Template)]]
@@ -2626,12 +2626,12 @@ Section 2 content
 ** {{CustomRepo|Utility.css}}
 
 == TOC Level Switcher ==
-[[File:TOCswitcher2.png|90px|border|thumb|Table of Contents Level Switcher wiki button]]
+[[File:TOCswitcher2.png|90px|border|thumb|Table of Contents Level Switcher wiki button|alt=]]
 
 '''Figure:''' ''Table of Contents Level Switcher''
 
 {{ContentImage|
-[[File:TOCswitcher1.png|470px|border]]
+[[File:TOCswitcher1.png|470px|border|alt=Wiki page with the Contents box expanded and a small floating toolbar with a star, level number 2, and 1 beside it]]
 }}
 
 # There is a lot of content on this wiki and there are many headlines on one page. So the table of contents (toc) is sometimes very overwhelming. To improve this experience for the user we created a JavaScript augmentation for the TOC

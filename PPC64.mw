@@ -7,8 +7,8 @@ Installation of {{project_name_long}} on a ppc64
 |image=Download-ppc64.jpg
 }}
 {{architecture_mininav}}
-[[File:Download-ppc64.jpg|thumb]]
-[[File:Ppc64-logo.svg|thumb|200px]]
+[[File:Download-ppc64.jpg|thumb|alt=ppc64 chip plus Kicksecure logo]]
+[[File:Ppc64-logo.svg|thumb|200px|alt=]]
 {{intro|
 {{project_name_short}} can be installed on a <code>ppc64</code>. Here's how.
 }}

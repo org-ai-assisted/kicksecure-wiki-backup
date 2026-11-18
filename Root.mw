@@ -7,7 +7,7 @@ title=Safely Use Root Commands
 |image=User-versus-root.png
 }}
 {{passwords_mininav}}
-[[File:User-versus-root.png|200px|thumb]]
+[[File:User-versus-root.png|200px|thumb|alt=Cartoon comparison of two penguins: a USER penguin with a tool belt and a ROOT penguin in armor holding a large wrench, with a padlock above]]
 {{intro|
 This page gives tips on using <code>sudo</code> / <code>root</code> (privileged) commands safely. The <code>root</code> account is a special user account in Unix-based operating systems that has complete access to all files and commands on a system. It is typically used only for system administration tasks that require unrestricted access.
 }}
@@ -196,7 +196,7 @@ Select your platform.
 {{Tab
 |title= ==== Kicksecure ====
 |type=section
-|image=[[File:Kicksecure-logo-rectangle.svg|25px]]
+|image=[[File:Kicksecure-logo-rectangle.svg|25px|alt=]]
 |content=
 
 {{IconSet|h2|3}} '''Select the application type.'''
@@ -256,7 +256,7 @@ gsudo-x gparted
 {{Tab
 |title= ==== Kicksecure for Qubes ====
 |type=section
-|image=[[File:Qubes-logo-icon.png|25px]]
+|image=[[File:Qubes-logo-icon.png|25px|alt=]]
 |content=
 * <u>Note:</u> [[Qubes|Kicksecure-Qubes]] only. <ref>
 lxsudo is still functional in Qubes because Qubes upstream ticket [https://github.com/qubesos/qubes-issues/issues/3366 Use Wayland instead of X11 to increase performance and improve security #3366] has not been implemented yet at the time of writing.

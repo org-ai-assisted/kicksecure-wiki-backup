@@ -6,7 +6,7 @@
 |description=This article explains how umask hardening can cause file permission issues when copying files, with step-by-step instructions to reproduce and resolve the problem.
 |image=Umask-clipart.svg
 }}
-[[File:Umask-clipart.svg|thumb]]
+[[File:Umask-clipart.svg|thumb|alt=]]
 {{intro|
 Due to the [[Dev/Strong_Linux_User_Account_Isolation#umask_hardening|umask hardening]] security feature, a usability issue may arise where file permissions are more restrictive than expected.
 

@@ -1,4 +1,4 @@
-[[File:RAMAdjustedDesktopStarter.png|thumb|<code>rads</code> (older version screenshot)]]
+[[File:RAMAdjustedDesktopStarter.png|thumb|<code>rads</code> (older version screenshot)|alt=VirtualBox console of Whonix-Gateway showing the RAM Adjusted Desktop Starter message that the login manager is not started because only 121 MB RAM is available]]
 
 By default, {{project_name_gateway_short}} VMs are configured with 2048 MB of virtual RAM. This can be reduced on systems with limited available resources.
 

@@ -6,8 +6,8 @@ Dev/videos
 |description=Video Drafts for {{project_name_long}}
 }}
 <div class="mininav">
-* [[File:{{project_name_short}}-logo-icon.svg|300px|link=Dev/videos|Kicksecure Video Drafts]] [[Dev/videos|Kicksecure Video Drafts]]
-* [[File:Whonix-logo-icon.svg|300px|link=https://www.whonix.org/wiki/Dev/videos|Whonix Video Drafts]] [https://www.whonix.org/wiki/Dev/videos Whonix Video Drafts]
+* [[File:{{project_name_short}}-logo-icon.svg|300px|link=Dev/videos|Kicksecure Video Drafts|alt=]] [[Dev/videos|Kicksecure Video Drafts]]
+* [[File:Whonix-logo-icon.svg|300px|link=https://www.whonix.org/wiki/Dev/videos|Whonix Video Drafts|alt=]] [https://www.whonix.org/wiki/Dev/videos Whonix Video Drafts]
 </div>
 {{intro|
 Video Drafts for {{project_name_short}}

@@ -6,7 +6,7 @@
 |description={{project_name_short}} for Apple macOS on Intel-based MacBook and Apple Silicon.
 |image=Logo-apple-500x500.png
 }}
-[[File:Logo-apple-500x500.png|thumb|link=|class=hide-enlarge|100px|macOS]]
+[[File:Logo-apple-500x500.png|thumb|link=|class=hide-enlarge|100px|macOS|alt=]]
 {{intro|
 {{project_name_short}} for '''Apple macOS''' on '''Intel-based MacBook''' and '''Apple Silicon.'''
 
@@ -18,7 +18,7 @@
 
 {{Tab
 |title= = Hardware =
-|image=[[File:Computer-laptop.svg.png]]
+|image=[[File:Computer-laptop.svg.png|alt=]]
 |addToClass=info-box
 |content=
 {{IntroLike|
@@ -40,10 +40,10 @@ Select Intel or Apple Silicon.
 
 {{Tab
 |title= = Intel-based MacBook =
-|image=[[File:Apple-with-intel-logo.jpg]]
+|image=[[File:Apple-with-intel-logo.jpg|alt=]]
 |addToClass=info-box
 |content=
-[[File:Apple-with-intel-logo.jpg|thumb|100px]]
+[[File:Apple-with-intel-logo.jpg|thumb|100px|alt=]]
 {{mbox
 |icon=fa-solid fa-info cs-red-light
 |text=
@@ -55,11 +55,11 @@ Follow the documentation on the '''[[VirtualBox]]''' wiki page.
 
 {{Tab
 |title= = Apple Silicon =
-|image=[[File:Apple-mx-logo.jpg]]
+|image=[[File:Apple-mx-logo.jpg|alt=]]
 |addToClass=info-box
 |content=
 {{Anchor|M1}}{{Anchor|M2}}
-[[File:Apple-mx-logo.jpg|thumb|100px]]
+[[File:Apple-mx-logo.jpg|thumb|100px|alt=]]
 '''For Mac <u>M1</u>, <u>M2</u>, <u>M3</u>, <u>M4</u>, ...'''
 
 {{IntroLike|
@@ -78,11 +78,11 @@ Follow the documentation on the '''[[VirtualBox]]''' wiki page.
 
 {{Tab
 |title= = non-Apple Hardware Hackintosh =
-|image=[[File:Hackintosh-logo.svg]]
+|image=[[File:Hackintosh-logo.svg|alt=]]
 |addToClass=info-box
 |content=
 {{Community_Support|scope=chapter}}
-[[File:Hackintosh-logo.svg|thumb|100px]]
+[[File:Hackintosh-logo.svg|thumb|100px|alt=]]
 
 Virtualization on <code>osx86</code> aka "Hackintosh" machines with unmodified "vanilla" kernels works well, but some additional BIOS/UEFI settings need to be confirmed to ensure system stability. As of November 2018 [https://en.wikipedia.org/wiki/VT-d Intel VT-d] is not recommended, although some systems may function if it is enabled. Later BIOS revisions from American Megatrends Inc. (AMI) seem to have improved support compared to earlier releases.
 

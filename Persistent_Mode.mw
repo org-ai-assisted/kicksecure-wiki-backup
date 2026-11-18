@@ -7,7 +7,7 @@ title=Persistent Mode for {{project_name_long}}
 |image=Live-mode-promo.jpg
 }}
 {{live}}
-[[File:kicksecure-persistent-mode-user-session.png|thumb|Persistent Mode - User Session]]
+[[File:kicksecure-persistent-mode-user-session.png|thumb|Persistent Mode - User Session|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]
 {{intro|
 '''{{project_name_short}} can be booted in Persistent Mode.'''
 
@@ -22,7 +22,7 @@ Booting into persistent mode is straightforward. During the boot menu, simply do
 
 '''Figure:''' ''<code>Persistent</code> Mode Boot - User Session''
 
-[[File:kicksecure-persistent-mode-user-session.png|600px|Persistent Mode - User Session]]
+[[File:kicksecure-persistent-mode-user-session.png|600px|Persistent Mode - User Session|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]
 
 There is one exception: When booting from the [[ISO]], the system will always default to ISO live mode, meaning changes will not be saved.
 

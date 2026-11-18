@@ -12,7 +12,7 @@ Verified Boot
 |image=Verifiedboot1245.png
 }}
 {{boot_firmware}}
-[[File:Verifiedboot1245.png|thumb|200px]]
+[[File:Verifiedboot1245.png|thumb|200px|alt=]]
 {{intro|
 Boot chain and integrity guarantees. What is Verified Boot, Secure Boot, Trusted Boot, dm-verity? Advantages, restrictions for user freedom, and more.
 }}

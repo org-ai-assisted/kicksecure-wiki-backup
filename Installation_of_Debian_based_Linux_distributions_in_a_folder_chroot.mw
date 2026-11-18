@@ -6,7 +6,7 @@ title=Install Debian (based) Linux Distributions in a Folder (chroot)
 |description=How to create a chroot (change root) in a secure way using mmdebstrap and systemd-nspawn.
 |image=Debianinafolder234234.png
 }}
-[[File:Debianinafolder234234.png|thumb|250px]]
+[[File:Debianinafolder234234.png|thumb|250px|alt=]]
 {{intro|
 How to create a chroot (change root) in a secure way using mmdebstrap and systemd-nspawn.
 }}

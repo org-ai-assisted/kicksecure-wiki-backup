@@ -6,7 +6,7 @@ Networking
 |description=Overview of Kicksecure's networking features, sysctl settings such as drop_gratuitous_arp, arp_ignore, arp_filter, and shared_media.
 |image=Networking.png
 }}
-[[File:Networking.png|thumb|200px]]
+[[File:Networking.png|thumb|200px|alt=Shield at the center of a network board with labels showing example IP, MAC, IPv4 and IPv6 addresses for four interfaces]]
 <div class="mininav">
 * [[Networking]]
 * [[DNS]]

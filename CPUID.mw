@@ -10,7 +10,7 @@ CPUID - Security and Privacy Risks
 * [[System_identity_camouflage|System Identity Camouflage and Virtual Machine Cloaking]]
 * [[CPUID|CPUID - Security and Privacy Risks]]
 </div>
-[[File:Cpuid1.png|thumb|'''Figure:''' ''<code>cpuid</code> Screenshot 1 / 4'' ([[#CPUID Screenshots|more screenshots]]) ([[#cpuid_usage|usage]])]]
+[[File:Cpuid1.png|thumb|'''Figure:''' ''<code>cpuid</code> Screenshot 1 / 4'' ([[#CPUID Screenshots|more screenshots]]) ([[#cpuid_usage|usage]])|alt=Terminal output of cpuid and cpuid -1 on an AMD Ryzen Zen CPU, showing vendor, family, model and feature flags.]]
 {{intro|
 [https://en.wikipedia.org/wiki/CPUID CPUID] is a processor function that allowing software to discover the model and capabilities of the processor. This can be a security or privacy risk.
 }}
@@ -47,19 +47,19 @@ Author of screenshots: [https://screenshots.debian.net/package/cpuid screenshots
 
 '''Figure:''' ''<code>cpuid</code> Screenshot 1 / 4''
 
-[[File:Cpuid1.png|border]]
+[[File:Cpuid1.png|border|alt=Terminal output of cpuid and cpuid -1 on an AMD Ryzen Zen CPU, showing vendor, family, model and feature flags.]]
 
 '''Figure:''' ''<code>cpuid</code> Screenshot 2 / 4''
 
-[[File:Cpuid3.png|border]]
+[[File:Cpuid3.png|border|alt=Terminal output of cpuid on an AMD Opteron Piledriver CPU, showing version information and feature flags.]]
 
 '''Figure:''' ''<code>cpuid</code> Screenshot 3 / 4''
 
-[[File:Cpuid2.png|border]]
+[[File:Cpuid2.png|border|alt=Terminal output of cpuid -r listing raw register values for CPU 0 to 7.]]
 
 '''Figure:''' ''<code>cpuid</code> Screenshot 4 / 4''
 
-[[File:Cpuid4.png|border]]
+[[File:Cpuid4.png|border|alt=Terminal running cpuid on an Intel CPU, showing a table of raw register values, vendor ID and brand string.]]
 
 = CPUID Technical Background =
 {{box|text=

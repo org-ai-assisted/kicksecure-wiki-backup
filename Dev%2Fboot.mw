@@ -648,7 +648,7 @@ The RPi bootloader is not the same as u-boot, but it can chainload u-boot.
 
 ===== Raspberry Pi EEPROM Manager - rpi-eeprom-mgr =====
 
-[[File:Raspberry_Pi_EEPROM_Manager_(rpi-eeprom-mgr).png|thumb|Raspberry Pi EEPROM Manager (<code>rpi-eeprom-mgr</code>)]]
+[[File:Raspberry_Pi_EEPROM_Manager_(rpi-eeprom-mgr).png|thumb|Raspberry Pi EEPROM Manager (<code>rpi-eeprom-mgr</code>)|alt=Text menu of Raspberry Pi EEPROM Manager actions, with Display/Change Boot Order highlighted and Ok and Cancel buttons]]
 
 {{quotation
 |quote='''Raspberry Pi EEPROM Manager''' (<code>rpi-eeprom-mgr</code>) is a menu-driven front-end for <code>rpi-eeprom-update</code>.

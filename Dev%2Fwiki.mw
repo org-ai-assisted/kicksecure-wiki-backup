@@ -11,7 +11,7 @@ Syntax Highlighting vs Link Suggestions, Links with Web Archive, Onions, CodeSel
 }}
 = Wiki History =
 
-Check the [[File:Supermenu3.png|30px|<code>Super Menu</code>]] (down) ("<code>&darr;</code>") symbol in the wiki website header. In the wiki header. Not here in this wiki text content. This is also called [[Dev/wiki#Super_Menu|Super Menu]].
+Check the [[File:Supermenu3.png|30px|<code>Super Menu</code>|alt=]] (down) ("<code>&darr;</code>") symbol in the wiki website header. In the wiki header. Not here in this wiki text content. This is also called [[Dev/wiki#Super_Menu|Super Menu]].
 
 Click on <code>History</code>. It leads to the page's revision history.
 
@@ -55,34 +55,34 @@ https://github.com/octfx/wiki-seo/issues/30
 = Save Buttons =
 JavaScript (JS) version:
 
-* <code>Save Continue</code> [[File:Savecontinuebutton.png]] - easy
+* <code>Save Continue</code> [[File:Savecontinuebutton.png|alt=Green button labeled Save continue]] - easy
 * <code>Save Changes</code> [Missing Screenshot] - advanced editors
 
 If you are not sure which button to use, the <code>Save Changes</code> is a good choice. Feel free to experiment with the <code>Save Changes</code>  button and use it if it seems useful for you.
 
 no-JavaScript (noJS) version:
 
-* <code>Submit changes</code>[[File:Submitechangesbutton.png]]
+* <code>Submit changes</code>[[File:Submitechangesbutton.png|alt=Blue Submit changes button]]
 
 A bit of potential confusion:<br />
 The button <code>Submit changes</code> is renamed to <code>Save Changes</code> when JS is enabled.
 
 = Pen Symbol - Syntax Highlighting =
-[[File:Pensymbole3.png|thumb|<code>Pen Symbol</code>]]
+[[File:Pensymbole3.png|thumb|<code>Pen Symbol</code>|alt=]]
 
 Enabling/Disabling syntax highlighting which is useful for editors.
 
 With:
 
-[[File:Pensymbole.png|470px]]
+[[File:Pensymbole.png|470px|alt=MediaWiki source editor for the Main Page showing wikitext with header, title and SEO template markup]]
 
 Without
 
-[[File:Pensymbole2.png|470px]]
+[[File:Pensymbole2.png|470px|alt=MediaWiki edit page for Main Page with the toolbar and wikitext source in the editor]]
 
 Symbol:
 
-[[File:Pensymbole3.png|90px]]
+[[File:Pensymbole3.png|90px|alt=]]
 
 This is thanks to [https://www.mediawiki.org/wiki/Extension:CodeMirror extension CodeMirror].
 
@@ -92,33 +92,33 @@ When enabling syntax highlighting using the <code>Pen Symbol</code>, link sugges
 So if the editor wishes to receive link suggestions, (temporarily) disable syntax highlighting using the <code>Pen Symbol</code>. When the editing task requires no link suggestions, enabling syntax highlighting might be useful. It is easy to switch from one mode to another.
 
 = Floppy Disc Restore Button =
-[[File:Savebutton2.png|thumb|90px|Floppy Disc Save Button]]
+[[File:Savebutton2.png|thumb|90px|Floppy Disc Save Button|alt=]]
 
 This feature requires JavaScript (JS).
 
 Every time you press one of the following buttons:
 
-* <code>Save Continue</code> [[File:Savecontinuebutton.png]]
+* <code>Save Continue</code> [[File:Savecontinuebutton.png|alt=Green button labeled Save continue]]
 * <code>Save Changes</code>
 
-it will store the page edits in your browser local storage. To restore it press the <code>Floppy Disk Restore</code> [[File:Savebutton2.png|30px]] button again.
+it will store the page edits in your browser local storage. To restore it press the <code>Floppy Disk Restore</code> [[File:Savebutton2.png|30px|alt=]] button again.
 
 '''Figure:''' ''Floppy Disc Restore Button Screenshot''
 
-[[File:Savebutton.png|border|470px]]
+[[File:Savebutton.png|border|470px|alt=MediaWiki source editor for Dev/wiki with the green floppy-disc save icon in the toolbar under the mouse pointer]]
 
 = Super Menu =
-[[File:Supermenu3.png|thumb|<code>Super Menu</code>]]
+[[File:Supermenu3.png|thumb|<code>Super Menu</code>|alt=]]
 
 This is the Super Menu. Not much to explain about it. Just mentioned here to define what is meant by <code>Super Menu</code>.
 
 '''Figure:''' '''<code>Super Menu</code> Screenshot'''
 
-[[File:Supermenu.png|470px]]
+[[File:Supermenu.png|470px|alt=Wiki page menu open with Tools, Page and User sections: Special pages, Read, Edit, Protection, Purge, Create account and Login]]
 
 '''Figure:''' '''<code>Super Menu When Logged In</code> Screenshot'''
 
-[[File:Supermenuloggedin.png|470px]]
+[[File:Supermenuloggedin.png|470px|alt=Open Super Menu with Tools, Page, and User columns: upload, special pages, edit, history, move, delete, preferences, watchlist, logout]]
 
 = CodeSelect =
 Syntax:
@@ -240,30 +240,30 @@ example 2
 
 Change the orientation of the table of contents. Choose which one suits you.
 
-[[File:TOCswitcher2.png|90px|border|thumb|Table of Contents Level Switcher wiki button]]
+[[File:TOCswitcher2.png|90px|border|thumb|Table of Contents Level Switcher wiki button|alt=]]
 
 '''Figure:''' ''Table of Contents Level Switcher''
 
-[[File:TOCswitcher1.png|470px|border]]
+[[File:TOCswitcher1.png|470px|border|alt=Wiki page with the Contents box expanded and a small floating toolbar with a star, level number 2, and 1 beside it]]
 
 = Back to the Top Button =
 
 It is the arrow down button allow user to press on it and send the scrolling to top of the page immediately instead of scrolling up.
 
-[[File:BackToTheTopButton2.png|thumb|Illustrative, cropped screenshot of the back to the top scrolling button]]
+[[File:BackToTheTopButton2.png|thumb|Illustrative, cropped screenshot of the back to the top scrolling button|alt=]]
 
 '''Figure:''' ''Back to the Top Button''
 
-[[File:BackToTheTopButton1.png|470px]]
+[[File:BackToTheTopButton1.png|470px|alt=Wiki page with a gray square back-to-top button with an up chevron at the bottom right, under a sticky header with Kicksecure logo and Donate]]
 
 = Full Screen Button =
-[[File:fullscreenbutton2.png|thumb|200px|full screen button in wiki editor]]
+[[File:fullscreenbutton2.png|thumb|200px|full screen button in wiki editor|alt=]]
 
 When editing a wiki page the full screen symbol will fill the entire page.
 
 '''Figure:''' ''Full Screen Button''
 
-[[File:fullscreenbutton.png|470px|border]]
+[[File:fullscreenbutton.png|470px|border|alt=MediaWiki editor for Dev/wiki with toolbar; the green full screen button at top right is highlighted by the cursor]]
 
 = LinkSuggest vs CodeMirror =
 Unfortunately, [https://www.mediawiki.org/wiki/Extension:CodeMirror Extension:CodeMirror] breaks [https://www.mediawiki.org/wiki/Extension:LinkSuggest Extension:LinkSuggest].
@@ -395,7 +395,7 @@ upstream bug reports:
 
 = Special:SpecialPages =
 
-[[File:Specialpages.png|500px]]
+[[File:Specialpages.png|500px|alt=Kicksecure wiki Special pages listing with Maintenance reports links such as Broken redirects, Orphaned pages and Wanted pages]]
 
 = Expand Button =
 <pre>
@@ -568,7 +568,7 @@ Example tab controller:
 {{Tab
 |title= ==Section 1==
 |type=section
-|image=[[File:Logo-linux-500x500.png|25px]]
+|image=[[File:Logo-linux-500x500.png|25px|alt=]]
 |addToClass=info-box
 |content=Section 1 content
 }}

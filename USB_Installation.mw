@@ -7,7 +7,7 @@ Installation of {{project_name_long}} on a USB
 |image=Download-usb.jpg
 }}
 {{live}}
-[[File:Download-usb.jpg|thumb|class=lead-wide]]
+[[File:Download-usb.jpg|thumb|class=lead-wide|alt=USB stick plus Kicksecure logo]]
 {{intro|
 '''{{project_name_short}} can be used as a plug-and-play operating system on a USB data stick'''. It comes in two flavors: a non-persistent Live USB system, and a persistent operating system booted from USB.
 }}
@@ -119,7 +119,7 @@ Both USB devices will be overwritten. All data on the USB devices will be lost.
 
 '''Figure:''' ''<code>Persistent</code> Mode Boot - User Session''
 
-[[File:kicksecure-persistent-mode-user-session.png|600px|Persistent Mode - User Session]]
+[[File:kicksecure-persistent-mode-user-session.png|600px|Persistent Mode - User Session|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]
 
 {{IconSet|h2|11}} Done.
 
@@ -160,7 +160,7 @@ Advanced users can also create a {{project_name_short}} USB stick by following t
 |title= == OPT-IN LIVE Mode ==
 |image=
 |content=
-[[File:kicksecure-live-mode-user-session.png|thumb|Live Mode boot option selected.]]
+[[File:kicksecure-live-mode-user-session.png|thumb|Live Mode boot option selected.|alt=Boot mode menu with the LIVE Mode, USER Session, disposable use entry highlighted]]
 This mode boots a {{project_name_short}} USB installation in Live Mode. This option can be useful in certain situations.
 
 {{IconSet|h2|2}} Follow all the steps listed under [[#PERSISTENT_Mode]].

@@ -7,7 +7,7 @@
 {{project_name_long}} in VirtualBox - Troubleshooting - Does not Start? Slow? Other Issues?
 }}
 {{troubleshooting_mininav}}
-[[File:Vboxtroubleshoot123123.jpg|thumb]]
+[[File:Vboxtroubleshoot123123.jpg|thumb|alt=]]
 
 {{mbox
 |icon=fa-solid fa-bolt-lightning cs-yellow
@@ -41,23 +41,23 @@ __TOC__
 
 {{IconSet|h1|3}} In case of connectivity issues, see [[Troubleshooting#Connectivity_Troubleshooting|Connectivity Troubleshooting]].
 
-{{IconSet|h1|4}} [[File:Kicksecure-basic-logo.png|25px|link=]] Use the stable version of [[VirtualBox|{{project_name_short}} for VirtualBox]] <code>{{VersionNew}}</code>.
+{{IconSet|h1|4}} [[File:Kicksecure-basic-logo.png|25px|link=|alt=]] Use the stable version of [[VirtualBox|{{project_name_short}} for VirtualBox]] <code>{{VersionNew}}</code>.
 
-{{IconSet|h1|5}} [[File:Computer_n_screen.png|25px|link=]] [[File:Virtualbox_logo.png|25px|link=]] Use the [[VirtualBox/Recommended_Version|recommended]] VirtualBox <u>host</u> software version, which is currently: <code>{{VirtualBox_Version}}</code>
+{{IconSet|h1|5}} [[File:Computer_n_screen.png|25px|link=|alt=]] [[File:Virtualbox_logo.png|25px|link=|alt=]] Use the [[VirtualBox/Recommended_Version|recommended]] VirtualBox <u>host</u> software version, which is currently: <code>{{VirtualBox_Version}}</code>
 
-{{IconSet|h1|6}} [[File:cli3.png|25px|link=]] [[File:Virtualbox_logo.png|25px|link=]] To ensure the recommended version of [[VirtualBox/Guest_Additions#VirtualBox_Guest_Additions|VirtualBox guest additions]] is installed in {{project_name_short}} run: {{CodeSelect|code=
+{{IconSet|h1|6}} [[File:cli3.png|25px|link=|alt=Kicksecure desktop with a top panel and Trash, File System and Home icons on a purple-to-blue gradient.]] [[File:Virtualbox_logo.png|25px|link=|alt=]] To ensure the recommended version of [[VirtualBox/Guest_Additions#VirtualBox_Guest_Additions|VirtualBox guest additions]] is installed in {{project_name_short}} run: {{CodeSelect|code=
 sudo apt update && sudo apt full-upgrade
 }}
 
-{{IconSet|h1|7}} [[File:Cd-rom-icon.png|25px|link=]] [[File:Virtualbox_logo.png|25px|link=]] Do <u>not</u> use [[VirtualBox/Guest_Additions#VirtualBox_Guest_Additions_CD|VirtualBox guest additions from CD]]. <ref>
+{{IconSet|h1|7}} [[File:Cd-rom-icon.png|25px|link=|alt=]] [[File:Virtualbox_logo.png|25px|link=|alt=]] Do <u>not</u> use [[VirtualBox/Guest_Additions#VirtualBox_Guest_Additions_CD|VirtualBox guest additions from CD]]. <ref>
 [https://forums.whonix.org/t/virtualbox-guest-additions/8998/3 Installation of VirtualBox guest additions from CD might also cause issues.]
 </ref>
 
-{{IconSet|h1|8}} [[File:logo-linux-500x500.png|15px|link=]] <u>Linux users only:</u> <u>Host kernel version:</u> use the recommended host Linux kernel version. It should be the same version that Debian <code>{{stable project version based on Debian codename}}</code> is using ([https://packages.debian.org/{{Stable project version based on Debian codename}}/linux-image-amd64 <code>linux-image-amd64</code>]). Otherwise many [[Kernel#Kernel_Issues|kernel issues]] are likely to occur.
+{{IconSet|h1|8}} [[File:logo-linux-500x500.png|15px|link=|alt=]] <u>Linux users only:</u> <u>Host kernel version:</u> use the recommended host Linux kernel version. It should be the same version that Debian <code>{{stable project version based on Debian codename}}</code> is using ([https://packages.debian.org/{{Stable project version based on Debian codename}}/linux-image-amd64 <code>linux-image-amd64</code>]). Otherwise many [[Kernel#Kernel_Issues|kernel issues]] are likely to occur.
 
-{{IconSet|h1|9}} [[File:logo-linux-500x500.png|15px|link=]] <u>Linux users only:</u> <u>Host operating system:</u> use a recommended Linux distribution -- [https://www.debian.org/ Debian] <code>{{Stable project version based on Debian codename}}</code> or {{Kicksecure}} <code>{{VersionShort}}</code> -- as the host operating system.
+{{IconSet|h1|9}} [[File:logo-linux-500x500.png|15px|link=|alt=]] <u>Linux users only:</u> <u>Host operating system:</u> use a recommended Linux distribution -- [https://www.debian.org/ Debian] <code>{{Stable project version based on Debian codename}}</code> or {{Kicksecure}} <code>{{VersionShort}}</code> -- as the host operating system.
 
-{{IconSet|h1|10}} [[File:logo-linux-500x500.png|15px|link=]] <u>Linux users only:</u> <u>Linux user groups:</u> Add your current user to group <code>vboxusers</code>. <ref>
+{{IconSet|h1|10}} [[File:logo-linux-500x500.png|15px|link=|alt=]] <u>Linux users only:</u> <u>Linux user groups:</u> Add your current user to group <code>vboxusers</code>. <ref>
 Optional: See: https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers
 
 Also spams <code>~/.config/VirtualBox/VBoxSVC.log</code> log if not done.
@@ -65,11 +65,11 @@ Also spams <code>~/.config/VirtualBox/VBoxSVC.log</code> log if not done.
 sudo adduser $(whoami) vboxusers
 }}
 
-{{IconSet|h1|11}} [[File:Logo-windows-500x500.png|15px|link=]] <u>Windows users only:</u> <u>Host operating system:</u> Consider running {{project_name_short}} from a Linux computer rather than a Windows computer. <ref>
+{{IconSet|h1|11}} [[File:Logo-windows-500x500.png|15px|link=|alt=]] <u>Windows users only:</u> <u>Host operating system:</u> Consider running {{project_name_short}} from a Linux computer rather than a Windows computer. <ref>
 [https://forums.whonix.org/t/gateway-startup-error-not-syncing-no-working-init-found/9481/13 A user reported issues which were gone once switching to Linux].
 </ref>
 
-{{IconSet|h1|12}} <u>Virtualizer Conflicts:</u> Do you have virtualizers other than VirtualBox installed at the same time such as [[File:Vmware.jpeg|25px|link=]] VMware, Hyper-V or [[File:Kvm-new-logo.png|25px|link=]] KVM? If you never heard of these product names or do not know what that means then this is not an issue. But if you have multiple virtualizers/hypervisors installed, only one can run at once (in this section only VirtualBox), see the footnote for further information. <ref>
+{{IconSet|h1|12}} <u>Virtualizer Conflicts:</u> Do you have virtualizers other than VirtualBox installed at the same time such as [[File:Vmware.jpeg|25px|link=|alt=]] VMware, Hyper-V or [[File:Kvm-new-logo.png|25px|link=|alt=]] KVM? If you never heard of these product names or do not know what that means then this is not an issue. But if you have multiple virtualizers/hypervisors installed, only one can run at once (in this section only VirtualBox), see the footnote for further information. <ref>
 Two virtualizers generally cannot run at the same time. This is virtualizer specific, not a {{project_name_short}} specific limitation. Ensure virtual machines are not running in any other virtualizer, and perhaps re-install VirtualBox if it is still not functional. Some virtualizers (such as Hyper-V) may need to be uninstalled and disabled, see [[VirtualBox/Green_Turtle_Issue#Disable_Hyper-V_via_batch_script|Disable Hyper-V via batch script]].<br />
 <br />
 https://forums.whonix.org/t/starting-xcfe-virtualbox-give-guru-meditation/10378/6
@@ -87,9 +87,9 @@ https://forums.whonix.org/t/starting-xcfe-virtualbox-give-guru-meditation/10378/
 
 {{IconSet|h1|18}} [[#VirtualBox Generic Bug Reproduction|VirtualBox Generic Bug Reproduction]]
 
-{{IconSet|h1|19}} [[File:Logo-windows-500x500.png|15px|link=]] <u>Windows <code>10</code> / <code>11</code> users only:</u> <u>Hash Sum mismatch:</u> [[#Core Isolation|Disable Core Isolation]].
+{{IconSet|h1|19}} [[File:Logo-windows-500x500.png|15px|link=|alt=]] <u>Windows <code>10</code> / <code>11</code> users only:</u> <u>Hash Sum mismatch:</u> [[#Core Isolation|Disable Core Isolation]].
 
-{{IconSet|h1|20}} [[File:Logo-windows-500x500.png|15px|link=]] <u>Windows <code>10</code> / <code>11</code> users only:</u> [[VirtualBox/Green Turtle Issue|Virtual Machine only starts after several attempts - <code>rcpu_preempt self-detected stall on CPU</code> / Green Turtle]]
+{{IconSet|h1|20}} [[File:Logo-windows-500x500.png|15px|link=|alt=]] <u>Windows <code>10</code> / <code>11</code> users only:</u> [[VirtualBox/Green Turtle Issue|Virtual Machine only starts after several attempts - <code>rcpu_preempt self-detected stall on CPU</code> / Green Turtle]]
 
 }}
 
@@ -180,7 +180,7 @@ Then [[#BIOS|enable <code>VT-x</code> in BIOS settings]].
 {{Anchor|BIOS}}
 
 == VT-x / SVM Errors ==
-[[File:Enable-vt-x-in-bios.png|thumb|enabling VT-x in BIOS]]
+[[File:Enable-vt-x-in-bios.png|thumb|enabling VT-x in BIOS|alt=BIOS Advanced Processor Options screen with Intel Virtualization Technology being changed from Disabled to Enabled]]
 
 These errors arise when the host's hardware virtualization extension is not available. The reasons are either/and/or:
 
@@ -211,7 +211,7 @@ These errors arise when the host's hardware virtualization extension is not avai
 
 == Error In supR3HardenedWinReSpawn ==
 
-[[File:VirtualBox_supR3HardenedWinReSpawn.png|400px]]
+[[File:VirtualBox_supR3HardenedWinReSpawn.png|400px|alt=VirtualBox error dialog in supR3HardenedWinReSpawn: NtCreateFile of VBoxDrvStub failed, driver probably stuck, suggests sc.exe query vboxdrv or rebooting.]]
 
 Do not update whilst the VMs are running, otherwise [[VirtualBox]] must be reinstalled.
 
@@ -253,8 +253,8 @@ It might still not work, see: [[Dev/VirtualBox#VirtualBox_Guest_Additions_Bugs|V
 
 {{Anchor|VirtualBox Screen Resolution Bug}}
 
-[[File:cli4.png|thumb|VirtualBox Screen Resolution Bug]]
-[[File:cli3.png|thumb|Normal presentation]]
+[[File:cli4.png|thumb|VirtualBox Screen Resolution Bug|alt=Whonix-Gateway XFCE in VirtualBox, with the desktop shown as a smaller centered area surrounded by empty space.]]
+[[File:cli3.png|thumb|Normal presentation|alt=Kicksecure desktop with a top panel and Trash, File System and Home icons on a purple-to-blue gradient.]]
 
 If the display presents like the image on the right-hand side, then you are affected by a screen resolution bug which only occurs in VirtualBox.
 
@@ -464,9 +464,9 @@ While this is not the same error as Guru Meditation, all the same information an
 
 == Kernel driver not installed ==
 
-[[File:Virtualbox kernel driver not installed.png|thumb|error happening in case Linux kernel headers package (<code>linux-headers-amd64</code>) is missing]]
+[[File:Virtualbox kernel driver not installed.png|thumb|error happening in case Linux kernel headers package (<code>linux-headers-amd64</code>) is missing|alt=VirtualBox error dialog Kernel driver not installed (rc=-1908), advising to run /sbin/vboxconfig as root and to sign kernel modules if Secure Boot is enabled.]]
 
-[[File:Virtualbox kernel driver not installed vboxconfig.png|thumb|output of <code>sudo vboxconfig</code> in case Linux kernel headers package (<code>linux-headers-amd64</code>) is missing]]
+[[File:Virtualbox kernel driver not installed vboxconfig.png|thumb|output of <code>sudo vboxconfig</code> in case Linux kernel headers package (<code>linux-headers-amd64</code>) is missing|alt=Terminal output of sudo /sbin/vboxconfig reporting that kernel headers are missing and VirtualBox setup failed, suggesting linux-headers-amd64.]]
 
 <code>Kernel driver not installed (rc=-1908)</code>
 
@@ -626,8 +626,8 @@ Related:
 == Core Isolation ==
 Host operating system specific:
 
-* [[File:logo-linux-500x500.png|15px|link=]] <u>Linux users:</u> No special steps required. This chapter should be skipped.
-* [[File:Logo-windows-500x500.png|15px|link=]] <u>Windows <code>10</code> users:</u> This should be fixed in recent VirtualBox versions. <ref>
+* [[File:logo-linux-500x500.png|15px|link=|alt=]] <u>Linux users:</u> No special steps required. This chapter should be skipped.
+* [[File:Logo-windows-500x500.png|15px|link=|alt=]] <u>Windows <code>10</code> users:</u> This should be fixed in recent VirtualBox versions. <ref>
 Fixed in VirtualBox version <code>6.1.32</code> (and above). Quote [https://www.virtualbox.org/wiki/Changelog VirtualBox changelog]: <blockquote>VMM: Changed the guest RAM management when using Hyper-V to be more compatible with HVCI (bug [https://www.virtualbox.org/ticket/20627 #20627] and [https://www.virtualbox.org/ticket/20694 #20694])</blockquote>
 </ref> Disabling core isolation should no longer be required. In case of issues, the user could try to disable core isolation anyhow.
 

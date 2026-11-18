@@ -7,7 +7,7 @@ unicode-show
 |image=Unicode-show.png
 }}
 {{unicode_mininav}}
-[[File:Unicode-show.png|200px|thumb|<code>unicode-show</code> logo]]
+[[File:Unicode-show.png|200px|thumb|<code>unicode-show</code> logo|alt=]]
 {{intro|
 Detect and annotate non-ASCII or suspicious Unicode characters in text or files.
 }}

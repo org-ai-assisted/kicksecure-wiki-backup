@@ -7,7 +7,7 @@ security-misc: Enhance Miscellaneous Security Settings
 |image=Securitymisc.jpg
 }}
 {{kernel_mininav}}
-[[File:Securitymisc.jpg|thumb]]
+[[File:Securitymisc.jpg|thumb|alt=]]
 {{intro|
 Documentation for package security-misc.
 }}
@@ -114,7 +114,7 @@ Appendix:
 = Testing Features =
 {{Anchor|Restrict Hardware Information to Root}}
 == Reduce Kernel Information Leaks ==
-[[File:Limit-kernel-leak-hp-promo.jpg|thumb]]
+[[File:Limit-kernel-leak-hp-promo.jpg|thumb|alt=Dripping leaky pipe with an application window icon marked by a red X]]
 {{anchor|show=true|hide-hardware-info.service}}
 
 {{mbox
@@ -320,7 +320,7 @@ Note: [[CPUID|CPUID is still not hidden]].
 See [[SUID Disabler and Permission Hardener]].
 
 == hidepid ==
-[[File:Hidepid-hp-promo.jpg|thumb]]
+[[File:Hidepid-hp-promo.jpg|thumb|alt=]]
 The <code>hidepid</code> option in Linux is a feature of the <code>proc</code> filesystem (<code>/proc</code>) that controls the visibility of process information for non-root users. It is particularly useful for enhancing security by restricting access to information about other users' processes.
 
 When hidepid is disabled, for example <code>ps aux</code> shows system processes. When hidepid is enabled, only the user account's own processes are shown.

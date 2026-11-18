@@ -9,7 +9,7 @@ __TOC__
 |active=true
 |addToClass=info-box
 |title======= TLS ({{{idplaceholder|idplaceholder}}}) ======
-|image=[[File:Icon-lock.png|50px]]
+|image=[[File:Icon-lock.png|50px|alt=]]
 |content=
 TLS.
 
@@ -20,7 +20,7 @@ sudo {{{curl_extra_environment_variables_clearnet|}}} curl {{Curl_Secure}} --out
 {{Tab
 |addToClass=info-box
 |title======= onion ({{{idplaceholder|idplaceholder}}}) ======
-|image=[[File:Iconfinder_tor_386502.png|50px]]
+|image=[[File:Iconfinder_tor_386502.png|50px|alt=]]
 |content=
 <u>Note:</u> Downloading over onion requires an already functional system Tor.
 

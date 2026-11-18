@@ -5,7 +5,7 @@
 {{Tab
 |active=true
 |title= === TLS ===
-|image=[[File:Icon-lock.png|50px]]
+|image=[[File:Icon-lock.png|50px|alt=]]
 |content=
 {{IconSet|h2|1}} Download.
 
@@ -24,7 +24,7 @@ bash ./{{{scriptname|{{project_name_short_lowercase}}-lxqt-installer-cli}}}
 
 {{Tab
 |title= === onion ===
-|image=[[File:Iconfinder_tor_386502.png|50px]]
+|image=[[File:Iconfinder_tor_386502.png|50px|alt=]]
 |content=
 {{IconSet|h2|1}} System Tor setup.
 

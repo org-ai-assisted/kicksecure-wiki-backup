@@ -7,7 +7,7 @@ grub bootloader Configuration Changes
 |image=Live-mode-promo.jpg
 }}
 {{troubleshooting_mininav}}
-[[File:kicksecure-persistent-mode-user-session.png|thumb|GRUB boot menu]]
+[[File:kicksecure-persistent-mode-user-session.png|thumb|GRUB boot menu|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]
 {{intro|
 Kernel Boot Parameter Changes
 }}
@@ -17,7 +17,7 @@ TODO: Expand introduction.
 
 '''Figure:''' ''GRUB boot menu''
 
-[[File:kicksecure-persistent-mode-user-session.png|GRUB boot menu|500px]]
+[[File:kicksecure-persistent-mode-user-session.png|GRUB boot menu|500px|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]
 
 = Kernel Boot Parameters =
 {{mbox
@@ -303,19 +303,19 @@ Refer to:
 
 '''Figure:''' ''GRUB Bootloader Authentication Password Prompt''
 
-[[File:grub_bootloader_password.jpg]]
+[[File:grub_bootloader_password.jpg|alt=GRUB boot screen text prompting Enter username with user typed, then Enter password]]
 
 == Legacy BIOS - GRUB Bootloader Disk Decryption Password Prompt  ==
 
 '''Figure:''' ''GRUB Bootloader Disk Decryption Password Prompt for (Legacy BIOS)''
 
-[[File:Grubpass.png|600px]]
+[[File:Grubpass.png|600px|alt=GRUB text screen asking for the passphrase to decrypt the master key for hd0,msdos1]]
 
 == EFI - GRUB Bootloader Disk Decryption Password Prompt ==
 
 '''Figure:''' ''GRUB Bootloader Disk Decryption Password Prompt (EFI)''
 
-[[File:EFIGrubpass.png|600px]]
+[[File:EFIGrubpass.png|600px|alt=VirtualBox EFI boot screen showing GRUB asking to enter the passphrase for the encrypted disk, with two no such device errors]]
 
 == EFI - SecureBoot - Boot Error Message ==
 
@@ -323,7 +323,7 @@ This is a known issue. No bug report is required.
 
 '''Figure:''' ''EFI SecureBoot Boot Error Message''
 
-[[File:EFIDracutpass.png|600px]]
+[[File:EFIDracutpass.png|600px|alt=Console showing a failed systemd-modules-load.service, then prompt: Please enter passphrase for disk rootfs, press TAB for no echo]]
 
 To resolve this issue, refer to [[Secure Boot]].
 
@@ -342,7 +342,7 @@ Initial ramdisk ([[Dracut#initrd|"<code>initrd</code>"]]) based encryption passw
 
 '''Figure:''' ''initramfs (initramfs-tools or dracut) Based Encryption Password Prompt - Example (full)''
 
-[[File:dracutpass.png|600px]]
+[[File:dracutpass.png|600px|alt=Black console prompt: Please enter passphrase for disk VBOX_HARDDISK, press TAB for no echo]]
 
 This is related to [[Full Disk Encryption|{{fde}}]].
 

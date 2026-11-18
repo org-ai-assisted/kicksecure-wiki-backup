@@ -7,7 +7,7 @@ dracut
 |image=Dracut.svg.png
 }}
 {{troubleshooting_mininav}}
-[[File:Dracut.svg.png|thumb|100px|dracut logo]]
+[[File:Dracut.svg.png|thumb|100px|dracut logo|alt=]]
 {{intro|
 <code>dracut</code> is an initial ramdisk (also called <code>initrd</code> or <code>initramfs</code>) generator. It assembles the early userspace image used during boot.
 }}
@@ -25,7 +25,7 @@ This page documents <code>dracut</code> usage, terminology, and common tasks suc
 
 '''Figure:''' ''initramfs (initramfs-tools or dracut) Based Encryption Password Prompt - Example (full)''
 
-[[File:dracutpass.png|600px]]
+[[File:dracutpass.png|600px|alt=Black console prompt: Please enter passphrase for disk VBOX_HARDDISK, press TAB for no echo]]
 
 This is related to [[Full Disk Encryption|{{fde}}]].
 

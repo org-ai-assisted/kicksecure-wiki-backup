@@ -7,7 +7,7 @@ Mobile Devices Privacy and Security
 |image=Phone-danger.jpg
 }}
 {{mobile_mininav}}
-[[File:Phone-danger.jpg|thumb]]
+[[File:Phone-danger.jpg|thumb|alt=]]
 {{#iconbulletlist:addClass=minimal margin-bottom-20
 
 |fontSize=17px
@@ -161,7 +161,7 @@ Quote [https://www.scss.tcd.ie/Doug.Leith/Android_privacy_report.pdf Android Mob
 
 '''Figure:''' ''Data harvesting with settings already configured for highest privacy''
 
-[[File:data collection summary.jpg]]
+[[File:data collection summary.jpg|alt=Table summarizing data collected by Android variants (Samsung, Xiaomi, Realme, Huawei, LineageOS, /e/OS, Google): identifiers, third-party collectors and telemetry.]]
 
 </ref>
 
@@ -624,25 +624,25 @@ Registration and use of gateway services require monthly payments, so investigat
 
 '''Figure:''' ''Phone Number Selection''
 
-[[File:jmp4.png|470px]]
+[[File:jmp4.png|470px|alt=JMP page Start by choosing a phone number, listing several +1 307 numbers and links to search by area code or bring your own number]]
 
 '''2.''' Select "I need to sign up.." option if you dont have jabber account.
 
 '''Figure:''' ''New jabber ID signup''
 
-[[File:jmp5.png|470px]]
+[[File:jmp5.png|470px|alt=JMP page with a red arrow pointing to the option I need to sign up for a new Jabber ID to use for this number]]
 
 '''3.''' Press on "Get one from ChatterboxTown" option (it will open in a new tab, dont close jmp registration page as we gonna need it later).
 
 '''Figure:''' ''Choosing ChatterboxTown for Jabber ID''
 
-[[File:jmp2.png|470px]]
+[[File:jmp2.png|470px|alt=JMP website Step 1 page with a red arrow pointing to the Get one from ChatterboxTown link for a new Jabber ID]]
 
 '''4.''' Select account creation server.
 
 '''Figure:''' ''Choosing jabber server''
 
-[[File:jmp1.png|470px]]
+[[File:jmp1.png|470px|alt=Movim Account Creation screen listing XMPP servers chatterboxtown.us and movim.eu to choose from.]]
 
 '''5.''' Perform "web registration".
 
@@ -652,27 +652,27 @@ After selecting a server:
 
 '''Figure:''' ''Complete Web Registration''
 
-[[File:jmp4-1.png|470px]]
+[[File:jmp4-1.png|470px|alt=Movim account creation form with username, domain movim.eu, password, confirm password, and optional email fields]]
 
-[[File:jmp4-2.png|470px]]
+[[File:jmp4-2.png|470px|alt=Movim confirmation Account successfully created, listing Dino, Conversations, and mov.im as clients to log in with]]
 
 '''6.''' Sign into the account with a recommended Jabber/XMPP client. <ref>See: [https://xmpp.org/software/clients/ XMPP Clients].</ref>
 
 '''Figure:''' ''Account Login''
 
-[[File:jmp3.png|470px]]
+[[File:jmp3.png|470px|alt=XMPP client login screen with username and password fields, a Log In button, and a Sign Up button]]
 
 '''7.''' Press on <code>Continue</code> on JMP registration page (which we kept it open).
 
 '''Figure:''' ''Continuing to register Jabber ID in JMP''
 
-[[File:jmp7-1.png|470px]]
+[[File:jmp7-1.png|470px|alt=JMP page listing Jabber app download badges for F-Droid, Google Play, App Store, Mac App Store, Microsoft, and Gajim, with a highlighted Continue link]]
 
 '''8.''' Add and submit your Jabber ID in the empty field.
 
 '''Figure:''' ''Enter Jabber ID Details''
 
-[[File:jmp6.png|470px]]
+[[File:jmp6.png|470px|alt=JMP page with a Jabber ID text field and Submit button highlighted in red, with the selected number hidden]]
 
 '''9.''' Confirm Jabber ID linkage with JMP.
 
@@ -680,9 +680,9 @@ As the Jabber ID was linked with a selected number from JMP, a message should be
 
 '''Figure:''' ''JMP Confirmation Messages''
 
-[[File:jmp7.png|470px]]
+[[File:jmp7.png|470px|alt=JMP page telling the user to check their Jabber client for a registration message, with advice if no message arrives]]
 
-[[File:jmp8.png|470px]]
+[[File:jmp8.png|470px|alt=Chat client showing a cheogram.com message to start registration by replying with register jmp.chat]]
 
 '''10.''' Complete payment for the account.
 
@@ -692,7 +692,7 @@ Follow the message instructions to:
 
 '''Figure:''' ''Finalize JMP Account Payment''
 
-[[File:jmp9.png|470px]]
+[[File:jmp9.png|470px|alt=Chat client showing the register jmp.chat exchange and cheogram.com offering activation by credit card, Bitcoin, invite code, or mail]]
 
 '''11.''' Check the account was activated.
 
@@ -700,7 +700,7 @@ After successful payment an activation message will be sent to the Jabber/XMPP a
 
 '''Figure:''' ''Account Activation Message''
 
-[[File:jmp10.png|470px]]
+[[File:jmp10.png|470px|alt=Chat message from cheogram.com confirming the JMP account is activated, with a list of help commands such as info, usage, and credit cards]]
 
 '''12.''' Test functionality of the new phone number.
 
@@ -708,13 +708,13 @@ It is recommended to perform a small test to confirm the number is working corre
 
 '''Figure:''' ''Matrix Verification Message''
 
-[[File:jmp11.png|470px]]
+[[File:jmp11.png|470px|alt=Chat message from cheogram.com with an Element validation code to enter into the app]]
 
 After entering the verification code, the account will be linked successfully to the phone number in use.
 
 '''Figure:''' ''Successful Matrix Account Linkage''
 
-[[File:jmp12.png|470px]]
+[[File:jmp12.png|470px|alt=Phone numbers settings page showing the registered +1 number with a Remove button and an empty phone number field]]
 }}
 
 == Registration Locks ==

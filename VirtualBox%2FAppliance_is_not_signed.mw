@@ -14,7 +14,7 @@ If you see the following <code>Appliance is not signed</code> error message.
 
 '''Figure:''' ''Appliance is not signed message''
 
-[[File:Virtualbox_appliance_is_not_signed.jpg|border]]
+[[File:Virtualbox_appliance_is_not_signed.jpg|border|alt=VirtualBox Import Virtual Appliance dialog for Whonix-Gateway with the message Appliance is not signed highlighted by a red box and arrow.]]
 
 It can be safely ignored. <ref>
 {{project_name_short}} does not use this signing mechanism and nobody else is known to use it either. [https://forums.virtualbox.org/viewtopic.php?f=1&t=94327#p455421 VirtualBox provides neither documentation on how to use this feature nor a tool to use this feature.] The provided OpenPGP signatures are a more complete and secure replacement of this feature.

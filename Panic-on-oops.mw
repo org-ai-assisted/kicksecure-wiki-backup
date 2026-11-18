@@ -42,15 +42,15 @@ This toggle script checks:
 * <code>systemctl is-enabled panic-on-oops.service</code>
 </ref>
 
-[[File:panic-1.png|400px]]
+[[File:panic-1.png|400px|alt=System Maintenance Panel with the Toggle Panic-on-Oops button highlighted]]
 
 * <u>If enabled:</u> Disables and stops <code>panic-on-oops.service</code>.
 
-[[File:panic-2.png|800px]]
+[[File:panic-2.png|800px|alt=Terminal output of toggle-panic-on-oops disabling and stopping panic-on-oops.service, ending with status disabled]]
 
 * <u>If disabled:</u> Enables and starts <code>panic-on-oops.service</code>.
 
-[[File:panic-3.png|800px]]
+[[File:panic-3.png|800px|alt=Terminal output of toggle-panic-on-oops enabling and starting panic-on-oops.service, ending with status enabled]]
 
 A visual confirmation about the <u>If enabled:</u> status (on or off) will be shown.
 

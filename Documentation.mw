@@ -32,21 +32,21 @@ This documentation is a course on security on the Internet. {{project_name_short
 <div class="use-3-columns strict-list-columns mw-collapsible-content">
 * [[System_Requirements|System Requirements]]
 * [[Download]]
-** [[File:Cd-rom-icon.png|15px|link=ISO]] [[ISO|ISO]]
+** [[File:Cd-rom-icon.png|15px|link=ISO|alt=]] [[ISO|ISO]]
 ** [[USB_Installation|Installation of Kicksecure on a USB]]
-** [[File:Tux.png|15px|link=Debian]] [[Debian|Debian]]
-** [[File:Virtualbox_logo.png|15px|link=VirtualBox]] [[VirtualBox|VirtualBox]]
-** [[File:Kvmbanner-logo26.png|30px|link=KVM]] [[KVM#Start|KVM]]
-** [[File:qubes-logo-blue.png|15px|link=Qubes]] [[Qubes|Qubes]]
+** [[File:Tux.png|15px|link=Debian|alt=]] [[Debian|Debian]]
+** [[File:Virtualbox_logo.png|15px|link=VirtualBox|alt=]] [[VirtualBox|VirtualBox]]
+** [[File:Kvmbanner-logo26.png|30px|link=KVM|alt=]] [[KVM#Start|KVM]]
+** [[File:qubes-logo-blue.png|15px|link=Qubes|alt=]] [[Qubes|Qubes]]
 * [[Download_Security|Download Security]]
 * [[Download_Issues|Download Issues]]
 <div></div>
 * [[Verifying_Software_Signatures|Verifying Software Signatures]]
 ** [[Signing_Key|Download the {{project_name_short}} Signing Key]]
 ** [[Verify_the_images|Verify {{project_name_short}} Images]]
-*** [[File:Tux.png|15px|link=]] [[Verify_the_images_using_Linux|Linux using gpg]]
-*** [[File:Windows_logo_-_2012.svg.png|15px|link=]] [[Verify_the_images_using_Windows|Windows using Gpg4win]]
-*** [[File:rsz_osx.png|15px]] [[Verify_the_images_using_macOS|macOS using GPGTools]]
+*** [[File:Tux.png|15px|link=|alt=]] [[Verify_the_images_using_Linux|Linux using gpg]]
+*** [[File:Windows_logo_-_2012.svg.png|15px|link=|alt=]] [[Verify_the_images_using_Windows|Windows using Gpg4win]]
+*** [[File:rsz_osx.png|15px|alt=Stylized X icon representing macOS]] [[Verify_the_images_using_macOS|macOS using GPGTools]]
 <div></div>
 * [[VirtualBox/Guest_Additions|VirtualBox Guest Additions and Shared Folders]]
 * [[VirtualBox/Higher_Screen_Resolution_without_installing_VirtualBox_Guest_Additions|Higher Screen Resolution without VirtualBox Guest Additions]]
@@ -106,7 +106,7 @@ This documentation is a course on security on the Internet. {{project_name_short
 ** [[unrestricted_admin_mode|unrestricted admin mode]]
 ** [[Login_spoofing|Defeat Login Spoofing]]
 * [[Passwords|Passwords]]
-** [[File:KeePassXC.svg|20px|link=Keepassxc]] [[Keepassxc|KeePassXC Password Manager]]
+** [[File:KeePassXC.svg|20px|link=Keepassxc|alt=]] [[Keepassxc|KeePassXC Password Manager]]
 <div></div>
 * [[Secure_Downloads|Secure Command Line / Firefox Downloads]]
 * [[System_Configuration_and_Access|System Configuration and Access]]
@@ -133,7 +133,7 @@ This documentation is a course on security on the Internet. {{project_name_short
 * [[DNS]]
 * [[DNS_Security]]
 <div></div>
-* [[File:logo-linux-500x500.png|15px]] [[Kernel|Install Newer Kernels]]
+* [[File:logo-linux-500x500.png|15px|alt=]] [[Kernel|Install Newer Kernels]]
 * [[Kernel_module|Kernel Modules]]
 * [[Persistent_Mode|Persistent Mode]]
 * [[ISO_Live_Mode|ISO Live Mode]]
@@ -206,7 +206,7 @@ This documentation is a course on security on the Internet. {{project_name_short
 <div class="toccolours mw-collapsible mw-collapsed" style="max-width:100%;">
 <p>Email, Chat and Communications</p>
 <div class="use-3-columns mw-collapsible-content">
-* [[File:Signal.png|15px]] [[Signal|Signal Messenger]]
+* [[File:Signal.png|15px|alt=]] [[Signal|Signal Messenger]]
 * [[Session|Session Messenger]]
 * [[Printing_and_Scanning|Printing and Scanning]]
 </div>
@@ -220,14 +220,14 @@ This documentation is a course on security on the Internet. {{project_name_short
 <div></div>
 * Wallets
 ** [[Bitcoin_Core|Bitcoin Core]]
-** [[File:Electrum-appimage.png|15px]] [[Electrum|Electrum]]
-** [[File:Ethereumlogo.png|25px]] [[Ethereum|Ethereum (ETH)]]
-** [[File:Ledgericon.png|45px]] [[Ledger_Hardware_Wallet|Ledger Hardware Wallet]]
+** [[File:Electrum-appimage.png|15px|alt=]] [[Electrum|Electrum]]
+** [[File:Ethereumlogo.png|25px|alt=]] [[Ethereum|Ethereum (ETH)]]
+** [[File:Ledgericon.png|45px|alt=]] [[Ledger_Hardware_Wallet|Ledger Hardware Wallet]]
 ** [[Trezor_Hardware_Wallet|Trezor Hardware Wallet]]
-** [[File:Monero-symbol-1280.png|15px]] [[Monero|Monero (XMR)]]
+** [[File:Monero-symbol-1280.png|15px|alt=]] [[Monero|Monero (XMR)]]
 <div></div>
 * [[File_Sharing|Filesharing and Torrenting]]
-* [[File:Sshlogo.png|15px]] [[SSH|Secure Shell (SSH)]]
+* [[File:Sshlogo.png|15px|alt=]] [[SSH|Secure Shell (SSH)]]
 </div>
 </div>
 
@@ -271,7 +271,7 @@ This documentation is a course on security on the Internet. {{project_name_short
 <div class="use-3-columns strict-list-columns mw-collapsible-content">
 * [[Software#Accessibility|Accessibility]]
 * [[Software#Audio.2C_Image_and_Video|Audio, Image and Video]]
-** [[File:2000px-VLC_Icon.svg.png|15px|VLC Media Player Icon]] [[Software#Audio.2C_Image_and_Video|VLC Media Player]]
+** [[File:2000px-VLC_Icon.svg.png|15px|VLC Media Player Icon|alt=]] [[Software#Audio.2C_Image_and_Video|VLC Media Player]]
 <div></div>
 * [[Software#Communications|Communications]]
 * [[Software#Encryption|Encryption]]
@@ -295,7 +295,7 @@ This documentation is a course on security on the Internet. {{project_name_short
 <div class="toccolours mw-collapsible mw-collapsed" style="max-width:100%;">
 <p>{{q_project_name_short}} Only</p>
 <div class="use-3-columns strict-list-columns mw-collapsible-content">
-* [[File:Qubes-logo-icon.png|15px|link=]] [[File:Kicksecure-icon-logo.png|15px|link=]] Qubes
+* [[File:Qubes-logo-icon.png|15px|link=|alt=]] [[File:Kicksecure-icon-logo.png|15px|link=|alt=]] Qubes
 <div></div>
 * {{q_project_name_short}} App Qube / Template Operations
 ** {{ExtLink

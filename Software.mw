@@ -52,7 +52,7 @@ This wiki page outlines software recommendations by {{project_name_short}} for v
 
 '''Figure:''' ''wvkbd software in {{project_name_short}}''
 
-[[File:wvkbd-onscreen-keyboard.png]]
+[[File:wvkbd-onscreen-keyboard.png|alt=Dark on-screen keyboard with letter keys, arrows, Esc, Tab, Cmp, Ctr, space and Enter keys]]
 
 = Audio, Image and Video =
 
@@ -69,7 +69,7 @@ audacity
 
 '''Figure:''' ''Audacity Software in {{project_name_short}}''
 
-[[File:Audacity.png|border]]
+[[File:Audacity.png|border|alt=Audacity audio editor window on Whonix workstation with empty project, transport buttons, level meters and timeline]]
 
 == Image and PDF Viewer ==
 === Loupe ===
@@ -81,7 +81,7 @@ Installed in {{project_name_short}} 18 by default. Image rendering is handled by
 
 '''Figure:''' ''Loupe Software in {{project_name_short}}''
 
-[[File:Loupe.png|border]]
+[[File:Loupe.png|border|alt=Image viewer window showing a photo of a sunrise with sun rays over a dark horizon and a blue sky]]
 
 === Web browser PDF rendering ===
 {{mbox
@@ -94,7 +94,7 @@ No particular recommendations. Any major web browser with an embedded PDF render
 
 '''Figure:''' ''PDF rendering in Firefox ESR in {{project_name_short}}''
 
-[[File:Firefox-esr-pdf.png|border]]
+[[File:Firefox-esr-pdf.png|border|alt=Firefox ESR displaying the PDF tor-design.pdf, the Tor second-generation onion router paper, in its built-in PDF viewer]]
 
 == Screenshot Creator and Image Editor ==
 
@@ -117,7 +117,7 @@ flameshot
 
 '''Figure:''' ''Flameshot Software in {{project_name_short}}''
 
-[[File:Flameshot.png|border]]
+[[File:Flameshot.png|border|alt=Flameshot configuration window with color editor, opacity slider and button list, beside a protest photo of a Snowden sign]]
 
 == Video Editor ==
 
@@ -132,7 +132,7 @@ flowblade
 
 '''Figure:''' ''Flowblade Software in {{project_name_short}}''
 
-[[File:Flowblade.png|border]]
+[[File:Flowblade.png|border|alt=Flowblade video editor with an empty untitled project, media bin, preview monitor and multi-track timeline]]
 
 == Video Recorder ==
 
@@ -172,7 +172,7 @@ The recording will be saved in a file named <code>recording.mkv</code> in the cu
 
 '''Figure:''' ''wf-recorder Software in {{project_name_short}}''
 
-[[File:Wf-recorder.png|border]]
+[[File:Wf-recorder.png|border|alt=Terminal running the wf-recorder command, printing x264 encoder settings and a 1024x768 H.264 Matroska output stream with filter warnings]]
 
 = Communications =
 
@@ -242,7 +242,7 @@ Documentation:
 
 '''Figure:''' ''GnuPG Software in {{project_name_short}}''
 
-[[File:Gnupg.png|border]]
+[[File:Gnupg.png|border|alt=Terminal running GnuPG key generation: RSA and RSA selected, 4096 bits, expiry 4y, prompting for Real name]]
 
 {{Anchor|KGpg}}
 == KGpg ==
@@ -273,22 +273,22 @@ KGpg depends on a very large number of KDE libraries, which take up over 120 MB 
 
 '''Figure:''' ''KGpg Software in {{project_name_short}}''
 
-[[File:Kgpg.png|border]]
+[[File:Kgpg.png|border|alt=KGpg Key Management window listing a key for Aaron Rainbolt with an RSA 4096 subkey, creation date, and key ID]]
 
 = Entertainment =
 
 {{Anchor|VLC}}
 == Media Player ==
 
-[[File:2000px-VLC_Icon.svg.png|thumb|VLC Media Player Icon|128px]]
+[[File:2000px-VLC_Icon.svg.png|thumb|VLC Media Player Icon|128px|alt=]]
 
-The [[File:2000px-VLC_Icon.svg.png|30px|VLC Media Player Icon]] [https://www.videolan.org/vlc/ VLC Media Player] ([https://packages.debian.org/{{Stable_project_version_based_on_Debian_codename}}/vlc Debian package]) is pre-installed in {{project_name_short}}. There are no increased fingerprinting risks because [https://bugzilla.mozilla.org/show_bug.cgi?id=1369309 VLC does not run Javascript]. <ref>However, unrestricted access to the large number of codecs, along with the gstreamer and ffmpeg frameworks can expose the system to remote attacks. The risk is greater than with Tor Browser because the latter attempts to restrict codecs to a particular subset. [https://www.videolan.org/vlc/privacy.html No cookies are stored by VLC and no information is collected and sent to third parties]; see the [https://forums.whonix.org/t/vlc-fingerprinting-research/4897/6 Original Whonix forum thread].</ref>
+The [[File:2000px-VLC_Icon.svg.png|30px|VLC Media Player Icon|alt=]] [https://www.videolan.org/vlc/ VLC Media Player] ([https://packages.debian.org/{{Stable_project_version_based_on_Debian_codename}}/vlc Debian package]) is pre-installed in {{project_name_short}}. There are no increased fingerprinting risks because [https://bugzilla.mozilla.org/show_bug.cgi?id=1369309 VLC does not run Javascript]. <ref>However, unrestricted access to the large number of codecs, along with the gstreamer and ffmpeg frameworks can expose the system to remote attacks. The risk is greater than with Tor Browser because the latter attempts to restrict codecs to a particular subset. [https://www.videolan.org/vlc/privacy.html No cookies are stored by VLC and no information is collected and sent to third parties]; see the [https://forums.whonix.org/t/vlc-fingerprinting-research/4897/6 Original Whonix forum thread].</ref>
 
 <code>Start menu</code> &rarr; <code>Multimedia</code> &rarr; <code>VLC Media Player</code>
 
 '''Figure:''' ''VLC Software in {{project_name_short}}''
 
-[[File:Vlc.png|border]]
+[[File:Vlc.png|border|alt=VLC media player Open Media dialog on the Network tab, with an empty network URL field, running in an anon-whonix-clone VM.]]
 
 = Miscellaneous =
 
@@ -305,7 +305,7 @@ galculator
 
 '''Figure:''' ''galculator Software in {{project_name_short}}''
 
-[[File:Galculator.png|border]]
+[[File:Galculator.png|border|alt=Galculator calculator window with display showing 0, number pad and operator buttons]]
 
 == Disk Space Analyzer ==
 === df ===
@@ -363,7 +363,7 @@ diff file1 file2
 
 == File Manager ==
 
-[[File:Papirus-icon-file-manager.svg|thumb|File browser icon from Papirus icon theme (shown by PCManFM-Qt)|128px]]
+[[File:Papirus-icon-file-manager.svg|thumb|File browser icon from Papirus icon theme (shown by PCManFM-Qt)|128px|alt=]]
 
 PCManFM-Qt is pre-installed. To launch it:
 
@@ -375,7 +375,7 @@ pcmanfm-qt
 
 '''Figure:''' ''PCManFM-Qt Software in {{project_name_short}}''
 
-[[File:Pcmanfm-qt.png|border]]
+[[File:Pcmanfm-qt.png|border|alt=PCManFM-Qt file manager window showing the home folder of user with Desktop, Downloads and Pictures folders and a Places sidebar]]
 
 === PCManFM-Qt with Administrator Rights ===
 
@@ -471,7 +471,7 @@ sudo iotop -a
 }}
 
 == Terminal ==
-[[File:Utilities-terminal.png|thumb|<code>qterminal</code> icon|128px]]
+[[File:Utilities-terminal.png|thumb|<code>qterminal</code> icon|128px|alt=]]
 
 [https://github.com/lxqt/qterminal QTerminal homepage] ([https://packages.debian.org/{{Stable_project_version_based_on_Debian_codename}}/qterminal Debian package]).
 QTerminal is pre-installed in {{project_name_short}}.
@@ -480,7 +480,7 @@ To start it: <code>Start menu</code> &rarr; <code>System Tools</code> &rarr; <co
 
 '''Figure:''' ''QTerminal in {{project_name_short}}''
 
-[[File:Qterminal.png|border|600px]]
+[[File:Qterminal.png|border|600px|alt=QTerminal window with an empty shell prompt for user at localhost]]
 === Unsafe Paste Warning Popup ===
 Note: Not enabled in QTerminal by default yet. Was enabled in Xfce-Terminal by default. Will be enabled in QTerminal soon.
 
@@ -488,7 +488,7 @@ This is a demonstration of the <code>Paste multiline text</code> warning feature
 
 '''Figure:''' ''<code>Paste multiline text</code> warning feature''
 
-[[File:warning-terminal.png|border]]
+[[File:warning-terminal.png|border|alt=Terminal dialog Paste multiline text asking Are you sure you want to paste this text, with Yes, No and Hide Details buttons, showing two lines of digits.]]
 
 {{box|text=
 First a text editor is opened, then several arbitrary lines of text written, copied to clipboard and pasted into the terminal emulator.
@@ -524,7 +524,7 @@ Select all of the lines of text and right click, copy to clipboard.
 
 <code>Paste multiline text</code> warning:
 
-[[File:warning-terminal.png|border]]
+[[File:warning-terminal.png|border|alt=Terminal dialog Paste multiline text asking Are you sure you want to paste this text, with Yes, No and Hide Details buttons, showing two lines of digits.]]
 
 {{IconSet|h1|7}} Done.
 
@@ -610,7 +610,7 @@ libreoffice
 
 '''Figure:''' ''LibreOffice Software in {{project_name_short}}''
 
-[[File:Libreoffice.png|border]]
+[[File:Libreoffice.png|border|alt=LibreOffice Writer window with a short document listing Distrowatch Whonix rank and hits per day statistics for June 2020]]
 
 == Printing and Scanning ==
 
@@ -631,7 +631,7 @@ scribus
 
 '''Figure:''' ''Scribus Software in {{project_name_short}}''
 
-[[File:Scribus.png|border]]
+[[File:Scribus.png|border|alt=Scribus 1.4.8 desktop publishing window with an empty blank document open on a Whonix clone]]
 
 == scurl-download: SSL Command Line Downloader ==
 
@@ -649,7 +649,7 @@ Refer to the [[Secure_Downloads#Downloads_with_scurl_-_SSL_Command_Line_Download
 
 '''Figure:''' ''scurl-download Command in {{project_name_short}}''
 
-[[File:Scurltorbrowser.png|border]]
+[[File:Scurltorbrowser.png|border|alt=Terminal running scurl-download for the Tor Browser 15.0.3 Linux tar.xz archive, progress at 64 percent]]
 
 = Java =
 {{Install Package

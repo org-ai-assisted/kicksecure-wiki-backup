@@ -6,12 +6,12 @@ User Support Expectations
 |description=Developers and contributors cannot be expected to deeply investigate every difficult or unexplained issue because of ecosystem-wide limitations.
 |image=dependency.png
 }}
-[[File:dependency.png|340px|thumb|[https://xkcd.com/2347/ xkcd dependency]]]
+[[File:dependency.png|340px|thumb|[https://xkcd.com/2347/ xkcd dependency]|alt=xkcd comic: a tall stack of blocks labeled all modern digital infrastructure rests on one thin block, a project some random person in Nebraska has maintained since 2003]]
 {{intro|
 Developers and [[contributors]] cannot be expected to perform deep investigations into every difficult or unexplained issue. This is due to ecosystem-wide limitations, which are explained on this page.
 }}
 = Introduction =
-[[File:The_Internet_is_a_Precarious_Tower_of_Dependencies.png|340px|thumb|[https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd The Internet: A Tower Of Questionable Decisions]]]
+[[File:The_Internet_is_a_Precarious_Tower_of_Dependencies.png|340px|thumb|[https://programmerhumor.io/programming-memes/the-internet-a-tower-of-questionable-decisions-rusd The Internet: A Tower Of Questionable Decisions]|alt=Meme drawing of a teetering tower of blocks: web on top, then AI, unpaid open source developers, DNS, Linux Foundation, hardware, resting on ASML]]
 
 = Reasons =
 

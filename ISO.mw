@@ -5,7 +5,7 @@
 {{#seo:
 |description={{project_name_short}} Installation Guide. This guide will help you download the ISO image, create your bootable media, and install {{project_name_short}} on your computer.
 |image=Computer-laptop.svg.png
-}} [[File:Computer-laptop.svg.png|frameless|right|180px]]
+}} [[File:Computer-laptop.svg.png|frameless|right|180px|alt=]]
 <!--
 Copyright:
 
@@ -88,7 +88,7 @@ File:Iso-page-step7-hdd-boot-done.svg|link=#6_Boot_installed_Kicksecure|Local {{
 |text=
 == {{IconSet|h1|1}} Download {{project_name_short}} LXQt ISO ==
 
-[[File:Iso-page-step1-download.svg|link=|250px]]
+[[File:Iso-page-step1-download.svg|link=|250px|alt=Globe with an arrow pointing to an ISO file on a laptop screen, depicting downloading the ISO.]]
 
 <!--[[File:Logo-windows-500x500.png|15px|link=]] <u>Windows (optional)</u>: Simple, fast &rarr; {{project_name_short}} [[File:{{project_name_short}}-logo-text.svg|25px|link=]] [[Windows_Quick_Start|Windows Installer]]-->
 {{mbox
@@ -104,7 +104,7 @@ File:Iso-page-step7-hdd-boot-done.svg|link=#6_Boot_installed_Kicksecure|Local {{
     {{Tab
     |active=true
     |title= === stable LXQt ===
-    |image=[[File:Rg1024_brick_tile.png]]
+    |image=[[File:Rg1024_brick_tile.png|alt=]]
     |content=
 {{DownloadTableUnified
 |project_name={{project_name_short}}
@@ -120,7 +120,7 @@ File:Iso-page-step7-hdd-boot-done.svg|link=#6_Boot_installed_Kicksecure|Local {{
 
     {{Tab
     |title= === testers LXQt ===
-    |image=[[File:Cornues.png]]
+    |image=[[File:Cornues.png|alt=]]
     |content=
 {{DownloadTableUnified
 |project_name={{project_name_short}}
@@ -141,7 +141,7 @@ File:Iso-page-step7-hdd-boot-done.svg|link=#6_Boot_installed_Kicksecure|Local {{
 |text=
 == {{IconSet|h1|2}} Write the ISO to USB ==
 
-[[File:Iso-page-step3-flash-usb.svg|link=|250px]]
+[[File:Iso-page-step3-flash-usb.svg|link=|250px|alt=ISO file on a laptop screen with an arrow to a USB stick, depicting writing the ISO to USB.]]
 
 * In this process you will use a software tool to create a {{project_name_short}} Live USB by writing our ISO onto this USB stick.
 * This procedure is similar for ALL Linux distributions that provide a Live USB stick for installation. The procedure is therefore [[unspecific|unspecific to {{project_name_short}}]].
@@ -171,7 +171,7 @@ File:Iso-page-step7-hdd-boot-done.svg|link=#6_Boot_installed_Kicksecure|Local {{
 
 {{Tab|
 |title= === Windows/Mac ===
-|image=[[File:Logo-windows-500x500.png|50px]] [[File:Logo-apple-500x500.png|50px]]
+|image=[[File:Logo-windows-500x500.png|50px|alt=]] [[File:Logo-apple-500x500.png|50px|alt=]]
 |content=
 ==== {{IconSet|h2|1}} Download [https://etcher.balena.io/#download-etcher balenaEtcher] ====
 <div class="toccolours cs-white mw-collapsible mw-collapsed" data-expandtext="Learn More" data-collapsetext="Show Less">
@@ -201,24 +201,24 @@ At the security warning, confirm that you want to open balenaEtcher.
 |content=
 {{Tab
 |title= === Flash from file ===
-|image=[[File:Folder-file-icon.svg.png|25px]]
+|image=[[File:Folder-file-icon.svg.png|25px|alt=]]
 |active=true
 |content=
 '''{{IconSet|h3|1}} Select "Flash from file" then navigate to the downloaded image path.'''
 
-[[File:Etcher1.png|470px]]
+[[File:Etcher1.png|470px|alt=balenaEtcher main window with Flash from file highlighted]]
 
 '''{{IconSet|h3|2}} Then press "Select Target" to choose the flash drive you want to use.'''
 
-[[File:Etcher2.png|470px]]
+[[File:Etcher2.png|470px|alt=balenaEtcher with the Kicksecure ISO selected, 1.34 GB, and Select target highlighted]]
 
 '''{{IconSet|h3|3}} Tick your flash drive, then press "Select".'''
 
-[[File:Etcher2-1.png|470px]]
+[[File:Etcher2-1.png|470px|alt=balenaEtcher Select target dialog listing a 31.1 GB USB device at F: checked, with a Select 1 button]]
 
 '''{{IconSet|h3|4}} Press "Flash".'''
 
-[[File:Etcher3.png|470px]]
+[[File:Etcher3.png|470px|alt=balenaEtcher with ISO and USB target selected and the Flash button highlighted]]
 
 '''{{IconSet|h3|5}} Done.'''
 
@@ -227,7 +227,7 @@ The process of flashing {{project_name_short}} ISO to USB has been completed.
 
 {{Tab
 |title= === Flash from URL ===
-|image=[[File:Secbrowser.png|25px]]
+|image=[[File:Secbrowser.png|25px|alt=]]
 |content=
 
 <div class="toccolours cs-gray-light mw-collapsible mw-collapsed" data-expandtext="Learn More" data-collapsetext="Show Less">
@@ -239,21 +239,21 @@ Unsupported if using "Flash from URL".
 
 '''{{IconSet|h3|1}} Select "Flash from URL".'''
 
-[[File:Etcher1-1.png|470px]]
+[[File:Etcher1-1.png|470px|alt=balenaEtcher main window with Flash from URL highlighted]]
 
 '''{{IconSet|h3|2}} Get the {{project_name_short}} image URL.'''
 
 Scroll up to the download link. Right click on it.
 
-[[File:Etcher1-2.png|470px]]
+[[File:Etcher1-2.png|470px|alt=Browser context menu on the Download Kicksecure Xfce ISO button with Copy link address highlighted]]
 
 '''{{IconSet|h3|3}} Paste the URL to "Use Image URL" then press "OK".'''
 
-[[File:Etcher1-3.png|470px]]
+[[File:Etcher1-3.png|470px|alt=balenaEtcher Use Image URL dialog with the Kicksecure Xfce ISO download URL entered]]
 
 '''{{IconSet|h3|4}} Press "Flash".'''
 
-[[File:Etcher3.png|470px]]
+[[File:Etcher3.png|470px|alt=balenaEtcher with ISO and USB target selected and the Flash button highlighted]]
 
 '''{{IconSet|h3|5}} Done.'''
 
@@ -265,7 +265,7 @@ The process of flashing {{project_name_short}} ISO to USB has been completed.
 
 {{Tab
 |title= === Linux ===
-|image=[[File:Logo-linux-500x500.png|50px]]
+|image=[[File:Logo-linux-500x500.png|50px|alt=]]
 |content=
 
 ==== {{IconSet|h2|1}} Install ''GNOME Disks''. ====
@@ -338,7 +338,7 @@ The process of flashing {{project_name_short}} ISO to USB has been completed.
 
 {{Tab
 |title= === Terminal ===
-|image=[[File:Utilities-terminal.png|50px]]
+|image=[[File:Utilities-terminal.png|50px|alt=]]
 |content=<u>Note:</u> The following steps work on Unix terminals with GNU utilities.
 
 ==== {{IconSet|h2|1}} Find the name of your drive, substitute ====
@@ -405,7 +405,7 @@ The process of flashing {{project_name_short}} ISO to USB has been completed.
 
 {{Tab
 |title= === BSD ===
-|image=[[File:Signify_Logo.svg.png|50px]]
+|image=[[File:Signify_Logo.svg.png|50px|alt=]]
 |content=
 {{mbox|
 |icon=fa-solid fa-exclamation cs-blue
@@ -417,7 +417,7 @@ If you are using BSD all the steps from the tab 'Terminal' (left of this tab) ap
 
 {{Tab
 |title= === Qubes ===
-|image=[[File:Qubes-logo-icon.png|50px]]
+|image=[[File:Qubes-logo-icon.png|50px|alt=]]
 |content=
 '''Flashing the {{project_name_short}} ISO while using Qubes'''
 
@@ -514,7 +514,7 @@ The process of flashing {{project_name_short}} ISO to USB has been completed.
 |text=
 == {{IconSet|h1|3}} Boot the ISO ==
 
-[[File:Iso-page-step4-boot-usb.svg|link=|250px]]
+[[File:Iso-page-step4-boot-usb.svg|link=|250px|alt=Laptop showing a restart symbol with a USB stick plugged in, depicting booting from USB.]]
 
 '''This short video explains the whole boot process''' in simple terms. Below that are the detailed instructions for the booting process.
 
@@ -627,7 +627,7 @@ This should open the Boot Menu after pressing the key for a couple of seconds. T
 
 '''Figure:''' Boot menu example
 
-[[File:Boot-menu-example.jpg|400px]]
+[[File:Boot-menu-example.jpg|400px|alt=BIOS boot menu listing 1 Removable Devices, 2 Hard Drive, 3 CD-ROM Drive, 4 Network boot, and Enter Setup]]
 
 '''{{IconSet|h2|6}} Try out all the Boot Menu key "candidates"'''
 
@@ -673,7 +673,7 @@ Learn how to install {{project_name_short}} from the newly created Live USB stic
 |text=
 == {{IconSet|h1|4}} Start installation ==
 
-[[File:Iso-page-step5-start-install.svg|link=|250px]]
+[[File:Iso-page-step5-start-install.svg|link=|250px|alt=Laptop screen showing Kicksecure INSTALL with a click cursor, USB stick plugged in, depicting starting the installer.]]
 
 '''{{IconSet|h2|1}} Boot into <code>LIVE Mode {{!}} SYSMAINT Session {{!}} system maintenance, install</code>.'''
 
@@ -759,7 +759,7 @@ If you do not agree with the summary, press <code>Back</code> and choose the par
 |text=
 == {{IconSet|h1|5}} Remove installation media ==
 
-[[File:Iso-page-step6-7-remove-boot-hdd.svg|link=|250px]]
+[[File:Iso-page-step6-7-remove-boot-hdd.svg|link=|250px|alt=Laptop showing a restart symbol with a USB stick marked by a red X, depicting removing the USB and rebooting.]]
 
 Please remove the USB flash drive that was used to install {{project_name_short}}.
 
@@ -809,7 +809,7 @@ The process is done. Please read further and support the future of {{project_nam
 |text=
 == {{IconSet|h1|7}} Done ==
 
-[[File:Iso-page-step7-hdd-boot-done.svg|link=|250px]]
+[[File:Iso-page-step7-hdd-boot-done.svg|link=|250px|alt=Laptop screen showing Kicksecure with a green check mark, depicting a finished installation.]]
 
 The process of installing {{project_name_short}} LXQt has been completed, enjoy!
 

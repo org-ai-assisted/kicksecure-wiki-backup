@@ -7,7 +7,7 @@ user-sysmaint-split
 |image=Grub-boot-icon.jpg
 }}
 {{passwords_mininav}}
-[[File:Grub-boot-sysmaint-icon.jpg|250px|thumb]]
+[[File:Grub-boot-sysmaint-icon.jpg|250px|thumb|alt=Laptop screen showing a GRUB boot menu with 1. USER, 2. SYSMAINT highlighted, and 3. more entries]]
 {{intro|
 <code>user-sysmaint-split</code> - Role-Based Boot Modes - USER Session / SYSMAINT Session (system maintenance) and their use cases. Through <code>user-sysmaint-split</code> as the new default feature in {{project_name_long}} we introduce new different boot modes, aimed at improving security through role-based boot options.
 }}

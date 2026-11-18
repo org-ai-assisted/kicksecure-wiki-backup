@@ -7,10 +7,10 @@ Linux Kernel Runtime Guard (LKRG) in Qubes OS Debian or {{q_project_name_long}} 
 |image=P_lkrg2.png
 }}
 {{ThumbGallery|
-[[File:P_lkrg2.png|LKRG logo|50px|link=Linux_Kernel_Runtime_Guard_LKRG]]
-[[File:Logo-debian-500x500.png|50px|link=Linux_Kernel_Runtime_Guard_LKRG]]
-[[File:Kicksecure-basic-logo.png|50px|link=Download]]
-[[File:qubes-logo-blue.png|50px]] '''{{free}}'''
+[[File:P_lkrg2.png|LKRG logo|50px|link=Linux_Kernel_Runtime_Guard_LKRG|alt=]]
+[[File:Logo-debian-500x500.png|50px|link=Linux_Kernel_Runtime_Guard_LKRG|alt=]]
+[[File:Kicksecure-basic-logo.png|50px|link=Download|alt=]]
+[[File:qubes-logo-blue.png|50px|alt=]] '''{{free}}'''
 }}
 {{intro|
 HowTo: Install LKRG in Qubes Debian or {{q_project_name_short}} Template
@@ -24,11 +24,11 @@ https://lkrg.org/
 
 LKRG renders whole classes of kernel exploits ineffective, while making other exploits less reliable and more difficult to write; see [[Linux_Kernel_Runtime_Guard_LKRG#Features|features]] and [[Linux_Kernel_Runtime_Guard_LKRG#Security|security]]. LKRG was developed by a security professional with reviews undertaken by other high profile security professionals; see [[Linux_Kernel_Runtime_Guard_LKRG#Authorship|authorship]]. For further information, refer to the main [[Linux_Kernel_Runtime_Guard_LKRG|LKRG]] entry.
 
-The instructions below explain how to install LKRG in [[File:qubes-logo-blue.png|15px]] Qubes Debian-based VMs. Most users will want to apply these instructions in the Qubes Debian Template.
+The instructions below explain how to install LKRG in [[File:qubes-logo-blue.png|15px|alt=]] Qubes Debian-based VMs. Most users will want to apply these instructions in the Qubes Debian Template.
 
-[[File:Kicksecure-basic-logo.png|15px|link=Qubes]] {{q_project_name_short}} is supported as well, but in that case the steps to add the signing key and repository should be skipped because they are already present in {{q_project_name_short}}.
+[[File:Kicksecure-basic-logo.png|15px|link=Qubes|alt=]] {{q_project_name_short}} is supported as well, but in that case the steps to add the signing key and repository should be skipped because they are already present in {{q_project_name_short}}.
 
-For all other platforms [[File:logo-linux-500x500.png|15px]], see [[Linux_Kernel_Runtime_Guard_LKRG|LKRG]].
+For all other platforms [[File:logo-linux-500x500.png|15px|alt=]], see [[Linux_Kernel_Runtime_Guard_LKRG|LKRG]].
 
 = Qubes VM Kernel =
 Since LKRG is a kernel module, it is required (and advisable) to reconfigure the VM to use a Qubes VM kernel. <ref>

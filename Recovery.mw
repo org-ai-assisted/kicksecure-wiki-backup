@@ -7,7 +7,7 @@ Recovery
 |image=Recovery312123.jpg
 }}
 {{troubleshooting_mininav}}
-[[File:Recovery312123.jpg|thumb]]
+[[File:Recovery312123.jpg|thumb|alt=]]
 {{intro|
 The goal of this wiki page is to provide the user with knowledge for higher system reliability, robustness, increased uptime, backup, restoration, recovery and repair skills.
 }}
@@ -327,7 +327,7 @@ To return to normal booting, remove the external Flash or DVD and restore the in
 {{Tab
 |title= ===VirtualBox===
 |type=section
-|image=[[File:Logo-virtualbox.png|25px]]
+|image=[[File:Logo-virtualbox.png|25px|alt=]]
 |addToClass=info-box
 |active=
 |content=
@@ -337,31 +337,31 @@ Here are the steps to do this:
 
 {{IconSet|h1|1}} Launch VirtualBox from your applications menu. In the VirtualBox Manager, click on the VM that you want to boot from an ISO, then click on the "Settings" button (a gear icon) at the top.
 
-[[File:btext1.png|600px]]
+[[File:btext1.png|600px|alt=VirtualBox Manager: step 1 Debian-12 VM powered off selected, step 2 Settings button]]
 
 {{IconSet|h1|2}} Configure Storage: In the Settings window, go to the "Storage" tab. You will see a tree structure with a controller (like IDE or SATA) and attached storage devices. Click on the CD/DVD drive icon with a "+" symbol attached to it.
 
-[[File:btext2.png|470px]]
+[[File:btext2.png|470px|alt=VirtualBox Debian-12 Settings General page showing name Debian-12, type Linux, version Debian 64-bit]]
 
-[[File:btext3.png|470px]]
+[[File:btext3.png|470px|alt=VirtualBox Debian-12 Settings Storage page: red arrow at the add optical drive button next to Controller IDE]]
 
 {{IconSet|h1|3}} Add ISO File: On the top right corner of the window, you will see an icon of a CD/DVD. Click on this icon. Navigate to the location of your ISO file on your host machine. Select the ISO file, then press "Choose". The ISO file should now be attached to the VM as a virtual CD/DVD drive.
 
-[[File:btext4.png|600px]]
+[[File:btext4.png|600px|alt=VirtualBox Optical Disk Selector listing a Debian netinst ISO and host drive, with a red arrow at the Add button]]
 
-[[File:btext5.png|600px]]
+[[File:btext5.png|600px|alt=VirtualBox Optical Disk Selector with Kicksecure-Xfce-17.2.0.1.iso, 1.26 GB, selected and the Choose button enabled]]
 
-[[File:btext6.png|600px]]
+[[File:btext6.png|600px|alt=VirtualBox Debian-12 Settings Storage page with the Kicksecure ISO attached to the IDE controller]]
 
 {{IconSet|h1|4}} Configure Boot Order: Go to the "System" tab in the Settings window. Click on the "Motherboard" tab within the System settings. In the "Boot Order" section, ensure that "Optical" is checked and listed above "Hard Disk." You can reorder them by dragging or using the up/down arrows. Then click "OK" to save the settings.
 
-[[File:btext7.png|470px]]
+[[File:btext7.png|470px|alt=VirtualBox Debian-12 Settings System tab: red arrow at Optical as first entry in the boot order]]
 
 {{IconSet|h1|5}} Save and Start VM.
 
-[[File:btext8.png|470px]]
+[[File:btext8.png|470px|alt=VirtualBox window showing GRUB menu with Kicksecure Live ISO 17.2.0.1 GNU/Linux and Advanced options entries]]
 
-[[File:btexd9.png|490px]]
+[[File:btexd9.png|490px|alt=Debian-12 VirtualBox window running Kicksecure Xfce live desktop with Install to Hard Drive icon]]
 
 {{IconSet|h1|6}} Complete Your Task.
 
@@ -370,11 +370,11 @@ Here are the steps to do this:
 
 {{IconSet|h1|7}} Detach ISO After Use: After the VM has been powered off, go back to the "Storage" tab in the VM settings. Click on the ISO file that you previously attached. Click on the CD/DVD icon on the right and choose "Remove disk from virtual drive."
 
-[[File:btexd10.png|470px]]
+[[File:btexd10.png|470px|alt=VirtualBox Debian-12 Settings Storage: steps 1 Storage, 2 select the Kicksecure ISO under IDE, 3 remove button, 4 OK]]
 
 {{IconSet|h1|8}} Revert Boot Order (if needed): Go to the "System" tab in the Settings window. Click on the "Motherboard" tab within the System settings. In the "Boot Order" section, ensure that "Hard Disk" is checked and listed above "Optical."
 
-[[File:btexd11.png|470px]]
+[[File:btexd11.png|470px|alt=VirtualBox Debian-12 Settings System tab: red arrow at Hard Disk first in the boot order list]]
 
 {{IconSet|h1|9}} Done.
 VirtualBox has been configured to boot from the ISO and the task can be performed in the live environment.
@@ -387,7 +387,7 @@ The ISO has been detached and the boot order has been restored so the VM boots f
 {{Tab
 |title= ===KVM===
 |type=section
-|image=[[File:Logo-kvm.png|25px]]
+|image=[[File:Logo-kvm.png|25px|alt=]]
 |addToClass=info-box
 |active=
 |content=
@@ -395,33 +395,33 @@ The ISO has been detached and the boot order has been restored so the VM boots f
 
 {{IconSet|h1|1}} Launch KVM (called Virtual Machine Manager) from your applications menu.
 
-[[File:vmiso.png|400px]]
+[[File:vmiso.png|400px|alt=Xfce application menu with Virtual Machine Manager highlighted under System.]]
 
 {{IconSet|h1|2}} Click on the VM that you want to boot from an ISO, then click on the "Open" button (Monitor icon) at the top.
 
-[[File:vmiso2.png|600px]]
+[[File:vmiso2.png|600px|alt=Virtual Machine Manager window listing the QEMU/KVM VM debian-12-DVD, shut off, with a red arrow pointing to the Open button.]]
 
 {{IconSet|h1|3}} Click on VM settings (bulb icon), then "SATA CDROM 1", and then "Browse" to choose the ISO.
 
-[[File:vmiso3.png|600px]]
+[[File:vmiso3.png|600px|alt=debian-12-DVD hardware details with SATA CDROM 1 selected, showing no media; numbered marks point to the details button, SATA CDROM 1 and Browse.]]
 
 {{IconSet|h1|4}} "Downloads" represents the path /home/user/Downloads where the ISO is located. If you click on it and find it empty, then click on the refresh icon. Next, select the ISO and press "Choose Volume".
 
-[[File:vmiso4.png|600px]]
+[[File:vmiso4.png|600px|alt=Locate ISO media volume dialog with the Downloads pool selected, listing Kicksecure-Xfce-17.2.0.7.iso, with Choose Volume highlighted.]]
 
 {{IconSet|h1|5}} Make sure you have chosen the correct ISO, then click on "Apply".
 
-[[File:vmiso4-1.jpg|600px]]
+[[File:vmiso4-1.jpg|600px|alt=SATA CDROM 1 source path set to Kicksecure-Xfce-17.2.0.7.iso in the Downloads folder, with a red arrow pointing to Apply.]]
 
 {{IconSet|h1|6}} Press on "Boot Options", then tick "Enable boot menu", Tick and move up "SATA CDROM 1," and finally, press "Apply".
 
-[[File:vmiso5.png|600px]]
+[[File:vmiso5.png|600px|alt=Boot Options pane with Enable boot menu checked and SATA CDROM 1 selected first in the boot device order; arrow points to Apply.]]
 
 {{IconSet|h1|7}} Run the VM, and it should boot the Kicksecure ISO.
 
-[[File:vmiso6.png|600px]]
+[[File:vmiso6.png|600px|alt=GRUB boot menu of the Kicksecure Live ISO 17.2.0.7 with the first entry highlighted.]]
 
-[[File:vmiso7.png|600px]]
+[[File:vmiso7.png|600px|alt=Kicksecure live desktop inside the virtual machine, showing icons including an Install to Hard Drive launcher.]]
 
 {{IconSet|h1|8}} Done.
 
@@ -435,7 +435,7 @@ To boot from the original operating system again, undo the ISO attachment and re
 {{Tab
 |title= ===Qubes===
 |type=section
-|image=[[File:Logo-qubes.png|25px]]
+|image=[[File:Logo-qubes.png|25px|alt=]]
 |addToClass=info-box
 |active=
 |content=
@@ -443,29 +443,29 @@ To boot from the original operating system again, undo the ISO attachment and re
 
 {{IconSet|h1|1}} Launch "Qube Manager," click on the VM that you want to boot the ISO on (Kali-Linux StandaloneVM will be used as an example), then click on the "Qube Settings" button (a gear icon) at the top.
 
-[[File:qubesbootiso1.png|800px]]
+[[File:qubesbootiso1.png|800px|alt=Qube Manager with the Kali-Linux qube selected and an arrow pointing at the qube settings button]]
 
 {{IconSet|h1|2}} Click on "Advanced" then "Boot qube from CD-ROM"
 
-[[File:qubesbootiso2.png|600px]]
+[[File:qubesbootiso2.png|600px|alt=Kali-Linux qube settings, Advanced tab, with the Boot qube from CD-ROM button marked as step 2]]
 
 {{IconSet|h1|3}} Choose "from file in qube" then select your AppVM where you downloaded the ISO ("debian-personal" is used here) then Press "..." to choose the path of the downloaded ISO.
 
-[[File:qubesbootiso3.png|600px]]
+[[File:qubesbootiso3.png|600px|alt=Boot qube from device dialog with from file in qube selected and the debian-personal qube chosen]]
 
 {{IconSet|h1|4}} Choose the downloaded ISO from the AppVM path where you have downloaded it.
 
-[[File:qubesbootiso4.png|600px]]
+[[File:qubesbootiso4.png|600px|alt=File chooser in debian-personal showing Kicksecure-Xfce-17.2.0.7.iso in the Downloads folder]]
 
 {{IconSet|h1|5}} Make sure everything is as it should be, then press "OK".
 
-[[File:qubesbootiso5.png|600px]]
+[[File:qubesbootiso5.png|600px|alt=Boot qube from device dialog with the Kicksecure ISO path filled in and an arrow pointing at the OK button]]
 
 {{IconSet|h1|6}} {{project_name_short}} ISO should boot perfectly.
 
-[[File:qubesbootiso6.png|600px]]
+[[File:qubesbootiso6.png|600px|alt=GRUB boot menu offering Kicksecure Live ISO 17.2.0.7 GNU/Linux]]
 
-[[File:qubesbootiso7.png|600px]]
+[[File:qubesbootiso7.png|600px|alt=Kicksecure live desktop in the Kali-Linux qube with an Install to Hard Drive icon on the desktop]]
 
 {{IconSet|h1|7}} If you shut down {{project_name_short}} live mode and reopen the VM, the ISO will be detached automatically, and the VM will boot the installed/default operating system.
 
@@ -557,7 +557,7 @@ Choose host operating system, VirtualBox or KVM.
 |content=
 {{Tab
 |title= == Host Operating System ==
-|image=[[File:Gnu_operating_system.png|40px]]
+|image=[[File:Gnu_operating_system.png|40px|alt=]]
 |addToClass=info-box
 |active=true
 |content=
@@ -567,7 +567,7 @@ Choose host operating system, VirtualBox or KVM.
 
 {{Tab
 |title= == VirtualBox ==
-|image=[[File:Logo-virtualbox.png|25px]]
+|image=[[File:Logo-virtualbox.png|25px|alt=]]
 |addToClass=info-box
 |content=
 {{Tab
@@ -734,7 +734,7 @@ Forum discussion: https://forums.whonix.org/t/serial-console-in-virtualbox/8021
 
 {{Tab
 |title= == KVM ==
-|image=[[File:Logo-kvm.png|25px]]
+|image=[[File:Logo-kvm.png|25px|alt=]]
 |addToClass=info-box
 |content=
 See [[KVM]], [[KVM#Command_Line_Interface_.28CLI.29|serial console]].
@@ -745,7 +745,7 @@ Wiki TODO: documentation needs to be ported here from https://www.whonix.org/wik
 
 {{Tab
 |title= == Qubes ==
-|image=[[File:Logo-qubes.png|25px]]
+|image=[[File:Logo-qubes.png|25px|alt=]]
 |addToClass=info-box
 |content=
 This procedure is [[undocumented]] and unspecific to {{project_name_short}}. See [[unspecific]].

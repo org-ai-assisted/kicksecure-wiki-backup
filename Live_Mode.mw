@@ -7,7 +7,7 @@ title=Live Mode for {{project_name_long}}
 |image=Grub-live_mode_indicator_in_kicksecure.shortened.png
 }}
 {{live}}
-[[File:kicksecure-live-mode-user-session.png|thumb|Live Mode boot option selected.]]
+[[File:kicksecure-live-mode-user-session.png|thumb|Live Mode boot option selected.|alt=Boot mode menu with the LIVE Mode, USER Session, disposable use entry highlighted]]
 [[File:Kicksecure-ISO-GRUB.png|thumb|alt=Kicksecure ISO GRUB|Kicksecure [[ISO]] Live Mode]]
 {{intro|
 '''{{project_name_short}} can be booted in Live Mode''' - a privacy-focused mode where nothing is saved after shutdown, making it ideal for handling sensitive data. This feature is available for both {{project_name_short}} as the host OS and {{project_name_short}} as the guest OS.
@@ -59,19 +59,19 @@ If your {{project_name_short}} virtual machine ('''''VM GUEST''''') is already r
 
 <div class="fontsize19">3. Look at the Boot Menu</div>
 
-When the GRUB boot menu appears (see more on the [[grub|GRUB bootloader here]]), wait until you see the menu options. You'll see a list of choices. The currently selected option is marked by an asterisk symbol [[File:asterisk_symbol.png|20px]] and shown in white text on a blue background.
+When the GRUB boot menu appears (see more on the [[grub|GRUB bootloader here]]), wait until you see the menu options. You'll see a list of choices. The currently selected option is marked by an asterisk symbol [[File:asterisk_symbol.png|20px|alt=]] and shown in white text on a blue background.
 
 <u>Note:</u> Boot option names have been renamed since version <code>17.3.9.2</code>.
 
 '''Figure:''' ''<code>Persistent</code> Mode Boot''
 
-[[File:Grub-persistent_mode_indicator_in_kicksecure.cleaned.png|Persistent Mode Boot|800px]]
+[[File:Grub-persistent_mode_indicator_in_kicksecure.cleaned.png|Persistent Mode Boot|800px|alt=GRUB menu on Kicksecure with the default Kicksecure GNU/Linux entry selected, above the LIVE mode USER entry]]
 
 <u>Note:</u> Boot option names have been renamed since version <code>17.3.9.2</code>.
 
 The boot menu will show something like:
 
-* [[File:asterisk_symbol.png|20px]] <code>{{project_name_short}} GNU/Linux</code>
+* [[File:asterisk_symbol.png|20px|alt=]] <code>{{project_name_short}} GNU/Linux</code>
 * <code>Advanced options for {{project_name_short}} GNU/Linux</code>
 * <code>LIVE mode USER (For daily activities.) GNU/Linux ...</code>
 
@@ -85,7 +85,7 @@ Use the keyboard arrow keys (up &uarr; and down &darr;) to move to the option la
 
 '''Figure:''' ''Live Mode Boot (<code>non-persistent</code>)''
 
-[[File:Grub-live mode indicator in kicksecure.cleaned.png|Live Mode Boot|800px]]
+[[File:Grub-live mode indicator in kicksecure.cleaned.png|Live Mode Boot|800px|alt=GRUB menu on Kicksecure with the LIVE mode USER (For daily activities.) entry selected]]
 
 <div class="fontsize19">5. Press ENTER</div>
 

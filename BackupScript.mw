@@ -6,7 +6,7 @@ Backup {{project_name_short}} Project - Get a Copy of {{project_name_short}} Web
 |description=Create a Backup of Website and Source Code of the {{project_name_long}}
 |image=whonixbackup.jpg
 }}
-[[File:whonixbackup.jpg|thumb]]
+[[File:whonixbackup.jpg|thumb|alt=]]
 {{intro|
 Create a backup of Website and Source Code of the {{project_name_short}}
 }}

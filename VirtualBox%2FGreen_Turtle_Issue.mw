@@ -7,13 +7,13 @@ VirtualBox - Green Turtle Issue
 |image=Green-turtle-icon-on-VirtualBox-Windows-11.jpg
 }}
 {{troubleshooting_mininav}}
-[[File:Green-turtle-icon-on-VirtualBox-Windows-11.jpg|400px|thumb|VirtualBox Green Turtle Indicator]]
+[[File:Green-turtle-icon-on-VirtualBox-Windows-11.jpg|400px|thumb|VirtualBox Green Turtle Indicator|alt=VirtualBox VM window status bar with a red arrow pointing to the green turtle icon]]
 {{intro|
 Fix VirtualBox green turtle icon issue on Windows hosts caused by Hyper-V and VBS. Learn how to improve VM performance and stability with step-by-step instructions.
 }}
 = Symptoms =
 
-* [[File:virtualbox_status_bar_turtle_indicator.png]] The VirtualBox host software shows a green turtle indicator (always visible); and/or
+* [[File:virtualbox_status_bar_turtle_indicator.png|alt=Small green turtle icon in the VirtualBox status bar.]] The VirtualBox host software shows a green turtle indicator (always visible); and/or
 * terminal message: <code>rcpu_preempt self-detected stall on CPU</code>
 * Very slow boot or general sluggishness inside the VM.
 * CPU lockups or stalls.
@@ -21,15 +21,15 @@ Fix VirtualBox green turtle icon issue on Windows hosts caused by Hyper-V and VB
 
 '''Image:''' ''VirtualBox Green Turtle Indicator''
 
-[[File:virtualbox_status_bar_turtle_indicator.png|100px]]
+[[File:virtualbox_status_bar_turtle_indicator.png|100px|alt=Small green turtle icon in the VirtualBox status bar.]]
 
 Where can I find the VirtualBox green turtle indicator? In the VirtualBox status bar.
 
 '''Image:''' ''VirtualBox Status Bar including Green Turtle Indicator''
 
-[[File:virtualbox_status_bar.png|400px]]
+[[File:virtualbox_status_bar.png|400px|alt=VirtualBox status bar showing a row of device icons, including a green turtle indicator.]]
 
-[[File:Green-turtle-icon-on-VirtualBox-Windows-11.jpg|400px]]
+[[File:Green-turtle-icon-on-VirtualBox-Windows-11.jpg|400px|alt=VirtualBox VM window status bar with a red arrow pointing to the green turtle icon]]
 
 If the VirtualBox green turtle indicator is not shown, and you're still experiencing issues, then it's a different issue.
 
@@ -43,13 +43,13 @@ For best performance and stability, it is recommended to fix the green turtle in
 
 '''Host {{os}} specific:'''
 
-* [[File:Logo-linux-variety-500x500.png|25px]] <u>Linux:</u> Not affected.
-* [[File:Logo-apple-500x500.png|25px]] <u>macOS:</u> Not affected.
-* [[File:Logo-windows-500x500.png|15px|link=]] <u>Windows:</u> This issue is applicable to <u>Windows</u>-based host operating systems <u>only</u>.
+* [[File:Logo-linux-variety-500x500.png|25px|alt=]] <u>Linux:</u> Not affected.
+* [[File:Logo-apple-500x500.png|25px|alt=]] <u>macOS:</u> Not affected.
+* [[File:Logo-windows-500x500.png|15px|link=|alt=]] <u>Windows:</u> This issue is applicable to <u>Windows</u>-based host operating systems <u>only</u>.
 
-'''Affected VM guest operating systems:''' all ([[File:Kicksecure-basic-logo.png|25px|link=]] Kicksecure, [[File:Whonix-logo-icon.svg|25px|link=]] Whonix, [[File:Debian.png|25px|link=]] Debian, etc.)
+'''Affected VM guest operating systems:''' all ([[File:Kicksecure-basic-logo.png|25px|link=|alt=]] Kicksecure, [[File:Whonix-logo-icon.svg|25px|link=|alt=]] Whonix, [[File:Debian.png|25px|link=|alt=]] Debian, etc.)
 
-'''Root issue caused by:''' [[File:Virtualbox_logo.png|25px|link=]] VirtualBox, [[File:Logo-windows-500x500.png|15px|link=]] Microsoft Windows
+'''Root issue caused by:''' [[File:Virtualbox_logo.png|25px|link=|alt=]] VirtualBox, [[File:Logo-windows-500x500.png|15px|link=|alt=]] Microsoft Windows
 
 '''Root issue <u>not</u> caused by:''' VM guest operating system
 
@@ -105,7 +105,7 @@ After reboot, start VirtualBox again. The green turtle icon should no longer app
 
 '''Image:''' ''VirtualBox V Symbol''
 
-[[File:The-v-symbol-is-back-in-VirtualBox.jpg|400px]]
+[[File:The-v-symbol-is-back-in-VirtualBox.jpg|400px|alt=Windows taskbar with a red arrow pointing to the blue V VirtualBox status bar icon]]
 
 '''Table:''' ''Left side bad (degraded), right side good (functional)''
 
@@ -117,8 +117,8 @@ After reboot, start VirtualBox again. The green turtle icon should no longer app
 ! '''Good'''<br>VirtualBox running normally without Hyper-V interference.
 |-
 
-| [[File:Green-turtle-icon-on-VirtualBox-Windows-11.jpg|400px]]
-| [[File:The-v-symbol-is-back-in-VirtualBox.jpg|400px]]
+| [[File:Green-turtle-icon-on-VirtualBox-Windows-11.jpg|400px|alt=VirtualBox VM window status bar with a red arrow pointing to the green turtle icon]]
+| [[File:The-v-symbol-is-back-in-VirtualBox.jpg|400px|alt=Windows taskbar with a red arrow pointing to the blue V VirtualBox status bar icon]]
 |-
 
 |}

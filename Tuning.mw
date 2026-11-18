@@ -17,7 +17,7 @@ Choose your platform to get started.
 {{Tab
 |type=section
 |title={{headline|h=3|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png]]
+|image=[[File:Virtualbox_logo.png|alt=]]
 |addToClass=special-look
 |content=
 Virtualizer [[VirtualBox]] has been chosen.
@@ -25,7 +25,7 @@ Virtualizer [[VirtualBox]] has been chosen.
 {{Tab
 |type=section
 |title={{headline|h=3|content=KVM}}
-|image=[[File:Kvm-new-logo.png]]
+|image=[[File:Kvm-new-logo.png|alt=]]
 |content=
 Virtualizer [[KVM]] has been chosen.
 }} <!-- close tab -->
@@ -290,7 +290,7 @@ sudo apt-get-reset vm-config-dist
 {{Tab
 |type=section
 |title={{headline|h=3|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png]]
+|image=[[File:Virtualbox_logo.png|alt=]]
 |addToClass=special-look
 |content=
 RAM available to Virtual Machines can be increased via VirtualBox settings.
@@ -308,7 +308,7 @@ See also: [[RAM|Advice for Systems with Low RAM]].
 {{Tab
 |type=section
 |title={{headline|h=3|content=KVM}}
-|image=[[File:Kvm-new-logo.png]]
+|image=[[File:Kvm-new-logo.png|alt=]]
 |content=
 [[Undocumented]].
 }} <!-- close tab -->
@@ -322,7 +322,7 @@ See also: [[RAM|Advice for Systems with Low RAM]].
 {{Tab
 |type=section
 |title={{headline|h=3|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png]]
+|image=[[File:Virtualbox_logo.png|alt=]]
 |addToClass=special-look
 |content=
 {{mbox
@@ -343,7 +343,7 @@ VirtualBox ticket: [https://www.virtualbox.org/ticket/19500 VirtualBox should no
 {{Tab
 |type=section
 |title={{headline|h=3|content=KVM}}
-|image=[[File:Kvm-new-logo.png]]
+|image=[[File:Kvm-new-logo.png|alt=]]
 |content=
 [[Undocumented]].
 }} <!-- close tab -->
@@ -390,7 +390,7 @@ sudo update-grub
 {{Tab
 |type=section
 |title={{headline|h=3|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png]]
+|image=[[File:Virtualbox_logo.png|alt=]]
 |addToClass=special-look
 |content=
 It is possible to increase performance by using largepages and/or Virtual Processor Identifiers (VPIDs). It is unknown if this decreases security or stability. For further information refer to the VirtualBox manual: [https://www.virtualbox.org/manual/ch10.html#nestedpaging Nested Paging and VPIDs].
@@ -406,7 +406,7 @@ vboxmanage modifyvm {{project_name_workstation_short}}-LXQt --vtx-vpid on
 {{Tab
 |type=section
 |title={{headline|h=3|content=KVM}}
-|image=[[File:Kvm-new-logo.png]]
+|image=[[File:Kvm-new-logo.png|alt=]]
 |content=
 [[Undocumented]].
 }} <!-- close tab -->
@@ -437,7 +437,7 @@ There are probably more tuning-related settings, but these are currently [[undoc
 {{Tab
 |type=section
 |title={{headline|h=3|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png]]
+|image=[[File:Virtualbox_logo.png|alt=]]
 |addToClass=special-look
 |content=
 To view all settings, run.
@@ -451,7 +451,7 @@ Next, learn about all of these settings by reviewing the [https://www.virtualbox
 {{Tab
 |type=section
 |title={{headline|h=3|content=KVM}}
-|image=[[File:Kvm-new-logo.png]]
+|image=[[File:Kvm-new-logo.png|alt=]]
 |content=
 [[Undocumented]].
 }} <!-- close tab -->
@@ -475,7 +475,7 @@ In simple terms, this feature allows the direct use of physical PCI devices on t
 {{Tab
 |type=section
 |title={{headline|h=3|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png]]
+|image=[[File:Virtualbox_logo.png|alt=]]
 |addToClass=special-look
 |content=
 Unsupported. VirtualBox no longer offers a PCI passthrough feature. <ref>
@@ -486,7 +486,7 @@ Quote: "Linux host: Drop PCI passthrough, the current code is too incomplete (ca
 {{Tab
 |type=section
 |title={{headline|h=3|content=KVM}}
-|image=[[File:Kvm-new-logo.png]]
+|image=[[File:Kvm-new-logo.png|alt=]]
 |content=
 [[Undocumented]].
 }} <!-- close tab -->

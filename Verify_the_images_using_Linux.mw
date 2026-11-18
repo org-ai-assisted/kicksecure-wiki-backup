@@ -6,7 +6,7 @@ Verify Downloaded Images on Linux
 |description=Instructions for OpenPGP and Signify Verification of {{project_name_long}} ISO, VirtualBox and KVM on the Command Line
 |image=Verify_images_on_linux.png
 }}
-[[File:Verify_images_on_linux.png|200px|thumbnail]]
+[[File:Verify_images_on_linux.png|200px|thumbnail|alt=]]
 {{intro|
 Instructions for OpenPGP and Signify Verification of {{project_name_short}} ISO, VirtualBox and KVM on the Command Line
 }}
@@ -50,7 +50,7 @@ The Kicksecure Verify_the_images_using_Linux wiki page is forked from the Tails 
 |content=
 {{Tab
 |title= = OpenPGP =
-|image=[[File:GnuPG-Logo.svg|25px]]
+|image=[[File:GnuPG-Logo.svg|25px|alt=]]
 |active=true
 |addToClass=info-box
 |content=
@@ -66,7 +66,7 @@ The Kicksecure Verify_the_images_using_Linux wiki page is forked from the Tails 
 
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} ISO}}
-|image=[[File:Cd-rom-icon.png|25px]]
+|image=[[File:Cd-rom-icon.png|25px|alt=]]
 |type=section
 |addToClass=info-box
 |active=true
@@ -94,7 +94,7 @@ Refer to the more secure, detailed [[Main/Project_Signing_Key|{{project_name_sho
 
 {{Tab
 |title={{Headline|h=2|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |type=section
 |addToClass=info-box
 |content=
@@ -115,7 +115,7 @@ Select LXQt or CLI version.
 
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} VirtualBox LXQt}}
-|image=[[File:Clipart-gui.svg|25px]]
+|image=[[File:Clipart-gui.svg|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -134,7 +134,7 @@ Select LXQt or CLI version.
 
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} VirtualBox CLI}}
-|image=[[File:Utilities-terminal.png|25px]]
+|image=[[File:Utilities-terminal.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -153,7 +153,7 @@ Select LXQt or CLI version.
 
 {{Tab
 |title={{Headline|h=2|content=KVM}}
-|image=[[File:Kvm-new-logo.png|25px]]
+|image=[[File:Kvm-new-logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 Refer to the more secure, detailed [[Main/Project_Signing_Key|{{project_name_short}} Signing Key]] instructions.
@@ -172,7 +172,7 @@ Select LXQt or CLI version.
 
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} KVM LXQt}}
-|image=[[File:Clipart-gui.svg|25px]]
+|image=[[File:Clipart-gui.svg|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -191,7 +191,7 @@ Select LXQt or CLI version.
 
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} KVM CLI}}
-|image=[[File:Utilities-terminal.png|25px]]
+|image=[[File:Utilities-terminal.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -228,7 +228,7 @@ This process can take several minutes.
 
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} ISO}}
-|image=[[File:Cd-rom-icon.png|25px]]
+|image=[[File:Cd-rom-icon.png|25px|alt=]]
 |type=section
 |addToClass=info-box
 |active=true
@@ -241,7 +241,7 @@ gpg --verify-options show-notations --verify {{project_name_short}}-*.Intel_AMD6
 
 {{Tab
 |title={{Headline|h=2|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -253,7 +253,7 @@ gpg --verify-options show-notations --verify {{project_name_short}}-*.ova.asc {{
 
 {{Tab
 |title={{Headline|h=2|content=KVM}}
-|image=[[File:Kvm-new-logo.png|25px]]
+|image=[[File:Kvm-new-logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -276,7 +276,7 @@ gpg --verify-options show-notations --verify {{project_name_short}}-*.libvirt.xz
 
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} ISO}}
-|image=[[File:Cd-rom-icon.png|25px]]
+|image=[[File:Cd-rom-icon.png|25px|alt=]]
 |type=section
 |addToClass=info-box
 |active=true
@@ -289,7 +289,7 @@ gpg: Good signature
 
 {{Tab
 |title={{Headline|h=2|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 <pre>
@@ -300,7 +300,7 @@ gpg: Good signature
 
 {{Tab
 |title={{Headline|h=2|content=KVM}}
-|image=[[File:Kvm-new-logo.png|25px]]
+|image=[[File:Kvm-new-logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -335,7 +335,7 @@ gpg: Signature made Mon 19 Jan 2023 11:45:41 PM CET using RSA key ID ...
 
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} ISO}}
-|image=[[File:Cd-rom-icon.png|25px]]
+|image=[[File:Cd-rom-icon.png|25px|alt=]]
 |type=section
 |addToClass=info-box
 |active=true
@@ -346,7 +346,7 @@ gpg: Signature made Mon 19 Jan 2023 11:45:41 PM CET using RSA key ID ...
 
 {{Tab
 |title={{Headline|h=2|content=VirtualBox}}
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -355,7 +355,7 @@ gpg: Signature made Mon 19 Jan 2023 11:45:41 PM CET using RSA key ID ...
 
 {{Tab
 |title={{Headline|h=2|content=KVM}}
-|image=[[File:Kvm-new-logo.png|25px]]
+|image=[[File:Kvm-new-logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 {{#tag:pre|gpg: Signature notation: file@name={{project_name_short}}-{{Version_KVM}}.libvirt.xz}}
@@ -381,7 +381,7 @@ Digital software signature verification using OpenPGP has been completed.
 
 {{Tab
 |title= = Signify =
-|image=[[File:Signify_Logo.svg.png|25px]]
+|image=[[File:Signify_Logo.svg.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -398,7 +398,7 @@ Digital software signature verification using OpenPGP has been completed.
 |content=
 {{Tab
 |title={{Headline|h=2|content={{project_name_short}} ISO Signify}}
-|image=[[File:Cd-rom-icon.png|25px]]
+|image=[[File:Cd-rom-icon.png|25px|alt=]]
 |type=section
 |addToClass=info-box
 |active=true
@@ -411,7 +411,7 @@ Digital software signature verification using OpenPGP has been completed.
 
 {{Tab
 |title={{Headline|h=2|content=VirtualBox Signify}}
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |type=section
 |addToClass=info-box
 |active=
@@ -424,7 +424,7 @@ Digital software signature verification using OpenPGP has been completed.
 
 {{Tab
 |title={{Headline|h=2|content=KVM Signify}}
-|image=[[File:Kvm-new-logo.png|25px]]
+|image=[[File:Kvm-new-logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 '''2.''' [[Signing_Key#Download_the_signify_Key|Download the signify Key]] and save it as <code>derivative.pub</code>.

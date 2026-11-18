@@ -7,7 +7,7 @@ System Maintenance Panel
 |image=Sysmaint-panel.png
 }}
 {{passwords_mininav}}
-[[File:Sysmaint-panel.png|thumb|System Maintenance Panel]]
+[[File:Sysmaint-panel.png|thumb|System Maintenance Panel|alt=Panel with buttons grouped under Software Updates, System Administration, and Misc, such as Install Updates, Create User, Reboot]]
 {{intro|
 This page provides documentation on using {{project_name_short}}'s System Maintenance Panel.
 }}
@@ -64,7 +64,7 @@ To search for and install software, use the "Install Software" button. A window 
 = Screenshots =
 Older version.
 
-[[File:System-maintenance-panel.png|600px|System Maintenance Panel]]
+[[File:System-maintenance-panel.png|600px|System Maintenance Panel|alt=Desktop with the panel window open, listing update, administration, and misc buttons, above a taskbar with volume and clock]]
 
 = Footnotes =
 <references />

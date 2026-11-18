@@ -8,7 +8,7 @@ title=Read-Only: Setting Hard Drives to Read-Only
 }}
 {{live}}
 {{grub-live}}
-[[File:whonixlive.jpg|250px|thumb]]
+[[File:whonixlive.jpg|250px|thumb|alt=]]
 {{intro|
 Depending on the user's use case. Choose one.
 
@@ -51,12 +51,12 @@ Follow these steps:
 # Power off the VM.
 # In the VirtualBox main window, navigate to: <code>File</code> &rarr; <code>Tools</code> &rarr; <code>Virtual Media Manager</code>.
 
-[[File:vbox-livemode1.png|500px]]
+[[File:vbox-livemode1.png|500px|alt=VirtualBox Manager File menu open with Tools submenu and Virtual Media Manager highlighted]]
 
 # Select the disk to write-protect and release it.
 # Then on <code>Type</code> &rarr; <code>set it to Immutable</code>.
 
-[[File:vbox-livemode2.png|800px]]
+[[File:vbox-livemode2.png|800px|alt=Virtual Media Manager listing Kicksecure-Xfce disk, with arrows marking the Type set to Immutable (1) and the Apply button (2)]]
 
 # In the VirtualBox main window, navigate to the settings of the VM.
 # Under storage, select the top controller and add the existing hard disk there.

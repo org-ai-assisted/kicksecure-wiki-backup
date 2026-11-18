@@ -7,8 +7,8 @@ Login Security
 |image=Gui_login.png
 }}
 {{passwords_mininav}}
-[[File:Gui_login.png|thumb|Graphical Login Screen]]
-[[File:virtual_console.png|thumb|Virtual Console]]
+[[File:Gui_login.png|thumb|Graphical Login Screen|alt=Black screen with a bordered box showing the word Login and a username prompt.]]
+[[File:virtual_console.png|thumb|Virtual Console|alt=Text console screen showing a LUKS disk passphrase prompt, the Kicksecure welcome message with default login instructions, and a localhost login prompt.]]
 {{intro|
 This page provides detailed information about the {{project_name_short}} login screen, how to configure it, and how to log in securely.
 }}
@@ -183,7 +183,7 @@ A login screen can be provided by a login manager. For example, <code>greetd</co
 
 '''Figure:''' ''<code>greetd</code> + <code>wlgreet</code> login manager''
 
-[[File:Gui_login.png|600px]]
+[[File:Gui_login.png|600px|alt=Black screen with a bordered box showing the word Login and a username prompt.]]
 
 = Console Login Screen =
 For {{cli}}.
@@ -199,7 +199,7 @@ Platform specific.
 
 '''Figure:''' ''virtual console login screen''
 
-[[File:virtual_console.png|600px]]
+[[File:virtual_console.png|600px|alt=Text console screen showing a LUKS disk passphrase prompt, the Kicksecure welcome message with default login instructions, and a localhost login prompt.]]
 
 {{IconSet|h1|1}} <u>Type the ''username''.</u>
 

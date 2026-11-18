@@ -7,7 +7,7 @@ Virtualization Platform Security
 |image=Virtualizationsec2342342.jpg
 }}
 {{physical-mininav}}
-[[File:Virtualizationsec2342342.jpg|thumb]]
+[[File:Virtualizationsec2342342.jpg|thumb|alt=]]
 {{intro|
 Deciding on a Virtualization Platform and Configuration, VirtualBox Hardening
 }}
@@ -122,15 +122,15 @@ Usually the VirtualBox application that is installed has been provided by [https
 
 '''Figure:''' ''Complete {{project_name_short}} OS Backup #1''
 
-[[File:2014-05-11 09_42_19.png]]
+[[File:2014-05-11 09_42_19.png|alt=Windows taskbar preview of Portable VirtualBox Manager and three running VMs: Whonix-Gateway, Win7Ultimate and Whonix-Workstation]]
 
 '''Figure:''' ''Complete {{project_name_short}} OS Backup #2''
 
-[[File:2014-05-11 09_46_43.png]]
+[[File:2014-05-11 09_46_43.png|alt=Windows Explorer showing the Portable-VirtualBox folder with an .svn folder and Machines folder holding Whonix-Gateway, Whonix-Workstation and Win7Ultimate]]
 
 '''Figure:''' ''Complete {{project_name_short}} OS Backup #3''
 
-[[File:2014-05-11 09_54_39.png]]
+[[File:2014-05-11 09_54_39.png|alt=Windows Explorer showing an SVN repository revs folder with six revision files of widely varying sizes, the largest about 13 GB]]
 </div>
 </div>
 

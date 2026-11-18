@@ -7,7 +7,7 @@ Boot Firmware
 |image=Boot-firmware.png
 }}
 {{boot_firmware}}
-[[File:Boot-firmware.png|thumb|200px]]
+[[File:Boot-firmware.png|thumb|200px|alt=Illustration of boot firmware: power button, gear, chip, monitor with Windows logo and hard disk connected by circuit lines]]
 {{intro|
 This page serves as a comprehensive guide for understanding {{project_name_short}}'s boot compatibility with BIOS, EFI, SecureBoot, and coreboot. It provides users with the necessary information to make informed decisions regarding firmware setup for optimal system functionality.
 }}

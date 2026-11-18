@@ -17,7 +17,7 @@ For background and technical details (design, plugin system, inclusion criteria)
 
 '''Figure:''' ''Browser Choice''
 
-[[File:Default-list-of-browsers-3.png|600px]]
+[[File:Default-list-of-browsers-3.png|600px|alt=Browser Choice tool, step 1 of 4: select an application among Brave, Chromium, Firefox, Mullvad and Tor Browser, each with its available install sources]]
 
 = Browser Installation =
 {{IntroLike|
@@ -30,7 +30,7 @@ In the Kicksecure GRUB boot menu, select <code>PERSISTENT Mode | SYSMAINT Sessio
 
 '''Figure:''' ''Kicksecure GRUB Boot Menu''
 
-[[File:Boot-into-Sysmaint-session-1.svg.png|600px]]
+[[File:Boot-into-Sysmaint-session-1.svg.png|600px|alt=Kicksecure boot menu with the PERSISTENT Mode SYSMAINT Session system maintenance tasks entry highlighted in red]]
 
 {{IconSet|h1|2}} Click <code>Install a Browser</code>
 
@@ -38,7 +38,7 @@ In the System Maintenance Panel, click <code>Install a Browser</code>.
 
 '''Figure:''' ''System Maintenance Panel''
 
-[[File:Choose-Install-a-Browser-2.png|600px]]
+[[File:Choose-Install-a-Browser-2.png|600px|alt=System Maintenance Panel with the Install a Browser button highlighted under System Administration.]]
 
 {{IconSet|h1|3}} Select a browser from the list
 
@@ -46,7 +46,7 @@ In the Browser Choice wizard, select the browser you want to install.
 
 '''Figure:''' ''Browser Choice Wizard, Step 1/4: Select Application''
 
-[[File:Default-list-of-browsers-3.png|600px]]
+[[File:Default-list-of-browsers-3.png|600px|alt=Browser Choice tool, step 1 of 4: select an application among Brave, Chromium, Firefox, Mullvad and Tor Browser, each with its available install sources]]
 
 {{IconSet|h1|4}} Select Firefox (as an example)
 
@@ -54,7 +54,7 @@ Select <code>Firefox</code>, then click <code>Continue</code>.
 
 '''Figure:''' ''Browser Choice Wizard, Step 1/4: Firefox Selected''
 
-[[File:Choose-Firefox-4.png|600px]]
+[[File:Choose-Firefox-4.png|600px|alt=Browser Choice tool, step 1 of 4: list of browsers (Brave, Chromium, Firefox, Mullvad, Tor Browser) with Firefox selected.]]
 
 {{IconSet|h1|5}} Source of installation
 
@@ -62,7 +62,7 @@ Choose the installation source, ensure <code>Install</code> is selected, then cl
 
 '''Figure:''' ''Browser Choice Wizard, Step 2/4: Choose Installation Options''
 
-[[File:Install-Firefox-From-Debian-5.png|600px]]
+[[File:Install-Firefox-From-Debian-5.png|600px|alt=Browser Choice wizard Step 2/4 Choose Installation Options, with Firefox ESR from Debian stable repository selected and the Install action chosen.]]
 
 Choices for installation:
 
@@ -80,7 +80,7 @@ Review the command that will be executed, then click <code>Continue</code> to pr
 
 '''Figure:''' ''Browser Choice Confirmation Dialog: Command Preview''
 
-[[File:How-the-command-to-install-it-6.png|600px]]
+[[File:How-the-command-to-install-it-6.png|600px|alt=Browser Choice wizard dialog Confirm Installation Options showing the pkexec apt-get command that will install firefox-esr, with Back and Continue buttons.]]
 
 {{IconSet|h1|7}} Wait for the installation to complete
 
@@ -88,7 +88,7 @@ Wait until the operation finishes, then click <code>Continue</code>.
 
 '''Figure:''' ''Browser Choice Wizard, Step 3/4: Applying Software Changes''
 
-[[File:Wait-until-the-operation-finish-7.png|600px]]
+[[File:Wait-until-the-operation-finish-7.png|600px|alt=Browser Choice tool at Step 3/4, Applying Software Changes, with package installation output ending in Done, operation was successful, and a Continue button.]]
 
 {{IconSet|h1|8}} Installation finished
 
@@ -96,7 +96,7 @@ Click <code>Done</code>, then restart or reboot the system.
 
 '''Figure:''' ''Browser Choice Wizard, Step 4/4: Software Changes Complete''
 
-[[File:Installation-completed-8.png|600px]]
+[[File:Installation-completed-8.png|600px|alt=Browser Choice wizard Step 4/4 Software Changes Complete, stating Firefox from Repo (Debian) was installed, with a Done button.]]
 
 {{IconSet|h1|9}} Boot into <code>USER Session</code>
 
@@ -104,7 +104,7 @@ In the Kicksecure GRUB boot menu, select <code>PERSISTENT Mode | USER Session | 
 
 '''Figure:''' ''Kicksecure GRUB Boot Menu''
 
-[[File:boot-into-user-session-9.svg.png|600px]]
+[[File:boot-into-user-session-9.svg.png|600px|alt=Kicksecure boot menu with the PERSISTENT Mode USER Session daily activities entry highlighted in red]]
 
 {{IconSet|h1|10}} Start the browser.
 
@@ -112,7 +112,7 @@ Open the applications menu, select the <code>Internet</code> category, then clic
 
 '''Figure:''' ''Kicksecure Application Menu: Firefox ESR''
 
-[[File:Find-Firefox-10.png|600px]]
+[[File:Find-Firefox-10.png|600px|alt=Application menu with Internet category selected, listing Browser Choice, Electrum Bitcoin Wallet and Firefox ESR]]
 
 {{IconSet|h1|11}} Done
 
@@ -120,7 +120,7 @@ Confirm Firefox starts successfully and loads the Kicksecure Welcome Page.
 
 '''Figure:''' ''Firefox ESR: Kicksecure Welcome Page''
 
-[[File:Run-Firefox-11.png|800px]]
+[[File:Run-Firefox-11.png|800px|alt=Kicksecure Welcome Page open in Firefox, showing Docs, Support, Forum links, news buttons, a documentation search box and search engine shortcuts]]
 
 = Plugins =
 Features a plugin based design and multiple installation types.

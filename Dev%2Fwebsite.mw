@@ -45,7 +45,7 @@ first to implement on desktop Linux distribution:
 |content=
 {{Tab
 |title= === {{project_name_short}} ===
-|image=[[File:Kicksecure-logo-rectangle.svg|50px]]
+|image=[[File:Kicksecure-logo-rectangle.svg|50px|alt=]]
 |content=
 test
 }}
@@ -58,7 +58,7 @@ Was broken. Now functional.
 |content=
 {{Tab
 |title= === {{project_name_short}} ===
-|image=[[File:Kicksecure-logo-rectangle.svg|25px]]
+|image=[[File:Kicksecure-logo-rectangle.svg|25px|alt=]]
 |content=
 test
 }}

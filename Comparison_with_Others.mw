@@ -7,7 +7,7 @@ Security Operating System Comparison - {{project_name_short}} vs Debian
 |image=Kicksecure_versus_Debian.png
 }}
 {{tech_intro_mininav}}
-[[File:Kicksecure_versus_Debian.png|frameless|right|150px]]
+[[File:Kicksecure_versus_Debian.png|frameless|right|150px|alt=Kicksecure shield with a checkmark on blue facing the Debian swirl logo on red, separated by VS]]
 {{intro|
 '''{{project_name_short}} ships dozens of security-hardening defaults that Debian does not.'''
 }}

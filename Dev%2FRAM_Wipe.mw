@@ -7,7 +7,7 @@
 Warm Boot Attack Defense - RAM Wipe Design Documentation
 }}
 {{fde-mininav}}
-[[File:Ram-wipe-developer.png|200px|thumb|ram-wipe logo (development)]]
+[[File:Ram-wipe-developer.png|200px|thumb|ram-wipe logo (development)|alt=]]
 {{intro|
 [[ram-wipe]] wipes the RAM during poweroff/reboot, utilizing the kernel's <code>init_on_free</code> mechanism.
 }}

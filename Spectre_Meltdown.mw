@@ -38,7 +38,7 @@ Platform specific. Select your platform.
 |content=
 {{Tab
 |title= == Host Operating System ==
-|image=[[File:Gnu_operating_system.png|25px]]
+|image=[[File:Gnu_operating_system.png|25px|alt=]]
 |addToClass=info-box
 |content=
 If {{project_name_long}} is run as a host operating system, then no further user action is required. This is because microcode packages are already installed by default, and [[security-misc]] applies hardened kernel settings that enable all available mitigations.
@@ -46,7 +46,7 @@ If {{project_name_long}} is run as a host operating system, then no further user
 
 {{Tab
 |title= == VirtualBox ==
-|image=[[File:Logo-virtualbox.png|25px]]
+|image=[[File:Logo-virtualbox.png|25px|alt=]]
 |addToClass=info-box
 |content=
 There is no solution for [[VirtualBox]] yet. The bug has been reported to the VirtualBox developers. For bug report tickets and related forum discussions, see footnote. <ref>
@@ -142,7 +142,7 @@ The above instructions only apply to the default VM names {{project_name_gateway
 
 {{Tab
 |title= == KVM ==
-|image=[[File:Logo-kvm.png|25px]]
+|image=[[File:Logo-kvm.png|25px|alt=]]
 |addToClass=info-box
 |content=
 '''1.''' Processor Microcode Updates.
@@ -158,7 +158,7 @@ No further action is needed.
 
 {{Tab
 |title= = Qubes =
-|image=[[File:Logo-qubes.png|25px]]
+|image=[[File:Logo-qubes.png|25px|alt=]]
 |addToClass=info-box
 |content=
 If Qubes is run as a host operating system, then no further user action is required. This is because microcode packages are already installed by default in Qubes. This is [[Unspecific|unspecific to {{project_name_short}}]]. Therefore, for additional information, check with upstream Qubes directly as per the [[Self Support First Policy]].
@@ -201,7 +201,7 @@ To check whether the microcode package is installed:
 |content=
 {{Tab
 |title= == Debian-based ==
-|image=[[File:Logo-debian.png|25px]]
+|image=[[File:Logo-debian.png|25px|alt=]]
 |addToClass=info-box
 |active=true
 |content=
@@ -216,7 +216,7 @@ dpkg -l {{!}} grep microcode
 
 {{Tab
 |title= == Qubes ==
-|image=[[File:Qubes-logo-icon.png|25px]]
+|image=[[File:Qubes-logo-icon.png|25px|alt=]]
 |addToClass=info-box
 |content=
 
@@ -246,7 +246,7 @@ Choose either Intel or AMD:
 |content=
 {{Tab
 |title= == Intel ==
-|image=[[File:Intel_logo_2023.svg.png|25px]]
+|image=[[File:Intel_logo_2023.svg.png|25px|alt=]]
 |addToClass=info-box
 |content=
 {{Install_Package_Host|package=
@@ -255,7 +255,7 @@ intel-microcode
 }} <!-- close tab: Intel -->
 {{Tab
 |title= == AMD ==
-|image=[[File:AMD_Logo.svg.png|25px]]
+|image=[[File:AMD_Logo.svg.png|25px|alt=]]
 |addToClass=info-box
 |content=
 {{Install_Package_Host|package=

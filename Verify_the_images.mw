@@ -6,7 +6,7 @@ Verify {{project_name_long}} Images Software Signatures
 |description=Download image verification instructions for {{non_q_project_name_short}} with OpenPGP and Signify.
 |image=Verify_images.png
 }}
-[[File:Verify_images.png|200px|thumb]]
+[[File:Verify_images.png|200px|thumb|alt=]]
 {{intro|
 Download image verification instructions for {{non_q_project_name_short}} with OpenPGP and Signify.
 }}
@@ -16,7 +16,7 @@ Download image verification instructions for {{non_q_project_name_short}} with O
 |content=
 {{Tab
 |title= = OpenPGP / Signify =
-|image=[[File:GnuPG-Logo.svg|25px]] [[File:Signify_Logo.svg.png|25px]]
+|image=[[File:GnuPG-Logo.svg|25px|alt=]] [[File:Signify_Logo.svg.png|25px|alt=]]
 |active=true
 |addToClass=info-box
 |content=
@@ -26,26 +26,26 @@ Download image verification instructions for {{non_q_project_name_short}} with O
 
 {{Tab
 |title= = ISO =
-|image=[[File:Cd-rom-icon.png|25px]]
+|image=[[File:Cd-rom-icon.png|25px|alt=]]
 |addToClass=info-box
 |content=
 Steps to verify the ISO image depend on the operating system in use:
 
-* [[File:Tux.png|15px|link=]] [[Verify the images using Linux|Linux using GPG and/or Signify]]
-* [[File:Windows_logo_-_2012.svg.png|15px|link=]] [[Verify_the_images_using_Windows|Windows using Gpg4win]]
-* [[File:rsz_osx.png|15px]] [[Verify_the_images_using_macOS|macOS using GPGTools]]
+* [[File:Tux.png|15px|link=|alt=]] [[Verify the images using Linux|Linux using GPG and/or Signify]]
+* [[File:Windows_logo_-_2012.svg.png|15px|link=|alt=]] [[Verify_the_images_using_Windows|Windows using Gpg4win]]
+* [[File:rsz_osx.png|15px|alt=Stylized X icon representing macOS]] [[Verify_the_images_using_macOS|macOS using GPGTools]]
 }} <!-- close tab: ISO -->
 
 {{Tab
 |title= = VirtualBox =
-|image=[[File:Virtualbox_logo.png|25px]]
+|image=[[File:Virtualbox_logo.png|25px|alt=]]
 |addToClass=info-box
 |content=
 Steps to verify the virtual machine images depend on the operating system in use:
 
-* [[File:Tux.png|15px|link=]] [[Verify the images using Linux|Linux using GPG and/or Signify]]
-* [[File:Windows_logo_-_2012.svg.png|15px|link=]] [[Verify_the_images_using_Windows|Windows using Gpg4win]]
-* [[File:rsz_osx.png|15px]] [[Verify_the_images_using_macOS|macOS using GPGTools]]
+* [[File:Tux.png|15px|link=|alt=]] [[Verify the images using Linux|Linux using GPG and/or Signify]]
+* [[File:Windows_logo_-_2012.svg.png|15px|link=|alt=]] [[Verify_the_images_using_Windows|Windows using Gpg4win]]
+* [[File:rsz_osx.png|15px|alt=Stylized X icon representing macOS]] [[Verify_the_images_using_macOS|macOS using GPGTools]]
 
 Also see: [[VirtualBox/Appliance is not signed|VirtualBox <code>Appliance is not signed</code> Error Message]].
 
@@ -53,15 +53,15 @@ Also see: [[VirtualBox/Appliance is not signed|VirtualBox <code>Appliance is not
 
 {{Tab
 |title= = KVM =
-|image=[[File:Kvmbanner-logo26.png|25px]]
+|image=[[File:Kvmbanner-logo26.png|25px|alt=]]
 |addToClass=info-box
 |content=
-Refer to the KVM [[File:Tux.png|15px|link=]] [[Verify_the_images_using_Linux|Verify the images using Linux]] instructions.
+Refer to the KVM [[File:Tux.png|15px|link=|alt=]] [[Verify_the_images_using_Linux|Verify the images using Linux]] instructions.
 }} <!-- close tab: KVM -->
 
 {{Tab
 |title= = Qubes =
-|image=[[File:qubes-logo-blue.png|25px]]
+|image=[[File:qubes-logo-blue.png|25px|alt=]]
 |addToClass=info-box
 |content=
 [[Qubes|{{q_project_name_long}}]] templates digital software signatures are automatically verified when <code>qubes-dom0-update</code> downloads and installs them; manual user verification is unnecessary.
@@ -74,7 +74,7 @@ Refer to the KVM [[File:Tux.png|15px|link=]] [[Verify_the_images_using_Linux|Ver
 {{Tab
 |title= = Codecrypt Signatures =
 |addToClass=info-box
-|image=[[File:Quantum-869533640.jpg|25px]]
+|image=[[File:Quantum-869533640.jpg|25px|alt=]]
 |content=
 
 [[PQCrypto#Codecrypt|Codecrypt]] signatures are not yet available, but are planned long term.

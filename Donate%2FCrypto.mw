@@ -6,7 +6,7 @@ Donate to {{project_name_long}} using cryptocurrency
 |description=Bitcoin (BTC), Monero (XMR), Ethereum (ETH) or Token (USDC, USDT, DAI)
 |image=Donate_Cryptocurrency.jpg
 }}
-[[File:Donate_Cryptocurrency.jpg|thumb|link=|class=hide-enlarge]]
+[[File:Donate_Cryptocurrency.jpg|thumb|link=|class=hide-enlarge|alt=Banner reading We accept cryptocurrency, with hands dropping Bitcoin coins into a donate box]]
 {{intro|
 Bitcoin (BTC), Monero (XMR), Ethereum (ETH) or Token (USDC, USDT, DAI)
 }}
@@ -32,7 +32,7 @@ Three options. Choose one.
 !'''Payment'''
 |-
 
-|[[File:BC_Logo_.png|50px|center|link=Donate/Bitcoin]]
+|[[File:BC_Logo_.png|50px|center|link=Donate/Bitcoin|alt=]]
 |Bitcoin
 |BTC
 |style="text-align: center; padding: 5px"|{{pay_bitcoin_qr}}
@@ -40,7 +40,7 @@ Three options. Choose one.
 |[bitcoin:{{Pay_Bitcoin}} bitcoin-link]
 |-
 
-|[[File:Monero-symbol-1280.png|50px|link=Donate/Monero]]
+|[[File:Monero-symbol-1280.png|50px|link=Donate/Monero|alt=]]
 |Monero
 |XMR
 |style="text-align: center; padding: 5px"|{{pay_monero_qr}}
@@ -48,7 +48,7 @@ Three options. Choose one.
 |[monero:{{Pay_Monero}} monero-link]
 |-
 
-|[[File:Ethereumlogo.png|50px|link=Donate/Ethereum]]
+|[[File:Ethereumlogo.png|50px|link=Donate/Ethereum|alt=]]
 |Ethereum
 |ETH
 |style="text-align: center; padding: 5px"|{{pay_ethereum_qr}}
@@ -56,22 +56,22 @@ Three options. Choose one.
 |[ethereum:{{Pay_Ethereum}} ethereum-link]
 |-
 
-|[[File:Usd-coin-usdc-logo.png|50px|link=Donate/Ethereum]]
+|[[File:Usd-coin-usdc-logo.png|50px|link=Donate/Ethereum|alt=]]
 |USD Coin
 |USDC
 |colspan=3 rowspan=3|ETH (ERC-20) token can be sent to the same Ethereum (ETH) address as above.
 |-
 
-|[[File:Greencoinmarketcap.png|50px|link=Donate/Ethereum]]
+|[[File:Greencoinmarketcap.png|50px|link=Donate/Ethereum|alt=Tether (USDT) logo, a white T on a green circle]]
 |Tether
 |USDT
 |-
 
-|[[File:Yellowcoinmarketcap.png|50px|link=Donate/Ethereum]]
+|[[File:Yellowcoinmarketcap.png|50px|link=Donate/Ethereum|alt=]]
 |Dai
 |DAI
 |-
-|[[File:Tronix-trx-logo-red.svg|50px|link=Donate/Tronix]]
+|[[File:Tronix-trx-logo-red.svg|50px|link=Donate/Tronix|alt=]]
 |Tronix
 |TRX
 |style="text-align: center; padding: 5px"|{{pay_tronix_qr}}

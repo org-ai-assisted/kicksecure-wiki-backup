@@ -7,8 +7,8 @@ Installation of {{project_name_long}} on a ARM64
 |image=Download-arm64.jpg
 }}
 {{architecture_mininav}}
-[[File:Download-arm64.jpg|thumb]]
-[[File:Arm64-logo.svg|thumb|100px]]
+[[File:Download-arm64.jpg|thumb|alt=ARM64 chip plus Kicksecure logo]]
+[[File:Arm64-logo.svg|thumb|100px|alt=]]
 {{intro|
 {{project_name_short}} can be installed on a ARM64. Here's how.
 }}

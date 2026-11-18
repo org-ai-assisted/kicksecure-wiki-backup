@@ -49,13 +49,13 @@ If you have [https://support.microsoft.com/en-us/windows/allow-an-app-to-access-
 
 '''Figure:''' ''Windows Protection History''
 
-[[File:Etcher Bug.png|900px]]
+[[File:Etcher Bug.png|900px|alt=Windows Security protection history showing balenaEtcher.exe blocked from protected memory access by Controlled folder access]]
 
 If you have [https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works User Account Control] enabled, allow Etcher to make changes to your device by pressing "Yes" when a popup similar to the following appears:
 
 '''Figure:''' ''Windows User Account Control''
 
-[[File:windowsallowsystemchange.png|400px]]
+[[File:windowsallowsystemchange.png|400px|alt=Windows User Account Control prompt asking to allow Terminal, verified publisher Microsoft Corporation, to make changes, with Yes and No buttons]]
 
 === KDE ISO Image Writer ===
 {{quotation
@@ -63,7 +63,7 @@ If you have [https://learn.microsoft.com/en-us/windows/security/application-secu
 |author=KDE ISO Image Writer Error Message
 }}
 
-[[File:isoimagewritererror.png|400px|KDE ISO Image Writer Error Message]]
+[[File:isoimagewritererror.png|400px|KDE ISO Image Writer Error Message|alt=KDE ISO Image Writer error dialog: The last block was not fully written (-1 of 1,048,576 bytes)! Aborting.]]
 
 <ref>
 * Question: Why does it happen with {{project_name_short}} ISO but not with Debian or some other ISO?
@@ -78,7 +78,7 @@ In this case,
 * '''B)''' use a different ISO Image Writer tool.
 
 === DVD Support ===
-[[File:Cd-rom-icon.png|50px|thumb]]
+[[File:Cd-rom-icon.png|50px|thumb|alt=]]
 
 [[Untested]]. Should work in theory. Tested inside QEMU and VirtualBox with an emulated CD-ROM drive. So chances are good that it will work with a real DVD drive as well.
 
@@ -1120,9 +1120,9 @@ Core 0:       +44.0&deg;C  (crit = +105.0&deg;C)
 
 Graphical interface for temperature sensors.
 
-[[File:psensor1.png|400px]]
+[[File:psensor1.png|400px|alt=Xfce application menu with the Psensor entry under System Tools highlighted, with numbered steps 1 to 3]]
 
-[[File:psensor2.png|800px]]
+[[File:psensor2.png|800px|alt=Psensor temperature monitor window listing fan speeds, CPU and GPU temperatures, CPU usage, free memory and SSD temperature]]
 
 === More tools ===
 

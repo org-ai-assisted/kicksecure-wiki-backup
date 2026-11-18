@@ -9,9 +9,9 @@ systemcheck - Security Check Application
 {{intro|
 System Integrity Test. Connectivity Test. Update Check. And More.
 }}
-[[File:Systemchecknotification.png|thumb|systemcheck completion]]
-[[File:Systemcheckgui.png|thumb|systemcheck progress meter]]
-[[File:Systemcheckcli.png|thumb|systemcheck in Terminal]]
+[[File:Systemchecknotification.png|thumb|systemcheck completion|alt=Systemcheck result window with info messages: research project notice, APT repository enabled, no updates found, please donate]]
+[[File:Systemcheckgui.png|thumb|systemcheck progress meter|alt=Progress dialog: Checking System Status, background task taking about three minutes, with Cancel and disabled OK buttons]]
+[[File:Systemcheckcli.png|thumb|systemcheck in Terminal|alt=Terminal output of systemcheck: connected to Tor, APT repository enabled, no updates found, and a request to donate]]
 = Introduction =
 * <u>Purpose of systemcheck:</u> {{Code2|systemcheck}} checks numerous, important system variables to assess system status.
 * <u>Usage methods:</u> It can be run in a {{cli}} environment (such as in a terminal emulator like <code>qterminal</code>) or via the {{gui}} option, which features a progress meter and summary notification popup.
@@ -324,7 +324,7 @@ Includes manual investigation hints and may show additional platform-specific ad
 = Update Notifications by updatecheck =
 '''Figure:''' ''updatecheck notification (passive popup)''
 
-[[File:updatecheck.png|400px]]
+[[File:updatecheck.png|400px|alt=Notification reading updatecheck: Software updates available, 4 packages have updates available]]
 
 Platform specific.
 
@@ -394,7 +394,7 @@ Several checks related to [[Protection Against Physical Attacks]].
 
 '''Figure:''' ''systemcheck - Physical Security Check''
 
-[[File:physical-security-check.png|600px]]
+[[File:physical-security-check.png|600px|alt=Systemcheck output listing user-sysmaint-split and Full Disk Encryption enabled, GRUB password absent, and a table showing no passwords and GUI autologin enabled]]
 
 Checks <u>included</u>:
 

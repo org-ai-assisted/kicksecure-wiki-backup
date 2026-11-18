@@ -7,7 +7,7 @@ title=Cryptocurrency Hardware Wallet: Threat Model
 |image=Cryptohardwarethreat.jpg
 }}
 {{crypto_hardware_wallets_mininav}}
-[[File:Cryptohardwarethreat.jpg|thumb]]
+[[File:Cryptohardwarethreat.jpg|thumb|alt=]]
 {{intro|
 An overview of the threat model for cryptocurrency hardware wallets, including how funds can still be stolen despite using one, what protections these devices actually provide, and where their limitations create additional risks.
 }}
