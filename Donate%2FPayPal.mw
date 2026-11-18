@@ -16,7 +16,7 @@ Donate to {{project_name_short}} using PayPal. Most currencies. Many payment opt
 <div class="headline">Donate via [[File:de-pp-logo-200px.png|100px|alt=PayPal|link=]]</div>
 
 <div class="paypal-donate-cta text-align-center">
-'''[https://www.paypal.com/donate/?hosted_button_id=AV279ZA93EKHQ Donate with PayPal]'''
+{{PayPal_Donate_Button}}
 </div>
 
 On PayPal's donation page you can choose the amount and a one-time or monthly donation, and pay with a PayPal balance, credit or debit card, or many other payment options. No PayPal account is required for many options.
