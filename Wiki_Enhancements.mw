@@ -88,6 +88,8 @@ File:Wiki-enhanced-demo-videolink.jpg|Video Link
 
 <gallery widths="180px" class="thumb-gallery-style justify-left">
 File:Wiki-enhanced-demo-responsive.jpg|Responsive Demo
+File:Wiki-enhanced-demo-darkmode.jpg|Dark Mode
+File:Wiki-enhanced-demo-linkpreview.jpg|Link Preview
 </gallery>
 
 {{#iconbulletlist:fontSize=17px
@@ -120,10 +122,20 @@ File:Wiki-enhanced-demo-scrollwrapper.jpg|Scroll Auto Wrapper
 |item=fa-solid fa-check cs-blue,Built-in SEO, Open Graph and structured data metadata on every page
 }}
 
+<gallery widths="200px" class="thumb-gallery-style justify-left">
+File:Wiki-enhanced-demo-github-edit.jpg|Open Editing on GitHub
+File:Wiki-enhanced-demo-history-diff.jpg|Page History and Diffs
+File:Wiki-enhanced-demo-seo-meta.jpg|SEO and Open Graph Metadata
+</gallery>
+
 {{#iconbulletlist:fontSize=17px
 |item=fa-solid fa-check cs-blue,Flash-free theming with no style jump while the page loads
 |item=fa-solid fa-check cs-blue,A privacy consent notice that remembers your choice locally, with no cookies at all
 |item=fa-solid fa-check cs-blue,Automated broken-link checking, so dead internal links never ship
 }}
+
+<gallery widths="200px" class="thumb-gallery-style justify-left">
+File:Wiki-enhanced-demo-consent.jpg|Cookie-free Consent Notice
+</gallery>
 
 {{Footer}}
