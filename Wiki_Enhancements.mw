@@ -13,7 +13,7 @@ Wiki Enhancements
 {{devwiki}}
 [[File:Wiki-upgrade.jpg|thumb|200px]]
 {{intro|
-Our wikis have undergone multiple enhancements that are neither part of the vanilla MediaWiki software nor its extensions. With these enhancements we make our wikis '''more accessible, more readable, more user friendly and more feature rich'''. On this page we would like to give you an overview.
+Our wikis include numerous custom enhancements of our own design. With these enhancements we make our wikis '''more accessible, more readable, more user friendly and more feature rich'''. On this page we would like to give you an overview.
 }}
 __TOC__
 = Our own original upgrades =
@@ -113,5 +113,17 @@ File:Wiki-enhanced-demo-infobox.jpg|Info box
 File:Wiki-enhanced-archive-link.jpg|Archive Link
 File:Wiki-enhanced-demo-scrollwrapper.jpg|Scroll Auto Wrapper
 </gallery>
+
+{{#iconbulletlist:fontSize=17px
+|item=fa-solid fa-check cs-blue,Open editing on GitHub, where every section links to its source and anyone can propose changes as a pull request
+|item=fa-solid fa-check cs-blue,Full page history and diffs via the GitHub commit view
+|item=fa-solid fa-check cs-blue,Built-in SEO, Open Graph and structured data metadata on every page
+}}
+
+{{#iconbulletlist:fontSize=17px
+|item=fa-solid fa-check cs-blue,Flash-free theming with no style jump while the page loads
+|item=fa-solid fa-check cs-blue,A privacy consent notice that remembers your choice locally, with no cookies at all
+|item=fa-solid fa-check cs-blue,Automated broken-link checking, so dead internal links never ship
+}}
 
 {{Footer}}
