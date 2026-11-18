@@ -27,11 +27,7 @@ The onion domain of {{project_name_short}} is <code>{{project_onion}}</code>.
 {{project_onion}}
 }}
 
-Or, in machine-readable format ([[API]]), here is a raw link that only shows the onion: {{ExtLink
-|1=https://www.{{project_clearnet}}/w/index.php?title=Template:Project_onion&action=raw
-|2=http://www.{{project_onion}}/w/index.php?title=Template:Project_onion&action=raw
-|text=raw
-}}
+Or, in machine-readable format ([[API]]), here is the endpoint that returns only the onion domain: <code><a href="/wiki/api/www-onion">/wiki/api/www-onion</a></code>
 
 To use <code>.onion</code> services when browsing <code>{{project_clearnet}}</code>, follow the links below to the {{project_name_short}} homepage, forums, download, Debian repository, issue tracker, or the {{project_name_short}} Debian repository.
 
