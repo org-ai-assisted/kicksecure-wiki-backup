@@ -580,12 +580,12 @@ The '''lead image''' is the image that opens an article, shown directly under th
 
 * '''<code>lead-wide</code>''' (treatment '''B'''): full content-width captioned block, placed '''below''' the title. Best for a wide (landscape) image. Example:
 ** <code><nowiki>[[File:Android_Insecurity.png|thumb|class=lead-wide|Optional caption]]</nowiki></code>
-* '''<code>lead-hero</code>''' (treatment '''C'''): full-bleed banner, image first, placed '''above''' the title. Example:
+* '''<code>lead-hero</code>''' (treatment '''C'''): full-bleed image, image first, placed '''above''' the title -- suited to landing or section pages rather than article bodies. Example:
 ** <code><nowiki>[[File:Example.png|thumb|class=lead-hero|Optional caption]]</nowiki></code>
 
 Notes:
 * Keep the <code>thumb</code> keyword; <code>class=lead-wide</code> / <code>class=lead-hero</code> only change placement and sizing. With neither class the image is an ordinary right-floated thumbnail (treatment A).
-* A lead image fills the content column and is never enlarged past its source, so author the source at roughly 1280-2560px wide for a crisp full-width render.
+* Suggested sizes: author the source around 1600-2048px wide (larger is downscaled and wasted), with a 16:9 or 3:2 aspect ratio. A lead image fills the content column (about 760px wide), is kept short so the title and first paragraph stay visible, and is never enlarged past its source.
 
 Demonstration pages:
 * [[Dev/LeadImageDefaultTest]] -- treatment A (default right-float)
