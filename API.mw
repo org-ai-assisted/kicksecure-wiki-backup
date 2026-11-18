@@ -30,17 +30,17 @@ Recommended. Clean endpoints that return the bare value only, with nothing to st
 Legacy. MediaWiki <code>action=raw</code> endpoints. Their result has a trailing <code><nowiki><noinclude>[[Category:MultiWiki]]</noinclude></nowiki></code> which must be searched and replaced with nothing; API v2 above avoids this.
 
 == VirtualBox Stable Version Number ==
-* https://www.{{project_clearnet}}/w/index.php?title=Template:VersionNew&stable=0&action=raw
+* <code>/w/index.php?title=Template:VersionNew&stable=0&action=raw</code>
 
 == VirtualBox Testers-Only Version Number ==
-* https://www.{{project_clearnet}}/w/index.php?title=Template:VersionTesters&stable=0&action=raw
+* <code>/w/index.php?title=Template:VersionTesters&stable=0&action=raw</code>
 
 == KVM Stable Version Number ==
-* https://www.{{project_clearnet}}/w/index.php?title=Template:Version_KVM&stable=0&action=raw
+* <code>/w/index.php?title=Template:Version_KVM&stable=0&action=raw</code>
 
 == Onion-Location ==
 The onion domain for <code>{{project_clearnet}}</code>:
-* https://www.{{project_clearnet}}/w/index.php?title=Template:Project_onion&action=raw
+* <code>/w/index.php?title=Template:Project_onion&action=raw</code>
 
 = Note =
 This is not a real (dynamic) API. The API v2 endpoints are plain static files generated at build time from the wiki version templates; they change only when the website is rebuilt.
