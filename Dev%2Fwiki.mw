@@ -13,11 +13,7 @@ Syntax Highlighting vs Link Suggestions, Links with Web Archive, Onions, CodeSel
 
 Check the [[File:Supermenu3.png|30px|<code>Super Menu</code>]] (down) ("<code>&darr;</code>") symbol in the wiki website header. In the wiki header. Not here in this wiki text content. This is also called [[Dev/wiki#Super_Menu|Super Menu]].
 
-Click on <code>History</code>. It leads, for example, here:
-
-* https://www.whonix.org/w/index.php?title=Telegram&action=history
-
-Login required.
+Click on <code>History</code>. It leads to the page's revision history.
 
 Login is unfortunately required for wiki history due to scraping bots by AI companies and others. Details: [[Wiki History]]
 
@@ -46,15 +42,6 @@ This is the stable version, checked on 27 April 2025. 3 pending changes await re
 
 The phrase <code>3 pending changes</code> is a clickable link. Clicking it brings you to a *diff* -- a side-by-side display of what was changed -- comparing the latest confirmed version against the unconfirmed version. Below this difference view, the full pending (unconfirmed) version of the page is shown.
 
-If you prefer direct access to the unconfirmed version of a page, you can use a specific URL format:
-
-Note: Replace <code>Dev/wiki</code> with the actual title of the wiki page, such as <code>Telegram</code>.
-
-{{CodeSelect|code=
-https://www.whonix.org/w/index.php?title=Telegram&stable=0s
-}}
-
-This URL forces the browser to display the pending version, bypassing the default view of the stable version.
 
 Even if edits have been approved, caching issues can lead to non-logged in users stills the old version. Sometimes this will fix itself spontaneously or will be fixed once admins manually purge the cache.
 
@@ -384,32 +371,7 @@ upstream bug reports:
 # Protocol handler <code>http</code> or <code>https</code> is required.
 # wrong for onion: <code><nowiki>|{{QubesOS_onion}}</nowiki></code>
 # correct for onion: <code><nowiki>|http://{{QubesOS_onion}}</nowiki></code>
-# '''IMPORTANT NOTE''': In rare cases - especially if the URL is constructed using other templates - the anonymous parameters might not work! In this case use numbered parameters instead, like <code>|1=(first-url)|2=(second-url)</code> ...
-#* Example
-#** This does NOT work {{CodeSelect|code=
-{{ExtLink
-{{!}}text=raw
-{{!}}https://www.{{project_clearnet}}/w/index.php?title=Template:Project_onion&action=raw
-{{!}}http://www.{{project_onion}}/w/index.php?title=Template:Project_onion&action=raw
-}}
-}}
-#** Result {{ExtLink
-|text=raw
-|https://www.{{project_clearnet}}/w/index.php?title=Template:Project_onion&action=raw
-|http://www.{{project_onion}}/w/index.php?title=Template:Project_onion&action=raw
-}}
-#** This DOES work <code>{{CodeSelect|code=
-{{ExtLink
-{{!}}text=raw
-{{!}}1=https://www.{{project_clearnet}}/w/index.php?title=Template:Project_onion&action=raw
-{{!}}2=http://www.{{project_onion}}/w/index.php?title=Template:Project_onion&action=raw
-}}
-}}</code>
-#** Result {{ExtLink
-|text=raw
-|1=https://www.{{project_clearnet}}/w/index.php?title=Template:Project_onion&action=raw
-|2=http://www.{{project_onion}}/w/index.php?title=Template:Project_onion&action=raw
-}}
+# '''IMPORTANT NOTE''': In rare cases - especially if the URL is constructed using other templates - the anonymous parameters might not work! In this case use numbered parameters instead, like <code>|1=(first-url)|2=(second-url)</code>.
 
 == Kicksecure wiki link ==
 * To specifically link to the kicksecure wiki use this shortcut
@@ -679,8 +641,8 @@ Redirection setup complete.
 == Editing Existing External Redirects ==
 NOTE: Replace <code>OpenPGP</code> with the actual wiki page name.
 
-* https://www.whonix.org/w/index.php?title=OpenPGP&redirect=no
-* https://www.whonix.org/wiki/Moved:OpenPGP
+* <code>index.php?title=OpenPGP&redirect=no</code>
+* <code>/wiki/Moved:OpenPGP</code>
 
 = Wiki Editors Terminology for Wiki Migration =
 * copy (duplicate from Whonix wiki to Kicksecure wiki and remove Whonix specific parts from Kicksecure wiki)
@@ -760,7 +722,7 @@ How to test:
 
 '''2.''' Then run <code>mw-multi-wiki</code>.
 
-'''3.''' Check for example if [https://www.whonix.org/wiki/Testpage Testpage was modified in the destination wiki] by looking at its content or [https://www.whonix.org/w/index.php?title=Testpage&action=history Testpage history].
+'''3.''' Check for example if Testpage was modified in the destination wiki by looking at its content or its page history.
 
 = Gadgets =
 Under [[Special:SpecialPages]] look for:
@@ -797,7 +759,7 @@ Example:
 * {{CodeSelect|code=
 #widget:Icon_Bullet_List
 }}
-** https://www.kicksecure.com/w/index.php?search=%23widget%3AIcon_Bullet_List
+** To find usages, search the wiki for <code>#widget:Icon_Bullet_List</code>.
 
 = ReplaceText =
 '''1.''' Go to Special:ReplaceText.
@@ -1048,22 +1010,9 @@ https://www.kicksecure.com/wiki/Testpage?dontload=jscss
 *** In case of B), the [[#CodeSelect|<code>CodeSelect</code>]] copy button should not be visible.
 * '''<code>Special:</code> pages example:'''
 ** '''A)''' <u>Normal URL:</u> {{CodeSelect|code=
-https://www.kicksecure.com/wiki/Special:RecentChanges
+/wiki/Special:RecentChanges
 }}
-*** In case of A), ...
-** '''B)''' <u>URL with <code>dontload=jscss</code> query parameter:</u> {{CodeSelect|code=
-https://www.kicksecure.com/wiki/Special:RecentChanges?dontload=jscss
-}}
-*** In case of B), no visible difference at time of writing.
-* '''<code>index.php</code> edit wiki page example:'''
-** '''A)''' <u>Normal URL:</u> {{CodeSelect|code=
-https://www.kicksecure.com/w/index.php?title=Dev/wikitest&action=edit
-}}
-*** In case of A), the the <code>Save Continue</code> and <code>Save changes</code> buttons should be visible.
-** '''B)''' <u>URL with <code>dontload=jscss</code> query parameter:</u> {{CodeSelect|code=
-https://www.kicksecure.com/w/index.php?title=Dev/wikitest&action=edit&dontload=jscss
-}}
-*** In case of B), only the <code>Submit changes</code> button should be visible.
+*** In case of A), the page is served statically.
 
 = AI Image Creation =
 add links to gemini sessions

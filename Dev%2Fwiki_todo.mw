@@ -21,7 +21,7 @@ Things which need to be done.
 ** https://github.com/QubesOS/qubes-issues/issues/9305
 ** https://github.com/QubesOS/qubes-issues/issues/9491
 ** Could be DNF issues. Waiting for port to trixie.
-* https://www.whonix.org/wiki/Special:WantedPages
+* Special:WantedPages
 * Add an ability to get the latest version number updated for virtualbox from oracle or at least a notification of new release.
 * Tickets related salt for indicator phasing out manual use of qubes-dom0-update by user have been closed, and it looks like salt going to be replaced with Ansible. See what how you want to fix this part (delete completely or change words..).
 ** https://www.whonix.org/wiki/Template:Qubes_Download_Install#cite_note-1
@@ -34,11 +34,11 @@ Things which need to be done.
 * In https://www.whonix.org/wiki/Template:Dev/Project_Networking
 ** Broken: https://github.com/Kicksecure/security-misc/blob/master/etc/sysctl.d/30_security-misc.conf
 * Many broken, though the one which need to replaced hard to know which:
-** https://www.whonix.org/w/index.php?title=Special:LinkSearch&target=https%3A%2F%2Fgithub.com%2FWhonix%2FWhonix
+** Special:LinkSearch for github.com/Whonix/Whonix
 
 == internal links links fixing ==
 === whonix ===
-https://www.whonix.org/wiki/Special:WantedPages
+Special:WantedPages
 
 * Dev/Build Documentation/images (4 links) -> ignore
 * Dev/image_creation (1 link) -> ignore
@@ -101,15 +101,15 @@ Add at the bottom of the page:
 
 '''2.''' Can be found here:
 
-* https://www.kicksecure.com/wiki/Special:SpecialPages
-* https://www.whonix.org/wiki/Special:SpecialPages
+* Special:SpecialPages (Kicksecure)
+* Special:SpecialPages (Whonix)
 
 Now both have a link to <code>Status of external links</code>.
 
 '''3.''' Direct links:
 
-* https://www.kicksecure.com/wiki/Special:RottenLinks
-* https://www.whonix.org/wiki/Special:RottenLinks
+* Special:RottenLinks (Kicksecure)
+* Special:RottenLinks (Whonix)
 
 '''4.''' use checkbox <code>Show rotten links only</code>
 
@@ -224,7 +224,7 @@ https://manpages.debian.org/bullseye/xserver-xorg-core/modesetting.4.en.html
 This is because A) is more generic. Debian already redirects to the most recent release and link. No need to use the more specific link which will break in a few years.
 
 === Links Knowledge ===
-In https://www.kicksecure.com/w/index.php?title=Mobile_Phone_Security&oldid=61483&diff=cur you changed from
+In the Mobile Phone Security page you changed from
 
 <pre>
 https://www.businessinsider.com/saudi-arabia-imei-track-runaways-2019-5
@@ -246,7 +246,7 @@ https://www.businessinsider.nl/saudi-arabia-imei-track-runaways-2019-5'''?intern
 
 === Double Redirects to Single Redirects ===
 
-https://www.whonix.org/wiki/Special:DoubleRedirects
+Special:DoubleRedirects
 
 Howto:
 

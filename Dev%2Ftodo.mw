@@ -2434,8 +2434,7 @@ kloak[1895]: WARNING: Could not get Wayland display, will await escape key combo
 ** Aaron: Reviewed, shared notes in chat.
 
 == kloak wiki review ==
-* anonymous edit
-* https://www.whonix.org/w/index.php?title=Keystroke_and_Mouse_Deanonymization&oldid=106836&diff=cur
+* anonymous edit on the Keystroke and Mouse Deanonymization page
 * Aaron: Reviewed, tested, added some disclaimers since some worrying behavior was observed during testing. Mentioned said worrying behavior in the Tor Browser Development room on Matrix.
 
 == legacy-dist bookworm branch ==
@@ -2993,7 +2992,7 @@ sudo --set-home XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR QT_QPA_PLATFORM=wayland applica
 *** Aaron: Fixed.
 ** 3) question/bug: Does it work with applications that are symlinks?
 *** Aaron: It appears to, yes.
-** 4) See this [https://www.kicksecure.com/w/index.php?title=Root&oldid=98397#Wayland old wiki revision of yours]. relevant quote
+** 4) See this [https://web.archive.org/web/20250720191207/https://www.kicksecure.com/w/index.php?title=Root&oldid=98397#Wayland old wiki revision of yours]. relevant quote
 
 <pre>
 The following command should work to run Wayland applications as root in most instances. Replace application-name as appropriate:

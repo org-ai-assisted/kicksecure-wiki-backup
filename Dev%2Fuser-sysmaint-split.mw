@@ -487,7 +487,7 @@ Simplified. Relevant files only. Left out "advanced" for simplicity.
 
 = Prior Versions =
 
-[https://www.kicksecure.com/w/index.php?title=Dev/user-sysmaint-split&oldid=87353 Older concept version still containing "SUPERADMIN" and "SECUREADMIN".]
+[https://web.archive.org/web/20260102114445/https://www.kicksecure.com/w/index.php?title=Dev%2Fuser-sysmaint-split&oldid=87353 Older concept version still containing "SUPERADMIN" and "SECUREADMIN".]
 
 = Tickets =
 * [https://github.com/QubesOS/qubes-issues/issues/9519 Create user admin by default and add user admin to group sudo by default]

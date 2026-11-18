@@ -97,8 +97,7 @@ Patrick:
 ** Dev tried <code>$wgNamespacePermissionLockdown[NS_FILE]['read']  = "*";</code> and <code>$wgNamespacePermissionLockdown[NS_MEDIA]['read'] = "*";</code> and also Whitelisting efforts like <code>$wgWhitelistReadRegexp[] = '(?i)^File:.*\.svg$';</code>. But nothing worked to change "accessdenied" for anon users
 ** At the end Dev reset everything to the previous state in file <code>33-lockdown.php</code>
 * Maybe admin knows how to make Special:Redirect/file available for anon users. It seems there is a sophisticated userrights system set in place by admin. Normally <code>Special:Redirect/file</code> should be accessible for anon users
-** To test click this direct link. If logged in you will see the image. If anon then you will be asked to login or if you set <code>$wgSpecialPageLockdown['Redirect'] = [ '*' ];</code> then you will get "accessdenied" {{ExtLink|icons=none|https://www.kicksecure.com/wiki/Special:Redirect/file/Kicksecure-logo-rectangle.svg
-}}
+** The direct link to test was <code>/wiki/Special:Redirect/file/Kicksecure-logo-rectangle.svg</code>. If logged in you would see the image. If anon you would be asked to login, or if you set <code>$wgSpecialPageLockdown['Redirect'] = [ '*' ];</code> you would get "accessdenied".
 
 '''DEV'''
 * As agreed with admin all cards are now similar in all section
@@ -197,7 +196,7 @@ Patrick:
 ** Once a page is deleted, it vanishes from the Category:MultiWiki page. Therefore mw-multi-wiki "forgets" about its existence.
 * '''A)''' mw-multi-wiki could be stateful and "remember" which pages were ever in mw-multi-wiki but that's ugly because then an idempotent, clean script would be dependent on remembering the state in some state file. The state would be difficult to share among developers.
 * '''B)''' A Category:MwDeleteMe could be invented. Delete all contents from the page and add that Category. Then mw-multi-wiki could remove it first from slave and eventually form the master wiki. Also non-ideal because not an intuitive process as it requires the developer to remember this because it's not a simple as using as using the wiki's internal deletion feature.
-* '''C)''' Deletion log https://www.kicksecure.com/wiki/Special:Log/delete doesn't contain categories.
+* '''C)''' The deletion log (<code>Special:Log/delete</code>) doesn't contain categories.
 ** Parsing the deleted revision for Category:MultiWiki might be error prone (if a wiki page was MultiWiki in the past but then it was only a comment).
 
 status:
