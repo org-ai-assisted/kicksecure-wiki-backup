@@ -13,14 +13,14 @@ To learn more about the design and intended user groups, refer to the [[About|Ov
 }}
 __TOC__
 == How does {{project_name_short}} work? ==
-To protect a user's security on the Internet [https://www.{{project_clearnet}}/#security numerous security mechanisms] are deployed. See also [[About|Overview]] and [[About]].
+To protect a user's security on the Internet [[Homepage#security|numerous security mechanisms]] are deployed. See also [[About|Overview]] and [[About]].
 
 {{Anchor|advantages}}
 
 == What are the Advantages of {{project_name_short}}? ==
 {{project_name_short}} realistically addresses common attack vectors.
 
-{{project_name_short}} deploys [https://www.{{project_clearnet}}/#security numerous security mechanisms] to mitigate such attacks.
+{{project_name_short}} deploys [[Homepage#security|numerous security mechanisms]] to mitigate such attacks.
 
 == How is {{project_name_short}} different from others? ==
 {{project_name_short}} [[About#Design|protects]] you from [[Malware|viruses]].
