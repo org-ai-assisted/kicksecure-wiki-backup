@@ -7,24 +7,31 @@
 |image=Architectures-combi-logo.svg
 }}
 {{architecture_mininav}}
-[[File:Architectures-combi-logo.svg|thumb|200px]]
 {{intro|
-{{project_name_short}} can be installed on different architectures. Here's how.
+{{project_name_short}} runs on several processor architectures, but the level of support differs significantly between them. Intel/AMD64 is the primary, best supported platform and the only one with ready-to-use downloadable images. The other architectures are at an earlier stage and are currently intended for testers and developers. This page summarizes the current status and links to the dedicated page for each architecture.
 }}
 
-{{mbox|text=
-[[File:Intel-amd-combi-logo.svg|Intel64 / AMD64|100px|link=Intel_AMD64]]
-[[File:Arm64-logo.svg|100px|link=ARM64]]
-[[File:raspberry-pi-logo.svg|100px|link=Raspberry_Pi]]
-[[File:Ppc64-logo.svg|100px|link=PPC64]]
-[[File:Riscv64-logo.svg|100px|link=RISCV64]]
+{{ThumbGallery|mode=logos|
+[[File:Intel-amd-combi-logo.svg|thumb|120px|alt=Intel64 / AMD64|link=Intel_AMD64]]
+[[File:Arm64-logo.svg|thumb|120px|alt=ARM64|link=ARM64]]
+[[File:raspberry-pi-logo.svg|thumb|120px|alt=Raspberry Pi (RPi)|link=Raspberry_Pi]]
+[[File:Ppc64-logo.svg|thumb|120px|alt=PPC64|link=PPC64]]
+[[File:Riscv64-logo.svg|thumb|120px|alt=RISCV64|link=RISCV64]]
+[[File:Logo-apple-500x500.png|thumb|120px|alt=Apple Mac|link=macOS]]
 }}
 
-{{mbox|text=
-[[File:Logo-apple-500x500.png|100px|link=macOS]]
-[[File:Apple-with-intel-logo.jpg|100px|link=macOS#Intel-based_MacBook]]
-[[File:Apple-mx-logo.jpg|100px|link=macOS#Apple_Silicon]]
-}}
+== Architectures ==
+
+[[Intel_AMD64|Intel64 / AMD64]] (also known as x86-64) is the first architecture {{project_name_short}} ever ran on, and it remains the '''best supported'''. Ready-to-use images are available from the [[Download]] page.
+
+The remaining architectures are supported for '''testers only'''. At the time of writing there are no downloadable images ("ports") and no estimated time of arrival (ETA). Testers can attempt to build images from source code, and Distribution Morphing may also be possible.
+
+* [[Intel_AMD64|Intel64 / AMD64]] - best supported; ready-to-use images on the [[Download]] page.
+* [[ARM64]] - testers only; no downloadable images yet.
+* [[Raspberry_Pi|Raspberry Pi (RPi)]] - testers only; might become available a while after the port to Debian 13 (trixie).
+* [[PPC64]] - testers only; no downloadable images yet.
+* [[RISCV64]] - testers only; no downloadable images yet.
+* [[macOS|Apple Mac]] - Intel Macs run inside [[VirtualBox]]; [[macOS#Apple_Silicon|Apple Silicon]] (M1, M2, M3, M4) is not yet available (developers only).
 
 <references />
 {{Footer}}
