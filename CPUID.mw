@@ -10,7 +10,7 @@ CPUID - Security and Privacy Risks
 * [[System_identity_camouflage|System Identity Camouflage and Virtual Machine Cloaking]]
 * [[CPUID|CPUID - Security and Privacy Risks]]
 </div>
-[[File:Cpuid1.png|thumb|'''Figure:''' ''<code>cpuid</code> Screenshot 1 / 4'' ([[#CPUID Screenshots|more screenshots]]) ([[#cpuid_usage|usage]])]]
+[[File:Cpuid1.png|thumb|class=lead-wide|'''Figure:''' ''<code>cpuid</code> Screenshot 1 / 4'' ([[#CPUID Screenshots|more screenshots]]) ([[#cpuid_usage|usage]])]]
 {{intro|
 [https://en.wikipedia.org/wiki/CPUID CPUID] is a processor function that allowing software to discover the model and capabilities of the processor. This can be a security or privacy risk.
 }}
