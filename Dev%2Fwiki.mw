@@ -575,6 +575,25 @@ Live Wiki Pages Examples:
 *** <code><nowiki><div class="thumb-hide-enlarge">[[File:Download-vbox.jpg|thumb|link=VirtualBox|250px|class=hide-enlarge]]
 </div></nowiki></code>
 
+= Lead Images =
+The '''lead image''' is the image that opens an article, shown directly under the title. It is a lead image, not a thumbnail -- the <code>thumb</code> keyword is only the MediaWiki mechanism that produces the <code>&lt;figure&gt;</code> and caption. By default a framed lead image floats to the right of the text (treatment '''A'''). Two opt-in full-width treatments are available through the File link <code>class=</code> parameter:
+
+* '''<code>lead-wide</code>''' (treatment '''B'''): full content-width captioned block, placed '''below''' the title. Best for a wide (landscape) image. Example:
+** <code><nowiki>[[File:Android_Insecurity.png|thumb|class=lead-wide|Optional caption]]</nowiki></code>
+* '''<code>lead-hero</code>''' (treatment '''C'''): full-bleed banner, image first, placed '''above''' the title. Example:
+** <code><nowiki>[[File:Example.png|thumb|class=lead-hero|Optional caption]]</nowiki></code>
+
+Notes:
+* Keep the <code>thumb</code> keyword; <code>class=lead-wide</code> / <code>class=lead-hero</code> only change placement and sizing. With neither class the image is an ordinary right-floated thumbnail (treatment A).
+* A lead image fills the content column and is never enlarged past its source, so author the source at roughly 1280-2560px wide for a crisp full-width render.
+
+Demonstration pages:
+* [[Dev/LeadImageDefaultTest]] -- treatment A (default right-float)
+* [[Dev/LeadImageWideTest]] -- treatment B (<code>lead-wide</code>)
+* [[Dev/LeadImageHeroTest]] -- treatment C (<code>lead-hero</code>)
+
+Live examples using <code>lead-wide</code>: [[Android]], [[USB_Installation]].
+
 = Tab Controller =
 Example tab controller:
 
