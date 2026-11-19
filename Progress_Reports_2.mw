@@ -904,6 +904,7 @@ Date: 2026-07-05
 
 Was able to get both ISO and VBox image builds to work, and both images had updated Guest Additions and working clipboard sharing. Upgrades need further testing, but that can be done once the packages are in trixie-developers.
 
+{{Anchor|nurmagoz}}
 === Investigate VirtualBox black screen issue reported by nurmagoz ===
 Date: 2026-07-05
 

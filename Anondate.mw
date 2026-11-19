@@ -53,7 +53,6 @@ sudo anondate-set
 * TODO: documentation on anondate is outdated
 * The anondate interface description as per the latest git master:
 * https://github.com/Kicksecure/helper-scripts/blob/master/usr/sbin/anondate
-* See also: [[#Tor Consensus Method]]
 * Needs access to either:
 ** <code>/var/run/tor/log</code> (default only in {{project_name_long}}).  [Tor Project upstream feature request: [https://gitlab.torproject.org/legacy/trac/-/issues/16821 additional /var/run/tor/log default log]] This is preferable because it contains only Tor's log since the last boot, which is more relevant and easier for <code>anondate</code> to parse.
 ** Or access to <code>/var/log/tor/log</code>. This is configurable through the environment variable <code>TOR_LOG</code> (<code>export TOR_LOG=/var/log/tor/log</code>). (Alternatively, we could change the default in the code.)

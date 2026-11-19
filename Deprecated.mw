@@ -105,7 +105,7 @@ Troubleshooting: If the system does not boot, check the [[VirtualBox/Recommended
 
 = VirtualBox Generic Bug Reproduction using virtualbox-guest-additions-iso =
 
-This entry is based on [[Reporting_Bugs#Bug_Report_Recommendations|Bug Report Recommendations]], specifically [[Reporting_Bugs#Generic_Bug_Reproduction|Generic Bug Reproduction]]. The content is similar to the [[#Try a non-whonix VM|Try a non-{{project_name_long}} VM]] chapter above.
+This entry is based on [[Reporting_Bugs#Bug_Report_Recommendations|Bug Report Recommendations]], specifically [[Reporting_Bugs#Generic_Bug_Reproduction|Generic Bug Reproduction]]. The content is similar to the [[VirtualBox/Troubleshooting#Try a non-Whonix VM|Try a non-{{project_name_long}} VM]] chapter.
 
 A manual reproduction of the [[Dev/VirtualBox#VirtualBox_Integration|{{project_name_short}} VirtualBox Integration]].
 

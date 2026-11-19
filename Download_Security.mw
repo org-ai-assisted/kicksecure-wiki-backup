@@ -32,7 +32,7 @@ There are various ways to ensure the integrity of software downloads:
 = ISO Image Writer Tools =
 
 == For Windows Host Operating Systems ==
-=== balanaEtcher ===
+=== balenaEtcher ===
 balenaEtcher has the best usability. It flashes, validates, has a nice target selection screen which gets instantly updated when a new device gets connected. It has been reported to be compatible with {{project_name_long}} ISO on the Windows and Linux platform. No reports for macOS yet.
 
 There are no extraneous options that easily confuse users. However, balenaEtcher comes with issues.

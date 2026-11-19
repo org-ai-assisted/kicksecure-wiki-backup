@@ -233,7 +233,7 @@ If the user will see:
 
 [[File:virtual_console.png|600px|alt=Text console screen showing a LUKS disk passphrase prompt, the Kicksecure welcome message with default login instructions, and a localhost login prompt.]]
 
-Then increase RAM according to the instructions in chapter [[#ISO]] to have the graphical entry.
+Then increase RAM to have the graphical entry.
 
 ==== Cloned HVM ====
 Cloned HVM will not change its internal IP address automatically.
