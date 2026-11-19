@@ -162,7 +162,7 @@ https://github.com/Kicksecure/security-misc/blob/master/usr/lib/systemd/system/u
 *** from packages.debian.org: broken, fails with an error popup, because it attempts to read <code>/proc/cpuinfo</code>.
 *** from flatpak: functional
 * ISO image to USB writer tools:
-** breaks balanaEtcher
+** breaks balenaEtcher
 
 === Whitelisting Applications ===
 
