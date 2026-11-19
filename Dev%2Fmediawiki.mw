@@ -2535,7 +2535,7 @@ Section 2 content
 {{Tab
 |title= ==Section 1==
 |type=section
-|image=[[File:Logo-linux-500x500.png|25px|alt=]]
+|image=[[File:Logo-linux-500x500.png|25px]]
 |addToClass=info-box
 |active=true
 |content=Section 1 content
