@@ -302,20 +302,6 @@ Below are 3 tests. The first without the paramter scope, it should show the page
 
 {{Community Support|scope=chapter}}
 
-== CustomRepo (Template) ==
-
-<pre>{{CustomRepo|CustomScrollbar.js}}</pre>
-* Expected: Text "CustomScrollbar.js", link to file in repo
-* {{CustomRepo|CustomScrollbar.js}}
-
-<pre>{{CustomRepo|alt=/blob/master/public/libs/instant.page/instantpage.min.js The link to instantpage lib}}</pre>
-* Expected: Text "The link to instantpage lib", link to file in repo
-* {{CustomRepo|alt=/blob/master/public/libs/instant.page/instantpage.min.js The link to instantpage lib}}
-
-<pre>{{CustomRepo|alt=/tree/master/mediawiki-shared/build config-build-shared and specific.json}}</pre>
-* Expected: Text "config-build-shared and specific.json", link to file in repo
-* {{CustomRepo|alt=/tree/master/mediawiki-shared/build config-build-shared and specific.json}}
-
 == DiscoverHiddenElements ==
 
 # Below are hidden elements. Each should open when you click its link
