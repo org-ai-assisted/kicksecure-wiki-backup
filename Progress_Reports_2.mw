@@ -19,6 +19,238 @@ On this page we give an overview on the continuous progress for Kicksecure (and 
 }}
 
 = arraybolt3 =
+== 2026-11-17 ==
+=== Fifth wave of AI refactor code review #5 ===
+Date: 2026-11-17
+
+Finished initial reviews of developer-meta-files and genmkfile, started work on helper-scripts.
+
+== 2026-11-16 ==
+=== Fifth wave of AI refactor code review #4 ===
+Date: 2026-11-16
+
+More work reviewing developer-meta-files, genmkfile, and anon-gw-anonymizer-config.
+
+== 2026-11-15 ==
+=== Fifth wave of AI refactor code review #3 ===
+Date: 2026-11-15
+
+Began review of developer-meta-files.
+
+=== Anon Connection Wizard UI redesign ===
+Date: 2026-11-15
+
+Finished rough mockups of how tor-control-panel's Basic Mode (previously Anon Connection Wizard) could function to be more user-friendly.
+
+=== Sandboxed kloak refactor #20 ===
+Date: 2026-11-15
+
+Fix minor issues, a resource leak, and a memory leak.
+
+== 2026-11-14 ==
+=== Sandboxed kloak refactor #19 ===
+Date: 2026-11-14
+
+Fixed yet more AI-discovered issues. Still have a couple more to fix, plus PRs to review.
+
+=== Fifth wave of AI refactor code review #2 ===
+Date: 2026-11-14
+
+Finished review of swap-file-creator (which ended up being quite complex to review and fix up).
+
+== 2026-11-13 ==
+=== Fifth wave of AI refactor code review #1 ===
+Date: 2026-11-13
+
+Merged all master branches into my branches, fetched all AI branches, started review of swap-file-creator.
+
+=== Sandboxed kloak refactor #18 ===
+Date: 2026-11-13
+
+Fixed more AI-discovered issues.
+
+== 2026-11-12 ==
+=== tor-control-panel refactor #13 ===
+Date: 2026-11-12
+
+Began integrating Anon Connection Wizard functionality into the refactor, started working on a redesign after realizing that the existing design was somewhat misleading and potentially confusing.
+
+=== Sandboxed kloak refactor #17 ===
+Date: 2026-11-12
+
+Finished fixing compilation issues, resolved bugs introduced during code cleanup, reviewed and fixed AI-reported issues where it made sense. Awaiting another (hopefully final) review.
+
+== 2026-11-11 ==
+=== Sandboxed kloak refactor #16 ===
+Date: 2026-11-11
+
+Initial review and cleanup of kloak complete, working through compilation issues now.
+
+== 2026-11-10 ==
+=== Sandboxed kloak refactor #15 ===
+Date: 2026-11-10
+
+Continuing review and code cleanup of kloak. Lots of minor issues and inefficiencies are being fixed.
+
+== 2026-11-09 ==
+=== Sandboxed kloak refactor #14 ===
+Date: 2026-11-09
+
+Most of the way through kloak's security review, a decent portion of kloakwl still needs reviewed.
+
+== 2026-11-08 ==
+=== Sandboxed kloak refactor #13 ===
+Date: 2026-11-08
+
+Began and got a large portion of the way through a manual security review of kloak's source code, finding several places where things could be handled better.
+
+== 2026-11-07 ==
+=== Sandboxed kloak refactor #12 ===
+Date: 2026-11-07
+
+Reviewed AI bug reports against kloak, fixed some issues. Discovered a bug where disconnecting a display after a reboot could result in the mouse cursor refusing to move into an area of the remaining display, and fixed it. Continued investigation into POSIX IPC security concerns, discussed internally, sent an email to the glibc mailing list suggesting a mitigation mechanism. Also noticed that Debian was missing some security fixes for haveged and reported them.
+
+== 2026-11-06 ==
+=== Sandboxed kloak refactor #11 ===
+Date: 2026-11-06
+
+Merged some AI-generated improvements where possible. Discovered that using <code>memfd_create()</code> resulted in kloak being able to bypass systemd's MemoryDenyWriteExecute setting, so switched back to using <code>shm_open()</code> in a secure fashion. Began investigation into POSIX IPC security concerns.
+
+== 2026-11-05 ==
+=== Sandboxed kloak refactor #10 ===
+Date: 2026-11-05
+
+Got the package to build and install on my development workstation and got it to install in a Whonix-Workstation VM. Fixed more bugs, and got AppArmor confinement and systemd sandboxing configured better (not quite ideal yet but hopefully close).
+
+== 2026-11-04 ==
+=== Sandboxed kloak refactor #9 ===
+Date: 2026-11-04
+
+Reviewed the code with ChatGPT free tier, fixed many bugs and limitations found in the process (most notably adding support for negative screen and cursor positions). Patrick is checking the code with Claude, and I will be doing a security review after handling AI review results.
+
+== 2026-11-03 ==
+=== Sandboxed kloak refactor #8 ===
+Date: 2026-11-03
+
+Finished initial implementation of the unprivileged side, successfully got kloak to run on my workstation.
+
+== 2026-11-02 ==
+=== Sandboxed kloak refactor #7 ===
+Date: 2026-11-02
+
+Finished initial implementation of the libinput-handling side, largely implemented the unprivileged side.
+
+== 2026-11-01 ==
+=== Sandboxed kloak refactor #6 ===
+Date: 2026-11-01
+
+Largely implemented the privileged, libinput-handling side. Polished parent/child communication protocol further.
+
+=== OS setup and fan curve debugging on firmware experiment workstation ===
+Date: 2026-11-01
+
+Set up the new workstation for general development work, including getting qubes-split-gpg2 to run on it for safe commit signing. With the help of coreboot-15h developers, I discovered that due to low fan speed the system was nearly overheating and was suffering from CPU throttling. At their direction, I built and installed a custom firmware image for it that sets the fans to 100% speed, and confirmed this fixes the problem for now.
+
+== 2026-10-31 ==
+=== Sandboxed kloak refactor #5 ===
+Date: 2026-10-31
+
+Reworked the communication protocol between parent and child processes, as the original iteration turned out to break C rules due to nesting flex array structs into other structs.
+
+=== Finish firmware experiment workstation hardware build, begin OS setup ===
+Date: 2026-10-31
+
+Installed coreboot-15h firmware, added additional hard disk drives, installed Kicksecure 18 on the primary SSD, installed updates and switched to developer repos. A little more work needs done to prepare it for development use.
+
+== 2026-10-30 ==
+=== Sandboxed kloak refactor #4 ===
+Date: 2026-10-30
+
+Fixed various issues and started an AI review of the ring buffer mechanism for message parsing.
+
+=== Forum replies, more kloak enhancements ===
+Date: 2026-10-30
+
+Fixed an absolute cursor positioning bug in kloak, and split up escape key combo handling to make it easier for AI to test it.
+
+=== Further work on firmware experiment workstation ===
+Date: 2026-10-30
+
+Ran prime95 with the original RAM and CPUs, installed a graphics card, installed upgraded RAM and CPUs, and began a second memtest86+ run.
+
+== 2026-10-29 ==
+=== Initial assembly of firmware experiment workstation ===
+Date: 2026-10-29
+
+Flashkeeper is picking up development speed, and Kicksecure is interested in getting involved. To that end, I built an ASUS KGPE-D16 workstation that is capable of running coreboot-15h firmware and will be compatible with Flashkeeper. The components for it arrived today. Got an initial setup assembled and ran memtest86+ on it.
+
+== 2026-10-28 ==
+=== Sandboxed kloak refactor #3 ===
+Date: 2026-10-28
+
+Continuing to think through design, mostly with how to make the privileged and unprivileged components safely communicate with each other.
+
+== 2026-10-27 ==
+=== Sandboxed kloak refactor #2 ===
+Date: 2026-10-27
+
+Properly set up user namespaces so <code>/dev/shm</code> could be bind-mounted into the sandboxed half of kloak for Wayland communication. Designed the protocol between privileged and unprivileged components, started implementing bits of functional code.
+
+=== Fix post-refactor issues with kloak, split some functions for testability ===
+Date: 2026-10-27
+
+AI reported some edge cases my fixups didn't take into account, and Patrick had it ask for some functions to be split for easier testability. Implemented fixes and split the functions where it made sense and didn't require a large overhaul. More splitting may be needed later.
+
+== 2026-10-26 ==
+=== Sandboxed kloak refactor #1 ===
+Date: 2026-10-26
+
+Picked up where my original self-sandboxing prototype had been left off. Fixed some issues and inefficiencies, debugged a problem with bind mounts inside the sandboxed process.
+
+=== Add debug mode to emerg-shutdown ===
+Date: 2026-10-26
+
+This should help diagnose issues where emerg-shutdown is incorrectly shutting down people's systems.
+
+== 2026-10-25 ==
+=== tor-control-panel refactor #12 ===
+Date: 2026-10-25
+
+Finished initial splitting of sharable code out of the advanced mode UI for use in the basic mode UI.
+
+=== Fix kloak traverse_line routine, split out some math routines for AI testing purposes ===
+Date: 2026-10-25
+
+This should fix a potential crash vector, and make testing easier.
+
+=== kloak AI bug report handling #6 ===
+Date: 2026-10-25
+
+Reviewed all code introduced into kloak as part of AI bug report handling. Created and ran through a thorough test plan to ensure affected features functioned as expected.
+
+== 2026-10-24 ==
+=== kloak AI bug report handling #5 ===
+Date: 2026-10-24
+
+Finished working through all AI-reported issues.
+
+== 2026-10-23 ==
+=== kloak AI bug report handling #4 ===
+Date: 2026-10-23
+
+Discovered that the button release fix was unnecessary and abandoned it. Fixed more issues and did some general code cleanup.
+
+=== tor-control-panel refactor #11 ===
+Date: 2026-10-23
+
+Did a small amount of refactoring work.
+
+== 2026-10-22 ==
+=== kloak AI bug report handling #3 ===
+Date: 2026-10-22
+
+Worked on handling button release on device disconnect. Got stuck on an issue with queue item removal silently failing, which turned out to be because I was mistakenly using the same queue linking pointers in two different queues.
+
 == 2026-10-21 ==
 === kloak AI bug report handling #2 ===
 Date: 2026-10-21
