@@ -2966,13 +2966,6 @@ Text
 #* This results in span.child being rendered after span.parent. But this only happens in special contexts like as a list item. In normal wikitext this works
 #* Solution for the time being: Spare all line breaks and unnecessary spaces. The latter because sometimes a space is interpreted as an indentation and leads to rendering as a pre element. Solution example: {{CodeSelect|code=<span class="parent"><span class="child">Text</span></span>}}
 
-== Testing ==
-
-* You can use Testpages in the following style
-* [[Testpage1]]
-* [[Testpage2]]
-* [[Testpage11]]
-
 == Performance Testing ==
 
 # We have implemented a couple of performance testing measures

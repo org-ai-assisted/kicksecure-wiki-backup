@@ -7034,7 +7034,7 @@ Kloak development. Reported changes and suggested merging them into Whonix's klo
 ** Discussion Todo
 ** Research highlight js libs, removed Highligh extension, installation of highlight.js
 ** CodeSelect integration of deferred highlight.js + new Feature "lang" to control highlight language or set to auto / none
-** CodeSelect examples were created [[Testpage1]]
+** CodeSelect examples were created Testpage1
 ** CodeSelect documentation was updated [[Dev/mediawiki#CodeSelect]]
 
 * 2023-01-31
