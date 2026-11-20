@@ -53,7 +53,7 @@ Paragraph to jump over
 
 '''Tests 1: Blockquote Lines Working and failing'''
 
-Test 1.1: Expected theoretically two paragraphs p1 has line1 and line2 in it, p2 has line3 and line4. Expected: {{IconSet|false|FAILURE}} due to long standing Mediawiki bug.
+Test 1.1: Expected theoretically two paragraphs p1 has line1 and line2 in it, p2 has line3 and line4. Expected: {{IconSet|true|OK}}; the static site generator renders both paragraphs correctly (the former MediaWiki paragraph-splitting bug no longer applies).
 
 <blockquote>line1
 line2
@@ -61,7 +61,7 @@ line2
 line3
 line4</blockquote>
 
-Test 1.2: Expected theoretically two paragraphs p1 has line1, p2 has line2. Expected: {{IconSet|false|FAILURE}} due to long standing Mediawiki bug.
+Test 1.2: Expected theoretically two paragraphs p1 has line1, p2 has line2. Expected: {{IconSet|true|OK}}; the static site generator renders both paragraphs correctly (the former MediaWiki paragraph-splitting bug no longer applies).
 
 <blockquote>line1
 
@@ -179,9 +179,9 @@ Test 4.4 : Simple Quotation with 3 Lines, Context and Image Test
 
 789}}
 
-Test 4.5: Bullet Point Quotation with 2 Lines, Context and Image Test &rarr; Expected: {{IconSet|false|FAILURE}}
+Test 4.5: Bullet Point Quotation with 2 Lines, Context and Image Test &rarr; Expected: {{IconSet|true|OK}}
 
-Same as above but below a bullet point. '''NOTE''': This does not work as expected but it is acceptable right now because this is caused by a bug in MediaWiki that has been reported.
+Same as above but below a bullet point. '''NOTE''': This now renders correctly under the static site generator (the former MediaWiki bullet-nesting bug no longer applies).
 
 <pre>
 * bullet point with colon: {{Quotation
@@ -1798,7 +1798,7 @@ TODO: add test here
 
 = Footnotes =
 <!--
-EDITORS NOTICE: Disabled due to server issues.
+EDITORS NOTICE: MultiWiki category intentionally disabled -- this page is mapped "none" in the static site generator's multiwiki-canonical.tsv, so each wiki keeps its own independent copy (no shared-page overlay).
 [[Category:MultiWiki]]
 -->
 [[Category:Development]]
