@@ -1354,8 +1354,6 @@ Example 2 Result {{Box|addToClass=position-relative|text={{ComingSoon}}text box<
 * '''Syntax'''
 ** <code><nowiki>{{CustomRepo|File.txt}}</nowiki></code>
 ** <code><nowiki>{{CustomRepo|alt=/subpath-url Link text with optional spaces}}</nowiki></code>
-* Tests, Examples
-** [[Dev/wikitest#CustomRepo_.28Template.29|CustomRepo (Template)]]
 * Relevant files
 ** [[Template:CustomRepo]]
 
