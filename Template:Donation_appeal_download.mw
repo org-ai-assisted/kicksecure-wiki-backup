@@ -2,7 +2,7 @@
 
 '''Please support the {{project_name_short}} development with a donation.'''
 
-[[Donate|{{Clickable button|target=Donate|color=blue|Donate to {{project_name_short}}}}]]<noinclude>
+[[Donate|{{Clickable button|target=Donate|color={{{button_color|blue}}}|Donate to {{project_name_short}}}}]]<noinclude>
 {{Header}}
 {{Footer}}
 [[Category:MultiWiki]]

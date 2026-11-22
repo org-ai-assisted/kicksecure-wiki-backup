@@ -99,7 +99,7 @@ For optional, alternative command line import instructions, see [[VirtualBox/Man
 }}
 {{box|text=
 == {{IconSet|h1|5}} Support the Future of {{project_name_short}} ==
-{{donation_appeal_download}}
+{{donation_appeal_download|button_color=white}}
 }}<!-- close box -->
 <noinclude>
 = Footnotes =
