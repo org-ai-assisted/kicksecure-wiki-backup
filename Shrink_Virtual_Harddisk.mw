@@ -14,7 +14,6 @@ Shrink Virtual Hard Disk Size
 {{intro|
 Free disk space. Decrease the size of a virtual disk. Decrease virtual machine storage capacity.
 }}
-{{javascript-looks-better-with-javascript}}
 = Introduction =
 Over the course of many system upgrades, logging, and similar activity, the disk image files can grow substantially. Deleting obsolete files does not automatically shrink the disk size again, because it has grown to accommodate the data.
 

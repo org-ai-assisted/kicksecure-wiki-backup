@@ -29,7 +29,6 @@ permission denied: pkexec
 }} disables <code>user</code> and <code>sysmaint</code> separation and restores a more traditional setup where the <code>user</code> account can use administrative tools such as <code>sudo</code> or <code>pkexec</code> without using a <code>sysmaint</code> session. This is generally <u>not</u> recommended, because it removes the security benefits of <code>user-sysmaint-split</code>.
 * <u>Older versions:</u> For older versions, refer to [[Sysmaint#Version_Overview|Version Overview]] for upgrade information.
 }}
-{{javascript-looks-better-with-javascript}}
 = Screenshot =
 [[Kicksecure]]:
 
