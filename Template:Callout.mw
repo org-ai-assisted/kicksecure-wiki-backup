@@ -1,0 +1,6 @@
+{{#callout:
+type={{{type|note}}}
+|text={{{text|}}}
+}}<noinclude>
+[[Category:MultiWiki]]
+</noinclude>
