@@ -24,14 +24,14 @@ This is the first line of the content text outside the intro template.
 
 '''Invisible Anchor jump test'''
 
-Click the link below and it should jump to the "Jump point". There is the id "test-anchor-template"
+Click the jump link below and it should jump to the "Jump point". There is the id "test-anchor-template".
 
 {{Anchor|test-anchor-template}}
 Jump point
 
 Paragraph to jump over
 
-[[#test-anchor-template]]
+Here is the jump link: [[#test-anchor-template|jump to the "Jump point" above]].
 
 '''Visible Anchor'''
 
