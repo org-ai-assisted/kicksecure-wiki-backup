@@ -10,6 +10,7 @@ Verify {{project_name_long}} Images Software Signatures
 {{intro|
 Download image verification instructions for {{non_q_project_name_short}} with OpenPGP and Signify.
 }}
+{{javascript-looks-better-with-javascript}}
 {{always_verify_signatures_reminder}}
 {{Tab
 |type=controller

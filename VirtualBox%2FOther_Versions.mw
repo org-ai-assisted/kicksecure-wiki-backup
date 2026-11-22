@@ -12,6 +12,7 @@ Install Newer Versions of VirtualBox
 {{intro|
 This wiki page documents how to install different versions of VirtualBox from sources other than the default repositories, such as Debian unstable or directly from the developers of VirtualBox (Oracle) software package repository or <code>virtualbox.org</code> website.
 }}
+{{javascript-looks-better-with-javascript}}
 = Security Considerations =
 
 If using {{project_name_long}} inside a {{VM}}, the virtualization platform is an essential component of a secure {{project_name_long}} system. A vulnerable virtualizer may provide opportunities for attackers to perform a breakout from a virtual machine, thereby undoing the security-by-isolation features that {{project_name_long}} provides. The decision to install an alternative virtualizer should not be taken lightly.

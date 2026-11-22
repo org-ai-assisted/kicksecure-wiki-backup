@@ -13,6 +13,7 @@ The system or {{VM}} is no longer booting?
 
 This can be [[Dev/image_creation|very difficult]] to analyze and difficult to fix. Asking in support forums might not result in helpful answers. Fixing this most likely requires being an [[Advanced Users|advanced user]] or even a very advanced user.
 }}
+{{javascript-looks-better-with-javascript}}
 
 == What to do first ==
 [[File:kicksecure-persistent-mode-user-session.png|[[grub|GRUB]] boot menu|thumb|alt=Boot mode menu with the PERSISTENT Mode, USER Session, daily activities entry highlighted]]

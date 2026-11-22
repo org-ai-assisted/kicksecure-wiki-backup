@@ -9,6 +9,7 @@
 {{intro|
 [[About|{{project_name_long}}]] for [https://www.qubes-os.org Qubes OS].
 }}
+{{javascript-looks-better-with-javascript}}
 = Installation =
 Select an installation method.
 

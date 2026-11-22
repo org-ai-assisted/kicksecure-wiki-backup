@@ -11,6 +11,7 @@ Network Time Synchronization
 {{intro|
 A reasonably accurate host clock is required for many general security properties. An inaccurate clock can lead to broken internet connectivity and time related security issues.
 }}
+{{javascript-looks-better-with-javascript}}
 = Introduction =
 
 It is recommended to have a host clock with an accuracy of up to &plusmn; 30 minutes. Clocks that are hours, days, weeks, months or even years slow or fast can lead to many issues such as:

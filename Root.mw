@@ -11,6 +11,7 @@ title=Safely Use Root Commands
 {{intro|
 This page gives tips on using <code>sudo</code> / <code>root</code> (privileged) commands safely. The <code>root</code> account is a special user account in Unix-based operating systems that has complete access to all files and commands on a system. It is typically used only for system administration tasks that require unrestricted access.
 }}
+{{javascript-looks-better-with-javascript}}
 
 = Introduction =
 

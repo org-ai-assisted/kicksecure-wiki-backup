@@ -16,6 +16,7 @@ title={{project_name_long}} for KVM
 {{intro|
 This is the KVM flavor of the {{project_name_short}} project.
 }}
+{{javascript-looks-better-with-javascript}}
 {{Community_Support|scope=page}}
 
 = Introduction =

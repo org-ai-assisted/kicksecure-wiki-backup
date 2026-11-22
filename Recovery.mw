@@ -11,6 +11,7 @@ Recovery
 {{intro|
 The goal of this wiki page is to provide the user with knowledge for higher system reliability, robustness, increased uptime, backup, restoration, recovery and repair skills.
 }}
+{{javascript-looks-better-with-javascript}}
 = Introduction =
 It is prudent to acquire system recovery skills prior to an eventual later grave issue such as an unbootable VM or even unbootable host operating system, data loss or similar. This is because naturally for most users once they are affected by a grave issue, the mind goes into "issue solving mode", which can be stressful and less productive, specifically when it is currently a bad time to acquire these skills due to other more pressing priorities. By learning these skills in advance, one can obtain the skills during a more appropriate time in a much more positive, relaxed environment which might potentially greatly increase a user's ability and lower the time required to fix their broken system, should this happen in the future.
 
