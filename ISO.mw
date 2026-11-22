@@ -80,8 +80,6 @@ File:Iso-page-step7-hdd-boot-done.svg|link=#6_Boot_installed_Kicksecure|Local {{
 
 '''Please follow these steps to install {{project_name_short}} LXQt.'''
 
-{{Icon|fa-solid fa-exclamation cs-yellow}} Note: This is for "normal" computers that most people are using (Intel64 / AMD64 processor). For other architectures, see [[Architecture_Support|Architecture Support]].
-
 {{javascript-looks-better-with-javascript}} {{Anchor|Landing}}
 {{mbox
 |addToClass=margin-v-25
@@ -162,6 +160,7 @@ File:Iso-page-step7-hdd-boot-done.svg|link=#6_Boot_installed_Kicksecure|Local {{
 |text=
 * '''Choose your host operating system''': Now below, please select the operating system you are currently using and that you intend to use to create the {{project_name_short}} Live USB stick.
 * After your selection, only the individual instructions for the selected operating system will be shown.
+}}
 
 <div class="vspacer-10"></div>
 
@@ -506,7 +505,6 @@ The process of flashing {{project_name_short}} ISO to USB has been completed.
 }}<!-- close tab : Qubes -->
 
 }}<!-- close tab controller : operating system choice -->
-}}<!-- close mbox for operating system selection -->
 }}<!-- close mbox for write to use chapter -->
 
 {{mbox
