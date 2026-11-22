@@ -577,8 +577,6 @@ Archived notes:
 ** Gadgets supports loading scripts on specific wiki pages only
 * https://www.mediawiki.org/wiki/MediaWiki:Gadget-site.js
 * https://www.mediawiki.org/wiki/Gadget_kitchen
-* https://www.mediawiki.org/wiki/MediaWiki:Gadgets-definition
-** [[MediaWiki:Gadgets-definition]]
 * Gadgets version 2 development by MediaWiki stalled
 
 = TASK ARCHIVE : Rejected =
@@ -1319,7 +1317,7 @@ Patrick:
 == MediaWiki:Page_Homepage.css Question ==
 Only a question.
 
-Could {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/Page_Homepage.css Page_Homepage.css}} be embedded inline into [[widget:Page_Homepage]]? Good idea?
+Could {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/Page_Homepage.css Page_Homepage.css}} be embedded inline into <code>Widget:Page_Homepage</code>? Good idea?
 
 Reason: Potential website speed improvement?
 
@@ -1439,8 +1437,6 @@ The following features are RETIRED
 * '''Usage'''
 ** The template must be placed '''after''' all <code><nowiki><ref></nowiki></code> tags.
 ** For complex pages, multiple <code><nowiki>{{Reflist}}</nowiki></code> calls with different groups are common.
-* '''Relevant files'''
-** [[Template:Reflist]]
 
 == sd-start (currently retired) ==
 

@@ -8,7 +8,7 @@ The build process for any of the {{ExtLink
 
 * '''A)''' <u>Instructions on '''this''' page</u> about '''how to build''' the <code>{{{package}}}</code> package from source code '''without''' [[Verifying Software Signatures|<u>verifying software signatures</u>]] for simplicity.
 '''<u>OR</u>'''
-* '''B)''' [[Dev/Build Documentation/{{{package}}}|Instructions with verifying software signatures click here]].
+* '''B)''' [[{{{detailed_instructions|Dev/Build Documentation/{{{package}}}}}}|Instructions with verifying software signatures click here]].
 }}
 == Get Build Dependencies ==
 [[update|Update]] your package lists.

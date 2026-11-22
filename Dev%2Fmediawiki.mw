@@ -2344,13 +2344,13 @@ Result
 
 # The sitenotice communicates current infos to the user, most notably the donation banners.
 # '''The banners and the selection between them now live in version-controlled source''', in the Kicksecure extension's <code>SitenoticeBanner</code> parser function (<code>src/SitenoticeBanner.php</code>), not in the wiki.
-#* [[MediaWiki:Sitenotice]] contains a single <code><nowiki>{{#sitenotice:currentMonth={{CURRENTMONTH}}|page={{PAGENAME}}}}</nowiki></code> invocation and nothing else.
+#* <code>MediaWiki:Sitenotice</code> contains a single <code><nowiki>{{#sitenotice:currentMonth={{CURRENTMONTH}}|page={{PAGENAME}}}}</nowiki></code> invocation and nothing else.
 #* That parser function picks the active banner: the end-of-year donation banner in December (and on [[TestpageForFlyInNotification]]), and the standard donation promo otherwise. Both banners' HTML and text are generated in the PHP.
 # '''To change a banner's content, its text/styling, or the selection rule, edit the <code>SitenoticeBanner</code> parser function''' -- not the wiki.
 #* Per-banner CSS can still be added to {{CustomRepo|Sitenotice.css}} or {{CustomRepo|alt=/blob/master/mediawiki-shared/src/kicksecure/LocalSkin.css LocalSkin.css}} using <code><nowiki>#siteNotice .sitenotice-banner[data-banner-id="<<<banner-id>>>"]</nowiki></code>; each banner carries a <code>data-banner-id</code> attribute set by the parser function.
 #* A banner can be auto-hidden after a date via an <code>expires</code> UNIX timestamp handled in the parser function.
 # Relevant elements
-## [[MediaWiki:Sitenotice]] (the single <code><nowiki>{{#sitenotice:}}</nowiki></code> call)
+## <code>MediaWiki:Sitenotice</code> (the single <code><nowiki>{{#sitenotice:}}</nowiki></code> call)
 ## [[Template:Hide_all_banners]]
 ## {{CustomRepo|Sitenotice.css}}
 ## {{CustomRepo|Sitenotice.js}}
@@ -3330,20 +3330,6 @@ If successful, the HTTP response header <code>x-cache-status</code> will show <c
 <pre>
 x-cache-status: BYPASS
 </pre>
-
-== MediaWiki special resources ==
-
-Those are hard to find via Google, so they are listed here
-
-* [[MediaWiki:Anoneditwarning]]
-* [[MediaWiki:Shoutwiki-loginform-tos]]
-* [[MediaWiki:shoutwiki-must-accept-tos]]
-* [[MediaWiki:Useragreement]]
-
-* [[MediaWiki:Cookiewarning-info]]
-* [[MediaWiki:Cookiewarning-more-link]]
-
-* [[MediaWiki:Captchahelp-text]]
 
 == Special code resources (possibly outdated) ==
 === Debugging CSS JS mw-autogen ===

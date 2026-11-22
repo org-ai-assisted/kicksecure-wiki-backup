@@ -451,7 +451,6 @@ Template:Stub
 
 == consider multiwiki additions ==
 * [[Template:Footer]]
-* [[Template:Reflist]]
 * [[Template:Html_Donation_Panel_Crypto]]
 * [[Template:BootEntries]]
 * default: yes, make multi wiki if sensible even if not yet in use
@@ -483,7 +482,7 @@ mycontent
 ** The Kicksecure footer was set to multiwiki.
 ** Basically only the tm line had to be changed to conditional according to the project
 ** {{IconSet|maybe|Note!}} : The wikibookindex line is now carried over to Whonix. But as Wikibookindex is already used on Whonix this is likely intended
-* [[Template:Reflist]] has been deleted on both wikis already (and replaced with <code><nowiki><references /></nowiki></code>) as decided by admin
+* Template:Reflist has been deleted on both wikis already (and replaced with <code><nowiki><references /></nowiki></code>) as decided by admin
 * [[Template:Html_Donation_Panel_Crypto]] is already Multiwiki now, because I needed it before for another multiwiki transfer
 * [[Template:BootEntries]] was made MultiWiki and copied to Whonix where it did not exist before. Now it can be used there
 
@@ -495,7 +494,7 @@ mycontent
 * Done
 * Tests were created [[Dev/wikitest#CSS_Extension_Fork|CSS Extension Fork tests]]
 * JS and CSS file was created
-* {{IconSet|maybe|Note}} This seemingly long abandoned file [[User:Patrick/myskin.css]] is now used for a test in our testing suite (not-allowed namespaces). So this file should be protected for this reason.
+* {{IconSet|maybe|Note}} This seemingly long abandoned file <code>User:Patrick/myskin.css</code> is now used for a test in our testing suite (not-allowed namespaces). So this file should be protected for this reason.
 * Documentation has been updated [[Dev/mediawiki#Extension_CSS_Fork_(RETIRED)|Extension CSS Fork doc]]
 * {{IconSet|false|WARNING}}
 ** The tests were created with the help of AI. And thereby a security vulnerability was found
