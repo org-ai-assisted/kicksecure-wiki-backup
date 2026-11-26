@@ -8,11 +8,9 @@ Download Security
 }}
 [[File:Download-security.png|200px|thumb|alt=Downloaded file with checkmark, shield padlock and hash value A4 B7 2C 9E]]
 {{intro|
-{{GoogleOff|content=
 {{security_intro}}
 
 This page is targeted at users who wish to improve the security of their systems for even greater protection.
-}}
 
 Digital signature verification of any downloaded software (such as {{project_name_short}}) is an important step for system security. Hence, there is a recommendation to [[Warning#Always_Verify_Signatures|Always Verify Signatures]].
 }}
