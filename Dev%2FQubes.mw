@@ -183,7 +183,7 @@ The included <code>example-configs/kicksecure.yml</code> already sets the Qubes 
 2. To build the template, run:
 
 {{CodeSelect|code=
-./qb -t kicksecure-18 template fetch prep build
+./qubesbuilder-cli -t kicksecure-18 template fetch prep build
 }}
 
 Because <code>use-qubes-repo</code> is set, the Qubes packages come from the official repositories and the components do not need to be built first. This will download the code needed to build the template and then build the template. If all goes well, the built template will be placed in folder:
