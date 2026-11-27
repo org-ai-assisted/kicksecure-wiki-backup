@@ -400,6 +400,24 @@ Quote madaidan:
 
 <blockquote>/run/user/1000 bypasses /run's <code>noexec</code> as it is its own mount point. We might want to look into restricting that too.</blockquote>
 
+<code>/run/user/<uid></code> (<code>XDG_RUNTIME_DIR</code>) is a separate per-user <code>tmpfs</code> that <code>systemd-logind</code> mounts at each login, AFTER the boot-time remount-secure one-shot has already run. Mount options are per-mount, so it does NOT inherit <code>/run</code>'s <code>noexec</code>. logind hardcodes <code>nosuid,nodev</code> (never <code>noexec</code>) and exposes no option to change it.
+
+This is handled by a systemd drop-in on <code>user-runtime-dir@.service</code> (the template logind instantiates per login):
+
+<pre>
+[Service]
+ExecStartPost=-/usr/bin/remount-secure --runtime-dir %i
+</pre>
+
+* <code>ExecStartPost</code> runs after logind has created, mounted and chowned the directory, so there is no race against logind and no "already a mount point" skip.
+* <code>remount-secure --runtime-dir <uid></code> adds <code>noexec</code> only at level &gt;= 2 (the same gating as <code>/run</code>; the shipped default is level 3), and honors the <code>noremountsecure</code> off-switch. It always remounts (the tmpfs is fresh each login), so a logout/login is re-hardened.
+* The leading <code>-</code> makes it best-effort: a remount failure must never block login (fail open).
+
+App-compat note: <code>XDG_RUNTIME_DIR</code> is used by some applications to drop and execute helper binaries, which is why <code>noexec</code> here is level-gated rather than unconditional. <code>mode=0700</code> already restricts the directory to its owner.
+
+== /proc noexec ==
+remount-secure applies the safe subset <code>nosuid,nodev,noexec</code> to <code>/proc</code>. procfs has no suid files, no device nodes and no executable regular files, and <code>/proc/self/exe</code> is a symlink resolved to the real binary's filesystem, so <code>noexec</code> does not block re-exec. <code>hidepid=2,gid=proc</code> is deliberately NOT set here: it breaks pkexec/polkit process lookup, which is why <code>proc-hidepid.service</code> stays a separate, opt-out concern.
+
 == Resources ==
 * https://github.com/Kicksecure/security-misc/pull/68
 * https://github.com/Kicksecure/security-misc/pull/69
